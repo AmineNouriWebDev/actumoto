@@ -8,9 +8,6 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Three.js pour les effets 3D -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
     <!-- Google Fonts futuristes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
@@ -29,12 +26,6 @@
       body {
         font-family: "Rajdhani", sans-serif;
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      .dark-mode {
-        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-        color: #ffffff;
       }
 
       h1,
@@ -52,86 +43,48 @@
         border-bottom: 1px solid rgba(255, 0, 0, 0.1);
       }
 
-      .dark-mode .header-futurist {
-        background: rgba(10, 10, 10, 0.95);
-        border-bottom: 1px solid rgba(255, 0, 0, 0.2);
-      }
-
-      /* Cartes marques en forme de motos sport */
-      .brand-moto-card {
-        background: linear-gradient(145deg, #ffffff, #f1f5f9);
-        border-radius: 12px;
-        padding: 2rem;
+      /* Style pour les logos - simple et épuré */
+      .brand-logo-card {
+        background: transparent;
+        padding: 1.5rem;
         position: relative;
         overflow: hidden;
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid rgba(255, 0, 0, 0.1);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
-        height: 180px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 12px;
       }
 
-      .dark-mode .brand-moto-card {
-        background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
-        border: 1px solid rgba(255, 0, 0, 0.3);
-        box-shadow: 0 8px 32px rgba(255, 0, 0, 0.1);
+      .brand-logo-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 10px 30px rgba(255, 0, 0, 0.15);
       }
 
-      .brand-moto-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 0, 0, 0.1),
-          transparent
-        );
-        transition: left 0.6s ease;
+      .brand-logo-img {
+        max-width: 180px;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+        filter: grayscale(30%);
+        transition: all 0.3s ease;
+        object-fit: contain;
       }
 
-      .brand-moto-card:hover::before {
-        left: 100%;
+      .brand-logo-card:hover .brand-logo-img {
+        filter: grayscale(0%);
+        transform: scale(1.05);
       }
 
-      .brand-moto-card:hover {
-        transform: translateY(-10px) scale(1.02);
-        box-shadow: 0 20px 40px rgba(255, 0, 0, 0.2), var(--neon-glow);
-        border-color: rgba(255, 0, 0, 0.5);
-      }
-
-      /* Silhouette de moto sport en arrière-plan */
-      .moto-silhouette-bg {
-        position: absolute;
-        width: 120%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent 0%,
-          rgba(255, 0, 0, 0.05) 50%,
-          transparent 100%
-        );
-        clip-path: polygon(20% 0%, 80% 0%, 70% 100%, 30% 100%);
-        opacity: 0.3;
-        transition: opacity 0.3s ease;
-      }
-
-      .brand-moto-card:hover .moto-silhouette-bg {
-        opacity: 0.6;
-      }
-
-      /* Grille responsive qui centre la dernière ligne */
+      /* Grille responsive centrée */
       .brands-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
         justify-items: center;
+        align-items: center;
       }
 
       /* Slider futuriste */
@@ -175,52 +128,14 @@
         transform-origin: left;
       }
 
-      /* Bouton dark mode futuriste */
-      .dark-mode-btn {
-        background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-        border: 1px solid rgba(255, 0, 0, 0.3);
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border-radius: 25px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: var(--neon-glow);
-      }
-
-      .light-mode .dark-mode-btn {
-        background: linear-gradient(135deg, #ffffff, #f1f5f9);
-        border: 1px solid rgba(255, 0, 0, 0.2);
-        color: #0a0a0a;
-      }
-
-      /* Canvas Three.js pour effet de particules */
-      #particles-js {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        opacity: 0.1;
-      }
-
-      .dark-mode #particles-js {
-        opacity: 0.3;
-      }
-
       /* Section modèles */
       .model-card {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(255, 0, 0, 0.1);
         border-radius: 12px;
         overflow: hidden;
         transition: all 0.3s ease;
-      }
-
-      .dark-mode .model-card {
-        background: rgba(26, 26, 26, 0.8);
-        border: 1px solid rgba(255, 0, 0, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
       .model-card:hover {
@@ -230,23 +145,18 @@
 
       /* Formulaire futuriste */
       .futurist-input {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(255, 0, 0, 0.2);
         border-radius: 8px;
         padding: 1rem;
-        color: inherit;
+        color: #0a0a0a;
         transition: all 0.3s ease;
       }
 
       .futurist-input:focus {
         outline: none;
         border-color: #ff0000;
-        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1), var(--neon-glow);
-      }
-
-      .dark-mode .futurist-input {
-        background: rgba(26, 26, 26, 0.5);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1);
       }
 
       .btn-futurist {
@@ -264,14 +174,11 @@
 
       .btn-futurist:hover {
         transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3), var(--neon-glow);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
       }
     </style>
   </head>
-  <body class="light-mode">
-    <!-- Canvas pour particules Three.js -->
-    <div id="particles-js"></div>
-
+  <body>
     <!-- Header -->
     <header class="header-futurist fixed w-full top-0 z-50">
       <div class="container mx-auto px-4 py-4">
@@ -284,15 +191,8 @@
               alt="actumoto.tn"
               class="h-12 w-auto"
             />
+            <span class="futurist-font text-2xl text-red-600">ACTUMOTO.TN</span>
           </div>
-
-          <button
-            id="darkModeToggle"
-            class="dark-mode-btn futurist-font text-sm"
-          >
-            <span class="light-mode-text">MODE NUIT</span>
-            <span class="dark-mode-text hidden">MODE JOUR</span>
-          </button>
         </div>
       </div>
     </header>
@@ -301,9 +201,7 @@
     <section class="futurist-slider mt-16">
       <div
         class="slide active"
-        style="
-          background-image: url('https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-        "
+        style="background-image: url('./img/slide-avenir.png')"
       >
         <div
           class="absolute inset-0 bg-black/40 flex items-center justify-center"
@@ -336,13 +234,13 @@
     <section class="py-20 relative">
       <div class="container mx-auto px-4">
         <h2
-          class="futurist-font text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent dark:from-white dark:to-red-400"
+          class="futurist-font text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
         >
           NOS MARQUES EXCLUSIVES
         </h2>
 
         <div id="brands-container" class="brands-grid">
-          <!-- Les marques seront générées par JavaScript -->
+          <!-- Les logos seront générés par JavaScript -->
         </div>
       </div>
     </section>
@@ -350,7 +248,7 @@
     <!-- Section Modèles -->
     <section
       id="models-section"
-      class="py-20 hidden bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black"
+      class="py-20 hidden bg-gradient-to-b from-white to-gray-100"
     >
       <div class="container mx-auto px-4">
         <div
@@ -362,7 +260,7 @@
           ></h2>
 
           <div
-            class="flex space-x-2 bg-white/80 dark:bg-gray-800/80 rounded-lg p-1 backdrop-blur-sm"
+            class="flex space-x-2 bg-white/80 rounded-lg p-1 backdrop-blur-sm"
           >
             <button
               class="view-option px-4 py-2 rounded-md transition-all duration-300 active bg-red-600 text-white"
@@ -395,13 +293,11 @@
       ></div>
       <div class="container mx-auto px-4 max-w-2xl">
         <h2
-          class="futurist-font text-4xl text-center mb-4 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent dark:from-white dark:to-red-400"
+          class="futurist-font text-4xl text-center mb-4 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
         >
           CONTACT RAPIDE
         </h2>
-        <p class="text-center text-gray-600 dark:text-gray-400 mb-12">
-          Un seul email suffit
-        </p>
+        <p class="text-center text-gray-600 mb-12">Un seul email suffit</p>
 
         <form
           id="contact-form"
@@ -439,82 +335,32 @@
     </section>
 
     <script>
-      // Configuration Three.js pour les particules
-      function initParticles() {
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(
-          75,
-          window.innerWidth / window.innerHeight,
-          0.1,
-          1000
-        );
-        const renderer = new THREE.WebGLRenderer({ alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document
-          .getElementById("particles-js")
-          .appendChild(renderer.domElement);
-
-        const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 1500;
-        const posArray = new Float32Array(particlesCount * 3);
-
-        for (let i = 0; i < particlesCount * 3; i++) {
-          posArray[i] = (Math.random() - 0.5) * 10;
-        }
-
-        particlesGeometry.setAttribute(
-          "position",
-          new THREE.BufferAttribute(posArray, 3)
-        );
-        const particlesMaterial = new THREE.PointsMaterial({
-          size: 0.005,
-          color: "#ff0000",
-        });
-
-        const particlesMesh = new THREE.Points(
-          particlesGeometry,
-          particlesMaterial
-        );
-        scene.add(particlesMesh);
-        camera.position.z = 2;
-
-        function animate() {
-          requestAnimationFrame(animate);
-          particlesMesh.rotation.x += 0.0005;
-          particlesMesh.rotation.y += 0.001;
-          renderer.render(scene, camera);
-        }
-        animate();
-
-        window.addEventListener("resize", () => {
-          camera.aspect = window.innerWidth / window.innerHeight;
-          camera.updateProjectionMatrix();
-          renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-      }
-
-      // Données des marques
+      // Données des marques avec chemins d'images
       const brands = [
-        "Peugeot",
-        "PIAGGIO",
-        "CFMOTO",
-        "ZIMOTA MOTOR",
-        "QJMOTOR",
-        "SUZUKI",
-        "SYM",
-        "FORZA MOTOR SPORT",
-        "UNISCOOT",
-        "KYMCO",
-        "ZONTES",
-        "KAYCO",
-        "FTM",
-        "YADEA",
-        "SLC",
-        "SENKE",
-        "SANYA",
-        "POWER",
-        "LM",
-        "MOTO STAR",
+        { name: "Peugeot", logo: "./img/logos/peugeot.png" },
+        { name: "PIAGGIO", logo: "./img/logos/piaggio.png" },
+        { name: "CFMOTO", logo: "./img/logos/cfmoto.png" },
+        { name: "ZIMOTA MOTOR", logo: "./img/logos/zimota.png" },
+        { name: "QJMOTOR", logo: "./img/logos/qjmotor.png" },
+        { name: "SUZUKI", logo: "./img/logos/suzuki.png" },
+        { name: "SYM", logo: "./img/logos/sym.png" },
+        { name: "FORZA MOTOR SPORT", logo: "./img/logos/forza.png" },
+        { name: "UNISCOOT", logo: "./img/logos/uniscoot.png" },
+        { name: "KYMCO", logo: "./img/logos/kymco.png" },
+        { name: "ZONTES", logo: "./img/logos/zontes.png" },
+        { name: "KAYCO", logo: "./img/logos/kayco.png" },
+        { name: "FTM", logo: "./img/logos/ftm.png" },
+        { name: "YADEA", logo: "./img/logos/yadea.png" },
+        { name: "SLC", logo: "./img/logos/slc.png" },
+        { name: "SENKE", logo: "./img/logos/senke.png" },
+        { name: "SANYA", logo: "./img/logos/sanya.png" },
+        { name: "POWER", logo: "./img/logos/power.png" },
+        { name: "LM", logo: "./img/logos/lm.png" },
+        { name: "MOTO STAR", logo: "./img/logos/moto-star.png" },
+        { name: "WOLF", logo: "./img/logos/wolf.png" },
+        { name: "E-RIDER", logo: "./img/logos/e-rider.png" },
+        { name: "NOVAGO", logo: "./img/logos/novago.png" },
+        { name: "DAYUN", logo: "./img/logos/dayun.png" },
       ];
 
       // Données des modèles
@@ -522,16 +368,14 @@
         Peugeot: [
           {
             name: "Django 125 Sport",
-            image:
-              "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&w=400&h=300&fit=crop",
+            image: "./img/models/peugeot-django-125.jpg",
             price: "8,900 TND",
             type: "Essence",
             status: "Disponible",
           },
           {
             name: "Django 150 Racing",
-            image:
-              "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&w=400&h=300&fit=crop",
+            image: "./img/models/peugeot-django-150.jpg",
             price: "9,500 TND",
             type: "Essence",
             status: "En arrivage",
@@ -540,16 +384,14 @@
         SUZUKI: [
           {
             name: "GSX-R150 Supersport",
-            image:
-              "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&w=400&h=300&fit=crop",
+            image: "./img/models/suzuki-gsxr150.jpg",
             price: "12,800 TND",
             type: "Essence",
             status: "Disponible",
           },
           {
             name: "GSX-S150 Street",
-            image:
-              "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&w=400&h=300&fit=crop",
+            image: "./img/models/suzuki-gsxs150.jpg",
             price: "11,900 TND",
             type: "Essence",
             status: "Disponible",
@@ -559,41 +401,11 @@
 
       // Initialisation
       document.addEventListener("DOMContentLoaded", function () {
-        initParticles();
-        initDarkMode();
         initSlider();
         renderBrands();
         initViewToggle();
         initContactForm();
       });
-
-      // Dark Mode corrigé
-      function initDarkMode() {
-        const toggle = document.getElementById("darkModeToggle");
-        const body = document.body;
-
-        if (localStorage.getItem("darkMode") === "enabled") {
-          body.classList.add("dark-mode");
-          body.classList.remove("light-mode");
-          toggle.querySelector(".light-mode-text").classList.add("hidden");
-          toggle.querySelector(".dark-mode-text").classList.remove("hidden");
-        }
-
-        toggle.addEventListener("click", () => {
-          body.classList.toggle("dark-mode");
-          body.classList.toggle("light-mode");
-
-          if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-            toggle.querySelector(".light-mode-text").classList.add("hidden");
-            toggle.querySelector(".dark-mode-text").classList.remove("hidden");
-          } else {
-            localStorage.setItem("darkMode", "disabled");
-            toggle.querySelector(".light-mode-text").classList.remove("hidden");
-            toggle.querySelector(".dark-mode-text").classList.add("hidden");
-          }
-        });
-      }
 
       // Slider automatique
       function initSlider() {
@@ -621,38 +433,23 @@
         setInterval(nextSlide, 6000);
       }
 
-      // Affichage des marques avec forme de moto
+      // Affichage des logos des marques
       function renderBrands() {
         const container = document.getElementById("brands-container");
 
         brands.forEach((brand) => {
           const brandCard = document.createElement("div");
-          brandCard.className =
-            "brand-moto-card group cursor-pointer w-full max-w-sm";
+          brandCard.className = "brand-logo-card group cursor-pointer";
           brandCard.innerHTML = `
-                    <div class="moto-silhouette-bg"></div>
-                    <div class="relative z-10 text-center">
-                        <div class="h-16 mb-3 flex items-center justify-center">
-                            <!-- Votre logo ici -->
-                            <div class="text-xl font-bold text-gray-800 dark:text-gray-200 futurist-font tracking-wider">
-                                ${
-                                  brand.length > 12
-                                    ? brand.split(" ")[0]
-                                    : brand
-                                }
-                            </div>
-                        </div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400 font-semibold">
-                            ${
-                              brand.split(" ").length > 1
-                                ? brand.split(" ").slice(1).join(" ")
-                                : "MOTOR"
-                            }
-                        </div>
-                    </div>
-                `;
+            <img 
+              src="${brand.logo}" 
+              alt="${brand.name}" 
+              class="brand-logo-img"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'text-center\\'><div class=\\'text-lg font-bold text-gray-800\\'>${brand.name}</div></div>'"
+            >
+          `;
 
-          brandCard.addEventListener("click", () => showModels(brand));
+          brandCard.addEventListener("click", () => showModels(brand.name));
           container.appendChild(brandCard);
         });
       }
@@ -671,44 +468,42 @@
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
             modelCard.innerHTML = `
-                        <img src="${model.image}" alt="${
+              <img src="${model.image}" alt="${
               model.name
-            }" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="futurist-font text-xl mb-3">${
-                              model.name
-                            }</h3>
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-red-600 font-bold text-lg">${
-                                  model.price
-                                }</span>
-                                <span class="px-3 py-1 rounded-full text-xs font-semibold ${
-                                  model.type === "Électrique"
-                                    ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                                    : "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
-                                }">
-                                    ${model.type}
-                                </span>
-                            </div>
-                            <div class="text-sm font-semibold ${
-                              model.status === "Disponible"
-                                ? "text-green-600 dark:text-green-400"
-                                : "text-blue-600 dark:text-blue-400"
-                            }">
-                                ${model.status}
-                            </div>
-                        </div>
-                    `;
+            }" class="w-full h-48 object-cover" onerror="this.src='./img/placeholder-moto.jpg'">
+              <div class="p-6">
+                <h3 class="futurist-font text-xl mb-3">${model.name}</h3>
+                <div class="flex justify-between items-center mb-3">
+                  <span class="text-red-600 font-bold text-lg">${
+                    model.price
+                  }</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-semibold ${
+                    model.type === "Électrique"
+                      ? "bg-green-100 text-green-800"
+                      : "bg-orange-100 text-orange-800"
+                  }">
+                    ${model.type}
+                  </span>
+                </div>
+                <div class="text-sm font-semibold ${
+                  model.status === "Disponible"
+                    ? "text-green-600"
+                    : "text-blue-600"
+                }">
+                  ${model.status}
+                </div>
+              </div>
+            `;
             container.appendChild(modelCard);
           });
         } else {
           container.innerHTML = `
-                    <div class="col-span-full text-center py-12">
-                        <div class="text-6xl mb-4">🏍️</div>
-                        <p class="text-xl text-gray-600 dark:text-gray-400">Modèles en préparation</p>
-                        <p class="text-gray-500 dark:text-gray-500">Bientôt disponible</p>
-                    </div>
-                `;
+            <div class="col-span-full text-center py-12">
+              <div class="text-6xl mb-4">🏍️</div>
+              <p class="text-xl text-gray-600">Modèles en préparation</p>
+              <p class="text-gray-500">Bientôt disponible</p>
+            </div>
+          `;
         }
 
         section.classList.remove("hidden");
@@ -724,10 +519,10 @@
           option.addEventListener("click", function () {
             options.forEach((opt) => {
               opt.classList.remove("active", "bg-red-600", "text-white");
-              opt.classList.add("text-gray-600", "dark:text-gray-400");
+              opt.classList.add("text-gray-600");
             });
             this.classList.add("active", "bg-red-600", "text-white");
-            this.classList.remove("text-gray-600", "dark:text-gray-400");
+            this.classList.remove("text-gray-600");
 
             if (this.dataset.view === "list") {
               container.classList.remove(
