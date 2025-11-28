@@ -10,7 +10,7 @@
 
     <!-- Google Fonts futuristes -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
       rel="stylesheet"
     />
 
@@ -34,6 +34,36 @@
       .futurist-font {
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
+      }
+
+      /* Logo sportif */
+      .logo-sport {
+        font-family: "Racing Sans One", cursive;
+        font-weight: 400;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .logo-actu {
+        color: #ff0000;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-moto {
+        color: #000000;
+        position: relative;
+      }
+
+      .logo-moto::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #ff0000, #000000);
+        border-radius: 2px;
       }
 
       /* Effet futuriste pour le header */
@@ -184,9 +214,11 @@
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-4">
-            <!-- Logo - Dimensions: 200x50px -->
-
-            <span class="futurist-font text-2xl text-red-600">ACTUMOTO.TN</span>
+            <!-- Nouveau Logo Texte -->
+            <div class="logo-sport">
+              <span class="logo-actu">ACTU</span>
+              <span class="logo-moto">MOTO.TN</span>
+            </div>
           </div>
         </div>
       </div>
@@ -228,12 +260,6 @@
     <!-- Section Marques -->
     <section class="py-20 relative">
       <div class="container mx-auto px-4">
-        <h2
-          class="futurist-font text-4xl md:text-5xl text-center mb-16 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
-        >
-          NOS MARQUES EXCLUSIVES
-        </h2>
-
         <div id="brands-container" class="brands-grid">
           <!-- Les logos seront générés par JavaScript -->
         </div>
@@ -261,7 +287,7 @@
               class="view-option px-4 py-2 rounded-md transition-all duration-300 active bg-red-600 text-white"
               data-view="grid"
             >
-              🟦 VUE GRID
+              🟦 VUE GRILLE
             </button>
             <button
               class="view-option px-4 py-2 rounded-md transition-all duration-300"
