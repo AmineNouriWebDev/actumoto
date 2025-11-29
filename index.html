@@ -366,7 +366,7 @@
         { name: "QJMOTOR", logo: "./img/logos/qjmotor.png" },
         { name: "SUZUKI", logo: "./img/logos/suzuki.png" },
         { name: "SYM", logo: "./img/logos/sym.png" },
-        { name: "FORZA MOTOR SPORT", logo: "./img/logos/forza.png" },
+        { name: "FORZA_MOTOR_SPORT", logo: "./img/logos/forza.png" },
         { name: "UNISCOOT", logo: "./img/logos/uniscoot.png" },
         { name: "KYMCO", logo: "./img/logos/kymco.png" },
         { name: "ZONTES", logo: "./img/logos/zontes.png" },
@@ -536,6 +536,109 @@
             type: "Essence",
             status: "Disponible",
           },
+          {
+            name: "Motocycle ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR - Bronze ",
+            image: "./img/models/zimota-superlight-qjmotor-cbs-125-noir.jpg",
+            price: "7,499 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "Motocycle ZIMOTA QJ MOTOR SRK 125 S 125CC Injection NOIR ",
+            image:
+              "./img/models/zimota-qj-motor-srk-125-s-125cc-injection-noir.jpg",
+            price: "10,999 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "Cyclomoteur ZIMOTA TARGET 125CC - Bleu ",
+            image: "./img/models/zimota-target-125-bleu.jpg",
+            price: "3,999 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+        ],
+        SYM: [
+          {
+            name: "SYM SYMPHONY SR 125 CBS - 125 CC - BLANC - Noir",
+            image: "./img/models/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg",
+            price: "6,579 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "SYM SYMPHONY S 125 - 125 CC - BLANC ",
+            image: "./img/models/sym-symphony-s-125-blanc.jpg",
+            price: "6,579 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "SYM SYMPHONY ST 125 CBS E5 - injection - Noir ",
+            image: "./img/models/sym-symphony-st-125-cbs-e5-injection-noir.jpg",
+            price: "7,999 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "SYM JET 14 125 AC E5 - 125 CC - NOIR - GRIS ",
+            image: "./img/models/sym-jet-14-125-ac-e5-noir.jpg",
+            price: "8,699 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "SYM SYMPHONY ST 200 ABS E5 200cc injection - BLEU - BLANC",
+            image:
+              "./img/models/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg",
+            price: "14,999 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "SYM JET 4 RX 125 - 124cc - Gris",
+            image: "./img/models/sym-jet-4-rx-124-gris.jpg",
+            price: "6,199 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+        ],
+        CFMOTO: [
+          {
+            name: "Motocycle CFMOTO 450MT - 450CC",
+            image: "./img/models/CFMOTO-450MT.jpg",
+            price: "-,-- TND",
+            type: "Essence",
+            status: "En Arrivage",
+          },
+        ],
+
+        FORZA_MOTOR_SPORT: [
+          {
+            name: "FORZA BBM Forza Compteur Digital 125CC - NOIR",
+            image:
+              "./img/models/forza-bbm-forza-compteur-digital-125cc-noir.jpg",
+            price: "2,849 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "Forza MotoStars FIRST MAXIII 3- 125CC - DIGITAL Gris",
+            image:
+              "./img/models/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg",
+            price: "2,899 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
+          {
+            name: "FORZA BBM Forza Compteur Digital 107CC new- NOIR",
+            image:
+              "./img/models/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg",
+            price: "2,799 TND",
+            type: "Essence",
+            status: "Disponible",
+          },
         ],
       };
 
@@ -583,7 +686,7 @@
             modelCard.innerHTML = `
               <img src="${model.image}" alt="${
               model.name
-            }" class="w-full h-48 object-cover" onerror="this.src='./img/placeholder-moto.jpg'">
+            }" class="w-full h-72 object-cover" onerror="this.src='./img/placeholder-moto.jpg'">
               <div class="p-6">
                 <h3 class="futurist-font text-xl mb-3">${model.name}</h3>
                 <div class="flex justify-between items-center mb-3">
