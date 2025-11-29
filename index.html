@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>actumoto.tn - L'avenir de la mobilité</title>
-
+    <link rel="icon" href="./img/icon.ico" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -68,7 +68,7 @@
 
       /* Effet futuriste pour le header */
       .header-futurist {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(10, 10, 10, 0.95);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 0, 0, 0.1);
       }
@@ -117,45 +117,31 @@
         align-items: center;
       }
 
-      /* Slider futuriste */
-      .futurist-slider {
+      /* Hero Section Fixe */
+      .hero-section {
         height: 70vh;
         position: relative;
         overflow: hidden;
         background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-      }
-
-      .slide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
         background-size: cover;
         background-position: center;
       }
 
-      .slide.active {
-        opacity: 1;
+      /* Section Accessories */
+      .accessories-section {
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
       }
 
-      .loading-timer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      .loading-progress {
-        height: 100%;
-        background: linear-gradient(90deg, #ff0000, #ff6b6b);
-        width: 100%;
-        transform: scaleX(0);
-        transform-origin: left;
+      .accessories-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
       }
 
       /* Section modèles */
@@ -214,46 +200,31 @@
       <div class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <div class="flex items-center space-x-4">
-            <!-- Nouveau Logo Texte -->
-            <div class="logo-sport">
-              <span class="logo-actu">ACTU</span>
-              <span class="logo-moto">MOTO.TN</span>
-            </div>
+            <!-- Logo Image -->
+            <img
+              src="./img/logo-actumoto.jpeg"
+              alt="actumoto.tn"
+              class="h-16"
+            />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Hero Slider -->
-    <section class="futurist-slider mt-16">
-      <div
-        class="slide active"
-        style="background-image: url('./img/slide-avenir.png')"
-      >
-        <div
-          class="absolute inset-0 bg-black/40 flex items-center justify-center"
-        >
-          <div class="text-center text-white">
-            <h1 class="futurist-font text-5xl md:text-7xl mb-4">L'AVENIR</h1>
-            <p class="text-xl md:text-2xl">de la mobilité commence ici</p>
-          </div>
+    <!-- Hero Section Fixe -->
+    <section
+      class="hero-section mt-16"
+      style="background-image: url('./img/banner-actumoto.png')"
+    >
+      <div class="absolute inset-0 bg-black/0 flex items-center justify-center">
+        <div class="text-center text-white">
+          <h1 class="futurist-font text-5xl md:text-7xl mb-4">
+            CATALOGUE MOTO TUNISIE
+          </h1>
+          <p class="text-xl md:text-2xl">
+            Découvrez les derniers modèles de moto neuves
+          </p>
         </div>
-      </div>
-      <div
-        class="slide"
-        style="background-image: url('./img/slide-electrique.png')"
-      >
-        <div
-          class="absolute inset-0 bg-black/40 flex items-center justify-center"
-        >
-          <div class="text-center text-white">
-            <h1 class="futurist-font text-5xl md:text-7xl mb-4">ÉLECTRIQUE</h1>
-            <p class="text-xl md:text-2xl">Performance et écologie</p>
-          </div>
-        </div>
-      </div>
-      <div class="loading-timer">
-        <div class="loading-progress"></div>
       </div>
     </section>
 
@@ -304,6 +275,36 @@
         >
           <!-- Modèles chargés dynamiquement -->
         </div>
+      </div>
+    </section>
+
+    <!-- Section Pièces et Accessoires -->
+    <section class="py-1">
+      <div class="container mx-auto px-4">
+        <h2
+          class="futurist-font text-4xl text-center mb-12 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
+        >
+          PIÈCES ET ACCESSOIRES
+        </h2>
+        <a href="https://motorsports.simcc.tn/" target="_blank" class="block">
+          <div
+            class="accessories-section rounded-xl"
+            style="background-image: url('./img/banner-simcc.jpeg')"
+          >
+            <div
+              class="absolute inset-0 bg-black/10 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <h3 class="futurist-font text-3xl md:text-5xl mb-4">
+                  CLIQUEZ ICI
+                </h3>
+                <p class="text-lg md:text-xl">
+                  Découvrez notre gamme complète de pièces et accessoires
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -540,37 +541,10 @@
 
       // Initialisation
       document.addEventListener("DOMContentLoaded", function () {
-        initSlider();
         renderBrands();
         initViewToggle();
         initContactForm();
       });
-
-      // Slider automatique
-      function initSlider() {
-        const slides = document.querySelectorAll(".slide");
-        const progressBar = document.querySelector(".loading-progress");
-        let currentSlide = 0;
-
-        function nextSlide() {
-          slides[currentSlide].classList.remove("active");
-          currentSlide = (currentSlide + 1) % slides.length;
-          slides[currentSlide].classList.add("active");
-
-          // Reset et animation de la barre de progression
-          progressBar.style.transition = "none";
-          progressBar.style.transform = "scaleX(0)";
-          setTimeout(() => {
-            progressBar.style.transition = "transform 6s linear";
-            progressBar.style.transform = "scaleX(1)";
-          }, 50);
-        }
-
-        // Démarrer l'animation de la barre
-        progressBar.style.transform = "scaleX(1)";
-
-        setInterval(nextSlide, 6000);
-      }
 
       // Affichage des logos des marques
       function renderBrands() {
