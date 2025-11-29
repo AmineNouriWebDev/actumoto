@@ -68,7 +68,7 @@
 
       /* Effet futuriste pour le header */
       .header-futurist {
-        background: rgba(10, 10, 10, 0.95);
+        background: rgba(0, 0, 0, 0.98);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 0, 0, 0.1);
       }
@@ -120,9 +120,9 @@
       /* Hero Section Fixe */
       .hero-section {
         height: 70vh;
+        min-height: 500px;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
         background-size: cover;
         background-position: center;
       }
@@ -130,9 +130,9 @@
       /* Section Accessories */
       .accessories-section {
         height: 50vh;
+        min-height: 400px;
         position: relative;
         overflow: hidden;
-        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
         background-size: cover;
         background-position: center;
         cursor: pointer;
@@ -152,6 +152,7 @@
         overflow: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
       }
 
       .model-card:hover {
@@ -192,36 +193,121 @@
         transform: translateY(-2px);
         box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
       }
+
+      /* Modal pour l'image en plein écran */
+      .image-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-modal.active {
+        display: flex;
+      }
+
+      .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+      }
+
+      .modal-image {
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+
+      .close-modal {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Footer */
+      .footer {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: white;
+        padding: 2rem 0;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero-section {
+          height: 50vh;
+          min-height: 300px;
+          background-position: center 30%;
+        }
+
+        .accessories-section {
+          height: 40vh;
+          min-height: 250px;
+          background-position: center 30%;
+        }
+
+        .header-logo {
+          height: 3rem;
+        }
+      }
     </style>
   </head>
   <body>
     <!-- Header -->
     <header class="header-futurist fixed w-full top-0 z-50">
-      <div class="container mx-auto px-4 py-4">
+      <div class="container mx-auto px-4 py-2">
         <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-4">
+          <div class="flex items-center">
             <!-- Logo Image -->
             <img
               src="./img/logo-actumoto.jpeg"
               alt="actumoto.tn"
-              class="h-16"
+              class="header-logo h-20"
             />
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Modal pour images en plein écran -->
+    <div id="imageModal" class="image-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <img id="modalImage" src="" alt="" class="modal-image" />
+      </div>
+    </div>
+
     <!-- Hero Section Fixe -->
     <section
-      class="hero-section mt-16"
+      class="hero-section mt-20"
       style="background-image: url('./img/banner-actumoto.png')"
     >
-      <div class="absolute inset-0 bg-black/0 flex items-center justify-center">
+      <div
+        class="absolute inset-0 bg-black/20 flex items-center justify-center"
+      >
         <div class="text-center text-white">
-          <h1 class="futurist-font text-5xl md:text-7xl mb-4">
+          <h1 class="futurist-font text-4xl md:text-7xl mb-4">
             CATALOGUE MOTO TUNISIE
           </h1>
-          <p class="text-xl md:text-2xl">
+          <p class="text-lg md:text-2xl">
             Découvrez les derniers modèles de moto neuves
           </p>
         </div>
@@ -355,6 +441,50 @@
         </form>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p class="text-sm md:text-base">
+              Copyright © 2024 actumoto.tn - Tous droits réservés
+            </p>
+            <p class="text-xs md:text-sm text-gray-400 mt-1">
+              by
+              <a
+                href="https://maxsolving.com"
+                target="_blank"
+                class="text-red-400 hover:text-red-300 transition-colors"
+                >maxsolving</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-red-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <a
+              href="mailto:marwenmahroug@gmail.com"
+              class="text-sm md:text-base text-white hover:text-red-300 transition-colors"
+            >
+              marwenmahroug@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
       // Données des marques avec chemins d'images
@@ -860,6 +990,7 @@
         renderBrands();
         initViewToggle();
         initContactForm();
+        initImageModal();
       });
 
       // Affichage des logos des marques
@@ -899,7 +1030,9 @@
             modelCard.innerHTML = `
               <img src="${model.image}" alt="${
               model.name
-            }" class="w-full h-72 object-cover" onerror="this.src='./img/placeholder-moto.jpg'">
+            }" class="w-full h-72 object-cover model-image" data-image="${
+              model.image
+            }" onerror="this.src='./img/placeholder-moto.jpg'">
               <div class="p-6">
                 <h3 class="futurist-font text-xl mb-3">${model.name}</h3>
                 <div class="flex justify-between items-center mb-3">
@@ -924,6 +1057,13 @@
               </div>
             `;
             container.appendChild(modelCard);
+          });
+
+          // Ajouter les événements pour le modal d'image
+          document.querySelectorAll(".model-image").forEach((img) => {
+            img.addEventListener("click", function () {
+              openImageModal(this.dataset.image);
+            });
           });
         } else {
           container.innerHTML = `
@@ -993,6 +1133,40 @@
           alert("Message envoyé avec succès! Nous vous répondrons rapidement.");
           form.reset();
         });
+      }
+
+      // Modal pour images en plein écran
+      function initImageModal() {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const closeModal = document.querySelector(".close-modal");
+
+        // Fermer le modal
+        closeModal.addEventListener("click", function () {
+          modal.classList.remove("active");
+        });
+
+        // Fermer en cliquant en dehors de l'image
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("active");
+          }
+        });
+
+        // Fermer avec la touche Echap
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            modal.classList.remove("active");
+          }
+        });
+      }
+
+      function openImageModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = imageSrc;
+        modal.classList.add("active");
       }
     </script>
   </body>
