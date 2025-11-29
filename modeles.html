@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modèles - actumoto.tn</title>
+    <link rel="icon" href="./img/icon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-red: #ff0000;
+        --primary-black: #0a0a0a;
+        --primary-white: #ffffff;
+      }
+
+      body {
+        font-family: "Rajdhani", sans-serif;
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      }
+
+      h1,
+      h2,
+      h3,
+      .futurist-font {
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+      }
+
+      .header-futurist {
+        background: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+      }
+
+      .model-card {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(255, 0, 0, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .model-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
+      }
+
+      .image-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-modal.active {
+        display: flex;
+      }
+
+      @media (max-width: 768px) {
+        .model-card img {
+          height: 200px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-futurist fixed w-full top-0 z-50">
+      <div class="container mx-auto px-4 py-2">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="./img/logo-actumoto.jpeg"
+                alt="actumoto.tn"
+                class="header-logo h-16 md:h-20"
+              />
+            </a>
+          </div>
+          <a
+            href="index.html"
+            class="text-white hover:text-red-400 transition-colors text-sm md:text-base"
+          >
+            ← Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal pour images -->
+    <div id="imageModal" class="image-modal">
+      <div class="modal-content relative">
+        <button
+          class="close-modal absolute top-4 right-4 bg-red-600 text-white w-8 h-8 rounded-full z-10"
+        >
+          &times;
+        </button>
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+          class="modal-image max-w-full max-h-full"
+        />
+      </div>
+    </div>
+
+    <!-- Section Modèles -->
+    <section class="pt-24 pb-8">
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4"
+        >
+          <div>
+            <h1
+              id="selected-brand"
+              class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2"
+            ></h1>
+            <p id="models-count" class="text-gray-600"></p>
+          </div>
+
+          <div
+            class="flex space-x-2 bg-white/80 rounded-lg p-1 backdrop-blur-sm"
+          >
+            <button
+              class="view-option px-4 py-2 rounded-md transition-all duration-300 active bg-red-600 text-white"
+              data-view="grid"
+            >
+              🟦 VUE GRILLE
+            </button>
+            <button
+              class="view-option px-4 py-2 rounded-md transition-all duration-300 text-gray-600"
+              data-view="list"
+            >
+              📃 VUE LISTE
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="models-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Modèles chargés dynamiquement -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black text-white py-8 mt-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p class="text-sm md:text-base">
+              Copyright © 2025 actumoto.tn - Tous droits réservés
+            </p>
+            <p class="text-xs md:text-sm text-gray-400 mt-1">
+              by
+              <a
+                href="https://maxsolving.com"
+                target="_blank"
+                class="text-red-400 hover:text-red-300 transition-colors"
+                >maxsolving</a
+              >
+            </p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-red-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <a
+              href="mailto:marwenmahroug@gmail.com"
+              class="text-sm md:text-base text-white hover:text-red-300 transition-colors"
+            >
+              marwenmahroug@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Charger les données et le script -->
+    <script src="data.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        initPage();
+        initViewToggle();
+        initImageModal();
+      });
+
+      function initPage() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const brandParam = urlParams.get("marque");
+
+        if (brandParam && modelsData[brandParam]) {
+          showModels(brandParam);
+        } else {
+          // Redirection si marque non trouvée
+          window.location.href = "index.html";
+        }
+      }
+
+      function showModels(brand) {
+        const title = document.getElementById("selected-brand");
+        const count = document.getElementById("models-count");
+        const container = document.getElementById("models-container");
+
+        title.textContent = brand.toUpperCase();
+        count.textContent = `${modelsData[brand].length} modèle(s) disponible(s)`;
+        container.innerHTML = "";
+
+        if (modelsData[brand]) {
+          modelsData[brand].forEach((model) => {
+            const modelCard = document.createElement("div");
+            modelCard.className = "model-card";
+            modelCard.innerHTML = `
+                        <img src="${model.image}" alt="${model.name}" 
+                             class="w-full h-64 object-cover model-image cursor-pointer" 
+                             data-image="${model.image}" 
+                             onerror="this.src='./img/placeholder-moto.jpg'">
+                        <div class="p-6">
+                            <h3 class="futurist-font text-xl mb-3">${
+                              model.name
+                            }</h3>
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-red-600 font-bold text-lg">${
+                                  model.price
+                                }</span>
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold ${
+                                  model.type === "Électrique"
+                                    ? "bg-green-100 text-green-800"
+                                    : "bg-orange-100 text-orange-800"
+                                }">
+                                    ${model.type}
+                                </span>
+                            </div>
+                            <div class="text-sm font-semibold ${
+                              model.status === "Disponible"
+                                ? "text-green-600"
+                                : "text-blue-600"
+                            }">
+                                ${model.status}
+                            </div>
+                        </div>
+                    `;
+            container.appendChild(modelCard);
+          });
+
+          // Ajouter les événements pour le modal d'image
+          document.querySelectorAll(".model-image").forEach((img) => {
+            img.addEventListener("click", function () {
+              openImageModal(this.dataset.image);
+            });
+          });
+        }
+      }
+
+      function initViewToggle() {
+        const options = document.querySelectorAll(".view-option");
+        const container = document.getElementById("models-container");
+
+        options.forEach((option) => {
+          option.addEventListener("click", function () {
+            options.forEach((opt) => {
+              opt.classList.remove("active", "bg-red-600", "text-white");
+              opt.classList.add("text-gray-600");
+            });
+            this.classList.add("active", "bg-red-600", "text-white");
+            this.classList.remove("text-gray-600");
+
+            if (this.dataset.view === "list") {
+              container.classList.remove(
+                "grid-cols-1",
+                "md:grid-cols-2",
+                "lg:grid-cols-3"
+              );
+              container.classList.add("flex", "flex-col", "space-y-6");
+              container.querySelectorAll(".model-card").forEach((card) => {
+                card.classList.add("flex");
+                card
+                  .querySelector("img")
+                  .classList.add("w-64", "h-auto", "flex-shrink-0");
+              });
+            } else {
+              container.classList.add(
+                "grid-cols-1",
+                "md:grid-cols-2",
+                "lg:grid-cols-3"
+              );
+              container.classList.remove("flex", "flex-col", "space-y-6");
+              container.querySelectorAll(".model-card").forEach((card) => {
+                card.classList.remove("flex");
+                card
+                  .querySelector("img")
+                  .classList.remove("w-64", "h-auto", "flex-shrink-0");
+              });
+            }
+          });
+        });
+      }
+
+      function initImageModal() {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const closeModal = document.querySelector(".close-modal");
+
+        closeModal.addEventListener("click", function () {
+          modal.classList.remove("active");
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("active");
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            modal.classList.remove("active");
+          }
+        });
+      }
+
+      function openImageModal(imageSrc) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+
+        modalImage.src = imageSrc;
+        modal.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

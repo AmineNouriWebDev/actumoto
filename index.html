@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>actumoto.tn - L'avenir de la mobilité</title>
     <link rel="icon" href="./img/icon.ico" />
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts futuristes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
       rel="stylesheet"
@@ -19,8 +16,6 @@
         --primary-red: #ff0000;
         --primary-black: #0a0a0a;
         --primary-white: #ffffff;
-        --neon-glow: 0 0 10px rgba(255, 0, 0, 0.5),
-          0 0 20px rgba(255, 0, 0, 0.3);
       }
 
       body {
@@ -36,44 +31,12 @@
         font-weight: 700;
       }
 
-      /* Logo sportif */
-      .logo-sport {
-        font-family: "Racing Sans One", cursive;
-        font-weight: 400;
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-      }
-
-      .logo-actu {
-        color: #ff0000;
-        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-      }
-
-      .logo-moto {
-        color: #000000;
-        position: relative;
-      }
-
-      .logo-moto::after {
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background: linear-gradient(90deg, #ff0000, #000000);
-        border-radius: 2px;
-      }
-
-      /* Effet futuriste pour le header */
       .header-futurist {
         background: rgba(0, 0, 0, 0.98);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 0, 0, 0.1);
       }
 
-      /* Style pour les logos - simple et épuré */
       .brand-logo-card {
         background: transparent;
         padding: 1.5rem;
@@ -94,9 +57,9 @@
       }
 
       .brand-logo-img {
-        width: 180px !important; /* Largeur fixe */
-        height: 80px !important; /* Hauteur fixe */
-        object-fit: contain; /* Conserve les proportions sans déformation */
+        width: 180px !important;
+        height: 80px !important;
+        object-fit: contain;
         filter: grayscale(30%);
         transition: all 0.3s ease;
       }
@@ -106,7 +69,6 @@
         transform: scale(1.05);
       }
 
-      /* Grille responsive centrée */
       .brands-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,26 +77,28 @@
         align-items: center;
       }
 
-      /* Hero Section Fixe */
       .hero-section {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         height: 70vh;
         min-height: 500px;
         position: relative;
         overflow: hidden;
-        background-size: cover;
-        background-position: center;
       }
 
-      /* Section Accessories */
       .accessories-section {
-        height: 50vh;
-        min-height: 400px;
-        position: relative;
-        overflow: hidden;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        height: 40vh;
+        min-height: 300px;
+        position: relative;
+        overflow: hidden;
         cursor: pointer;
         transition: all 0.3s ease;
+        width: 100%;
+        border-radius: 0;
       }
 
       .accessories-section:hover {
@@ -142,23 +106,6 @@
         box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
       }
 
-      /* Section modèles */
-      .model-card {
-        background: rgba(255, 255, 255, 0.9);
-        border: 1px solid rgba(255, 0, 0, 0.1);
-        border-radius: 12px;
-        overflow: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-      }
-
-      .model-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
-      }
-
-      /* Formulaire futuriste */
       .futurist-input {
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(255, 0, 0, 0.2);
@@ -192,88 +139,75 @@
         box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
       }
 
-      /* Modal pour l'image en plein écran */
-      .image-modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.95);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
+      @media (max-width: 767px) {
+        .brands-grid {
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 0.5rem !important;
+        }
+
+        .brand-logo-card {
+          padding: 0.8rem !important;
+          height: 100px !important;
+          margin: 0.2rem;
+        }
+
+        .brand-logo-img {
+          width: 100px !important;
+          height: 50px !important;
+          max-width: 100%;
+        }
+
+        .header-logo {
+          height: 3.5rem !important;
+        }
+
+        .hero-section {
+          margin-top: 5rem !important;
+          height: 40vh !important;
+          min-height: 250px !important;
+          background-position: 65% center !important;
+        }
+
+        .accessories-section {
+          height: 30vh !important;
+          min-height: 200px !important;
+          border-radius: 0 !important;
+          margin-left: -1rem !important;
+          margin-right: -1rem !important;
+          width: calc(100% + 2rem) !important;
+        }
+
+        /* Centrer le logo en mobile */
+        .header-container {
+          display: flex !important;
+          justify-content: center !important;
+        }
       }
 
-      .image-modal.active {
-        display: flex;
+      @media (max-width: 480px) {
+        .hero-section {
+          background-position: 70% center !important;
+        }
       }
 
-      .modal-content {
-        max-width: 90%;
-        max-height: 90%;
-        position: relative;
-      }
-
-      .modal-image {
-        width: 100%;
-        height: auto;
-        max-height: 80vh;
-        object-fit: contain;
-        border-radius: 8px;
-      }
-
-      .close-modal {
-        position: absolute;
-        top: -40px;
-        right: 0;
-        background: #ff0000;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        font-size: 18px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      /* Footer */
-      .footer {
-        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-        color: white;
-        padding: 2rem 0;
-      }
-
-      /* Responsive adjustments */
       @media (max-width: 768px) {
         .hero-section {
           height: 50vh;
           min-height: 300px;
-          background-position: center 30%;
+          background-position: 60% center;
         }
 
         .accessories-section {
-          height: 40vh;
+          height: 35vh;
           min-height: 250px;
-          background-position: center 30%;
         }
+      }
 
-        .header-logo {
-          height: 3rem;
-        }
-        @media (max-width: 767px) {
-          .brands-grid {
-            grid-template-columns: repeat(
-              3,
-              1fr
-            ) !important; /* 3 colonnes de taille égale */
-            gap: 1rem; /* Ajustez l'espace entre les logos si nécessaire */
-          }
-        }
+      /* Correction spécifique pour les bannières */
+      .full-width-banner {
+        margin-left: -1rem !important;
+        margin-right: -1rem !important;
+        width: calc(100% + 2rem) !important;
       }
     </style>
   </head>
@@ -281,9 +215,8 @@
     <!-- Header -->
     <header class="header-futurist fixed w-full top-0 z-50">
       <div class="container mx-auto px-4 py-2">
-        <div class="flex justify-between items-center">
+        <div class="header-container flex justify-between items-center">
           <div class="flex items-center">
-            <!-- Logo Image -->
             <img
               src="./img/logo-actumoto.jpeg"
               alt="actumoto.tn"
@@ -294,80 +227,20 @@
       </div>
     </header>
 
-    <!-- Modal pour images en plein écran -->
-    <div id="imageModal" class="image-modal">
-      <div class="modal-content">
-        <button class="close-modal">&times;</button>
-        <img id="modalImage" src="" alt="" class="modal-image" />
-      </div>
-    </div>
-
-    <!-- Hero Section Fixe -->
+    <!-- Hero Section -->
     <section
       class="hero-section mt-20"
-      style="background-image: url('./img/banner-actumoto.png')"
+      style="background-image: url('./img/banner-actumoto2.png')"
     >
       <div
         class="absolute inset-0 bg-black/20 flex items-center justify-center"
-      >
-        <div class="text-center text-white">
-          <h1 class="futurist-font text-4xl md:text-7xl mb-4">
-            CATALOGUE MOTO TUNISIE
-          </h1>
-          <p class="text-lg md:text-2xl">
-            Découvrez les derniers modèles de moto neuves
-          </p>
-        </div>
-      </div>
+      ></div>
     </section>
 
     <!-- Section Marques -->
     <section class="py-20 relative">
       <div class="container mx-auto px-4">
-        <div id="brands-container" class="brands-grid">
-          <!-- Les logos seront générés par JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Modèles -->
-    <section
-      id="models-section"
-      class="py-20 hidden bg-gradient-to-b from-white to-gray-100"
-    >
-      <div class="container mx-auto px-4">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4"
-        >
-          <h2
-            id="selected-brand"
-            class="futurist-font text-3xl md:text-4xl bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent"
-          ></h2>
-
-          <div
-            class="flex space-x-2 bg-white/80 rounded-lg p-1 backdrop-blur-sm"
-          >
-            <button
-              class="view-option px-4 py-2 rounded-md transition-all duration-300 active bg-red-600 text-white"
-              data-view="grid"
-            >
-              🟦 VUE GRILLE
-            </button>
-            <button
-              class="view-option px-4 py-2 rounded-md transition-all duration-300"
-              data-view="list"
-            >
-              📃 VUE LISTE
-            </button>
-          </div>
-        </div>
-
-        <div
-          id="models-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          <!-- Modèles chargés dynamiquement -->
-        </div>
+        <div id="brands-container" class="brands-grid"></div>
       </div>
     </section>
 
@@ -375,30 +248,35 @@
     <section class="py-1">
       <div class="container mx-auto px-4">
         <h2
-          class="futurist-font text-4xl text-center mb-12 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
+          class="futurist-font text-4xl text-center mb-6 bg-gradient-to-r from-black to-red-600 bg-clip-text text-transparent"
         >
           PIÈCES ET ACCESSOIRES
         </h2>
-        <a href="https://motorsports.simcc.tn/" target="_blank" class="block">
-          <div
-            class="accessories-section rounded-xl"
-            style="background-image: url('./img/banner-simcc.jpeg')"
-          >
-            <div
-              class="absolute inset-0 bg-black/10 flex items-center justify-center"
-            >
-              <div class="text-center text-white">
-                <h3 class="futurist-font text-3xl md:text-5xl mb-4">
-                  CLIQUEZ ICI
-                </h3>
-                <p class="text-lg md:text-xl">
-                  Découvrez notre gamme complète de pièces et accessoires
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
+
+        <div class="text-center mb-8">
+          <p class="text-lg md:text-xl text-gray-700 font-semibold">
+            Cliquez pour découvrir notre gamme complète de pièces et accessoires
+          </p>
+        </div>
       </div>
+
+      <!-- Bannière en pleine largeur -->
+      <a
+        href="https://motorsports.simcc.tn/"
+        target="_blank"
+        class="block full-width-banner"
+      >
+        <div
+          class="accessories-section"
+          style="background-image: url('./img/banner-simcc2.jpeg')"
+        >
+          <div
+            class="absolute inset-0 bg-black/10 flex items-center justify-center"
+          >
+            <!-- Texte supprimé car déplacé au-dessus -->
+          </div>
+        </div>
+      </a>
     </section>
 
     <!-- Formulaire Contact -->
@@ -430,7 +308,6 @@
               class="futurist-input w-full text-lg"
             />
           </div>
-
           <div>
             <textarea
               id="message"
@@ -441,7 +318,6 @@
               class="futurist-input w-full text-lg resize-none"
             ></textarea>
           </div>
-
           <button type="submit" class="btn-futurist w-full py-4 text-lg">
             🚀 ENVOYER LE MESSAGE
           </button>
@@ -450,7 +326,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-black text-white py-8">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="text-center md:text-left mb-4 md:mb-0">
@@ -493,731 +369,47 @@
       </div>
     </footer>
 
+    <!-- Charger les données et le script -->
+    <script src="data.js"></script>
     <script>
-      // Données des marques avec chemins d'images
-      const brands = [
-        { name: "Peugeot", logo: "./img/logos/peugeot-motors.png" },
-        { name: "PIAGGIO", logo: "./img/logos/piaggio.png" },
-        { name: "CFMOTO", logo: "./img/logos/cfmoto.png" },
-        { name: "ZIMOTA_MOTOR", logo: "./img/logos/zimota.png" },
-        { name: "QJMOTOR", logo: "./img/logos/qjmotor.png" },
-        { name: "SUZUKI", logo: "./img/logos/suzuki.png" },
-        { name: "SYM", logo: "./img/logos/sym.png" },
-        { name: "FORZA_MOTOR_SPORT", logo: "./img/logos/forza.png" },
-        { name: "UNISCOOT", logo: "./img/logos/uniscoot.png" },
-        { name: "KYMCO", logo: "./img/logos/kymco.png" },
-        { name: "ZONTES", logo: "./img/logos/zontes.png" },
-        { name: "FTM", logo: "./img/logos/ftm.png" },
-        { name: "YADEA", logo: "./img/logos/yadea.png" },
-        { name: "SLC", logo: "./img/logos/slc.png" },
-        { name: "SENKE", logo: "./img/logos/senke.png" },
-        { name: "SANYA", logo: "./img/logos/sanya.png" },
-        { name: "POWER", logo: "./img/logos/power.png" },
-        { name: "LM", logo: "./img/logos/lm.png" },
-        { name: "MOTO STAR", logo: "./img/logos/moto-star.png" },
-        { name: "WOLF", logo: "./img/logos/wolf.png" },
-        { name: "E-RIDER", logo: "./img/logos/e-rider.png" },
-        { name: "NOVAGO", logo: "./img/logos/novago.png" },
-        { name: "DAYUN", logo: "./img/logos/dayun.png" },
-      ];
-
-      // Données des modèles
-      const modelsData = {
-        Peugeot: [
-          {
-            name: "Peugeot pulsion 125 i ABS",
-            image: "./img/models/peugeot-pulsion-125.jpg",
-            price: "12,850 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PEUGEOT MÉTROPOLIS 400",
-            image: "./img/models/peugeot-metropolis-400.jpg",
-            price: "52,000 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PEUGEOT XP 400 ",
-            image: "./img/models/peugeot-xp-400.jpg",
-            price: "40,000 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PEUGEOT Django 125 ",
-            image: "./img/models/peugeot-django-125.jpg",
-            price: "10,900 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PEUGEOT Tweet 125 ",
-            image: "./img/models/peugeot-tweet-125.jpg",
-            price: "9,900 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PEUGEOT PM 01 125 ",
-            image: "./img/models/peugeot-pm-01-125.jpg",
-            price: "15,500 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        SUZUKI: [
-          {
-            name: "SUZUKI BURGMAN STREET UB125 NOIR 125CC",
-            image: "./img/models/suzuki-burgman-street-ub125-noir.jpg",
-            price: "9,449 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SUZUKI BURGMAN STREET UB125 GRIS 125CC",
-            image: "./img/models/suzuki-burgman-street-ub125-gris.jpg",
-            price: "9,449 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SUZUKI BURGMAN STREET UB125 BLANC 125CC",
-            image: "./img/models/suzuki-burgman-street-ub125-blanc.jpg",
-            price: "9,449 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        PIAGGIO: [
-          {
-            name: "Piaggio VESPA VXL 125 cc",
-            image: "./img/models/piaggio-vespa-125.jpg",
-            price: "10,900 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "PIAGGIO VESPA GTS 125 cc ",
-            image: "./img/models/piaggio-vespa-gts.jpg",
-            price: "29,900 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Aprilia sr 125 ",
-            image: "./img/models/piaggio-aprilia-sr-125.jpg",
-            price: "8,699 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        CFMOTO: [
-          {
-            name: "Motocycle CFMOTO 450MT - 450CC",
-            image: "./img/models/CFMOTO-450MT.jpg",
-            price: "-,-- TND",
-            type: "Essence",
-            status: "En Arrivage",
-          },
-        ],
-
-        ZIMOTA_MOTOR: [
-          {
-            name: "ZIMOTA Evo Blanc / Bleu - Rouge - 49 CC",
-            image: "./img/models/zimota-evo.jpg",
-            price: "3,899 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Cyclomoteur ZIMOTA KEE 109CC - Rouge ",
-            image: "./img/models/zimota-kee.jpg",
-            price: "3,899 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Scooteur ZIMOTA TAPO 49 CC - Bleu ",
-            image: "./img/models/zimota-tapo.jpg",
-            price: "3,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Cyclomoteur ZIMOTA TARGET 125CC - Rouge - Bleu ",
-            image: "./img/models/zimota-target.jpg",
-            price: "3,999 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter ZIMOTA SINUS X 124cc - Gris ",
-            image: "./img/models/zimota-sinus-x.jpg",
-            price: "4,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Motocycle ZIMOTA RKS QJMOTOR 125cc - Noir ",
-            image: "./img/models/zimota-rks-qjmotor.jpg",
-            price: "5,599 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Motocycle ZIMOTA Keeway RKS 125 - ROUGE ",
-            image: "./img/models/zimota-keeway-rks-125-rouge.jpg",
-            price: "5,599 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Motocycle ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR - Bronze ",
-            image: "./img/models/zimota-superlight-qjmotor-cbs-125-noir.jpg",
-            price: "7,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Motocycle ZIMOTA QJ MOTOR SRK 125 S 125CC Injection NOIR ",
-            image:
-              "./img/models/zimota-qj-motor-srk-125-s-125cc-injection-noir.jpg",
-            price: "10,999 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Cyclomoteur ZIMOTA TARGET 125CC - Bleu ",
-            image: "./img/models/zimota-target-125-bleu.jpg",
-            price: "3,999 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        SYM: [
-          {
-            name: "SYM SYMPHONY SR 125 CBS - 125 CC - BLANC - Noir",
-            image: "./img/models/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg",
-            price: "6,579 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SYM SYMPHONY S 125 - 125 CC - BLANC ",
-            image: "./img/models/sym-symphony-s-125-blanc.jpg",
-            price: "6,579 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SYM SYMPHONY ST 125 CBS E5 - injection - Noir ",
-            image: "./img/models/sym-symphony-st-125-cbs-e5-injection-noir.jpg",
-            price: "7,999 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SYM JET 14 125 AC E5 - 125 CC - NOIR - GRIS ",
-            image: "./img/models/sym-jet-14-125-ac-e5-noir.jpg",
-            price: "8,699 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SYM SYMPHONY ST 200 ABS E5 200cc injection - BLEU - BLANC",
-            image:
-              "./img/models/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg",
-            price: "14,999 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SYM JET 4 RX 125 - 124cc - Gris",
-            image: "./img/models/sym-jet-4-rx-124-gris.jpg",
-            price: "6,199 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        CFMOTO: [
-          {
-            name: "Motocycle CFMOTO 450MT - 450CC",
-            image: "./img/models/CFMOTO-450MT.jpg",
-            price: "-,-- TND",
-            type: "Essence",
-            status: "En Arrivage",
-          },
-        ],
-
-        FORZA_MOTOR_SPORT: [
-          {
-            name: "FORZA BBM Forza Compteur Digital 125CC - NOIR",
-            image:
-              "./img/models/forza-bbm-forza-compteur-digital-125cc-noir.jpg",
-            price: "2,849 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "Forza MotoStars FIRST MAXIII 3- 125CC - DIGITAL Gris - Noir",
-            image:
-              "./img/models/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg",
-            price: "2,899 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "FORZA BBM Forza Compteur Digital 107CC NEW-NOIR-GRIS-ROUGE ",
-            image:
-              "./img/models/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg",
-            price: "2,799 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "FORZA SLC D-MAX+ 124CC - BLEU - Gris Nardo - Gris - Turquoise",
-            image: "./img/models/forza-slc-d-max-124cc-bleu.jpg",
-            price: "3,049 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "FORZA POWER 125CC Digital -GRIS + Carte Grise",
-            image: "./img/models/forza-power-125cc-digital-gris-2.jpg",
-            price: "2,899 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        UNISCOOT: [
-          {
-            name: "UNISCOOT TIGER 125CC - Gris - Noir - Bleu",
-            image: "./img/models/uniscoot-tiger-125cc-gris.jpg",
-            price: "4,199 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "UNISCOOT TMAX+ 125CC - Noir brillant - Bleu",
-            image: "./img/models/uniscoot-tmax-125cc-noir-brillant.jpg",
-            price: "4,699 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "UNISCOOT FX2+ PLUS 125CC - NOIR MATT - BLEU",
-            image: "./img/models/uniscoot-fx2-plus-125cc-noir-matt.jpg",
-            price: "4,799 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "UNISCOOT ZT6 ZONSEN 124CC - Noir",
-            image: "./img/models/uniscoot-zt6-zonsen-124cc-noir.jpg",
-            price: "5,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        ZONTES: [
-          {
-            name: "zontes 368G ADV 368cc",
-            image: "./img/models/zontes-368g-adv-368cc.jpg",
-            price: "-,-- TND",
-            type: "Essence",
-            status: "En Arrivage",
-          },
-        ],
-        YADEA: [
-          {
-            name: "SCOOTER ELECTRIQUE YADEA - E8S - 3000W - BLANC",
-            image: "./img/models/scooter-electrique-yadea-e8s-3000w-blanc.jpg",
-            price: "5,999 TND",
-            type: "Electrique",
-            status: "Disponible",
-          },
-          {
-            name: "SCOOTER ELECTRIQUE YADEA - E8S - 3000W - BLEU",
-            image: "./img/models/scooter-electrique-yadea-e8s-3000w-bleu.jpg",
-            price: "5,999 TND",
-            type: "Electrique",
-            status: "Disponible",
-          },
-        ],
-        SLC: [
-          {
-            name: "SLC AZUR 124 CC - NOIR ",
-            image: "./img/models/slc-azur-124cc-noir.jpg",
-            price: "5,199 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SLC AZUR 124 CC - BLEU ",
-            image: "./img/models/slc-azur-124cc-bleu.jpg",
-            price: "5,199 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        SENKE: [
-          {
-            name: "SENKE SK 110 107 cm³ - Rouge + Repose pied - Carte Grise Offerte ",
-            image: "./img/models/senke-sk-110-107cc-rouge.jpg",
-            price: "2,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "SENKE SK 110 107 cm³ - NOIR + Repose pied - Carte Grise Offerte",
-            image: "./img/models/senke-sk-110-107cc-noir.jpg",
-            price: "2,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        SANYA: [
-          {
-            name: "Sanya SY 125-9F",
-            image: "./img/models/sanya-sy-125-9f.jpg",
-            price: "5,849 TND",
-            type: "Essence",
-            status: "En Arrivage",
-          },
-        ],
-        POWER: [
-          {
-            name: "POWER SPRING ST - 125cc - GRIS /ORANGE ( CARTE GRISE )",
-            image: "./img/models/power-spring-st-125cc-gris-orange.jpg",
-            price: "4,199 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        LM: [
-          {
-            name: "LM ADV 125CC injection ABS + TCS - BIEGE",
-            image: "./img/models/lm-adv-125cc-beige.jpg",
-            price: "9,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "LM ADV 125CC injection ABS + TCS- Chameleon",
-            image: "./img/models/lm-adv-125cc-chameleon.jpg",
-            price: "9,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "LM ADV 125CC injection ABS + TCS - VERT MILITAIRE",
-            image: "./img/models/lm-adv-125cc-vert-militaire.jpg",
-            price: "9,949 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        NOVAGO: [
-          {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Noir",
-            image: "./img/models/novago-swing-noir.jpg",
-            price: "6,199 TND",
-            type: "Electrique",
-            status: "Disponible",
-          },
-          {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Bleu",
-            image: "./img/models/novago-swing-bleu.jpg",
-            price: "6,199 TND",
-            type: "Electrique",
-            status: "Disponible",
-          },
-          {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Gris",
-            image: "./img/models/novago-swing-gris.jpg",
-            price: "6,199 TND",
-            type: "Electrique",
-            status: "Disponible",
-          },
-        ],
-        DAYUN: [
-          {
-            name: "DAYUN DREAM 23 4T - SLC - 124CC - ROUGE",
-            image: "./img/models/dayun-dream-23-4t-rouge.jpg",
-            price: "4,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "DAYUN SNIPER SLC - 124CC - BLANC",
-            image: "./img/models/dayun-sniper-slc-blanc.jpg",
-            price: "5,399 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "DAYUN SNIPER SLC - 124CC - NOIR",
-            image: "./img/models/dayun-sniper-slc-noir.jpg",
-            price: "5,399 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        QJMOTOR: [
-          {
-            name: "ZIMOTA RKS QJMOTOR 125cc - Noir",
-            image: "./img/models/qjmotor-zimota-rks-qjmotor-noir.jpg",
-            price: "5,599 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR",
-            image:
-              "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg",
-            price: "7,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-          {
-            name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - BRONZE",
-            image:
-              "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-bronze.jpg",
-            price: "7,499 TND",
-            type: "Essence",
-            status: "Disponible",
-          },
-        ],
-        WOLF: [
-          {
-            name: "Électrique WOLF VERO 1000 Watts - Vert Clair",
-            image: "./img/models/wolf-vero-vert-clair.jpg",
-            price: "4,199 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter Électrique WOLF VERO 1000 Watts - Blanc",
-            image: "./img/models/wolf-vero-blanc.jpg",
-            price: "4,199 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Gris",
-            image: "./img/models/wolf-vero-gris.jpg",
-            price: "3,799 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Noir",
-            image: "./img/models/wolf-vero-noir.jpg",
-            price: "3,799 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter Électrique WOLF 1000 Watts Avec Coffre - Gris",
-            image: "./img/models/wolf-vero-gris-coffre.jpg",
-            price: "3,999 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-          {
-            name: "Scooter Électrique WOLF 1000 Watts Avec Coffre - Noir",
-            image: "./img/models/wolf-vero-noir-coffre.jpg",
-            price: "3,999 TND",
-            type: "Électrique",
-            status: "Disponible",
-          },
-        ],
-      };
-
-      // Initialisation
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
-        initViewToggle();
         initContactForm();
-        initImageModal();
       });
 
-      // Affichage des logos des marques
       function renderBrands() {
         const container = document.getElementById("brands-container");
+        container.innerHTML = "";
 
         brands.forEach((brand) => {
           const brandCard = document.createElement("div");
           brandCard.className = "brand-logo-card group cursor-pointer";
           brandCard.innerHTML = `
-            <img 
-              src="${brand.logo}" 
-              alt="${brand.name}" 
-              class="brand-logo-img"
-              onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'text-center\\'><div class=\\'text-lg font-bold text-gray-800\\'>${brand.name}</div></div>'"
-            >
-          `;
+                    <img src="${brand.logo}" alt="${brand.name}" class="brand-logo-img"
+                         onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="text-center hidden">
+                        <div class="text-lg font-bold text-gray-800">${brand.name}</div>
+                    </div>
+                `;
 
-          brandCard.addEventListener("click", () => showModels(brand.name));
+          brandCard.addEventListener("click", () => {
+            // Redirection directe vers la page modèles
+            window.location.href = `modeles.html?marque=${encodeURIComponent(
+              brand.name
+            )}`;
+          });
+
           container.appendChild(brandCard);
         });
       }
 
-      // Affichage des modèles
-      function showModels(brand) {
-        const section = document.getElementById("models-section");
-        const title = document.getElementById("selected-brand");
-        const container = document.getElementById("models-container");
-
-        title.textContent = brand.toUpperCase();
-        container.innerHTML = "";
-
-        if (modelsData[brand]) {
-          modelsData[brand].forEach((model) => {
-            const modelCard = document.createElement("div");
-            modelCard.className = "model-card";
-            modelCard.innerHTML = `
-              <img src="${model.image}" alt="${
-              model.name
-            }" class="w-full h-72 object-cover model-image" data-image="${
-              model.image
-            }" onerror="this.src='./img/placeholder-moto.jpg'">
-              <div class="p-6">
-                <h3 class="futurist-font text-xl mb-3">${model.name}</h3>
-                <div class="flex justify-between items-center mb-3">
-                  <span class="text-red-600 font-bold text-lg">${
-                    model.price
-                  }</span>
-                  <span class="px-3 py-1 rounded-full text-xs font-semibold ${
-                    model.type === "Électrique"
-                      ? "bg-green-100 text-green-800"
-                      : "bg-orange-100 text-orange-800"
-                  }">
-                    ${model.type}
-                  </span>
-                </div>
-                <div class="text-sm font-semibold ${
-                  model.status === "Disponible"
-                    ? "text-green-600"
-                    : "text-blue-600"
-                }">
-                  ${model.status}
-                </div>
-              </div>
-            `;
-            container.appendChild(modelCard);
-          });
-
-          // Ajouter les événements pour le modal d'image
-          document.querySelectorAll(".model-image").forEach((img) => {
-            img.addEventListener("click", function () {
-              openImageModal(this.dataset.image);
-            });
-          });
-        } else {
-          container.innerHTML = `
-            <div class="col-span-full text-center py-12">
-              <div class="text-6xl mb-4">🏍️</div>
-              <p class="text-xl text-gray-600">Modèles en préparation</p>
-              <p class="text-gray-500">Bientôt disponible</p>
-            </div>
-          `;
-        }
-
-        section.classList.remove("hidden");
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-
-      // Toggle vue grille/liste
-      function initViewToggle() {
-        const options = document.querySelectorAll(".view-option");
-        const container = document.getElementById("models-container");
-
-        options.forEach((option) => {
-          option.addEventListener("click", function () {
-            options.forEach((opt) => {
-              opt.classList.remove("active", "bg-red-600", "text-white");
-              opt.classList.add("text-gray-600");
-            });
-            this.classList.add("active", "bg-red-600", "text-white");
-            this.classList.remove("text-gray-600");
-
-            if (this.dataset.view === "list") {
-              container.classList.remove(
-                "grid-cols-1",
-                "md:grid-cols-2",
-                "lg:grid-cols-3"
-              );
-              container.classList.add("flex", "flex-col", "space-y-6");
-              container.querySelectorAll(".model-card").forEach((card) => {
-                card.classList.add("flex");
-                card
-                  .querySelector("img")
-                  .classList.add("w-64", "h-auto", "flex-shrink-0");
-              });
-            } else {
-              container.classList.add(
-                "grid-cols-1",
-                "md:grid-cols-2",
-                "lg:grid-cols-3"
-              );
-              container.classList.remove("flex", "flex-col", "space-y-6");
-              container.querySelectorAll(".model-card").forEach((card) => {
-                card.classList.remove("flex");
-                card
-                  .querySelector("img")
-                  .classList.remove("w-64", "h-auto", "flex-shrink-0");
-              });
-            }
-          });
-        });
-      }
-
-      // Formulaire de contact
       function initContactForm() {
         const form = document.getElementById("contact-form");
         form.addEventListener("submit", function (e) {
           e.preventDefault();
-          // Formspree gérera l'envoi
           alert("Message envoyé avec succès! Nous vous répondrons rapidement.");
           form.reset();
         });
-      }
-
-      // Modal pour images en plein écran
-      function initImageModal() {
-        const modal = document.getElementById("imageModal");
-        const modalImage = document.getElementById("modalImage");
-        const closeModal = document.querySelector(".close-modal");
-
-        // Fermer le modal
-        closeModal.addEventListener("click", function () {
-          modal.classList.remove("active");
-        });
-
-        // Fermer en cliquant en dehors de l'image
-        modal.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            modal.classList.remove("active");
-          }
-        });
-
-        // Fermer avec la touche Echap
-        document.addEventListener("keydown", function (e) {
-          if (e.key === "Escape" && modal.classList.contains("active")) {
-            modal.classList.remove("active");
-          }
-        });
-      }
-
-      function openImageModal(imageSrc) {
-        const modal = document.getElementById("imageModal");
-        const modalImage = document.getElementById("modalImage");
-
-        modalImage.src = imageSrc;
-        modal.classList.add("active");
       }
     </script>
   </body>
