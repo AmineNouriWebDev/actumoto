@@ -94,13 +94,11 @@
       }
 
       .brand-logo-img {
-        max-width: 180px;
-        max-height: 80px;
-        width: auto;
-        height: auto;
+        width: 180px !important; /* Largeur fixe */
+        height: 80px !important; /* Hauteur fixe */
+        object-fit: contain; /* Conserve les proportions sans déformation */
         filter: grayscale(30%);
         transition: all 0.3s ease;
-        object-fit: contain;
       }
 
       .brand-logo-card:hover .brand-logo-img {
@@ -266,6 +264,15 @@
 
         .header-logo {
           height: 3rem;
+        }
+        @media (max-width: 767px) {
+          .brands-grid {
+            grid-template-columns: repeat(
+              3,
+              1fr
+            ) !important; /* 3 colonnes de taille égale */
+            gap: 1rem; /* Ajustez l'espace entre les logos si nécessaire */
+          }
         }
       }
     </style>
