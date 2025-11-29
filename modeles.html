@@ -18,6 +18,18 @@
         --primary-white: #ffffff;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
       body {
         font-family: "Rajdhani", sans-serif;
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
@@ -68,9 +80,29 @@
         display: flex;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
+        .container {
+          max-width: 100% !important;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
         .model-card img {
           height: 200px !important;
+          width: 100%;
+        }
+
+        .header-logo {
+          max-width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
         }
       }
     </style>
@@ -79,7 +111,7 @@
     <!-- Header -->
     <header class="header-futurist fixed w-full top-0 z-50">
       <div class="container mx-auto px-4 py-2">
-        <div class="flex justify-between items-center">
+        <div class="flex justify-center items-center w-full relative">
           <div class="flex items-center">
             <a href="index.html">
               <img
@@ -91,9 +123,9 @@
           </div>
           <a
             href="index.html"
-            class="text-white hover:text-red-400 transition-colors text-sm md:text-base"
+            class="absolute left-4 text-white hover:text-red-400 transition-colors text-sm md:text-base"
           >
-            ← Retour à l'accueil
+            ← Retour
           </a>
         </div>
       </div>
@@ -148,15 +180,6 @@
             <p class="text-sm md:text-base">
               Copyright © 2025 actumoto.tn - Tous droits réservés
             </p>
-            <p class="text-xs md:text-sm text-gray-400 mt-1">
-              by
-              <a
-                href="https://maxsolving.com"
-                target="_blank"
-                class="text-red-400 hover:text-red-300 transition-colors"
-                >maxsolving</a
-              >
-            </p>
           </div>
           <div class="flex items-center space-x-2">
             <svg
@@ -199,7 +222,6 @@
         if (brandParam && modelsData[brandParam]) {
           showModels(brandParam);
         } else {
-          // Redirection si marque non trouvée
           window.location.href = "index.html";
         }
       }
@@ -243,7 +265,6 @@
             container.appendChild(modelCard);
           });
 
-          // Ajouter les événements pour le modal d'image
           document.querySelectorAll(".model-image").forEach((img) => {
             img.addEventListener("click", function () {
               openImageModal(this.dataset.image);

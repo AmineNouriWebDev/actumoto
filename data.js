@@ -1,28 +1,28 @@
 // data.js - Données centralisées pour le site
 const brands = [
-    { name: "Peugeot", logo: "./img/logos/peugeot-motors.png" },
-    { name: "PIAGGIO", logo: "./img/logos/piaggio.png" },
-    { name: "CFMOTO", logo: "./img/logos/cfmoto.png" },
-    { name: "ZIMOTA_MOTOR", logo: "./img/logos/zimota.png" },
-    { name: "QJMOTOR", logo: "./img/logos/qjmotor.png" },
-    { name: "SUZUKI", logo: "./img/logos/suzuki.png" },
-    { name: "SYM", logo: "./img/logos/sym.png" },
-    { name: "FORZA_MOTOR_SPORT", logo: "./img/logos/forza.png" },
-    { name: "UNISCOOT", logo: "./img/logos/uniscoot.png" },
-    { name: "KYMCO", logo: "./img/logos/kymco.png" },
-    { name: "ZONTES", logo: "./img/logos/zontes.png" },
-    { name: "FTM", logo: "./img/logos/ftm.png" },
-    { name: "YADEA", logo: "./img/logos/yadea.png" },
-    { name: "SLC", logo: "./img/logos/slc.png" },
-    { name: "SENKE", logo: "./img/logos/senke.png" },
-    { name: "SANYA", logo: "./img/logos/sanya.png" },
-    { name: "POWER", logo: "./img/logos/power.png" },
-    { name: "LM", logo: "./img/logos/lm.png" },
-    { name: "MOTO STAR", logo: "./img/logos/moto-star.png" },
-    { name: "WOLF", logo: "./img/logos/wolf.png" },
-    { name: "E-RIDER", logo: "./img/logos/e-rider.png" },
-    { name: "NOVAGO", logo: "./img/logos/novago.png" },
-    { name: "DAYUN", logo: "./img/logos/dayun.png" },
+    { name: "Peugeot", logo: "./img/logos/peugeot-motors.jpg" },
+    { name: "PIAGGIO", logo: "./img/logos/piaggio.jpg" },
+    { name: "CFMOTO", logo: "./img/logos/cfmoto.jpg" },
+    { name: "ZIMOTA_MOTOR", logo: "./img/logos/zimota.jpg" },
+    { name: "QJMOTOR", logo: "./img/logos2/qjmotor.png" },
+    { name: "SUZUKI", logo: "./img/logos/suzuki.jpg" },
+    { name: "SYM", logo: "./img/logos/sym.jpg" },
+    { name: "FORZA_MOTOR_SPORT", logo: "./img/logos2/forza.png" },
+    { name: "UNISCOOT", logo: "./img/logos/uniscoot.jpg" },
+    { name: "KYMCO", logo: "./img/logos/kymco.jpg" },
+    { name: "ZONTES", logo: "./img/logos/zontes.jpg" },
+    { name: "FTM", logo: "./img/logos/ftm.jpg" },
+    { name: "YADEA", logo: "./img/logos/yadea.jpg" },
+    { name: "SLC", logo: "./img/logos/slc.jpg" },
+    { name: "SENKE", logo: "./img/logos/senke.jpg" },
+    { name: "SANYA", logo: "./img/logos/sanya.jpg" },
+    { name: "POWER", logo: "./img/logos/power.jpg" },
+    { name: "LM", logo: "./img/logos/lm.jpg" },
+    { name: "MOTO STAR", logo: "./img/logos/moto-star.jpg" },
+    { name: "WOLF", logo: "./img/logos/wolf.jpg" },
+    { name: "E-RIDER", logo: "./img/logos/e-rider.jpg" },
+    { name: "NOVAGO", logo: "./img/logos/novago.jpg" },
+    { name: "DAYUN", logo: "./img/logos/dayun.jpg" },
 ];
 
 const modelsData = {
@@ -71,20 +71,7 @@ const modelsData = {
         },
     ],
     SUZUKI: [
-        {
-            name: "SUZUKI BURGMAN STREET UB125 NOIR 125CC",
-            image: "./img/models/suzuki-burgman-street-ub125-noir.jpg",
-            price: "9,449 TND",
-            type: "Essence",
-            
-        },
-        {
-            name: "SUZUKI BURGMAN STREET UB125 GRIS 125CC",
-            image: "./img/models/suzuki-burgman-street-ub125-gris.jpg",
-            price: "9,449 TND",
-            type: "Essence",
-            
-        },
+     
         {
             name: "SUZUKI BURGMAN STREET UB125 BLANC 125CC",
             image: "./img/models/suzuki-burgman-street-ub125-blanc.jpg",
@@ -161,13 +148,7 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "Motocycle ZIMOTA RKS QJMOTOR 125cc - Noir",
-            image: "./img/models/zimota-rks-qjmotor.jpg",
-            price: "5,599 TND",
-            type: "Essence",
-            
-        },
+      
         {
             name: "Motocycle ZIMOTA Keeway RKS 125 - ROUGE",
             image: "./img/models/zimota-keeway-rks-125-rouge.jpg",
@@ -175,20 +156,8 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "Motocycle ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR - Bronze",
-            image: "./img/models/zimota-superlight-qjmotor-cbs-125-noir.jpg",
-            price: "7,499 TND",
-            type: "Essence",
-            
-        },
-        {
-            name: "Motocycle ZIMOTA QJ MOTOR SRK 125 S 125CC Injection NOIR",
-            image: "./img/models/zimota-qj-motor-srk-125-s-125cc-injection-noir.jpg",
-            price: "10,999 TND",
-            type: "Essence",
-            
-        },
+   
+  
         {
             name: "Cyclomoteur ZIMOTA TARGET 125CC - Bleu",
             image: "./img/models/zimota-target-125-bleu.jpg",
@@ -237,6 +206,13 @@ const modelsData = {
             name: "SYM JET 4 RX 125 - 124cc - Gris",
             image: "./img/models/sym-jet-4-rx-124-gris.jpg",
             price: "6,199 TND",
+            type: "Essence",
+            
+        },
+        {
+            name: "FIDDLE II EFI",
+            image: "./img/models/sym-fiddle-ii-efi.jpg",
+            price: "5,850 TND",
             type: "Essence",
             
         },

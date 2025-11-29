@@ -18,6 +18,18 @@
         --primary-white: #ffffff;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
       body {
         font-family: "Rajdhani", sans-serif;
         background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
@@ -139,52 +151,8 @@
         box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3);
       }
 
-      @media (max-width: 767px) {
-        .brands-grid {
-          grid-template-columns: repeat(3, 1fr) !important;
-          gap: 0.5rem !important;
-        }
-
-        .brand-logo-card {
-          padding: 0.8rem !important;
-          height: 100px !important;
-          margin: 0.2rem;
-        }
-
-        .brand-logo-img {
-          width: 100px !important;
-          height: 50px !important;
-          max-width: 100%;
-        }
-
-        .header-logo {
-          height: 3.5rem !important;
-        }
-
-        .hero-section {
-          margin-top: 5rem !important;
-          height: 40vh !important;
-          min-height: 250px !important;
-          background-position: 65% center !important;
-        }
-
-        .accessories-section {
-          height: 30vh !important;
-          min-height: 200px !important;
-          border-radius: 0 !important;
-          margin-left: -1rem !important;
-          margin-right: -1rem !important;
-          width: calc(100% + 2rem) !important;
-        }
-
-        /* Centrer le logo en mobile */
-        .header-container {
-          display: flex !important;
-          justify-content: center !important;
-        }
-      }
       .accessories-link {
-        color: #1f2937; /* gray-800 */
+        color: #1f2937;
         font-weight: 600;
         transition: all 0.3s ease;
         position: relative;
@@ -192,7 +160,7 @@
       }
 
       .accessories-link:hover {
-        color: #ff0000; /* primary red */
+        color: #ff0000;
         transform: translateY(-2px);
       }
 
@@ -210,58 +178,108 @@
       .accessories-link:hover::after {
         width: 100%;
       }
-      /* Correction du débordement mobile */
-      @media (max-width: 767px) {
-        body {
-          overflow-x: hidden;
-        }
 
+      /* Mobile First Approach */
+      @media (max-width: 767px) {
         .container {
           max-width: 100% !important;
           padding-left: 1rem;
           padding-right: 1rem;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        .hero-section,
-        .accessories-section {
-          margin-left: -1rem !important;
-          margin-right: -1rem !important;
-          width: calc(100% + 2rem) !important;
-          max-width: none !important;
+        .brands-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.5rem;
+          padding: 0 0.5rem;
         }
 
-        /* Assurer que les images ne dépassent pas */
-        img {
+        .brand-logo-card {
+          padding: 0.8rem;
+          height: 100px;
+          margin: 0.1rem;
+        }
+
+        .brand-logo-img {
+          width: 100px;
+          height: 50px;
           max-width: 100%;
-          height: auto;
         }
 
-        .header-container {
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
+        .header-logo {
+          height: 3.5rem;
+          max-width: 100%;
+        }
+
+        .hero-section {
+          margin-top: 5rem;
+          height: 40vh;
+          min-height: 250px;
+          background-position: 65% center;
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
+        }
+
+        .accessories-section {
+          height: 30vh;
+          min-height: 200px;
+          border-radius: 0;
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
+        }
+
+        .full-width-banner {
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          right: 50%;
+          margin-left: -50vw;
+          margin-right: -50vw;
         }
       }
 
-      /* Correction supplémentaire pour les très petits écrans */
       @media (max-width: 480px) {
         .container {
           padding-left: 0.75rem;
           padding-right: 0.75rem;
         }
 
-        .hero-section,
-        .accessories-section {
-          margin-left: -0.75rem !important;
-          margin-right: -0.75rem !important;
-          width: calc(100% + 1.5rem) !important;
+        .brands-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.3rem;
+        }
+
+        .brand-logo-card {
+          padding: 0.5rem;
+          height: 90px;
+        }
+
+        .brand-logo-img {
+          width: 90px;
+          height: 45px;
         }
       }
 
-      /* Correction spécifique pour les bannières */
-      .full-width-banner {
-        margin-left: -1rem !important;
-        margin-right: -1rem !important;
-        width: calc(100% + 2rem) !important;
+      @media (max-width: 768px) {
+        .hero-section {
+          height: 50vh;
+          min-height: 300px;
+          background-position: 60% center;
+        }
+
+        .accessories-section {
+          height: 35vh;
+          min-height: 250px;
+        }
       }
     </style>
   </head>
@@ -269,10 +287,10 @@
     <!-- Header -->
     <header class="header-futurist fixed w-full top-0 z-50">
       <div class="container mx-auto px-4 py-2">
-        <div class="header-container flex justify-between items-center">
+        <div class="flex justify-center items-center w-full">
           <div class="flex items-center">
             <img
-              src="./img/logo-actumoto.jpeg"
+              src="./img/logo-principal-2.png"
               alt="actumoto.tn"
               class="header-logo h-20"
             />
@@ -298,7 +316,6 @@
       </div>
     </section>
 
-    <!-- Section Pièces et Accessoires -->
     <!-- Section Pièces et Accessoires -->
     <section class="py-1">
       <div class="container mx-auto px-4">
@@ -387,15 +404,6 @@
             <p class="text-sm md:text-base">
               Copyright © 2025 actumoto.tn - Tous droits réservés
             </p>
-            <p class="text-xs md:text-sm text-gray-400 mt-1">
-              by
-              <a
-                href="https://maxsolving.com"
-                target="_blank"
-                class="text-red-400 hover:text-red-300 transition-colors"
-                >maxsolving</a
-              >
-            </p>
           </div>
           <div class="flex items-center space-x-2">
             <svg
@@ -447,7 +455,6 @@
                 `;
 
           brandCard.addEventListener("click", () => {
-            // Redirection directe vers la page modèles
             window.location.href = `modeles.html?marque=${encodeURIComponent(
               brand.name
             )}`;
