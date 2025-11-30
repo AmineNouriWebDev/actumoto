@@ -302,9 +302,9 @@ const modelsData = {
         {
             name: "zontes 368G ADV 368cc",
             image: "./img/models/zontes-368g-adv-368cc.jpg",
-            price: "-,-- TND",
+            price: "En Arrivage",
             type: "Essence",
-            status: "En Arrivage",
+           
         },
     ],
     YADEA: [
@@ -574,7 +574,7 @@ const modelsData = {
         {
             name: "Gold Motors R9",
             image: "./img/models/gold-motors-R9-bleu.jpg",
-            price: "-,--- TND",
+            price: "5,499 TND",
             type: "Essence",
             
         },
