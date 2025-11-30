@@ -140,20 +140,7 @@ const modelsData = {
             type: "Essence",
             
         },
-         {
-            name: "CF MOTO 700MT",
-            image: "./img/models/CF-MOTO-700MT.jpg",
-            price: "69,793 TND",
-            type: "Essence",
-            
-        },
-         {
-            name: "CF MOTO 700MT",
-            image: "./img/models/CF-MOTO-700MT.jpg",
-            price: "69,793 TND",
-            type: "Essence",
-            
-        },
+       
         {
             name: "CF MOTO 700CL-X SPORT",
             image: "./img/models/CF-MOTO-700CL-X-SPORT.jpg",
@@ -460,13 +447,7 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "SENKE SK 110 107 cm³ - NOIR + Repose pied - Carte Grise Offerte",
-            image: "./img/models/senke-sk-110-107cc-noir.jpg",
-            price: "2,949 TND",
-            type: "Essence",
-            
-        },
+      
     ],
     SANYA: [
         {
@@ -494,20 +475,14 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "LM ADV 125CC injection ABS + TCS- Chameleon",
-            image: "./img/models/lm-adv-125cc-chameleon.jpg",
-            price: "9,949 TND",
+         {
+            name: "SCOOTER LA VITA 125CC injection - BLEU/ ORANGE",
+            image: "./img/models/la-vita-125cc-bleu-orange.jpg",
+            price: "5,999 TND",
             type: "Essence",
             
         },
-        {
-            name: "LM ADV 125CC injection ABS + TCS - VERT MILITAIRE",
-            image: "./img/models/lm-adv-125cc-vert-militaire.jpg",
-            price: "9,949 TND",
-            type: "Essence",
-            
-        },
+     
     ],
     NOVAGO: [
         {
