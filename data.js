@@ -541,4 +541,28 @@ const modelsData = {
         },
     
     ],
+        KAYCO: [
+        {
+            name: "Young Graduates (B2A) One Charge = 70 km",
+            image: "./img/models/kayco.jpg",
+            price: "4,500 TND",
+            type: "Electrique",
+            
+        },
+            {
+            name: "Freelancers (B2B) One Charge = 120 km",
+            image: "./img/models/kayco-noir.jpg",
+            price: "5,900 TND",
+            type: "Electrique",
+            
+        },
+         {
+            name: "Delivery Professionals (B2C) One Charge = 240 km",
+            image: "./img/models/kayco-rouge.jpg",
+            price: "7,200 TND",
+            type: "Electrique",
+            
+        },
+    
+    ],
 };
