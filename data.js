@@ -576,13 +576,7 @@ const modelsData = {
             type: "Électrique",
             
         },
-        {
-            name: "Scooter Électrique WOLF VERO 1000 Watts - Blanc",
-            image: "./img/models/wolf-vero-blanc.jpg",
-            price: "4,199 TND",
-            type: "Électrique",
-            
-        },
+      
         {
             name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Gris",
             image: "./img/models/wolf-vero-gris.jpg",
