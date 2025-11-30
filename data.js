@@ -27,6 +27,7 @@ const brands = [
     { name: "POWER_KIM", logo: "./img/logos/power-kim.jpg" },
     { name: "KAYCO", logo: "./img/logos/kayco.png" },
     { name: "GOLD_MOTORS", logo: "./img/logos/gold-motors.jpg" },
+    { name: "XTF", logo: "./img/logos/xtf.jpg" },
 ];
 
 const modelsData = {
@@ -114,9 +115,114 @@ const modelsData = {
         {
             name: "Motocycle CFMOTO 450MT - 450CC",
             image: "./img/models/CFMOTO-450MT.jpg",
-            price: "-,-- TND",
+            price: "58,131 TND",
             type: "Essence",
-            status: "En Arrivage",
+            
+        },
+         {
+            name: "CF MOTO 800MT-X",
+            image: "./img/models/CF-MOTO-800MT-X.jpg",
+            price: "74,910 TND",
+            type: "Essence",
+            
+        },
+             {
+            name: "CF MOTO 800MT Explore",
+            image: "./img/models/CF-MOTO-800MT-Explore.jpg",
+            price: "78,480 TND",
+            type: "Essence",
+            
+        },
+          {
+            name: "CF MOTO 700MT",
+            image: "./img/models/CF-MOTO-700MT.jpg",
+            price: "69,793 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 700MT",
+            image: "./img/models/CF-MOTO-700MT.jpg",
+            price: "69,793 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 700MT",
+            image: "./img/models/CF-MOTO-700MT.jpg",
+            price: "69,793 TND",
+            type: "Essence",
+            
+        },
+        {
+            name: "CF MOTO 700CL-X SPORT",
+            image: "./img/models/CF-MOTO-700CL-X-SPORT.jpg",
+            price: "61,344 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 450CL-C",
+            image: "./img/models/CF-MOTO-450CL-C.jpg",
+            price: "57,715 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 450CL-C-BOBER",
+            image: "./img/models/CF-MOTO-450CL-C-BOBER.jpg",
+            price: "59,440 TND",
+            type: "Essence",
+            
+        },
+          {
+            name: "CF MOTO 125NK",
+            image: "./img/models/CF-MOTO-125NK.jpg",
+            price: "17,671 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 800NK Advanced",
+            image: "./img/models/CF-MOTO-800NK-Advanced.jpg",
+            price: "64,081 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 300NK",
+            image: "./img/models/CF-MOTO-300NK.jpg",
+            price: "34,093 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 675SR-R",
+            image: "./img/models/CF-MOTO-675SR-R.jpg",
+            price: "64,855 TND",
+            type: "Essence",
+            
+        },
+           {
+            name: "CF MOTO 450SR-S",
+            image: "./img/models/CF-MOTO-450SR-S.jpg",
+            price: "54,680 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "CF MOTO 150SC",
+            image: "./img/models/CF-MOTO-150SC.jpg",
+            price: "18,445 TND",
+            type: "Essence",
+            
+        },
+            {
+            name: "CF MOTO CX-5E",
+            image: "./img/models/CF-MOTO-CX-5E.jpg",
+            price: "10,591 TND",
+            type: "Essence",
+            
         },
     ],
     ZIMOTA_MOTOR: [
@@ -177,6 +283,13 @@ const modelsData = {
             image: "./img/models/zimota-eway-ride-elec.jpg",
             price: "1,999 TND",
             type: "Electrique",
+            
+        },
+            {
+            name: "ZIMOTA RKS 125cc - Noir",
+            image: "./img/models/qjmotor-zimota-rks-qjmotor-noir.jpg",
+            price: "5,599 TND",
+            type: "Essence",
             
         },
     ],
@@ -441,15 +554,23 @@ const modelsData = {
             type: "Essence",
             
         },
-    ],
-    QJMOTOR: [
-        {
-            name: "ZIMOTA RKS QJMOTOR 125cc - Noir",
-            image: "./img/models/qjmotor-zimota-rks-qjmotor-noir.jpg",
-            price: "5,599 TND",
+         {
+            name: "Scooter DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
+            image: "./img/models/dayun-dy125t-bleu.jpg",
+            price: "4,569 TND",
             type: "Essence",
             
         },
+         {
+            name: "Scooter Dayun Kimbo 124CC | DY124 - Gris",
+            image: "./img/models/dayun-dy124-gris.jpg",
+            price: "4,259 TND",
+            type: "Essence",
+            
+        },
+    ],
+    QJMOTOR: [
+    
         {
             name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR",
             image: "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg",
@@ -461,6 +582,13 @@ const modelsData = {
             name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - BRONZE",
             image: "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-bronze.jpg",
             price: "7,499 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "Motocycle ZIMOTA QJ MOTOR SRK 125 S 125CC Injection NOIR",
+            image: "./img/models/qjmotor-zimota-srk-125-s-noir-injection.jpg",
+            price: "10,999 TND",
             type: "Essence",
             
         },
@@ -578,7 +706,25 @@ const modelsData = {
             type: "Essence",
             
         },
-       
+        {
+            name: "Moto Gold Motocycle | Cylindré 124 CC – Compteur Digital",
+            image: "./img/models/gold-motors-124cc-compteur-digital.jpg",
+            price: "3,269 TND",
+            type: "Essence",
+            
+        },
     
     ],
+     XTF: [
+        {
+            name: "Moto à Essence XTF DRAGON 110 CM³ Monocylindre - Noir",
+            image: "./img/models/xtf-dragon-110-noir.jpg",
+            price: "3,499 TND",
+            type: "Essence",
+            
+        },
+      
+    
+    ],
+    
 };
