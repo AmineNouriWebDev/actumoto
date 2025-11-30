@@ -26,6 +26,7 @@ const brands = [
     { name: "DAYUN", logo: "./img/logos/dayun.jpg" },
     { name: "POWER_KIM", logo: "./img/logos/power-kim.jpg" },
     { name: "KAYCO", logo: "./img/logos/kayco.png" },
+    { name: "GOLD_MOTORS", logo: "./img/logos/gold-motors.jpg" },
 ];
 
 const modelsData = {
@@ -567,6 +568,17 @@ const modelsData = {
             type: "Electrique",
             
         },
+    
+    ],
+       GOLD_MOTORS: [
+        {
+            name: "Gold Motors R9",
+            image: "./img/models/gold-motors-R9-bleu.jpg",
+            price: "-,--- TND",
+            type: "Essence",
+            
+        },
+       
     
     ],
 };
