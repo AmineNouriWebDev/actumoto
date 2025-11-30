@@ -2,6 +2,7 @@
 const brands = [
     { name: "Peugeot", logo: "./img/logos/peugeot-motors.jpg" },
     { name: "PIAGGIO", logo: "./img/logos/piaggio.jpg" },
+    { name: "APRILIA", logo: "./img/logos/aprilia.jpg" },
     { name: "CFMOTO", logo: "./img/logos/cfmoto.jpg" },
     { name: "ZIMOTA_MOTOR", logo: "./img/logos/zimota.jpg" },
     { name: "QJMOTOR", logo: "./img/logos2/qjmotor.png" },
@@ -97,6 +98,9 @@ const modelsData = {
             type: "Essence",
             
         },
+       
+    ],
+       APRILIA: [
         {
             name: "Aprilia sr 125",
             image: "./img/models/piaggio-aprilia-sr-125.jpg",
