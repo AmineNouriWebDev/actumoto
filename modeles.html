@@ -56,6 +56,9 @@
         overflow: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
 
       .model-card:hover {
@@ -74,6 +77,13 @@
         z-index: 1000;
         justify-content: center;
         align-items: center;
+        padding: 2rem;
+      }
+      /* Agrandir la hauteur des images */
+      .model-card img {
+        width: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
       }
 
       .image-modal.active {
@@ -90,7 +100,7 @@
         }
 
         .model-card img {
-          height: 200px !important;
+          height: 250px !important; /* Augmenté de 200px à 250px */
           width: 100%;
         }
 
@@ -98,6 +108,14 @@
           height: 3.5rem;
           max-width: 100%;
           object-fit: contain;
+        }
+        .image-modal {
+          padding: 1rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .model-card img {
+          height: 300px !important; /* Hauteur augmentée pour desktop */
         }
       }
 
@@ -136,9 +154,9 @@
 
     <!-- Modal pour images -->
     <div id="imageModal" class="image-modal">
-      <div class="modal-content relative">
+      <div class="modal-content relative max-w-4xl max-h-full mx-4">
         <button
-          class="close-modal absolute top-4 right-4 bg-red-600 text-white w-8 h-8 rounded-full z-10"
+          class="close-modal absolute -top-4 -right-4 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full z-50 flex items-center justify-center text-2xl font-bold shadow-lg transition-all duration-300"
         >
           &times;
         </button>
@@ -146,7 +164,7 @@
           id="modalImage"
           src=""
           alt=""
-          class="modal-image max-w-full max-h-full"
+          class="modal-image w-full h-auto max-h-[90vh] object-contain rounded-lg"
         />
       </div>
     </div>
@@ -243,28 +261,24 @@
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
             modelCard.innerHTML = `
-                        <img src="${model.image}" alt="${model.name}" 
-                             class="w-full h-64 object-cover model-image cursor-pointer" 
-                             data-image="${model.image}" 
-                             onerror="this.src='./img/placeholder-moto.jpg'">
-                        <div class="p-6">
-                            <h3 class="futurist-font text-xl mb-3">${
-                              model.name
-                            }</h3>
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="text-red-600 font-bold text-lg">${
-                                  model.price
-                                }</span>
-                                <span class="px-3 py-1 rounded-full text-xs font-semibold ${
-                                  model.type === "Électrique"
-                                    ? "bg-green-100 text-green-800"
-                                    : "bg-orange-100 text-orange-800"
-                                }">
-                                    ${model.type}
-                                </span>
-                            </div>
-                        </div>
-                    `;
+        <img src="${model.image}" alt="${model.name}" 
+             class="w-full model-image cursor-pointer" 
+             data-image="${model.image}" 
+             onerror="this.src='./img/placeholder-moto.jpg'">
+        <div class="p-6 flex-grow flex flex-col">
+          <h3 class="futurist-font text-xl mb-3 flex-grow">${model.name}</h3>
+          <div class="flex justify-between items-center mt-auto">
+            <span class="text-red-600 font-bold text-lg">${model.price}</span>
+            <span class="px-3 py-1 rounded-full text-xs font-semibold ${
+              model.type === "Électrique"
+                ? "bg-green-100 text-green-800"
+                : "bg-orange-100 text-orange-800"
+            }">
+              ${model.type}
+            </span>
+          </div>
+        </div>
+      `;
             container.appendChild(modelCard);
           });
 
