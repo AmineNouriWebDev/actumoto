@@ -18,11 +18,13 @@ const brands = [
     { name: "SANYA", logo: "./img/logos/sanya.jpg" },
     { name: "POWER", logo: "./img/logos/power.jpg" },
     { name: "LM", logo: "./img/logos/lm.jpg" },
-    { name: "MOTO STAR", logo: "./img/logos/moto-star.jpg" },
+    { name: "MS", logo: "./img/logos/ms-moto.png" },
     { name: "WOLF", logo: "./img/logos/wolf.jpg" },
     { name: "E-RIDER", logo: "./img/logos/e-rider.jpg" },
     { name: "NOVAGO", logo: "./img/logos/novago.jpg" },
     { name: "DAYUN", logo: "./img/logos/dayun.jpg" },
+    { name: "POWER_KIM", logo: "./img/logos/power-kim.jpg" },
+    { name: "KAYCO", logo: "./img/logos/kayco.png" },
 ];
 
 const modelsData = {
@@ -163,6 +165,13 @@ const modelsData = {
             image: "./img/models/zimota-target-125-bleu.jpg",
             price: "3,999 TND",
             type: "Essence",
+            
+        },
+          {
+            name: "Scooter Electrique Eway RIDE - 400 Watt - Blanc",
+            image: "./img/models/zimota-eway-ride-elec.jpg",
+            price: "1,999 TND",
+            type: "Electrique",
             
         },
     ],
@@ -494,5 +503,42 @@ const modelsData = {
             type: "Électrique",
             
         },
+    ],
+       MS: [
+        {
+            name: "SCOOTER FIRST COSTA 49CC - GRIS",
+            image: "./img/models/ms-first-costa-gris.jpg",
+            price: "3,799 TND",
+            type: "Essence",
+            
+        },
+    
+    ],
+        POWER_KIM: [
+        {
+            name: "SCOOTER PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
+            image: "./img/models/power-kim-scooter-pista-hr-noir-carbone.jpg",
+            price: "4,799 TND",
+            type: "Essence",
+            
+        },
+    
+    ],
+    KYMCO: [
+        {
+            name: "KYMCO People S 125i ABS",
+            image: "./img/models/kymco-people-s-125i-abs.jpg",
+            price: "10,600 TND",
+            type: "Electrique",
+            
+        },
+            {
+            name: "KYMCO Drink R 125 Tunnel",
+            image: "./img/models/kymco-drink-r-125-tunnel.jpg",
+            price: "11,600 TND",
+            type: "Electrique",
+            
+        },
+    
     ],
 };
