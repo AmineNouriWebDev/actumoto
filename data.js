@@ -697,3 +697,47 @@ const modelsData = {
     ],
     
 };
+const videosData = [
+    {
+        id: 1,
+        title: "Test: Nouvelle Yamaha MT-09 2024",
+        description: "Découvrez les performances de la dernière version de la MT-09 sur circuit.",
+        youtubeId: "Tr1G8g7oiL4",
+        category: "Test"
+    },
+    {
+        id: 2,
+        title: "Top 10 Accessoires Moto Essentiels",
+        description: "Les accessoires indispensables pour rouler en sécurité et confort.",
+        youtubeId: "L2mGXWcT6nM",
+        category: "Accessoires"
+    },
+    {
+        id: 3,
+        title: "Moto Électrique vs Essence: Le Comparatif",
+        description: "Analyse complète des avantages et inconvénients de chaque technologie.",
+        youtubeId: "v3uBFipSzeA",
+        category: "Comparatif"
+    },
+    {
+        id: 4,
+        title: "Guide Entretien Moto pour Débutants",
+        description: "Les bases de l'entretien moto à connaître absolument.",
+        youtubeId: "8RjmP_nSyLo",
+        category: "Entretien"
+    },
+    {
+        id: 5,
+        title: "Salon Moto de Paris 2024 - Les Révélations",
+        description: "Tour d'horizon des nouveautés présentées au salon.",
+        youtubeId: "7KZIg43uO4g",
+        category: "Événement"
+    },
+    {
+        id: 6,
+        title: "Conduire en Hiver: Nos Conseils Sécurité",
+        description: "Les techniques pour rouler en sécurité par temps froid.",
+        youtubeId: "KnSe46bvEM8",
+        category: "Sécurité"
+    }
+];

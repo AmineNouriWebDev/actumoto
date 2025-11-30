@@ -3,8 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modèles - actumoto.tn</title>
+    <title id="dynamic-title">Modèles de motos - actumoto.tn</title>
+    <meta
+      name="description"
+      id="dynamic-description"
+      content="Découvrez tous nos modèles de motos par marque. Prix, caractéristiques et photos des dernières motos disponibles en Tunisie."
+    />
     <link rel="icon" href="./img/icon.ico" />
+    <link rel="canonical" href="https://actumoto.tn/modeles.html" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      id="og-title"
+      content="Modèles de motos - actumoto.tn"
+    />
+    <meta
+      property="og:description"
+      id="og-description"
+      content="Découvrez tous nos modèles de motos par marque en Tunisie."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://actumoto.tn/modeles.html" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
@@ -47,6 +68,16 @@
         background: rgba(0, 0, 0, 0.98);
         backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+        height: 100px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .model-card {
@@ -79,7 +110,7 @@
         align-items: center;
         padding: 2rem;
       }
-      /* Agrandir la hauteur des images */
+
       .model-card img {
         width: 100%;
         object-fit: cover;
@@ -88,6 +119,64 @@
 
       .image-modal.active {
         display: flex;
+      }
+
+      /* BOUTON RETOUR CORRIGÉ - Position fixe pour être toujours visible */
+      .section-back-btn {
+        position: fixed;
+        top: 120px;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        color: #000;
+        border: 2px solid #ff0000;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 100;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+      }
+
+      .section-back-btn:hover {
+        background: #ff0000;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+      }
+
+      /* Bouton retour dans le modal */
+      .modal-back-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 1001;
+        text-decoration: none;
+      }
+
+      .modal-back-btn:hover {
+        background: #ff0000;
+        color: white;
+        transform: scale(1.1);
       }
 
       @media (max-width: 767px) {
@@ -100,7 +189,7 @@
         }
 
         .model-card img {
-          height: 250px !important; /* Augmenté de 200px à 250px */
+          height: 250px !important;
           width: 100%;
         }
 
@@ -109,13 +198,32 @@
           max-width: 100%;
           object-fit: contain;
         }
+
         .image-modal {
           padding: 1rem;
         }
+
+        /* BOUTON RETOUR MOBILE */
+        .section-back-btn {
+          top: 110px;
+          right: 1rem;
+          width: 50px;
+          height: 50px;
+          font-size: 1.3rem;
+        }
+
+        .modal-back-btn {
+          top: 1rem;
+          right: 1rem;
+          width: 40px;
+          height: 40px;
+          font-size: 1.2rem;
+        }
       }
+
       @media (min-width: 768px) {
         .model-card img {
-          height: 300px !important; /* Hauteur augmentée pour desktop */
+          height: 300px !important;
         }
       }
 
@@ -124,39 +232,119 @@
           padding-left: 0.75rem;
           padding-right: 0.75rem;
         }
+
+        .section-back-btn {
+          top: 105px;
+          right: 0.75rem;
+          width: 45px;
+          height: 45px;
+          font-size: 1.2rem;
+        }
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
     </style>
   </head>
   <body>
+    <!-- Schema.org for Product Collection -->
+    <script type="application/ld+json" id="dynamic-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Modèles de motos",
+        "description": "Collection de modèles de motos disponibles chez actumoto.tn",
+        "url": "https://actumoto.tn/modeles.html"
+      }
+    </script>
+
     <!-- Header -->
-    <!-- Dans la section Header -->
-    <header class="header-futurist fixed w-full top-0 z-50">
-      <div class="container mx-auto px-4 py-2">
-        <div class="flex justify-center items-center w-full relative">
+    <header class="header-futurist fixed w-full top-0 z-50" role="banner">
+      <div class="container mx-auto px-4">
+        <div class="header-container">
           <div class="flex items-center">
-            <a href="index.html">
+            <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
               <img
                 src="./img/logo-principal-6.png"
-                alt="actumoto.tn"
+                alt="actumoto.tn - Retour à l'accueil"
                 class="header-logo h-auto w-[150px] md:w-[200px]"
+                width="200"
+                height="25"
               />
             </a>
           </div>
-          <a
-            href="index.html"
-            class="absolute left-4 text-white hover:text-red-400 transition-colors text-sm md:text-base"
-          >
-            ← Retour
-          </a>
         </div>
       </div>
     </header>
 
-    <!-- Modal pour images -->
-    <div id="imageModal" class="image-modal">
+    <!-- Section Modèles avec bouton retour CORRIGÉ -->
+    <section class="pt-24 pb-8 relative" role="main">
+      <!-- BOUTON RETOUR FIXE ET VISIBLE -->
+      <a
+        href="index.html"
+        class="section-back-btn"
+        title="Retour à l'accueil"
+        aria-label="Retour à la page d'accueil"
+      >
+        ←
+      </a>
+
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4"
+        >
+          <div>
+            <h1
+              id="selected-brand"
+              class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2"
+              aria-live="polite"
+            >
+              Modèles de motos
+            </h1>
+            <p id="models-count" class="text-gray-600" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div
+          id="models-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          role="list"
+          aria-label="Liste des modèles de motos"
+        >
+          <!-- Modèles chargés dynamiquement -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal pour images avec bouton retour -->
+    <div
+      id="imageModal"
+      class="image-modal"
+      role="dialog"
+      aria-label="Vue agrandie de l'image"
+      aria-modal="true"
+    >
+      <a
+        href="index.html"
+        class="modal-back-btn"
+        title="Retour à l'accueil"
+        aria-label="Retour à la page d'accueil"
+      >
+        ←
+      </a>
       <div class="modal-content relative max-w-4xl max-h-full mx-4">
         <button
           class="close-modal absolute -top-4 -right-4 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full z-50 flex items-center justify-center text-2xl font-bold shadow-lg transition-all duration-300"
+          aria-label="Fermer la vue agrandie"
         >
           &times;
         </button>
@@ -169,32 +357,8 @@
       </div>
     </div>
 
-    <!-- Section Modèles -->
-    <section class="pt-24 pb-8">
-      <div class="container mx-auto px-4">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4"
-        >
-          <div>
-            <h1
-              id="selected-brand"
-              class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2"
-            ></h1>
-            <p id="models-count" class="text-gray-600"></p>
-          </div>
-        </div>
-
-        <div
-          id="models-container"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <!-- Modèles chargés dynamiquement -->
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer bg-black text-white py-8 mt-12">
+    <footer class="footer bg-black text-white py-8 mt-12" role="contentinfo">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="text-center md:text-left mb-4 md:mb-0">
@@ -209,6 +373,7 @@
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -220,6 +385,7 @@
             <a
               href="mailto:marwenmahroug@gmail.com"
               class="text-sm md:text-base text-white hover:text-red-300 transition-colors"
+              aria-label="Nous contacter par email"
             >
               marwenmahroug@gmail.com
             </a>
@@ -242,6 +408,7 @@
 
         if (brandParam && modelsData[brandParam]) {
           showModels(brandParam);
+          updateMetaTags(brandParam);
         } else {
           window.location.href = "index.html";
         }
@@ -252,33 +419,47 @@
         const count = document.getElementById("models-count");
         const container = document.getElementById("models-container");
 
-        title.textContent = brand.toUpperCase();
+        title.textContent = `${brand.toUpperCase()} - Modèles`;
         count.textContent = `${modelsData[brand].length} modèle(s) disponible(s)`;
         container.innerHTML = "";
 
         if (modelsData[brand]) {
-          modelsData[brand].forEach((model) => {
+          // Update Schema.org data
+          updateSchemaData(brand);
+
+          modelsData[brand].forEach((model, index) => {
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
+            modelCard.setAttribute("role", "listitem");
             modelCard.innerHTML = `
-        <img src="${model.image}" alt="${model.name}" 
-             class="w-full model-image cursor-pointer" 
-             data-image="${model.image}" 
-             onerror="this.src='./img/placeholder-moto.jpg'">
-        <div class="p-6 flex-grow flex flex-col">
-          <h3 class="futurist-font text-xl mb-3 flex-grow">${model.name}</h3>
-          <div class="flex justify-between items-center mt-auto">
-            <span class="text-red-600 font-bold text-lg">${model.price}</span>
-            <span class="px-3 py-1 rounded-full text-xs font-semibold ${
-              model.type === "Électrique"
-                ? "bg-green-100 text-green-800"
-                : "bg-orange-100 text-orange-800"
-            }">
-              ${model.type}
-            </span>
-          </div>
-        </div>
-      `;
+              <img 
+                src="${model.image}" 
+                alt="${model.name} - ${brand} - Prix: ${model.price}" 
+                class="w-full model-image cursor-pointer" 
+                data-image="${model.image}" 
+                width="400"
+                height="300"
+                onerror="this.src='./img/placeholder-moto.jpg'"
+                loading="lazy"
+              >
+              <div class="p-6 flex-grow flex flex-col">
+                <h2 class="futurist-font text-xl mb-3 flex-grow">${
+                  model.name
+                }</h2>
+                <div class="flex justify-between items-center mt-auto">
+                  <span class="text-red-600 font-bold text-lg">${
+                    model.price
+                  }</span>
+                  <span class="px-3 py-1 rounded-full text-xs font-semibold ${
+                    model.type === "Électrique" || model.type === "Electrique"
+                      ? "bg-green-100 text-green-800"
+                      : "bg-orange-100 text-orange-800"
+                  }">
+                    ${model.type}
+                  </span>
+                </div>
+              </div>
+            `;
             container.appendChild(modelCard);
           });
 
@@ -290,6 +471,53 @@
         }
       }
 
+      function updateMetaTags(brand) {
+        // Update page title and meta description
+        document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
+        document.querySelector(
+          'meta[name="description"]'
+        ).content = `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
+
+        // Update Open Graph tags
+        document.querySelector(
+          'meta[property="og:title"]'
+        ).content = `Modèles ${brand} - actumoto.tn`;
+        document.querySelector(
+          'meta[property="og:description"]'
+        ).content = `Modèles ${brand} disponibles en Tunisie chez actumoto.tn`;
+      }
+
+      function updateSchemaData(brand) {
+        const schemaScript = document.getElementById("dynamic-schema");
+        const models = modelsData[brand];
+
+        const schemaData = {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `Modèles ${brand}`,
+          description: `Collection des modèles de motos ${brand} disponibles`,
+          url: window.location.href,
+          numberOfItems: models.length,
+          itemListElement: models.map((model, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            item: {
+              "@type": "Product",
+              name: model.name,
+              description: `${model.name} - ${brand}`,
+              category: model.type,
+              offers: {
+                "@type": "Offer",
+                price: model.price.replace(/[^0-9,]/g, "").replace(",", "."),
+                priceCurrency: "TND",
+              },
+            },
+          })),
+        };
+
+        schemaScript.textContent = JSON.stringify(schemaData);
+      }
+
       function initImageModal() {
         const modal = document.getElementById("imageModal");
         const modalImage = document.getElementById("modalImage");
@@ -297,17 +525,20 @@
 
         closeModal.addEventListener("click", function () {
           modal.classList.remove("active");
+          modal.setAttribute("aria-hidden", "true");
         });
 
         modal.addEventListener("click", function (e) {
           if (e.target === modal) {
             modal.classList.remove("active");
+            modal.setAttribute("aria-hidden", "true");
           }
         });
 
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" && modal.classList.contains("active")) {
             modal.classList.remove("active");
+            modal.setAttribute("aria-hidden", "true");
           }
         });
       }
@@ -317,7 +548,9 @@
         const modalImage = document.getElementById("modalImage");
 
         modalImage.src = imageSrc;
+        modalImage.alt = "Vue agrandie du modèle de moto";
         modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
       }
     </script>
   </body>
