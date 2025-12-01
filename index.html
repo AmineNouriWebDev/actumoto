@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+<link rel="stylesheet" href="./header.css">
     <style>
       :root {
         --primary-red: #ff0000;
@@ -64,21 +64,6 @@
       }
 
       /* Header augmenté et centré */
-      .header-futurist {
-        background: rgba(0, 0, 0, 0.98);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(255, 0, 0, 0.1);
-        height: 100px;
-        display: flex;
-        align-items: center;
-      }
-
-      .header-container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
 
       .brand-logo-card {
         background: transparent;
@@ -324,12 +309,6 @@
           height: 50px;
           max-width: 100%;
         }
-
-        .header-logo {
-          height: 3.5rem;
-          max-width: 100%;
-          object-fit: contain;
-        }
       }
 
       @media (max-width: 480px) {
@@ -428,18 +407,22 @@
     </script>
 
     <!-- Header -->
-    <header class="header-futurist fixed w-full top-0 z-50" role="banner">
+    <!-- Dans la section Header de index.html -->
+    <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4">
         <div class="header-container">
           <div class="flex items-center">
             <h1 class="sr-only">actumoto.tn - Concessionnaire moto Tunisie</h1>
-            <img
-              src="./img/logo-principal-6.png"
-              alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
-              class="header-logo h-auto w-[200px] md:w-[300px]"
-              width="300"
-              height="37"
-            />
+            <!-- Ajouter le lien autour du logo -->
+            <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
+              <img
+                src="./img/logo-principal-6.png"
+                alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
+                class="header-logo main-header-logo"
+                width="300"
+                height="37"
+              />
+            </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,48 @@
+/* header.css - Styles communs pour le header sur toutes les pages */
+
+.header-futurist {
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.1);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    height: auto;
+    object-fit: contain;
+}
+
+/* Styles spécifiques pour le header commun */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+/* Mobile First */
+@media (max-width: 767px) {
+    .header-logo {
+        height: 3.5rem;
+        max-width: 100%;
+    }
+
+    .main-header-logo {
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header-logo {
+        width: 300px;
+    }
+}

@@ -29,7 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./header.css">
     <style>
       :root {
         --primary-red: #ff0000;
@@ -62,21 +62,7 @@
         font-weight: 700;
       }
 
-      .header-futurist {
-        background: rgba(0, 0, 0, 0.98);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(255, 0, 0, 0.1);
-        height: 100px;
-        display: flex;
-        align-items: center;
-      }
-
-      .header-container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+   
 
       .video-gallery {
         display: grid;
@@ -240,26 +226,29 @@
         "name": "Actualités Moto - Vidéos",
         "description": "Collection de vidéos sur les actualités moto, tests et conseils",
         "url": "https://actumoto.tn/actualite.html",
-        "numberOfItems": 6
+        "numberOfItems": 10
       }
     </script>
 
     <!-- Header -->
-    <header class="header-futurist fixed w-full top-0 z-50" role="banner">
-      <div class="container mx-auto px-4">
-        <div class="header-container">
-          <div class="flex items-center">
-            <img
-              src="./img/logo-principal-6.png"
-              alt="actumoto.tn - Actualités Moto Tunisie"
-              class="header-logo h-auto w-[150px] md:w-[200px]"
-              width="200"
-              height="25"
-            />
-          </div>
-        </div>
+   <header class="header-futurist main-header" role="banner">
+  <div class="container mx-auto px-4">
+    <div class="header-container">
+      <div class="flex items-center">
+        <h1 class="sr-only">actumoto.tn - Actualités Moto Tunisie</h1>
+        <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
+          <img
+            src="./img/logo-principal-6.png"
+            alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
+            class="header-logo main-header-logo"
+            width="300"
+            height="37"
+          />
+        </a>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
     <!-- Section Actualités avec bouton retour CORRIGÉ -->
     <section class="pt-32 pb-8 relative" role="main">

@@ -31,7 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Racing+Sans+One&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./header.css" />
     <style>
       :root {
         --primary-red: #ff0000;
@@ -62,22 +62,6 @@
       .futurist-font {
         font-family: "Orbitron", sans-serif;
         font-weight: 700;
-      }
-
-      .header-futurist {
-        background: rgba(0, 0, 0, 0.98);
-        backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(255, 0, 0, 0.1);
-        height: 100px;
-        display: flex;
-        align-items: center;
-      }
-
-      .header-container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
 
       .model-card {
@@ -193,12 +177,6 @@
           width: 100%;
         }
 
-        .header-logo {
-          height: 3.5rem;
-          max-width: 100%;
-          object-fit: contain;
-        }
-
         .image-modal {
           padding: 1rem;
         }
@@ -268,17 +246,17 @@
     </script>
 
     <!-- Header -->
-    <header class="header-futurist fixed w-full top-0 z-50" role="banner">
+    <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4">
         <div class="header-container">
           <div class="flex items-center">
             <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
               <img
                 src="./img/logo-principal-6.png"
-                alt="actumoto.tn - Retour à l'accueil"
-                class="header-logo h-auto w-[150px] md:w-[200px]"
-                width="200"
-                height="25"
+                alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
+                class="header-logo main-header-logo"
+                width="300"
+                height="37"
               />
             </a>
           </div>
@@ -287,7 +265,7 @@
     </header>
 
     <!-- Section Modèles avec bouton retour CORRIGÉ -->
-    <section class="pt-24 pb-8 relative" role="main">
+    <section class="pt-24 pb-8 mt-4 relative" role="main">
       <!-- BOUTON RETOUR FIXE ET VISIBLE -->
       <a
         href="index.html"
