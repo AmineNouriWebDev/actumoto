@@ -739,5 +739,33 @@ const videosData = [
         description: "Les techniques pour rouler en sécurité par temps froid.",
         youtubeId: "KnSe46bvEM8",
         category: "Sécurité"
-    }
+    },
+      {
+        id: 7,
+        title: "Conduire en Hiver: Nos Conseils Sécurité",
+        description: "Les techniques pour rouler en sécurité par temps froid.",
+        youtubeId: "gh6kBl9Qs24",
+        category: "Sécurité"
+    },
+     {
+        id: 8,
+        title: "Conduire en Hiver: Nos Conseils Sécurité",
+        description: "Les techniques pour rouler en sécurité par temps froid.",
+        youtubeId: "dkQHfp9qRo0",
+        category: "Sécurité"
+    },
+      {
+        id: 9,
+        title: "Conduire en Hiver: Nos Conseils Sécurité",
+        description: "Les techniques pour rouler en sécurité par temps froid.",
+        youtubeId: "zJ6GS-VnLLQ",
+        category: "Sécurité"
+    },
+     {
+        id: 10,
+        title: "Conduire en Hiver: Nos Conseils Sécurité",
+        description: "Les techniques pour rouler en sécurité par temps froid.",
+        youtubeId: "Ia1foCEjtCY",
+        category: "Sécurité"
+    }, 
 ];
