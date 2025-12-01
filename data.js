@@ -646,6 +646,22 @@ const modelsData = {
       
     
     ],
+      FTM: [
+        {
+            name: "Cyclomoteur Jialing Future STAR 110CC - Rouge",
+            image: "./img/models/ftm-jialing-future-star-110cc-rouge.jpg",
+            price: "3,399 TND",
+            type: "Essence",
+            
+        },
+         {
+            name: "Moto Cross Korak Noir",
+            image: "./img/models/ftm-korak-noir.jpg",
+            price: "3,499 TND",
+            type: "Essence",
+            
+        },
+    ],
     
 };
 const videosData = [
