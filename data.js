@@ -408,13 +408,7 @@ const modelsData = {
         },
     ],
     YADEA: [
-        {
-            name: "SCOOTER ELECTRIQUE YADEA - E8S - 3000W - BLANC",
-            image: "./img/models/scooter-electrique-yadea-e8s-3000w-blanc.jpg",
-            price: "5,999 TND",
-            type: "Electrique",
-            
-        },
+     
         {
             name: "SCOOTER ELECTRIQUE YADEA - E8S - 3000W - BLEU",
             image: "./img/models/scooter-electrique-yadea-e8s-3000w-bleu.jpg",
@@ -431,13 +425,7 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "SLC AZUR 124 CC - BLEU",
-            image: "./img/models/slc-azur-124cc-bleu.jpg",
-            price: "5,199 TND",
-            type: "Essence",
-            
-        },
+      
     ],
     SENKE: [
         {
@@ -485,13 +473,7 @@ const modelsData = {
      
     ],
     NOVAGO: [
-        {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Noir",
-            image: "./img/models/novago-swing-noir.jpg",
-            price: "6,199 TND",
-            type: "Electrique",
-            
-        },
+ 
         {
             name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Bleu",
             image: "./img/models/novago-swing-bleu.jpg",
@@ -499,13 +481,7 @@ const modelsData = {
             type: "Electrique",
             
         },
-        {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Gris",
-            image: "./img/models/novago-swing-gris.jpg",
-            price: "6,199 TND",
-            type: "Electrique",
-            
-        },
+      
     ],
     DAYUN: [
         {
@@ -522,13 +498,7 @@ const modelsData = {
             type: "Essence",
             
         },
-        {
-            name: "DAYUN SNIPER SLC - 124CC - NOIR",
-            image: "./img/models/dayun-sniper-slc-noir.jpg",
-            price: "5,399 TND",
-            type: "Essence",
-            
-        },
+     
          {
             name: "Scooter DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
             image: "./img/models/dayun-dy125t-bleu.jpg",
@@ -547,21 +517,15 @@ const modelsData = {
     QJMOTOR: [
     
         {
-            name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - NOIR",
+            name: "SUPERLIGHT QJMOTOR CBS 125cc - NOIR",
             image: "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg",
             price: "7,499 TND",
             type: "Essence",
             
         },
-        {
-            name: "ZIMOTA SUPERLIGHT QJMOTOR CBS 125cc - BRONZE",
-            image: "./img/models/qjmotor-zimota-superlight-qjmotor-cbs-bronze.jpg",
-            price: "7,499 TND",
-            type: "Essence",
-            
-        },
+     
          {
-            name: "Motocycle ZIMOTA QJ MOTOR SRK 125 S 125CC Injection NOIR",
+            name: "Motocycle QJ MOTOR SRK 125 S 125CC Injection NOIR",
             image: "./img/models/qjmotor-zimota-srk-125-s-noir-injection.jpg",
             price: "10,999 TND",
             type: "Essence",
@@ -576,14 +540,7 @@ const modelsData = {
             type: "Électrique",
             
         },
-      
-        {
-            name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Gris",
-            image: "./img/models/wolf-vero-gris.jpg",
-            price: "3,799 TND",
-            type: "Électrique",
-            
-        },
+     
         {
             name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Noir",
             image: "./img/models/wolf-vero-noir.jpg",
@@ -598,13 +555,7 @@ const modelsData = {
             type: "Électrique",
             
         },
-        {
-            name: "Scooter Électrique WOLF 1000 Watts Avec Coffre - Noir",
-            image: "./img/models/wolf-vero-noir-coffre.jpg",
-            price: "3,999 TND",
-            type: "Électrique",
-            
-        },
+     
     ],
        MS: [
         {
