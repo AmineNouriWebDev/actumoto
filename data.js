@@ -24,10 +24,12 @@ const brands = [
     { name: "E-RIDER", logo: "./img/logos-actumoto/erider.png" },
     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
+    { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
     { name: "POWER_KIM", logo: "./img/logos-actumoto/powerkim.png" },
     { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
+    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
 ];
 
 const modelsData = {
@@ -662,7 +664,36 @@ const modelsData = {
             
         },
     ],
+       BBM: [
+        {
+            name: "Motocycle BBM 124CC FZ MAX Compteur Digitale",
+            image: "./img/models/bbm-124cc-fz-max-compteur-digitale.jpg",
+            price: "3,269 TND",
+            type: "Essence",
+            
+        },
+        
+    ],
     
+      LVNENG: [
+        {
+            name: "Scooter Électrique LVNENG LX05 49 CC - Vert",
+            image: "./img/models/lvneng-lx05-49cc-vert.jpg",
+            price: "5,690 TND",
+            type: "Electrique",
+            
+        },
+        
+        {
+            name: "SCOOTER ELECTRIQUE LVNENG NCS GENUIS - BEIGE ET MARRON",
+            image: "./img/models/lvneng-ncs-genius-beige-marron.jpg",
+            price: "7,300 TND",
+            type: "Electrique",
+            
+        },
+        
+    ],
+
 };
 const videosData = [
     {
