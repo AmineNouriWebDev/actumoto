@@ -700,72 +700,62 @@ const modelsData = {
 const videosData = [
     {
         id: 1,
-        title: "Test: Nouvelle Yamaha MT-09 2024",
-        description: "Découvrez les performances de la dernière version de la MT-09 sur circuit.",
-        youtubeId: "Tr1G8g7oiL4",
-        category: "Test"
+        marque: "Honda",
+        modele: "X-ADV",
+        youtubeId: "Tr1G8g7oiL4"
     },
     {
         id: 2,
-        title: "Top 10 Accessoires Moto Essentiels",
-        description: "Les accessoires indispensables pour rouler en sécurité et confort.",
-        youtubeId: "L2mGXWcT6nM",
-        category: "Accessoires"
+        marque: "Peugeot",
+        modele: "Peugeot 103 Electric Moped",
+        youtubeId: "L2mGXWcT6nM"
     },
     {
         id: 3,
-        title: "Moto Électrique vs Essence: Le Comparatif",
-        description: "Analyse complète des avantages et inconvénients de chaque technologie.",
-        youtubeId: "v3uBFipSzeA",
-        category: "Comparatif"
+        marque: "Peugeot",
+        modele: "Peugeot Pulsion",
+        youtubeId: "v3uBFipSzeA"
     },
     {
         id: 4,
-        title: "Guide Entretien Moto pour Débutants",
-        description: "Les bases de l'entretien moto à connaître absolument.",
-        youtubeId: "8RjmP_nSyLo",
-        category: "Entretien"
+        marque: "CFMOTO",
+        modele: "MTX - 1000",
+        youtubeId: "8RjmP_nSyLo"
     },
     {
         id: 5,
-        title: "Salon Moto de Paris 2024 - Les Révélations",
-        description: "Tour d'horizon des nouveautés présentées au salon.",
-        youtubeId: "7KZIg43uO4g",
-        category: "Événement"
+        marque: "SUZUKI",
+        modele: "Burgman 400 Touring",
+        youtubeId: "7KZIg43uO4g"
     },
     {
         id: 6,
-        title: "Conduire en Hiver: Nos Conseils Sécurité",
-        description: "Les techniques pour rouler en sécurité par temps froid.",
-        youtubeId: "KnSe46bvEM8",
-        category: "Sécurité"
+        marque: "Piaggio",
+        modele: "Beverly 310 scooter",
+        youtubeId: "KnSe46bvEM8"
     },
-      {
+    {
         id: 7,
-        title: "Conduire en Hiver: Nos Conseils Sécurité",
-        description: "Les techniques pour rouler en sécurité par temps froid.",
-        youtubeId: "gh6kBl9Qs24",
-        category: "Sécurité"
+        marque: "HONDA",
+        modele: "CB1000 F",
+        youtubeId: "gh6kBl9Qs24"
     },
-     {
+    {
         id: 8,
-        title: "Conduire en Hiver: Nos Conseils Sécurité",
-        description: "Les techniques pour rouler en sécurité par temps froid.",
-        youtubeId: "dkQHfp9qRo0",
-        category: "Sécurité"
+        marque: "HONDA",
+        modele: "WN7 Model Features",
+        youtubeId: "dkQHfp9qRo0"
     },
-      {
+    {
         id: 9,
-        title: "Conduire en Hiver: Nos Conseils Sécurité",
-        description: "Les techniques pour rouler en sécurité par temps froid.",
-        youtubeId: "zJ6GS-VnLLQ",
-        category: "Sécurité"
+        marque: "Apprilia",
+        modele: "Apprilia Tuono V4 Factory ",
+        youtubeId: "zJ6GS-VnLLQ"
     },
-     {
+    {
         id: 10,
-        title: "Conduire en Hiver: Nos Conseils Sécurité",
-        description: "Les techniques pour rouler en sécurité par temps froid.",
-        youtubeId: "Ia1foCEjtCY",
-        category: "Sécurité"
-    }, 
+        marque: "HONDA",
+        modele: "CB1000 GT",
+        youtubeId: "Ia1foCEjtCY"
+    }
 ];

@@ -118,19 +118,7 @@
         padding: 1.5rem;
       }
 
-      .video-title {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
-        color: #1f2937;
-      }
-
-      .video-description {
-        color: #6b7280;
-        font-size: 0.9rem;
-      }
-
-      .video-category {
+      .video-marque {
         display: inline-block;
         background: linear-gradient(135deg, #ff0000, #cc0000);
         color: white;
@@ -139,6 +127,13 @@
         font-size: 0.75rem;
         font-weight: 600;
         margin-bottom: 0.5rem;
+      }
+
+      .video-modele {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #1f2937;
       }
 
       /* BOUTON RETOUR CORRIGÉ - Position fixe pour être toujours visible */
@@ -165,7 +160,7 @@
       }
 
       .section-back-btn:hover {
-        background: #ff0000;
+        background: #b22222;
         color: white;
         transform: scale(1.1);
         box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
@@ -288,8 +283,7 @@
             ACTUALITÉS
           </h1>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Restez informé des dernières nouveautés, tests et événements du
-            monde de la moto
+            Découvrez nos vidéos présentant les derniers modèles de motos
           </p>
         </div>
 
@@ -361,16 +355,15 @@
             <div class="video-container">
               <iframe
                 src="https://www.youtube.com/embed/${video.youtubeId}"
-                title="${video.title} - actumoto.tn"
+                title="${video.marque} ${video.modele} - actumoto.tn"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 loading="lazy"
               ></iframe>
             </div>
             <div class="video-info">
-              <div class="video-category">${video.category}</div>
-              <h2 class="video-title">${video.title}</h2>
-              <p class="video-description">${video.description}</p>
+              <div class="video-marque">${video.marque}</div>
+              <h2 class="video-modele">${video.modele}</h2>
             </div>
           `;
           videoGallery.appendChild(videoCard);
@@ -383,20 +376,20 @@
 
         const videoObjects = videosData.map((video, index) => ({
           "@type": "VideoObject",
-          name: video.title,
-          description: video.description,
+          name: `${video.marque} ${video.modele}`,
+          description: `Vidéo de présentation du ${video.modele} de la marque ${video.marque}`,
           thumbnailUrl: `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`,
           uploadDate: "2024-01-01",
           contentUrl: `https://www.youtube.com/watch?v=${video.youtubeId}`,
           embedUrl: `https://www.youtube.com/embed/${video.youtubeId}`,
-          genre: video.category,
+          genre: "Moto",
         }));
 
         const schemaData = {
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: "Actualités Moto - Vidéos",
-          description: "Collection de vidéos sur les actualités moto",
+          description: "Collection de vidéos présentant les modèles de motos",
           url: window.location.href,
           numberOfItems: videosData.length,
           itemListElement: videosData.map((video, index) => ({
