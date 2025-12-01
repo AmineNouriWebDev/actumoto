@@ -24,7 +24,7 @@ const brands = [
     { name: "E-RIDER", logo: "./img/logos-actumoto/erider.png" },
     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
-    { name: "POWER_KIM", logo: "./img/logos-actumoto/power.png" },
+    { name: "POWER_KIM", logo: "./img/logos-actumoto/powerkim.png" },
     { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },

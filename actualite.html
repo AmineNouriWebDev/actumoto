@@ -191,9 +191,9 @@
           gap: 1rem;
         }
 
-        /* BOUTON RETOUR MOBILE */
+        /* BOUTON RETOUR MOBILE - AJUSTÉ POUR ÉVITER LA COLLISION */
         .section-back-btn {
-          top: 110px;
+          top: 120px; /* Augmenté de 110px à 120px */
           right: 1rem;
           width: 50px;
           height: 50px;
@@ -215,7 +215,7 @@
 
       @media (max-width: 480px) {
         .section-back-btn {
-          top: 105px;
+          top: 115px; /* Augmenté de 105px à 115px */
           right: 0.75rem;
           width: 45px;
           height: 45px;
@@ -267,7 +267,8 @@
     </header>
 
     <!-- Section Actualités avec bouton retour CORRIGÉ -->
-    <section class="pt-24 pb-8 relative" role="main">
+    <section class="pt-32 pb-8 relative" role="main">
+      <!-- Changé pt-24 à pt-32 -->
       <!-- BOUTON RETOUR FIXE ET VISIBLE -->
       <a
         href="index.html"
@@ -280,8 +281,11 @@
 
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-          <h1 class="futurist-font text-4xl md:text-5xl text-gray-800 mb-4">
-            ACTUALITÉS MOTOS
+          <!-- TITRE MODIFIÉ : couleur rouge et plus d'espace -->
+          <h1
+            class="futurist-font text-4xl md:text-5xl text-[#ff0000] mb-6 mt-4"
+          >
+            ACTUALITÉS
           </h1>
           <p class="text-xl text-gray-600 max-w-2xl mx-auto">
             Restez informé des dernières nouveautés, tests et événements du
@@ -330,7 +334,7 @@
               class="text-sm md:text-base text-white hover:text-red-300 transition-colors"
               aria-label="Nous contacter par email"
             >
-              marwenmahroug@gmail.com
+              actumoto.tn@gmail.com
             </a>
           </div>
         </div>

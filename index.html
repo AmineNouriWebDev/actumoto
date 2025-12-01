@@ -120,7 +120,9 @@
         align-items: center;
       }
 
-      /* Hero Section COMPLÈTEMENT RECOMPOSÉE */
+      /* =========================================== */
+      /* HERO SECTION - MODIFICATIONS APPLIQUÉES */
+      /* =========================================== */
       .hero-section {
         width: 100%;
         display: flex;
@@ -135,7 +137,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 100px; /* Compensation pour le header fixed */
       }
 
       .hero-image {
@@ -146,20 +147,23 @@
         object-fit: contain;
       }
 
-      /* Mobile: image centrée avec son ratio naturel */
+      /* Mobile: image centrée sans marge avec header */
       @media (max-width: 767px) {
         .hero-section {
-          padding: 0 1rem;
+          padding: 0;
+          margin-top: 100px; /* Collé au header sans espace */
         }
 
         .hero-image-container {
-          margin-top: 100px;
+          margin-top: 0; /* Pas de marge supplémentaire */
+          width: 100%;
         }
 
         .hero-image {
           max-height: 50vh;
           width: 100%;
           height: auto;
+          object-fit: contain; /* Conserve tout le contenu */
         }
       }
 
@@ -167,12 +171,13 @@
       @media (min-width: 768px) {
         .hero-section {
           padding: 0;
+          margin-top: 100px; /* Collé au header */
         }
 
         .hero-image-container {
           max-width: 1200px;
           width: 95%;
-          margin: 100px auto 0;
+          margin: 0 auto; /* Pas de marge verticale */
         }
 
         .hero-image {
@@ -181,27 +186,70 @@
         }
       }
 
-      .accessories-section {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 40vh;
-        min-height: 300px;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        transition: all 0.3s ease;
+      /* =========================================== */
+      /* SECTION ACCESSOIRES - MODIFICATIONS APPLIQUÉES */
+      /* =========================================== */
+      .accessories-container {
         width: 100%;
-        border-radius: 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      .accessories-section:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
+      .accessories-image-container {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
-      /* Style amélioré pour le lien pièces/accessoires */
+      .accessories-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* Mobile: image collée au footer */
+      @media (max-width: 767px) {
+        .accessories-image {
+          max-height: 40vh;
+        }
+
+        /* Supprimer toute marge en bas de la section */
+        .accessories-section-wrapper {
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      /* Desktop: image pleine largeur sans bordure ni espace latéral */
+      @media (min-width: 768px) {
+        .accessories-image-container {
+          width: 100%; /* Pleine largeur sans marge négative sur desktop */
+          left: 0;
+          right: 0;
+          margin-left: 0;
+          margin-right: 0;
+          background-color: white; /* Fond blanc pour éviter les couleurs latérales */
+        }
+
+        .accessories-image {
+          max-height: 400px;
+          transition: transform 0.3s ease;
+          width: 100%;
+        }
+
+        .accessories-image:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      /* =========================================== */
+      /* STYLES COMMUNS */
+      /* =========================================== */
       .accessories-link-container {
         margin-bottom: 1rem;
       }
@@ -282,29 +330,6 @@
           max-width: 100%;
           object-fit: contain;
         }
-
-        .accessories-section {
-          height: 30vh;
-          min-height: 200px;
-          border-radius: 0;
-          width: 100vw;
-          position: relative;
-          left: 50%;
-          right: 50%;
-          margin-left: -50vw;
-          margin-right: -50vw;
-          background-size: cover;
-          background-position: center;
-        }
-
-        .full-width-banner {
-          width: 100vw;
-          position: relative;
-          left: 50%;
-          right: 50%;
-          margin-left: -50vw;
-          margin-right: -50vw;
-        }
       }
 
       @media (max-width: 480px) {
@@ -334,33 +359,8 @@
       }
 
       @media (max-width: 768px) {
-        .accessories-section {
-          height: 35vh;
-          min-height: 250px;
-        }
-      }
-
-      @media (min-width: 768px) {
-        .accessories-section {
-          height: 50vh;
-          min-height: 400px;
-          background-size: contain;
-          background-color: white;
-          border-radius: 12px;
-          max-width: 1200px;
-          width: 95%;
-          margin: 0 auto;
-          border: 1px solid rgba(255, 0, 0, 0.1);
-          left: auto;
-          right: auto;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .accessories-section:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
-          border-color: rgba(255, 0, 0, 0.3);
+        .accessories-image {
+          max-height: 35vh;
         }
       }
 
@@ -380,24 +380,49 @@
   </head>
   <body>
     <!-- Schema.org Organization -->
+    <!-- Schema.org pour Catalogue en ligne -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MotorcycleDealer",
+        "@type": "WebSite",
         "name": "actumoto.tn",
-        "description": "Concessionnaire de motos neuves en Tunisie",
+        "description": "Catalogue complet des motos neuves en Tunisie. Comparateur de prix, marques et modèles disponibles sur le marché tunisien.",
+        "url": "https://actumoto.tn",
+        "inLanguage": "fr",
+        "publisher": {
+          "@type": "Organization",
+          "name": "actumoto.tn",
+          "url": "https://actumoto.tn",
+          "logo": "https://actumoto.tn/img/logo-principal-6.png"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://actumoto.tn/modeles.html?marque={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Schema.org pour l'organisation -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "actumoto.tn",
+        "description": "Catalogue référence des motos en Tunisie - Prix, comparatifs et disponibilités",
         "url": "https://actumoto.tn",
         "logo": "https://actumoto.tn/img/logo-principal-6.png",
-        "email": "marwenmahroug@gmail.com",
-        "areaServed": "Tunisia",
-        "brand": [
-          "Peugeot",
-          "Suzuki",
-          "CFMOTO",
-          "PIAGGIO",
-          "APRILIA",
-          "SYM",
-          "KYMCO"
+        "email": "actumoto.tn@gmail.com",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Tunisia"
+        },
+        "knowsAbout": [
+          "Motos Tunisie",
+          "Prix motos neuves",
+          "Comparatif motos",
+          "Catalogue motos",
+          "Motos électriques Tunisie"
         ]
       }
     </script>
@@ -422,7 +447,9 @@
 
     <!-- Main Content -->
     <main role="main">
-      <!-- Hero Section COMPLÈTEMENT RECOMPOSÉE -->
+      <!-- =========================================== -->
+      <!-- HERO SECTION MODIFIÉE -->
+      <!-- =========================================== -->
       <section
         class="hero-section"
         aria-label="Catalogue moto Tunisie - Découvrez les derniers modèles"
@@ -436,17 +463,6 @@
         </div>
       </section>
 
-      <!-- Section Marques -->
-      <section class="py-20 relative" aria-labelledby="marques-title">
-        <div class="container mx-auto px-4">
-          <div
-            id="brands-container"
-            class="brands-grid"
-            role="list"
-            aria-label="Liste des marques de motos disponibles"
-          ></div>
-        </div>
-      </section>
       <!-- Bouton Actualités -->
       <section class="py-4" aria-labelledby="actualites-title">
         <div class="container mx-auto px-4 text-center">
@@ -456,18 +472,42 @@
             class="news-btn"
             aria-label="Voir les actualités motos"
           >
-            📰 ACTUALITÉS
+            📰 ACTUALITÉS MOTOS
           </a>
         </div>
       </section>
-      <!-- Section Pièces et Accessoires -->
-      <section class="py-1" aria-labelledby="accessoires-title">
+
+      <!-- Section Marques -->
+      <section class="py-20 relative" aria-labelledby="marques-title">
+        <div class="container mx-auto px-4">
+          <h2
+            id="marques-title"
+            class="futurist-font text-3xl md:text-4xl text-center mb-12 text-gray-800"
+          >
+            NOS MARQUES DE MOTOS
+          </h2>
+          <div
+            id="brands-container"
+            class="brands-grid"
+            role="list"
+            aria-label="Liste des marques de motos disponibles"
+          ></div>
+        </div>
+      </section>
+
+      <!-- =========================================== -->
+      <!-- SECTION ACCESSOIRES MODIFIÉE -->
+      <!-- =========================================== -->
+      <section
+        class="py-1 accessories-section-wrapper"
+        aria-labelledby="accessoires-title"
+      >
         <div class="container mx-auto px-1">
           <div class="text-center accessories-link-container">
             <h2 id="accessoires-title" class="sr-only">
               Pièces et accessoires moto
             </h2>
-            <p class="text-lg md:text-xl text-gray-700 font-semibold">
+            <p class="text-lg md:text-xl text-gray-700 font-semibold mb-4">
               <a
                 href="https://motorsports.simcc.tn/"
                 target="_blank"
@@ -482,28 +522,27 @@
           </div>
         </div>
 
-        <!-- Bannière en pleine largeur -->
+        <!-- Bannière MODIFIÉE - collée au footer -->
         <a
           href="https://motorsports.simcc.tn/"
           target="_blank"
           rel="noopener noreferrer"
-          class="block full-width-banner bg-white"
+          class="block accessories-container"
           aria-label="Accéder aux pièces et accessoires moto"
         >
-          <div
-            class="accessories-section"
-            style="background-image: url('./img/banner-simcc2.jpeg')"
-          >
-            <div
-              class="absolute inset-0 bg-black/5 flex items-center justify-center"
-            ></div>
+          <div class="accessories-image-container">
+            <img
+              src="./img/banner-simcc2.jpeg"
+              alt="Pièces et accessoires moto - motorsports.simcc.tn"
+              class="accessories-image"
+            />
           </div>
         </a>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-black text-white py-8" role="contentinfo">
+    <footer class="footer bg-black text-white py-8 mt-0" role="contentinfo">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="text-center md:text-left mb-4 md:mb-0">
@@ -532,7 +571,7 @@
               class="text-sm md:text-base text-white hover:text-red-300 transition-colors"
               aria-label="Nous contacter par email"
             >
-              marwenmahroug@gmail.com
+              actumoto.tn@gmail.com
             </a>
           </div>
         </div>
