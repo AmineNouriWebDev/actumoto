@@ -21,7 +21,7 @@ const brands = [
     { name: "LM", logo: "./img/logos-actumoto/lm.png" },
     { name: "MS", logo: "./img/logos-actumoto/ms.png" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
-    { name: "E-RIDER", logo: "./img/logos-actumoto/erider.png" },
+    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
     { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
@@ -30,6 +30,9 @@ const brands = [
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
+    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
+    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
+    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
 ];
 
 const modelsData = {
@@ -109,6 +112,21 @@ const modelsData = {
             name: "Aprilia sr 125",
             image: "./img/models/piaggio-aprilia-sr-125.jpg",
             price: "8,699 TND",
+            type: "Essence",
+            
+        },
+         
+        {
+            name: "Aprilia SR GT 125",
+            image: "./img/models/Aprilia_SR-GT_Wall-Img_1920x1280_1.jpg",
+            price: "En Arrivage",
+            type: "Essence",
+            
+        },
+          {
+            name: "Scooter CAPPUCINO S SLC 125 CC-4TEMPS",
+            image: "./img/models/Aprilia-bleu-sr-gt-125.png",
+            price: "5,499 TND",
             type: "Essence",
             
         },
@@ -408,6 +426,13 @@ const modelsData = {
             type: "Essence",
            
         },
+         {
+            name: "Zontes 703 F 2025",
+            image: "./img/models/zontes-703f-2025.webp",
+            price: "En Arrivage",
+            type: "Essence",
+           
+        },
     ],
     YADEA: [
      
@@ -480,6 +505,14 @@ const modelsData = {
             name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Bleu",
             image: "./img/models/novago-swing-bleu.jpg",
             price: "6,199 TND",
+            type: "Electrique",
+            
+        },
+
+          {
+            name: "SCOOTER ELECTRIQUE NOVAGO PIKA - BLANC",
+            image: "./img/models/scooter-electrique-novago-pika-blanc-2.jpg",
+            price: "3,299 TND",
             type: "Electrique",
             
         },
@@ -693,6 +726,72 @@ const modelsData = {
         },
         
     ],
+    
+      E_RIDER: [
+        {
+            name: "Scooter Électrique E-RIDER E-CLASSIC 1200 Watts - Rouge",
+            image: "./img/models/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg",
+            price: "5,199 TND",
+            type: "Electrique",
+            
+        },
+        
+        {
+            name: "Scooter Électrique E-RIDER E-TECH 1200 Watts - Bleu",
+            image: "./img/models/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg",
+            price: "4,179 TND",
+            type: "Electrique",
+            
+        },
+          {
+            name: "Scooter Electrique E-Rider E-Power 1200W Rouge",
+            image: "./img/models/scooter-electrique-e-rider-e-power-1200w-rouge.jpg",
+            price: "3,999 TND",
+            type: "Electrique",
+            
+        },
+          {
+            name: "Scooter Electrique E-Rider E-eco 1000W Blanc",
+            image: "./img/models/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg",
+            price: "3,679 TND",
+            type: "Electrique",
+            
+        },
+        
+    ],
+          LIFAN: [
+        {
+            name: "Motocycle LIFAN Glow 100 CC | LF110.3S - Noir",
+            image: "./img/models/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg",
+            price: "3,859 TND",
+            type: "Essence",
+            
+        },
+            
+    ],
+
+          WATTGO: [
+        {
+            name: "Scooter Électrique WATTGO WG9900 500W - Beige",
+            image: "./img/models/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg",
+            price: "2,199 TND",
+            type: "Electrique",
+            
+        },
+            
+    ],
+    
+    E_FLASH: [
+        {
+            name: "Scooter Électrique E-FLASH 2000 Watts - Blanc&Rouge",
+            image: "./img/models/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg",
+            price: "8,299 TND",
+            type: "Electrique",
+            
+        },
+            
+    ],
+
 
 };
 const videosData = [
