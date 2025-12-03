@@ -40,21 +40,21 @@ const modelsData = {
         {
             name: "Peugeot pulsion 125 i ABS",
             image: "./img/models/peugeot-pulsion-125.jpg",
-            price: "12,850 TND",
+            price: "12,900 TND",
             type: "Essence",
             
         },
         {
             name: "PEUGEOT MÉTROPOLIS 400",
             image: "./img/models/peugeot-metropolis-400.jpg",
-            price: "52,000 TND",
+            price: "59,000 TND",
             type: "Essence",
             
         },
         {
             name: "PEUGEOT XP 400",
             image: "./img/models/peugeot-xp-400.jpg",
-            price: "40,000 TND",
+            price: "41,900 TND",
             type: "Essence",
             
         },
@@ -66,7 +66,7 @@ const modelsData = {
             
         },
         {
-            name: "PEUGEOT Tweet 125",
+            name: "PEUGEOT Tweet 125 Avec top case+ casque LS2 Airflow2 + Pare Brise",
             image: "./img/models/peugeot-tweet-125.jpg",
             price: "9,900 TND",
             type: "Essence",
@@ -123,13 +123,7 @@ const modelsData = {
             type: "Essence",
             
         },
-          {
-            name: "Scooter CAPPUCINO S SLC 125 CC-4TEMPS",
-            image: "./img/models/Aprilia-bleu-sr-gt-125.png",
-            price: "5,499 TND",
-            type: "Essence",
-            
-        },
+        
     ],
     CFMOTO: [
         {
@@ -449,6 +443,13 @@ const modelsData = {
             name: "SLC AZUR 124 CC - NOIR",
             image: "./img/models/slc-azur-124cc-noir.jpg",
             price: "5,199 TND",
+            type: "Essence",
+            
+        },
+          {
+            name: "Scooter CAPPUCINO S SLC 125 CC-4TEMPS",
+            image: "./img/models/Aprilia-bleu-sr-gt-125.png",
+            price: "5,499 TND",
             type: "Essence",
             
         },
@@ -854,5 +855,11 @@ const videosData = [
         marque: "HONDA",
         modele: "CB1000 GT",
         youtubeId: "Ia1foCEjtCY"
-    }
+    },
+    {
+        id: 11,
+        marque: "Zontes",
+        modele: "Zontes 703 F - Le Trail 3 cylindres",
+        youtubeId: "ffmC-iQbHR8"
+    },
 ];
