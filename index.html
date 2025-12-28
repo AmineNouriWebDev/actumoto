@@ -12,7 +12,30 @@
       name="keywords"
       content="moto Tunisie, scooter Tunisie, moto neuve, concessionnaire moto, Peugeot moto, CFMOTO, Suzuki moto, moto électrique Tunisie"
     />
-    <link rel="icon" href="./img/icon.ico" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WGY6N6E618"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WGY6N6E618");
+    </script>
+    <link
+      rel="icon"
+      href="https://actumoto.tn/img/icon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://actumoto.tn/img/icon.ico"
+      type="image/x-icon"
+    />
     <link rel="canonical" href="https://actumoto.tn" />
 
     <!-- Open Graph -->
@@ -23,7 +46,28 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://actumoto.tn" />
-    <meta property="og:image" content="./img/logo-principal-6.png" />
+    <meta
+      property="og:image"
+      content="https://actumoto.tn/img/logo-principal-6.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="actumoto.tn - Catalogue Moto Tunisie"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="actumoto.tn" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="actumoto.tn - Catalogue Moto Tunisie" />
+    <meta
+      name="twitter:description"
+      content="Découvrez les derniers modèles de motos neuves en Tunisie. Marques premium et prix compétitifs."
+    />
+    <meta
+      name="twitter:image"
+      content="https://actumoto.tn/img/logo-principal-6.png"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -372,7 +416,13 @@
           "@type": "Organization",
           "name": "actumoto.tn",
           "url": "https://actumoto.tn",
-          "logo": "https://actumoto.tn/img/logo-principal-6.png"
+          "logo": "https://actumoto.tn/img/logo-principal-6.png",
+          "image": "https://actumoto.tn/img/logo-principal-6.png",
+          "email": "actumoto.tn@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "TN"
+          }
         },
         "potentialAction": {
           "@type": "SearchAction",
@@ -382,7 +432,6 @@
       }
     </script>
 
-    <!-- Schema.org pour l'organisation -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -391,6 +440,7 @@
         "description": "Catalogue référence des motos en Tunisie - Prix, comparatifs et disponibilités",
         "url": "https://actumoto.tn",
         "logo": "https://actumoto.tn/img/logo-principal-6.png",
+        "image": "https://actumoto.tn/img/logo-principal-6.png",
         "email": "actumoto.tn@gmail.com",
         "areaServed": {
           "@type": "Country",
@@ -492,8 +542,8 @@
                 class="accessories-link"
                 aria-label="Découvrir notre gamme de pièces et accessoires moto"
               >
-                Cliquez pour découvrir notre gamme complète de pièces et
-                accessoires
+                Cliquez pour découvrir notre gamme complète d'équipements, de
+                pièces et accessoires
               </a>
             </p>
           </div>
@@ -529,7 +579,7 @@
           </div>
           <div class="flex items-center space-x-2">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
               class="h-4 w-4 text-red-400"
               fill="none"
               viewBox="0 0 24 24"
