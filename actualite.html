@@ -357,7 +357,7 @@
         const videoGallery = document.getElementById("video-gallery");
         videoGallery.innerHTML = "";
 
-        videosData.forEach((video, index) => {
+        [...videosData].reverse().forEach((video, index) => {
           const videoCard = document.createElement("div");
           videoCard.className = "video-card";
           videoCard.setAttribute("role", "listitem");
