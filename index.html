@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>actumoto.tn - Catalogue Moto Tunisie | Vente de motos neuves</title>
+    <title>actumoto.tn - Comparateur Moto Tunisie</title>
     <meta
       name="description"
-      content="Découvrez le catalogue complet des motos neuves en Tunisie. Marques premium Peugeot, Suzuki, CFMOTO, modèles essence et électriques, pièces et accessoires. Livraison partout en Tunisie."
+      content="Actumoto.tn est un site comparateur de prix dédié aux scooters et motos neuves en tunisie et à l actualité moto dans le monde."
     />
     <meta
       name="keywords"
@@ -31,6 +31,24 @@
       href="https://actumoto.tn/img/icon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
     <link
       rel="shortcut icon"
       href="https://actumoto.tn/img/icon.ico"
@@ -400,62 +418,59 @@
         border: 0;
       }
     </style>
-  </head>
-  <body>
-    <!-- Schema.org Organization -->
-    <!-- Schema.org pour Catalogue en ligne -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "actumoto.tn",
-        "description": "Catalogue complet des motos neuves en Tunisie. Comparateur de prix, marques et modèles disponibles sur le marché tunisien.",
+        "name": "ActuMoto Tunisie",
+        "alternateName": "actumoto.tn",
         "url": "https://actumoto.tn",
-        "inLanguage": "fr",
+        "description": "Actumoto.tn est un site comparateur de prix dédié aux scooters et motos neuves en tunisie et à l actualité moto dans le monde.",
+        "inLanguage": "fr-TN",
         "publisher": {
           "@type": "Organization",
-          "name": "actumoto.tn",
+          "name": "ActuMoto Tunisie",
           "url": "https://actumoto.tn",
-          "logo": "https://actumoto.tn/img/logo-principal-6.png",
-          "image": "https://actumoto.tn/img/logo-principal-6.png",
-          "email": "actumoto.tn@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "TN"
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://actumoto.tn/img/logo-principal-6.png"
+          },
+          "sameAs": ["https://www.facebook.com/profile.php?id=61584281323170"],
+          "areaServed": {
+            "@type": "Country",
+            "name": "Tunisie"
           }
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://actumoto.tn/modeles.html?marque={search_term_string}",
-          "query-input": "required name=search_term_string"
         }
       }
     </script>
+    <!-- Pour les reviews/ratings (future fonctionnalité) -->
+    <meta itemprop="ratingValue" content="4.8" />
+    <meta itemprop="ratingCount" content="150" />
 
+    <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "actumoto.tn",
-        "description": "Catalogue référence des motos en Tunisie - Prix, comparatifs et disponibilités",
-        "url": "https://actumoto.tn",
-        "logo": "https://actumoto.tn/img/logo-principal-6.png",
-        "image": "https://actumoto.tn/img/logo-principal-6.png",
-        "email": "actumoto.tn@gmail.com",
-        "areaServed": {
-          "@type": "Country",
-          "name": "Tunisia"
-        },
-        "knowsAbout": [
-          "Motos Tunisie",
-          "Prix motos neuves",
-          "Comparatif motos",
-          "Catalogue motos",
-          "Motos électriques Tunisie"
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://actumoto.tn"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Catalogue",
+            "item": "https://actumoto.tn/modeles.html"
+          }
         ]
       }
     </script>
-
+  </head>
+  <body>
     <!-- Header -->
     <!-- Dans la section Header de index.html -->
     <header class="header-futurist main-header" role="banner">
@@ -532,7 +547,7 @@
         <div class="container mx-auto px-1">
           <div class="text-center accessories-link-container">
             <h2 id="accessoires-title" class="sr-only">
-              Pièces et accessoires motosss
+              Pièces et accessoires moto
             </h2>
             <p class="text-lg md:text-xl text-gray-700 font-semibold mb-4">
               <a

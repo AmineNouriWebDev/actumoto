@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://actumoto.tn/sitemap.xml
+
+# Désactiver certains crawlers problématiques
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: GPTBot
+Disallow: /
