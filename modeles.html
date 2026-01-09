@@ -20,7 +20,6 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-WGY6N6E618");
     </script>
     <link
@@ -97,11 +96,15 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        position: relative;
+        isolation: isolate;
+        contain: layout style; /* AJOUTÉ: Force le containment CSS */
       }
 
       .model-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
+        z-index: 10; /* AJOUTÉ: Élève la carte au survol */
       }
 
       .image-modal {
@@ -122,13 +125,14 @@
         width: 100%;
         object-fit: cover;
         flex-shrink: 0;
+        border-radius: 0;
+        display: block; /* AJOUTÉ: Élimine l'espace en dessous */
       }
 
       .image-modal.active {
         display: flex;
       }
 
-      /* BOUTON RETOUR CORRIGÉ - Position fixe pour être toujours visible */
       .section-back-btn {
         position: fixed;
         top: 120px;
@@ -158,7 +162,6 @@
         box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
       }
 
-      /* Bouton retour dans le modal */
       .modal-back-btn {
         position: absolute;
         top: 2rem;
@@ -204,7 +207,6 @@
           padding: 1rem;
         }
 
-        /* BOUTON RETOUR MOBILE */
         .section-back-btn {
           top: 110px;
           right: 1rem;
@@ -254,6 +256,104 @@
         white-space: nowrap;
         border: 0;
       }
+
+      /* Wrapper du contenu de la carte pour isolation totale */
+      .model-card > div {
+        width: 100%;
+        min-height: 0; /* CRITIQUE: Permet au flexbox de shrink correctement */
+        overflow: hidden; /* CRITIQUE: Empêche tout débordement du contenu */
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Styles pour les boutons et specs */
+      .specs-btn {
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 2;
+      }
+
+      .specs-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+      }
+
+      /* CORRECTION: Container avec position absolute pour ne pas affecter la grille */
+      .specs-container {
+        display: none;
+        opacity: 0;
+        position: relative;
+        z-index: 1;
+        background: white;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%; /* AJOUTÉ: Force la largeur max */
+        box-sizing: border-box;
+        overflow: hidden; /* AJOUTÉ: Empêche le débordement interne */
+      }
+
+      .specs-container[data-open="true"] {
+        display: block;
+        opacity: 1;
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .specs-table {
+        width: 100%;
+        max-width: 100%; /* AJOUTÉ: Empêche le tableau de dépasser */
+        margin-top: 1rem;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        table-layout: fixed;
+      }
+
+      .specs-table th,
+      .specs-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+        word-wrap: break-word; /* AJOUTÉ: Casse les mots trop longs */
+        overflow: hidden; /* AJOUTÉ: Cache le débordement */
+      }
+
+      .specs-table th {
+        background: rgba(255, 0, 0, 0.1);
+        font-weight: 600;
+        color: #ff0000;
+      }
+
+      .specs-table tr:hover {
+        background: rgba(255, 0, 0, 0.05);
+      }
+
+      .close-specs {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ff0000;
+        cursor: pointer;
+        margin-top: 0.5rem;
+      }
     </style>
   </head>
   <body>
@@ -287,9 +387,8 @@
       </div>
     </header>
 
-    <!-- Section Modèles avec bouton retour CORRIGÉ -->
+    <!-- Section Modèles avec bouton retour -->
     <section class="pt-24 pb-8 mt-4 relative" role="main">
-      <!-- BOUTON RETOUR FIXE ET VISIBLE -->
       <a
         href="index.html"
         class="section-back-btn"
@@ -320,6 +419,7 @@
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           role="list"
           aria-label="Liste des modèles de motos"
+          style="grid-auto-rows: auto; align-items: start"
         >
           <!-- Modèles chargés dynamiquement -->
         </div>
@@ -425,13 +525,67 @@
         container.innerHTML = "";
 
         if (modelsData[brand]) {
-          // Update Schema.org data
           updateSchemaData(brand);
 
           modelsData[brand].forEach((model, index) => {
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
             modelCard.setAttribute("role", "listitem");
+            modelCard.setAttribute("data-model-index", index);
+            modelCard.style.gridRow = "auto"; // AJOUTÉ: Force chaque carte dans sa propre rangée de grille
+            modelCard.style.minHeight = "fit-content"; // AJOUTÉ: Hauteur minimale adaptative
+
+            // ID unique avec timestamp pour garantir l'unicité
+            const uniqueId = `specs-${brand.replace(
+              /\s+/g,
+              "-"
+            )}-${index}-${Date.now()}`;
+
+            let specsHtml = "";
+            if (model.specs) {
+              const specs = [
+                { label: "Type moteur", value: model.specs.typeMoteur },
+                { label: "Cylindrée", value: model.specs.cylindree },
+                { label: "Puissance", value: model.specs.puissance },
+                { label: "Couple Maximal", value: model.specs.coupleMaximal },
+                {
+                  label: "Refroidissement",
+                  value: model.specs.refroidissement,
+                },
+                {
+                  label: "Vitesse Maximale",
+                  value: model.specs.vitesseMaximale,
+                },
+                { label: "Alimentation", value: model.specs.alimentation },
+              ];
+
+              specsHtml = `
+                <div class="specs-container" id="${uniqueId}" data-open="false">
+                  <table class="specs-table">
+                    <thead>
+                      <tr>
+                        <th>Caractéristique</th>
+                        <th>Détail</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${specs
+                        .map(
+                          (spec) => `
+                        <tr>
+                          <td>${spec.label}</td>
+                          <td>${spec.value || "–"}</td>
+                        </tr>
+                      `
+                        )
+                        .join("")}
+                    </tbody>
+                  </table>
+                  <span class="close-specs" data-target-id="${uniqueId}">✕ Fermer</span>
+                </div>
+              `;
+            }
+
             modelCard.innerHTML = `
               <img 
                 src="${model.image}" 
@@ -447,23 +601,116 @@
                 <h2 class="futurist-font text-xl mb-3 flex-grow">${
                   model.name
                 }</h2>
-                <div class="flex justify-between items-center mt-auto">
+                <div class="flex justify-between items-center mt-auto gap-2">
                   <span class="text-red-600 font-bold text-lg">${
                     model.price
                   }</span>
-                  <span class="px-3 py-1 rounded-full text-xs font-semibold ${
-                    model.type === "Électrique" || model.type === "Electrique"
-                      ? "bg-green-100 text-green-800"
-                      : "bg-orange-100 text-orange-800"
-                  }">
-                    ${model.type}
-                  </span>
+                  ${
+                    model.specs
+                      ? `<button class="specs-btn" data-target-id="${uniqueId}" data-card-index="${index}">Fiche technique</button>`
+                      : ""
+                  }
                 </div>
+                ${specsHtml}
               </div>
             `;
+
             container.appendChild(modelCard);
+
+            // CORRECTION: Attacher l'event listener IMMÉDIATEMENT après création
+            if (model.specs) {
+              const btn = modelCard.querySelector(".specs-btn");
+              const closeBtn = modelCard.querySelector(".close-specs");
+
+              if (btn) {
+                btn.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  e.stopImmediatePropagation(); // AJOUTÉ: Empêche absolument la propagation
+
+                  const targetId = this.getAttribute("data-target-id");
+                  const specsContainer = document.getElementById(targetId);
+
+                  console.log("Clicked button for:", targetId); // DEBUG
+                  console.log("Container found:", specsContainer); // DEBUG
+
+                  if (!specsContainer) {
+                    console.error("Container not found:", targetId);
+                    return;
+                  }
+
+                  // Fermer TOUTES les autres fiches d'abord
+                  const allOpenContainers = document.querySelectorAll(
+                    ".specs-container[data-open='true']"
+                  );
+                  console.log("Closing containers:", allOpenContainers.length); // DEBUG
+
+                  allOpenContainers.forEach((otherContainer) => {
+                    if (otherContainer.id !== targetId) {
+                      console.log("Closing:", otherContainer.id); // DEBUG
+                      otherContainer.setAttribute("data-open", "false");
+                      const otherBtn = document.querySelector(
+                        `.specs-btn[data-target-id="${otherContainer.id}"]`
+                      );
+                      if (otherBtn) {
+                        otherBtn.textContent = "Fiche technique";
+                      }
+                    }
+                  });
+
+                  // Toggle la fiche actuelle
+                  const isOpen =
+                    specsContainer.getAttribute("data-open") === "true";
+                  console.log(
+                    "Current state:",
+                    isOpen,
+                    "-> New state:",
+                    !isOpen
+                  ); // DEBUG
+                  specsContainer.setAttribute(
+                    "data-open",
+                    isOpen ? "false" : "true"
+                  );
+                  this.textContent = isOpen
+                    ? "Fiche technique"
+                    : "✕ Fiche technique";
+
+                  // VÉRIFICATION FINALE
+                  setTimeout(() => {
+                    const finalOpenCount = document.querySelectorAll(
+                      ".specs-container[data-open='true']"
+                    ).length;
+                    console.log("Final open containers count:", finalOpenCount); // DEBUG
+                    if (finalOpenCount > 1) {
+                      console.error("BUG: Multiple containers still open!");
+                    }
+                  }, 100);
+                });
+              }
+
+              if (closeBtn) {
+                closeBtn.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+
+                  const targetId = this.getAttribute("data-target-id");
+                  const specsContainer = document.getElementById(targetId);
+
+                  if (specsContainer) {
+                    specsContainer.setAttribute("data-open", "false");
+                    const btn = document.querySelector(
+                      `.specs-btn[data-target-id="${targetId}"]`
+                    );
+                    if (btn) {
+                      btn.textContent = "Fiche technique";
+                    }
+                  }
+                });
+              }
+            }
           });
 
+          // Event listeners pour images
           document.querySelectorAll(".model-image").forEach((img) => {
             img.addEventListener("click", function () {
               openImageModal(this.dataset.image);
@@ -473,13 +720,11 @@
       }
 
       function updateMetaTags(brand) {
-        // Update page title and meta description
         document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
         document.querySelector(
           'meta[name="description"]'
         ).content = `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
 
-        // Update Open Graph tags
         document.querySelector(
           'meta[property="og:title"]'
         ).content = `Modèles ${brand} - actumoto.tn`;
