@@ -1437,7 +1437,7 @@ const occasionModelsData = [
     {
         marque: "SUZUKI",
         name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
+        images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg","./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg",  "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
         price: "",
         specs: {
             kilometrage: "0 km",
@@ -1471,7 +1471,7 @@ const occasionModelsData = [
     {
         marque: "HONDA",
         name: "HONDA-CBX1000-modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg"],
+        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg"],
         price: "",
         specs: {
             kilometrage: "",
