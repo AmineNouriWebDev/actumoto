@@ -749,7 +749,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderOccasions();
-        initImageModal();
+        // DÉSACTIVÉ - initImageModal();
       });
 
       function renderOccasions() {
@@ -846,9 +846,11 @@
                  ${
                    hasMultipleImages
                      ? `
+                    <!-- DÉSACTIVÉ - Compteur de photos
                     <div class="more-images-indicator">
                       <span>${images.length}</span> photos
                     </div>
+                    -->
                   `
                      : ""
                  }
@@ -973,14 +975,15 @@
           }
         });
 
-        // Event listeners pour l'image principale (ouvre le modal)
+        // DÉSACTIVÉ - Affichage plein écran au clic sur l'image
+        /* Event listeners pour l'image principale (ouvre le modal)
         document.querySelectorAll(".main-image").forEach((img) => {
           img.addEventListener("click", function () {
             const images = JSON.parse(this.dataset.images || "[]");
             const currentIndex = parseInt(this.dataset.currentIndex || "0");
             openImageModal(images, currentIndex);
           });
-        });
+        }); */
 
         // Event listeners pour les miniatures
         document.querySelectorAll(".thumbnail").forEach((thumb) => {
@@ -1033,8 +1036,8 @@
         });
       }
 
-      // --- LOGIQUE MODAL (Identique à modeles.html) ---
-      let currentModalImages = [];
+      // --- LOGIQUE MODAL (Identique à modeles.html) --- DÉSACTIVÉE
+      /* let currentModalImages = [];
       let currentModalIndex = 0;
 
       function initImageModal() {
@@ -1157,7 +1160,7 @@
 
         modal.classList.add("active");
         modal.setAttribute("aria-hidden", "false");
-      }
+      } */
     </script>
   </body>
 </html>

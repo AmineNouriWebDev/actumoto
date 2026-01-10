@@ -754,7 +754,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         initPage();
-        initImageModal();
+        // DÉSACTIVÉ - initImageModal();
       });
 
       function initPage() {
@@ -879,9 +879,11 @@
                   ${
                     hasMultipleImages
                       ? `
+                    <!-- DÉSACTIVÉ - Compteur de photos
                     <div class="more-images-indicator">
                       <span>${images.length}</span> photos
                     </div>
+                    -->
                   `
                       : ""
                   }
@@ -1014,7 +1016,8 @@
             }
           });
 
-          // Event listeners pour l'image principale (ouvre le modal)
+          // DÉSACTIVÉ - Affichage plein écran au clic sur l'image
+          /* Event listeners pour l'image principale (ouvre le modal)
           document.querySelectorAll(".main-image").forEach((img) => {
             img.addEventListener("click", function () {
               const images = JSON.parse(this.dataset.images || "[]");
@@ -1023,7 +1026,7 @@
               const currentIndex = parseInt(this.dataset.currentIndex || "0");
               openImageModal(images, currentIndex, modelIndex, brand);
             });
-          });
+          }); */
 
           // Event listeners pour les miniatures (change seulement l'image principale, n'ouvre pas le modal)
           document.querySelectorAll(".thumbnail").forEach((thumb) => {
@@ -1124,8 +1127,8 @@
         schemaScript.textContent = JSON.stringify(schemaData);
       }
 
-      // Variables globales pour la navigation dans le modal
-      let currentModalImages = [];
+      // Variables globales pour la navigation dans le modal - DÉSACTIVÉES
+      /* let currentModalImages = [];
       let currentModalIndex = 0;
 
       function initImageModal() {
@@ -1258,7 +1261,7 @@
 
         modal.classList.add("active");
         modal.setAttribute("aria-hidden", "false");
-      }
+      } */
     </script>
   </body>
 </html>
