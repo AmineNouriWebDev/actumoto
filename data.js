@@ -1520,117 +1520,74 @@ const occasionModelsData = [
         }
     },
     {
-        marque: "CFMOTO",
-        name: "CFMOTO 450MT",
-        image: "./img/models/CFMOTO-450MT.jpg",
-        price: "52,000 TND",
+        marque: "MAVERICK",
+        name: "CAN-AM - MAVERICK-XRS-1000.R-🔥TURBO - Jet Moto tel 26711555-53685927",
+        images: ["./img/occasion/7/MAVERICK-XRS-1000-1.jpg", "./img/occasion/7/MAVERICK-XRS-1000-2.jpg", "./img/occasion/7/MAVERICK-XRS-1000-3.jpg", "./img/occasion/7/MAVERICK-XRS-1000-4.jpg"],
+        price: "",
         specs: {
-            typeMoteur: "Monocylindre, 4 temps",
-            cylindree: "450 cc",
-            puissance: "Environ 35 ch",
-            coupleMaximal: "Environ 40 Nm",
+            kilometrage: "6500 km",
+            typeMoteur: "Bicylindre 4 temps turbo,",
+            cylindree: "976 cm³",
+            puissance: "121 ch,",
+            coupleMaximal: "",
             refroidissement: "Liquide",
-            vitesseMaximale: "Environ 180 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
+            vitesseMaximale: "",
+            alimentation: "Injection électronique",
+            freinage: "Double piston hydraulique AV/AR"
         }
     },
     {
-        marque: "Suzuki",
-        name: "SUZUKI GSX-R 600",
-        image: "./img/models/suzuki-burgman-street-ub125-blanc.jpg",
-        price: "48,000 TND",
+        marque: "YAMAHA",
+        name: "YAMAHA Pw 50 🇹🇳 modèle 2022 - Jet Moto tel 26711555",
+        images: ["./img/occasion/8/YAMAHA-Pw-50-1.jpg", "./img/occasion/8/YAMAHA-Pw-50-2.jpg", "./img/occasion/8/YAMAHA-Pw-50-3.jpg", "./img/occasion/8/YAMAHA-Pw-50-4.jpg"],
+        price: "",
         specs: {
-            typeMoteur: "Bicylindre, 4 temps",
-            cylindree: "599 cc",
-            puissance: "Environ 99 ch",
-            coupleMaximal: "Environ 64 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 230 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
+            kilometrage: "",
+            typeMoteur: "Monocylindre 2 temps,",
+            cylindree: "49 cm³",
+            puissance: "3 ch",
+            coupleMaximal: "0,40 mkg",
+            refroidissement: "Air",
+            vitesseMaximale: "",
+            alimentation: "Carburateur Ø 12 mm,",
+            freinage: "Tambour Ø 80 mm AV/AR"
         }
     },
     {
-        marque: "Piaggio",
-        name: "Piaggio VESPA GTS 300",
-        image: "./img/models/piaggio-vespa-gts.jpg",
-        price: "28,000 TND",
+        marque: "BMW",
+        name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
+        images: ["./img/occasion/9/BMW-S1000RR-M-1.jpg", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
+        price: "",
         specs: {
-            typeMoteur: "Monocylindre, 4 temps",
-            cylindree: "300 cc",
-            puissance: "Environ 22 ch",
-            coupleMaximal: "Environ 21 Nm",
+            kilometrage: "0 km",
+            typeMoteur: "4 cylindres en ligne 4 temps",
+            cylindree: "999 cm³",
+            puissance: "218 ch (160 kW)",
+            coupleMaximal: "113 Nm",
             refroidissement: "Liquide",
-            vitesseMaximale: "Environ 160 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
+            vitesseMaximale: "314 km/h",
+            alimentation: "Injection électronique",
+            freinage: "Double disque M AV, disque AR"
         }
     },
     {
-        marque: "Yamaha",
-        name: "Yamaha MT-07",
-        image: "./img/models/peugeot-pulsion-125.jpg",
-        price: "55,000 TND",
+        marque: "BMW",
+        name: "BMW-GS1300-Adventure-Triple Black 2026-00km - Jet Moto tel 26711555-53685927",
+        images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
+        price: "",
         specs: {
-            typeMoteur: "Bicylindre, 4 temps",
-            cylindree: "689 cc",
-            puissance: "Environ 75 ch",
-            coupleMaximal: "Environ 68 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 220 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
+            kilometrage: "0 km",
+            typeMoteur: "Boxer bicylindre 4 temps",
+            cylindree: "1300 cm³",
+            puissance: "145 ch (107 kW)",
+            coupleMaximal: "149 Nm",
+            refroidissement: "Air/liquide,",
+            vitesseMaximale: "",
+            alimentation: "Injection électronique",
+            freinage: "Double disque AV, disque AR avec ABS"
         }
     },
-    {
-        marque: "KTM",
-        name: "KTM 390 DUKE",
-        image: "./img/models/peugeot-pulsion-125.jpg",
-        price: "18,500 TND",
-        specs: {
-            typeMoteur: "Monocylindre, 4 temps",
-            cylindree: "373 cc",
-            puissance: "Environ 44 ch",
-            coupleMaximal: "Environ 37 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 190 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
-        }
-    },
-    {
-        marque: "Honda",
-        name: "Honda CB 500",
-        image: "./img/models/peugeot-pulsion-125.jpg",
-        price: "42,000 TND",
-        specs: {
-            typeMoteur: "Bicylindre, 4 temps",
-            cylindree: "471 cc",
-            puissance: "Environ 47 ch",
-            coupleMaximal: "Environ 43 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 210 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
-        }
-    },
-    {
-        marque: "Kawasaki",
-        name: "Kawasaki Ninja 400",
-        image: "./img/models/peugeot-pulsion-125.jpg",
-        price: "22,000 TND",
-        specs: {
-            typeMoteur: "Bicylindre, 4 temps",
-            cylindree: "399 cc",
-            puissance: "Environ 45 ch",
-            coupleMaximal: "Environ 38 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 200 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
-        }
-    },
+   
 ];const videosData = [
     {
         id: 1,
