@@ -46,7 +46,7 @@ const modelsData = {
     Peugeot: [
         {
             name: "Peugeot pulsion 125 i ABS",
-            image: "./img/models/peugeot-pulsion-125.jpg",
+            images: ["./img/models/peugeot-pulsion-125.jpg", "https://www.probike49.fr/wp-content/uploads/Pulsion_Active_Amazonite-Blue_3-4_Exhaust_BD-OK.jpg", "https://cdn.lesnumeriques.com/test/18/186689/b1634f5b-scooter-peugeot-pulsion-gt-125-renaissance-bien-venue.jpeg"],
             price: "12,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -55,7 +55,8 @@ const modelsData = {
                 coupleMaximal: "Environ 12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "Environ 110 km/h",
-                alimentation: "Injection Électronique"
+                alimentation: "Injection Électronique",
+                freinage: "ABS de série",
             }
         },
         {
@@ -1419,7 +1420,7 @@ const occasionModelsData = [
     {
         marque: "Peugeot",
         name: "Peugeot pulsion 125 i ABS",
-        image: "./img/models/peugeot-pulsion-125.jpg",
+        images: ["./img/models/peugeot-pulsion-125.jpg", "https://moto-station.com/wp-content/uploads/2019/05/03/Essai-Peugeot-Scooter-Repulsion-2019-3.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCFhgtii9saww3tAUG2C6X7o3-TBrZEOLVw&s"],
         price: "12,900 TND",
         specs: {
             typeMoteur: "Monocylindre, 4 temps",

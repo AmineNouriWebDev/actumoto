@@ -9,7 +9,6 @@
       id="dynamic-description"
       content="Découvrez tous nos modèles de motos par marque. Prix, caractéristiques et photos des dernières motos disponibles en Tunisie."
     />
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-WGY6N6E618"
@@ -34,7 +33,6 @@
     />
     <link rel="canonical" href="https://actumoto.tn/modeles.html" />
 
-    <!-- Open Graph -->
     <meta
       property="og:title"
       id="og-title"
@@ -90,19 +88,30 @@
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(255, 0, 0, 0.1);
         border-radius: 12px;
-        overflow: visible; /* CHANGÉ: De hidden à visible pour permettre au specs de déborder en desktop */
+        overflow: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         height: 100%;
-        position: relative;
+        position: relative; /* Important pour le positionnement */
+        z-index: 1; /* Niveau de base */
       }
 
+      /* Animation de survol standard (active quand la fiche est fermée) */
       .model-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
-        z-index: 10;
+      }
+
+      /* --- NOUVEAU : Classe ajoutée via JS quand la fiche est ouverte (Desktop) --- */
+      @media (min-width: 768px) {
+        .model-card.card-active-z {
+          z-index: 1000 !important; /* Force la carte à passer DEVANT tout */
+          transform: none !important; /* EMPÊCHE LE TREMBLEMENT : annule le mouvement */
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Maintient une ombre forte */
+          border-color: #ff0000;
+        }
       }
 
       .image-modal {
@@ -113,18 +122,26 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.95);
-        z-index: 1000;
+        z-index: 2000; /* Augmenté pour être sûr d'être au dessus de tout */
         justify-content: center;
         align-items: center;
         padding: 2rem;
       }
 
-      .model-card img {
+      .model-card .main-image {
         width: 100%;
+        height: 250px;
         object-fit: cover;
         flex-shrink: 0;
         border-radius: 12px 12px 0 0;
         display: block;
+        cursor: pointer;
+      }
+
+      @media (min-width: 768px) {
+        .model-card .main-image {
+          height: 300px;
+        }
       }
 
       .image-modal.active {
@@ -196,11 +213,6 @@
           margin-right: auto;
         }
 
-        .model-card img {
-          height: 250px !important;
-          width: 100%;
-        }
-
         .image-modal {
           padding: 1rem;
         }
@@ -219,12 +231,6 @@
           width: 40px;
           height: 40px;
           font-size: 1.2rem;
-        }
-      }
-
-      @media (min-width: 768px) {
-        .model-card img {
-          height: 300px !important;
         }
       }
 
@@ -291,6 +297,7 @@
         height: 0;
         transform: translateY(-20px);
         transition: all 0.3s ease;
+        border-top: 1px solid rgba(255, 0, 0, 0.1);
       }
 
       .specs-container[data-open="true"] {
@@ -298,8 +305,9 @@
         opacity: 1;
         height: auto;
         transform: translateY(0);
-        margin-top: 1rem;
+        margin-top: 0;
         animation: fadeIn 0.3s ease;
+        padding: 1.5rem;
       }
 
       @keyframes fadeIn {
@@ -313,50 +321,38 @@
         }
       }
 
-      /* Style DESKTOP: spécifications en overlay */
+      /* Style DESKTOP: spécifications en overlay - SIMPLIFIÉ */
       @media (min-width: 768px) {
+        .model-card {
+          overflow: visible;
+          /* position relative est déjà défini plus haut */
+        }
+
         .specs-container {
           position: absolute;
-          top: 100%; /* Place en dessous de la carte */
+          top: 100%; /* S'affiche juste en dessous */
           left: 0;
           right: 0;
-          z-index: 100;
+          z-index: 1001; /* Supérieur au card-active-z */
           background: white;
           padding: 1.5rem;
           margin-top: 10px;
           border-radius: 12px;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3); /* Ombre renforcée */
           border: 1px solid rgba(255, 0, 0, 0.2);
           max-height: 0;
           overflow: hidden;
           opacity: 0;
-          transform: none;
+          transform: translateY(-10px);
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          border-top: none;
         }
 
         .specs-container[data-open="true"] {
           display: block;
-          max-height: 600px; /* Hauteur maximale suffisante */
+          max-height: 600px;
           opacity: 1;
-          animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @keyframes slideDown {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-            max-height: 0;
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-            max-height: 600px;
-          }
-        }
-
-        /* Sur desktop, on veut que la carte ait position relative pour que le absolute du specs-container fonctionne */
-        .model-card {
-          position: relative;
+          transform: translateY(0);
         }
       }
 
@@ -402,12 +398,11 @@
         background: rgba(255, 0, 0, 0.2);
       }
 
-      /* IMPORTANT: Évite que la grille aligne les cartes de la même ligne en desktop */
       #models-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
-        align-items: start; /* Garde les cartes alignées en haut */
+        align-items: start;
       }
 
       @media (min-width: 768px) {
@@ -422,7 +417,6 @@
         }
       }
 
-      /* Wrapper pour isoler le contenu de la carte */
       .card-inner {
         display: flex;
         flex-direction: column;
@@ -442,10 +436,170 @@
         padding-top: 1rem;
         border-top: 1px solid rgba(255, 0, 0, 0.1);
       }
+
+      /* Styles pour les miniatures d'images */
+      .image-container {
+        position: relative;
+      }
+
+      .image-thumbnails {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: rgba(248, 250, 252, 0.8);
+        border-top: 1px solid rgba(255, 0, 0, 0.1);
+        overflow-x: auto;
+      }
+
+      .thumbnail {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .thumbnail:hover {
+        border-color: #ff0000;
+        transform: scale(1.05);
+      }
+
+      .thumbnail.active {
+        border-color: #ff0000;
+      }
+
+      .more-images-indicator {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        z-index: 5;
+      }
+
+      .more-images-indicator span {
+        font-size: 0.9rem;
+      }
+
+      /* --- MODIFICATION : FLÈCHES ROUGES POUR LE MODAL --- */
+      .modal-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.9); /* Fond blanc plus opaque */
+        color: #ff0000; /* Flèche Rouge */
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2rem; /* Flèche un peu plus grande */
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 2002;
+        padding-bottom: 5px;
+      }
+
+      .modal-nav:hover {
+        background: #ff0000; /* Fond rouge au survol */
+        color: white; /* Flèche blanche */
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      }
+
+      .modal-prev {
+        left: 2rem;
+      }
+
+      .modal-next {
+        right: 2rem;
+      }
+
+      .modal-counter {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        z-index: 1002;
+      }
+
+      .modal-thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        overflow-x: auto;
+        max-width: 100%;
+      }
+
+      .modal-thumbnail {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .modal-thumbnail:hover,
+      .modal-thumbnail.active {
+        border-color: #ff0000;
+      }
+
+      @media (max-width: 767px) {
+        .modal-nav {
+          width: 40px;
+          height: 40px;
+          font-size: 1.5rem;
+        }
+
+        .modal-prev {
+          left: 1rem;
+        }
+
+        .modal-next {
+          right: 1rem;
+        }
+
+        .modal-thumbnails {
+          padding: 0 0.5rem;
+        }
+
+        .thumbnail {
+          width: 50px;
+          height: 35px;
+        }
+
+        .more-images-indicator {
+          top: 8px;
+          right: 8px;
+          font-size: 0.7rem;
+          padding: 0.2rem 0.4rem;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- Schema.org for Product Collection -->
     <script type="application/ld+json" id="dynamic-schema">
       {
         "@context": "https://schema.org",
@@ -456,7 +610,6 @@
       }
     </script>
 
-    <!-- Header -->
     <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4">
         <div class="header-container">
@@ -475,7 +628,6 @@
       </div>
     </header>
 
-    <!-- Section Modèles avec bouton retour -->
     <section class="pt-24 pb-8 mt-4 relative" role="main">
       <a
         href="index.html"
@@ -507,18 +659,15 @@
           class="models-grid"
           role="list"
           aria-label="Liste des modèles de motos"
-        >
-          <!-- Modèles chargés dynamiquement -->
-        </div>
+        ></div>
       </div>
     </section>
 
-    <!-- Modal pour images avec bouton retour -->
     <div
       id="imageModal"
       class="image-modal"
       role="dialog"
-      aria-label="Vue agrandie de l'image"
+      aria-label="Vue agrandie des images"
       aria-modal="true"
     >
       <a
@@ -529,6 +678,23 @@
       >
         ←
       </a>
+
+      <button
+        class="modal-nav modal-prev"
+        aria-label="Image précédente"
+        id="modalPrev"
+      >
+        ‹
+      </button>
+
+      <button
+        class="modal-nav modal-next"
+        aria-label="Image suivante"
+        id="modalNext"
+      >
+        ›
+      </button>
+
       <div class="modal-content relative max-w-4xl max-h-full mx-4">
         <button
           class="close-modal absolute -top-4 -right-4 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full z-50 flex items-center justify-center text-2xl font-bold shadow-lg transition-all duration-300"
@@ -540,12 +706,14 @@
           id="modalImage"
           src=""
           alt=""
-          class="modal-image w-full h-auto max-h-[90vh] object-contain rounded-lg"
+          class="modal-image w-full h-auto max-h-[70vh] object-contain rounded-lg"
         />
+        <div id="modalCounter" class="modal-counter"></div>
+
+        <div id="modalThumbnails" class="modal-thumbnails"></div>
       </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer bg-black text-white py-8 mt-96" role="contentinfo">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
@@ -582,7 +750,6 @@
       </div>
     </footer>
 
-    <!-- Charger les données et le script -->
     <script src="data.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -623,6 +790,11 @@
             // ID unique pour chaque fiche technique
             const uniqueId = `specs-${brand.replace(/\s+/g, "-")}-${index}`;
 
+            // Récupérer les images
+            const images = model.images || [model.image];
+            const mainImage = images[0];
+            const hasMultipleImages = images.length > 1;
+
             let specsHtml = "";
             if (model.specs) {
               const specs = [
@@ -639,6 +811,7 @@
                   value: model.specs.vitesseMaximale,
                 },
                 { label: "Alimentation", value: model.specs.alimentation },
+                { label: "Freinage", value: model.specs.freinage || "—" },
               ];
 
               specsHtml = `
@@ -668,18 +841,65 @@
               `;
             }
 
+            // Générer les miniatures (seulement si plus d'une image)
+            let thumbnailsHtml = "";
+            if (hasMultipleImages) {
+              thumbnailsHtml = `
+                <div class="image-thumbnails">
+                  ${images
+                    .slice(0, 4)
+                    .map(
+                      (img, imgIndex) => `
+                    <img 
+                      src="${img}" 
+                      alt="Miniature ${imgIndex + 1}" 
+                      class="thumbnail ${imgIndex === 0 ? "active" : ""}" 
+                      data-image-index="${imgIndex}"
+                      data-model-index="${index}"
+                      data-brand="${brand}"
+                      onerror="this.style.display='none'"
+                    >
+                  `
+                    )
+                    .join("")}
+                  ${
+                    images.length > 4
+                      ? `<div class="text-xs text-gray-500 self-center">+${
+                          images.length - 4
+                        }</div>`
+                      : ""
+                  }
+                </div>
+              `;
+            }
+
             modelCard.innerHTML = `
               <div class="card-inner">
-                <img 
-                  src="${model.image}" 
-                  alt="${model.name} - ${brand} - Prix: ${model.price}" 
-                  class="w-full model-image cursor-pointer" 
-                  data-image="${model.image}" 
-                  width="400"
-                  height="300"
-                  onerror="this.src='./img/placeholder-moto.jpg'"
-                  loading="lazy"
-                >
+                <div class="image-container">
+                  ${
+                    hasMultipleImages
+                      ? `
+                    <div class="more-images-indicator">
+                      <span>${images.length}</span> photos
+                    </div>
+                  `
+                      : ""
+                  }
+                  <img 
+                    src="${mainImage}" 
+                    alt="${model.name} - ${brand}" 
+                    class="main-image" 
+                    data-images='${JSON.stringify(images)}'
+                    data-current-index="0"
+                    data-model-index="${index}"
+                    data-brand="${brand}"
+                    width="400"
+                    height="300"
+                    onerror="this.src='./img/placeholder-moto.jpg'"
+                    loading="lazy"
+                  >
+                </div>
+                ${thumbnailsHtml}
                 <div class="card-content">
                   <h2 class="futurist-font text-xl mb-3">${model.name}</h2>
                   
@@ -715,14 +935,23 @@
                   const targetId = this.getAttribute("data-target-id");
                   const specsContainer = document.getElementById(targetId);
 
+                  // Récupérer la carte parente
+                  const currentCard = this.closest(".model-card");
+
                   if (!specsContainer) {
                     console.error("Container not found:", targetId);
                     return;
                   }
 
-                  // Fermer toutes les autres fiches ouvertes
+                  // 1. Fermer toutes les autres fiches ouvertes
                   const allOpenContainers = document.querySelectorAll(
                     ".specs-container[data-open='true']"
+                  );
+
+                  // Réinitialiser les Z-index de toutes les cartes
+                  const allCards = document.querySelectorAll(".model-card");
+                  allCards.forEach((card) =>
+                    card.classList.remove("card-active-z")
                   );
 
                   allOpenContainers.forEach((otherContainer) => {
@@ -738,17 +967,24 @@
                     }
                   });
 
-                  // Basculer l'état de la fiche actuelle
+                  // 2. Basculer l'état de la fiche actuelle
                   const isOpen =
                     specsContainer.getAttribute("data-open") === "true";
-                  specsContainer.setAttribute("data-open", !isOpen);
-                  this.textContent = !isOpen ? "✕ Fermer" : "Fiche technique";
 
-                  // En desktop seulement: empêcher le scroll de la page quand une fiche est ouverte
-                  if (window.innerWidth >= 768 && !isOpen) {
-                    document.body.style.overflow = "hidden";
-                  } else if (window.innerWidth >= 768) {
-                    document.body.style.overflow = "";
+                  if (!isOpen) {
+                    // OUVRE
+                    specsContainer.setAttribute("data-open", "true");
+                    this.textContent = "✕ Fermer";
+
+                    // Si on est sur Desktop, on applique le correctif de z-index
+                    if (window.innerWidth >= 768) {
+                      currentCard.classList.add("card-active-z");
+                    }
+                  } else {
+                    // FERME
+                    specsContainer.setAttribute("data-open", "false");
+                    this.textContent = "Fiche technique";
+                    currentCard.classList.remove("card-active-z");
                   }
                 });
               }
@@ -760,6 +996,7 @@
 
                   const targetId = this.getAttribute("data-target-id");
                   const specsContainer = document.getElementById(targetId);
+                  const currentCard = this.closest(".model-card");
 
                   if (specsContainer) {
                     specsContainer.setAttribute("data-open", "false");
@@ -769,26 +1006,51 @@
                     if (btn) {
                       btn.textContent = "Fiche technique";
                     }
-                    // En desktop: réactiver le scroll
-                    if (window.innerWidth >= 768) {
-                      document.body.style.overflow = "";
-                    }
+                    if (currentCard)
+                      currentCard.classList.remove("card-active-z");
                   }
                 });
               }
             }
           });
 
-          // Event listeners pour les images
-          document.querySelectorAll(".model-image").forEach((img) => {
+          // Event listeners pour l'image principale (ouvre le modal)
+          document.querySelectorAll(".main-image").forEach((img) => {
             img.addEventListener("click", function () {
-              openImageModal(this.dataset.image);
+              const images = JSON.parse(this.dataset.images || "[]");
+              const modelIndex = this.dataset.modelIndex;
+              const brand = this.dataset.brand;
+              const currentIndex = parseInt(this.dataset.currentIndex || "0");
+              openImageModal(images, currentIndex, modelIndex, brand);
+            });
+          });
+
+          // Event listeners pour les miniatures (change seulement l'image principale, n'ouvre pas le modal)
+          document.querySelectorAll(".thumbnail").forEach((thumb) => {
+            thumb.addEventListener("click", function (e) {
+              e.stopPropagation();
+              const imageIndex = parseInt(this.dataset.imageIndex);
+
+              // Trouver les images du modèle
+              const modelCard = this.closest(".model-card");
+              const mainImage = modelCard.querySelector(".main-image");
+              const images = JSON.parse(mainImage.dataset.images || "[]");
+
+              // Mettre à jour l'image principale
+              mainImage.src = images[imageIndex];
+              mainImage.dataset.currentIndex = imageIndex;
+
+              // Mettre à jour les miniatures actives
+              modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
+                t.classList.toggle("active", idx === imageIndex);
+              });
             });
           });
 
           // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
           document.addEventListener("click", function (e) {
             if (window.innerWidth >= 768) {
+              // Si on clique sur un élément qui n'est pas une fiche technique ou un bouton qui la contrôle
               if (
                 !e.target.closest(".specs-container") &&
                 !e.target.closest(".specs-btn") &&
@@ -805,8 +1067,12 @@
                   if (btn) {
                     btn.textContent = "Fiche technique";
                   }
-                  document.body.style.overflow = "";
                 });
+
+                // IMPORTANT: Enlever la classe z-index de toutes les cartes
+                document
+                  .querySelectorAll(".model-card")
+                  .forEach((c) => c.classList.remove("card-active-z"));
               }
             }
           });
@@ -858,14 +1124,39 @@
         schemaScript.textContent = JSON.stringify(schemaData);
       }
 
+      // Variables globales pour la navigation dans le modal
+      let currentModalImages = [];
+      let currentModalIndex = 0;
+
       function initImageModal() {
         const modal = document.getElementById("imageModal");
         const modalImage = document.getElementById("modalImage");
         const closeModal = document.querySelector(".close-modal");
+        const modalPrev = document.getElementById("modalPrev");
+        const modalNext = document.getElementById("modalNext");
+        const modalCounter = document.getElementById("modalCounter");
+        const modalThumbnails = document.getElementById("modalThumbnails");
 
         closeModal.addEventListener("click", function () {
           modal.classList.remove("active");
           modal.setAttribute("aria-hidden", "true");
+        });
+
+        modalPrev.addEventListener("click", function () {
+          if (currentModalImages.length > 0) {
+            currentModalIndex =
+              (currentModalIndex - 1 + currentModalImages.length) %
+              currentModalImages.length;
+            updateModalImage();
+          }
+        });
+
+        modalNext.addEventListener("click", function () {
+          if (currentModalImages.length > 0) {
+            currentModalIndex =
+              (currentModalIndex + 1) % currentModalImages.length;
+            updateModalImage();
+          }
         });
 
         modal.addEventListener("click", function (e) {
@@ -880,15 +1171,91 @@
             modal.classList.remove("active");
             modal.setAttribute("aria-hidden", "true");
           }
+          if (e.key === "ArrowLeft" && modal.classList.contains("active")) {
+            modalPrev.click();
+          }
+          if (e.key === "ArrowRight" && modal.classList.contains("active")) {
+            modalNext.click();
+          }
         });
+
+        function updateModalImage() {
+          if (currentModalImages.length > 0) {
+            modalImage.src = currentModalImages[currentModalIndex];
+            modalImage.alt = `Image ${currentModalIndex + 1} de ${
+              currentModalImages.length
+            }`;
+            modalCounter.textContent = `${currentModalIndex + 1} / ${
+              currentModalImages.length
+            }`;
+
+            // Mettre à jour les miniatures du modal
+            updateModalThumbnails();
+          }
+        }
+
+        function updateModalThumbnails() {
+          modalThumbnails.innerHTML = "";
+          currentModalImages.forEach((img, index) => {
+            const thumb = document.createElement("img");
+            thumb.src = img;
+            thumb.alt = `Miniature ${index + 1}`;
+            thumb.className = `modal-thumbnail ${
+              index === currentModalIndex ? "active" : ""
+            }`;
+            thumb.addEventListener("click", () => {
+              currentModalIndex = index;
+              updateModalImage();
+            });
+            thumb.addEventListener("error", () => {
+              thumb.style.display = "none";
+            });
+            modalThumbnails.appendChild(thumb);
+          });
+        }
       }
 
-      function openImageModal(imageSrc) {
+      function openImageModal(images, startIndex) {
         const modal = document.getElementById("imageModal");
         const modalImage = document.getElementById("modalImage");
+        const modalCounter = document.getElementById("modalCounter");
 
-        modalImage.src = imageSrc;
-        modalImage.alt = "Vue agrandie du modèle de moto";
+        currentModalImages = images;
+        currentModalIndex = startIndex;
+
+        modalImage.src = images[startIndex];
+        modalImage.alt = `Image ${startIndex + 1} de ${images.length}`;
+        modalCounter.textContent = `${startIndex + 1} / ${images.length}`;
+
+        // Mettre à jour les miniatures du modal
+        const modalThumbnails = document.getElementById("modalThumbnails");
+        modalThumbnails.innerHTML = "";
+        images.forEach((img, index) => {
+          const thumb = document.createElement("img");
+          thumb.src = img;
+          thumb.alt = `Miniature ${index + 1}`;
+          thumb.className = `modal-thumbnail ${
+            index === startIndex ? "active" : ""
+          }`;
+          thumb.addEventListener("click", () => {
+            currentModalIndex = index;
+            modalImage.src = images[index];
+            modalImage.alt = `Image ${index + 1} de ${images.length}`;
+            modalCounter.textContent = `${index + 1} / ${images.length}`;
+
+            // Mettre à jour la classe active
+            modalThumbnails
+              .querySelectorAll(".modal-thumbnail")
+              .forEach((t, i) => {
+                t.classList.toggle("active", i === index);
+              });
+          });
+          thumb.addEventListener("error", () => {
+            thumb.style.display = "none";
+          });
+          modalThumbnails.appendChild(thumb);
+        });
+
         modal.classList.add("active");
         modal.setAttribute("aria-hidden", "false");
       }

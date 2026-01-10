@@ -12,7 +12,6 @@
       name="keywords"
       content="moto occasion Tunisie, scooter occasion, moto d'occasion, vente moto occasion, Honda occasion, Peugeot occasion"
     />
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-WGY6N6E618"
@@ -38,7 +37,6 @@
     />
     <link rel="canonical" href="https://actumoto.tn/occasion.html" />
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Motos d'Occasion - actumoto.tn" />
     <meta
       property="og:description"
@@ -89,28 +87,40 @@
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(255, 0, 0, 0.1);
         border-radius: 12px;
-        overflow: visible; /* CHANGÉ: De hidden à visible */
+        overflow: hidden;
         transition: all 0.3s ease;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         height: 100%;
-        position: relative; /* AJOUTÉ: Pour le positionnement des specs en desktop */
+        position: relative;
+        z-index: 1; /* Niveau de base */
       }
 
       .occasion-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
         border-color: rgba(255, 0, 0, 0.3);
-        z-index: 10; /* AJOUTÉ: Pour que la carte soit au-dessus des autres quand hover */
       }
 
-      .occasion-card img {
+      /* --- Gestion de l'empilement (Z-Index) Desktop anti-tremblement --- */
+      @media (min-width: 768px) {
+        .occasion-card.card-active-z {
+          z-index: 1000 !important; /* Force la carte à passer DEVANT tout */
+          transform: none !important; /* Empêche le mouvement */
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+          border-color: #ff0000;
+        }
+      }
+
+      .occasion-card .main-image {
         width: 100%;
         height: 250px;
         object-fit: cover;
         flex-shrink: 0;
         border-radius: 12px 12px 0 0;
+        display: block;
+        cursor: pointer;
       }
 
       .occasion-info {
@@ -216,22 +226,26 @@
 
       /* Style DESKTOP: spécifications en overlay */
       @media (min-width: 768px) {
+        .occasion-card {
+          overflow: visible;
+        }
+
         .specs-container {
           position: absolute;
-          top: 100%; /* Place en dessous de la carte */
+          top: 100%;
           left: 0;
           right: 0;
-          z-index: 100;
+          z-index: 1001; /* Supérieur à card-active-z */
           background: white;
           padding: 1.5rem;
           margin-top: 10px;
           border-radius: 12px;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
           border: 1px solid rgba(255, 0, 0, 0.2);
           max-height: 0;
           overflow: hidden;
           opacity: 0;
-          transform: none;
+          transform: translateY(-10px);
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -239,20 +253,7 @@
           display: block;
           max-height: 600px;
           opacity: 1;
-          animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @keyframes slideDown {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-            max-height: 0;
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-            max-height: 600px;
-          }
+          transform: translateY(0);
         }
       }
 
@@ -298,6 +299,148 @@
         background: rgba(255, 0, 0, 0.2);
       }
 
+      /* --- Miniatures --- */
+      .image-container {
+        position: relative;
+      }
+
+      .image-thumbnails {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: rgba(248, 250, 252, 0.8);
+        border-top: 1px solid rgba(255, 0, 0, 0.1);
+        overflow-x: auto;
+      }
+
+      .thumbnail {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .thumbnail:hover {
+        border-color: #ff0000;
+        transform: scale(1.05);
+      }
+
+      .thumbnail.active {
+        border-color: #ff0000;
+      }
+
+      .more-images-indicator {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        z-index: 5;
+      }
+
+      /* --- MODAL AVEC FLÈCHES ROUGES --- */
+      .image-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .image-modal.active {
+        display: flex;
+      }
+
+      .modal-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.9); /* Fond blanc */
+        color: #ff0000; /* Flèche Rouge */
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 2002;
+        padding-bottom: 5px;
+      }
+
+      .modal-nav:hover {
+        background: #ff0000;
+        color: white;
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      }
+
+      .modal-prev {
+        left: 2rem;
+      }
+      .modal-next {
+        right: 2rem;
+      }
+
+      .modal-counter {
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        z-index: 1002;
+      }
+
+      .modal-thumbnails {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        overflow-x: auto;
+        max-width: 100%;
+      }
+
+      .modal-thumbnail {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .modal-thumbnail:hover,
+      .modal-thumbnail.active {
+        border-color: #ff0000;
+      }
+
       /* BOUTON RETOUR - Position fixe */
       .section-back-btn {
         position: fixed;
@@ -328,12 +471,39 @@
         box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
       }
 
+      .modal-back-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 2001;
+        text-decoration: none;
+      }
+
+      .modal-back-btn:hover {
+        background: #ff0000;
+        color: white;
+        transform: scale(1.1);
+      }
+
       .occasion-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
         padding: 2rem 0;
-        align-items: start; /* CRITIQUE: aligne en haut, pas étiré */
+        align-items: start;
       }
 
       @media (min-width: 768px) {
@@ -357,7 +527,7 @@
           margin-right: auto;
         }
 
-        .occasion-card img {
+        .occasion-card .main-image {
           height: 200px;
         }
 
@@ -367,6 +537,14 @@
           width: 50px;
           height: 50px;
           font-size: 1.3rem;
+        }
+
+        .modal-back-btn {
+          top: 1rem;
+          right: 1rem;
+          width: 40px;
+          height: 40px;
+          font-size: 1.2rem;
         }
 
         .occasion-info {
@@ -380,6 +558,19 @@
 
         .specs-btn {
           width: 100%;
+        }
+
+        .modal-nav {
+          width: 40px;
+          height: 40px;
+          font-size: 1.5rem;
+        }
+
+        .modal-prev {
+          left: 1rem;
+        }
+        .modal-next {
+          right: 1rem;
         }
       }
 
@@ -405,7 +596,6 @@
         border: 0;
       }
 
-      /* Wrapper pour isoler le contenu de la carte */
       .card-inner {
         display: flex;
         flex-direction: column;
@@ -421,7 +611,6 @@
     </style>
   </head>
   <body>
-    <!-- Header -->
     <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4">
         <div class="header-container">
@@ -441,9 +630,7 @@
       </div>
     </header>
 
-    <!-- Section Occasions avec bouton retour -->
     <section class="pt-24 pb-8 relative" role="main">
-      <!-- BOUTON RETOUR FIXE -->
       <a
         href="index.html"
         class="section-back-btn"
@@ -467,13 +654,61 @@
           class="occasion-grid"
           role="list"
           aria-label="Liste des motos d'occasion"
-        >
-          <!-- Motos chargées dynamiquement depuis data.js -->
-        </div>
+        ></div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <div
+      id="imageModal"
+      class="image-modal"
+      role="dialog"
+      aria-label="Vue agrandie des images"
+      aria-modal="true"
+    >
+      <a
+        href="index.html"
+        class="modal-back-btn"
+        title="Retour à l'accueil"
+        aria-label="Retour à la page d'accueil"
+      >
+        ←
+      </a>
+
+      <button
+        class="modal-nav modal-prev"
+        aria-label="Image précédente"
+        id="modalPrev"
+      >
+        ‹
+      </button>
+
+      <button
+        class="modal-nav modal-next"
+        aria-label="Image suivante"
+        id="modalNext"
+      >
+        ›
+      </button>
+
+      <div class="modal-content relative max-w-4xl max-h-full mx-4">
+        <button
+          class="close-modal absolute -top-4 -right-4 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full z-50 flex items-center justify-center text-2xl font-bold shadow-lg transition-all duration-300"
+          aria-label="Fermer la vue agrandie"
+        >
+          &times;
+        </button>
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+          class="modal-image w-full h-auto max-h-[70vh] object-contain rounded-lg"
+        />
+        <div id="modalCounter" class="modal-counter"></div>
+
+        <div id="modalThumbnails" class="modal-thumbnails"></div>
+      </div>
+    </div>
+
     <footer class="footer bg-black text-white py-8 mt-96" role="contentinfo">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center">
@@ -510,11 +745,11 @@
       </div>
     </footer>
 
-    <!-- Charger les données et le script -->
     <script src="data.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderOccasions();
+        initImageModal();
       });
 
       function renderOccasions() {
@@ -527,19 +762,22 @@
           occasionCard.className = "occasion-card";
           occasionCard.setAttribute("role", "listitem");
 
-          // Générer le tableau des specs
+          // Récupérer les images (support multi-images ou fallback sur single image)
+          const images = model.images || (model.image ? [model.image] : []);
+          const mainImage = images[0];
+          const hasMultipleImages = images.length > 1;
+
+          // Générer le tableau des specs AVEC KILOMÉTRAGE EN PREMIER
           let specsHtml = "";
           if (model.specs) {
             const specs = [
+              { label: "Kilométrage", value: model.specs.kilometrage }, // AJOUTÉ EN PREMIER
               { label: "Type moteur", value: model.specs.typeMoteur },
               { label: "Cylindrée", value: model.specs.cylindree },
               { label: "Puissance", value: model.specs.puissance },
               { label: "Couple Maximal", value: model.specs.coupleMaximal },
               { label: "Refroidissement", value: model.specs.refroidissement },
-              {
-                label: "Vitesse Maximale",
-                value: model.specs.vitesseMaximale,
-              },
+              { label: "Vitesse Maximale", value: model.specs.vitesseMaximale },
               { label: "Alimentation", value: model.specs.alimentation },
             ];
 
@@ -570,17 +808,63 @@
             `;
           }
 
+          // Générer les miniatures (seulement si plus d'une image)
+          let thumbnailsHtml = "";
+          if (hasMultipleImages) {
+            thumbnailsHtml = `
+              <div class="image-thumbnails">
+                ${images
+                  .slice(0, 4)
+                  .map(
+                    (img, imgIndex) => `
+                  <img 
+                    src="${img}" 
+                    alt="Miniature ${imgIndex + 1}" 
+                    class="thumbnail ${imgIndex === 0 ? "active" : ""}" 
+                    data-image-index="${imgIndex}"
+                    data-model-index="${index}"
+                    onerror="this.style.display='none'"
+                  >
+                `
+                  )
+                  .join("")}
+                ${
+                  images.length > 4
+                    ? `<div class="text-xs text-gray-500 self-center">+${
+                        images.length - 4
+                      }</div>`
+                    : ""
+                }
+              </div>
+            `;
+          }
+
           occasionCard.innerHTML = `
             <div class="card-inner">
-              <img
-                src="${model.image}"
-                alt="${model.marque} ${model.name} - Prix: ${model.price}"
-                class="w-full occasion-image"
-                width="400"
-                height="250"
-                onerror="this.src='./img/placeholder-moto.jpg'"
-                loading="lazy"
-              >
+              <div class="image-container">
+                 ${
+                   hasMultipleImages
+                     ? `
+                    <div class="more-images-indicator">
+                      <span>${images.length}</span> photos
+                    </div>
+                  `
+                     : ""
+                 }
+                  <img
+                    src="${mainImage}"
+                    alt="${model.marque} ${model.name} - Prix: ${model.price}"
+                    class="main-image"
+                    data-images='${JSON.stringify(images)}'
+                    data-current-index="0"
+                    data-model-index="${index}"
+                    width="400"
+                    height="250"
+                    onerror="this.src='./img/placeholder-moto.jpg'"
+                    loading="lazy"
+                  >
+              </div>
+              ${thumbnailsHtml}
               <div class="card-content">
                 <div class="occasion-info">
                   <div class="occasion-marque">${model.marque}</div>
@@ -613,16 +897,20 @@
 
                 const targetId = this.getAttribute("data-target-id");
                 const specsContainer = document.getElementById(targetId);
+                const currentCard = this.closest(".occasion-card");
 
                 if (!specsContainer) {
-                  console.error("Container not found:", targetId);
                   return;
                 }
 
-                // Fermer toutes les autres fiches ouvertes
+                // 1. Fermer toutes les autres fiches ouvertes et nettoyer les Z-Index
                 const allOpenContainers = document.querySelectorAll(
                   ".specs-container[data-open='true']"
                 );
+
+                document
+                  .querySelectorAll(".occasion-card")
+                  .forEach((c) => c.classList.remove("card-active-z"));
 
                 allOpenContainers.forEach((otherContainer) => {
                   if (otherContainer.id !== targetId) {
@@ -637,17 +925,24 @@
                   }
                 });
 
-                // Basculer l'état de la fiche actuelle
+                // 2. Basculer l'état de la fiche actuelle
                 const isOpen =
                   specsContainer.getAttribute("data-open") === "true";
-                specsContainer.setAttribute("data-open", !isOpen);
-                this.textContent = !isOpen ? "✕ Fermer" : "Fiche technique";
 
-                // En desktop seulement: empêcher le scroll de la page quand une fiche est ouverte
-                if (window.innerWidth >= 768 && !isOpen) {
-                  document.body.style.overflow = "hidden";
-                } else if (window.innerWidth >= 768) {
-                  document.body.style.overflow = "";
+                if (!isOpen) {
+                  // OUVRE
+                  specsContainer.setAttribute("data-open", "true");
+                  this.textContent = "✕ Fermer";
+
+                  // Si on est sur Desktop, on applique le correctif de z-index
+                  if (window.innerWidth >= 768) {
+                    currentCard.classList.add("card-active-z");
+                  }
+                } else {
+                  // FERME
+                  specsContainer.setAttribute("data-open", "false");
+                  this.textContent = "Fiche technique";
+                  currentCard.classList.remove("card-active-z");
                 }
               });
             }
@@ -659,6 +954,7 @@
 
                 const targetId = this.getAttribute("data-target-id");
                 const specsContainer = document.getElementById(targetId);
+                const currentCard = this.closest(".occasion-card");
 
                 if (specsContainer) {
                   specsContainer.setAttribute("data-open", "false");
@@ -668,14 +964,43 @@
                   if (btn) {
                     btn.textContent = "Fiche technique";
                   }
-                  // En desktop: réactiver le scroll
-                  if (window.innerWidth >= 768) {
-                    document.body.style.overflow = "";
-                  }
+                  if (currentCard)
+                    currentCard.classList.remove("card-active-z");
                 }
               });
             }
           }
+        });
+
+        // Event listeners pour l'image principale (ouvre le modal)
+        document.querySelectorAll(".main-image").forEach((img) => {
+          img.addEventListener("click", function () {
+            const images = JSON.parse(this.dataset.images || "[]");
+            const currentIndex = parseInt(this.dataset.currentIndex || "0");
+            openImageModal(images, currentIndex);
+          });
+        });
+
+        // Event listeners pour les miniatures
+        document.querySelectorAll(".thumbnail").forEach((thumb) => {
+          thumb.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const imageIndex = parseInt(this.dataset.imageIndex);
+
+            // Trouver les images du modèle
+            const card = this.closest(".occasion-card");
+            const mainImage = card.querySelector(".main-image");
+            const images = JSON.parse(mainImage.dataset.images || "[]");
+
+            // Mettre à jour l'image principale
+            mainImage.src = images[imageIndex];
+            mainImage.dataset.currentIndex = imageIndex;
+
+            // Mettre à jour les miniatures actives
+            card.querySelectorAll(".thumbnail").forEach((t, idx) => {
+              t.classList.toggle("active", idx === imageIndex);
+            });
+          });
         });
 
         // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
@@ -697,11 +1022,140 @@
                 if (btn) {
                   btn.textContent = "Fiche technique";
                 }
-                document.body.style.overflow = "";
               });
+              // Enlever la classe z-index de toutes les cartes
+              document
+                .querySelectorAll(".occasion-card")
+                .forEach((c) => c.classList.remove("card-active-z"));
             }
           }
         });
+      }
+
+      // --- LOGIQUE MODAL (Identique à modeles.html) ---
+      let currentModalImages = [];
+      let currentModalIndex = 0;
+
+      function initImageModal() {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const closeModal = document.querySelector(".close-modal");
+        const modalPrev = document.getElementById("modalPrev");
+        const modalNext = document.getElementById("modalNext");
+        const modalCounter = document.getElementById("modalCounter");
+        const modalThumbnails = document.getElementById("modalThumbnails");
+
+        closeModal.addEventListener("click", function () {
+          modal.classList.remove("active");
+          modal.setAttribute("aria-hidden", "true");
+        });
+
+        modalPrev.addEventListener("click", function () {
+          if (currentModalImages.length > 0) {
+            currentModalIndex =
+              (currentModalIndex - 1 + currentModalImages.length) %
+              currentModalImages.length;
+            updateModalImage();
+          }
+        });
+
+        modalNext.addEventListener("click", function () {
+          if (currentModalImages.length > 0) {
+            currentModalIndex =
+              (currentModalIndex + 1) % currentModalImages.length;
+            updateModalImage();
+          }
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.classList.remove("active");
+            modal.setAttribute("aria-hidden", "true");
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("active")) {
+            modal.classList.remove("active");
+            modal.setAttribute("aria-hidden", "true");
+          }
+          if (e.key === "ArrowLeft" && modal.classList.contains("active")) {
+            modalPrev.click();
+          }
+          if (e.key === "ArrowRight" && modal.classList.contains("active")) {
+            modalNext.click();
+          }
+        });
+
+        function updateModalImage() {
+          if (currentModalImages.length > 0) {
+            modalImage.src = currentModalImages[currentModalIndex];
+            modalImage.alt = `Image ${currentModalIndex + 1} de ${
+              currentModalImages.length
+            }`;
+            modalCounter.textContent = `${currentModalIndex + 1} / ${
+              currentModalImages.length
+            }`;
+            updateModalThumbnails();
+          }
+        }
+
+        function updateModalThumbnails() {
+          modalThumbnails.innerHTML = "";
+          currentModalImages.forEach((img, index) => {
+            const thumb = document.createElement("img");
+            thumb.src = img;
+            thumb.alt = `Miniature ${index + 1}`;
+            thumb.className = `modal-thumbnail ${
+              index === currentModalIndex ? "active" : ""
+            }`;
+            thumb.addEventListener("click", () => {
+              currentModalIndex = index;
+              updateModalImage();
+            });
+            modalThumbnails.appendChild(thumb);
+          });
+        }
+      }
+
+      function openImageModal(images, startIndex) {
+        const modal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalCounter = document.getElementById("modalCounter");
+
+        currentModalImages = images;
+        currentModalIndex = startIndex;
+
+        modalImage.src = images[startIndex];
+        modalImage.alt = `Image ${startIndex + 1} de ${images.length}`;
+        modalCounter.textContent = `${startIndex + 1} / ${images.length}`;
+
+        const modalThumbnails = document.getElementById("modalThumbnails");
+        modalThumbnails.innerHTML = "";
+        images.forEach((img, index) => {
+          const thumb = document.createElement("img");
+          thumb.src = img;
+          thumb.alt = `Miniature ${index + 1}`;
+          thumb.className = `modal-thumbnail ${
+            index === startIndex ? "active" : ""
+          }`;
+          thumb.addEventListener("click", () => {
+            currentModalIndex = index;
+            modalImage.src = images[index];
+            modalImage.alt = `Image ${index + 1} de ${images.length}`;
+            modalCounter.textContent = `${index + 1} / ${images.length}`;
+
+            modalThumbnails
+              .querySelectorAll(".modal-thumbnail")
+              .forEach((t, i) => {
+                t.classList.toggle("active", i === index);
+              });
+          });
+          modalThumbnails.appendChild(thumb);
+        });
+
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
       }
     </script>
   </body>
