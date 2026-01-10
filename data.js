@@ -1419,7 +1419,7 @@ const modelsData = {
 const occasionModelsData = [
     {
         marque: "YAMAHA",
-        name: "YAMAHA  T-MAX 562 Tech-Max",
+        name: "YAMAHA  T-MAX 562 Tech-Max - Jet Moto tel 24350274",
         images: ["./img/occasion/1/T-MAX-562-Tech-Max.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-2.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-3.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-4.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
         price: "",
         specs: {
@@ -1436,10 +1436,11 @@ const occasionModelsData = [
     },
     {
         marque: "SUZUKI",
-        name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982",
+        name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
         images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
         price: "",
         specs: {
+            kilometrage: "0 km",
             typeMoteur: "Monocylindre 2 temps,",
             cylindree: "90 cm³",
             puissance: "8 ch",
@@ -1447,7 +1448,41 @@ const occasionModelsData = [
             refroidissement: "Air",
             vitesseMaximale: "Environ 75 km/h",
             alimentation: "",
-            freinage: "Carburateur"
+            freinage: ""
+        }
+    },
+    {
+        marque: "YAMAHA",
+        name: "YAMAHA-V-max 1700 -modèle 2009 - Jet Moto tel 24350274",
+        images: ["./img/occasion/3/YAMAHA-V-max-1700-modele-2009-1.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-2.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-3.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-4.jpg"],
+        price: "",
+        specs: {
+             kilometrage: "54000 km",
+            typeMoteur: "V4 4 temps",
+            cylindree: "1679 cm³",
+            puissance: "106 ch (78 kW)",
+            coupleMaximal: "145 Nm,",
+            refroidissement: "Liquide",
+            vitesseMaximale: "",
+            alimentation: "Injection électronique",
+            freinage: ""
+        }
+    },
+    {
+        marque: "HONDA",
+        name: "HONDA-CBX1000-modèle 1982 - Jet Moto tel 24350274",
+        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "",
+            typeMoteur: "6 cylindres en ligne 4 temps",
+            cylindree: "1047 cm³",
+            puissance: "105 ch",
+            coupleMaximal: "84,3 Nm",
+            refroidissement: "Air",
+            vitesseMaximale: "220 km/h,",
+            alimentation: "6 carburateurs Keihin 28 mm",
+            freinage: ""
         }
     },
     {
