@@ -1420,7 +1420,7 @@ const occasionModelsData = [
     {
         marque: "YAMAHA",
         name: "YAMAHA  T-MAX 562 Tech-Max - Jet Moto tel 24350274",
-        images: ["./img/occasion/1/T-MAX-562-Tech-Max.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-2.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-3.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-4.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
+        images: ["./img/occasion/1/T-MAX-562-Tech-Max.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
         price: "",
         specs: {
             kilometrage: "0 km",
