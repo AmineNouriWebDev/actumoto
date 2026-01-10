@@ -1418,33 +1418,36 @@ const modelsData = {
 // Données pour les motos d'occasion - Tableau simple sans division par marques
 const occasionModelsData = [
     {
-        marque: "Peugeot",
-        name: "Peugeot pulsion 125 i ABS",
-        images: ["./img/models/peugeot-pulsion-125.jpg", "https://moto-station.com/wp-content/uploads/2019/05/03/Essai-Peugeot-Scooter-Repulsion-2019-3.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiCFhgtii9saww3tAUG2C6X7o3-TBrZEOLVw&s"],
-        price: "12,900 TND",
+        marque: "YAMAHA",
+        name: "YAMAHA  T-MAX 562 Tech-Max",
+        images: ["./img/occasion/1/T-MAX-562-Tech-Max.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-2.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-3.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-4.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
+        price: "",
         specs: {
-            typeMoteur: "Monocylindre, 4 temps",
-            cylindree: "125 cc",
-            puissance: "Environ 13,2 ch",
-            coupleMaximal: "Environ 12 Nm",
+            kilometrage: "0 km",
+            typeMoteur: "Bicylindre en ligne 4 temps",
+            cylindree: "562 cm³,",
+            puissance: "47 ch (35 kW)",
+            coupleMaximal: "55,7 Nm",
             refroidissement: "Liquide",
-            vitesseMaximale: "Environ 110 km/h",
-            alimentation: "Injection Électronique"
+            vitesseMaximale: "Environ 180 km/h",
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
     {
-        marque: "Honda",
-        name: "Honda CB 500 F",
+        marque: "SUZUKI",
+        name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982",
         image: "./img/models/peugeot-pulsion-125.jpg",
-        price: "45,000 TND",
+        price: "",
         specs: {
-            typeMoteur: "Bicylindre, 4 temps",
-            cylindree: "471 cc",
+            typeMoteur: "Monocylindre 2 temps,",
+            cylindree: "90 cm³",
             puissance: "Environ 67,3 ch",
             coupleMaximal: "Environ 43 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 200 km/h",
-            alimentation: "Injection Électronique"
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
     {
@@ -1459,7 +1462,8 @@ const occasionModelsData = [
             coupleMaximal: "Environ 40 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 180 km/h",
-            alimentation: "Injection Électronique"
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
     {
@@ -1474,7 +1478,8 @@ const occasionModelsData = [
             coupleMaximal: "Environ 64 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 230 km/h",
-            alimentation: "Injection Électronique"
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
     {
@@ -1489,7 +1494,8 @@ const occasionModelsData = [
             coupleMaximal: "Environ 21 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 160 km/h",
-            alimentation: "Injection Électronique"
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
     {
@@ -1504,7 +1510,56 @@ const occasionModelsData = [
             coupleMaximal: "Environ 68 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 220 km/h",
-            alimentation: "Injection Électronique"
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
+        }
+    },
+    {
+        marque: "KTM",
+        name: "KTM 390 DUKE",
+        image: "./img/models/peugeot-pulsion-125.jpg",
+        price: "18,500 TND",
+        specs: {
+            typeMoteur: "Monocylindre, 4 temps",
+            cylindree: "373 cc",
+            puissance: "Environ 44 ch",
+            coupleMaximal: "Environ 37 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "Environ 190 km/h",
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
+        }
+    },
+    {
+        marque: "Honda",
+        name: "Honda CB 500",
+        image: "./img/models/peugeot-pulsion-125.jpg",
+        price: "42,000 TND",
+        specs: {
+            typeMoteur: "Bicylindre, 4 temps",
+            cylindree: "471 cc",
+            puissance: "Environ 47 ch",
+            coupleMaximal: "Environ 43 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "Environ 210 km/h",
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
+        }
+    },
+    {
+        marque: "Kawasaki",
+        name: "Kawasaki Ninja 400",
+        image: "./img/models/peugeot-pulsion-125.jpg",
+        price: "22,000 TND",
+        specs: {
+            typeMoteur: "Bicylindre, 4 temps",
+            cylindree: "399 cc",
+            puissance: "Environ 45 ch",
+            coupleMaximal: "Environ 38 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "Environ 200 km/h",
+            alimentation: "Injection Électronique",
+            freinage: "Disques hydrauliques (ABS)"
         }
     },
 ];const videosData = [
