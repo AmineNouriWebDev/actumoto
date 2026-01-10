@@ -1437,17 +1437,17 @@ const occasionModelsData = [
     {
         marque: "SUZUKI",
         name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982",
-        image: "./img/models/peugeot-pulsion-125.jpg",
+        images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
         price: "",
         specs: {
             typeMoteur: "Monocylindre 2 temps,",
             cylindree: "90 cm³",
-            puissance: "Environ 67,3 ch",
-            coupleMaximal: "Environ 43 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "Environ 200 km/h",
-            alimentation: "Injection Électronique",
-            freinage: "Disques hydrauliques (ABS)"
+            puissance: "8 ch",
+            coupleMaximal: "",
+            refroidissement: "Air",
+            vitesseMaximale: "Environ 75 km/h",
+            alimentation: "",
+            freinage: "Carburateur"
         }
     },
     {
