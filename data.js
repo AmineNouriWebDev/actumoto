@@ -70,7 +70,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -84,7 +85,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -98,7 +100,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -112,7 +115,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -126,7 +130,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -142,7 +147,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -158,7 +164,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -172,235 +179,255 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
     APRILIA: [
         {
             name: "Aprilia sr 125",
-            image: "./img/models/piaggio-aprilia-sr-125.jpg",
+            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125.jpg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg", ],
             price: "8,699 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "7.1 Kw",
+                coupleMaximal: "10 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
         {
             name: "Aprilia SR GT 125",
-            image: "./img/models/Aprilia_SR-GT_Wall-Img_1920x1280_1.jpg",
+            images: ["./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT_Wall-Img_1920x1280_1.jpg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia-SR-GT-Sport-prix-en-Tunisie-3.webp", ],
             price: "En Arrivage",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "11 Kw",
+                coupleMaximal: "12 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "99 Km/h",
+                alimentation: "injection",
+                freinage: "Disque/Disque ABS",
             }
+            
         },
+       
+        
     ],
     CFMOTO: [
         {
             name: "Motocycle CFMOTO 450MT - 450CC",
-            image: "./img/models/CFMOTO-450MT.jpg",
+            image: "./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg",
             price: "58,131 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4 temps",
+                cylindree: "450 cc",
+                puissance: "32,5 Kw",
+                coupleMaximal: "44 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "160 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 800MT-X",
-            image: "./img/models/CF-MOTO-800MT-X.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg",
             price: "74,910 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre",
+                cylindree: "800 cc",
+                puissance: "70 Kw",
+                coupleMaximal: "87 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "200 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 800MT Explore",
-            image: "./img/models/CF-MOTO-800MT-Explore.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg",
             price: "78,480 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: "800 cc",
+                puissance: "67 Kw",
+                coupleMaximal: "75 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "200 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 700MT",
-            image: "./img/models/CF-MOTO-700MT.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg",
             price: "69,793 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: "700 cc",
+                puissance: "49 Kw",
+                coupleMaximal: "60 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "190 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 700CL-X SPORT",
-            image: "./img/models/CF-MOTO-700CL-X-SPORT.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg",
             price: "61,344 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: "700 cc",
+                puissance: "52 Kw",
+                coupleMaximal: "68 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "190 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 450CL-C",
-            image: "./img/models/CF-MOTO-450CL-C.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg",
             price: "57,715 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre",
+                cylindree: "450 cc",
+                puissance: "32,5 Kw",
+                coupleMaximal: "42 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "160 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 450CL-C-BOBER",
-            image: "./img/models/CF-MOTO-450CL-C-BOBER.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg",
             price: "59,440 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre",
+                cylindree: "450 cc",
+                puissance: "30 Kw",
+                coupleMaximal: "42 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "160 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 125NK",
-            image: "./img/models/CF-MOTO-125NK.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg",
             price: "17,671 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "11 Kw",
+                coupleMaximal: "11 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "110 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 800NK Advanced",
-            image: "./img/models/CF-MOTO-800NK-Advanced.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg",
             price: "64,081 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: "800 cc",
+                puissance: "70 Kw",
+                coupleMaximal: "81 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "220 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 300NK",
-            image: "./img/models/CF-MOTO-300NK.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg",
             price: "34,093 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "300 cc",
+                puissance: "20,5 Kw",
+                coupleMaximal: "25 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "139 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 675SR-R",
-            image: "./img/models/CF-MOTO-675SR-R.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg",
             price: "64,855 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "3 Cylindre, 4 temps",
+                cylindree: "675 cc",
+                puissance: "70 Kw",
+                coupleMaximal: "70 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "230 Km/h",
+                alimentation: "Injection",
+                freinage: "Double Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 450SR-S",
-            image: "./img/models/CF-MOTO-450SR-S.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-450SR-S/CF-MOTO-450SR-S.jpg",
             price: "54,680 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: "450 cc",
+                puissance: "35 Kw",
+                coupleMaximal: "39 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "180 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO 150SC",
-            image: "./img/models/CF-MOTO-150SC.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-150SC/CF-MOTO-150SC.jpg",
             price: "18,445 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 2 soupapes",
+                cylindree: "150 cc",
+                puissance: "10,5 Kw",
+                coupleMaximal: "14,2 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "110 Km/h",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
             name: "CF MOTO CX-5E",
-            image: "./img/models/CF-MOTO-CX-5E.jpg",
+            image: "./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg",
             price: "10,591 TND",
             specs: {
-                typeMoteur: "",
+                typeMoteur: "Electrique, 48 V",
                 cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
+                puissance: "1,5 Kw",
+                coupleMaximal: "7 Nm",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "46 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -416,7 +443,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -430,7 +458,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -444,7 +473,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -458,7 +488,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -472,7 +503,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -486,7 +518,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -500,7 +533,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -514,7 +548,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -528,7 +563,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -544,7 +580,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -558,7 +595,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -572,7 +610,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -586,7 +625,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -600,7 +640,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -614,7 +655,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -628,7 +670,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -644,7 +687,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -658,7 +702,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -672,7 +717,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -686,7 +732,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -700,7 +747,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -716,7 +764,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -730,7 +779,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -746,7 +796,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -762,7 +813,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -776,81 +828,87 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
     BBM: [
         {
             name: "Motocycle BBM 124CC FZ MAX Compteur Digitale",
-            image: "./img/models/bbm-124cc-fz-max-compteur-digitale.jpg",
-            price: "3,269 TND",
+            image: "./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg",
+            price: "2,849 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "5.5 Kw",
+                coupleMaximal: "6.5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "110 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
     ],
     DAYUN: [
         {
-            name: "DAYUN DREAM 23 4T - SLC - 124CC - ROUGE",
-            image: "./img/models/dayun-dream-23-4t-rouge.jpg",
+            name: "DAYUN DREAM 23 4T - SLC - 124CC - NOIR",
+            image: "./img/models/dayun/dayun-sniper-slc-noir/dayun-sniper-slc-noir.jpg",
             price: "4,499 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
                 puissance: "",
                 coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
         {
             name: "DAYUN SNIPER SLC - 124CC - BLANC",
-            image: "./img/models/dayun-sniper-slc-blanc.jpg",
-            price: "5,399 TND",
+            image: "./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg",
+            price: "5,199 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "6,2 Kw",
+                coupleMaximal: "9 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Disque",
             }
         },
         {
             name: "Scooter DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
-            image: "./img/models/dayun-dy125t-bleu.jpg",
+            image: "./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg",
             price: "4,569 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
                 puissance: "",
                 coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
         {
             name: "Scooter Dayun Kimbo 124CC | DY124 - Gris",
-            image: "./img/models/dayun-dy124-gris.jpg",
+            image: "./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg",
             price: "4,259 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
                 puissance: "",
                 coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
     ],
@@ -866,7 +924,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -880,7 +939,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -896,7 +956,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -910,7 +971,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -926,7 +988,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -940,7 +1003,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -954,7 +1018,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -968,7 +1033,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -984,7 +1050,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -998,7 +1065,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1014,7 +1082,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1030,9 +1099,10 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             },
-            status: "En Arrivage"
+            
         },
     ],
     POWER: [
@@ -1047,7 +1117,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1063,7 +1134,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1077,7 +1149,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1093,7 +1166,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1107,7 +1181,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1121,7 +1196,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1137,7 +1213,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1153,7 +1230,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1169,7 +1247,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1183,7 +1262,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1197,7 +1277,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1213,7 +1294,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1227,7 +1309,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1243,7 +1326,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1259,7 +1343,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1273,7 +1358,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1289,7 +1375,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
         {
@@ -1303,65 +1390,70 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
     E_RIDER: [
         {
             name: "Scooter Électrique E-RIDER E-CLASSIC 1200 Watts - Rouge",
-            image: "./img/models/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg",
+            image: "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg",
             price: "5,199 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Electrique, 72 V",
+                cylindree: "1,2 Kw",
                 puissance: "",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "60 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
         {
             name: "Scooter Électrique E-RIDER E-TECH 1200 Watts - Bleu",
-            image: "./img/models/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg",
+            image: "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg",
             price: "4,179 TND",
             specs: {
-                typeMoteur: "",
+                typeMoteur: "Electrique, 72 V",
                 cylindree: "",
-                puissance: "",
+                puissance: "1,2 Kw",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "59 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
         {
             name: "Scooter Electrique E-Rider E-Power 1200W Rouge",
-            image: "./img/models/scooter-electrique-e-rider-e-power-1200w-rouge.jpg",
-            price: "3,999 TND",
+            image: "./img/models/erider/e-power-1200w/scooter-electrique-e-rider-e-power-1200w-rouge.jpg",
+            price: "4,849 TND",
             specs: {
-                typeMoteur: "",
+                typeMoteur: "Electrique, 72 V",
                 cylindree: "",
-                puissance: "",
+                puissance: "1,2 Kw",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "60 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
         {
             name: "Scooter Electrique E-Rider E-eco 1000W Blanc",
-            image: "./img/models/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg",
+            image: "./img/models/erider/e-eco-1000w-blanc/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg",
             price: "3,679 TND",
             specs: {
-                typeMoteur: "",
+                typeMoteur: "Electrique, 60 V",
                 cylindree: "",
-                puissance: "",
+                puissance: "1 Kw",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "50 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1377,7 +1469,8 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
@@ -1393,23 +1486,25 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                alimentation: ""
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
     E_FLASH: [
         {
             name: "Scooter Électrique E-FLASH 2000 Watts - Blanc&Rouge",
-            image: "./img/models/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg",
+            image: "./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg",
             price: "8,299 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Electrique, 72 V",
+                cylindree: "2 Kw",
                 puissance: "",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: ""
+                vitesseMaximale: "70 Km/h",
+                alimentation: "",
+                freinage: "",
             }
         },
     ],
