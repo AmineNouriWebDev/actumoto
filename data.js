@@ -40,7 +40,9 @@ const brands = [
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
-    { name: "MOORA", logo: "./img/logos-actumoto/logo-moora.png" },
+    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
+    { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
+    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
 ];
 
 const modelsData = {
@@ -1495,11 +1497,11 @@ const modelsData = {
             }
         },
     ],
-    MOORA: [
+    LETBE: [
         {
             name: "LETBE NEON 125",
-            images: ["./img/models/moora/LETBE-NEON-125/moora1.jpg","./img/models/moora/LETBE-NEON-125/moora2.jpg","./img/models/moora/LETBE-NEON-125/moora3.jpg","./img/models/moora/LETBE-NEON-125/moora4.jpg"],
-            price: "5.900",
+            images: ["./img/models/letbe/LETBE-NEON-125/moora1.jpg","./img/models/letbe/LETBE-NEON-125/moora2.jpg","./img/models/letbe/LETBE-NEON-125/moora3.jpg","./img/models/letbe/LETBE-NEON-125/moora4.jpg"],
+            price: "5,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
                 cylindree: "125 cc",
@@ -1509,6 +1511,85 @@ const modelsData = {
                 vitesseMaximale: "",
                 alimentation: "Injection électronique Bosch",
                 freinage: "Disque/Disque ABS",
+            }
+        },
+    ],
+    ECORIDE: [
+        {
+            name: "Scooter Électrique ECORIDE ZEN 600 Watts ",
+            images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg","./img/models/ecoride/ZEN-600-Watts/2.jpg","./img/models/ecoride/ZEN-600-Watts/3.jpg","./img/models/ecoride/ZEN-600-Watts/4.jpg"],
+            price: "1,999 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "600 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "35 km",
+                alimentation: "48V 20Ah",
+                freinage: "",
+            }
+        },
+        {
+            name: "Scooter Électrique ECORIDE ALPHA-ROUGE 1000 Watts ",
+            images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg","./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
+            price: "2,899 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km",
+                alimentation: "60V Batterie en Acid",
+                freinage: "",
+            }
+        },
+    ],
+    CITYBIKE: [
+        {
+            name: "Scooter Électrique City Bike 50CC 2000W - Gris Nardo ",
+            images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
+            price: "5,299 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "50 cc",
+                puissance: "2000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km",
+                alimentation: "Lithium-Ion 60V 26Ah",
+                freinage: "Disques Hydraulique",
+            }
+        },
+        {
+            name: "Scooter Électrique City Bike 125CC 4000W - Gris Nardo ",
+            images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
+            price: "7,499 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "125 cc",
+                puissance: "4000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "75 km/h",
+                alimentation: "Lithium-Ion 72V 40Ah",
+                freinage: "Disques Hydraulique",
+            }
+        },
+        {
+            name: "Scooter Électrique City Bike 50CC 3000W ",
+            images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
+            price: "6,899 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "50 cc",
+                puissance: "3000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                alimentation: "Lithium-Ion 60V 23.4 Ah",
+                freinage: "Disques Hydraulique",
             }
         },
     ],
