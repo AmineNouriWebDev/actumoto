@@ -109,7 +109,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT Tweet 125 ",
-            image: "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.jpg",
+            image: "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.webp",
             price: "9,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -435,6 +435,21 @@ const modelsData = {
         },
     ],
     ZIMOTA_MOTOR: [
+         {
+            name: "Scooter Electrique Eway RIDE - 400 Watt - Blanc",
+            image: "./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg",
+            price: "1,999 TND",
+            specs: {
+                typeMoteur: "Électrique 400 W",
+                cylindree: "",
+                puissance: "400 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "30 km/h",
+                alimentation: "Batterie 48V 12Ah",
+                freinage: "Tambour / Tambour",
+            }
+        },
         {
             name: "ZIMOTA Evo Blanc / Bleu - Rouge - 49 CC",
             image: "./img/models/zimotamotor/zimota-evo/zimota-evo.jpg",
@@ -540,21 +555,7 @@ const modelsData = {
                 freinage: "Disque / Tambour",
             }
         },
-        {
-            name: "Scooter Electrique Eway RIDE - 400 Watt - Blanc",
-            image: "./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg",
-            price: "1,999 TND",
-            specs: {
-                typeMoteur: "Électrique 400 W",
-                cylindree: "",
-                puissance: "400 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "30 km/h",
-                alimentation: "Batterie 48V 12Ah",
-                freinage: "Tambour / Tambour",
-            }
-        },
+       
         {
             name: "ZIMOTA RKS 125cc - Noir",
             image: "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/qjmotor-zimota-rks-qjmotor-noir.jpg",
@@ -924,7 +925,7 @@ const modelsData = {
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
-                puissance: "2,4 Kw",
+                puissance: "2400w",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
@@ -939,12 +940,72 @@ const modelsData = {
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
-                puissance: "1 Kw",
+                puissance: "1000w",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 Km/h",
                 alimentation: "",
                 freinage: "Double Disque/Disque",
+            }
+        },
+        {
+            name: "SCOOTER ELECTRIQUE NOVAGO TIGER 140",
+            images: ["./img/models/novago/NOVAGO-TIGER-140/2.jpg", "./img/models/novago/NOVAGO-TIGER-140/1.jpg", "./img/models/novago/NOVAGO-TIGER-140/3.jpg"],
+            price: "6,600 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1500W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "60 km",
+                alimentation: "2 X Lithium Fer 60 volt 30 AH",
+                freinage: "Disque/Disque",
+            }
+        },
+        {
+            name: "SCOOTER ELECTRIQUE NOVAGO TIGER 70",
+            images: ["./img/models/novago/NOVAGO-TIGER-70/2.jpg", "./img/models/novago/NOVAGO-TIGER-70/3.jpg", "./img/models/novago/NOVAGO-TIGER-70/1.jpg"],
+            price: "4,900 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1500W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "60 km",
+                alimentation: "Lithium Fer 60 volt 30 AH",
+                freinage: "Disque/Disque",
+            }
+        },
+        {
+            name: "SCOOTER ELECTRIQUE NOVAGO TRICITY",
+            images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg","./img/models/novago/NOVAGO-TRICITY/4.jpg"],
+            price: "5,300 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "800 W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "30 km",
+                alimentation: "Lithium Fer 60 volt 30 AH",
+                freinage: "Disque/Tambour",
+            }
+        },
+        {
+            name: "SCOOTER ELECTRIQUE NOVAGO LUNA 70",
+            images: ["./img/models/novago/NOVAGO-LUNA-70/2.jpg", "./img/models/novago/NOVAGO-LUNA-70/3.jpg", "./img/models/novago/NOVAGO-LUNA-70/1.jpg","./img/models/novago/NOVAGO-LUNA-70/4.jpg"],
+            price: "4,200 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1500W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "55 km",
+                alimentation: "Lithium Fer 60 volt 30 AH",
+                freinage: "Disque/Disque",
             }
         },
     ],
@@ -1578,7 +1639,7 @@ const modelsData = {
     ],
     CITYBIKE: [
         {
-            name: "Scooter Électrique City Bike 50CC 2000W - Gris Nardo ",
+            name: "Scooter Électrique City Bike 2000W - Gris Nardo ",
             images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
             price: "5,299 TND",
             specs: {
@@ -1593,7 +1654,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique City Bike 125CC 4000W - Gris Nardo ",
+            name: "Scooter Électrique City Bike 4000W - Gris Nardo ",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
             price: "7,499 TND",
             specs: {
@@ -1608,7 +1669,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique City Bike 50CC 3000W ",
+            name: "Scooter Électrique City Bike 3000W ",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
             price: "6,899 TND",
             specs: {
@@ -1681,7 +1742,7 @@ const occasionModelsData = [
     {
         marque: "HONDA",
         name: "HONDA-CBX1000-modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg"],
+        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg"],
         price: "",
         specs: {
             kilometrage: "",
@@ -1698,7 +1759,7 @@ const occasionModelsData = [
     {
         marque: "Kawasaki",
         name: "Kawasaki -KLR 650 -modèle 1992  - Jet Moto tel 24350274",
-        images: ["./img/occasion/5/Kawasaki-KLR-650-modèle-1992-1.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-2.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-3.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-4.jpg"],
+        images: ["./img/occasion/5/Kawasaki-KLR-650-modèle-1992-4.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-2.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-3.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-1.jpg"],
         price: "",
         specs: {
             kilometrage: "",
@@ -1767,7 +1828,7 @@ const occasionModelsData = [
     {
         marque: "BMW",
         name: "BMW-GS1300-Adventure-Triple Black 2026-00km - Jet Moto tel 26711555-53685927",
-        images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
+        images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
         price: "",
         specs: {
             kilometrage: "0 km",
