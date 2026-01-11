@@ -206,7 +206,7 @@ const modelsData = {
         {
             name: "Aprilia SR GT 125",
             images: ["./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT_Wall-Img_1920x1280_1.jpg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia-SR-GT-Sport-prix-en-Tunisie-3.webp", ],
-            price: "En Arrivage",
+            price: "11,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -568,6 +568,21 @@ const modelsData = {
                 vitesseMaximale: "100 km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
+            }
+        },
+        {
+            name: "ZIMOTA NX",
+            images: ["./img/models/zimotamotor/zimota-nx/1.jpg", "./img/models/zimotamotor/zimota-nx/2.jpg", "./img/models/zimotamotor/zimota-nx/3.jpg","./img/models/zimotamotor/zimota-nx/4.jpg"],
+            price: "",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "125 cc",
+                puissance: "8,4 cv",
+                coupleMaximal: "10 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque CBS",
             }
         },
     ],
