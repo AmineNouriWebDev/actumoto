@@ -1489,6 +1489,21 @@ const modelsData = {
                 freinage: "Double Disque/Double Disque",
             }
         },
+        {
+            name: "Scooter Électrique LVNENG LX08",
+            images: ["./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg", "./img/models/lvneng/lvneng-lx08/3.jpg"],
+            price: "6,290 TND",
+            specs: {
+                typeMoteur: "Electrique 60V",
+                cylindree: "49cc ",
+                puissance: "2030 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "60 Km/h",
+                alimentation: "",
+                freinage: "Disque/Disque",
+            }
+        },
     ],
     E_RIDER: [
         {
@@ -1579,9 +1594,54 @@ const modelsData = {
                 cylindree: "",
                 puissance: "500 W",
                 coupleMaximal: "",
-                refroidissement: "A air",
+                refroidissement: "",
                 vitesseMaximale: "40 km/h",
                 alimentation: "Batterie plomb 48V 20Ah",
+                freinage: "Tambour / Tambour",
+            }
+        },
+        {
+            name: "Scooter Électrique Wattgo Wg017 1000W",
+            images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg","./img/models/wattgo/Wattgo-Wg017/2.jpg"],
+            price: "3,575 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "1000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "50 km/h",
+                alimentation: "Lithium 20 Ah",
+                freinage: "Disque / Disque",
+            }
+        },
+        {
+            name: "Scooter Électrique Wattgo Wg016 1000W",
+            images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg","./img/models/wattgo/Wattgo-Wg016/2.jpg","./img/models/wattgo/Wattgo-Wg016/3.jpg"],
+            price: "3,299 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "1000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "50 km/h",
+                alimentation: "Lithium 20 Ah",
+                freinage: "Disque / Disque",
+            }
+        },
+        {
+            name: "Scooter Électrique Wattgo Wgoo2 350W",
+            images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
+            price: "2,098 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "350 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "35 km/h",
+                alimentation: "Lithium 25 Ah",
                 freinage: "Tambour / Tambour",
             }
         },
