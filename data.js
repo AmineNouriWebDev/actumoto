@@ -40,6 +40,7 @@ const brands = [
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
+    { name: "MOORA", logo: "./img/logos-actumoto/logo-moora.png" },
 ];
 
 const modelsData = {
@@ -1491,6 +1492,23 @@ const modelsData = {
                 vitesseMaximale: "70 Km/h",
                 alimentation: "",
                 freinage: "",
+            }
+        },
+    ],
+    MOORA: [
+        {
+            name: "LETBE NEON 125",
+            images: ["./img/models/moora/LETBE-NEON-125/moora1.jpg","./img/models/moora/LETBE-NEON-125/moora2.jpg","./img/models/moora/LETBE-NEON-125/moora3.jpg","./img/models/moora/LETBE-NEON-125/moora4.jpg"],
+            price: "5.900",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps,",
+                cylindree: "125 cc",
+                puissance: "8,5 ch",
+                coupleMaximal: "9,4 Nm",
+                refroidissement: "Air",
+                vitesseMaximale: "",
+                alimentation: "Injection électronique Bosch",
+                freinage: "Disque/Disque ABS",
             }
         },
     ],
