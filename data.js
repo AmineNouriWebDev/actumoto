@@ -73,14 +73,14 @@ const modelsData = {
                 coupleMaximal: "38,1 Nm",
                 refroidissement: "Liquide,",
                 vitesseMaximale: "135 km/h",
-                alimentation: "njection électronique,",
+                alimentation: "Injection électronique,",
                 freinage: "Double disque/ Disque ABS-CBS",
             }
         },
         {
             name: "PEUGEOT XP 400",
             image: "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400.jpg",
-            price: "41,900 TND",
+            price: "42,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "400 cc",
@@ -132,7 +132,7 @@ const modelsData = {
                 puissance: "13,9 ch",
                 coupleMaximal: "11 Nm",
                 refroidissement: "Liquide,",
-                vitesseMaximale: "",
+                vitesseMaximale: "105 km/h",
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque ABS",
             }
@@ -1316,6 +1316,21 @@ const modelsData = {
                 refroidissement: "A air",
                 vitesseMaximale: "90 km/h",
                 alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+            }
+        },
+        {
+            name: "Scooter à Essence XTF Coccinelle 49cc",
+            images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
+            price: "3,999 TND",
+            specs: {
+                typeMoteur: "monocylindre 2 temps",
+                cylindree: "49 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                alimentation: "",
                 freinage: "Disque / Tambour",
             }
         },
