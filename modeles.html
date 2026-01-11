@@ -781,7 +781,7 @@
         if (modelsData[brand]) {
           updateSchemaData(brand);
 
-          modelsData[brand].forEach((model, index) => {
+          modelsData[brand].reverse().forEach((model, index) => {
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
             modelCard.setAttribute("role", "listitem");
