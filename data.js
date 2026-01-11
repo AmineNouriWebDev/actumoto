@@ -693,6 +693,21 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "ADX 300CC injection ABS + TCS E5+",
+            images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
+            price: "24999,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre – 4 T - Injection",
+                cylindree: "278 cm3",
+                puissance: "19 kW",
+                coupleMaximal: "",
+                refroidissement: "Liquide",
+                vitesseMaximale: "",
+                alimentation: "",
+                freinage: "Disque/Disque",
+            }
+        },
     ],
     FORZA_MOTOR_SPORT: [
        
@@ -1688,6 +1703,40 @@ const modelsData = {
 
 // Données pour les motos d'occasion - Tableau simple sans division par marques
 const occasionModelsData = [
+       {
+        marque: "BMW",
+        name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
+        images: ["./img/occasion/9/BMW-S1000RR-M-1.png", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "0 km",
+            typeMoteur: "4 cylindres en ligne 4 temps",
+            cylindree: "999 cm³",
+            puissance: "218 ch (160 kW)",
+            coupleMaximal: "113 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "314 km/h",
+            alimentation: "Injection électronique",
+            freinage: "Double disque M AV, disque AR"
+        }
+    },
+    {
+        marque: "BMW",
+        name: "BMW-GS1300-Adventure-Triple Black 2026-00km - Jet Moto tel 26711555-53685927",
+        images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "0 km",
+            typeMoteur: "Boxer bicylindre 4 temps",
+            cylindree: "1300 cm³",
+            puissance: "145 ch (107 kW)",
+            coupleMaximal: "149 Nm",
+            refroidissement: "Air/liquide,",
+            vitesseMaximale: "",
+            alimentation: "Injection électronique",
+            freinage: "Double disque AV, disque AR avec ABS"
+        }
+    },
     {
         marque: "YAMAHA",
         name: "YAMAHA  T-MAX 562 Tech-Max - Jet Moto tel 24350274",
@@ -1725,7 +1774,7 @@ const occasionModelsData = [
     {
         marque: "YAMAHA",
         name: "YAMAHA-V-max 1700 -modèle 2009 - Jet Moto tel 24350274",
-        images: ["./img/occasion/3/YAMAHA-V-max-1700-modele-2009-1.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-2.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-3.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-4.jpg"],
+        images: ["./img/occasion/3/YAMAHA-V-max-1700-modele-2009-1.png", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-2.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-3.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-4.jpg"],
         price: "",
         specs: {
              kilometrage: "54000 km",
@@ -1808,40 +1857,7 @@ const occasionModelsData = [
             freinage: "Tambour Ø 80 mm AV/AR"
         }
     },
-    {
-        marque: "BMW",
-        name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
-        images: ["./img/occasion/9/BMW-S1000RR-M-1.jpg", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "0 km",
-            typeMoteur: "4 cylindres en ligne 4 temps",
-            cylindree: "999 cm³",
-            puissance: "218 ch (160 kW)",
-            coupleMaximal: "113 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "314 km/h",
-            alimentation: "Injection électronique",
-            freinage: "Double disque M AV, disque AR"
-        }
-    },
-    {
-        marque: "BMW",
-        name: "BMW-GS1300-Adventure-Triple Black 2026-00km - Jet Moto tel 26711555-53685927",
-        images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "0 km",
-            typeMoteur: "Boxer bicylindre 4 temps",
-            cylindree: "1300 cm³",
-            puissance: "145 ch (107 kW)",
-            coupleMaximal: "149 Nm",
-            refroidissement: "Air/liquide,",
-            vitesseMaximale: "",
-            alimentation: "Injection électronique",
-            freinage: "Double disque AV, disque AR avec ABS"
-        }
-    },
+ 
    
 ];const videosData = [
     {
