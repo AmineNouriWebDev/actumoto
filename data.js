@@ -573,7 +573,7 @@ const modelsData = {
         {
             name: "ZIMOTA NX",
             images: ["./img/models/zimotamotor/zimota-nx/1.jpg", "./img/models/zimotamotor/zimota-nx/2.jpg", "./img/models/zimotamotor/zimota-nx/3.jpg","./img/models/zimotamotor/zimota-nx/4.jpg"],
-            price: "",
+            price: "6,799 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "125 cc",
