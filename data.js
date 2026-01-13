@@ -221,7 +221,7 @@ const modelsData = {
             }
         },
         {
-            name: "Aprilia SR GT 125",
+            name: "Aprilia SR GT 125 ",
             images: ["./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-1.jpeg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-2.jpeg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-3.jpeg"],
             price: "EN Arrivage",
             specs: {
