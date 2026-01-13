@@ -43,13 +43,14 @@ const brands = [
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
+    { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
 ];
 
 const modelsData = {
     Peugeot: [
         {
             name: "Peugeot pulsion 125 i ABS",
-            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125.jpg", "https://www.probike49.fr/wp-content/uploads/Pulsion_Active_Amazonite-Blue_3-4_Exhaust_BD-OK.jpg", "https://cdn.lesnumeriques.com/test/18/186689/b1634f5b-scooter-peugeot-pulsion-gt-125-renaissance-bien-venue.jpeg"],
+            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
             price: "12,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -62,24 +63,10 @@ const modelsData = {
                 freinage: "Disque /Disque ABS",
             }
         },
-        {
-            name: "PEUGEOT MÉTROPOLIS 400",
-            image: "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-400.jpg",
-            price: "59,000 TND",
-            specs: {
-                typeMoteur: "Monocylindre 4 temps,",
-                cylindree: "400 cc",
-                puissance: "35,6 ch",
-                coupleMaximal: "38,1 Nm",
-                refroidissement: "Liquide,",
-                vitesseMaximale: "135 km/h",
-                alimentation: "Injection électronique,",
-                freinage: "Double disque/ Disque ABS-CBS",
-            }
-        },
+      
         {
             name: "PEUGEOT XP 400",
-            image: "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400.jpg",
+            images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg","./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
             price: "42,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -94,7 +81,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT Django 125",
-            image: "./img/models/peugeot/peugeot-django-125/peugeot-django-125.jpg",
+            images: ["./img/models/peugeot/peugeot-django-125/peugeot-django-125-1.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-2.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-3.jpeg","./img/models/peugeot/peugeot-django-125/peugeot-django-125-4.jpeg"],
             price: "10,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
@@ -109,7 +96,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT Tweet 125 ",
-            image: "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.webp",
+            images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg"],
             price: "9,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -124,7 +111,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT PM 01 125",
-            image: "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125.jpg",
+            images: ["./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
             price: "15,500 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
@@ -135,6 +122,21 @@ const modelsData = {
                 vitesseMaximale: "105 km/h",
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque ABS",
+            }
+        },
+          {
+            name: "PEUGEOT MÉTROPOLIS 400",
+            images: ["./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-1.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-2.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-3.jpeg","./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-4.jpeg"],
+            price: "59,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps,",
+                cylindree: "400 cc",
+                puissance: "35,6 ch",
+                coupleMaximal: "38,1 Nm",
+                refroidissement: "Liquide,",
+                vitesseMaximale: "135 km/h",
+                alimentation: "Injection électronique,",
+                freinage: "Double disque/ Disque ABS-CBS",
             }
         },
     ],
@@ -158,7 +160,7 @@ const modelsData = {
     PIAGGIO: [
         {
             name: "Piaggio VESPA VXL 125 cc",
-            image: "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125.jpg",
+            images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
             price: "10,900 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -173,7 +175,7 @@ const modelsData = {
         },
         {
             name: "PIAGGIO VESPA GTS 125 cc",
-            image: "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts.jpg",
+            images: ["./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-1.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-2.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-3.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-4.jpeg"],
             price: "29,900 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -186,11 +188,26 @@ const modelsData = {
                 freinage: "Disque/Disque",
             }
         },
+        {
+            name: "Piaggio Liberty S 125 2025",
+            images: ["./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-1.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-2.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-3.jpeg"],
+            price: "16,500 TND",
+            specs: {
+                typeMoteur: "i-get 125 cc 4 temps injection",
+                cylindree: "125 cc",
+                puissance: "8,1 kW (11 ch)",
+                coupleMaximal: "10,75 Nm",
+                refroidissement: "Air",
+                vitesseMaximale: "95 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque AV ABS / Tambour AR",
+            }
+        },
     ],
     APRILIA: [
         {
             name: "Aprilia sr 125",
-            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125.jpg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg", ],
+            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
             price: "8,699 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -205,8 +222,8 @@ const modelsData = {
         },
         {
             name: "Aprilia SR GT 125",
-            images: ["./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT_Wall-Img_1920x1280_1.jpg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia-SR-GT-Sport-prix-en-Tunisie-3.webp", ],
-            price: "11,900 TND",
+            images: ["./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-1.jpeg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-2.jpeg", "./img/models/aprilia/aprilia-sr-gt-125/Aprilia_SR-GT-125-3.jpeg"],
+            price: "EN Arrivage",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -873,7 +890,7 @@ const modelsData = {
     DAYUN: [
         {
             name: "DAYUN DREAM 23 4T - SLC - 124CC - NOIR",
-            image: "./img/models/dayun/dayun-sniper-slc-noir/dayun-sniper-slc-noir.jpg",
+            image: "./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png",
             price: "4,499 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1712,6 +1729,24 @@ const modelsData = {
             }
         },
     ],
+    GSM: [
+        {
+            name: "Scooter GSM BWX 125 cc – Noir Brillant – BWX-125-BK ",
+            images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
+            price: "4,999 TND",
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: "124.6 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "90 km",
+                alimentation: "Elèctrique CDI",
+                freinage: "Disques / Disques",
+            }
+        },
+
+    ],
     CITYBIKE: [
         {
             name: "Scooter Électrique City Bike 2000W - Gris Nardo ",
@@ -1763,6 +1798,40 @@ const modelsData = {
 
 // Données pour les motos d'occasion - Tableau simple sans division par marques
 const occasionModelsData = [
+       {
+        marque: "Ducati",
+        name: "Ducati 1100 Panigale V4 S 🇹🇳 modèle 2025 🇹🇳 00KM - chez JETMOTO 🇹🇳 Tunis 🇹🇳 tel-watsap 53685927-26711555",
+        images: ["./img/occasion/12/1.jpg", "./img/occasion/12/2.jpg", "./img/occasion/12/3.jpg", "./img/occasion/12/4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "0 km",
+            typeMoteur: "V4 Desmosedici Stradale 4 temps,",
+            cylindree: "1103 cm³",
+            puissance: "220 ch (162 kW)",
+            coupleMaximal: "123 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "300 km/h",
+            alimentation: "Injection électronique",
+            freinage: "Double disque AV / Disque AR Brembo Hypure"
+        }
+    },
+       {
+        marque: "KAWASAKI",
+        name: "Kawasaki Z900-ABS-00km- modèle 10.2025🇹🇳 chez JETMOTO 🇹🇳 tel 53685927-267115557",
+        images: ["./img/occasion/11/1.jpg", "./img/occasion/11/2.jpg", "./img/occasion/11/3.jpg", "./img/occasion/11/4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "0 km",
+            typeMoteur: "4 cylindres en ligne 4 temps",
+            cylindree: "948 cm³",
+            puissance: "125 ch (92 kW)",
+            coupleMaximal: "99 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "240 km/h",
+            alimentation: "Injection électronique",
+            freinage: "Double disque AV / Disque AR ABS"
+        }
+    },
        {
         marque: "BMW",
         name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
