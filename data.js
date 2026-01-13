@@ -44,6 +44,7 @@ const brands = [
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
 ];
 
 const modelsData = {
@@ -1793,6 +1794,24 @@ const modelsData = {
                 freinage: "Disques Hydraulique",
             }
         },
+    ],
+    AIMA: [
+        {
+            name: "Scooter scooter AIMA Q5  ",
+            images: ["./img/models/aima/aima-q5/aima-q5-1.jpg","./img/models/aima/aima-q5/aima-q5-2.jpg","./img/models/aima/aima-q5/aima-q5-3.jpg","./img/models/aima/aima-q5/aima-q5-4.jpg"],
+            price: "",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "800 watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                alimentation: "",
+                freinage: "Disques / Disques",
+            }
+        },
+
     ],
 };
 
