@@ -458,6 +458,159 @@
         white-space: nowrap;
         border: 0;
       }
+
+      /* =========================================== */
+      /* CAROUSEL STYLES */
+      /* =========================================== */
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        height: 100%;
+      }
+
+      .carousel-slide {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .carousel-slide.active {
+        opacity: 1;
+      }
+
+      .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        transition: all 0.3s ease;
+      }
+
+      .carousel-btn:hover {
+        background: rgba(0, 0, 0, 0.8);
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      .carousel-btn-prev {
+        left: 20px;
+      }
+
+      .carousel-btn-next {
+        right: 20px;
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10;
+      }
+
+      .indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .indicator.active {
+        background: #ff0000;
+        transform: scale(1.2);
+      }
+
+      .indicator:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      /* Responsive adjustments */
+      /* Mobile */
+      @media (max-width: 767px) {
+        .hero-section {
+          height: 50vh;
+          margin-top: 80px;
+        }
+
+        .carousel-btn {
+          width: 35px;
+          height: 35px;
+        }
+
+        .carousel-btn-prev {
+          left: 10px;
+        }
+
+        .carousel-btn-next {
+          right: 10px;
+        }
+
+        .carousel-indicators {
+          bottom: 15px;
+        }
+
+        .indicator {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      /* Desktop */
+      @media (min-width: 768px) {
+        .hero-section {
+          height: 70vh;
+          max-height: 700px;
+          margin-top: 80px;
+        }
+      }
+
+      /* Large Desktop */
+      @media (min-width: 1200px) {
+        .hero-section {
+          max-height: 800px;
+        }
+      }
+
+      /* Small mobile */
+      @media (max-width: 480px) {
+        .hero-section {
+          height: 45vh;
+        }
+      }
     </style>
 
     <script type="application/ld+json">
@@ -543,12 +696,102 @@
         class="hero-section"
         aria-label="Catalogue moto Tunisie - Découvrez les derniers modèles"
       >
-        <div class="hero-image-container">
-          <img
-            src="./img/banner-last.jpeg"
-            alt="Catalogue moto Tunisie - actumoto.tn"
-            class="hero-image"
-          />
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+              <img
+                src="./img/slider/slide1.jpeg"
+                alt="Moto sportive rouge - Nouveaux modèles 2024"
+                class="carousel-image"
+              />
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <img
+                src="./img/slider/slide2.jpeg"
+                alt="Scooter électrique urbain - Technologie moderne"
+                class="carousel-image"
+              />
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <img
+                src="./img/slider/slide3.jpeg"
+                alt="Moto adventure - Confort et performance"
+                class="carousel-image"
+              />
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <button
+            class="carousel-btn carousel-btn-prev"
+            aria-label="Image précédente"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            class="carousel-btn carousel-btn-next"
+            aria-label="Image suivante"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <span
+              class="indicator active"
+              data-slide="0"
+              aria-label="Afficher l'image 1"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="1"
+              aria-label="Afficher l'image 2"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="2"
+              aria-label="Afficher l'image 3"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="3"
+              aria-label="Afficher l'image 4"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="4"
+              aria-label="Afficher l'image 5"
+            ></span>
+          </div>
         </div>
       </section>
 
@@ -700,6 +943,126 @@
           container.appendChild(brandCard);
         });
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carouselTrack = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".carousel-slide");
+        const indicators = document.querySelectorAll(".indicator");
+        const prevBtn = document.querySelector(".carousel-btn-prev");
+        const nextBtn = document.querySelector(".carousel-btn-next");
+
+        let currentSlide = 0;
+        let autoSlideInterval;
+        const slideInterval = 4000; // 4 secondes
+
+        // Initialize carousel
+        function initCarousel() {
+          updateCarousel();
+          startAutoSlide();
+        }
+
+        // Update carousel display
+        function updateCarousel() {
+          // Update track position
+          carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+          // Update slide classes
+          slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === currentSlide);
+          });
+
+          // Update indicators
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle("active", index === currentSlide);
+          });
+        }
+
+        // Go to specific slide
+        function goToSlide(slideIndex) {
+          currentSlide = slideIndex;
+          updateCarousel();
+          resetAutoSlide();
+        }
+
+        // Next slide
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          updateCarousel();
+        }
+
+        // Previous slide
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          updateCarousel();
+        }
+
+        // Auto slide functionality
+        function startAutoSlide() {
+          autoSlideInterval = setInterval(nextSlide, slideInterval);
+        }
+
+        function resetAutoSlide() {
+          clearInterval(autoSlideInterval);
+          startAutoSlide();
+        }
+
+        // Event listeners
+        prevBtn.addEventListener("click", () => {
+          prevSlide();
+          resetAutoSlide();
+        });
+
+        nextBtn.addEventListener("click", () => {
+          nextSlide();
+          resetAutoSlide();
+        });
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener("click", () => {
+            goToSlide(index);
+          });
+        });
+
+        // Pause auto slide on hover
+        carouselTrack.addEventListener("mouseenter", () => {
+          clearInterval(autoSlideInterval);
+        });
+
+        carouselTrack.addEventListener("mouseleave", () => {
+          startAutoSlide();
+        });
+
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carouselTrack.addEventListener("touchstart", (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+          clearInterval(autoSlideInterval);
+        });
+
+        carouselTrack.addEventListener("touchend", (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          handleSwipe();
+          startAutoSlide();
+        });
+
+        function handleSwipe() {
+          const swipeThreshold = 50;
+
+          if (touchStartX - touchEndX > swipeThreshold) {
+            // Swipe left - next slide
+            nextSlide();
+          } else if (touchEndX - touchStartX > swipeThreshold) {
+            // Swipe right - previous slide
+            prevSlide();
+          }
+        }
+
+        // Initialize the carousel
+        initCarousel();
+      });
     </script>
   </body>
 </html>
