@@ -462,6 +462,9 @@
       /* =========================================== */
       /* CAROUSEL STYLES */
       /* =========================================== */
+      /* =========================================== */
+      /* CAROUSEL STYLES - 3 SLIDES SANS FLÈCHES */
+      /* =========================================== */
       .carousel-container {
         position: relative;
         width: 100%;
@@ -473,7 +476,6 @@
 
       .carousel-track {
         display: flex;
-        transition: transform 0.5s ease-in-out;
         height: 100%;
       }
 
@@ -483,12 +485,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
         opacity: 0;
-        transition: opacity 0.5s ease;
+        visibility: hidden;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
       }
 
       .carousel-slide.active {
         opacity: 1;
+        visibility: visible;
+        position: relative;
       }
 
       .carousel-image {
@@ -496,37 +504,21 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-        transition: all 0.3s ease;
+      .carousel-slide.active .carousel-image {
+        transform: scale(1);
+        animation: gentleZoom 8s infinite alternate;
       }
 
-      .carousel-btn:hover {
-        background: rgba(0, 0, 0, 0.8);
-        transform: translateY(-50%) scale(1.1);
-      }
-
-      .carousel-btn-prev {
-        left: 20px;
-      }
-
-      .carousel-btn-next {
-        right: 20px;
+      @keyframes gentleZoom {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.05);
+        }
       }
 
       .carousel-indicators {
@@ -546,16 +538,19 @@
         border-radius: 50%;
         background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(0.8);
       }
 
       .indicator.active {
         background: #ff0000;
         transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
       }
 
       .indicator:hover {
         background: rgba(255, 255, 255, 0.8);
+        transform: scale(1.1);
       }
 
       /* Responsive adjustments */
@@ -564,19 +559,6 @@
         .hero-section {
           height: 50vh;
           margin-top: 80px;
-        }
-
-        .carousel-btn {
-          width: 35px;
-          height: 35px;
-        }
-
-        .carousel-btn-prev {
-          left: 10px;
-        }
-
-        .carousel-btn-next {
-          right: 10px;
         }
 
         .carousel-indicators {
@@ -595,6 +577,10 @@
           height: 70vh;
           max-height: 700px;
           margin-top: 80px;
+        }
+
+        .carousel-slide {
+          transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
         }
       }
 
@@ -724,47 +710,7 @@
             </div>
           </div>
 
-          <!-- Navigation buttons -->
-          <button
-            class="carousel-btn carousel-btn-prev"
-            aria-label="Image précédente"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-          <button
-            class="carousel-btn carousel-btn-next"
-            aria-label="Image suivante"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-
-          <!-- Indicators -->
+          <!-- Indicators - SEULEMENT 3 CERCLES -->
           <div class="carousel-indicators">
             <span
               class="indicator active"
@@ -780,16 +726,6 @@
               class="indicator"
               data-slide="2"
               aria-label="Afficher l'image 3"
-            ></span>
-            <span
-              class="indicator"
-              data-slide="3"
-              aria-label="Afficher l'image 4"
-            ></span>
-            <span
-              class="indicator"
-              data-slide="4"
-              aria-label="Afficher l'image 5"
             ></span>
           </div>
         </div>
@@ -949,12 +885,11 @@
         const carouselTrack = document.querySelector(".carousel-track");
         const slides = document.querySelectorAll(".carousel-slide");
         const indicators = document.querySelectorAll(".indicator");
-        const prevBtn = document.querySelector(".carousel-btn-prev");
-        const nextBtn = document.querySelector(".carousel-btn-next");
 
         let currentSlide = 0;
         let autoSlideInterval;
-        const slideInterval = 4000; // 4 secondes
+        const slideInterval = 2000; // 2 secondes
+        let isTransitioning = false;
 
         // Initialize carousel
         function initCarousel() {
@@ -962,24 +897,36 @@
           startAutoSlide();
         }
 
-        // Update carousel display
+        // Update carousel display with smooth fade transition
         function updateCarousel() {
-          // Update track position
-          carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+          if (isTransitioning) return;
 
-          // Update slide classes
+          isTransitioning = true;
+
+          // Fade out current slide
           slides.forEach((slide, index) => {
-            slide.classList.toggle("active", index === currentSlide);
+            slide.classList.remove("active");
+            slide.style.transitionDelay = "0s";
           });
 
-          // Update indicators
-          indicators.forEach((indicator, index) => {
-            indicator.classList.toggle("active", index === currentSlide);
-          });
+          // Fade in new slide with a slight delay for smooth transition
+          setTimeout(() => {
+            slides[currentSlide].classList.add("active");
+            slides[currentSlide].style.transitionDelay = "0.1s";
+
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+              indicator.classList.toggle("active", index === currentSlide);
+            });
+
+            isTransitioning = false;
+          }, 50);
         }
 
         // Go to specific slide
         function goToSlide(slideIndex) {
+          if (isTransitioning || slideIndex === currentSlide) return;
+
           currentSlide = slideIndex;
           updateCarousel();
           resetAutoSlide();
@@ -987,12 +934,16 @@
 
         // Next slide
         function nextSlide() {
+          if (isTransitioning) return;
+
           currentSlide = (currentSlide + 1) % slides.length;
           updateCarousel();
         }
 
         // Previous slide
         function prevSlide() {
+          if (isTransitioning) return;
+
           currentSlide = (currentSlide - 1 + slides.length) % slides.length;
           updateCarousel();
         }
@@ -1007,17 +958,7 @@
           startAutoSlide();
         }
 
-        // Event listeners
-        prevBtn.addEventListener("click", () => {
-          prevSlide();
-          resetAutoSlide();
-        });
-
-        nextBtn.addEventListener("click", () => {
-          nextSlide();
-          resetAutoSlide();
-        });
-
+        // Event listeners pour les indicateurs
         indicators.forEach((indicator, index) => {
           indicator.addEventListener("click", () => {
             goToSlide(index);
