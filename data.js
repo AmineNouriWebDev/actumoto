@@ -49,37 +49,7 @@ const brands = [
 
 const modelsData = {
     Peugeot: [
-        {
-            name: "Peugeot pulsion 125 i ABS",
-            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
-            price: "12,900 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "13,2 ch",
-                coupleMaximal: "12 Nm",
-                refroidissement: "Liquide",
-                vitesseMaximale: "110 km/h",
-                alimentation: "Injection Électronique",
-                freinage: "Disque /Disque ABS",
-            }
-        },
-      
-        {
-            name: "PEUGEOT XP 400",
-            images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg","./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
-            price: "42,900 TND",
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: "400 cc",
-                puissance: "36,7 ch ",
-                coupleMaximal: "38,1 Nm",
-                refroidissement: "Liquide",
-                vitesseMaximale: "137 km/h",
-                alimentation: "Injection électronique",
-                freinage: "Double disque / Disque AR ABS",
-            }
-        },
+        
         {
             name: "PEUGEOT Django 125",
             images: ["./img/models/peugeot/peugeot-django-125/peugeot-django-125-1.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-2.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-3.jpeg","./img/models/peugeot/peugeot-django-125/peugeot-django-125-4.jpeg"],
@@ -96,7 +66,7 @@ const modelsData = {
             }
         },
         {
-            name: "PEUGEOT Tweet 125 ",
+            name: "PEUGEOT Tweet 125 + pare-brise + casque + top case ",
             images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg"],
             price: "9,900 TND",
             specs: {
@@ -123,6 +93,37 @@ const modelsData = {
                 vitesseMaximale: "105 km/h",
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque ABS",
+            }
+        },
+        {
+            name: "Peugeot pulsion 125 i ABS",
+            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg"],
+            price: "12,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "13,2 ch",
+                coupleMaximal: "12 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "110 km/h",
+                alimentation: "Injection Électronique",
+                freinage: "Disque /Disque ABS",
+            }
+        },
+      
+        {
+            name: "PEUGEOT XP 400",
+            images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg","./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
+            price: "42,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "400 cc",
+                puissance: "36,7 ch ",
+                coupleMaximal: "38,1 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "137 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Double disque / Disque AR ABS",
             }
         },
           {
