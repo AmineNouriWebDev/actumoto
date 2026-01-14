@@ -462,9 +462,7 @@
       /* =========================================== */
       /* CAROUSEL STYLES */
       /* =========================================== */
-      /* =========================================== */
-      /* CAROUSEL STYLES - 3 SLIDES SANS FLÈCHES */
-      /* =========================================== */
+
       .carousel-container {
         position: relative;
         width: 100%;
@@ -563,6 +561,7 @@
 
         .carousel-indicators {
           bottom: 15px;
+          gap: 8px;
         }
 
         .indicator {
@@ -595,6 +594,15 @@
       @media (max-width: 480px) {
         .hero-section {
           height: 45vh;
+        }
+
+        .carousel-indicators {
+          gap: 6px;
+        }
+
+        .indicator {
+          width: 8px;
+          height: 8px;
         }
       }
     </style>
@@ -676,7 +684,7 @@
     <!-- Main Content -->
     <main role="main">
       <!-- =========================================== -->
-      <!-- HERO SECTION MODIFIÉE -->
+      <!-- HERO SECTION  -->
       <!-- =========================================== -->
       <section
         class="hero-section"
@@ -708,9 +716,25 @@
                 class="carousel-image"
               />
             </div>
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <img
+                src="./img/slider/slide4.png"
+                alt="Moto custom - Style rétro"
+                class="carousel-image"
+              />
+            </div>
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+              <img
+                src="./img/slider/slide5.png"
+                alt="Moto trail - Aventure tout terrain"
+                class="carousel-image"
+              />
+            </div>
           </div>
 
-          <!-- Indicators - SEULEMENT 3 CERCLES -->
+          <!-- Indicators - 5 CERCLES -->
           <div class="carousel-indicators">
             <span
               class="indicator active"
@@ -726,6 +750,16 @@
               class="indicator"
               data-slide="2"
               aria-label="Afficher l'image 3"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="3"
+              aria-label="Afficher l'image 4"
+            ></span>
+            <span
+              class="indicator"
+              data-slide="4"
+              aria-label="Afficher l'image 5"
             ></span>
           </div>
         </div>
