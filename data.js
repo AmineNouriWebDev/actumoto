@@ -238,6 +238,22 @@ const modelsData = {
             }
             
         },
+        {
+            name: "Aprilia SR 125 Moteur i-get 124 cc ",
+            images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
+            price: "11,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps i-get",
+                cylindree: "125 cc",
+                puissance: "11 Kw",
+                coupleMaximal: "12 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "100 Km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque AV / Disque AR CBS",
+            }
+            
+        },
        
         
     ],
