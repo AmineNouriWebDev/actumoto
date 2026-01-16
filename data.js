@@ -82,7 +82,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT PM 01 125",
-            images: ["./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
+            images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
             price: "15,500 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
@@ -743,6 +743,21 @@ const modelsData = {
                 freinage: "Disque/Disque",
             }
         },
+        {
+            name: "Sym husky 200cc +",
+            images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
+            price: "",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps 4 soupapes",
+                cylindree: "175 cm³",
+                puissance: "14,7 ch (10,8 kW)",
+                coupleMaximal: "14,5 Nm,",
+                refroidissement: "Liquide",
+                vitesseMaximale: "110 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ABS",
+            }
+        },
     ],
     FORZA_MOTOR_SPORT: [
        
@@ -1191,14 +1206,29 @@ const modelsData = {
             images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
             price: "5,999 TND",
             specs: {
-                typeMoteur: "",
+                typeMoteur: "Moteur électrique brushless TTFAR",
                 cylindree: "",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: "",
-                freinage: "",
+                puissance: "3000 W",
+                coupleMaximal: "140 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Batterie Graphène 72V 38Ah",
+                freinage: "Disque/Disque",
+            }
+        },
+        {
+            name: "YADEA EPOC 2000w ",
+            images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg","./img/models/yadea/yadea-epoc-2000w/2.jpg","./img/models/yadea/yadea-epoc-2000w/3.jpg","./img/models/yadea/yadea-epoc-2000w/4.jpg"],
+            price: "6,499 TND",
+            specs: {
+                typeMoteur: "Moteur électrique in-wheel hub,",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "150 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "70 km/h",
+                alimentation: "Batterie Graphène TTFAR 72V 38Ah",
+                freinage: "Disque/Disque",
             }
         },
     ],
