@@ -1362,6 +1362,22 @@ const modelsData = {
             },
             
         },
+        {
+            name: "Sanya X1000 125CC",
+            images: ["./img/models/sanya/sanya-x1000/1.jpeg","./img/models/sanya/sanya-x1000/2.jpeg","./img/models/sanya/sanya-x1000/3.png"],
+            price: "4,649 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cc",
+                puissance: "5,2 kW (7,1 ch)",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                alimentation: "Carburateur",
+                freinage: "Disque AV et AR + frein à main",
+            },
+            
+        },
     ],
     KIM: [
         {
