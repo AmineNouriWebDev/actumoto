@@ -21,19 +21,11 @@ const brands = [
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png" },
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
-    
-    
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png" },
-    { name: "POWER", logo: "./img/logos-actumoto/power.png" },
-    
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },  
     { name: "MS", logo: "./img/logos-actumoto/ms.png" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
-    
-    
-    
-    { name: "POWER_KIM", logo: "./img/logos-actumoto/powerkim.png" },
-    
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
@@ -1282,7 +1274,7 @@ const modelsData = {
             
         },
     ],
-    POWER: [
+    KIM: [
         {
             name: "POWER SPRING ST - 125cc - GRIS /ORANGE ( CARTE GRISE )",
             image: "./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg",
@@ -1296,6 +1288,36 @@ const modelsData = {
                 vitesseMaximale: "105 km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
+            }
+        },
+          {
+            name: "SCOOTER PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
+            image: "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg",
+            price: "4,799 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "110 cc",
+                puissance: "5,3 kW",
+                coupleMaximal: "6,8 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+            }
+        },
+          {
+            name: "SCOOTER Blaster 125 i",
+            images: ["./img/models/kim/blaster-125i/blaster-125i-1.jpg","./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
+            price: "6,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "124,8 cm³",
+                puissance: "11 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "105 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Tambour CBS",
             }
         },
     ],
@@ -1395,23 +1417,7 @@ const modelsData = {
             }
         },
     ],
-    POWER_KIM: [
-        {
-            name: "SCOOTER PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
-            image: "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg",
-            price: "4,799 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: "110 cc",
-                puissance: "5,3 kW",
-                coupleMaximal: "6,8 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "90 km/h",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-            }
-        },
-    ],
+  
     KAYCO: [
         {
             name: "Young Graduates (B2A) One Charge = 70 km",
