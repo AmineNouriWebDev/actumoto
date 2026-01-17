@@ -846,6 +846,66 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "Scooter Electrique Evasion",
+            image: "./img/models/slc/slc-evasion/1.webp",
+            price: "",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "75 km/h",
+                alimentation: "Batterie Graphène Acide 72V 35Ah",
+                freinage: "Disques AV/AR hydrauliques",
+            }
+        },
+        {
+            name: "Scooter Electrique bloom",
+            images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
+            price: "",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+        {
+            name: "Scooter Electrique Pride",
+            images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
+            price: "4,500 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+        {
+            name: "Scooter Electrique Neo",
+            images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
+            price: "4,500 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
     ],
     SENKE: [
         {
