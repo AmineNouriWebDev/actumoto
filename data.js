@@ -45,6 +45,7 @@ const brands = [
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
 ];
 
 const modelsData = {
@@ -97,7 +98,7 @@ const modelsData = {
         },
         {
             name: "Peugeot pulsion 125 i ABS",
-            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg"],
+            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
             price: "12,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -731,7 +732,7 @@ const modelsData = {
         {
             name: "ADX 300CC injection ABS + TCS E5+",
             images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
-            price: "24999,000 TND",
+            price: "24,999 TND",
             specs: {
                 typeMoteur: "Monocylindre – 4 T - Injection",
                 cylindree: "278 cm3",
@@ -746,12 +747,12 @@ const modelsData = {
         {
             name: "Sym husky 200cc +",
             images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
-            price: "",
+            price: "16,000 TNDs",
             specs: {
                 typeMoteur: "Monocylindre 4 temps 4 soupapes",
                 cylindree: "175 cm³",
                 puissance: "14,7 ch (10,8 kW)",
-                coupleMaximal: "14,5 Nm,",
+                coupleMaximal: "14,5 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 km/h",
                 alimentation: "Injection électronique",
@@ -1856,6 +1857,24 @@ const modelsData = {
                 vitesseMaximale: "45 km/h",
                 alimentation: "",
                 freinage: "Disques / Disques",
+            }
+        },
+
+    ],
+    PHANTOM: [
+        {
+            name: "Scooter Phantom Z1 125",
+            images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
+            price: "",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps,",
+                cylindree: "125 cm³,",
+                puissance: "8-10 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour CBS",
             }
         },
 
