@@ -881,7 +881,7 @@ const modelsData = {
         {
             name: "SENKE 300 CC",
             images: ["./img/models/senke/senke-300-cc/1.jpg", "./img/models/senke/senke-300-cc/2.jpg", "./img/models/senke/senke-300-cc/3.jpg","./img/models/senke/senke-300-cc/4.jpg" ],
-            price: "25,000 TND",
+            price: "24,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "292 cm³",
@@ -896,7 +896,7 @@ const modelsData = {
         {
             name: "SENKE 125 CC",
             images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg","./img/models/senke/senke-125-cc/4.jpg" ],
-            price: "6,699 TND",
+            price: "6,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cm³",
