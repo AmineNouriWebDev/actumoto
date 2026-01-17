@@ -15,6 +15,7 @@ const brands = [
     { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },  
     { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
     { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png" },
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png" },
@@ -22,7 +23,6 @@ const brands = [
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },  
     { name: "MS", logo: "./img/logos-actumoto/ms.png" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
@@ -1277,7 +1277,7 @@ const modelsData = {
     KIM: [
         {
             name: "POWER SPRING ST - 125cc - GRIS /ORANGE ( CARTE GRISE )",
-            image: "./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg",
+            images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg","./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
             price: "4,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
