@@ -739,7 +739,7 @@ const modelsData = {
         {
             name: "Sym husky 200cc +",
             images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
-            price: "16,000 TNDs",
+            price: "16,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps 4 soupapes",
                 cylindree: "175 cm³",
@@ -747,6 +747,21 @@ const modelsData = {
                 coupleMaximal: "14,5 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ABS",
+            }
+        },
+        {
+            name: "SCOOTER Sym FIDDLE 4",
+            images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg","./img/models/sym/fiddle4/4.jpg"],
+            price: "7,199 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cm³",
+                puissance: "11,7 ch",
+                coupleMaximal: "11 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "105 km/h",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
             }
@@ -1794,9 +1809,9 @@ const modelsData = {
     ],
     WATTGO: [
         {
-            name: "Scooter Électrique WATTGO WG9900 500W - Beige",
-            image: "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg",
-            price: "2,199 TND",
+            name: "Scooter Électrique Wattgo WG009 500W",
+            images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
+            price: "2,639 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
