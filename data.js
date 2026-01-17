@@ -1094,6 +1094,21 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "Dayun Flora by SLC",
+            image: "./img/models/dayun/flora/flora.png",
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                alimentation: "",
+                freinage: "",
+            }
+        },
     ],
     NOVAGO: [
         {
@@ -1390,6 +1405,22 @@ const modelsData = {
                 vitesseMaximale: "",
                 alimentation: "Carburateur",
                 freinage: "Disque AV et AR + frein à main",
+            },
+            
+        },
+        {
+            name: "Sanya UF 125CC",
+            image: "./img/models/sanya/uf-125/1.avif",
+            price: "4,850 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cc",
+                puissance: "10 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "105 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
             },
             
         },
