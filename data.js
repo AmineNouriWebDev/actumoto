@@ -1307,7 +1307,7 @@ const modelsData = {
         },
           {
             name: "SCOOTER Blaster 125 i",
-            images: ["./img/models/kim/blaster-125i/blaster-125i-1.jpg","./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
+            images: ["./img/models/kim/blaster-125i/blaster-1.png","./img/models/kim/blaster-125i/blaster-2.png","./img/models/kim/blaster-125i/blaster-125i-1.jpg","./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
             price: "6,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
