@@ -871,6 +871,22 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "SENKE RAPTOR 200 CC",
+            images: ["./img/models/senke/senke-raptor-200cc/senke-raptor-200c-2.jpg", "./img/models/senke/senke-raptor-200cc/senke-raptor-200c-1.png" ],
+            price: "6,600 TND",
+            price: "9,800 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "199,8 cm³",
+                puissance: "16,1 ch",
+                coupleMaximal: "11,5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "125 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque AV/AR CBS",
+            }
+        },
     ],
     LM: [
         {
