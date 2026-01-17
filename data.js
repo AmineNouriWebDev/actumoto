@@ -866,8 +866,7 @@ const modelsData = {
         {
             name: "SENKE RAPTOR 200 CC",
             images: ["./img/models/senke/senke-raptor-200cc/senke-raptor-200c-2.jpg", "./img/models/senke/senke-raptor-200cc/senke-raptor-200c-1.png" ],
-            price: "6,600 TND",
-            price: "9,800 TND",
+            price: "11,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "199,8 cm³",
@@ -877,6 +876,36 @@ const modelsData = {
                 vitesseMaximale: "125 km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque AV/AR CBS",
+            }
+        },
+        {
+            name: "SENKE 300 CC",
+            images: ["./img/models/senke/senke-300-cc/1.jpg", "./img/models/senke/senke-300-cc/2.jpg", "./img/models/senke/senke-300-cc/3.jpg","./img/models/senke/senke-300-cc/4.jpg" ],
+            price: "25,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "292 cm³",
+                puissance: "27,5 ch (20,5 kW)",
+                coupleMaximal: "22 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "129 km/h",
+                alimentation: "Injection Bosch EFI",
+                freinage: "Disque AV/AR ABS",
+            }
+        },
+        {
+            name: "SENKE 125 CC",
+            images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg","./img/models/senke/senke-125-cc/4.jpg" ],
+            price: "6,699 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cm³",
+                puissance: "11 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "120 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
             }
         },
     ],
