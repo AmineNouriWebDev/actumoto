@@ -1184,6 +1184,21 @@ const modelsData = {
                 freinage: "Disque/Disque",
             }
         },
+        {
+            name: "Scooter Uniscoot Smax Plus 125Cc",
+            images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
+            price: "4,699 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 T",
+                cylindree: "125 cc",
+                puissance: "8-9 ch",
+                coupleMaximal: "4 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "110 km/h",
+                alimentation: "Injection électronique",
+                freinage: "Disque AV / Ferrodo AR",
+            }
+        },
     ],
     ZONTES: [
         {
