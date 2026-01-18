@@ -253,7 +253,7 @@ const modelsData = {
     ],
     CFMOTO: [
         {
-            name: "Motocycle CFMOTO 450MT - 450CC",
+            name: "CFMOTO 450MT - 450CC",
             image: "./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg",
             price: "58,131 TND",
             specs: {
@@ -480,7 +480,7 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA Evo Blanc / Bleu - Rouge - 49 CC",
+            name: "ZIMOTA Evo ",
             image: "./img/models/zimotamotor/zimota-evo/zimota-evo.jpg",
             price: "3,899 TND",
             specs: {
@@ -495,7 +495,7 @@ const modelsData = {
             }
         },
         {
-            name: "Cyclomoteur ZIMOTA KEE 109CC - Rouge",
+            name: "ZIMOTA KEE",
             image: "./img/models/zimotamotor/zimota-kee/zimota-kee.jpg",
             price: "3,899 TND",
             specs: {
@@ -510,7 +510,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooteur ZIMOTA TAPO 49 CC - Bleu",
+            name: "ZIMOTA TAPO ",
             image: "./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg",
             price: "3,949 TND",
             specs: {
@@ -525,7 +525,7 @@ const modelsData = {
             }
         },
         {
-            name: "Cyclomoteur ZIMOTA TARGET 125CC - Rouge - Bleu",
+            name: "ZIMOTA TARGET 125CC",
             image: "./img/models/zimotamotor/zimota-target/zimota-target.jpg",
             price: "3,999 TND",
             specs: {
@@ -540,7 +540,7 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA SINUS X 124cc - Gris",
+            name: "ZIMOTA SINUS X 124cc",
             image: "./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg",
             price: "4,499 TND",
             specs: {
@@ -555,7 +555,7 @@ const modelsData = {
             }
         },
         {
-            name: "Motocycle ZIMOTA Keeway RKS 125 - ROUGE",
+            name: "ZIMOTA Keeway RKS 125 ",
             image: "./img/models/zimotamotor/zimota-keeway-rks-125-rouge/zimota-keeway-rks-125-rouge.jpg",
             price: "5,599 TND",
             specs: {
@@ -570,7 +570,7 @@ const modelsData = {
             }
         },
         {
-            name: "Cyclomoteur ZIMOTA TARGET 125CC - Bleu",
+            name: "ZIMOTA TARGET 125CC",
             image: "./img/models/zimotamotor/zimota-target-125-bleu/zimota-target-125-bleu.jpg",
             price: "3,999 TND",
             specs: {
@@ -586,7 +586,7 @@ const modelsData = {
         },
        
         {
-            name: "ZIMOTA RKS 125cc - Noir",
+            name: "ZIMOTA RKS 125cc",
             image: "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/qjmotor-zimota-rks-qjmotor-noir.jpg",
             price: "5,599 TND",
             specs: {
@@ -618,7 +618,7 @@ const modelsData = {
     ],
     SYM: [
         {
-            name: "SYM SYMPHONY SR 125 CBS - 125 CC - BLANC - Noir",
+            name: "SYM SYMPHONY SR 125 CBS - 125 CC",
             image: "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg",
             price: "6,579 TND",
             specs: {
@@ -633,7 +633,7 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY S 125 - 125 CC - BLANC",
+            name: "SYM SYMPHONY S 125 - 125 CC",
             image: "./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg",
             price: "6,579 TND",
             specs: {
@@ -648,7 +648,7 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY ST 125 CBS E5 - injection - Noir",
+            name: "SYM SYMPHONY ST 125 CBS E5 - injection ",
             image: "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg",
             price: "7,999 TND",
             specs: {
@@ -663,7 +663,7 @@ const modelsData = {
             }
         },
         {
-            name: "SYM JET 14 125 AC E5 - 125 CC - NOIR - GRIS",
+            name: "SYM JET 14 125 AC E5 - 125 CC",
             image: "./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg",
             price: "8,699 TND",
             specs: {
@@ -678,7 +678,7 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY ST 200 ABS E5 200cc injection - BLEU - BLANC",
+            name: "SYM SYMPHONY ST 200 ABS E5 200cc injection",
             image: "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg",
             price: "14,999 TND",
             specs: {
@@ -693,7 +693,7 @@ const modelsData = {
             }
         },
         {
-            name: "SYM JET 4 RX 125 - 124cc - Gris",
+            name: "SYM JET 4 RX 125 - 124cc",
             image: "./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg",
             price: "6,199 TND",
             specs: {
@@ -771,7 +771,7 @@ const modelsData = {
     FORZA_MOTOR_SPORT: [
        
         {
-            name: "Forza MotoStars FIRST MAXIII 3- 125CC - DIGITAL Gris - Noir",
+            name: "Forza MotoStars FIRST MAXIII 3- 125CC - DIGITAL",
             image: "./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg",
             price: "2,899 TND",
             specs: {
@@ -833,7 +833,7 @@ const modelsData = {
     ],
     SLC: [
         {
-            name: "SLC AZUR 124 CC - NOIR",
+            name: "SLC AZUR 124 CC",
             image: "./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg",
             price: "5,199 TND",
             specs: {
@@ -925,7 +925,7 @@ const modelsData = {
     ],
     SENKE: [
         {
-            name: "SENKE SK 110 107 cm³ - Rouge + Repose pied",
+            name: "SENKE SK 110 107 cm³+ Repose pied",
             image: "./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg",
             price: "2,949 TND",
             specs: {
@@ -987,7 +987,7 @@ const modelsData = {
     ],
     LM: [
         {
-            name: "LM ADV 125CC injection ABS + TCS - BIEGE",
+            name: "LM ADV 125CC injection ABS + TCS",
             image: "./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg",
             price: "9,949 TND",
             specs: {
@@ -1002,7 +1002,7 @@ const modelsData = {
             }
         },
         {
-            name: "LA VITA 125CC injection - BLEU/ ORANGE",
+            name: "LA VITA 125CC injection",
             image: "./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg",
             price: "5,999 TND",
             specs: {
@@ -1019,7 +1019,7 @@ const modelsData = {
     ],
     BBM: [
         {
-            name: "Motocycle BBM 124CC FZ MAX Compteur Digitale",
+            name: "BBM 124CC FZ MAX Compteur Digitale",
             image: "./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg",
             price: "2,849 TND",
             specs: {
@@ -1036,7 +1036,7 @@ const modelsData = {
     ],
     DAYUN: [
         {
-            name: "DAYUN DREAM 23 4T - SLC - 124CC - NOIR",
+            name: "DAYUN DREAM 23 4T - SLC - 124CC",
             image: "./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png",
             price: "4,499 TND",
             specs: {
@@ -1051,7 +1051,7 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN SNIPER SLC - 124CC - BLANC",
+            name: "DAYUN SNIPER SLC - 124CC",
             image: "./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg",
             price: "5,199 TND",
             specs: {
@@ -1066,7 +1066,7 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
+            name: "DAYUN 125 CC | 4 TEMPS - DY125T",
             image: "./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg",
             price: "4,569 TND",
             specs: {
@@ -1081,7 +1081,7 @@ const modelsData = {
             }
         },
         {
-            name: "Dayun Kimbo 124CC | DY124 - Gris",
+            name: "Dayun Kimbo 124CC | DY124",
             image: "./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg",
             price: "4,259 TND",
             specs: {
@@ -1113,7 +1113,7 @@ const modelsData = {
     ],
     NOVAGO: [
         {
-            name: "Tricycle électrique NOVAGO SWING - 2400 Watt - Bleu",
+            name: "Tricycle électrique NOVAGO SWING - 2400 Watt",
             image: "./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg",
             price: "6,199 TND",
             specs: {
@@ -1237,7 +1237,7 @@ const modelsData = {
     ],
     UNISCOOT: [
         {
-            name: "UNISCOOT TIGER 125CC - Gris - Noir - Bleu",
+            name: "UNISCOOT TIGER 125CC ",
             image: "./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg",
             price: "4,199 TND",
             specs: {
@@ -1252,7 +1252,7 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT TMAX+ 125CC - Noir brillant - Bleu",
+            name: "UNISCOOT TMAX+ 125CC",
             image: "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg",
             price: "4,699 TND",
             specs: {
@@ -1267,7 +1267,7 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT FX2+ PLUS 125CC - NOIR MATT - BLEU",
+            name: "UNISCOOT FX2+ PLUS 125CC",
             image: "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg",
             price: "4,799 TND",
             specs: {
@@ -1282,7 +1282,7 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT ZT6 ZONSEN 124CC - Noir",
+            name: "UNISCOOT ZT6 ZONSEN 124CC ",
             image: "./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg",
             price: "5,499 TND",
             specs: {
@@ -1428,7 +1428,7 @@ const modelsData = {
     ],
     KIM: [
         {
-            name: "POWER SPRING ST - 125cc - GRIS /ORANGE ( CARTE GRISE )",
+            name: "POWER SPRING ST - 125cc( CARTE GRISE )",
             images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg","./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
             price: "4,199 TND",
             specs: {
@@ -1443,7 +1443,7 @@ const modelsData = {
             }
         },
           {
-            name: "PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
+            name: "PISTA HR+ 110CC ( CARTE GRISE)",
             image: "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg",
             price: "4,799 TND",
             specs: {
@@ -1475,7 +1475,7 @@ const modelsData = {
     ],
     QJMOTOR: [
         {
-            name: "SUPERLIGHT QJMOTOR CBS 125cc - NOIR",
+            name: "CBS 125cc ",
             image: "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg",
             price: "7,499 TND",
             specs: {
@@ -1490,7 +1490,7 @@ const modelsData = {
             }
         },
         {
-            name: "Motocycle QJ MOTOR SRK 125 S 125CC Injection NOIR",
+            name: "SRK 125 S 125CC Injection",
             image: "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg",
             price: "10,999 TND",
             specs: {
@@ -1507,7 +1507,7 @@ const modelsData = {
     ],
     WOLF: [
         {
-            name: "Électrique WOLF VERO 1000 Watts - Vert Clair",
+            name: "Électrique WOLF VERO 1000 Watts",
             image: "./img/models/wolf/wolf-vero-vert-clair/wolf-vero-vert-clair.jpg",
             price: "4,199 TND",
             specs: {
@@ -1554,7 +1554,7 @@ const modelsData = {
     ],
     MS: [
         {
-            name: "FIRST COSTA 49CC - GRIS",
+            name: "FIRST COSTA 49CC ",
             image: "./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg",
             price: "3,699 TND",
             specs: {
@@ -1634,7 +1634,7 @@ const modelsData = {
             }
         },
         {
-            name: "Moto Gold Motocycle | Cylindré 124 CC – Compteur Digital",
+            name: "Moto Gold  | Cylindré 124 CC – Compteur Digital",
             image: "./img/models/goldmotors/gold-motors-124cc-compteur-digital/gold-motors-124cc-compteur-digital.jpg",
             price: "3,269 TND",
             specs: {
@@ -1651,7 +1651,7 @@ const modelsData = {
     ],
     XTF: [
         {
-            name: "Moto à Essence XTF DRAGON 110 CM³ Monocylindre - Noir",
+            name: "XTF DRAGON 110 CM³ Monocylindre",
             image: "./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg",
             price: "3,499 TND",
             specs: {
@@ -1683,7 +1683,7 @@ const modelsData = {
     ],
     FTM: [
         {
-            name: "Cyclomoteur Jialing Future STAR 110CC - Rouge",
+            name: "Jialing Future STAR 110CC",
             image: "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg",
             price: "3,399 TND",
             specs: {
@@ -1698,7 +1698,7 @@ const modelsData = {
             }
         },
         {
-            name: "Moto Cross Korak Noir",
+            name: "Moto Cross Korak",
             image: "./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg",
             price: "3,499 TND",
             specs: {
@@ -1824,7 +1824,7 @@ const modelsData = {
     ],
     LIFAN: [
         {
-            name: "Motocycle LIFAN Glow 100 CC | LF110.3S - Noir",
+            name: "LIFAN Glow 100 CC | LF110.3S",
             image: "./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg",
             price: "3,859 TND",
             specs: {
