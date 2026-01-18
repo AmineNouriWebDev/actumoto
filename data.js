@@ -1102,12 +1102,12 @@ const modelsData = {
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
-                puissance: "",
-                coupleMaximal: "",
+                puissance: "7,3 kw",
+                coupleMaximal: "8,5 Nm",
                 refroidissement: "",
-                vitesseMaximale: "",
-                alimentation: "",
-                freinage: "",
+                vitesseMaximale: "105 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
     ],
