@@ -61,7 +61,7 @@ const modelsData = {
         },
         {
             name: "PEUGEOT Tweet 125 + pare-brise + casque + top case ",
-            images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg"],
+            images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg"],
             price: "9,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -99,7 +99,7 @@ const modelsData = {
                 puissance: "13,2 ch",
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
-                vitesseMaximale: "110 km/h",
+                vitesseMaximale: "115 km/h",
                 alimentation: "Injection Électronique",
                 freinage: "Disque /Disque ABS",
             }
