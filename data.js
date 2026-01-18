@@ -465,7 +465,7 @@ const modelsData = {
     ],
     ZIMOTA_MOTOR: [
          {
-            name: "Scooter Electrique Eway RIDE - 400 Watt - Blanc",
+            name: "Eway RIDE Electrique - 400 Watt ",
             image: "./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg",
             price: "1,999 TND",
             specs: {
@@ -540,7 +540,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter ZIMOTA SINUS X 124cc - Gris",
+            name: "ZIMOTA SINUS X 124cc - Gris",
             image: "./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg",
             price: "4,499 TND",
             specs: {
@@ -848,7 +848,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter CAPPUCINO S SLC 125 CC-4TEMPS",
+            name: "CAPPUCINO S SLC 125 CC-4TEMPS",
             image: "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS.jpg",
             price: "5,499 TND",
             specs: {
@@ -863,7 +863,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique Evasion",
+            name: "Evasion - Electrique",
             image: "./img/models/slc/slc-evasion/1.webp",
             price: "",
             specs: {
@@ -878,7 +878,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique bloom",
+            name: "bloom - Electrique",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
             price: "",
             specs: {
@@ -893,7 +893,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique Pride",
+            name: "Pride - Electrique",
             images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
             price: "4,500 TND",
             specs: {
@@ -908,7 +908,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique Neo",
+            name: "Neo - Electrique",
             images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
             price: "4,500 TND",
             specs: {
@@ -1002,7 +1002,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER LA VITA 125CC injection - BLEU/ ORANGE",
+            name: "LA VITA 125CC injection - BLEU/ ORANGE",
             image: "./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg",
             price: "5,999 TND",
             specs: {
@@ -1066,7 +1066,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
+            name: "DAYUN 125 CC | 4 TEMPS - DY125T - Bleu",
             image: "./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg",
             price: "4,569 TND",
             specs: {
@@ -1081,7 +1081,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Dayun Kimbo 124CC | DY124 - Gris",
+            name: "Dayun Kimbo 124CC | DY124 - Gris",
             image: "./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg",
             price: "4,259 TND",
             specs: {
@@ -1128,7 +1128,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE NOVAGO PIKA - BLANC",
+            name: " NOVAGO PIKA - Electrique",
             image: "./img/models/novago/novago-pika-blanc-2/scooter-electrique-novago-pika-blanc-2.jpg",
             price: "3,299 TND",
             specs: {
@@ -1143,7 +1143,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE NOVAGO TIGER 140",
+            name: "NOVAGO TIGER 140 - Electrique",
             images: ["./img/models/novago/NOVAGO-TIGER-140/2.jpg", "./img/models/novago/NOVAGO-TIGER-140/1.jpg", "./img/models/novago/NOVAGO-TIGER-140/3.jpg"],
             price: "6,600 TND",
             specs: {
@@ -1158,7 +1158,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE NOVAGO TIGER 70",
+            name: "NOVAGO TIGER 70 - Electrique",
             images: ["./img/models/novago/NOVAGO-TIGER-70/2.jpg", "./img/models/novago/NOVAGO-TIGER-70/3.jpg", "./img/models/novago/NOVAGO-TIGER-70/1.jpg"],
             price: "4,900 TND",
             specs: {
@@ -1173,7 +1173,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE NOVAGO TRICITY",
+            name: "NOVAGO TRICITY - Electrique",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg","./img/models/novago/NOVAGO-TRICITY/4.jpg"],
             price: "5,300 TND",
             specs: {
@@ -1188,7 +1188,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE NOVAGO LUNA 70",
+            name: "NOVAGO LUNA 70 - Electrique",
             images: ["./img/models/novago/NOVAGO-LUNA-70/2.jpg", "./img/models/novago/NOVAGO-LUNA-70/3.jpg", "./img/models/novago/NOVAGO-LUNA-70/1.jpg","./img/models/novago/NOVAGO-LUNA-70/4.jpg"],
             price: "4,200 TND",
             specs: {
@@ -1297,7 +1297,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Uniscoot Smax Plus 125Cc",
+            name: "Uniscoot Smax Plus 125Cc",
             images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
             price: "4,699 TND",
             specs: {
@@ -1346,7 +1346,7 @@ const modelsData = {
     ],
     YADEA: [
         {
-            name: "SCOOTER ELECTRIQUE YADEA - E8S - 3000W ",
+            name: "YADEA  E8S -3000W - ELECTRIQUE ",
             images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
             price: "5,999 TND",
             specs: {
@@ -1361,7 +1361,7 @@ const modelsData = {
             }
         },
         {
-            name: "YADEA EPOC 2000w ",
+            name: "YADEA EPOC 2000w - ELECTRIQUE ",
             images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg","./img/models/yadea/yadea-epoc-2000w/2.jpg","./img/models/yadea/yadea-epoc-2000w/3.jpg","./img/models/yadea/yadea-epoc-2000w/4.jpg"],
             price: "6,499 TND",
             specs: {
@@ -1443,7 +1443,7 @@ const modelsData = {
             }
         },
           {
-            name: "SCOOTER PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
+            name: "PISTA HR+ 110CC - NOIR/CARBON ( CARTE GRISE)",
             image: "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg",
             price: "4,799 TND",
             specs: {
@@ -1458,7 +1458,7 @@ const modelsData = {
             }
         },
           {
-            name: "SCOOTER Blaster 125 i",
+            name: "Blaster 125 i",
             images: ["./img/models/kim/blaster-125i/blaster-1.png","./img/models/kim/blaster-125i/blaster-2.png","./img/models/kim/blaster-125i/blaster-125i-1.jpg","./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
             price: "6,900 TND",
             specs: {
@@ -1522,7 +1522,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique WOLF 1000 Watts Sans Coffre - Noir",
+            name: "WOLF 1000 Watts Sans Coffre - Electrique",
             image: "./img/models/wolf/wolf-vero-noir/wolf-vero-noir.jpg",
             price: "3,799 TND",
             specs: {
@@ -1537,7 +1537,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique WOLF 1000 Watts Avec Coffre - Gris",
+            name: "WOLF 1000 Watts Avec Coffre - Electrique",
             image: "./img/models/wolf/wolf-vero-gris-coffre/wolf-vero-gris-coffre.jpg",
             price: "3,999 TND",
             specs: {
@@ -1554,7 +1554,7 @@ const modelsData = {
     ],
     MS: [
         {
-            name: "SCOOTER FIRST COSTA 49CC - GRIS",
+            name: "FIRST COSTA 49CC - GRIS",
             image: "./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg",
             price: "3,699 TND",
             specs: {
@@ -1666,7 +1666,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter à Essence XTF Coccinelle 49cc",
+            name: "XTF Coccinelle 49cc",
             images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
             price: "3,999 TND",
             specs: {
@@ -1715,7 +1715,7 @@ const modelsData = {
     ],
     LVNENG: [
         {
-            name: "Scooter Électrique LVNENG LX05 - Vert",
+            name: "LVNENG LX05 - ELECTRIQUE",
             image: "./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg",
             price: "5,690 TND",
             specs: {
@@ -1730,7 +1730,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER ELECTRIQUE LVNENG NCS GENUIS - BEIGE ET MARRON",
+            name: "LVNENG NCS GENUIS - ELECTRIQUE",
             image: "./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg",
             price: "7,300 TND",
             specs: {
@@ -1745,7 +1745,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique LVNENG LX08",
+            name: "LVNENG LX08 - ELECTRIQUE",
             images: ["./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg", "./img/models/lvneng/lvneng-lx08/3.jpg"],
             price: "6,290 TND",
             specs: {
@@ -1762,7 +1762,7 @@ const modelsData = {
     ],
     E_RIDER: [
         {
-            name: "Scooter Électrique E-RIDER E-CLASSIC 1200 Watts - Rouge",
+            name: "E-RIDER E-CLASSIC 1200 Watts - Electrique",
             image: "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg",
             price: "5,199 TND",
             specs: {
@@ -1777,7 +1777,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique E-RIDER E-TECH 1200 Watts - Bleu",
+            name: "E-RIDER E-TECH 1200 Watts - Electrique",
             image: "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg",
             price: "4,179 TND",
             specs: {
@@ -1792,7 +1792,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique E-Rider E-Power 1200W Rouge",
+            name: "E-Rider E-Power 1200W -Electrique",
             image: "./img/models/erider/e-power-1200w/scooter-electrique-e-rider-e-power-1200w-rouge.jpg",
             price: "4,849 TND",
             specs: {
@@ -1807,7 +1807,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Electrique E-Rider E-eco 1000W Blanc",
+            name: "E-Rider E-eco 1000W -Electrique",
             image: "./img/models/erider/e-eco-1000w-blanc/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg",
             price: "3,679 TND",
             specs: {
@@ -1841,7 +1841,7 @@ const modelsData = {
     ],
     WATTGO: [
         {
-            name: "Scooter Électrique Wattgo WG009 500W",
+            name: "Wattgo WG009 500W -Electrique",
             images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
             price: "2,639 TND",
             specs: {
@@ -1856,7 +1856,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique Wattgo Wg017 1000W",
+            name: "Wattgo Wg017 1000W -Electrique",
             images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg","./img/models/wattgo/Wattgo-Wg017/2.jpg"],
             price: "3,575 TND",
             specs: {
@@ -1871,7 +1871,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique Wattgo Wg016 1000W",
+            name: "Wattgo Wg016 1000W -Electrique",
             images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg","./img/models/wattgo/Wattgo-Wg016/2.jpg","./img/models/wattgo/Wattgo-Wg016/3.jpg"],
             price: "3,299 TND",
             specs: {
@@ -1886,7 +1886,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique Wattgo Wgoo2 350W",
+            name: "Wattgo Wgoo2 350W -Electrique",
             images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
             price: "2,098 TND",
             specs: {
@@ -1903,7 +1903,7 @@ const modelsData = {
     ],
     E_FLASH: [
         {
-            name: "Scooter Électrique E-FLASH 2000 Watts - Blanc&Rouge",
+            name: "E-FLASH 2000 Watts - Electrique",
             image: "./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg",
             price: "8,299 TND",
             specs: {
@@ -1937,7 +1937,7 @@ const modelsData = {
     ],
     ECORIDE: [
         {
-            name: "Scooter Électrique ECORIDE ZEN 600 Watts ",
+            name: "ECORIDE ZEN 600 Watts -Electrique",
             images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg","./img/models/ecoride/ZEN-600-Watts/2.jpg","./img/models/ecoride/ZEN-600-Watts/3.jpg","./img/models/ecoride/ZEN-600-Watts/4.jpg"],
             price: "1,999 TND",
             specs: {
@@ -1952,7 +1952,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique ECORIDE ALPHA-ROUGE 1000 Watts ",
+            name: "ECORIDE ALPHA-ROUGE 1000 Watts -Electrique ",
             images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg","./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
             price: "2,899 TND",
             specs: {
@@ -1969,7 +1969,7 @@ const modelsData = {
     ],
     GSM: [
         {
-            name: "Scooter GSM BWX 125 cc – Noir Brillant – BWX-125-BK ",
+            name: "GSM BWX 125 cc – Noir Brillant – BWX-125-BK ",
             images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
             price: "4,999 TND",
             specs: {
@@ -1987,7 +1987,7 @@ const modelsData = {
     ],
     CITYBIKE: [
         {
-            name: "Scooter Électrique City Bike 2000W - Gris Nardo ",
+            name: "City Bike 2000W - Electrique",
             images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
             price: "5,299 TND",
             specs: {
@@ -2002,7 +2002,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique City Bike 4000W - Gris Nardo ",
+            name: "City Bike 4000W - Electrique ",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
             price: "7,499 TND",
             specs: {
@@ -2017,7 +2017,7 @@ const modelsData = {
             }
         },
         {
-            name: "Scooter Électrique City Bike 3000W ",
+            name: "City Bike 3000W - Electrique",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
             price: "6,899 TND",
             specs: {
@@ -2034,7 +2034,7 @@ const modelsData = {
     ],
     AIMA: [
         {
-            name: "Scooter scooter AIMA Q5  ",
+            name: "AIMA Q5  ",
             images: ["./img/models/aima/aima-q5/aima-q5-1.jpg","./img/models/aima/aima-q5/aima-q5-2.jpg","./img/models/aima/aima-q5/aima-q5-3.jpg","./img/models/aima/aima-q5/aima-q5-4.jpg"],
             price: "",
             specs: {
@@ -2052,7 +2052,7 @@ const modelsData = {
     ],
     PHANTOM: [
         {
-            name: "Scooter Phantom Z1 125",
+            name: "Phantom Z1 125",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
             price: "",
             specs: {
