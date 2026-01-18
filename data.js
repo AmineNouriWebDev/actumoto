@@ -1969,7 +1969,7 @@ const modelsData = {
     ],
     GSM: [
         {
-            name: "GSM BWX 125 cc – Noir Brillant – BWX-125-BK ",
+            name: "GSM BWX 125 cc",
             images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
             price: "4,999 TND",
             specs: {
