@@ -219,7 +219,7 @@ const modelsData = {
         {
             name: "Aprilia SR GT 125 ",
             images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
-            price: "EN Arrivage",
+            price: "11,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
