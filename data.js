@@ -38,6 +38,7 @@ const brands = [
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
+    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },
 ];
 
 const modelsData = {
@@ -752,7 +753,7 @@ const modelsData = {
             }
         },
         {
-            name: "SCOOTER Sym FIDDLE 4",
+            name: "Sym FIDDLE 4",
             images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg","./img/models/sym/fiddle4/4.jpg"],
             price: "7,199 TND",
             specs: {
@@ -2055,14 +2056,47 @@ const modelsData = {
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
             price: "",
             specs: {
-                typeMoteur: "Monocylindre 4 temps,",
+                typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³,",
-                puissance: "8-10 ch",
+                puissance: "10 ch",
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
+            }
+        },
+
+    ],
+    CFORCE: [
+        {
+            name: "QUAD CFORCE 450 L",
+            images: ["./img/models/cforce/450l/1.png","./img/models/cforce/450l/2.png","./img/models/cforce/450l/3.png","./img/models/cforce/450l/4.png"],
+            price: "",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps SOHC 4",
+                cylindree: "400 cm³,",
+                puissance: "22,8 kW",
+                coupleMaximal: "33 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "90 km/h",
+                alimentation: "Injection électronique EFI Bosch",
+                freinage: "4 disques hydrauliques AV/AR",
+            }
+        },
+        {
+            name: "QUAD CFORCE 450 S",
+            images: ["./img/models/cforce/450s/1.jpg","./img/models/cforce/450s/2.webp","./img/models/cforce/450s/3.webp","./img/models/cforce/450s/4.webp"],
+            price: "",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps SOHC 4",
+                cylindree: "400 cm³,",
+                puissance: "20 kW",
+                coupleMaximal: "31 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "90 km/h",
+                alimentation: "Injection électronique EFI Bosch",
+                freinage: "Double disque AV / Disque AR",
             }
         },
 
