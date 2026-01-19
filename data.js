@@ -434,7 +434,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 150SC",
-            images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg","./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
             price: "18,445 TND",
             specs: {
                 typeMoteur: "Monocylindre, 2 soupapes",
@@ -694,7 +694,7 @@ const modelsData = {
         },
         {
             name: "SYM JET 4 RX 125 - 124cc",
-            image: "./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg",
+            images: ["./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/2.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/3.png","./img/models/sym/sym-jet-4-rx-124-gris/4.png"],
             price: "6,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -709,7 +709,7 @@ const modelsData = {
         },
         {
             name: "FIDDLE II EFI",
-            image: "./img/models/sym/sym-fiddle-ii-efi/sym-fiddle-ii-efi.jpg",
+            images: ["./img/models/sym/sym-fiddle-ii-efi/sym-fiddle-ii-efi.jpg", "./img/models/sym/sym-fiddle-ii-efi/2.jpg", "./img/models/sym/sym-fiddle-ii-efi/3.jpeg"],
             price: "5,850 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1476,7 +1476,7 @@ const modelsData = {
     QJMOTOR: [
         {
             name: "CBS 125cc ",
-            image: "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg",
+            images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
             price: "7,499 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1491,7 +1491,7 @@ const modelsData = {
         },
         {
             name: "SRK 125 S 125CC Injection",
-            image: "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg",
+            images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg","./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
             price: "10,999 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
