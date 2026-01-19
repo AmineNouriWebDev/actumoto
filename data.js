@@ -1583,7 +1583,7 @@ const modelsData = {
     WOLF: [
         {
             name: "Électrique WOLF VERO 1000 Watts",
-            image: "./img/models/wolf/wolf-vero-vert-clair/wolf-vero-vert-clair.jpg",
+            images: ["./img/models/wolf/wolf-vero-vert-clair/wolf4.png","./img/models/wolf/wolf-vero-vert-clair/wolf-vero-vert-clair.jpg"],
             price: "4,199 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -1598,7 +1598,7 @@ const modelsData = {
         },
         {
             name: "WOLF 1000 Watts Sans Coffre - Electrique",
-            image: "./img/models/wolf/wolf-vero-noir/wolf-vero-noir.jpg",
+            images: ["./img/models/wolf/wolf-vero-noir/wolf3.png","./img/models/wolf/wolf-vero-noir/wolf-vero-noir.jpg"],
             price: "3,799 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -1613,7 +1613,7 @@ const modelsData = {
         },
         {
             name: "WOLF 1000 Watts Avec Coffre - Electrique",
-            image: "./img/models/wolf/wolf-vero-gris-coffre/wolf-vero-gris-coffre.jpg",
+            images: ["./img/models/wolf/wolf-vero-gris-coffre/wolf2.png","./img/models/wolf/wolf-vero-gris-coffre/wolf-vero-gris-coffre.jpg"],
             price: "3,999 TND",
             specs: {
                 typeMoteur: "Électrique",
