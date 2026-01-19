@@ -769,7 +769,7 @@ const modelsData = {
         },
          {
             name: "Sym Orbit II 125cc",
-            images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp"],
+            images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp", "./img/models/sym/orbit2/3.jpeg"],
             price: "4,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -1065,7 +1065,7 @@ const modelsData = {
         },
         {
             name: "BBM FORMULA",
-            images: ["./img/models/bbm/formula/1.jpeg","./img/models/bbm/formula/2.jpeg"],
+            images: ["./img/models/bbm/formula/formula3.png","./img/models/bbm/formula/formula4.png","./img/models/bbm/formula/5.jpeg","./img/models/bbm/formula/6.jpeg"],
             price: "5,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
