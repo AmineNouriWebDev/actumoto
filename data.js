@@ -1838,7 +1838,7 @@ const modelsData = {
     E_RIDER: [
         {
             name: "E-RIDER E-CLASSIC 1200 Watts - Electrique",
-            image: "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg",
+            images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png","./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Electrique, 72 V",
@@ -1853,7 +1853,7 @@ const modelsData = {
         },
         {
             name: "E-RIDER E-TECH 1200 Watts - Electrique",
-            image: "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg",
+            images: ["./img/models/erider/e-tech-1200-watts/etech.png","./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
             price: "4,179 TND",
             specs: {
                 typeMoteur: "Electrique, 72 V",
@@ -1868,7 +1868,7 @@ const modelsData = {
         },
         {
             name: "E-Rider E-Power 1200W -Electrique",
-            image: "./img/models/erider/e-power-1200w/scooter-electrique-e-rider-e-power-1200w-rouge.jpg",
+            images: ["./img/models/erider/e-power-1200w/eride2.png","./img/models/erider/e-power-1200w/scooter-electrique-e-rider-e-power-1200w-rouge.jpg"],
             price: "4,849 TND",
             specs: {
                 typeMoteur: "Electrique, 72 V",
@@ -1883,7 +1883,7 @@ const modelsData = {
         },
         {
             name: "E-Rider E-eco 1000W -Electrique",
-            image: "./img/models/erider/e-eco-1000w-blanc/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg",
+            images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png","./img/models/erider/e-eco-1000w-blanc/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg"],
             price: "3,679 TND",
             specs: {
                 typeMoteur: "Electrique, 60 V",
