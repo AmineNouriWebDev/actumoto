@@ -1313,7 +1313,7 @@ const modelsData = {
     UNISCOOT: [
         {
             name: "UNISCOOT TIGER 125CC ",
-            image: "./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg",
+            images: ["./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg", "./img/models/uniscoot/uniscoot-tiger-125cc-gris/2.webp"],
             price: "4,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1328,7 +1328,7 @@ const modelsData = {
         },
         {
             name: "UNISCOOT TMAX+ 125CC",
-            image: "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg",
+            images: ["./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg","./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/2.jpg","./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/3.jpg"],
             price: "4,699 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1343,7 +1343,7 @@ const modelsData = {
         },
         {
             name: "UNISCOOT FX2+ PLUS 125CC",
-            image: "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg",
+            images: ["./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg","./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/2.jpeg","./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/3.jpg"],
             price: "4,799 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1358,7 +1358,7 @@ const modelsData = {
         },
         {
             name: "UNISCOOT ZT6 ZONSEN 124CC ",
-            image: "./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg",
+            images: ["./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg","./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/2.jpg"],
             price: "5,499 TND",
             specs: {
                 typeMoteur: "Monocylindre PT125, 4 T",
@@ -1519,7 +1519,7 @@ const modelsData = {
         },
           {
             name: "PISTA HR+ 110CC ( CARTE GRISE)",
-            image: "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg",
+            images: ["./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/2.webp","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg"],
             price: "4,799 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1648,7 +1648,7 @@ const modelsData = {
     KAYCO: [
         {
             name: "Young Graduates (B2A) One Charge = 70 km",
-            image: "./img/models/kayco/kayco/kayco.jpg",
+            images: ["./img/models/kayco/kayco/kayco.jpg","./img/models/kayco/kayco/2.webp","./img/models/kayco/kayco/3.jpg","./img/models/kayco/kayco/4webp.webp"],
             price: "4,500 TND",
             specs: {
                 typeMoteur: "Electrique",
@@ -1663,7 +1663,7 @@ const modelsData = {
         },
         {
             name: "Freelancers (B2B) One Charge = 120 km",
-            image: "./img/models/kayco/kayco-noir/kayco-noir.jpg",
+            images: ["./img/models/kayco/kayco-noir/kayco-noir.jpg","./img/models/kayco/kayco-noir/2.webp","./img/models/kayco/kayco-noir/3.webp","./img/models/kayco/kayco-noir/4.webp"],
             price: "5,900 TND",
             specs: {
                 typeMoteur: "Electrique",
@@ -1678,7 +1678,7 @@ const modelsData = {
         },
         {
             name: "Delivery Professionals (B2C) One Charge = 240 km",
-            image: "./img/models/kayco/kayco-rouge/kayco-rouge.jpg",
+            images: ["./img/models/kayco/kayco-rouge/kayco-rouge.jpg","./img/models/kayco/kayco-rouge/2.webp","./img/models/kayco/kayco-rouge/3.webp","./img/models/kayco/kayco-rouge/4.webp"],
             price: "7,200 TND",
             specs: {
                 typeMoteur: "Electrique",
