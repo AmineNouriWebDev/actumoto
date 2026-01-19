@@ -619,7 +619,7 @@ const modelsData = {
     SYM: [
         {
             name: "SYM SYMPHONY SR 125 CBS - 125 CC",
-            image: "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg",
+            images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp","./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/2.webp","./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
             price: "6,579 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -634,7 +634,7 @@ const modelsData = {
         },
         {
             name: "SYM SYMPHONY S 125 - 125 CC",
-            image: "./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg",
+            images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg","./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
             price: "6,579 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -649,7 +649,7 @@ const modelsData = {
         },
         {
             name: "SYM SYMPHONY ST 125 CBS E5 - injection ",
-            image: "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg",
+            images: ["./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg","./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/2.png","./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/3.png"],
             price: "7,999 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -664,7 +664,7 @@ const modelsData = {
         },
         {
             name: "SYM JET 14 125 AC E5 - 125 CC",
-            image: "./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg",
+            images: ["./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg","./img/models/sym/sym-jet-14-125-ac-e5-noir/2.png","./img/models/sym/sym-jet-14-125-ac-e5-noir/3.jpg"],
             price: "8,699 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -679,7 +679,7 @@ const modelsData = {
         },
         {
             name: "SYM SYMPHONY ST 200 ABS E5 200cc injection",
-            image: "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg",
+            images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
             price: "14,999 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1097,7 +1097,7 @@ const modelsData = {
     DAYUN: [
         {
             name: "DAYUN DREAM 23 4T - SLC - 124CC",
-            image: "./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png",
+            images: ["./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png","./img/models/dayun/dayun-sniper-slc-noir/2.webp"],
             price: "4,499 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1112,7 +1112,7 @@ const modelsData = {
         },
         {
             name: "DAYUN SNIPER SLC - 124CC",
-            image: "./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg",
+            images: ["./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg", "./img/models/dayun/dayun-sniper-slc-blanc/2.jpg","./img/models/dayun/dayun-sniper-slc-blanc/3.jpg"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1127,7 +1127,7 @@ const modelsData = {
         },
         {
             name: "DAYUN 125 CC | 4 TEMPS - DY125T",
-            image: "./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg",
+            images: ["./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg", "./img/models/dayun/dayun-dy125t-bleu/2.jpg"],
             price: "4,569 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1142,7 +1142,7 @@ const modelsData = {
         },
         {
             name: "Dayun Kimbo 124CC | DY124",
-            image: "./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg",
+            images: ["./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg", "./img/models/dayun/dayun-dy124-gris/2.jpg"],
             price: "4,259 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1172,7 +1172,7 @@ const modelsData = {
         },
         {
             name: "Sonic 49CC 2 Temps",
-            images: ["./img/models/dayun/sonic/1.webp", "./img/models/dayun/sonic/2.png"],
+            images: [ "./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/1.webp"],
             price: "3,199 TND",
             specs: {
                 typeMoteur: "Monocylindre 2 temps",
