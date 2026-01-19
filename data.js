@@ -254,7 +254,7 @@ const modelsData = {
     CFMOTO: [
         {
             name: "CFMOTO 450MT - 450CC",
-            images: ["./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg","./img/models/cfmoto/CFMOTO-450MT/2.webp","./img/models/cfmoto/CFMOTO-450MT/3.webp","./img/models/cfmoto/CFMOTO-450MT/4.webp"],
+            images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp","./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg","./img/models/cfmoto/CFMOTO-450MT/2.webp","./img/models/cfmoto/CFMOTO-450MT/3.webp"],
             price: "58,131 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4 temps",
@@ -284,7 +284,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 800MT Explore",
-            images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg","./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg","./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
             price: "78,480 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -299,7 +299,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 700MT",
-            images: ["./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg","./img/models/cfmoto/CF-MOTO-700MT/2.webp","./img/models/cfmoto/CF-MOTO-700MT/3.webp","./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp","./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg","./img/models/cfmoto/CF-MOTO-700MT/2.webp","./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
             price: "69,793 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -314,7 +314,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 700CL-X SPORT",
-            images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
             price: "61,344 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -329,7 +329,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 450CL-C",
-            images: ["./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg","./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
+            images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg","./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
             price: "57,715 TND",
             specs: {
                 typeMoteur: "Bicylindre",
@@ -344,7 +344,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 450CL-C-BOBER",
-            images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
             price: "59,440 TND",
             specs: {
                 typeMoteur: "Bicylindre",
@@ -374,7 +374,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 800NK Advanced",
-            images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp","./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp","./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
             price: "64,081 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -404,7 +404,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 675SR-R",
-            images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg","./img/models/cfmoto/CF-MOTO-675SR-R/2.webp","./img/models/cfmoto/CF-MOTO-675SR-R/3.webp","./img/models/cfmoto/CF-MOTO-675SR-R/4.jpeg"],
+            images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg","./img/models/cfmoto/CF-MOTO-675SR-R/2.webp","./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
             price: "64,855 TND",
             specs: {
                 typeMoteur: "3 Cylindre, 4 temps",
@@ -419,7 +419,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO 450SR-S",
-            images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png","./img/models/cfmoto/CF-MOTO-450SR-S/2.jpeg","./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png","./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
             price: "54,680 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -449,7 +449,7 @@ const modelsData = {
         },
         {
             name: "CF MOTO CX-5E",
-            images: ["./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg","./img/models/cfmoto/CF-MOTO-CX-5E/2.webp","./img/models/cfmoto/CF-MOTO-CX-5E/3.webp","./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
+            images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp","./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg","./img/models/cfmoto/CF-MOTO-CX-5E/3.webp","./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
             price: "10,591 TND",
             specs: {
                 typeMoteur: "Electrique, 48 V",
@@ -1033,6 +1033,21 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "BBM FORMULA",
+            images: ["./img/models/bbm/formula/1.jpeg","./img/models/bbm/formula/2.jpeg"],
+            price: "5,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "10 ch",
+                coupleMaximal: "6.5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Double disque AV/AR",
+            }
+        },
     ],
     DAYUN: [
         {
@@ -1108,6 +1123,21 @@ const modelsData = {
                 vitesseMaximale: "105 Km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
+            }
+        },
+        {
+            name: "Sonic 49CC 2 Temps",
+            images: ["./img/models/dayun/sonic/1.webp", "./img/models/dayun/sonic/2.png"],
+            price: "3,199 TND",
+            specs: {
+                typeMoteur: "Monocylindre 2 temps",
+                cylindree: "49 cm³",
+                puissance: "4 ch",
+                coupleMaximal: "8,5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "50 km/h",
+                alimentation: "Carburateur",
+                freinage: "Tambour / Tambour",
             }
         },
     ],
