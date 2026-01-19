@@ -767,6 +767,21 @@ const modelsData = {
                 freinage: "Disque/Disque ABS",
             }
         },
+         {
+            name: "Sym Orbit II 125cc",
+            images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp"],
+            price: "4,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cm³",
+                puissance: "6,5 kW (8,8 ch),",
+                coupleMaximal: "8,3 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "95 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour CBS",
+            }
+        },
     ],
     FORZA_MOTOR_SPORT: [
        
@@ -922,6 +937,21 @@ const modelsData = {
                 freinage: "Disques hydrauliques AV/AR",
             }
         },
+         {
+            name: "TANK 125CC",
+            images: ["./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
+            price: "5,199 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps GY6",
+                cylindree: "125 cm³",
+                puissance: "6 kW",
+                coupleMaximal: "8 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "80 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disques / Disque",
+            }
+        },
     ],
     SENKE: [
         {
@@ -1046,6 +1076,21 @@ const modelsData = {
                 vitesseMaximale: "100 Km/h",
                 alimentation: "Carburateur",
                 freinage: "Double disque AV/AR",
+            }
+        },
+         {
+            name: "TREVIS 125 CC",
+            images: ["./img/models/bbm/trevis/3.webp","./img/models/bbm/trevis/1.jpg","./img/models/bbm/trevis/2.webp","./img/models/bbm/trevis/4.webp"],
+            price: "4,699 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: " 6,6 kW",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "105 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
             }
         },
     ],
