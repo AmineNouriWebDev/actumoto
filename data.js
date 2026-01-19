@@ -1281,7 +1281,7 @@ const modelsData = {
     KYMCO: [
         {
             name: "KYMCO People S 125i ABS",
-            image: "./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg",
+            images: ["./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg","./img/models/kymco/kymco-people-s-125i-abs/2.jfif","./img/models/kymco/kymco-people-s-125i-abs/3.jpg","./img/models/kymco/kymco-people-s-125i-abs/4.png"],
             price: "10,600 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1296,7 +1296,7 @@ const modelsData = {
         },
         {
             name: "KYMCO Dink R 125 Tunnel",
-            image: "./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg",
+            images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg","./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg","./img/models/kymco/kymco-drink-r-125-tunnel/3.png","./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
             price: "11,699 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1390,7 +1390,7 @@ const modelsData = {
     ZONTES: [
         {
             name: "zontes 368G ADV 368cc",
-            image: "./img/models/zontes/zontes-368g-adv-368cc/zontes-368g-adv-368cc.jpg",
+            images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-368g-adv-368cc.jpg","./img/models/zontes/zontes-368g-adv-368cc/2.webp","./img/models/zontes/zontes-368g-adv-368cc/3.jfif"],
             price: "En Arrivage",
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -1405,7 +1405,7 @@ const modelsData = {
         },
         {
             name: "Zontes 703 F 2025",
-            image: "./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp",
+            images: ["./img/models/zontes/zontes-703f-2025/2.webp","./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp","./img/models/zontes/zontes-703f-2025/3.jpeg","./img/models/zontes/zontes-703f-2025/4.webp"],
             price: "En Arrivage",
             specs: {
                 typeMoteur: "Trois Cylindres 4T",
@@ -1630,7 +1630,7 @@ const modelsData = {
     MS: [
         {
             name: "FIRST COSTA 49CC ",
-            image: "./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg",
+            images: ["./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg","./img/models/ms/ms-first-costa-gris/2.jpg"],
             price: "3,699 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 2 temps",
@@ -1759,7 +1759,7 @@ const modelsData = {
     FTM: [
         {
             name: "Jialing Future STAR 110CC",
-            image: "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg",
+            images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg","./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
             price: "3,399 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1774,7 +1774,7 @@ const modelsData = {
         },
         {
             name: "Moto Cross Korak",
-            image: "./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg",
+            images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg","./img/models/ftm/ftm-korak-noir/2.jpeg","./img/models/ftm/ftm-korak-noir/3.jfif"],
             price: "3,499 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
