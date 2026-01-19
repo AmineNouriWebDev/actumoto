@@ -849,7 +849,7 @@ const modelsData = {
     SLC: [
         {
             name: "SLC AZUR 124 CC",
-            image: "./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg",
+            images: ["./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg", "./img/models/slc/slc-azur-124cc-noir/3.jpeg"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -864,7 +864,7 @@ const modelsData = {
         },
         {
             name: "CAPPUCINO S SLC 125 CC-4TEMPS",
-            image: "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS.jpg",
+            images: ["./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/2.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/3.jpg"],
             price: "5,499 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -956,7 +956,7 @@ const modelsData = {
     SENKE: [
         {
             name: "SENKE SK 110 107 cm³+ Repose pied",
-            image: "./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg",
+            images: ["./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg"],
             price: "2,949 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1018,7 +1018,7 @@ const modelsData = {
     LM: [
         {
             name: "LM ADV 125CC injection ABS + TCS",
-            image: "./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg",
+            images: ["./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg","./img/models/lm/lm-adv-125cc-beige/2.jpg","./img/models/lm/lm-adv-125cc-beige/3.jpg"],
             price: "9,949 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1033,7 +1033,7 @@ const modelsData = {
         },
         {
             name: "LA VITA 125CC injection",
-            image: "./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg",
+            images: ["./img/models/lm/la-vita-125cc-bleu-orange/2.jpg","./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg"],
             price: "5,999 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1189,7 +1189,7 @@ const modelsData = {
     NOVAGO: [
         {
             name: "Tricycle électrique NOVAGO SWING - 2400 Watt",
-            image: "./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg",
+            images: ["./img/models/novago/NOVAGO-TRICITY/2.png","./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg"],
             price: "6,199 TND",
             specs: {
                 typeMoteur: "Electrique",
@@ -1204,12 +1204,12 @@ const modelsData = {
         },
         {
             name: " NOVAGO PIKA - Electrique",
-            image: "./img/models/novago/novago-pika-blanc-2/scooter-electrique-novago-pika-blanc-2.jpg",
+            images: ["./img/models/novago/novago-pika-blanc-2/2.jpg","./img/models/novago/novago-pika-blanc-2/scooter-electrique-novago-pika-blanc-2.jpg"],
             price: "3,299 TND",
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
-                puissance: "1000w",
+                puissance: "800w",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 Km/h",
