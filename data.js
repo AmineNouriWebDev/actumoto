@@ -866,7 +866,7 @@ const modelsData = {
         {
             name: "Evasion - Electrique",
             images: ["./img/models/slc/slc-evasion/1.webp","./img/models/slc/slc-evasion/2.png"],
-            price: "",
+            price: "6,600 TND",
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
@@ -881,7 +881,7 @@ const modelsData = {
         {
             name: "bloom - Electrique",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
-            price: "",
+            price: "En arrivage",
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
@@ -2097,7 +2097,7 @@ const modelsData = {
         {
             name: "AIMA Q5  ",
             images: ["./img/models/aima/aima-q5/aima-q5-1.jpg","./img/models/aima/aima-q5/aima-q5-2.jpg","./img/models/aima/aima-q5/aima-q5-3.jpg","./img/models/aima/aima-q5/aima-q5-4.jpg"],
-            price: "",
+            price: "4,200 TND",
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
@@ -2115,7 +2115,7 @@ const modelsData = {
         {
             name: "Phantom Z1 125",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
-            price: "",
+            price: "6,100 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³,",
@@ -2133,7 +2133,7 @@ const modelsData = {
         {
             name: "QUAD CFORCE 450 L",
             images: ["./img/models/cforce/450l/1.png","./img/models/cforce/450l/2.png","./img/models/cforce/450l/3.png","./img/models/cforce/450l/4.png"],
-            price: "",
+            price: "35,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps SOHC 4",
                 cylindree: "400 cm³,",
@@ -2148,7 +2148,7 @@ const modelsData = {
         {
             name: "QUAD CFORCE 450 S",
             images: ["./img/models/cforce/450s/1.jpg","./img/models/cforce/450s/2.webp","./img/models/cforce/450s/3.webp","./img/models/cforce/450s/4.webp"],
-            price: "",
+            price: "28,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps SOHC 4",
                 cylindree: "400 cm³,",
