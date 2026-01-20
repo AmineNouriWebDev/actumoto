@@ -787,7 +787,7 @@ const modelsData = {
        
         {
             name: "Forza MotoStars FIRST MAXIII 3- 125CC - DIGITAL",
-            image: "./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg",
+            images: ["./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/2.jpeg","./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg"],
             price: "2,899 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -802,7 +802,7 @@ const modelsData = {
         },
         {
             name: "FORZA Power Compteur Digital 107CC",
-            image: "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg",
+            images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg","./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
             price: "2,839 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -817,7 +817,7 @@ const modelsData = {
         },
         {
             name: "FORZA D-MAX 124CC",
-            image: "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg",
+            images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg","./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
             price: "3,049 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -832,7 +832,7 @@ const modelsData = {
         },
         {
             name: "FORZA Power Compteur Digital 125CC ",
-            image: "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg",
+            images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg","./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
             price: "2,899 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
