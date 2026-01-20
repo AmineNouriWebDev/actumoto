@@ -201,22 +201,7 @@ const modelsData = {
         },
     ],
     APRILIA: [
-        {
-            name: "Aprilia sr 125",
-            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
-            price: "8,699 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "7.1 Kw",
-                coupleMaximal: "10 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "90 Km/h",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-            }
-        },
-        {
+         {
             name: "Aprilia SR GT 125 ",
             images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
             price: "11,900 TND",
@@ -233,7 +218,23 @@ const modelsData = {
             
         },
         {
-            name: "Aprilia SR 125 ",
+            name: "Aprilia sr 125",
+            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
+            price: "8,699 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "7.1 Kw",
+                coupleMaximal: "10 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 Km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+            }
+        },
+       
+        {
+            name: "Aprilia SR 125 iget",
             images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
             price: "11,900 TND",
             specs: {
