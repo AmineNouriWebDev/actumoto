@@ -1050,7 +1050,7 @@ const modelsData = {
     BBM: [
         {
             name: "BBM 124CC FZ MAX Compteur Digitale",
-            image: "./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg",
+            images: ["./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/2.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/3.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/4.jpg"],
             price: "2,849 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1454,7 +1454,7 @@ const modelsData = {
     SANYA: [
         {
             name: "Sanya SY 125-9F",
-            image: "./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg",
+            images: ["./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg","./img/models/sanya/sanya-sy-125-9f/2.png","./img/models/sanya/sanya-sy-125-9f/3.png","./img/models/sanya/sanya-sy-125-9f/4.png"],
             price: "5,849 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1486,7 +1486,7 @@ const modelsData = {
         },
         {
             name: "Sanya UF 125CC",
-            image: "./img/models/sanya/uf-125/1.avif",
+            images: ["./img/models/sanya/uf-125/2.jpeg","./img/models/sanya/uf-125/3.jpeg","./img/models/sanya/uf-125/1.avif"],
             price: "4,850 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1695,7 +1695,7 @@ const modelsData = {
     GOLD_MOTORS: [
         {
             name: "Gold Motors R9",
-            images: ["./img/models/goldmotors/gold-motors-R9-bleu/2.png","./img/models/goldmotors/gold-motors-R9-bleu/3.png"],
+            images: ["./img/models/goldmotors/gold-motors-R9-bleu/1.png","./img/models/goldmotors/gold-motors-R9-bleu/2.png","./img/models/goldmotors/gold-motors-R9-bleu/3.png","./img/models/goldmotors/gold-motors-R9-bleu/4.jpeg"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
