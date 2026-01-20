@@ -1695,7 +1695,7 @@ const modelsData = {
     GOLD_MOTORS: [
         {
             name: "Gold Motors R9",
-            image: "./img/models/goldmotors/gold-motors-R9-bleu/gold-motors-R9-bleu.jpg",
+            images: ["./img/models/goldmotors/gold-motors-R9-bleu/2.png","./img/models/goldmotors/gold-motors-R9-bleu/3.png"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1710,7 +1710,7 @@ const modelsData = {
         },
         {
             name: "Moto Gold  | Cylindré 124 CC – Compteur Digital",
-            image: "./img/models/goldmotors/gold-motors-124cc-compteur-digital/gold-motors-124cc-compteur-digital.jpg",
+            images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png","./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp","./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp","./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
             price: "3,269 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
