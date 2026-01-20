@@ -956,7 +956,7 @@ const modelsData = {
     SENKE: [
         {
             name: "SENKE SK 110 107 cm³+ Repose pied",
-            images: ["./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg"],
+            images: ["./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg","./img/models/senke/senke-sk-110-107cc-rouge/2.jpeg","./img/models/senke/senke-sk-110-107cc-rouge/3.jpeg"],
             price: "2,949 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1727,7 +1727,7 @@ const modelsData = {
     XTF: [
         {
             name: "XTF DRAGON 110 CM³ Monocylindre",
-            image: "./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg",
+            images: ["./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg","./img/models/xtf/xtf-dragon-110-noir/2.jpg","./img/models/xtf/xtf-dragon-110-noir/3.jpg","./img/models/xtf/xtf-dragon-110-noir/4.jpg"],
             price: "3,499 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
