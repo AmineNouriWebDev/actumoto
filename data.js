@@ -1082,7 +1082,7 @@ const modelsData = {
     ],
     DAYUN: [
         {
-            name: "DAYUN DREAM 23 4T - SLC - 124CC",
+            name: "DAYUN DREAM",
             images: ["./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png","./img/models/dayun/dayun-sniper-slc-noir/2.webp"],
             price: "4,499 TND",
             specs: {
@@ -1097,7 +1097,7 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN SNIPER SLC - 124CC",
+            name: "DAYUN SNIPER SLC",
             images: ["./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg", "./img/models/dayun/dayun-sniper-slc-blanc/2.jpg","./img/models/dayun/dayun-sniper-slc-blanc/3.jpg"],
             price: "5,199 TND",
             specs: {
@@ -1112,7 +1112,7 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN 125 CC | 4 TEMPS - DY125T",
+            name: "DAYUN- DY125T",
             images: ["./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg", "./img/models/dayun/dayun-dy125t-bleu/2.jpg"],
             price: "4,569 TND",
             specs: {
@@ -1127,7 +1127,7 @@ const modelsData = {
             }
         },
         {
-            name: "Dayun Kimbo 124CC | DY124",
+            name: "Dayun Kimbo",
             images: ["./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg", "./img/models/dayun/dayun-dy124-gris/2.jpg"],
             price: "4,259 TND",
             specs: {
@@ -1142,7 +1142,7 @@ const modelsData = {
             }
         },
         {
-            name: "Dayun Flora by SLC",
+            name: "Dayun Flora",
             image: "./img/models/dayun/flora/flora.png",
             price: "En arrivage",
             specs: {
@@ -1157,7 +1157,7 @@ const modelsData = {
             }
         },
         {
-            name: "Sonic 49CC 2 Temps",
+            name: "Dayun Sonic",
             images: [ "./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/1.webp"],
             price: "3,199 TND",
             specs: {
@@ -1584,7 +1584,7 @@ const modelsData = {
         },
         {
             name: "WOLF 1000 Watts - Electrique",
-            images: ["./img/models/wolf/wolf-vero-noir/1.png","./img/models/wolf/wolf-vero-noir/2.png","./img/models/wolf/wolf-vero-noir/3.png","./img/models/wolf/wolf-vero-noir/4.png"],
+            images: ["./img/models/wolf/wolf-vero-noir/wolf2.png","./img/models/wolf/wolf-vero-noir/wolf1.png","./img/models/wolf/wolf-vero-noir/3.png"],
             price: "3,799 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -1597,21 +1597,7 @@ const modelsData = {
                 freinage: "Tambour / Tambour",
             }
         },
-        {
-            name: "WOLF 1000 Watts Avec Coffre - Electrique",
-            images: ["./img/models/wolf/wolf-vero-gris-coffre/wolf2.png","./img/models/wolf/wolf-vero-gris-coffre/wolf-vero-gris-coffre.jpg"],
-            price: "3,999 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "1000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "40 km/h",
-                alimentation: "Batterie plomb 60V 20Ah",
-                freinage: "Tambour / Tambour",
-            }
-        },
+    
     ],
     MS: [
         {
