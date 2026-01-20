@@ -466,7 +466,7 @@ const modelsData = {
     ZIMOTA_MOTOR: [
          {
             name: "Eway RIDE Electrique - 400 Watt ",
-            image: "./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg",
+            images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
             price: "1,999 TND",
             specs: {
                 typeMoteur: "Électrique 400 W",
@@ -481,7 +481,7 @@ const modelsData = {
         },
         {
             name: "ZIMOTA Evo ",
-            image: "./img/models/zimotamotor/zimota-evo/zimota-evo.jpg",
+            images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg","./img/models/zimotamotor/zimota-evo/2.jpg","./img/models/zimotamotor/zimota-evo/3.jpg"],
             price: "3,899 TND",
             specs: {
                 typeMoteur: "Monocylindre 2T",
@@ -496,7 +496,7 @@ const modelsData = {
         },
         {
             name: "ZIMOTA KEE",
-            image: "./img/models/zimotamotor/zimota-kee/zimota-kee.jpg",
+            images: ["./img/models/zimotamotor/zimota-kee/1.jpg", "./img/models/zimotamotor/zimota-kee/2.jpg", "./img/models/zimotamotor/zimota-kee/3.jpg","./img/models/zimotamotor/zimota-kee/4.jpg"],
             price: "3,899 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -511,7 +511,7 @@ const modelsData = {
         },
         {
             name: "ZIMOTA TAPO ",
-            image: "./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg",
+            images: ["./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg","./img/models/zimotamotor/zimota-tapo/2.jpg","./img/models/zimotamotor/zimota-tapo/3.jpg","./img/models/zimotamotor/zimota-tapo/4.jpg"],
             price: "3,949 TND",
             specs: {
                 typeMoteur: "Monocylindre 2T",
@@ -526,7 +526,7 @@ const modelsData = {
         },
         {
             name: "ZIMOTA TARGET 125CC",
-            image: "./img/models/zimotamotor/zimota-target/zimota-target.jpg",
+            images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg","./img/models/zimotamotor/zimota-target/2.jpg","./img/models/zimotamotor/zimota-target/3.jpg","./img/models/zimotamotor/zimota-target/4.jpg"],
             price: "3,999 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -541,7 +541,7 @@ const modelsData = {
         },
         {
             name: "ZIMOTA SINUS X 124cc",
-            image: "./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg",
+            images: ["./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg","./img/models/zimotamotor/zimota-sinus-x/2.jpg","./img/models/zimotamotor/zimota-sinus-x/3.jpg","./img/models/zimotamotor/zimota-sinus-x/4.jpg"],
             price: "4,499 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -554,24 +554,10 @@ const modelsData = {
                 freinage: "Disque hydr/ Tambour",
             }
         },
-        {
-            name: "ZIMOTA Keeway RKS 125 ",
-            image: "./img/models/zimotamotor/zimota-keeway-rks-125-rouge/zimota-keeway-rks-125-rouge.jpg",
-            price: "5,599 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: "125 cc",
-                puissance: "8,4 cv",
-                coupleMaximal: "10 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "100 km/h",
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-            }
-        },
+     
         {
             name: "ZIMOTA TARGET 125CC",
-            image: "./img/models/zimotamotor/zimota-target-125-bleu/zimota-target-125-bleu.jpg",
+            images: ["./img/models/zimotamotor/zimota-target-125-bleu/1.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/2.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/3.jpg","./img/models/zimotamotor/zimota-target-125-bleu/4.jpg"],
             price: "3,999 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -587,7 +573,7 @@ const modelsData = {
        
         {
             name: "ZIMOTA RKS 125cc",
-            image: "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/qjmotor-zimota-rks-qjmotor-noir.jpg",
+            images: ["./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/1.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/2.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/3.jpg","./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/4.jpg"],
             price: "5,599 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -879,7 +865,7 @@ const modelsData = {
         },
         {
             name: "Evasion - Electrique",
-            image: "./img/models/slc/slc-evasion/1.webp",
+            images: ["./img/models/slc/slc-evasion/1.webp","./img/models/slc/slc-evasion/2.png"],
             price: "",
             specs: {
                 typeMoteur: "Electrique",
