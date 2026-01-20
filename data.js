@@ -1791,7 +1791,7 @@ const modelsData = {
     LVNENG: [
         {
             name: "LVNENG LX05 - ELECTRIQUE",
-            image: "./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg",
+            images: ["./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg","./img/models/lvneng/lvneng-lx05-49cc-vert/2.png","./img/models/lvneng/lvneng-lx05-49cc-vert/3.png","./img/models/lvneng/lvneng-lx05-49cc-vert/4.png"],
             price: "5,690 TND",
             specs: {
                 typeMoteur: "Electrique",
@@ -1806,7 +1806,7 @@ const modelsData = {
         },
         {
             name: "LVNENG NCS GENUIS - ELECTRIQUE",
-            image: "./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg",
+            images: ["./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg","./img/models/lvneng/lvneng-ncs-genius-beige-marron/2.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/3.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/4.png"],
             price: "7,300 TND",
             specs: {
                 typeMoteur: "Electrique 60V",
@@ -1900,7 +1900,7 @@ const modelsData = {
     LIFAN: [
         {
             name: "LIFAN Glow 100 CC | LF110.3S",
-            image: "./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg",
+            images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg","./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
             price: "3,859 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1979,12 +1979,12 @@ const modelsData = {
     E_FLASH: [
         {
             name: "E-FLASH 2000 Watts - Electrique",
-            image: "./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg",
+            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
             price: "8,299 TND",
             specs: {
                 typeMoteur: "Electrique, 72 V",
-                cylindree: "2 Kw",
-                puissance: "",
+                cylindree: "",
+                puissance: "2000 Watts",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 Km/h",
