@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -26,6 +26,18 @@
 
       gtag("config", "G-WGY6N6E618");
     </script>
+    <!-- Favicon optimisé pour Google SERP (192x192 en premier) -->
+    <link
+      rel="icon"
+      href="https://actumoto.tn/img/favicon-192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://actumoto.tn/img/favicon-192.png"
+    />
+    <!-- Rétrocompatibilité -->
     <link
       rel="icon"
       href="https://actumoto.tn/img/favicon.ico"
@@ -42,11 +54,6 @@
       type="image/png"
       sizes="16x16"
       href="./img/favicon-16x16.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/apple-touch-icon.png"
     />
     <link rel="manifest" href="https://actumoto.tn/site.webmanifest" />
 
@@ -490,7 +497,9 @@
         left: 0;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+        transition:
+          opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+          visibility 0.8s;
       }
 
       .carousel-slide.active {
@@ -581,7 +590,9 @@
         }
 
         .carousel-slide {
-          transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
+          transition:
+            opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 1s;
         }
       }
 
@@ -908,7 +919,7 @@
 
           brandCard.addEventListener("click", () => {
             window.location.href = `modeles.html?marque=${encodeURIComponent(
-              brand.name
+              brand.name,
             )}`;
           });
 
