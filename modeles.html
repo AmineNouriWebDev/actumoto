@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,8 @@
     <title id="dynamic-title">
       Modèles de motos - actumoto.tn | Catalogue Moto Tunisie
     </title>
+    <link rel="canonical" href="https://actumoto.tn/modeles.html" />
+
     <meta
       name="description"
       id="dynamic-description"
@@ -884,7 +886,7 @@
                           <td>${spec.label}</td>
                           <td>${spec.value || "–"}</td>
                         </tr>
-                      `,
+                      `
                         )
                         .join("")}
                     </tbody>
@@ -912,7 +914,7 @@
                       data-brand="${brand}"
                       onerror="this.style.display='none'"
                     >
-                  `,
+                  `
                     )
                     .join("")}
                   ${
@@ -1000,13 +1002,13 @@
 
                   // 1. Fermer toutes les autres fiches ouvertes
                   const allOpenContainers = document.querySelectorAll(
-                    ".specs-container[data-open='true']",
+                    ".specs-container[data-open='true']"
                   );
 
                   // Réinitialiser les Z-index de toutes les cartes
                   const allCards = document.querySelectorAll(".model-card");
                   allCards.forEach((card) =>
-                    card.classList.remove("card-active-z"),
+                    card.classList.remove("card-active-z")
                   );
 
                   allOpenContainers.forEach((otherContainer) => {
@@ -1014,7 +1016,7 @@
                       otherContainer.setAttribute("data-open", "false");
                       // Réinitialiser le texte du bouton correspondant
                       const otherBtn = document.querySelector(
-                        `.specs-btn[data-target-id="${otherContainer.id}"]`,
+                        `.specs-btn[data-target-id="${otherContainer.id}"]`
                       );
                       if (otherBtn) {
                         otherBtn.textContent = "Fiche technique";
@@ -1056,7 +1058,7 @@
                   if (specsContainer) {
                     specsContainer.setAttribute("data-open", "false");
                     const btn = document.querySelector(
-                      `.specs-btn[data-target-id="${targetId}"]`,
+                      `.specs-btn[data-target-id="${targetId}"]`
                     );
                     if (btn) {
                       btn.textContent = "Fiche technique";
@@ -1113,12 +1115,12 @@
                 !e.target.closest(".close-specs")
               ) {
                 const openContainers = document.querySelectorAll(
-                  ".specs-container[data-open='true']",
+                  ".specs-container[data-open='true']"
                 );
                 openContainers.forEach((container) => {
                   container.setAttribute("data-open", "false");
                   const btn = document.querySelector(
-                    `.specs-btn[data-target-id="${container.id}"]`,
+                    `.specs-btn[data-target-id="${container.id}"]`
                   );
                   if (btn) {
                     btn.textContent = "Fiche technique";
@@ -1137,13 +1139,16 @@
 
       function updateMetaTags(brand) {
         document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
-        document.querySelector('meta[name="description"]').content =
-          `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
+        document.querySelector(
+          'meta[name="description"]'
+        ).content = `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
 
-        document.querySelector('meta[property="og:title"]').content =
-          `Modèles ${brand} - actumoto.tn`;
-        document.querySelector('meta[property="og:description"]').content =
-          `Modèles ${brand} disponibles en Tunisie chez actumoto.tn`;
+        document.querySelector(
+          'meta[property="og:title"]'
+        ).content = `Modèles ${brand} - actumoto.tn`;
+        document.querySelector(
+          'meta[property="og:description"]'
+        ).content = `Modèles ${brand} disponibles en Tunisie chez actumoto.tn`;
       }
 
       function updateSchemaData(brand) {
