@@ -2239,23 +2239,23 @@ const occasionModelsData = [
             freinage: "Disques hydrauliques (ABS)"
         }
     },
-    {
-        marque: "SUZUKI",
-        name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg","./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg",  "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "0 km",
-            typeMoteur: "Monocylindre 2 temps,",
-            cylindree: "90 cm³",
-            puissance: "8 ch",
-            coupleMaximal: "",
-            refroidissement: "Air",
-            vitesseMaximale: "Environ 75 km/h",
-            alimentation: "",
-            freinage: ""
-        }
-    },
+    // {
+    //     marque: "SUZUKI",
+    //     name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
+    //     images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg","./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg",  "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
+    //     price: "",
+    //     specs: {
+    //         kilometrage: "0 km",
+    //         typeMoteur: "Monocylindre 2 temps,",
+    //         cylindree: "90 cm³",
+    //         puissance: "8 ch",
+    //         coupleMaximal: "",
+    //         refroidissement: "Air",
+    //         vitesseMaximale: "Environ 75 km/h",
+    //         alimentation: "",
+    //         freinage: ""
+    //     }
+    // },
     {
         marque: "YAMAHA",
         name: "YAMAHA-V-max 1700 -modèle 2009 - Jet Moto tel 24350274",
@@ -2290,23 +2290,23 @@ const occasionModelsData = [
             freinage: ""
         }
     },
-    {
-        marque: "Kawasaki",
-        name: "Kawasaki -KLR 650 -modèle 1992  - Jet Moto tel 24350274",
-        images: ["./img/occasion/5/Kawasaki-KLR-650-modèle-1992-4.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-2.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-3.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-1.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "",
-            typeMoteur: "Monocylindre 4 temps",
-            cylindree: "651 cm³",
-            puissance: "42 ch",
-            coupleMaximal: "46 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "154 km/h",
-            alimentation: "Carburateur Ø 40 mm,",
-            freinage: "Disque avant/arrière"
-        }
-    },
+    // {
+    //     marque: "Kawasaki",
+    //     name: "Kawasaki -KLR 650 -modèle 1992  - Jet Moto tel 24350274",
+    //     images: ["./img/occasion/5/Kawasaki-KLR-650-modèle-1992-4.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-2.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-3.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-1.jpg"],
+    //     price: "",
+    //     specs: {
+    //         kilometrage: "",
+    //         typeMoteur: "Monocylindre 4 temps",
+    //         cylindree: "651 cm³",
+    //         puissance: "42 ch",
+    //         coupleMaximal: "46 Nm",
+    //         refroidissement: "Liquide",
+    //         vitesseMaximale: "154 km/h",
+    //         alimentation: "Carburateur Ø 40 mm,",
+    //         freinage: "Disque avant/arrière"
+    //     }
+    // },
     {
         marque: "YAMAHA",
         name: "YAMAHA-TENERE 700 - Jet Moto tel 26711555-53685927",
