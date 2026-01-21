@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -6,12 +6,16 @@
     <title>Motos d'Occasion - actumoto.tn | Moto Occasion Tunisie</title>
     <meta
       name="description"
-      content="Découvrez notre sélection de motos d'occasion en Tunisie. Prix attractifs, motos vérifiées et fiables. Peugeot, Honda, CFMOTO et bien d'autres marques."
+      content="🇹🇳 Découvrez notre sélection de motos d'occasion en Tunisie. Prix attractifs, motos vérifiées et fiables. Peugeot, Honda, CFMOTO, Kawasaki, BMW et bien d'autres marques."
     />
     <meta
       name="keywords"
-      content="moto occasion Tunisie, scooter occasion, moto d'occasion, vente moto occasion, Honda occasion, Peugeot occasion"
+      content="moto occasion Tunisie, scooter occasion, moto d'occasion, vente moto occasion, Honda occasion, Peugeot occasion, moto occasion pas cher, occasion Tunisie"
     />
+    <meta name="author" content="actumoto.tn" />
+    <meta name="language" content="French" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="robots" content="index, follow" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-WGY6N6E618"
@@ -27,23 +31,61 @@
     </script>
     <link
       rel="icon"
-      href="https://actumoto.tn/img/icon.ico"
+      href="https://actumoto.tn/img/favicon.ico"
       type="image/x-icon"
     />
     <link
-      rel="shortcut icon"
-      href="https://actumoto.tn/img/icon.ico"
-      type="image/x-icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="https://actumoto.tn/site.webmanifest" />
     <link rel="canonical" href="https://actumoto.tn/occasion.html" />
 
-    <meta property="og:title" content="Motos d'Occasion - actumoto.tn" />
+    <meta
+      property="og:title"
+      content="Motos d'Occasion - actumoto.tn | Moto Occasion Tunisie"
+    />
     <meta
       property="og:description"
-      content="Motos d'occasion fiables et pas chères en Tunisie - actumoto.tn"
+      content="🇹🇳 Motos d'occasion fiables et pas chères en Tunisie - actumoto.tn"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://actumoto.tn/occasion.html" />
+    <meta
+      property="og:image"
+      content="https://actumoto.tn/img/logo-principal-6.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="actumoto.tn - Motos d'Occasion Tunisie"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="actumoto.tn" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Motos d'Occasion - actumoto.tn" />
+    <meta
+      name="twitter:description"
+      content="Motos d'occasion fiables et pas chères en Tunisie"
+    />
+    <meta
+      name="twitter:image"
+      content="https://actumoto.tn/img/logo-principal-6.png"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -805,7 +847,7 @@
                         <td>${spec.label}</td>
                         <td>${spec.value || "—"}</td>
                       </tr>
-                    `
+                    `,
                       )
                       .join("")}
                   </tbody>
@@ -832,7 +874,7 @@
                     data-model-index="${index}"
                     onerror="this.style.display='none'"
                   >
-                `
+                `,
                   )
                   .join("")}
                 ${
@@ -914,7 +956,7 @@
 
                 // 1. Fermer toutes les autres fiches ouvertes et nettoyer les Z-Index
                 const allOpenContainers = document.querySelectorAll(
-                  ".specs-container[data-open='true']"
+                  ".specs-container[data-open='true']",
                 );
 
                 document
@@ -926,7 +968,7 @@
                     otherContainer.setAttribute("data-open", "false");
                     // Réinitialiser le texte du bouton correspondant
                     const otherBtn = document.querySelector(
-                      `.specs-btn[data-target-id="${otherContainer.id}"]`
+                      `.specs-btn[data-target-id="${otherContainer.id}"]`,
                     );
                     if (otherBtn) {
                       otherBtn.textContent = "Fiche technique";
@@ -968,7 +1010,7 @@
                 if (specsContainer) {
                   specsContainer.setAttribute("data-open", "false");
                   const btn = document.querySelector(
-                    `.specs-btn[data-target-id="${targetId}"]`
+                    `.specs-btn[data-target-id="${targetId}"]`,
                   );
                   if (btn) {
                     btn.textContent = "Fiche technique";
@@ -1022,12 +1064,12 @@
               !e.target.closest(".close-specs")
             ) {
               const openContainers = document.querySelectorAll(
-                ".specs-container[data-open='true']"
+                ".specs-container[data-open='true']",
               );
               openContainers.forEach((container) => {
                 container.setAttribute("data-open", "false");
                 const btn = document.querySelector(
-                  `.specs-btn[data-target-id="${container.id}"]`
+                  `.specs-btn[data-target-id="${container.id}"]`,
                 );
                 if (btn) {
                   btn.textContent = "Fiche technique";
