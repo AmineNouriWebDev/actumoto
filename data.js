@@ -77,7 +77,7 @@ const modelsData = {
         {
             name: "PEUGEOT PM 01 125",
             images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
-            price: "15,500 TND",
+            price: "En arrivage",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
                 cylindree: "125 cc",
