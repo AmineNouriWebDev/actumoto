@@ -1374,6 +1374,21 @@ const modelsData = {
                 freinage: "Disque AV / Ferrodo AR",
             }
         },
+        {
+            name: "V8 intro 125",
+            images: ["./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
+            price: "5,999 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 T",
+                cylindree: "125 cc",
+                puissance: "10 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "110 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
+            }
+        },
     ],
     ZONTES: [
         {

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -498,9 +498,7 @@
         left: 0;
         opacity: 0;
         visibility: hidden;
-        transition:
-          opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-          visibility 0.8s;
+        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
       }
 
       .carousel-slide.active {
@@ -591,9 +589,7 @@
         }
 
         .carousel-slide {
-          transition:
-            opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
-            visibility 1s;
+          transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
         }
       }
 
@@ -890,7 +886,7 @@
     </footer>
 
     <!-- Charger les données et le script -->
-    <script src="data.js"></script>
+    <script src="data.js?v=20250124"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
@@ -920,7 +916,7 @@
 
           brandCard.addEventListener("click", () => {
             window.location.href = `modeles.html?marque=${encodeURIComponent(
-              brand.name,
+              brand.name
             )}`;
           });
 
