@@ -2274,7 +2274,7 @@ const occasionModelsData = [
     {
         marque: "SUZUKI",
         name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-2.jpg","./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982.jpg",  "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-3.jpg", "./img/occasion/2/SUZUKI-VAN-VAN-90-Cc-modèle-1982-4.jpg"],
+        images: ["./img/occasion/2/1.jpg","./img/occasion/2/2.jpg",  "./img/occasion/2/3.jpg", "./img/occasion/2/4.jpg"],
         price: "",
         specs: {
             kilometrage: "0 km",
@@ -2325,7 +2325,7 @@ const occasionModelsData = [
     {
         marque: "Kawasaki",
         name: "Kawasaki -KLR 650 -modèle 1992  - Jet Moto tel 24350274",
-        images: ["./img/occasion/5/Kawasaki-KLR-650-modèle-1992-4.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-2.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-3.jpg", "./img/occasion/5/Kawasaki-KLR-650-modèle-1992-1.jpg"],
+        images: ["./img/occasion/5/1.jpg", "./img/occasion/5/2.jpg", "./img/occasion/5/3.jpg", "./img/occasion/5/4.jpg.jpg"],
         price: "",
         specs: {
             kilometrage: "",
