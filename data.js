@@ -2189,6 +2189,23 @@ const occasionModelsData = [
         }
     },
        {
+        marque: "HONDA",
+        name: "HONDA.XADV 750 🇹🇳 modèle 10.2025 -00km 🇹🇳 avec carte grise tunisienne 🇹🇳 chez JETMOTO 🇹🇳 tunis 🇹🇳 watsap-tel-53685927-26711555 🇹🇳",
+        images: ["./img/occasion/13/1.jpg", "./img/occasion/13/2.jpg", "./img/occasion/13/3.jpg", "./img/occasion/13/4.jpg"],
+        price: "",
+        specs: {
+            kilometrage: "0 km",
+            typeMoteur: "Bicylindre parallèle 4 temps",
+            cylindree: "745 cm³",
+            puissance: "58,6 ch (43 kW)",
+            coupleMaximal: "69 Nm",
+            refroidissement: "Liquide",
+            vitesseMaximale: "160 km/h",
+            alimentation: "Injection PGM-FI électronique",
+            freinage: "Double disqueAV / Disque AR ABS"
+        }
+    },
+       {
         marque: "BMW",
         name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
         images: ["./img/occasion/9/BMW-S1000RR-M-1.png", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
@@ -2440,6 +2457,18 @@ const occasionModelsData = [
         marque: "Verge Motorcycles",
         modele: "Verge TS Pro",
         youtubeId: "cy_mXYItqXU"
+    },
+      {
+        id: 17,
+        marque: "MV Agusta",
+        modele: "mv agusta brutale 2026",
+        youtubeId: "YSePawzL5Rg"
+    },
+      {
+        id: 18,
+        marque: "Suzuki",
+        modele: "hayabusa 2026",
+        youtubeId: "o7zuBpOscRo"
     },
 
 ];
