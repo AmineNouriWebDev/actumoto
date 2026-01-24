@@ -2206,7 +2206,7 @@ const occasionModelsData = [
        {
         marque: "HONDA",
         name: "HONDA.XADV 750 🇹🇳 modèle 10.2025 -00km 🇹🇳 avec carte grise tunisienne 🇹🇳 chez JETMOTO 🇹🇳 tunis 🇹🇳 watsap-tel-53685927-26711555 🇹🇳",
-        images: ["./img/occasion/13/1.jpg", "./img/occasion/13/2.jpg", "./img/occasion/13/3.jpg", "./img/occasion/13/4.jpg"],
+        images: ["./img/occasion/13/1.jpg", "./img/occasion/13/2.jpg", "./img/occasion/13/4.jpg"],
         price: "",
         specs: {
             kilometrage: "0 km",
@@ -2449,12 +2449,7 @@ const occasionModelsData = [
         modele: "New EV Concepts 2026",
         youtubeId: "v8hzcn4so7s"
     },
-      {
-        id: 13,
-        marque: "Honda",
-        modele: "2026 Honda WN7 | Electric Motorcycle  ",
-        youtubeId: "dkQHfp9qRo0"
-    },
+     
       {
         id: 14,
         marque: "Peugeot",
@@ -2484,6 +2479,12 @@ const occasionModelsData = [
         marque: "Suzuki",
         modele: "hayabusa 2026",
         youtubeId: "o7zuBpOscRo"
+    },
+      {
+        id: 19,
+        marque: "Moto Morini",
+        modele: "Morini corsaro gt 2026",
+        youtubeId: "UPs5dypOrQ8"
     },
 
 ];
