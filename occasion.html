@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -801,7 +801,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=2025012421"></script>
+    <script src="data.js?v=20250125"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderOccasions();
@@ -855,7 +855,7 @@
                         <td>${spec.label}</td>
                         <td>${spec.value || "—"}</td>
                       </tr>
-                    `
+                    `,
                       )
                       .join("")}
                   </tbody>
@@ -882,7 +882,7 @@
                     data-model-index="${index}"
                     onerror="this.style.display='none'"
                   >
-                `
+                `,
                   )
                   .join("")}
                 ${
@@ -964,7 +964,7 @@
 
                 // 1. Fermer toutes les autres fiches ouvertes et nettoyer les Z-Index
                 const allOpenContainers = document.querySelectorAll(
-                  ".specs-container[data-open='true']"
+                  ".specs-container[data-open='true']",
                 );
 
                 document
@@ -976,7 +976,7 @@
                     otherContainer.setAttribute("data-open", "false");
                     // Réinitialiser le texte du bouton correspondant
                     const otherBtn = document.querySelector(
-                      `.specs-btn[data-target-id="${otherContainer.id}"]`
+                      `.specs-btn[data-target-id="${otherContainer.id}"]`,
                     );
                     if (otherBtn) {
                       otherBtn.textContent = "Fiche technique";
@@ -1018,7 +1018,7 @@
                 if (specsContainer) {
                   specsContainer.setAttribute("data-open", "false");
                   const btn = document.querySelector(
-                    `.specs-btn[data-target-id="${targetId}"]`
+                    `.specs-btn[data-target-id="${targetId}"]`,
                   );
                   if (btn) {
                     btn.textContent = "Fiche technique";
@@ -1072,12 +1072,12 @@
               !e.target.closest(".close-specs")
             ) {
               const openContainers = document.querySelectorAll(
-                ".specs-container[data-open='true']"
+                ".specs-container[data-open='true']",
               );
               openContainers.forEach((container) => {
                 container.setAttribute("data-open", "false");
                 const btn = document.querySelector(
-                  `.specs-btn[data-target-id="${container.id}"]`
+                  `.specs-btn[data-target-id="${container.id}"]`,
                 );
                 if (btn) {
                   btn.textContent = "Fiche technique";
