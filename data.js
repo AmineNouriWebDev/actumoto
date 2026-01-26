@@ -39,6 +39,10 @@ const brands = [
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },
+    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },
+    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
+    { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
 ];
 
 const modelsData = {
@@ -600,6 +604,21 @@ const modelsData = {
                 vitesseMaximale: "100 km/h",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque CBS",
+            }
+        },
+        {
+            name: "Zimota Fly",
+            images: ["./img/models/zimotamotor/fly/zimota-fly-1.jpeg", "./img/models/zimotamotor/fly/zimota-fly-2.jpeg", "./img/models/zimotamotor/fly/zimota-fly-3.jpeg","./img/models/zimotamotor/fly/zimota-fly-4.jpeg"],
+            price: "3,249 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "80 cc",
+                puissance: "5 ch",
+                coupleMaximal: "4,5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
             }
         },
     ],
@@ -1982,13 +2001,77 @@ const modelsData = {
             }
         },
     ],
+    VIGO: [
+        {
+            name: "VIGO",
+            images: ["./img/models/vigo/vigo/vigo1.png","./img/models/vigo/vigo/vigo2.png","./img/models/vigo/vigo/vigo3.png","./img/models/vigo/vigo/vigo4.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                alimentation: "",
+                freinage: "",
+            }
+        },
+    ],
+    KEREN: [
+        {
+            name: "Keren Motors Group",
+            images: ["./img/models/keren/motor-group/2.png"],
+            price: "4,800 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                alimentation: "",
+                freinage: "",
+            }
+        },
+        {
+            name: "U-BE",
+            images: ["./img/models/keren/ube/1.jpg"],
+            price: "4,900 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1200 w",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                alimentation: "Lithium-ion BMS",
+                freinage: "",
+            }
+        },
+        {
+            name: "U-2",
+            images: ["./img/models/keren/u2/1.png"],
+            price: "4,800 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1200 w",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "90 k/h",
+                alimentation: "Lithium-ion 70v",
+                freinage: "Disque / Disque",
+            }
+        },
+    ],
     LETBE: [
         {
             name: "LETBE NEON",
             images: ["./img/models/letbe/LETBE-NEON-125/moora1.jpg","./img/models/letbe/LETBE-NEON-125/moora2.jpg","./img/models/letbe/LETBE-NEON-125/moora3.jpg","./img/models/letbe/LETBE-NEON-125/moora4.jpg"],
             price: "5,900 TND",
             specs: {
-                typeMoteur: "Monocylindre 4 temps,",
+                typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cc",
                 puissance: "8,5 ch",
                 coupleMaximal: "9,4 Nm",
@@ -1996,6 +2079,23 @@ const modelsData = {
                 vitesseMaximale: "",
                 alimentation: "Injection électronique Bosch",
                 freinage: "Disque/Disque ABS",
+            }
+        },
+    ],
+    TAILG: [
+        {
+            name: "STAR",
+            images: ["./img/models/tailg/star/1.jpg","./img/models/tailg/star/2.jpg"],
+            price: "",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "1200 w",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "60 km/h",
+                alimentation: "Lithium 48v",
+                freinage: "Disque/Disque",
             }
         },
     ],
@@ -2114,11 +2214,59 @@ const modelsData = {
         },
 
     ],
+    MOTOLUX: [
+        {
+            name: "City Coco Trois roues",
+            images: ["./img/models/motolux/city-coco/city-coco-3.webp","./img/models/motolux/city-coco/city-coco-1.jpg","./img/models/motolux/city-coco/city-coco-2.jpg","./img/models/motolux/city-coco/city-coco-4.webp"],
+            price: "",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "2000W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                alimentation: "Batterie Lithium 60V 20Ah",
+                freinage: "",
+            }
+        },
+        {
+            name: "VESPA ELECTRIQUE MOTOLUX ",
+            images: ["./img/models/motolux/vespa-15/motolux.png","./img/models/motolux/vespa-15/2.png"],
+            price: "3,950 TND",
+            specs: {
+                typeMoteur: "Electrique",
+                cylindree: "",
+                puissance: "1500W",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                alimentation: " 60v - 24Ah",
+                freinage: "Disques / Tambour",
+            }
+        },
+
+    ],
     PHANTOM: [
         {
             name: "Phantom Z1",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
             price: "6,100 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cm³,",
+                puissance: "10 ch",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km/h",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour CBS",
+            }
+        },
+        {
+            name: "CORAL",
+            images: ["./img/models/phantom/coral/coral1.png","./img/models/phantom/coral/coral2.png","./img/models/phantom/coral/phantom-coral-124-3.jpg","./img/models/phantom/coral/phantom-coral-124-4.jpg"],
+            price: "6,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³,",
