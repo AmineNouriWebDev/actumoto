@@ -81,7 +81,7 @@ const modelsData = {
         {
             name: "PEUGEOT PM 01 125",
             images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
-            price: "En arrivage",
+            price: "11,500 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
                 cylindree: "125 cc",
@@ -2020,16 +2020,16 @@ const modelsData = {
     ],
     KEREN: [
         {
-            name: "Keren Motors Group",
-            images: ["./img/models/keren/motor-group/2.png"],
-            price: "4,800 TND",
+            name: "Greek",
+            images: ["./img/models/keren/motor-group/3.png"],
+            price: "4,900 TND",
             specs: {
                 typeMoteur: "Electrique",
                 cylindree: "",
-                puissance: "",
+                puissance: "1800 w",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
+                vitesseMaximale: "70 k/h",
                 alimentation: "",
                 freinage: "",
             }
@@ -2051,7 +2051,7 @@ const modelsData = {
         },
         {
             name: "U-2",
-            images: ["./img/models/keren/u2/1.png"],
+            images: ["./img/models/keren/u2/1.png","./img/models/keren/u2/2.png",],
             price: "4,800 TND",
             specs: {
                 typeMoteur: "Electrique",
@@ -2059,7 +2059,7 @@ const modelsData = {
                 puissance: "1200 w",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "90 k/h",
+                vitesseMaximale: "70 k/h",
                 alimentation: "Lithium-ion 70v",
                 freinage: "Disque / Disque",
             }
@@ -2085,7 +2085,7 @@ const modelsData = {
     TAILG: [
         {
             name: "STAR",
-            images: ["./img/models/tailg/star/1.jpg","./img/models/tailg/star/2.jpg"],
+            images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
             price: "",
             specs: {
                 typeMoteur: "Electrique",
