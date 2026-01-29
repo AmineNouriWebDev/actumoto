@@ -59,6 +59,7 @@ const modelsData = {
                 coupleMaximal: "9,3 Nm",
                 refroidissement: "Air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque",
             }
@@ -74,6 +75,7 @@ const modelsData = {
                 coupleMaximal: "10,3 Nm",
                 refroidissement: "Air",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque / Disque",
             }
@@ -89,6 +91,7 @@ const modelsData = {
                 coupleMaximal: "11 Nm",
                 refroidissement: "Liquide,",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque ABS",
             }
@@ -104,6 +107,7 @@ const modelsData = {
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "115 km/h",
+                autonomie: "",
                 alimentation: "Injection Électronique",
                 freinage: "Disque /Disque ABS",
             }
@@ -120,6 +124,7 @@ const modelsData = {
                 coupleMaximal: "38,1 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "137 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Double disque / Disque AR ABS",
             }
@@ -135,6 +140,7 @@ const modelsData = {
                 coupleMaximal: "38,1 Nm",
                 refroidissement: "Liquide,",
                 vitesseMaximale: "135 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique,",
                 freinage: "Double disque/ Disque ABS-CBS",
             }
@@ -152,6 +158,7 @@ const modelsData = {
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Tambour CBS",
             }
@@ -169,6 +176,7 @@ const modelsData = {
                 coupleMaximal: "10,6 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Tambour",
             }
@@ -184,6 +192,7 @@ const modelsData = {
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 Kmh",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque",
             }
@@ -199,6 +208,7 @@ const modelsData = {
                 coupleMaximal: "10,75 Nm",
                 refroidissement: "Air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque AV ABS / Tambour AR",
             }
@@ -216,6 +226,7 @@ const modelsData = {
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "99 Km/h",
+                autonomie: "",
                 alimentation: "injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -232,6 +243,7 @@ const modelsData = {
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -248,6 +260,7 @@ const modelsData = {
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque AV / Disque AR CBS",
             }
@@ -268,6 +281,7 @@ const modelsData = {
                 coupleMaximal: "44 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "160 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -283,6 +297,7 @@ const modelsData = {
                 coupleMaximal: "87 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "200 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -298,6 +313,7 @@ const modelsData = {
                 coupleMaximal: "75 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "200 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -313,6 +329,7 @@ const modelsData = {
                 coupleMaximal: "60 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "190 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -328,6 +345,7 @@ const modelsData = {
                 coupleMaximal: "68 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "190 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -343,6 +361,7 @@ const modelsData = {
                 coupleMaximal: "42 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "160 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -358,6 +377,7 @@ const modelsData = {
                 coupleMaximal: "42 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "160 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -373,6 +393,7 @@ const modelsData = {
                 coupleMaximal: "11 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -388,6 +409,7 @@ const modelsData = {
                 coupleMaximal: "81 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "220 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -403,6 +425,7 @@ const modelsData = {
                 coupleMaximal: "25 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "139 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -418,6 +441,7 @@ const modelsData = {
                 coupleMaximal: "70 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "230 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Double Disque/Disque ABS",
             }
@@ -433,6 +457,7 @@ const modelsData = {
                 coupleMaximal: "39 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "180 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -448,6 +473,7 @@ const modelsData = {
                 coupleMaximal: "14,2 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque ABS",
             }
@@ -463,6 +489,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "",
                 vitesseMaximale: "46 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -480,6 +507,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "30 km/h",
+                autonomie: "",
                 alimentation: "Batterie 48V 12Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -495,6 +523,7 @@ const modelsData = {
                 coupleMaximal: "4,2 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -510,6 +539,7 @@ const modelsData = {
                 coupleMaximal: "8,3 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "85 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -525,6 +555,7 @@ const modelsData = {
                 coupleMaximal: "4 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -540,6 +571,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -555,6 +587,7 @@ const modelsData = {
                 coupleMaximal: "9,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque hydr/ Tambour",
             }
@@ -571,6 +604,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -587,6 +621,7 @@ const modelsData = {
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -602,6 +637,7 @@ const modelsData = {
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque CBS",
             }
@@ -617,6 +653,7 @@ const modelsData = {
                 coupleMaximal: "4,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -634,6 +671,7 @@ const modelsData = {
                 coupleMaximal: "10,3 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "99 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque CBS",
             }
@@ -649,6 +687,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque",
             }
@@ -664,6 +703,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque CBS",
             }
@@ -679,6 +719,7 @@ const modelsData = {
                 coupleMaximal: "10,7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -694,6 +735,7 @@ const modelsData = {
                 coupleMaximal: "12,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "110 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
             }
@@ -709,6 +751,7 @@ const modelsData = {
                 coupleMaximal: "9,2 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Tambour CBS",
             }
@@ -724,6 +767,7 @@ const modelsData = {
                 coupleMaximal: "8,6 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Tambour",
             }
@@ -739,6 +783,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "Liquide",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Disque",
             }
@@ -754,6 +799,7 @@ const modelsData = {
                 coupleMaximal: "14,5 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
             }
@@ -769,6 +815,7 @@ const modelsData = {
                 coupleMaximal: "11 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
             }
@@ -784,6 +831,7 @@ const modelsData = {
                 coupleMaximal: "8,3 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
             }
@@ -802,6 +850,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -817,6 +866,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Tambour",
             }
@@ -832,6 +882,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Tambour",
             }
@@ -847,6 +898,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Tambour",
             }
@@ -865,6 +917,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "75 km/h",
+                autonomie: "",
                 alimentation: "Batterie Graphène Acide 72V 35Ah",
                 freinage: "Disques AV/AR hydrauliques",
             }
@@ -880,6 +933,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
                 freinage: "Disques hydrauliques AV/AR",
             }
@@ -895,6 +949,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
                 freinage: "Disques hydrauliques AV/AR",
             }
@@ -910,6 +965,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
                 freinage: "Disques hydrauliques AV/AR",
             }
@@ -925,6 +981,7 @@ const modelsData = {
                 coupleMaximal: "8 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "80 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disques / Disque",
             }
@@ -940,6 +997,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -955,6 +1013,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -972,6 +1031,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "85 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -987,6 +1047,7 @@ const modelsData = {
                 coupleMaximal: "11,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "125 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque AV/AR CBS",
             }
@@ -1002,6 +1063,7 @@ const modelsData = {
                 coupleMaximal: "22 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "129 km/h",
+                autonomie: "",
                 alimentation: "Injection Bosch EFI",
                 freinage: "Disque AV/AR ABS",
             }
@@ -1017,6 +1079,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "120 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
             }
@@ -1034,6 +1097,7 @@ const modelsData = {
                 coupleMaximal: "11,2 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "95 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque",
             }
@@ -1049,6 +1113,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 Km/h",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque",
             }
@@ -1066,6 +1131,7 @@ const modelsData = {
                 coupleMaximal: "6.5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "110 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1081,6 +1147,7 @@ const modelsData = {
                 coupleMaximal: "6.5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Double disque AV/AR",
             }
@@ -1096,7 +1163,24 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "105 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
+                freinage: "Disque / Disque",
+            }
+        },
+         {
+            name: "LONGJIA EASY MAX ",
+            images: ["./img/models/bbm/longjia/longjia-easy-max.png"],
+            price: "6,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: " 7.7 kW (10 cv)",
+                coupleMaximal: "8000 tr/min",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Injection électronique",
                 freinage: "Disque / Disque",
             }
         },
@@ -1113,6 +1197,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1128,6 +1213,7 @@ const modelsData = {
                 coupleMaximal: "9 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
             }
@@ -1143,6 +1229,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1158,6 +1245,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1173,6 +1261,7 @@ const modelsData = {
                 coupleMaximal: "8,5 Nm",
                 refroidissement: "",
                 vitesseMaximale: "105 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1188,6 +1277,7 @@ const modelsData = {
                 coupleMaximal: "8,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "50 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Tambour / Tambour",
             }
@@ -1205,6 +1295,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1220,6 +1311,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Double Disque/Disque",
             }
@@ -1235,6 +1327,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km",
+                autonomie: "",
                 alimentation: "2 X Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1250,6 +1343,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km",
+                autonomie: "",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1265,6 +1359,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "30 km",
+                autonomie: "",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Tambour",
             }
@@ -1280,6 +1375,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "55 km",
+                autonomie: "",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1297,6 +1393,7 @@ const modelsData = {
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "injection",
                 freinage: "Disque/Tambour ABS",
             }
@@ -1312,6 +1409,7 @@ const modelsData = {
                 coupleMaximal: "10,6 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque",
             }
@@ -1329,6 +1427,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "140 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
             }
@@ -1344,6 +1443,7 @@ const modelsData = {
                 coupleMaximal: "4,0 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "120 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1359,6 +1459,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
             }
@@ -1374,6 +1475,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "85 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque",
             }
@@ -1389,6 +1491,7 @@ const modelsData = {
                 coupleMaximal: "4 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "110 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque AV / Ferrodo AR",
             }
@@ -1404,6 +1507,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "110 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
             }
@@ -1421,6 +1525,7 @@ const modelsData = {
                 coupleMaximal: "40 Nm ",
                 refroidissement: "Liquide",
                 vitesseMaximale: "140 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disques J.Juan",
             }
@@ -1436,6 +1541,7 @@ const modelsData = {
                 coupleMaximal: "76 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "200 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Double disque J.Juan",
             }
@@ -1453,6 +1559,7 @@ const modelsData = {
                 coupleMaximal: "140 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Batterie Graphène 72V 38Ah",
                 freinage: "Disque/Disque",
             }
@@ -1468,6 +1575,7 @@ const modelsData = {
                 coupleMaximal: "150 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "70 km/h",
+                autonomie: "",
                 alimentation: "Batterie Graphène TTFAR 72V 38Ah",
                 freinage: "Disque/Disque",
             }
@@ -1485,6 +1593,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
             },
@@ -1501,6 +1610,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque AV et AR + frein à main",
             },
@@ -1517,6 +1627,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
             },
@@ -1535,6 +1646,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Disque",
             }
@@ -1550,6 +1662,7 @@ const modelsData = {
                 coupleMaximal: "6,8 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1565,6 +1678,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "105 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Tambour CBS",
             }
@@ -1582,6 +1696,7 @@ const modelsData = {
                 coupleMaximal: "8,9 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1597,6 +1712,7 @@ const modelsData = {
                 coupleMaximal: "12 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "110 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
             }
@@ -1614,6 +1730,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "40 km/h",
+                autonomie: "",
                 alimentation: "Batterie plomb 60V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1629,6 +1746,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "40 km/h",
+                autonomie: "",
                 alimentation: "Batterie plomb 60V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1647,6 +1765,7 @@ const modelsData = {
                 coupleMaximal: "4 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "75 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1665,6 +1784,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1680,6 +1800,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1695,6 +1816,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1712,6 +1834,7 @@ const modelsData = {
                 coupleMaximal: "9,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "85 Kmh",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1727,6 +1850,7 @@ const modelsData = {
                 coupleMaximal: "6,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "110 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1744,6 +1868,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
             }
@@ -1759,6 +1884,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque / Tambour",
             }
@@ -1776,6 +1902,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1791,6 +1918,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1808,6 +1936,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Disque",
             }
@@ -1823,6 +1952,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Double Disque/Double Disque",
             }
@@ -1838,6 +1968,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disque/Disque",
             }
@@ -1855,6 +1986,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -1870,6 +2002,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "59 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -1885,6 +2018,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -1900,6 +2034,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -1917,6 +2052,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "100 Km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
             }
@@ -1934,6 +2070,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 km/h",
+                autonomie: "",
                 alimentation: "Batterie plomb 48V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1949,6 +2086,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 km/h",
+                autonomie: "",
                 alimentation: "Lithium 20 Ah",
                 freinage: "Disque / Disque",
             }
@@ -1964,6 +2102,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 km/h",
+                autonomie: "",
                 alimentation: "Lithium 20 Ah",
                 freinage: "Disque / Disque",
             }
@@ -1979,6 +2118,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "35 km/h",
+                autonomie: "",
                 alimentation: "Lithium 25 Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1996,6 +2136,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 Km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -2013,6 +2154,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -2030,6 +2172,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 k/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "",
             }
@@ -2045,6 +2188,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "Lithium-ion BMS",
                 freinage: "",
             }
@@ -2060,6 +2204,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 k/h",
+                autonomie: "",
                 alimentation: "Lithium-ion 70v",
                 freinage: "Disque / Disque",
             }
@@ -2077,6 +2222,7 @@ const modelsData = {
                 coupleMaximal: "9,4 Nm",
                 refroidissement: "Air",
                 vitesseMaximale: "",
+                autonomie: "",
                 alimentation: "Injection électronique Bosch",
                 freinage: "Disque/Disque ABS",
             }
@@ -2094,6 +2240,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
                 alimentation: "Lithium 48v",
                 freinage: "Disque/Disque",
             }
@@ -2111,6 +2258,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "35 km",
+                autonomie: "",
                 alimentation: "48V 20Ah",
                 freinage: "",
             }
@@ -2126,6 +2274,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km",
+                autonomie: "",
                 alimentation: "60V Batterie en Acid",
                 freinage: "",
             }
@@ -2143,6 +2292,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "90 km",
+                autonomie: "",
                 alimentation: "Elèctrique CDI",
                 freinage: "Disques / Disques",
             }
@@ -2161,6 +2311,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km",
+                autonomie: "",
                 alimentation: "Lithium-Ion 60V 26Ah",
                 freinage: "Disques Hydraulique",
             }
@@ -2176,6 +2327,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "75 km/h",
+                autonomie: "",
                 alimentation: "Lithium-Ion 72V 40Ah",
                 freinage: "Disques Hydraulique",
             }
@@ -2191,6 +2343,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: "Lithium-Ion 60V 23.4 Ah",
                 freinage: "Disques Hydraulique",
             }
@@ -2208,6 +2361,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: "",
                 freinage: "Disques / Disques",
             }
@@ -2226,6 +2380,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: "Batterie Lithium 60V 20Ah",
                 freinage: "",
             }
@@ -2241,6 +2396,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
+                autonomie: "",
                 alimentation: " 60v - 24Ah",
                 freinage: "Disques / Tambour",
             }
@@ -2259,6 +2415,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
             }
@@ -2274,6 +2431,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "100 km/h",
+                autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
             }
@@ -2292,6 +2450,7 @@ const modelsData = {
                 coupleMaximal: "33 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique EFI Bosch",
                 freinage: "4 disques hydrauliques AV/AR",
             }
@@ -2307,6 +2466,7 @@ const modelsData = {
                 coupleMaximal: "31 Nm",
                 refroidissement: "Liquide",
                 vitesseMaximale: "90 km/h",
+                autonomie: "",
                 alimentation: "Injection électronique EFI Bosch",
                 freinage: "Double disque AV / Disque AR",
             }
@@ -2330,6 +2490,7 @@ const occasionModelsData = [
             coupleMaximal: "123 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "300 km/h",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: "Double disque AV / Disque AR Brembo Hypure"
         }
@@ -2347,6 +2508,7 @@ const occasionModelsData = [
             coupleMaximal: "99 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "240 km/h",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: "Double disque AV / Disque AR ABS"
         }
@@ -2364,6 +2526,7 @@ const occasionModelsData = [
             coupleMaximal: "69 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "160 km/h",
+                autonomie: "",
             alimentation: "Injection PGM-FI électronique",
             freinage: "Double disqueAV / Disque AR ABS"
         }
@@ -2381,6 +2544,7 @@ const occasionModelsData = [
             coupleMaximal: "113 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "314 km/h",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: "Double disque M AV, disque AR"
         }
@@ -2398,6 +2562,7 @@ const occasionModelsData = [
             coupleMaximal: "149 Nm",
             refroidissement: "Air/liquide,",
             vitesseMaximale: "",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: "Double disque AV, disque AR avec ABS"
         }
@@ -2415,6 +2580,7 @@ const occasionModelsData = [
             coupleMaximal: "55,7 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "Environ 180 km/h",
+                autonomie: "",
             alimentation: "Injection Électronique",
             freinage: "Disques hydrauliques (ABS)"
         }
@@ -2432,6 +2598,7 @@ const occasionModelsData = [
             coupleMaximal: "",
             refroidissement: "Air",
             vitesseMaximale: "Environ 75 km/h",
+                autonomie: "",
             alimentation: "",
             freinage: ""
         }
@@ -2449,6 +2616,7 @@ const occasionModelsData = [
             coupleMaximal: "145 Nm,",
             refroidissement: "Liquide",
             vitesseMaximale: "",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: ""
         }
@@ -2466,6 +2634,7 @@ const occasionModelsData = [
             coupleMaximal: "84,3 Nm",
             refroidissement: "Air",
             vitesseMaximale: "220 km/h,",
+                autonomie: "",
             alimentation: "6 carburateurs Keihin 28 mm",
             freinage: ""
         }
@@ -2483,6 +2652,7 @@ const occasionModelsData = [
             coupleMaximal: "46 Nm",
             refroidissement: "Liquide",
             vitesseMaximale: "154 km/h",
+                autonomie: "",
             alimentation: "Carburateur Ø 40 mm,",
             freinage: "Disque avant/arrière"
         }
@@ -2500,6 +2670,7 @@ const occasionModelsData = [
             coupleMaximal: "68 Nm,",
             refroidissement: "Liquide",
             vitesseMaximale: "",
+                autonomie: "",
             alimentation: "Injection électronique",
             freinage: "Double disque 282 mm AV, disque 245 mm AR"
         }
@@ -2518,6 +2689,7 @@ const occasionModelsData = [
             coupleMaximal: "0,40 mkg",
             refroidissement: "Air",
             vitesseMaximale: "",
+                autonomie: "",
             alimentation: "Carburateur Ø 12 mm,",
             freinage: "Tambour Ø 80 mm AV/AR"
         }
