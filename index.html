@@ -149,6 +149,10 @@
         align-items: center;
         justify-content: center;
         border-radius: 12px;
+        box-sizing: border-box;
+        /* Desktop flexible: se comporte comme minmax(200px, 1fr) */
+        flex: 1 1 200px;
+        min-width: 200px;
       }
 
       .brand-logo-card:hover {
@@ -170,12 +174,15 @@
         transform: scale(1.05);
       }
 
+      /* Flex-based brands grid: centre toujours la dernière rangée */
       .brands-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* centre la ligne incomplète */
         align-items: center;
+        gap: 1.5rem; /* gap desktop */
+        width: 100%;
+        box-sizing: border-box;
       }
 
       /* =========================================== */
@@ -405,21 +412,26 @@
           margin-right: auto;
         }
 
+        /* 3 items per row on mobile, accounting for two gaps of 0.5rem => 1rem total */
         .brands-grid {
-          grid-template-columns: repeat(3, 1fr);
           gap: 0.5rem;
-          padding: 0 0.5rem;
+          padding: 0; /* padding handled by container */
+          justify-content: center;
         }
 
         .brand-logo-card {
+          /* force exactly 3 items per row */
+          flex: 0 0 calc((100% - 1rem) / 3);
+          max-width: calc((100% - 1rem) / 3);
+          min-width: 0; /* allow shrinking on small screens */
           padding: 0.8rem;
           height: 100px;
-          margin: 0.1rem;
+          margin: 0;
         }
 
         .brand-logo-img {
-          width: 100px;
-          height: 50px;
+          width: 100px !important;
+          height: 50px !important;
           max-width: 100%;
         }
       }
@@ -431,18 +443,22 @@
         }
 
         .brands-grid {
-          grid-template-columns: repeat(3, 1fr);
           gap: 0.3rem;
+          justify-content: center;
         }
 
         .brand-logo-card {
+          /* 3 items per row with two gaps of 0.3rem => 0.6rem total */
+          flex: 0 0 calc((100% - 0.6rem) / 3);
+          max-width: calc((100% - 0.6rem) / 3);
+          min-width: 0; /* allow shrinking on very small screens */
           padding: 0.5rem;
           height: 90px;
         }
 
         .brand-logo-img {
-          width: 90px;
-          height: 45px;
+          width: 90px !important;
+          height: 45px !important;
         }
 
         .hero-image {
@@ -886,7 +902,7 @@
     </footer>
 
     <!-- Charger les données et le script -->
-    <script src="data.js?v=20250126"></script>
+    <script src="data.js?v=20250127"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
