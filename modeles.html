@@ -827,7 +827,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=202501293"></script>
+    <script src="data.js?v=202501294"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         initPage();
@@ -954,7 +954,6 @@
                         }</div>`
                       : ""
                   }
-                  ${isElectric ? '<div class="electric-badge"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
                 </div>
               `;
             }
@@ -989,7 +988,10 @@
                 </div>
                 ${thumbnailsHtml}
                 <div class="card-content">
-                  <h2 class="futurist-font text-xl mb-3">${model.name}</h2>
+                  <div class="flex items-center gap-2 mb-3">
+                    <h2 class="futurist-font text-xl">${model.name}</h2>
+                    ${isElectric ? '<div class="electric-badge"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
+                  </div>
                   
                   <div class="card-footer">
                     <div class="flex justify-between items-center gap-2">
