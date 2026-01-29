@@ -483,7 +483,7 @@ const modelsData = {
             images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp","./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg","./img/models/cfmoto/CF-MOTO-CX-5E/3.webp","./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
             price: "10,591 TND",
             specs: {
-                typeMoteur: "Electrique, 48 V",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1,5 Kw",
                 coupleMaximal: "7 Nm",
@@ -497,11 +497,11 @@ const modelsData = {
     ],
     ZIMOTA_MOTOR: [
          {
-            name: "Eway RIDE Electrique - 400 Watt ",
+            name: "Eway RIDE Électrique - 400 Watt ",
             images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
             price: "1,999 TND",
             specs: {
-                typeMoteur: "Électrique 400 W",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "400 W",
                 coupleMaximal: "",
@@ -907,11 +907,11 @@ const modelsData = {
     SLC: [
         
         {
-            name: "Evasion - Electrique",
+            name: "Evasion - Électrique",
             images: ["./img/models/slc/slc-evasion/1.webp","./img/models/slc/slc-evasion/2.png"],
             price: "6,600 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2000 W",
                 coupleMaximal: "",
@@ -923,11 +923,11 @@ const modelsData = {
             }
         },
         {
-            name: "bloom - Electrique",
+            name: "bloom - Électrique",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
             price: "En arrivage",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2000 W",
                 coupleMaximal: "",
@@ -939,11 +939,11 @@ const modelsData = {
             }
         },
         {
-            name: "Pride - Electrique",
+            name: "Pride - Électrique",
             images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
             price: "4,500 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2000 W",
                 coupleMaximal: "",
@@ -955,11 +955,11 @@ const modelsData = {
             }
         },
         {
-            name: "Neo - Electrique",
+            name: "Neo - Électrique",
             images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
             price: "4,500 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2000 W",
                 coupleMaximal: "",
@@ -1289,7 +1289,7 @@ const modelsData = {
             images: ["./img/models/novago/NOVAGO-TRICITY/2.png","./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg"],
             price: "6,199 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2400w",
                 coupleMaximal: "",
@@ -1301,11 +1301,11 @@ const modelsData = {
             }
         },
         {
-            name: " NOVAGO PIKA - Electrique",
-            images: ["./img/models/novago/novago-pika-blanc-2/2.jpg","./img/models/novago/novago-pika-blanc-2/scooter-electrique-novago-pika-blanc-2.jpg"],
+            name: " NOVAGO PIKA - Électrique",
+            images: ["./img/models/novago/novago-pika-blanc-2/2.jpg","./img/models/novago/novago-pika-blanc-2/scooter-Électrique-novago-pika-blanc-2.jpg"],
             price: "3,299 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "800w",
                 coupleMaximal: "",
@@ -1317,11 +1317,11 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TIGER 140 - Electrique",
+            name: "NOVAGO TIGER 140 - Électrique",
             images: ["./img/models/novago/NOVAGO-TIGER-140/2.jpg", "./img/models/novago/NOVAGO-TIGER-140/1.jpg", "./img/models/novago/NOVAGO-TIGER-140/3.jpg"],
             price: "6,600 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1500W",
                 coupleMaximal: "",
@@ -1333,11 +1333,11 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TIGER 70 - Electrique",
+            name: "NOVAGO TIGER 70 - Électrique",
             images: ["./img/models/novago/NOVAGO-TIGER-70/2.jpg", "./img/models/novago/NOVAGO-TIGER-70/3.jpg", "./img/models/novago/NOVAGO-TIGER-70/1.jpg"],
             price: "4,900 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1500W",
                 coupleMaximal: "",
@@ -1349,11 +1349,11 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TRICITY - Electrique",
+            name: "NOVAGO TRICITY - Électrique",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg","./img/models/novago/NOVAGO-TRICITY/4.jpg"],
             price: "5,300 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "800 W",
                 coupleMaximal: "",
@@ -1365,11 +1365,11 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO LUNA 70 - Electrique",
+            name: "NOVAGO LUNA 70 - Électrique",
             images: ["./img/models/novago/NOVAGO-LUNA-70/2.jpg", "./img/models/novago/NOVAGO-LUNA-70/3.jpg", "./img/models/novago/NOVAGO-LUNA-70/1.jpg","./img/models/novago/NOVAGO-LUNA-70/4.jpg"],
             price: "4,200 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1500W",
                 coupleMaximal: "",
@@ -1549,8 +1549,8 @@ const modelsData = {
     ],
     YADEA: [
         {
-            name: "YADEA  E8S -3000W - ELECTRIQUE ",
-            images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
+            name: "YADEA  E8S -3000W - Électrique ",
+            images: ["./img/models/yadea/scooter-Électrique-yadea-e8s-3000w-bleu/scooter-Électrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-Électrique-yadea-e8s-3000w-bleu/scooter-Électrique-yadea-e8s-3000w-blanc.jpg"],
             price: "5,999 TND",
             specs: {
                 typeMoteur: "Moteur électrique brushless TTFAR",
@@ -1565,7 +1565,7 @@ const modelsData = {
             }
         },
         {
-            name: "YADEA EPOC 2000w - ELECTRIQUE ",
+            name: "YADEA EPOC 2000w - Électrique ",
             images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg","./img/models/yadea/yadea-epoc-2000w/2.jpg","./img/models/yadea/yadea-epoc-2000w/3.jpg","./img/models/yadea/yadea-epoc-2000w/4.jpg"],
             price: "6,499 TND",
             specs: {
@@ -1736,7 +1736,7 @@ const modelsData = {
             }
         },
         {
-            name: "WOLF 1000 Watts - Electrique",
+            name: "WOLF 1000 Watts - Électrique",
             images: ["./img/models/wolf/wolf-vero-noir/wolf2.png","./img/models/wolf/wolf-vero-noir/wolf1.png","./img/models/wolf/wolf-vero-noir/3.png"],
             price: "3,799 TND",
             specs: {
@@ -1778,7 +1778,7 @@ const modelsData = {
             images: ["./img/models/kayco/kayco/kayco.jpg","./img/models/kayco/kayco/2.webp","./img/models/kayco/kayco/3.jpg","./img/models/kayco/kayco/4webp.webp"],
             price: "4,500 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "4 Kw",
                 coupleMaximal: "",
@@ -1794,7 +1794,7 @@ const modelsData = {
             images: ["./img/models/kayco/kayco-noir/kayco-noir.jpg","./img/models/kayco/kayco-noir/2.webp","./img/models/kayco/kayco-noir/3.webp","./img/models/kayco/kayco-noir/4.webp"],
             price: "5,900 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "4 Kw",
                 coupleMaximal: "",
@@ -1810,7 +1810,7 @@ const modelsData = {
             images: ["./img/models/kayco/kayco-rouge/kayco-rouge.jpg","./img/models/kayco/kayco-rouge/2.webp","./img/models/kayco/kayco-rouge/3.webp","./img/models/kayco/kayco-rouge/4.webp"],
             price: "7,200 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "4 Kw",
                 coupleMaximal: "",
@@ -1926,11 +1926,11 @@ const modelsData = {
     ],
     LVNENG: [
         {
-            name: "LVNENG LX05 - ELECTRIQUE",
+            name: "LVNENG LX05 - Électrique",
             images: ["./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg","./img/models/lvneng/lvneng-lx05-49cc-vert/2.png","./img/models/lvneng/lvneng-lx05-49cc-vert/3.png","./img/models/lvneng/lvneng-lx05-49cc-vert/4.png"],
             price: "5,690 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2 Kw",
                 coupleMaximal: "",
@@ -1942,11 +1942,11 @@ const modelsData = {
             }
         },
         {
-            name: "LVNENG NCS GENUIS - ELECTRIQUE",
+            name: "LVNENG NCS GENUIS - Électrique",
             images: ["./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg","./img/models/lvneng/lvneng-ncs-genius-beige-marron/2.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/3.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/4.png"],
             price: "7,300 TND",
             specs: {
-                typeMoteur: "Electrique 60V",
+                typeMoteur: "Électrique 60V",
                 cylindree: "",
                 puissance: "2 Kw",
                 coupleMaximal: "",
@@ -1958,11 +1958,11 @@ const modelsData = {
             }
         },
         {
-            name: "LVNENG LX08 - ELECTRIQUE",
+            name: "LVNENG LX08 - Électrique",
             images: ["./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg", "./img/models/lvneng/lvneng-lx08/3.jpg"],
             price: "6,290 TND",
             specs: {
-                typeMoteur: "Electrique 60V",
+                typeMoteur: "Électrique 60V",
                 cylindree: "49cc ",
                 puissance: "2030 Watts",
                 coupleMaximal: "",
@@ -1976,11 +1976,11 @@ const modelsData = {
     ],
     E_RIDER: [
         {
-            name: "E-RIDER E-CLASSIC 1200 Watts - Electrique",
+            name: "E-RIDER E-CLASSIC 1200 Watts - Électrique",
             images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png","./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
             price: "5,199 TND",
             specs: {
-                typeMoteur: "Electrique, 72 V",
+                typeMoteur: "Électrique, 72 V",
                 cylindree: "1,2 Kw",
                 puissance: "",
                 coupleMaximal: "",
@@ -1992,11 +1992,11 @@ const modelsData = {
             }
         },
         {
-            name: "E-RIDER E-TECH 1200 Watts - Electrique",
+            name: "E-RIDER E-TECH 1200 Watts - Électrique",
             images: ["./img/models/erider/e-tech-1200-watts/etech.png","./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
             price: "4,179 TND",
             specs: {
-                typeMoteur: "Electrique, 72 V",
+                typeMoteur: "Électrique, 72 V",
                 cylindree: "",
                 puissance: "1,2 Kw",
                 coupleMaximal: "",
@@ -2008,11 +2008,11 @@ const modelsData = {
             }
         },
         {
-            name: "E-Rider E-Power 1200W -Electrique",
-            images: ["./img/models/erider/e-power-1200w/eride2.png","./img/models/erider/e-power-1200w/scooter-electrique-e-rider-e-power-1200w-rouge.jpg"],
+            name: "E-Rider E-Power 1200W -Électrique",
+            images: ["./img/models/erider/e-power-1200w/eride2.png","./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
             price: "4,849 TND",
             specs: {
-                typeMoteur: "Electrique, 72 V",
+                typeMoteur: "Électrique, 72 V",
                 cylindree: "",
                 puissance: "1,2 Kw",
                 coupleMaximal: "",
@@ -2024,11 +2024,11 @@ const modelsData = {
             }
         },
         {
-            name: "E-Rider E-eco 1000W -Electrique",
-            images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png","./img/models/erider/e-eco-1000w-blanc/scooter-electrique-e-rider-e-eco-1000w-blanc.jpg"],
+            name: "E-Rider E-eco 1000W -Électrique",
+            images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png","./img/models/erider/e-eco-1000w-blanc/scooter-Électrique-e-rider-e-eco-1000w-blanc.jpg"],
             price: "3,679 TND",
             specs: {
-                typeMoteur: "Electrique, 60 V",
+                typeMoteur: "Électrique, 60 V",
                 cylindree: "",
                 puissance: "1 Kw",
                 coupleMaximal: "",
@@ -2060,8 +2060,8 @@ const modelsData = {
     ],
     WATTGO: [
         {
-            name: "Wattgo WG009 500W -Electrique",
-            images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
+            name: "Wattgo WG009 500W -Électrique",
+            images: ["./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
             price: "2,639 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2076,7 +2076,7 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wg017 1000W -Electrique",
+            name: "Wattgo Wg017 1000W -Électrique",
             images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg","./img/models/wattgo/Wattgo-Wg017/2.jpg"],
             price: "3,575 TND",
             specs: {
@@ -2092,7 +2092,7 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wg016 1000W -Electrique",
+            name: "Wattgo Wg016 1000W -Électrique",
             images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg","./img/models/wattgo/Wattgo-Wg016/2.jpg","./img/models/wattgo/Wattgo-Wg016/3.jpg"],
             price: "3,299 TND",
             specs: {
@@ -2108,7 +2108,7 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wgoo2 350W -Electrique",
+            name: "Wattgo Wgoo2 350W -Électrique",
             images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
             price: "2,098 TND",
             specs: {
@@ -2126,11 +2126,11 @@ const modelsData = {
     ],
     E_FLASH: [
         {
-            name: "E-FLASH 2000 Watts - Electrique",
-            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
+            name: "E-FLASH 2000 Watts - Électrique",
+            images: ["./img/models/eflash/2000-watts-blanc/scooter-Électrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
             price: "8,299 TND",
             specs: {
-                typeMoteur: "Electrique, 72 V",
+                typeMoteur: "Électrique, 72 V",
                 cylindree: "",
                 puissance: "2000 Watts",
                 coupleMaximal: "",
@@ -2148,7 +2148,7 @@ const modelsData = {
             images: ["./img/models/vigo/vigo/vigo1.png","./img/models/vigo/vigo/vigo2.png","./img/models/vigo/vigo/vigo3.png","./img/models/vigo/vigo/vigo4.jpg"],
             price: "En arrivage",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "",
                 coupleMaximal: "",
@@ -2166,7 +2166,7 @@ const modelsData = {
             images: ["./img/models/keren/motor-group/3.png"],
             price: "4,900 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1800 w",
                 coupleMaximal: "",
@@ -2182,7 +2182,7 @@ const modelsData = {
             images: ["./img/models/keren/ube/1.jpg"],
             price: "4,900 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1200 w",
                 coupleMaximal: "",
@@ -2198,7 +2198,7 @@ const modelsData = {
             images: ["./img/models/keren/u2/1.png","./img/models/keren/u2/2.png",],
             price: "4,800 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1200 w",
                 coupleMaximal: "",
@@ -2234,7 +2234,7 @@ const modelsData = {
             images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
             price: "",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "1200 w",
                 puissance: "",
                 coupleMaximal: "",
@@ -2248,11 +2248,11 @@ const modelsData = {
     ],
     ECORIDE: [
         {
-            name: "ECORIDE ZEN 600 Watts -Electrique",
+            name: "ECORIDE ZEN 600 Watts -Électrique",
             images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg","./img/models/ecoride/ZEN-600-Watts/2.jpg","./img/models/ecoride/ZEN-600-Watts/3.jpg","./img/models/ecoride/ZEN-600-Watts/4.jpg"],
             price: "1,999 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "600 Watts",
                 coupleMaximal: "",
@@ -2264,11 +2264,11 @@ const modelsData = {
             }
         },
         {
-            name: "ECORIDE ALPHA-ROUGE 1000 Watts -Electrique ",
+            name: "ECORIDE ALPHA-ROUGE 1000 Watts -Électrique ",
             images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg","./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
             price: "2,899 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1000 Watts",
                 coupleMaximal: "",
@@ -2301,11 +2301,11 @@ const modelsData = {
     ],
     CITYBIKE: [
         {
-            name: "City Bike 2000W - Electrique",
+            name: "City Bike 2000W - Électrique",
             images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
             price: "5,299 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "50 cc",
                 puissance: "2000 Watts",
                 coupleMaximal: "",
@@ -2317,11 +2317,11 @@ const modelsData = {
             }
         },
         {
-            name: "City Bike 4000W - Electrique ",
+            name: "City Bike 4000W - Électrique ",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
             price: "7,499 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "125 cc",
                 puissance: "4000 Watts",
                 coupleMaximal: "",
@@ -2333,11 +2333,11 @@ const modelsData = {
             }
         },
         {
-            name: "City Bike 3000W - Electrique",
+            name: "City Bike 3000W - Électrique",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
             price: "6,899 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "50 cc",
                 puissance: "3000 Watts",
                 coupleMaximal: "",
@@ -2355,7 +2355,7 @@ const modelsData = {
             images: ["./img/models/aima/aima-q5/aima-q5-1.jpg","./img/models/aima/aima-q5/aima-q5-2.jpg","./img/models/aima/aima-q5/aima-q5-3.jpg","./img/models/aima/aima-q5/aima-q5-4.jpg"],
             price: "4,200 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "800 watts",
                 coupleMaximal: "",
@@ -2374,7 +2374,7 @@ const modelsData = {
             images: ["./img/models/motolux/city-coco/city-coco-3.webp","./img/models/motolux/city-coco/city-coco-1.jpg","./img/models/motolux/city-coco/city-coco-2.jpg","./img/models/motolux/city-coco/city-coco-4.webp"],
             price: "",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "2000W",
                 coupleMaximal: "",
@@ -2386,11 +2386,11 @@ const modelsData = {
             }
         },
         {
-            name: "VESPA ELECTRIQUE MOTOLUX ",
+            name: "VESPA Électrique MOTOLUX ",
             images: ["./img/models/motolux/vespa-15/motolux.png","./img/models/motolux/vespa-15/2.png"],
             price: "3,950 TND",
             specs: {
-                typeMoteur: "Electrique",
+                typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1500W",
                 coupleMaximal: "",
