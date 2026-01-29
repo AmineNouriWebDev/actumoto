@@ -43,6 +43,7 @@ const brands = [
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
+    
 ];
 
 const modelsData = {
