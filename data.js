@@ -2,20 +2,25 @@
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png" },
     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png" },
     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png" },
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png" },
+    
     { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png" },
     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png" },
-    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png" },
+     { name: "SLC", logo: "./img/logos-actumoto/slc.png" },
+    
     { name: "SYM", logo: "./img/logos-actumoto/sym.png" },
+    { name: "VOGE", logo: "./img/logos-actumoto/voge.png" },
     { name: "FORZA_MOTOR_SPORT", logo: "./img/logos-actumoto/forza.png" },
-    { name: "SLC", logo: "./img/logos-actumoto/slc.png" },
+   { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png" },
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png" },
     { name: "LM", logo: "./img/logos-actumoto/lm.png" },
-    { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png" }, 
+   
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
-    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },  
+    
+    { name: "MS", logo: "./img/logos-actumoto/ms.png" },
+      { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
     { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
     { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png" },
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png" },
@@ -23,9 +28,9 @@ const brands = [
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png" },
-    { name: "MS", logo: "./img/logos-actumoto/ms.png" },
-    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
-    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
+    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
@@ -34,15 +39,18 @@ const brands = [
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
-    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
+    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },
+    
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
-    { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
+    
+    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },
-    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },
+    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },
-    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
+    
+    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
     
 ];
 
@@ -2472,6 +2480,26 @@ const modelsData = {
                 freinage: "Double disque AV / Disque AR",
             }
         },
+
+    ],
+    VOGE: [
+        {
+            name: "SR4 Max",
+            images: ["./img/models/voge/sr4max/SR4-Max-black-L.webp","./img/models/voge/sr4max/SR4-Max-black-F.webp","./img/models/voge/sr4max/SR4-Max-black-R.webp","./img/models/voge/sr4max/SR4-Max-black-Re.webp"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "349.8 cc",
+                puissance: "25 kW",
+                coupleMaximal: "35 N/m",
+                refroidissement: "Liquide",
+                vitesseMaximale: "127 km/h",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disques / Disques ABS",
+            }
+        },
+        
 
     ],
 };
