@@ -3,53 +3,47 @@ const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png" },
     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png" },
     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png" },
-    
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png" },   
     { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png" },
     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png" },
-     { name: "SLC", logo: "./img/logos-actumoto/slc.png" },
-    
+     { name: "SLC", logo: "./img/logos-actumoto/slc.png" },   
     { name: "SYM", logo: "./img/logos-actumoto/sym.png" },
     { name: "VOGE", logo: "./img/logos-actumoto/voge.png" },
     { name: "FORZA_MOTOR_SPORT", logo: "./img/logos-actumoto/forza.png" },
    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png" },
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png" },
+     { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },    
+    { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },   
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png" },
     { name: "LM", logo: "./img/logos-actumoto/lm.png" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png" }, 
-   
-    { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },
-    
-    { name: "MS", logo: "./img/logos-actumoto/ms.png" },
-      { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
+     
     { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
     { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png" },
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png" },
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png" },
+     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png" },
-    { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
+    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png" },
-    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
+    { name: "MS", logo: "./img/logos-actumoto/ms.png" }, 
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
-    { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
-    { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
-    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
+    { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
+    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },   
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
-    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
+     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
-    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },
-    
-    { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
-    
+    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },    
+    { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
+    { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
+    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
-    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
-    { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },
-    
+    { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },  
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
     
 ];
@@ -282,7 +276,7 @@ const modelsData = {
         {
             name: "CFMOTO 450MT",
             images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp","./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg","./img/models/cfmoto/CFMOTO-450MT/2.webp","./img/models/cfmoto/CFMOTO-450MT/3.webp"],
-            price: "58,131 TND",
+            price: "58,200 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4 temps",
                 cylindree: "450 cc",
@@ -298,7 +292,7 @@ const modelsData = {
         {
             name: "CF MOTO 800MT-X",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg","./img/models/cfmoto/CF-MOTO-800MT-X/2.webp","./img/models/cfmoto/CF-MOTO-800MT-X/3.webp","./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
-            price: "74,910 TND",
+            price: "75,000 TND",
             specs: {
                 typeMoteur: "Bicylindre",
                 cylindree: "800 cc",
@@ -314,7 +308,7 @@ const modelsData = {
         {
             name: "CF MOTO 800MT Explore",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg","./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
-            price: "78,480 TND",
+            price: "78,500 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "800 cc",
@@ -330,7 +324,7 @@ const modelsData = {
         {
             name: "CF MOTO 700MT",
             images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp","./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg","./img/models/cfmoto/CF-MOTO-700MT/2.webp","./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
-            price: "69,793 TND",
+            price: "69,800 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "700 cc",
@@ -346,7 +340,7 @@ const modelsData = {
         {
             name: "CF MOTO 700CL-X SPORT",
             images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
-            price: "61,344 TND",
+            price: "61,400 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "700 cc",
@@ -362,7 +356,7 @@ const modelsData = {
         {
             name: "CF MOTO 450CL-C",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg","./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
-            price: "57,715 TND",
+            price: "57,800 TND",
             specs: {
                 typeMoteur: "Bicylindre",
                 cylindree: "450 cc",
@@ -378,7 +372,7 @@ const modelsData = {
         {
             name: "CF MOTO 450CL-C-BOBER",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
-            price: "59,440 TND",
+            price: "59,500 TND",
             specs: {
                 typeMoteur: "Bicylindre",
                 cylindree: "450 cc",
@@ -394,7 +388,7 @@ const modelsData = {
         {
             name: "CF MOTO 125NK",
             images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg","./img/models/cfmoto/CF-MOTO-125NK/2.webp","./img/models/cfmoto/CF-MOTO-125NK/3.webp","./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
-            price: "17,671 TND",
+            price: "17,700 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -410,7 +404,7 @@ const modelsData = {
         {
             name: "CF MOTO 800NK Advanced",
             images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp","./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
-            price: "64,081 TND",
+            price: "64,100 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "800 cc",
@@ -426,7 +420,7 @@ const modelsData = {
         {
             name: "CF MOTO 300NK",
             images: ["./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg","./img/models/cfmoto/CF-MOTO-300NK/2.webp","./img/models/cfmoto/CF-MOTO-300NK/3.webp","./img/models/cfmoto/CF-MOTO-300NK/4.webp"],
-            price: "34,093 TND",
+            price: "34,100 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "300 cc",
@@ -442,7 +436,7 @@ const modelsData = {
         {
             name: "CF MOTO 675SR-R",
             images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg","./img/models/cfmoto/CF-MOTO-675SR-R/2.webp","./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
-            price: "64,855 TND",
+            price: "64,900 TND",
             specs: {
                 typeMoteur: "3 Cylindre, 4 temps",
                 cylindree: "675 cc",
@@ -458,7 +452,7 @@ const modelsData = {
         {
             name: "CF MOTO 450SR-S",
             images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png","./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
-            price: "54,680 TND",
+            price: "54,700 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "450 cc",
@@ -474,7 +468,7 @@ const modelsData = {
         {
             name: "CF MOTO 150SC",
             images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg","./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
-            price: "18,445 TND",
+            price: "18,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 2 soupapes",
                 cylindree: "150 cc",
@@ -490,7 +484,7 @@ const modelsData = {
         {
             name: "CF MOTO CX-5E",
             images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp","./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg","./img/models/cfmoto/CF-MOTO-CX-5E/3.webp","./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
-            price: "10,591 TND",
+            price: "10,600 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -498,7 +492,7 @@ const modelsData = {
                 coupleMaximal: "7 Nm",
                 refroidissement: "",
                 vitesseMaximale: "46 Km/h",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -915,70 +909,7 @@ const modelsData = {
     ],
     SLC: [
         
-        {
-            name: "Evasion",
-            images: ["./img/models/slc/slc-evasion/1.webp","./img/models/slc/slc-evasion/2.png"],
-            price: "6,600 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "75 km/h",
-                autonomie: "",
-                alimentation: "Batterie Graphène Acide 72V 35Ah",
-                freinage: "Disques AV/AR hydrauliques",
-            }
-        },
-        {
-            name: "bloom",
-            images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
-            price: "En arrivage",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "60 km/h",
-                autonomie: "",
-                alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
-                freinage: "Disques hydrauliques AV/AR",
-            }
-        },
-        {
-            name: "Pride",
-            images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
-            price: "4,500 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "60 km/h",
-                autonomie: "",
-                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
-                freinage: "Disques hydrauliques AV/AR",
-            }
-        },
-        {
-            name: "Neo",
-            images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
-            price: "4,500 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "60 km/h",
-                autonomie: "",
-                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
-                freinage: "Disques hydrauliques AV/AR",
-            }
-        },
+       
          {
             name: "TANK 125CC",
             images: ["./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
@@ -1179,7 +1110,7 @@ const modelsData = {
         },
          {
             name: "LONGJIA EASY MAX ",
-            images: ["./img/models/bbm/longjia/longjia-easy-max.png"],
+            images: ["./img/models/bbm/longjia/longjia-easy-max.png","./img/models/bbm/longjia/3.jpeg","./img/models/bbm/longjia/4.jpeg","./img/models/bbm/longjia/2.jpeg"],
             price: "6,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1261,7 +1192,7 @@ const modelsData = {
         },
         {
             name: "Dayun Flora",
-            image: "./img/models/dayun/flora/flora.png",
+            images: ["./img/models/dayun/flora/flora.png", "./img/models/dayun/flora/flora-2.jpeg", "./img/models/dayun/flora/flora-3.jpeg", "./img/models/dayun/flora/flora-4.jpeg"],
             price: "En arrivage",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1304,7 +1235,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
-                autonomie: "",
+                autonomie: "100 Km",
                 alimentation: "",
                 freinage: "Disque/Tambour",
             }
@@ -1320,7 +1251,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 Km/h",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "",
                 freinage: "Double Disque/Disque",
             }
@@ -1336,7 +1267,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km",
-                autonomie: "",
+                autonomie: "140 Km",
                 alimentation: "2 X Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1352,7 +1283,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km",
-                autonomie: "",
+                autonomie: "70 Km",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1368,7 +1299,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "30 km",
-                autonomie: "",
+                autonomie: "60 Km",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Tambour",
             }
@@ -1384,7 +1315,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "55 km",
-                autonomie: "",
+                autonomie: "70 Km",
                 alimentation: "Lithium Fer 60 volt 30 AH",
                 freinage: "Disque/Disque",
             }
@@ -1523,22 +1454,7 @@ const modelsData = {
         },
     ],
     ZONTES: [
-        {
-            name: "zontes 368G ADV",
-            images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-368g-adv-368cc.jpg","./img/models/zontes/zontes-368g-adv-368cc/2.webp","./img/models/zontes/zontes-368g-adv-368cc/3.jfif"],
-            price: "En Arrivage",
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: "368 cc",
-                puissance: "38 cv",
-                coupleMaximal: "40 Nm ",
-                refroidissement: "Liquide",
-                vitesseMaximale: "140 km/h",
-                autonomie: "",
-                alimentation: "Injection électronique",
-                freinage: "Disques J.Juan",
-            }
-        },
+     
         {
             name: "Zontes 703 F 2025",
             images: ["./img/models/zontes/zontes-703f-2025/2.webp","./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp","./img/models/zontes/zontes-703f-2025/3.jpeg","./img/models/zontes/zontes-703f-2025/4.webp"],
@@ -1555,11 +1471,27 @@ const modelsData = {
                 freinage: "Double disque J.Juan",
             }
         },
+           {
+            name: "zontes 368G ADV",
+            images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-1.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-2.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-3.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-4.jpeg"],
+            price: "29,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "368 cc",
+                puissance: "38 cv",
+                coupleMaximal: "40 Nm ",
+                refroidissement: "Liquide",
+                vitesseMaximale: "140 km/h",
+                autonomie: "",
+                alimentation: "Injection électronique",
+                freinage: "Disques J.Juan",
+            }
+        },
     ],
     YADEA: [
         {
             name: "YADEA  E8S",
-            images: ["./img/models/yadea/scooter-Électrique-yadea-e8s-3000w-bleu/scooter-Électrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-Électrique-yadea-e8s-3000w-bleu/scooter-Électrique-yadea-e8s-3000w-blanc.jpg"],
+            images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
             price: "5,999 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -1568,7 +1500,7 @@ const modelsData = {
                 coupleMaximal: "140 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
-                autonomie: "",
+                autonomie: "100 Km",
                 alimentation: "Batterie Graphène 72V 38Ah",
                 freinage: "Disque/Disque",
             }
@@ -1584,7 +1516,7 @@ const modelsData = {
                 coupleMaximal: "150 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "70 km/h",
-                autonomie: "",
+                autonomie: "100 Km",
                 alimentation: "Batterie Graphène TTFAR 72V 38Ah",
                 freinage: "Disque/Disque",
             }
@@ -1739,7 +1671,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "40 km/h",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "Batterie plomb 60V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1755,7 +1687,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "40 km/h",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "Batterie plomb 60V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -1945,7 +1877,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 Km/h",
-                autonomie: "",
+                autonomie: "60 km",
                 alimentation: "",
                 freinage: "Disque/Disque",
             }
@@ -1961,7 +1893,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
-                autonomie: "",
+                autonomie: "80 km",
                 alimentation: "",
                 freinage: "Double Disque/Double Disque",
             }
@@ -1977,7 +1909,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
-                autonomie: "",
+                autonomie: "50 km",
                 alimentation: "",
                 freinage: "Disque/Disque",
             }
@@ -1995,7 +1927,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
-                autonomie: "",
+                autonomie: "70 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2011,7 +1943,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "59 Km/h",
-                autonomie: "",
+                autonomie: "70 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2027,7 +1959,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 Km/h",
-                autonomie: "",
+                autonomie: "80 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2043,7 +1975,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 Km/h",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2070,7 +2002,7 @@ const modelsData = {
     WATTGO: [
         {
             name: "Wattgo WG009",
-            images: ["./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-Électrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
+            images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
             price: "2,639 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2079,7 +2011,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "40 km/h",
-                autonomie: "",
+                autonomie: "55 Km",
                 alimentation: "Batterie plomb 48V 20Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -2095,7 +2027,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 km/h",
-                autonomie: "",
+                autonomie: "60 Km",
                 alimentation: "Lithium 20 Ah",
                 freinage: "Disque / Disque",
             }
@@ -2111,7 +2043,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 km/h",
-                autonomie: "",
+                autonomie: "60 Km",
                 alimentation: "Lithium 20 Ah",
                 freinage: "Disque / Disque",
             }
@@ -2127,7 +2059,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "35 km/h",
-                autonomie: "",
+                autonomie: "35 Km",
                 alimentation: "Lithium 25 Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -2136,7 +2068,7 @@ const modelsData = {
     E_FLASH: [
         {
             name: "E-FLASH",
-            images: ["./img/models/eflash/2000-watts-blanc/scooter-Électrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
+            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
             price: "8,299 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2145,7 +2077,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 Km/h",
-                autonomie: "",
+                autonomie: "65 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2181,7 +2113,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 k/h",
-                autonomie: "",
+                autonomie: "90 km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2197,7 +2129,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "",
-                autonomie: "",
+                autonomie: "70 km",
                 alimentation: "Lithium-ion BMS",
                 freinage: "",
             }
@@ -2213,7 +2145,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "70 k/h",
-                autonomie: "",
+                autonomie: "90 km",
                 alimentation: "Lithium-ion 70v",
                 freinage: "Disque / Disque",
             }
@@ -2238,7 +2170,72 @@ const modelsData = {
         },
     ],
     TAILG: [
+    
+         {
+            name: "Evasion",
+            images: ["./img/models/slc/slc-evasion/1.webp","./img/models/slc/slc-evasion/2.png"],
+            price: "6,600 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "75 km/h",
+                autonomie: "70 km",
+                alimentation: "Batterie Graphène Acide 72V 35Ah",
+                freinage: "Disques AV/AR hydrauliques",
+            }
+        },
         {
+            name: "bloom",
+            images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                autonomie: "90 km",
+                alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+        {
+            name: "Pride",
+            images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
+            price: "4,500 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                autonomie: "90 km",
+                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+        {
+            name: "Neo",
+            images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
+            price: "4,500 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                autonomie: "80 km",
+                alimentation: "Batterie 72V 38Ah Graphene Lead Acid",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+            {
             name: "STAR",
             images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
             price: "",
@@ -2249,7 +2246,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "60 km/h",
-                autonomie: "",
+                autonomie: "60 km",
                 alimentation: "Lithium 48v",
                 freinage: "Disque/Disque",
             }
@@ -2267,13 +2264,13 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "35 km",
-                autonomie: "",
+                autonomie: "35 Km",
                 alimentation: "48V 20Ah",
                 freinage: "",
             }
         },
         {
-            name: "ECORIDE ALPHA-ROUGE",
+            name: "ECORIDE ALPHA",
             images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg","./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
             price: "2,899 TND",
             specs: {
@@ -2283,7 +2280,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km",
-                autonomie: "",
+                autonomie: "50 Km",
                 alimentation: "60V Batterie en Acid",
                 freinage: "",
             }
@@ -2309,51 +2306,52 @@ const modelsData = {
 
     ],
     CITYBIKE: [
+      
         {
-            name: "City Bike",
-            images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
-            price: "5,299 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "50 cc",
-                puissance: "2000 Watts",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "45 km",
-                autonomie: "",
-                alimentation: "Lithium-Ion 60V 26Ah",
-                freinage: "Disques Hydraulique",
-            }
-        },
-        {
-            name: "City Bike",
+            name: "City Bike 4000",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
             price: "7,499 TND",
             specs: {
                 typeMoteur: "Électrique",
-                cylindree: "125 cc",
+                cylindree: "",
                 puissance: "4000 Watts",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "75 km/h",
-                autonomie: "",
+                autonomie: "60 Km",
                 alimentation: "Lithium-Ion 72V 40Ah",
                 freinage: "Disques Hydraulique",
             }
         },
         {
-            name: "City Bike",
+            name: "City Bike 3000",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
             price: "6,899 TND",
             specs: {
                 typeMoteur: "Électrique",
-                cylindree: "50 cc",
+                cylindree: "",
                 puissance: "3000 Watts",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
-                autonomie: "",
+                autonomie: "45 Km",
                 alimentation: "Lithium-Ion 60V 23.4 Ah",
+                freinage: "Disques Hydraulique",
+            }
+        },
+          {
+            name: "City Bike 2000",
+            images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
+            price: "5,299 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km",
+                autonomie: "45 Km",
+                alimentation: "Lithium-Ion 60V 26Ah",
                 freinage: "Disques Hydraulique",
             }
         },
@@ -2370,7 +2368,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
-                autonomie: "",
+                autonomie: "70 Km",
                 alimentation: "",
                 freinage: "Disques / Disques",
             }
@@ -2389,7 +2387,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
-                autonomie: "",
+                autonomie: "100 Km",
                 alimentation: "Batterie Lithium 60V 20Ah",
                 freinage: "",
             }
@@ -2405,7 +2403,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "45 km/h",
-                autonomie: "",
+                autonomie: "55 Km",
                 alimentation: " 60v - 24Ah",
                 freinage: "Disques / Tambour",
             }
@@ -2443,6 +2441,22 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
+            }
+        },
+        {
+            name: "Cuxi II",
+            images: ["./img/models/phantom/cuxi/cuxi-1.jpeg","./img/models/phantom/cuxi/cuxi-2.jpeg","./img/models/phantom/cuxi/cuxi-3.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "106 cm³,",
+                puissance: "5.3 kW (7.2 ch)",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
             }
         },
 
