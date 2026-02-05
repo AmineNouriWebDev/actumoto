@@ -759,129 +759,6 @@
           height: 8px;
         }
       }
-
-      /* =========================================== */
-      /* ICONES RÉSEAUX SOCIAUX AJOUTÉES - MODIFIÉES */
-      /* =========================================== */
-
-      /* Style pour les icônes de réseaux sociaux */
-      .social-icon {
-        width: 56px; /* Taille augmentée */
-        height: 56px;
-        border-radius: 12px; /* Légèrement arrondies */
-        object-fit: contain;
-        transition: all 0.3s ease;
-        /* Pas de fond blanc, pas de bordure */
-        background-color: transparent;
-        padding: 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        border: none;
-      }
-
-      .social-icon:hover {
-        transform: translateY(-4px) scale(1.1);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      }
-
-      /* Premier emplacement: en haut à droite (au-dessus du carousel) - HORIZONTAL */
-      .top-right-social {
-        position: absolute;
-        top: 120px; /* Distance du haut */
-        right: 30px; /* Distance de la droite */
-        display: flex;
-        flex-direction: row; /* Horizontal */
-        gap: 20px; /* Espacement entre les icônes */
-        z-index: 100; /* Haut z-index pour être au-dessus */
-      }
-
-      /* Deuxième emplacement: dans le carousel AU-DESSUS des indicateurs - TEMPORAIRE */
-      .carousel-social {
-        position: absolute;
-        bottom: 50px; /* Positionné AU-DESSUS des indicateurs */
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 25px; /* Espacement horizontal */
-        z-index: 1000; /* Z-index très élevé pour être au-dessus des indicateurs */
-      }
-
-      /* Agrandir les icônes dans le carousel */
-      .carousel-social .social-icon {
-        width: 60px; /* Plus grandes dans le carousel */
-        height: 60px;
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 767px) {
-        .social-icon {
-          width: 48px;
-          height: 48px;
-          border-radius: 10px;
-        }
-
-        .top-right-social {
-          top: 100px;
-          right: 20px;
-          gap: 15px;
-        }
-
-        .carousel-social {
-          bottom: 40px;
-          gap: 20px;
-        }
-
-        .carousel-social .social-icon {
-          width: 50px;
-          height: 50px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .social-icon {
-          width: 40px;
-          height: 40px;
-          border-radius: 8px;
-        }
-
-        .top-right-social {
-          top: 90px;
-          right: 15px;
-          gap: 12px;
-        }
-
-        .carousel-social {
-          bottom: 35px;
-          gap: 15px;
-        }
-
-        .carousel-social .social-icon {
-          width: 42px;
-          height: 42px;
-        }
-      }
-
-      /* Pour écrans très larges */
-      @media (min-width: 1200px) {
-        .social-icon {
-          width: 64px;
-          height: 64px;
-        }
-
-        .carousel-social .social-icon {
-          width: 68px;
-          height: 68px;
-        }
-
-        .top-right-social {
-          gap: 25px;
-          right: 40px;
-        }
-
-        .carousel-social {
-          gap: 30px;
-        }
-      }
     </style>
 
     <script type="application/ld+json">
@@ -964,42 +841,6 @@
       </div>
     </header>
 
-    <!-- =========================================== -->
-    <!-- PREMIER EMPLACEMENT: ICÔNES RÉSEAUX SOCIAUX EN HAUT À DROITE - HORIZONTAL -->
-    <!-- COMMENTEZ CETTE SECTION POUR LA SUPPRIMER ULTÉRIEUREMENT -->
-    <!-- =========================================== -->
-    <div class="top-right-social">
-      <a href="#" aria-label="Facebook actumoto.tn" class="social-link">
-        <img
-          src="./img/social/facebook.png"
-          alt="Facebook actumoto.tn"
-          class="social-icon"
-        />
-      </a>
-      <a href="#" aria-label="YouTube actumoto.tn" class="social-link">
-        <img
-          src="./img/social/youtube.png"
-          alt="YouTube actumoto.tn"
-          class="social-icon"
-        />
-      </a>
-      <a href="#" aria-label="Instagram actumoto.tn" class="social-link">
-        <img
-          src="./img/social/instagram.png"
-          alt="Instagram actumoto.tn"
-          class="social-icon"
-        />
-      </a>
-      <a href="#" aria-label="TikTok actumoto.tn" class="social-link">
-        <img
-          src="./img/social/tiktok.png"
-          alt="TikTok actumoto.tn"
-          class="social-icon"
-        />
-      </a>
-    </div>
-    <!-- =========================================== -->
-
     <!-- Main Content -->
     <main role="main">
       <!-- =========================================== -->
@@ -1053,44 +894,7 @@
             </div>
           </div>
 
-          <!-- =========================================== -->
-          <!-- DEUXIÈME EMPLACEMENT: ICÔNES RÉSEAUX SOCIAUX DANS LE CAROUSEL - AU-DESSUS DES INDICATEURS -->
-          <!-- Z-INDEX TRÈS ÉLEVÉ POUR ÊTRE VISIBLE AU-DESSUS DES INDICATEURS -->
-          <!-- COMMENTEZ CETTE SECTION POUR LA SUPPRIMER ULTÉRIEUREMENT -->
-          <!-- =========================================== -->
-          <div class="carousel-social">
-            <a href="#" aria-label="Facebook actumoto.tn" class="social-link">
-              <img
-                src="./img/social/facebook.png"
-                alt="Facebook actumoto.tn"
-                class="social-icon"
-              />
-            </a>
-            <a href="#" aria-label="YouTube actumoto.tn" class="social-link">
-              <img
-                src="./img/social/youtube.png"
-                alt="YouTube actumoto.tn"
-                class="social-icon"
-              />
-            </a>
-            <a href="#" aria-label="Instagram actumoto.tn" class="social-link">
-              <img
-                src="./img/social/instagram.png"
-                alt="Instagram actumoto.tn"
-                class="social-icon"
-              />
-            </a>
-            <a href="#" aria-label="TikTok actumoto.tn" class="social-link">
-              <img
-                src="./img/social/tiktok.png"
-                alt="TikTok actumoto.tn"
-                class="social-icon"
-              />
-            </a>
-          </div>
-          <!-- =========================================== -->
-
-          <!-- Indicators - 5 CERCLES (VISIBLES EN DESSOUS DES ICÔNES) -->
+          <!-- Indicators - 5 CERCLES -->
           <div class="carousel-indicators">
             <span
               class="indicator active"
@@ -1122,9 +926,8 @@
       </section>
 
       <!-- Social Media Bar -->
-      <section class="py-4" aria-labelledby="social-media-title">
+      <section class="py-4" aria-label="Réseaux sociaux">
         <div class="container mx-auto px-4">
-          <h2 id="social-media-title" class="sr-only">Réseaux sociaux</h2>
           <div
             class="social-bar"
             role="navigation"
