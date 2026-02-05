@@ -979,7 +979,7 @@ const modelsData = {
         {
             name: "SENKE RAPTOR",
             images: ["./img/models/senke/senke-raptor-200cc/senke-raptor-200c-2.jpg", "./img/models/senke/senke-raptor-200cc/senke-raptor-200c-1.png" ],
-            price: "11,000 TND",
+            price: "9,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "199,8 cm³",
