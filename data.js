@@ -31,7 +31,8 @@ const brands = [
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },   
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
-    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
+    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
+    
      { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
@@ -44,7 +45,8 @@ const brands = [
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },  
-    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
+    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
+    
     
 ];
 
@@ -1127,6 +1129,22 @@ const modelsData = {
     ],
     DAYUN: [
         {
+            name: "Dayun Flora",
+            images: ["./img/models/dayun/flora/flora.png", "./img/models/dayun/flora/flora-2.jpeg", "./img/models/dayun/flora/flora-3.jpeg", "./img/models/dayun/flora/flora-4.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "7,3 kw",
+                coupleMaximal: "8,5 Nm",
+                refroidissement: "",
+                vitesseMaximale: "105 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+            }
+        },
+        {
             name: "DAYUN DREAM",
             images: ["./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png","./img/models/dayun/dayun-sniper-slc-noir/2.webp"],
             price: "4,499 TND",
@@ -1190,22 +1208,7 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
-        {
-            name: "Dayun Flora",
-            images: ["./img/models/dayun/flora/flora.png", "./img/models/dayun/flora/flora-2.jpeg", "./img/models/dayun/flora/flora-3.jpeg", "./img/models/dayun/flora/flora-4.jpeg"],
-            price: "En arrivage",
-            specs: {
-                typeMoteur: "Monocylindre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "7,3 kw",
-                coupleMaximal: "8,5 Nm",
-                refroidissement: "",
-                vitesseMaximale: "105 Km/h",
-                autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-            }
-        },
+        
         {
             name: "Dayun Sonic",
             images: [ "./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/1.webp"],
@@ -2170,6 +2173,38 @@ const modelsData = {
         },
     ],
     TAILG: [
+          {
+            name: "bloom",
+            images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 W",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "60 km/h",
+                autonomie: "90 km",
+                alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
+                freinage: "Disques hydrauliques AV/AR",
+            }
+        },
+         {
+            name: "STAR",
+            images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "1200 w",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "60 km/h",
+                autonomie: "60 km",
+                alimentation: "Lithium 48v",
+                freinage: "Disque/Disque",
+            }
+        },
     
          {
             name: "Evasion",
@@ -2187,22 +2222,7 @@ const modelsData = {
                 freinage: "Disques AV/AR hydrauliques",
             }
         },
-        {
-            name: "bloom",
-            images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
-            price: "En arrivage",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 W",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "60 km/h",
-                autonomie: "90 km",
-                alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
-                freinage: "Disques hydrauliques AV/AR",
-            }
-        },
+      
         {
             name: "Pride",
             images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
@@ -2235,22 +2255,7 @@ const modelsData = {
                 freinage: "Disques hydrauliques AV/AR",
             }
         },
-            {
-            name: "STAR",
-            images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
-            price: "",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "1200 w",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "60 km/h",
-                autonomie: "60 km",
-                alimentation: "Lithium 48v",
-                freinage: "Disque/Disque",
-            }
-        },
+           
     ],
     ECORIDE: [
         {
@@ -2379,7 +2384,7 @@ const modelsData = {
         {
             name: "City Coco 3 roues",
             images: ["./img/models/motolux/city-coco/city-coco-3.webp","./img/models/motolux/city-coco/city-coco-1.jpg","./img/models/motolux/city-coco/city-coco-2.jpg","./img/models/motolux/city-coco/city-coco-4.webp"],
-            price: "",
+            price: "5,500 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2411,6 +2416,22 @@ const modelsData = {
 
     ],
     PHANTOM: [
+          {
+            name: "Cuxi II",
+            images: ["./img/models/phantom/cuxi/cuxi-1.jpeg","./img/models/phantom/cuxi/cuxi-2.jpeg","./img/models/phantom/cuxi/cuxi-3.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "106 cm³,",
+                puissance: "5.3 kW (7.2 ch)",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+            }
+        },
         {
             name: "Phantom Z1",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
@@ -2443,22 +2464,7 @@ const modelsData = {
                 freinage: "Disque / Tambour CBS",
             }
         },
-        {
-            name: "Cuxi II",
-            images: ["./img/models/phantom/cuxi/cuxi-1.jpeg","./img/models/phantom/cuxi/cuxi-2.jpeg","./img/models/phantom/cuxi/cuxi-3.jpeg"],
-            price: "En arrivage",
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: "106 cm³,",
-                puissance: "5.3 kW (7.2 ch)",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "100 km/h",
-                autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-            }
-        },
+      
 
     ],
     CFORCE: [
