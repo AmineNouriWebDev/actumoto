@@ -194,10 +194,13 @@
         box-sizing: border-box;
       }
 
-      /* Social media buttons (circular icons) */
+      /* =========================================== */
+      /* SOCIAL MEDIA SECTION - MODIFICATIONS APPLIQUÉES */
+      /* =========================================== */
+
       .social-bar {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         justify-content: center;
         align-items: center;
         margin: 1rem 0;
@@ -207,9 +210,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        border-radius: 12px; /* Carré avec coins arrondis */
         color: #fff;
         text-decoration: none;
         transition:
@@ -217,49 +220,76 @@
           box-shadow 0.15s ease,
           opacity 0.15s ease;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        position: relative;
       }
 
-      .social-btn svg {
-        width: 28px;
-        height: 28px;
-        display: block;
+      .social-btn img {
+        width: 100%; /* L'image occupe 70% du bouton */
+        height: 70%;
+        object-fit: contain;
+        /* filter: brightness(0) invert(1); Rend l'image blanche */
+        transition: transform 0.3s ease;
       }
 
       .social-btn:hover {
         transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         opacity: 0.95;
       }
 
-      .social-btn.facebook {
-        background: #1877f2;
+      .social-btn:hover img {
+        transform: scale(1.1);
       }
-      .social-btn.instagram {
-        background: linear-gradient(
-          45deg,
-          #f09433,
-          #e6683c,
-          #dc2743,
-          #cc2366,
-          #bc1888
-        );
+
+      /* Séparateur sous les logos sociaux */
+      .social-separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 300px; /* Même largeur que les logos */
+        margin: 1rem auto;
+        position: relative;
       }
-      .social-btn.youtube {
-        background: #ff0000;
+
+      .separator-line {
+        flex: 1;
+        height: 2px;
+        background-color: #d1d5db; /* Gris clair */
       }
-      .social-btn.tiktok {
-        background: #000;
+
+      .red-square {
+        width: 8px;
+        height: 8px;
+        background-color: #ff0000; /* Rouge primaire du site */
+        border-radius: 2px;
+        margin: 0 2px;
+        flex-shrink: 0;
       }
 
       /* Ensure contrast on small screens */
       @media (max-width: 480px) {
         .social-btn {
-          width: 48px;
-          height: 48px;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
         }
-        .social-btn svg {
-          width: 22px;
-          height: 22px;
+
+        .social-btn img {
+          width: 65%;
+          height: 65%;
+        }
+
+        .social-separator {
+          max-width: 260px;
+          margin: 1.2rem auto;
+        }
+
+        .red-square {
+          width: 6px;
+          height: 6px;
+          margin: 0 2px;
         }
       }
 
@@ -938,63 +968,31 @@
               class="social-btn facebook"
               aria-label="Facebook (lien)"
             >
-              <!-- Facebook SVG -->
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07C1.86 17.02 5.79 21.12 10.65 21.94v-6.99H8.07v-2.99h2.58V9.35c0-2.56 1.52-3.97 3.85-3.97 1.12 0 2.29.2 2.29.2v2.51h-1.29c-1.27 0-1.66.79-1.66 1.60v1.92h2.83l-.45 2.99h-2.38v6.99C18.21 21.12 22 17.02 22 12.07z"
-                />
-              </svg>
+              <img src="./img/social/facebook.png" alt="Facebook actumoto.tn" />
             </a>
             <a
               href="#"
               class="social-btn instagram"
               aria-label="Instagram (lien)"
             >
-              <!-- Instagram SVG -->
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zM18.5 6.2a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2z"
-                />
-              </svg>
+              <img
+                src="./img/social/instagram.png"
+                alt="Instagram actumoto.tn"
+              />
             </a>
             <a href="#" class="social-btn youtube" aria-label="YouTube (lien)">
-              <!-- YouTube SVG -->
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M23.5 6.2a3 3 0 0 0-2.1-2.12C19.81 3.5 12 3.5 12 3.5s-7.81 0-9.4.58A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.12C4.19 20.5 12 20.5 12 20.5s7.81 0 9.4-.58a3 3 0 0 0 2.1-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"
-                />
-              </svg>
+              <img src="./img/social/youtube.png" alt="YouTube actumoto.tn" />
             </a>
             <a href="#" class="social-btn tiktok" aria-label="TikTok (lien)">
-              <!-- TikTok SVG (official - ant-design) -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1024 1024"
-                fill="currentColor"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <path
-                  d="M800 112.962C800 50.575 749.425 0 687.038 0H112.962C50.575 0 0 50.575 0 112.962v574.076C0 749.426 50.575 800 112.962 800h574.076C749.425 800 800 749.426 800 687.038zM662.759 348.916c-51.615.577-99.71-15.027-141.938-43.927v202.874c0 90.166-61.72 167.62-148.996 187.848-119.068 27.165-219.864-58.954-232.577-161.835-13.294-102.884 52.322-193.051 152.892-213.281 19.651-4.045 49.209-4.045 64.458-.577v108.661c-4.692-1.153-9.086-2.31-13.709-2.888-39.304-6.937-77.371 12.715-92.977 48.55-15.605 35.838-5.16 77.451 26.629 101.73 26.586 20.806 56.085 23.694 86.14 9.822 30.057-13.291 46.21-37.567 49.676-70.512.578-4.622.546-9.826.546-15.028V110.206c0-10.981.086-10.502 11.068-10.502h86.12c6.36 0 8.673.915 9.25 8.433 4.621 67.047 55.526 124.147 120.838 132.818 6.937 1.155 14.369 1.613 22.58 2.19z"
-                  transform="translate(112 112)"
-                />
-              </svg>
+              <img src="./img/social/tiktok.png" alt="TikTok actumoto.tn" />
             </a>
+          </div>
+
+          <!-- Séparateur avec carré rouge -->
+          <div class="social-separator">
+            <div class="separator-line"></div>
+            <div class="red-square"></div>
+            <div class="separator-line"></div>
           </div>
         </div>
       </section>
@@ -1041,9 +1039,6 @@
         </div>
       </section>
 
-      <!-- =========================================== -->
-      <!-- SECTION ACCESSOIRES MODIFIÉE -->
-      <!-- =========================================== -->
       <!-- =========================================== -->
       <!-- SECTION ACCESSOIRES MODIFIÉE -->
       <!-- =========================================== -->
