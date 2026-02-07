@@ -1,51 +1,51 @@
 // data.js - Données centralisées pour le site
 const brands = [
-    { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png" },
-    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png" },
-    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png" },   
-    { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png" },
-     { name: "SLC", logo: "./img/logos-actumoto/slc.png" },   
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png" },
-    { name: "VOGE", logo: "./img/logos-actumoto/voge.png" },
-    { name: "FORZA_MOTOR_SPORT", logo: "./img/logos-actumoto/forza.png" },
-   { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png" },
-    { name: "SENKE", logo: "./img/logos-actumoto/senke.png" },
-     { name: "BBM", logo: "./img/logos-actumoto/bbm.png" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png" },    
-    { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png" },   
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png" },
-    { name: "LM", logo: "./img/logos-actumoto/lm.png" },
+   { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
+    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
+    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=2" },
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },   
+    { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" },
+    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
+     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },   
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+    { name: "FORZA_MOTOR_SPORT", logo: "./img/logos-actumoto/forza.png?v=2" },
+   { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
+    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=2" },
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=2" },    
+    { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },   
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
+    { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
      
-    { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png" },
-    { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png" },
-    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png" },
-     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png" },
-    { name: "FTM", logo: "./img/logos-actumoto/ftm.png" },
-    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png" },
-    { name: "SANYA", logo: "./img/logos-actumoto/sanya.png" },
-    { name: "MS", logo: "./img/logos-actumoto/ms.png" }, 
-    { name: "AIMA", logo: "./img/logos-actumoto/aima.png" },
-    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png" },
-    { name: "GSM", logo: "./img/logos-actumoto/gsm.png" },
-    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png" },   
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png" },
-    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png" },
+    { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
+    { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
+    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
+     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+    { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
+    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
+    { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
+    { name: "MS", logo: "./img/logos-actumoto/ms.png?v=2" }, 
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+    { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
+    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },   
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     
-     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png" },
-    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png" },
-    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png" },
-    { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png" },
-    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png" },    
-    { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png" },
-    { name: "XTF", logo: "./img/logos-actumoto/xtf.png" },
-    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png" },
-    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png" },
-    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png" },
-    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png" },
-    { name: "KEREN", logo: "./img/logos-actumoto/keren.png" },  
-    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png" },
+     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
+    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
+    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
+    { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
+    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },    
+    { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png?v=2" },
+    { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
+    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
+    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
+    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
+    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
+    { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },  
+    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
     
     
 ];
@@ -512,7 +512,7 @@ const modelsData = {
                 coupleMaximal: "",
                 refroidissement: "A air",
                 vitesseMaximale: "30 km/h",
-                autonomie: "",
+                autonomie: "40 Km",
                 alimentation: "Batterie 48V 12Ah",
                 freinage: "Tambour / Tambour",
             }
@@ -777,38 +777,7 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
-        {
-            name: "ADX 300CC",
-            images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
-            price: "24,999 TND",
-            specs: {
-                typeMoteur: "Monocylindre – 4 T - Injection",
-                cylindree: "278 cm3",
-                puissance: "19 kW",
-                coupleMaximal: "",
-                refroidissement: "Liquide",
-                vitesseMaximale: "",
-                autonomie: "",
-                alimentation: "",
-                freinage: "Disque/Disque",
-            }
-        },
-        {
-            name: "Sym husky",
-            images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
-            price: "16,000 TND",
-            specs: {
-                typeMoteur: "Monocylindre 4 temps 4 soupapes",
-                cylindree: "175 cm³",
-                puissance: "14,7 ch (10,8 kW)",
-                coupleMaximal: "14,5 Nm",
-                refroidissement: "Liquide",
-                vitesseMaximale: "110 km/h",
-                autonomie: "",
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ABS",
-            }
-        },
+      
         {
             name: "Sym FIDDLE 4",
             images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg","./img/models/sym/fiddle4/4.jpg"],
@@ -839,6 +808,38 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour CBS",
+            }
+        },
+          {
+            name: "ADX 300CC",
+            images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
+            price: "24,999 TND",
+            specs: {
+                typeMoteur: "Monocylindre – 4 T - Injection",
+                cylindree: "278 cm3",
+                puissance: "19 kW",
+                coupleMaximal: "",
+                refroidissement: "Liquide",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disque/Disque",
+            }
+        },
+        {
+            name: "Sym husky",
+            images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
+            price: "16,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps 4 soupapes",
+                cylindree: "175 cm³",
+                puissance: "14,7 ch (10,8 kW)",
+                coupleMaximal: "14,5 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "110 km/h",
+                autonomie: "",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ABS",
             }
         },
     ],
@@ -914,7 +915,7 @@ const modelsData = {
        
          {
             name: "TANK 125CC",
-            images: ["./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
+            images: ["./img/models/slc/tank/tank1.png","./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps GY6",
@@ -930,7 +931,7 @@ const modelsData = {
         },
         {
             name: "SLC AZUR",
-            images: ["./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg", "./img/models/slc/slc-azur-124cc-noir/3.jpeg"],
+            images: ["./img/models/slc/slc-azur-124cc-noir/azur.png","./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg", "./img/models/slc/slc-azur-124cc-noir/3.jpeg"],
             price: "5,199 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1146,7 +1147,7 @@ const modelsData = {
         },
         {
             name: "DAYUN DREAM",
-            images: ["./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png","./img/models/dayun/dayun-sniper-slc-noir/2.webp"],
+            images: ["./img/models/dayun/dayun-sniper-slc-noir/dream1.png","./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png"],
             price: "4,499 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1852,7 +1853,7 @@ const modelsData = {
             }
         },
         {
-            name: "Moto Cross Korak",
+            name: "Korak",
             images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg","./img/models/ftm/ftm-korak-noir/2.jpeg","./img/models/ftm/ftm-korak-noir/3.jfif"],
             price: "3,499 TND",
             specs: {
@@ -1903,7 +1904,7 @@ const modelsData = {
         },
         {
             name: "LVNENG LX08",
-            images: ["./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg", "./img/models/lvneng/lvneng-lx08/3.jpg"],
+            images: [ "./img/models/lvneng/lvneng-lx08/3.jpg","./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg"],
             price: "6,290 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -1986,7 +1987,7 @@ const modelsData = {
     ],
     LIFAN: [
         {
-            name: "LIFAN Glow 100 CC | LF110.3S",
+            name: "LIFAN Glow",
             images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg","./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
             price: "3,859 TND",
             specs: {
@@ -2268,7 +2269,7 @@ const modelsData = {
                 puissance: "600 Watts",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "35 km",
+                vitesseMaximale: "35 km/h",
                 autonomie: "35 Km",
                 alimentation: "48V 20Ah",
                 freinage: "",
@@ -2284,7 +2285,7 @@ const modelsData = {
                 puissance: "1000 Watts",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "45 km",
+                vitesseMaximale: "45 km/h",
                 autonomie: "50 Km",
                 alimentation: "60V Batterie en Acid",
                 freinage: "",
