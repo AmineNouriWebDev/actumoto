@@ -2108,7 +2108,7 @@ const modelsData = {
     KEREN: [
         {
             name: "Greek",
-            images: ["./img/models/keren/motor-group/3.png"],
+            images: ["./img/models/keren/motor-group/keren-greek.jpeg","./img/models/keren/motor-group/3.png"],
             price: "4,900 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2124,7 +2124,7 @@ const modelsData = {
         },
         {
             name: "U-BE",
-            images: ["./img/models/keren/ube/1.jpg"],
+            images: ["./img/models/keren/ube/keren-ube.jpeg","./img/models/keren/ube/1.jpg"],
             price: "4,900 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2140,7 +2140,7 @@ const modelsData = {
         },
         {
             name: "U-2",
-            images: ["./img/models/keren/u2/1.png","./img/models/keren/u2/2.png",],
+            images: ["./img/models/keren/u2/keren-u2-1.jpeg","./img/models/keren/u2/keren-u2-2.jpeg","./img/models/keren/u2/keren-u2-3.jpeg","./img/models/keren/u2/2.png",],
             price: "4,800 TND",
             specs: {
                 typeMoteur: "Électrique",
@@ -2177,7 +2177,7 @@ const modelsData = {
           {
             name: "bloom",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
-            price: "En arrivage",
+            price: "5,000 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2193,7 +2193,7 @@ const modelsData = {
          {
             name: "STAR",
             images: ["./img/models/tailg/star/3.png","./img/models/tailg/star/2.jpg"],
-            price: "En arrivage",
+            price: "4,500 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "1200 w",
@@ -2420,7 +2420,7 @@ const modelsData = {
           {
             name: "Cuxi II",
             images: ["./img/models/phantom/cuxi/cuxi-1.jpeg","./img/models/phantom/cuxi/cuxi-2.jpeg","./img/models/phantom/cuxi/cuxi-3.jpeg"],
-            price: "En arrivage",
+            price: "3,450 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "106 cm³,",
@@ -2671,42 +2671,8 @@ const occasionModelsData = [
             freinage: ""
         }
     },
-    {
-        marque: "HONDA",
-        name: "HONDA-CBX1000-modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/4/HONDA-CBX1000-mod-le-1982-2.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-4.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-3.jpg", "./img/occasion/4/HONDA-CBX1000-mod-le-1982-1.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "",
-            typeMoteur: "6 cylindres en ligne 4 temps",
-            cylindree: "1047 cm³",
-            puissance: "105 ch",
-            coupleMaximal: "84,3 Nm",
-            refroidissement: "Air",
-            vitesseMaximale: "220 km/h,",
-                autonomie: "",
-            alimentation: "6 carburateurs Keihin 28 mm",
-            freinage: ""
-        }
-    },
-    {
-        marque: "Kawasaki",
-        name: "Kawasaki -KLR 650 -modèle 1992  - Jet Moto tel 24350274",
-        images: ["./img/occasion/5/1.jpg", "./img/occasion/5/2.jpg", "./img/occasion/5/3.jpg", "./img/occasion/5/4.jpg.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "",
-            typeMoteur: "Monocylindre 4 temps",
-            cylindree: "651 cm³",
-            puissance: "42 ch",
-            coupleMaximal: "46 Nm",
-            refroidissement: "Liquide",
-            vitesseMaximale: "154 km/h",
-                autonomie: "",
-            alimentation: "Carburateur Ø 40 mm,",
-            freinage: "Disque avant/arrière"
-        }
-    },
+  
+    
     {
         marque: "YAMAHA",
         name: "YAMAHA-TENERE 700 - Jet Moto tel 26711555-53685927",
@@ -2753,85 +2719,33 @@ const occasionModelsData = [
         modele: "X-ADV",
         youtubeId: "Tr1G8g7oiL4"
     },
-    {
-        id: 2,
-        marque: "Peugeot",
-        modele: "Peugeot 103 Electric Moped",
-        youtubeId: "L2mGXWcT6nM"
-    },
+   
     {
         id: 3,
         marque: "Peugeot",
         modele: "Peugeot Pulsion",
         youtubeId: "v3uBFipSzeA"
     },
-    {
-        id: 4,
-        marque: "CFMOTO",
-        modele: "MTX - 1000",
-        youtubeId: "8RjmP_nSyLo"
-    },
-    {
-        id: 5,
-        marque: "SUZUKI",
-        modele: "Burgman 400 Touring",
-        youtubeId: "7KZIg43uO4g"
-    },
-    {
-        id: 6,
-        marque: "Piaggio",
-        modele: "Beverly 310 scooter",
-        youtubeId: "KnSe46bvEM8"
-    },
-    {
-        id: 7,
-        marque: "HONDA",
-        modele: "CB1000 F",
-        youtubeId: "gh6kBl9Qs24"
-    },
+   
+  
+  
     {
         id: 8,
         marque: "HONDA",
         modele: "WN7 Model Features",
         youtubeId: "dkQHfp9qRo0"
     },
-    {
-        id: 9,
-        marque: "Apprilia",
-        modele: "Apprilia Tuono V4 Factory ",
-        youtubeId: "zJ6GS-VnLLQ"
-    },
+  
     {
         id: 10,
         marque: "HONDA",
         modele: "CB1000 GT",
         youtubeId: "Ia1foCEjtCY"
     },
-    {
-        id: 11,
-        marque: "Zontes",
-        modele: "Zontes 703 F - Le Trail 3 cylindres",
-        youtubeId: "ffmC-iQbHR8"
-    },
-     {
-        id: 12,
-        marque: "Honda",
-        modele: "New EV Concepts 2026",
-        youtubeId: "v8hzcn4so7s"
-    },
+ 
+    
      
-      {
-        id: 14,
-        marque: "Peugeot",
-        modele: "Metropolis 5W (2026)",
-        youtubeId: "cbqtAtTlKDc"
-    },
-      {
-        id: 15,
-        marque: "Peugeot",
-        modele: "XP 400 adventure scooter 2026",
-        youtubeId: "D99ppR_CneE"
-    },
+    
       {
         id: 16,
         marque: "Verge Motorcycles",
@@ -2844,17 +2758,7 @@ const occasionModelsData = [
         modele: "mv agusta brutale 2026",
         youtubeId: "YSePawzL5Rg"
     },
-      {
-        id: 18,
-        marque: "Suzuki",
-        modele: "hayabusa 2026",
-        youtubeId: "o7zuBpOscRo"
-    },
-      {
-        id: 19,
-        marque: "Moto Morini",
-        modele: "Morini corsaro gt 2026",
-        youtubeId: "UPs5dypOrQ8"
-    },
+     
+    
 
 ];
