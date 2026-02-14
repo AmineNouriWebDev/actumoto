@@ -13,6 +13,7 @@
       name="keywords"
       content="moto Tunisie, scooter Tunisie, moto neuve, concessionnaire moto, Peugeot moto, CFMOTO, Suzuki moto, moto électrique Tunisie"
     />
+
     <!-- 
       ========================================
       DEVELOPER INFORMATION / INFORMATIONS DÉVELOPPEUR
@@ -847,6 +848,43 @@
         ]
       }
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "2443539866090948");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2443539866090948&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <!-- Header -->
@@ -967,11 +1005,12 @@
               href="https://www.facebook.com/profile.php?id=61584281323170"
               class="social-btn facebook"
               aria-label="Facebook (lien)"
+              target="_blank"
             >
               <img src="./img/social/facebook.png" alt="Facebook actumoto.tn" />
             </a>
             <a
-              href="https://www.instagram.com/marwen_actumoto/"
+              href="#"
               class="social-btn instagram"
               aria-label="Instagram (lien)"
             >
@@ -984,6 +1023,7 @@
               href="https://www.youtube.com/@ActumotoTn"
               class="social-btn youtube"
               aria-label="YouTube (lien)"
+              target="_blank"
             >
               <img src="./img/social/youtube.png" alt="YouTube actumoto.tn" />
             </a>
@@ -991,6 +1031,7 @@
               href="https://www.tiktok.com/@marwenactumoto"
               class="social-btn tiktok"
               aria-label="TikTok (lien)"
+              target="_blank"
             >
               <img src="./img/social/tiktok.png" alt="TikTok actumoto.tn" />
             </a>
@@ -1109,7 +1150,7 @@
     </footer>
 
     <!-- Charger les données et le script -->
-    <script src="data.js?v=20250212"></script>
+    <script src="data.js?v=20250214"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();

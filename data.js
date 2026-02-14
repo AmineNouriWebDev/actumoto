@@ -29,7 +29,8 @@ const brands = [
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
-    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },   
+      { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+     
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     
@@ -44,8 +45,11 @@ const brands = [
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
+     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+  { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },  
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
+    
     
     
 ];
@@ -152,8 +156,24 @@ const modelsData = {
         },
     ],
     SUZUKI: [
+          {
+            name: "DR 650",
+            images: ["./img/models/suzuki/dr650/dr650-1.jpeg", "./img/models/suzuki/dr650/dr650-2.jpeg", "./img/models/suzuki/dr650/dr650-3.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "644 cm³",
+                puissance: "39 cv",
+                coupleMaximal: "62 Nm",
+                refroidissement: "Air/Huile (SACS)",
+                vitesseMaximale: "150 km/h",
+                autonomie: "",
+                alimentation: "Carburateur Mikuni BST40",
+                freinage: "Disque/Disque",
+            }
+        },
         {
-            name: "SUZUKI BURGMAN STREET UB125",
+            name: "BURGMAN STREET UB125",
             images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-blanc.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-gris.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-noir.jpg"],
             price: "9,449 TND",
             specs: {
@@ -1213,7 +1233,7 @@ const modelsData = {
         {
             name: "Dayun Sonic",
             images: [ "./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/1.webp"],
-            price: "3,199 TND",
+            price: "3,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 2 temps",
                 cylindree: "49 cm³",
@@ -2307,6 +2327,60 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Elèctrique CDI",
                 freinage: "Disques / Disques",
+            }
+        },
+
+    ],
+    HAOJIN: [
+        {
+            name: "Lyra",
+            images: ["./img/models/haojin/lyra/lyra-1.jpeg","./img/models/haojin/lyra/lyra-2.jpeg","./img/models/haojin/lyra/lyra-3.jpeg","./img/models/haojin/lyra/lyra-4.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: "110 cm³",
+                puissance: "10 kW",
+                coupleMaximal: "14 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 km",
+                autonomie: "",
+                alimentation: "Carburateur CDI",
+                freinage: "Disques / Tambour",
+            }
+        },
+
+    ],
+    SMT: [
+        {
+            name: "Thunder",
+            images: ["./img/models/smt/thunder/thunder-1.png"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "",
+            }
+        },
+        {
+            name: "dolce",
+            images: ["./img/models/smt/dolce/dolce-1.jpeg"],
+            price: "6,000 TND",
+            specs: {
+                typeMoteur: "",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "",
             }
         },
 
