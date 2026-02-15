@@ -1086,7 +1086,7 @@ const modelsData = {
         {
             name: "BBM 124 FZ MAX",
             images: ["./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/2.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/3.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/4.jpg"],
-            price: "2,849 TND",
+            price: "2,750 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",

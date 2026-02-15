@@ -1010,7 +1010,8 @@
               <img src="./img/social/facebook.png" alt="Facebook actumoto.tn" />
             </a>
             <a
-              href="#"
+              id="instagram-deep-link"
+              href="https://www.instagram.com/marwen_actumoto/"
               class="social-btn instagram"
               aria-label="Instagram (lien)"
             >
@@ -1150,7 +1151,7 @@
     </footer>
 
     <!-- Charger les données et le script -->
-    <script src="data.js?v=20250214"></script>
+    <script src="data.js?v=202502144"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
@@ -1311,6 +1312,90 @@
 
         // Initialize the carousel
         initCarousel();
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Configuration
+        var instagramUsername = "marwen_actumoto";
+        var instaBtn = document.getElementById("instagram-btn");
+
+        if (instaBtn) {
+          instaBtn.addEventListener("click", function (e) {
+            // Détection basique si c'est un appareil mobile/tablette
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(
+              navigator.userAgent,
+            );
+
+            if (isMobile) {
+              // Sur mobile, on empêche l'ouverture standard et on force l'URI Scheme de l'app
+              e.preventDefault();
+
+              // Cette URL parle directement à l'application installée
+              var appUrl = "instagram://user?username=" + instagramUsername;
+
+              // Lien de secours si l'app n'est pas installée (rare mais possible)
+              var webUrl =
+                "https://www.instagram.com/" + instagramUsername + "/";
+
+              // On essaie d'ouvrir l'app
+              window.location.href = appUrl;
+
+              // Petit délai de sécurité : si l'app ne s'ouvre pas après 1 seconde, on redirige vers le web
+              setTimeout(function () {
+                // On vérifie si la page est toujours active (sinon c'est que l'app s'est ouverte)
+                if (!document.hidden) {
+                  window.location.href = webUrl;
+                }
+              }, 1000);
+            }
+            // Si c'est sur PC, le lien href standard (https://...) fonctionne normalement
+          });
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var instaBtn = document.getElementById("instagram-deep-link");
+        var username = "marwen_actumoto"; // Ton nom d'utilisateur exact
+
+        if (instaBtn) {
+          instaBtn.addEventListener("click", function (e) {
+            var userAgent =
+              navigator.userAgent || navigator.vendor || window.opera;
+
+            // Détection Android
+            if (/android/i.test(userAgent)) {
+              e.preventDefault();
+              // La méthode "Intent" force Android à ouvrir l'activité de profil spécifique
+              // Cela contourne le bug de la page d'accueil
+              var androidUrl =
+                "intent://instagram.com/_u/" +
+                username +
+                "/#Intent;package=com.instagram.android;scheme=https;end";
+              window.location.href = androidUrl;
+            }
+
+            // Détection iOS (iPhone/iPad)
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+              e.preventDefault();
+              // iOS préfère les "Universal Links" avec le préfixe /_u/
+              // On change la fenêtre actuelle pour forcer le switch d'app
+              window.location.href =
+                "https://www.instagram.com/_u/" + username + "/";
+            }
+
+            // PC / Mac (Comportement normal)
+            else {
+              // Sur PC, on veut que ça s'ouvre dans un nouvel onglet
+              window.open(
+                "https://www.instagram.com/" + username + "/",
+                "_blank",
+              );
+              e.preventDefault(); // On empêche le lien standard pour utiliser window.open
+            }
+          });
+        }
       });
     </script>
   </body>
