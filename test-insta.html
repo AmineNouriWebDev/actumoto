@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Comparatif Instagram - 2 Comptes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fafafa;
+      }
+      .account-section {
+        background: white;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .test-link {
+        display: block;
+        margin: 10px 0;
+        padding: 15px;
+        background: #e4405f;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .test-link:active {
+        background: #d62e4f;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      h2 {
+        color: #e4405f;
+        margin-top: 0;
+        border-bottom: 2px solid #e4405f;
+        padding-bottom: 10px;
+      }
+      .username {
+        font-family: monospace;
+        background: #f0f0f0;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      .instructions {
+        background: #e3f2fd;
+        border-left: 4px solid #2196f3;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+      .result-box {
+        background: #fff;
+        border: 2px solid #ddd;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 8px;
+      }
+      .result-box h3 {
+        margin: 0 0 10px 0;
+        color: #555;
+        font-size: 14px;
+      }
+      .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .checkbox-item input {
+        width: 20px;
+        height: 20px;
+      }
+      .compare-btn {
+        background: #4caf50;
+        color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        margin: 20px 0;
+        cursor: pointer;
+      }
+      .compare-btn:active {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🔍 Test Comparatif Instagram</h1>
+
+    <div class="instructions">
+      <strong>📋 Instructions :</strong><br />
+      1. Testez chaque lien sur votre smartphone<br />
+      2. Cochez les résultats ci-dessous<br />
+      3. Comparez les comportements des deux comptes<br />
+      4. Cela nous aidera à identifier si le problème est spécifique au compte
+      ou général
+    </div>
+
+    <!-- COMPTE CLIENT -->
+    <div class="account-section">
+      <h2>🏍️ Compte Client (actumoto)</h2>
+      <p>Nom d'utilisateur : <span class="username">@marwen_actumoto</span></p>
+
+      <a
+        href="https://www.instagram.com/marwen_actumoto/"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - Lien Standard
+      </a>
+
+      <a
+        href="https://www.instagram.com/_u/marwen_actumoto/"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - Universal Link
+      </a>
+
+      <a
+        href="https://urlgeni.us/instagram/8FfxnV"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - URLGenius
+      </a>
+
+      <div class="result-box">
+        <h3>Résultats pour @marwen_actumoto :</h3>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="client-home" />
+            <label for="client-home"
+              >❌ Ouvre la page d'accueil Instagram</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="client-profile" />
+            <label for="client-profile"
+              >✅ Ouvre le bon profil dans l'app</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="client-browser" />
+            <label for="client-browser"
+              >🌐 Reste dans le navigateur (fonctionne)</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="client-error" />
+            <label for="client-error">⚠️ Erreur / Page introuvable</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPTE PERSONNEL -->
+    <div class="account-section">
+      <h2>👤 Votre Compte Personnel</h2>
+      <p>Nom d'utilisateur : <span class="username">@aminenouri191919</span></p>
+
+      <a
+        href="https://www.instagram.com/aminenouri191919/"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - Lien Standard
+      </a>
+
+      <a
+        href="https://www.instagram.com/_u/aminenouri191919/"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - Universal Link
+      </a>
+
+      <a href="instagram://user?username=aminenouri191919" class="test-link">
+        📱 TESTER - URI Scheme
+      </a>
+
+      <div class="result-box">
+        <h3>Résultats pour @aminenouri191919 :</h3>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="personal-home" />
+            <label for="personal-home"
+              >❌ Ouvre la page d'accueil Instagram</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="personal-profile" />
+            <label for="personal-profile"
+              >✅ Ouvre le bon profil dans l'app</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="personal-browser" />
+            <label for="personal-browser"
+              >🌐 Reste dans le navigateur (fonctionne)</label
+            >
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="personal-error" />
+            <label for="personal-error">⚠️ Erreur / Page introuvable</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPTE DE RÉFÉRENCE -->
+    <div class="account-section">
+      <h2>⭐ Compte de Référence (Test)</h2>
+      <p>
+        Nom d'utilisateur : <span class="username">@instagram</span> (compte
+        officiel)
+      </p>
+
+      <a
+        href="https://www.instagram.com/instagram/"
+        class="test-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📱 TESTER - Compte @instagram
+      </a>
+
+      <div class="result-box">
+        <h3>Résultats pour @instagram (référence) :</h3>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="ref-home" />
+            <label for="ref-home">❌ Ouvre la page d'accueil Instagram</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="ref-profile" />
+            <label for="ref-profile">✅ Ouvre le bon profil dans l'app</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="compare-btn" onclick="showAnalysis()">
+      🔬 ANALYSER LES RÉSULTATS
+    </button>
+
+    <div
+      id="analysis"
+      style="
+        display: none;
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      "
+    >
+      <h3 style="margin-top: 0">📊 Analyse des résultats</h3>
+      <div id="analysisContent"></div>
+    </div>
+
+    <script>
+      function showAnalysis() {
+        var clientHome = document.getElementById("client-home").checked;
+        var clientProfile = document.getElementById("client-profile").checked;
+        var personalHome = document.getElementById("personal-home").checked;
+        var personalProfile =
+          document.getElementById("personal-profile").checked;
+        var refHome = document.getElementById("ref-home").checked;
+        var refProfile = document.getElementById("ref-profile").checked;
+
+        var analysis = "";
+
+        // Analyse comparative
+        if (clientHome && personalHome && refHome) {
+          analysis =
+            "<strong>🔴 PROBLÈME GÉNÉRAL</strong><br>Tous les comptes redirigent vers la page d'accueil. C'est un bug Instagram global ou un problème avec votre appareil/app Instagram.<br><br><strong>Solution :</strong> Réinstallez l'app Instagram ou mettez-la à jour.";
+        } else if (clientHome && !personalProfile && !refProfile) {
+          analysis =
+            "<strong>🟡 PROBLÈME SPÉCIFIQUE AU COMPTE CLIENT</strong><br>Seul le compte @marwen_actumoto pose problème. Les autres fonctionnent.<br><br><strong>Cause probable :</strong><br>- Compte privé ou restreint<br>- Shadowban Instagram<br>- Compte récemment créé<br>- Nom d'utilisateur récemment changé<br><br><strong>Solution :</strong> Vérifiez les paramètres de confidentialité du compte @marwen_actumoto.";
+        } else if (clientProfile && personalProfile && refProfile) {
+          analysis =
+            "<strong>🟢 TOUT FONCTIONNE !</strong><br>Tous les liens fonctionnent correctement. Le problème était peut-être temporaire ou lié au cache.<br><br><strong>Action :</strong> Vous pouvez utiliser n'importe quel format de lien sur votre site.";
+        } else if (!clientProfile && personalProfile && refProfile) {
+          analysis =
+            "<strong>🔴 PROBLÈME SPÉCIFIQUE : Compte @marwen_actumoto</strong><br>Votre compte personnel et le compte de référence fonctionnent, mais pas @marwen_actumoto.<br><br><strong>Actions à vérifier :</strong><br>1. Le compte est-il PUBLIC ?<br>2. Y a-t-il des restrictions sur le compte ?<br>3. Le nom d'utilisateur est-il correct ?<br>4. Essayez de chercher manuellement @marwen_actumoto dans l'app<br><br><strong>Recommandation :</strong> Contactez le propriétaire du compte pour vérifier ses paramètres Instagram.";
+        } else {
+          analysis =
+            "<strong>ℹ️ RÉSULTATS MIXTES</strong><br>Les résultats varient selon les comptes. Cochez toutes les cases pour une analyse complète.";
+        }
+
+        document.getElementById("analysisContent").innerHTML = analysis;
+        document.getElementById("analysis").style.display = "block";
+
+        // Scroll vers l'analyse
+        document
+          .getElementById("analysis")
+          .scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    </script>
+  </body>
+</html>

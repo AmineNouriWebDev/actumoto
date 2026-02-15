@@ -25,7 +25,8 @@ const brands = [
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
-    { name: "MS", logo: "./img/logos-actumoto/ms.png?v=2" }, 
+     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+    
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
@@ -42,14 +43,18 @@ const brands = [
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png?v=2" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
-    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
-    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
-    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
-     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
-  { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
-    { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },  
-    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
     
+    
+    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
+    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
+     { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
+    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
+    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
+    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
+   
+    { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
+    { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
+    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },   
     
     
 ];
@@ -58,7 +63,7 @@ const modelsData = {
     Peugeot: [
         
         {
-            name: "PEUGEOT Django 125",
+            name: "Django 125",
             images: ["./img/models/peugeot/peugeot-django-125/peugeot-django-125-1.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-2.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-3.jpeg","./img/models/peugeot/peugeot-django-125/peugeot-django-125-4.jpeg"],
             price: "10,900 TND",
             specs: {
@@ -74,7 +79,7 @@ const modelsData = {
             }
         },
         {
-            name: "PEUGEOT Tweet 125 + pare-brise + casque + top case ",
+            name: "Tweet 125 + pare-brise + casque + top case ",
             images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg"],
             price: "9,900 TND",
             specs: {
@@ -90,7 +95,7 @@ const modelsData = {
             }
         },
         {
-            name: "PEUGEOT PM 01 125",
+            name: "PM 01 125",
             images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
             price: "11,500 TND",
             specs: {
@@ -106,7 +111,7 @@ const modelsData = {
             }
         },
         {
-            name: "Peugeot pulsion 125 i ABS",
+            name: "Pulsion 125 i ABS",
             images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
             price: "12,900 TND",
             specs: {
@@ -123,7 +128,7 @@ const modelsData = {
         },
       
         {
-            name: "PEUGEOT XP 400",
+            name: "XP 400",
             images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg","./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
             price: "42,900 TND",
             specs: {
@@ -139,7 +144,7 @@ const modelsData = {
             }
         },
           {
-            name: "PEUGEOT MÉTROPOLIS 400",
+            name: "MÉTROPOLIS 400",
             images: ["./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-1.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-2.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-3.jpeg","./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-4.jpeg"],
             price: "59,000 TND",
             specs: {
@@ -175,7 +180,7 @@ const modelsData = {
         {
             name: "BURGMAN STREET UB125",
             images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-blanc.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-gris.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-noir.jpg"],
-            price: "9,449 TND",
+            price: "9,450 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -191,7 +196,7 @@ const modelsData = {
     ],
     PIAGGIO: [
         {
-            name: "Piaggio VESPA VXL ",
+            name: "VESPA VXL ",
             images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
             price: "10,900 TND",
             specs: {
@@ -207,7 +212,7 @@ const modelsData = {
             }
         },
         {
-            name: "PIAGGIO VESPA GTS",
+            name: "VESPA GTS",
             images: ["./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-1.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-2.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-3.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-4.jpeg"],
             price: "29,900 TND",
             specs: {
@@ -223,7 +228,7 @@ const modelsData = {
             }
         },
         {
-            name: "Piaggio Liberty S 2025",
+            name: "Liberty S 2025",
             images: ["./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-1.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-2.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-3.jpeg"],
             price: "16,500 TND",
             specs: {
@@ -241,7 +246,7 @@ const modelsData = {
     ],
     APRILIA: [
          {
-            name: "Aprilia SR GT 125 ",
+            name: "SR GT 125 ",
             images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
             price: "En arrivage",
             specs: {
@@ -258,9 +263,9 @@ const modelsData = {
             
         },
         {
-            name: "Aprilia sr 125",
+            name: "SR 125",
             images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
-            price: "8,699 TND",
+            price: "8,700 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -275,7 +280,7 @@ const modelsData = {
         },
        
         {
-            name: "Aprilia SR 125 iget",
+            name: "SR 125 iget",
             images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
             price: "11,900 TND",
             specs: {
@@ -296,7 +301,7 @@ const modelsData = {
     ],
     CFMOTO: [
         {
-            name: "CFMOTO 450MT",
+            name: "450MT",
             images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp","./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg","./img/models/cfmoto/CFMOTO-450MT/2.webp","./img/models/cfmoto/CFMOTO-450MT/3.webp"],
             price: "58,200 TND",
             specs: {
@@ -312,7 +317,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 800MT-X",
+            name: "800MT-X",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg","./img/models/cfmoto/CF-MOTO-800MT-X/2.webp","./img/models/cfmoto/CF-MOTO-800MT-X/3.webp","./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
             price: "75,000 TND",
             specs: {
@@ -328,7 +333,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 800MT Explore",
+            name: "800MT Explore",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg","./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
             price: "78,500 TND",
             specs: {
@@ -344,7 +349,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 700MT",
+            name: "700MT",
             images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp","./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg","./img/models/cfmoto/CF-MOTO-700MT/2.webp","./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
             price: "69,800 TND",
             specs: {
@@ -360,7 +365,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 700CL-X SPORT",
+            name: "700CL-X SPORT",
             images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif","./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
             price: "61,400 TND",
             specs: {
@@ -376,7 +381,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 450CL-C",
+            name: "450CL-C",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg","./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg","./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
             price: "57,800 TND",
             specs: {
@@ -392,7 +397,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 450CL-C-BOBER",
+            name: "450CL-C-BOBER",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
             price: "59,500 TND",
             specs: {
@@ -408,7 +413,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 125NK",
+            name: "125NK",
             images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg","./img/models/cfmoto/CF-MOTO-125NK/2.webp","./img/models/cfmoto/CF-MOTO-125NK/3.webp","./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
             price: "17,700 TND",
             specs: {
@@ -424,7 +429,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 800NK Advanced",
+            name: "800NK Advanced",
             images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp","./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
             price: "64,100 TND",
             specs: {
@@ -440,7 +445,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 300NK",
+            name: "300NK",
             images: ["./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg","./img/models/cfmoto/CF-MOTO-300NK/2.webp","./img/models/cfmoto/CF-MOTO-300NK/3.webp","./img/models/cfmoto/CF-MOTO-300NK/4.webp"],
             price: "34,100 TND",
             specs: {
@@ -456,7 +461,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 675SR-R",
+            name: "675SR-R",
             images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg","./img/models/cfmoto/CF-MOTO-675SR-R/2.webp","./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
             price: "64,900 TND",
             specs: {
@@ -472,7 +477,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 450SR-S",
+            name: "450SR-S",
             images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png","./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
             price: "54,700 TND",
             specs: {
@@ -488,7 +493,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO 150SC",
+            name: "150SC",
             images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg","./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
             price: "18,500 TND",
             specs: {
@@ -504,7 +509,7 @@ const modelsData = {
             }
         },
         {
-            name: "CF MOTO CX-5E",
+            name: "CX-5E",
             images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp","./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg","./img/models/cfmoto/CF-MOTO-CX-5E/3.webp","./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
             price: "10,600 TND",
             specs: {
@@ -524,7 +529,7 @@ const modelsData = {
          {
             name: "Eway RIDE",
             images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
-            price: "1,999 TND",
+            price: "2,000 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -538,9 +543,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA Evo ",
+            name: "Evo",
             images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg","./img/models/zimotamotor/zimota-evo/2.jpg","./img/models/zimotamotor/zimota-evo/3.jpg"],
-            price: "3,899 TND",
+            price: "3,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 2T",
                 cylindree: "50 cc",
@@ -554,9 +559,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA KEE",
+            name: "KEE",
             images: ["./img/models/zimotamotor/zimota-kee/1.jpg", "./img/models/zimotamotor/zimota-kee/2.jpg", "./img/models/zimotamotor/zimota-kee/3.jpg","./img/models/zimotamotor/zimota-kee/4.jpg"],
-            price: "3,899 TND",
+            price: "3,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "110 cc",
@@ -570,9 +575,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA TAPO ",
+            name: "TAPO",
             images: ["./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg","./img/models/zimotamotor/zimota-tapo/2.jpg","./img/models/zimotamotor/zimota-tapo/3.jpg","./img/models/zimotamotor/zimota-tapo/4.jpg"],
-            price: "3,949 TND",
+            price: "3,950 TND",
             specs: {
                 typeMoteur: "Monocylindre 2T",
                 cylindree: "50 cc",
@@ -586,9 +591,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA TARGET",
+            name: "TARGET",
             images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg","./img/models/zimotamotor/zimota-target/2.jpg","./img/models/zimotamotor/zimota-target/3.jpg","./img/models/zimotamotor/zimota-target/4.jpg"],
-            price: "3,999 TND",
+            price: "4,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -602,9 +607,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA SINUS X",
+            name: "SINUS X",
             images: ["./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg","./img/models/zimotamotor/zimota-sinus-x/2.jpg","./img/models/zimotamotor/zimota-sinus-x/3.jpg","./img/models/zimotamotor/zimota-sinus-x/4.jpg"],
-            price: "4,499 TND",
+            price: "4,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -619,9 +624,9 @@ const modelsData = {
         },
      
         {
-            name: "ZIMOTA TARGET",
+            name: "TARGET",
             images: ["./img/models/zimotamotor/zimota-target-125-bleu/1.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/2.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/3.jpg","./img/models/zimotamotor/zimota-target-125-bleu/4.jpg"],
-            price: "3,999 TND",
+            price: "4,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -636,9 +641,9 @@ const modelsData = {
         },
        
         {
-            name: "ZIMOTA RKS",
+            name: "RKS",
             images: ["./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/1.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/2.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/3.jpg","./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/4.jpg"],
-            price: "5,599 TND",
+            price: "5,600 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "125 cc",
@@ -652,9 +657,9 @@ const modelsData = {
             }
         },
         {
-            name: "ZIMOTA NX",
+            name: "NX",
             images: ["./img/models/zimotamotor/zimota-nx/1.jpg", "./img/models/zimotamotor/zimota-nx/2.jpg", "./img/models/zimotamotor/zimota-nx/3.jpg","./img/models/zimotamotor/zimota-nx/4.jpg"],
-            price: "6,799 TND",
+            price: "6,800 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "125 cc",
@@ -668,9 +673,9 @@ const modelsData = {
             }
         },
         {
-            name: "Zimota Fly",
+            name: "Fly",
             images: ["./img/models/zimotamotor/fly/zimota-fly-1.jpeg", "./img/models/zimotamotor/fly/zimota-fly-2.jpeg", "./img/models/zimotamotor/fly/zimota-fly-3.jpeg","./img/models/zimotamotor/fly/zimota-fly-4.jpeg"],
-            price: "3,249 TND",
+            price: "3,250 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "80 cc",
@@ -686,9 +691,9 @@ const modelsData = {
     ],
     SYM: [
         {
-            name: "SYM SYMPHONY SR 125",
+            name: "SYMPHONY SR 125",
             images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp","./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/2.webp","./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
-            price: "6,579 TND",
+            price: "6,600 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -702,9 +707,9 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY S 125",
+            name: "SYMPHONY S 125",
             images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg","./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
-            price: "6,579 TND",
+            price: "6,600 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -718,9 +723,9 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY ST 125 ",
+            name: "SYMPHONY ST 125 ",
             images: ["./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg","./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/2.png","./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/3.png"],
-            price: "7,999 TND",
+            price: "8,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -734,9 +739,9 @@ const modelsData = {
             }
         },
         {
-            name: "SYM JET 14 125",
+            name: "JET 14 125",
             images: ["./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg","./img/models/sym/sym-jet-14-125-ac-e5-noir/2.png","./img/models/sym/sym-jet-14-125-ac-e5-noir/3.jpg"],
-            price: "8,699 TND",
+            price: "8,700 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -750,9 +755,9 @@ const modelsData = {
             }
         },
         {
-            name: "SYM SYMPHONY ST 200",
+            name: "SYMPHONY ST 200",
             images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
-            price: "14,999 TND",
+            price: "15,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "200 cc",
@@ -766,9 +771,9 @@ const modelsData = {
             }
         },
         {
-            name: "SYM JET 4 RX 125",
+            name: "JET 4 RX 125",
             images: ["./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/2.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/3.png","./img/models/sym/sym-jet-4-rx-124-gris/4.png"],
-            price: "6,199 TND",
+            price: "6,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -799,9 +804,9 @@ const modelsData = {
         },
       
         {
-            name: "Sym FIDDLE 4",
+            name: "FIDDLE 4",
             images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg","./img/models/sym/fiddle4/4.jpg"],
-            price: "7,199 TND",
+            price: "7,200 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³",
@@ -815,7 +820,7 @@ const modelsData = {
             }
         },
          {
-            name: "Sym Orbit II",
+            name: "Orbit II",
             images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp", "./img/models/sym/orbit2/3.jpeg"],
             price: "4,900 TND",
             specs: {
@@ -833,7 +838,7 @@ const modelsData = {
           {
             name: "ADX 300CC",
             images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
-            price: "24,999 TND",
+            price: "25,000 TND",
             specs: {
                 typeMoteur: "Monocylindre – 4 T - Injection",
                 cylindree: "278 cm3",
@@ -847,7 +852,7 @@ const modelsData = {
             }
         },
         {
-            name: "Sym husky",
+            name: "Husky",
             images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg","./img/models/sym/sym-husky/4.jpg"],
             price: "16,000 TND",
             specs: {
@@ -865,26 +870,11 @@ const modelsData = {
     ],
     FORZA_MOTOR_SPORT: [
        
+        
         {
-            name: "Forza MotoStars FIRST MAXIII 3",
-            images: ["./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/2.jpeg","./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg"],
-            price: "2,899 TND",
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "5,5 Kw",
-                coupleMaximal: "7 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "90 Km/h",
-                autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-            }
-        },
-        {
-            name: "FORZA Power 107",
+            name: "Power 107",
             images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg","./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
-            price: "2,839 TND",
+            price: "2,840 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "107 cc",
@@ -898,9 +888,9 @@ const modelsData = {
             }
         },
         {
-            name: "FORZA D-MAX",
+            name: "D-MAX",
             images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg","./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
-            price: "3,049 TND",
+            price: "3,050 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -914,9 +904,9 @@ const modelsData = {
             }
         },
         {
-            name: "FORZA Power 125 ",
+            name: "Power 125 ",
             images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg","./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
-            price: "2,899 TND",
+            price: "2,900 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -936,7 +926,7 @@ const modelsData = {
          {
             name: "TANK 125CC",
             images: ["./img/models/slc/tank/tank1.png","./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
-            price: "5,199 TND",
+            price: "5,200 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps GY6",
                 cylindree: "125 cm³",
@@ -950,9 +940,9 @@ const modelsData = {
             }
         },
         {
-            name: "SLC AZUR",
+            name: "AZUR",
             images: ["./img/models/slc/slc-azur-124cc-noir/azur.png","./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg", "./img/models/slc/slc-azur-124cc-noir/3.jpeg"],
-            price: "5,199 TND",
+            price: "5,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -968,7 +958,7 @@ const modelsData = {
         {
             name: "CAPPUCINO S",
             images: ["./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/2.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/3.jpg"],
-            price: "5,499 TND",
+            price: "5,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -984,9 +974,9 @@ const modelsData = {
     ],
     SENKE: [
         {
-            name: "SENKE SK 110",
+            name: "SK 110",
             images: ["./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg","./img/models/senke/senke-sk-110-107cc-rouge/2.jpeg","./img/models/senke/senke-sk-110-107cc-rouge/3.jpeg"],
-            price: "2,949 TND",
+            price: "2,950 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "110 cc",
@@ -1000,7 +990,7 @@ const modelsData = {
             }
         },
         {
-            name: "SENKE RAPTOR",
+            name: "RAPTOR",
             images: ["./img/models/senke/senke-raptor-200cc/senke-raptor-200c-2.jpg", "./img/models/senke/senke-raptor-200cc/senke-raptor-200c-1.png" ],
             price: "9,800 TND",
             specs: {
@@ -1052,7 +1042,7 @@ const modelsData = {
         {
             name: "LM ADV",
             images: ["./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg","./img/models/lm/lm-adv-125cc-beige/2.jpg","./img/models/lm/lm-adv-125cc-beige/3.jpg"],
-            price: "9,949 TND",
+            price: "9,950 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1068,7 +1058,7 @@ const modelsData = {
         {
             name: "LA VITA",
             images: ["./img/models/lm/la-vita-125cc-bleu-orange/2.jpg","./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg"],
-            price: "5,999 TND",
+            price: "6,000 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1084,7 +1074,7 @@ const modelsData = {
     ],
     BBM: [
         {
-            name: "BBM 124 FZ MAX",
+            name: "FZ MAX 124",
             images: ["./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/2.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/3.jpg","./img/models/bbm/bbm-124cc-fz-max-compteur/4.jpg"],
             price: "2,750 TND",
             specs: {
@@ -1100,7 +1090,7 @@ const modelsData = {
             }
         },
         {
-            name: "BBM FORMULA",
+            name: "FORMULA",
             images: ["./img/models/bbm/formula/formula3.png","./img/models/bbm/formula/formula4.png","./img/models/bbm/formula/5.jpeg","./img/models/bbm/formula/6.jpeg"],
             price: "5,000 TND",
             specs: {
@@ -1118,7 +1108,7 @@ const modelsData = {
          {
             name: "TREVIS",
             images: ["./img/models/bbm/trevis/3.webp","./img/models/bbm/trevis/1.jpg","./img/models/bbm/trevis/2.webp","./img/models/bbm/trevis/4.webp"],
-            price: "4,699 TND",
+            price: "4,700 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -1150,7 +1140,7 @@ const modelsData = {
     ],
     DAYUN: [
         {
-            name: "Dayun Flora",
+            name: "Flora",
             images: ["./img/models/dayun/flora/flora.png", "./img/models/dayun/flora/flora-2.jpeg", "./img/models/dayun/flora/flora-3.jpeg", "./img/models/dayun/flora/flora-4.jpeg"],
             price: "En arrivage",
             specs: {
@@ -1166,9 +1156,9 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN DREAM",
+            name: "DREAM",
             images: ["./img/models/dayun/dayun-sniper-slc-noir/dream1.png","./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png"],
-            price: "4,499 TND",
+            price: "4,500 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1182,9 +1172,9 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN SNIPER",
+            name: "SNIPER",
             images: ["./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg", "./img/models/dayun/dayun-sniper-slc-blanc/2.jpg","./img/models/dayun/dayun-sniper-slc-blanc/3.jpg"],
-            price: "5,199 TND",
+            price: "5,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -1198,9 +1188,9 @@ const modelsData = {
             }
         },
         {
-            name: "DAYUN- DY125T",
+            name: "DY125T",
             images: ["./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg", "./img/models/dayun/dayun-dy125t-bleu/2.jpg"],
-            price: "4,569 TND",
+            price: "4,570 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -1214,9 +1204,9 @@ const modelsData = {
             }
         },
         {
-            name: "Dayun Kimbo",
+            name: "Kimbo",
             images: ["./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg", "./img/models/dayun/dayun-dy124-gris/2.jpg"],
-            price: "4,259 TND",
+            price: "4,260 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -1231,8 +1221,8 @@ const modelsData = {
         },
         
         {
-            name: "Dayun Sonic",
-            images: [ "./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/1.webp"],
+            name: "Sonic",
+            images: [ "./img/models/dayun/sonic/1.png","./img/models/dayun/sonic/2.png","./img/models/dayun/sonic/3.png"],
             price: "3,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 2 temps",
@@ -1249,9 +1239,9 @@ const modelsData = {
     ],
     NOVAGO: [
         {
-            name: "Tricycle NOVAGO SWING",
+            name: "Tricycle SWING",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.png","./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg"],
-            price: "6,199 TND",
+            price: "6,200 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1265,9 +1255,9 @@ const modelsData = {
             }
         },
         {
-            name: " NOVAGO PIKA",
+            name: "PIKA",
             images: ["./img/models/novago/novago-pika-blanc-2/2.jpg","./img/models/novago/novago-pika-blanc-2/scooter-Électrique-novago-pika-blanc-2.jpg"],
-            price: "3,299 TND",
+            price: "3,300 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1281,7 +1271,7 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TIGER 140",
+            name: "TIGER 140",
             images: ["./img/models/novago/NOVAGO-TIGER-140/2.jpg", "./img/models/novago/NOVAGO-TIGER-140/1.jpg", "./img/models/novago/NOVAGO-TIGER-140/3.jpg"],
             price: "6,600 TND",
             specs: {
@@ -1297,7 +1287,7 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TIGER 70",
+            name: "TIGER 70",
             images: ["./img/models/novago/NOVAGO-TIGER-70/2.jpg", "./img/models/novago/NOVAGO-TIGER-70/3.jpg", "./img/models/novago/NOVAGO-TIGER-70/1.jpg"],
             price: "4,900 TND",
             specs: {
@@ -1313,7 +1303,7 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO TRICITY",
+            name: "TRICITY",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg","./img/models/novago/NOVAGO-TRICITY/4.jpg"],
             price: "5,300 TND",
             specs: {
@@ -1329,7 +1319,7 @@ const modelsData = {
             }
         },
         {
-            name: "NOVAGO LUNA 70",
+            name: "LUNA 70",
             images: ["./img/models/novago/NOVAGO-LUNA-70/2.jpg", "./img/models/novago/NOVAGO-LUNA-70/3.jpg", "./img/models/novago/NOVAGO-LUNA-70/1.jpg","./img/models/novago/NOVAGO-LUNA-70/4.jpg"],
             price: "4,200 TND",
             specs: {
@@ -1347,7 +1337,7 @@ const modelsData = {
     ],
     KYMCO: [
         {
-            name: "KYMCO People S",
+            name: "People S",
             images: ["./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg","./img/models/kymco/kymco-people-s-125i-abs/2.jfif","./img/models/kymco/kymco-people-s-125i-abs/3.jpg","./img/models/kymco/kymco-people-s-125i-abs/4.png"],
             price: "10,600 TND",
             specs: {
@@ -1363,9 +1353,9 @@ const modelsData = {
             }
         },
         {
-            name: "KYMCO Dink R 125 Tunnel",
+            name: "Dink R 125 Tunnel",
             images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg","./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg","./img/models/kymco/kymco-drink-r-125-tunnel/3.png","./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
-            price: "11,699 TND",
+            price: "11,700 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1381,9 +1371,9 @@ const modelsData = {
     ],
     UNISCOOT: [
         {
-            name: "UNISCOOT TIGER ",
+            name: "TIGER ",
             images: ["./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg", "./img/models/uniscoot/uniscoot-tiger-125cc-gris/2.webp"],
-            price: "4,199 TND",
+            price: "4,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1397,9 +1387,9 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT TMAX+",
+            name: "TMAX+",
             images: ["./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg","./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/2.jpg","./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/3.jpg"],
-            price: "4,699 TND",
+            price: "4,700 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1413,9 +1403,9 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT FX2+ PLUS",
+            name: "FX2+ PLUS",
             images: ["./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg","./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/2.jpeg","./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/3.jpg"],
-            price: "4,799 TND",
+            price: "4,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1429,9 +1419,9 @@ const modelsData = {
             }
         },
         {
-            name: "UNISCOOT ZT6 ZONSEN ",
+            name: "T6 ZONSEN ",
             images: ["./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg","./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/2.jpg"],
-            price: "5,499 TND",
+            price: "5,500 TND",
             specs: {
                 typeMoteur: "Monocylindre PT125, 4 T",
                 cylindree: "125 cc",
@@ -1445,9 +1435,9 @@ const modelsData = {
             }
         },
         {
-            name: "Uniscoot Smax Plus",
+            name: "Smax Plus",
             images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg","./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
-            price: "4,699 TND",
+            price: "4,700 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 T",
                 cylindree: "125 cc",
@@ -1463,7 +1453,7 @@ const modelsData = {
         {
             name: "V8 intro 125",
             images: ["./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
-            price: "5,999 TND",
+            price: "6,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 T",
                 cylindree: "125 cc",
@@ -1476,11 +1466,27 @@ const modelsData = {
                 freinage: "Disque / Disque",
             }
         },
+        {
+            name: "Wolf",
+            images: ["./img/models/uniscoot/wolf/1.jpeg","./img/models/uniscoot/wolf/2.jpeg","./img/models/uniscoot/wolf/3.jpeg"],
+            price: "3,600 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 T",
+                cylindree: "125 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "",
+            }
+        },
     ],
     ZONTES: [
      
         {
-            name: "Zontes 703 F 2025",
+            name: "703 F",
             images: ["./img/models/zontes/zontes-703f-2025/2.webp","./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp","./img/models/zontes/zontes-703f-2025/3.jpeg","./img/models/zontes/zontes-703f-2025/4.webp"],
             price: "En Arrivage",
             specs: {
@@ -1496,7 +1502,7 @@ const modelsData = {
             }
         },
            {
-            name: "zontes 368G ADV",
+            name: "368G ADV",
             images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-1.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-2.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-3.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-4.jpeg"],
             price: "29,000 TND",
             specs: {
@@ -1514,9 +1520,9 @@ const modelsData = {
     ],
     YADEA: [
         {
-            name: "YADEA  E8S",
+            name: "E8S",
             images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg","./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
-            price: "5,999 TND",
+            price: "6,000 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1530,9 +1536,9 @@ const modelsData = {
             }
         },
         {
-            name: "YADEA EPOC",
+            name: "EPOC",
             images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg","./img/models/yadea/yadea-epoc-2000w/2.jpg","./img/models/yadea/yadea-epoc-2000w/3.jpg","./img/models/yadea/yadea-epoc-2000w/4.jpg"],
-            price: "6,499 TND",
+            price: "6,500 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1548,9 +1554,9 @@ const modelsData = {
     ],
     SANYA: [
         {
-            name: "Sanya SY 125-9F",
+            name: "SY 125-9F",
             images: ["./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg","./img/models/sanya/sanya-sy-125-9f/2.png","./img/models/sanya/sanya-sy-125-9f/3.png","./img/models/sanya/sanya-sy-125-9f/4.png"],
-            price: "5,849 TND",
+            price: "5,850 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1565,9 +1571,9 @@ const modelsData = {
             
         },
         {
-            name: "Sanya X1000",
+            name: "X1000",
             images: ["./img/models/sanya/sanya-x1000/1.jpeg","./img/models/sanya/sanya-x1000/2.jpeg","./img/models/sanya/sanya-x1000/3.png"],
-            price: "4,649 TND",
+            price: "4,650 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1582,7 +1588,7 @@ const modelsData = {
             
         },
         {
-            name: "Sanya UF",
+            name: "UF",
             images: ["./img/models/sanya/uf-125/2.jpeg","./img/models/sanya/uf-125/3.jpeg","./img/models/sanya/uf-125/1.avif"],
             price: "4,850 TND",
             specs: {
@@ -1603,7 +1609,7 @@ const modelsData = {
         {
             name: "POWER SPRING ST",
             images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg","./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
-            price: "4,199 TND",
+            price: "4,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1619,7 +1625,7 @@ const modelsData = {
           {
             name: "PISTA HR+",
             images: ["./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/2.webp","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg"],
-            price: "4,799 TND",
+            price: "4,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "110 cc",
@@ -1653,7 +1659,7 @@ const modelsData = {
         {
             name: "CBS 125 ",
             images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg","./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
-            price: "7,499 TND",
+            price: "7,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1669,7 +1675,7 @@ const modelsData = {
         {
             name: "SRK 125 S",
             images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg","./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
-            price: "10,999 TND",
+            price: "11,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1685,9 +1691,9 @@ const modelsData = {
     ],
     WOLF: [
         {
-            name: "WOLF VERO",
+            name: "VERO",
             images: ["./img/models/wolf/wolf-vero-vert-clair/1.png","./img/models/wolf/wolf-vero-vert-clair/2.png","./img/models/wolf/wolf-vero-vert-clair/3.png","./img/models/wolf/wolf-vero-vert-clair/4.png"],
-            price: "4,199 TND",
+            price: "4,200 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1703,7 +1709,7 @@ const modelsData = {
         {
             name: "WOLF 1000",
             images: ["./img/models/wolf/wolf-vero-noir/wolf2.png","./img/models/wolf/wolf-vero-noir/wolf1.png","./img/models/wolf/wolf-vero-noir/3.png"],
-            price: "3,799 TND",
+            price: "3,800 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1718,11 +1724,11 @@ const modelsData = {
         },
     
     ],
-    MS: [
+    FIRST: [
         {
-            name: "FIRST COSTA",
+            name: "COSTA",
             images: ["./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg","./img/models/ms/ms-first-costa-gris/2.jpg"],
-            price: "3,699 TND",
+            price: "3,700 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 2 temps",
                 cylindree: "50 cc",
@@ -1730,6 +1736,38 @@ const modelsData = {
                 coupleMaximal: "4 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "75 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+            }
+        },
+        {
+            name: "Forza MotoStars FIRST MAXIII 3",
+            images: ["./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/2.jpeg","./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg"],
+            price: "2,900 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "5,5 Kw",
+                coupleMaximal: "7 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+            }
+        },
+        {
+            name: "Jialing VIPER",
+            images: ["./img/models/ms/viper/1.jpeg","./img/models/ms/viper/2.jpeg"],
+            price: "3,100 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "120 Km/h",
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
@@ -1789,9 +1827,9 @@ const modelsData = {
     ],
     GOLD_MOTORS: [
         {
-            name: "Gold Motors R9",
+            name: "R9",
             images: ["./img/models/goldmotors/gold-motors-R9-bleu/1.png","./img/models/goldmotors/gold-motors-R9-bleu/2.png","./img/models/goldmotors/gold-motors-R9-bleu/3.png","./img/models/goldmotors/gold-motors-R9-bleu/4.jpeg"],
-            price: "5,199 TND",
+            price: "5,200 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1807,7 +1845,7 @@ const modelsData = {
         {
             name: "Moto Gold ",
             images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png","./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp","./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp","./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
-            price: "3,269 TND",
+            price: "3,270 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1823,9 +1861,9 @@ const modelsData = {
     ],
     XTF: [
         {
-            name: "XTF DRAGON",
+            name: "DRAGON",
             images: ["./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg","./img/models/xtf/xtf-dragon-110-noir/2.jpg","./img/models/xtf/xtf-dragon-110-noir/3.jpg","./img/models/xtf/xtf-dragon-110-noir/4.jpg"],
-            price: "3,499 TND",
+            price: "3,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "110 cc",
@@ -1839,9 +1877,9 @@ const modelsData = {
             }
         },
         {
-            name: "XTF Coccinelle",
+            name: "Coccinelle",
             images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg","./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
-            price: "3,999 TND",
+            price: "4,000 TND",
             specs: {
                 typeMoteur: "monocylindre 2 temps",
                 cylindree: "49 cc",
@@ -1859,7 +1897,7 @@ const modelsData = {
         {
             name: "Jialing Future STAR",
             images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg","./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
-            price: "3,399 TND",
+            price: "3,400 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "110 cc",
@@ -1875,7 +1913,7 @@ const modelsData = {
         {
             name: "Korak",
             images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg","./img/models/ftm/ftm-korak-noir/2.jpeg","./img/models/ftm/ftm-korak-noir/3.jfif"],
-            price: "3,499 TND",
+            price: "3,500 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "110 cc",
@@ -1891,9 +1929,9 @@ const modelsData = {
     ],
     LVNENG: [
         {
-            name: "LVNENG LX05",
+            name: "LX05",
             images: ["./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg","./img/models/lvneng/lvneng-lx05-49cc-vert/2.png","./img/models/lvneng/lvneng-lx05-49cc-vert/3.png","./img/models/lvneng/lvneng-lx05-49cc-vert/4.png"],
-            price: "5,690 TND",
+            price: "5,700 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1907,7 +1945,7 @@ const modelsData = {
             }
         },
         {
-            name: "LVNENG NCS GENUIS",
+            name: "NCS GENUIS",
             images: ["./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg","./img/models/lvneng/lvneng-ncs-genius-beige-marron/2.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/3.png","./img/models/lvneng/lvneng-ncs-genius-beige-marron/4.png"],
             price: "7,300 TND",
             specs: {
@@ -1923,7 +1961,7 @@ const modelsData = {
             }
         },
         {
-            name: "LVNENG LX08",
+            name: "LX08",
             images: [ "./img/models/lvneng/lvneng-lx08/3.jpg","./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg"],
             price: "6,290 TND",
             specs: {
@@ -1941,9 +1979,9 @@ const modelsData = {
     ],
     E_RIDER: [
         {
-            name: "E-RIDER E-CLASSIC",
+            name: "E-CLASSIC",
             images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png","./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
-            price: "5,199 TND",
+            price: "5,200 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "1,2 Kw",
@@ -1957,9 +1995,9 @@ const modelsData = {
             }
         },
         {
-            name: "E-RIDER E-TECH",
+            name: "E-TECH",
             images: ["./img/models/erider/e-tech-1200-watts/etech.png","./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
-            price: "4,179 TND",
+            price: "4,180 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1973,9 +2011,9 @@ const modelsData = {
             }
         },
         {
-            name: "E-Rider E-Power",
+            name: "E-Power",
             images: ["./img/models/erider/e-power-1200w/eride2.png","./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
-            price: "4,849 TND",
+            price: "4,850 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -1989,9 +2027,9 @@ const modelsData = {
             }
         },
         {
-            name: "E-Rider E-eco",
+            name: "E-eco",
             images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png","./img/models/erider/e-eco-1000w-blanc/scooter-Électrique-e-rider-e-eco-1000w-blanc.jpg"],
-            price: "3,679 TND",
+            price: "3,680 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2007,9 +2045,9 @@ const modelsData = {
     ],
     LIFAN: [
         {
-            name: "LIFAN Glow",
+            name: "Glow",
             images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg","./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
-            price: "3,859 TND",
+            price: "3,860 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "100 cc",
@@ -2025,9 +2063,9 @@ const modelsData = {
     ],
     WATTGO: [
         {
-            name: "Wattgo WG009",
+            name: "WG009",
             images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
-            price: "2,639 TND",
+            price: "2,640 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2041,9 +2079,9 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wg017",
+            name: "Wg017",
             images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg","./img/models/wattgo/Wattgo-Wg017/2.jpg"],
-            price: "3,575 TND",
+            price: "3,580 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2057,9 +2095,9 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wg016",
+            name: "Wg016",
             images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg","./img/models/wattgo/Wattgo-Wg016/2.jpg","./img/models/wattgo/Wattgo-Wg016/3.jpg"],
-            price: "3,299 TND",
+            price: "3,300 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2073,9 +2111,9 @@ const modelsData = {
             }
         },
         {
-            name: "Wattgo Wgoo2",
+            name: "Wgoo2",
             images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
-            price: "2,098 TND",
+            price: "2,100 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2093,7 +2131,7 @@ const modelsData = {
         {
             name: "E-FLASH",
             images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
-            price: "8,299 TND",
+            price: "8,300 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2177,7 +2215,7 @@ const modelsData = {
     ],
     LETBE: [
         {
-            name: "LETBE NEON",
+            name: "NEON",
             images: ["./img/models/letbe/LETBE-NEON-125/moora1.jpg","./img/models/letbe/LETBE-NEON-125/moora2.jpg","./img/models/letbe/LETBE-NEON-125/moora3.jpg","./img/models/letbe/LETBE-NEON-125/moora4.jpg"],
             price: "5,900 TND",
             specs: {
@@ -2195,7 +2233,7 @@ const modelsData = {
     ],
     TAILG: [
           {
-            name: "bloom",
+            name: "Bloom",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
             price: "5,000 TND",
             specs: {
@@ -2280,9 +2318,9 @@ const modelsData = {
     ],
     ECORIDE: [
         {
-            name: "ECORIDE ZEN",
+            name: "ZEN",
             images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg","./img/models/ecoride/ZEN-600-Watts/2.jpg","./img/models/ecoride/ZEN-600-Watts/3.jpg","./img/models/ecoride/ZEN-600-Watts/4.jpg"],
-            price: "1,999 TND",
+            price: "2,000 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2296,9 +2334,9 @@ const modelsData = {
             }
         },
         {
-            name: "ECORIDE ALPHA",
+            name: "ALPHA",
             images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg","./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
-            price: "2,899 TND",
+            price: "2,900 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2316,7 +2354,7 @@ const modelsData = {
         {
             name: "BWX 125",
             images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp","./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
-            price: "4,999 TND",
+            price: "5,000 TND",
             specs: {
                 typeMoteur: "monocylindre 4 temps",
                 cylindree: "124.6 cc",
@@ -2342,7 +2380,7 @@ const modelsData = {
                 puissance: "10 kW",
                 coupleMaximal: "14 Nm",
                 refroidissement: "A air",
-                vitesseMaximale: "100 km",
+                vitesseMaximale: "100 km/h",
                 autonomie: "",
                 alimentation: "Carburateur CDI",
                 freinage: "Disques / Tambour",
@@ -2368,19 +2406,19 @@ const modelsData = {
             }
         },
         {
-            name: "dolce",
+            name: "Dolce",
             images: ["./img/models/smt/dolce/dolce-1.jpeg"],
             price: "6,000 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cc",
                 puissance: "",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
+                vitesseMaximale: "100 km/h",
                 autonomie: "",
-                alimentation: "",
-                freinage: "",
+                alimentation: "Injection électronique",
+                freinage: "Disques / Disques",
             }
         },
 
@@ -2390,7 +2428,7 @@ const modelsData = {
         {
             name: "City Bike 4000",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg","./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
-            price: "7,499 TND",
+            price: "7,500 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2406,7 +2444,7 @@ const modelsData = {
         {
             name: "City Bike 3000",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg","./img/models/citybike/City-Bike-50CC-3000W/2.jpg","./img/models/citybike/City-Bike-50CC-3000W/3.jpg","./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
-            price: "6,899 TND",
+            price: "6,900 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2422,7 +2460,7 @@ const modelsData = {
           {
             name: "City Bike 2000",
             images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg","./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
-            price: "5,299 TND",
+            price: "5,300 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2592,6 +2630,62 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "",
                 freinage: "Disques / Disques ABS",
+            }
+        },
+        
+
+    ],
+    MISTRAL: [
+        {
+            name: "Tricycle 150",
+            images: ["./img/models/mistral/tricycle/tricycle.jpg"],
+            price: "8,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "150 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Tambour/Tambour ",
+            }
+        },
+        
+
+    ],
+    RAPSEV: [
+        {
+            name: "Bange Frigorifique",
+            images: ["./img/models/rapsev/tri/rapsev1.webp","./img/models/rapsev/tri/rapsev2.webp","./img/models/rapsev/tri/rapsev3.webp","./img/models/rapsev/tri/rapsev4.webp"],
+            price: "25,400 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                autonomie: "120 Km",
+                alimentation: "",
+                freinage: "",
+            }
+        },
+        {
+            name: "OAK",
+            images: ["./img/models/rapsev/oak/1.webp","./img/models/rapsev/oak/2.png"],
+            price: "23,800 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                autonomie: "110 Km",
+                alimentation: "",
+                freinage: "",
             }
         },
         
