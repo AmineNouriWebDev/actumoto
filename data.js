@@ -2,39 +2,40 @@
 const brands = [
    { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
-    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=2" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },   
-    { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
-     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },   
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+    
     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "FORZA_MOTOR_SPORT", logo: "./img/logos-actumoto/forza.png?v=2" },
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" }, 
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" }, 
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },     
+    
+     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },   
+ { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
+    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
+
+    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
+    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
+   
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
+    
    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
      { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=2" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=2" },    
+      { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" }, 
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },   
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
+     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
     { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
-     
-    { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
-    { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
-    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
      { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
-     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
-    
-    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
-    { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
+      { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
       { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
-     
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },    
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
-    
      { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
@@ -42,19 +43,17 @@ const brands = [
     { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },    
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png?v=2" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
-    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
-    
-    
+    { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },   
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
-    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
+    { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=2" },
      { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
-   
     { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
-    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },   
+    { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
+      
     
     
 ];
@@ -79,19 +78,19 @@ const modelsData = {
             }
         },
         {
-            name: "Tweet 125 + pare-brise + casque + top case ",
-            images: ["./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-1.jpeg","./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125.png", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-2.jpeg", "./img/models/peugeot/peugeot-tweet-125/peugeot-tweet-125-3.jpeg"],
-            price: "9,900 TND",
+            name: "Tweet EVO ",
+            images: ["./img/models/peugeot/peugeot-tweet-125/1.jpeg","./img/models/peugeot/peugeot-tweet-125/2.jpeg", "./img/models/peugeot/peugeot-tweet-125/3.jpeg", "./img/models/peugeot/peugeot-tweet-125/4.jpeg"],
+            price: "9,500 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cc",
-                puissance: "11,4 ch",
+                puissance: "11,5 ch",
                 coupleMaximal: "10,3 Nm",
                 refroidissement: "Air",
                 vitesseMaximale: "105 km/h",
-                autonomie: "",
+                autonomie: "200 km",
                 alimentation: "Injection électronique",
-                freinage: "Disque / Disque",
+                freinage: "Disque / Disque CBS",
             }
         },
         {
@@ -163,8 +162,8 @@ const modelsData = {
     SUZUKI: [
           {
             name: "DR 650",
-            images: ["./img/models/suzuki/dr650/dr650-1.jpeg", "./img/models/suzuki/dr650/dr650-2.jpeg", "./img/models/suzuki/dr650/dr650-3.jpeg"],
-            price: "En arrivage",
+            images: ["./img/models/suzuki/dr650/1.jpg", "./img/models/suzuki/dr650/2.jpg", "./img/models/suzuki/dr650/3.jpg","./img/models/suzuki/dr650/4.jpg"],
+            price: "37,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "644 cm³",
@@ -178,13 +177,13 @@ const modelsData = {
             }
         },
         {
-            name: "BURGMAN STREET UB125",
-            images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-blanc.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-gris.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/suzuki-burgman-street-ub125-noir.jpg"],
-            price: "9,450 TND",
+            name: "BURGMAN STREET 125",
+            images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/burgman.jpeg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/1.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/2.jpg","./img/models/suzuki/suzuki-burgman-street-ub125-blanc/3.jpg"],
+            price: "9,750 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
-                cylindree: "125 cc",
-                puissance: "8,6",
+                cylindree: "124 cc",
+                puissance: "6.3 kW (8.6 ch)",
                 coupleMaximal: "10 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
@@ -198,7 +197,7 @@ const modelsData = {
         {
             name: "VESPA VXL ",
             images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
-            price: "10,900 TND",
+            price: "9,900 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -543,6 +542,22 @@ const modelsData = {
             }
         },
         {
+            name: "Swing",
+            images: ["./img/models/zimotamotor/swing/1.jpg","./img/models/zimotamotor/swing/2.jpg","./img/models/zimotamotor/swing/3.jpg","./img/models/zimotamotor/swing/4.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "125cc",
+                puissance: "10 ch",
+                coupleMaximal: "9,8 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+            }
+        },
+        {
             name: "Evo",
             images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg","./img/models/zimotamotor/zimota-evo/2.jpg","./img/models/zimotamotor/zimota-evo/3.jpg"],
             price: "3,900 TND",
@@ -782,7 +797,7 @@ const modelsData = {
                 refroidissement: "A air",
                 vitesseMaximale: "95 km/h",
                 autonomie: "",
-                alimentation: "Injection électronique",
+                alimentation: "Carburateur",
                 freinage: "Disque/Tambour CBS",
             }
         },
@@ -867,6 +882,22 @@ const modelsData = {
                 freinage: "Disque/Disque ABS",
             }
         },
+        {
+            name: "JET X 125",
+            images: ["./img/models/sym/jet-x-125/jet-x-125-1.jpeg", "./img/models/sym/jet-x-125/jet-x-125-2.jpg", "./img/models/sym/jet-x-125/jet-x-125-3.jpg","./img/models/sym/jet-x-125/jet-x-125-4.jpg"],
+            price: "9,300 TND",
+            specs: {
+                typeMoteur: "Monocylindre – 4T – Injection",
+                cylindree: "124,6 cm3",
+                puissance: "9.3 kW à 8000 tr/min",
+                coupleMaximal: "",
+                refroidissement: "Liquide",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ABS",
+            }
+        },
     ],
     FORZA_MOTOR_SPORT: [
        
@@ -921,6 +952,22 @@ const modelsData = {
         },
     ],
     SLC: [
+           {
+            name: "D-MAX",
+            images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg","./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
+            price: "3,050 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "5,5 Kw",
+                coupleMaximal: "7 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Tambour",
+            }
+        },
         
        
          {
@@ -973,13 +1020,30 @@ const modelsData = {
         },
     ],
     SENKE: [
+          {
+            name: "Power 107",
+            images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg","./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
+            price: "2,840 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "107 cc",
+                puissance: "5,5 Kw",
+                coupleMaximal: "7 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Tambour",
+            }
+        },
+      
         {
             name: "SK 110",
-            images: ["./img/models/senke/senke-sk-110-107cc-rouge/senke-sk-110-107cc-rouge.jpg","./img/models/senke/senke-sk-110-107cc-rouge/2.jpeg","./img/models/senke/senke-sk-110-107cc-rouge/3.jpeg"],
-            price: "2,950 TND",
+            images: ["./img/models/senke/senke-sk-110-107cc-rouge/1.webp","./img/models/senke/senke-sk-110-107cc-rouge/2.webp","./img/models/senke/senke-sk-110-107cc-rouge/3.webp","./img/models/senke/senke-sk-110-107cc-rouge/4.webp"],
+            price: "3,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
-                cylindree: "110 cc",
+                cylindree: "107 cc",
                 puissance: "7 cv",
                 coupleMaximal: "",
                 refroidissement: "A air",
@@ -990,8 +1054,8 @@ const modelsData = {
             }
         },
         {
-            name: "RAPTOR",
-            images: ["./img/models/senke/senke-raptor-200cc/senke-raptor-200c-2.jpg", "./img/models/senke/senke-raptor-200cc/senke-raptor-200c-1.png" ],
+            name: "RAPTOR SK200",
+            images: ["./img/models/senke/senke-raptor-200cc/1.jpg", "./img/models/senke/senke-raptor-200cc/2.jpg", "./img/models/senke/senke-raptor-200cc/3.jpg","./img/models/senke/senke-raptor-200cc/4.jpg"],
             price: "9,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1005,24 +1069,9 @@ const modelsData = {
                 freinage: "Disque AV/AR CBS",
             }
         },
+       
         {
-            name: "SENKE 300",
-            images: ["./img/models/senke/senke-300-cc/1.jpg", "./img/models/senke/senke-300-cc/2.jpg", "./img/models/senke/senke-300-cc/3.jpg","./img/models/senke/senke-300-cc/4.jpg" ],
-            price: "24,000 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: "292 cm³",
-                puissance: "27,5 ch (20,5 kW)",
-                coupleMaximal: "22 Nm",
-                refroidissement: "Liquide",
-                vitesseMaximale: "129 km/h",
-                autonomie: "",
-                alimentation: "Injection Bosch EFI",
-                freinage: "Disque AV/AR ABS",
-            }
-        },
-        {
-            name: "SENKE 125",
+            name: "Raptor SK 125",
             images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg","./img/models/senke/senke-125-cc/4.jpg" ],
             price: "6,800 TND",
             specs: {
@@ -1035,6 +1084,55 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
+            }
+        },
+        {
+            name: "Hunter",
+            images: ["./img/models/senke/hunter/1.jpeg", "./img/models/senke/hunter/2.jpeg", "./img/models/senke/hunter/3.jpeg","./img/models/senke/hunter/4.jpeg" ],
+            price: "4,800 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "124 cm³",
+                puissance: "7,2 Kw",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "95 km/h",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disque / Tambour",
+            }
+        },
+          {
+            name: "Alien Monster",
+            images: ["./img/models/senke/alien-monster/1.jpg","./img/models/senke/alien-monster/2.jpg","./img/models/senke/alien-monster/3.jpg"],
+            price: "24,000 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "292 cm³",
+                puissance: "26,5 kW (36 ch) ",
+                coupleMaximal: "",
+                refroidissement: "air-liquide",
+                vitesseMaximale: "140 km/h,",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disque/Disque ABS",
+            }
+        },
+          
+          {
+            name: "Monster ADV",
+            images: ["./img/models/senke/monster-125/1.png","./img/models/senke/monster-125/2.webp"],
+            price: "12,500 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cm³",
+                puissance: "10,1 kW à 10 000 tr/min",
+                coupleMaximal: "10,8 Nm",
+                refroidissement: "liquide",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disque/Disque ",
             }
         },
     ],
@@ -1133,7 +1231,7 @@ const modelsData = {
                 refroidissement: "A air",
                 vitesseMaximale: "",
                 autonomie: "",
-                alimentation: "Injection électronique",
+                alimentation: "Carburateur",
                 freinage: "Disque / Disque",
             }
         },
@@ -1482,6 +1580,22 @@ const modelsData = {
                 freinage: "",
             }
         },
+             {
+            name: "TIGER 2 ",
+            images: ["./img/models/uniscoot/tiger2/5.jpg", "./img/models/uniscoot/tiger2/1.jpg","./img/models/uniscoot/tiger2/2.jpg","./img/models/uniscoot/tiger2/3.jpg"],
+            price: "4,400 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cc",
+                puissance: "5.3 KW (7500 tr/min)",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "",
+            }
+        },
     ],
     ZONTES: [
      
@@ -1624,11 +1738,11 @@ const modelsData = {
         },
           {
             name: "PISTA HR+",
-            images: ["./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/2.webp","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg"],
+            images: ["./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/1.png","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/2.jpeg","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/5.jpeg","./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg"],
             price: "4,800 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
-                cylindree: "110 cc",
+                cylindree: "125 cc",
                 puissance: "5,3 kW",
                 coupleMaximal: "6,8 Nm",
                 refroidissement: "A air",
@@ -1647,11 +1761,11 @@ const modelsData = {
                 cylindree: "124,8 cm³",
                 puissance: "11 ch",
                 coupleMaximal: "",
-                refroidissement: "A air",
+                refroidissement: "Liquide",
                 vitesseMaximale: "105 km/h",
                 autonomie: "",
                 alimentation: "Injection électronique",
-                freinage: "Disque/Tambour CBS",
+                freinage: "Disque/Disque CBS",
             }
         },
     ],
@@ -1771,6 +1885,22 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
+            }
+        },
+          {
+            name: "Power 125 ",
+            images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg","./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
+            price: "2,900 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "5,5 Kw",
+                coupleMaximal: "7 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "100 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Tambour/Tambour",
             }
         },
     ],
@@ -2062,6 +2192,22 @@ const modelsData = {
         },
     ],
     WATTGO: [
+            {
+            name: "Wgoo2",
+            images: ["./img/models/wattgo/Wattgo-Wgoo/3.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/1.jpg"],
+            price: "2,100 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "350 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "35 km/h",
+                autonomie: "60 Km",
+                alimentation: "Lithium 25 Ah",
+                freinage: "Tambour / Tambour",
+            }
+        },
         {
             name: "WG009",
             images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg","./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
@@ -2113,7 +2259,7 @@ const modelsData = {
         {
             name: "Wgoo2",
             images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg","./img/models/wattgo/Wattgo-Wgoo/2.jpg","./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
-            price: "2,100 TND",
+            price: "1,800 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2126,6 +2272,7 @@ const modelsData = {
                 freinage: "Tambour / Tambour",
             }
         },
+    
     ],
     E_FLASH: [
         {
@@ -2156,8 +2303,8 @@ const modelsData = {
                 puissance: "",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
-                autonomie: "",
+                vitesseMaximale: "50 km/h",
+                autonomie: "75 Km",
                 alimentation: "",
                 freinage: "",
             }
@@ -2174,7 +2321,7 @@ const modelsData = {
                 puissance: "1800 w",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "70 k/h",
+                vitesseMaximale: "70 km/h",
                 autonomie: "90 km",
                 alimentation: "",
                 freinage: "",
@@ -2183,14 +2330,14 @@ const modelsData = {
         {
             name: "U-BE",
             images: ["./img/models/keren/ube/keren-ube.jpeg","./img/models/keren/ube/1.jpg"],
-            price: "4,900 TND",
+            price: "2,990 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1200 w",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "",
+                vitesseMaximale: "55 km/h",
                 autonomie: "70 km",
                 alimentation: "Lithium-ion BMS",
                 freinage: "",
@@ -2199,14 +2346,14 @@ const modelsData = {
         {
             name: "U-2",
             images: ["./img/models/keren/u2/keren-u2-1.jpeg","./img/models/keren/u2/keren-u2-2.jpeg","./img/models/keren/u2/keren-u2-3.jpeg","./img/models/keren/u2/2.png",],
-            price: "4,800 TND",
+            price: "3,900 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
                 puissance: "1200 w",
                 coupleMaximal: "",
                 refroidissement: "",
-                vitesseMaximale: "70 k/h",
+                vitesseMaximale: "70 km/h",
                 autonomie: "90 km",
                 alimentation: "Lithium-ion 70v",
                 freinage: "Disque / Disque",
@@ -2391,18 +2538,18 @@ const modelsData = {
     SMT: [
         {
             name: "Thunder",
-            images: ["./img/models/smt/thunder/thunder-1.png"],
-            price: "En arrivage",
+            images: ["./img/models/smt/thunder/1.jpg","./img/models/smt/thunder/2.jpg","./img/models/smt/thunder/3.jpg","./img/models/smt/thunder/4.jpg"],
+            price: "5,800 TND",
             specs: {
-                typeMoteur: "",
-                cylindree: "",
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "125 cc",
                 puissance: "",
                 coupleMaximal: "",
-                refroidissement: "",
+                refroidissement: "A air",
                 vitesseMaximale: "",
                 autonomie: "",
-                alimentation: "",
-                freinage: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
             }
         },
         {
@@ -2548,7 +2695,7 @@ const modelsData = {
         {
             name: "Phantom Z1",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
-            price: "6,100 TND",
+            price: "5,700 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³,",
@@ -2616,6 +2763,40 @@ const modelsData = {
 
     ],
     VOGE: [
+        
+        {
+            name: "DS 525X",
+            images: ["./img/models/voge/525x/1.jpeg","./img/models/voge/525x/2.jpeg","./img/models/voge/525x/3.jpeg","./img/models/voge/525x/4.jpeg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Bicylindre 4 temps",
+                cylindree: "494cc",
+                puissance: "48 ch",
+                coupleMaximal: "50.5 N/m",
+                refroidissement: "Liquide",
+                vitesseMaximale: "160 km/h",
+                autonomie: "",
+                alimentation: "",
+                freinage: "2 disque AV/disque AR abs",
+            }
+        },
+       
+        {
+            name: "DS800X Rally",
+            images: ["./img/models/voge/ds800/1.webp","./img/models/voge/ds800/2.webp","./img/models/voge/ds800/3.webp","./img/models/voge/ds800/4.webp"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Bicylindre en ligne",
+                cylindree: "800 cc",
+                puissance: "94 ch",
+                coupleMaximal: "81 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "190 km/h",
+                autonomie: "",
+                alimentation: "Injection électronique",
+                freinage: "2 disque AV/disque AR abs",
+            }
+        },
         {
             name: "SR4 Max",
             images: ["./img/models/voge/sr4max/SR4-Max-black-L.webp","./img/models/voge/sr4max/SR4-Max-black-F.webp","./img/models/voge/sr4max/SR4-Max-black-R.webp","./img/models/voge/sr4max/SR4-Max-black-Re.webp"],
@@ -2630,6 +2811,38 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "",
                 freinage: "Disques / Disques ABS",
+            }
+        },
+         {
+            name: "SR16",
+            images: ["./img/models/voge/sr16/1.png","./img/models/voge/sr16/2.png","./img/models/voge/sr16/3.png","./img/models/voge/sr16/4.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cc",
+                puissance: "8.5 kW ",
+                coupleMaximal: "11 N.m",
+                refroidissement: "",
+                vitesseMaximale: "97 km/h",
+                autonomie: "",
+                alimentation: "",
+                freinage: "disque/disque",
+            }
+        },
+         {
+            name: "SR ADV",
+            images: ["./img/models/voge/sr-adv/1.png","./img/models/voge/sr-adv/2.png","./img/models/voge/sr-adv/3.png","./img/models/voge/sr-adv/4.webp"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "125 cc",
+                puissance: "8.5 kW ",
+                coupleMaximal: "11 N.m",
+                refroidissement: "Liquide",
+                vitesseMaximale: "115 km/h",
+                autonomie: "",
+                alimentation: "",
+                freinage: "disque/disque ABS",
             }
         },
         
