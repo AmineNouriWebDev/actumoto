@@ -921,7 +921,7 @@
             <!-- Slide 1 -->
             <div class="carousel-slide active">
               <img
-                src="./img/slider/slide1.jpeg"
+                src="./img/slider/slide9.png"
                 alt="Moto sportive rouge - Nouveaux modèles 2024"
                 class="carousel-image"
               />
@@ -929,7 +929,7 @@
             <!-- Slide 2 -->
             <div class="carousel-slide">
               <img
-                src="./img/slider/slide9.png"
+                src="./img/slider/slide1.jpeg"
                 alt="Scooter électrique urbain - Technologie moderne"
                 class="carousel-image"
               />
@@ -1154,7 +1154,7 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="data.js?v=20260311"></script>
+    <script src="data.js?v=202603214"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
@@ -1183,9 +1183,13 @@
           `;
 
           brandCard.addEventListener("click", () => {
-            window.location.href = `modeles.html?marque=${encodeURIComponent(
-              brand.name,
-            )}`;
+            if (brand.comingSoon) {
+              window.location.href = "coming-soon.html";
+            } else {
+              window.location.href = `modeles.html?marque=${encodeURIComponent(
+                brand.name,
+              )}`;
+            }
           });
 
           container.appendChild(brandCard);

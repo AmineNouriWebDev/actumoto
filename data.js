@@ -8,7 +8,8 @@ const brands = [
     { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" }, 
     { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },     
     
-     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },   
+     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
+      { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },    
  { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
 
@@ -22,7 +23,7 @@ const brands = [
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
      { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=2" },
       { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" }, 
-    { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },   
+     
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
      { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
     { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
@@ -45,14 +46,14 @@ const brands = [
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },   
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
-    { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=2" },
+    // { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=3", comingSoon: true },
      { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
     { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
     { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
-    { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
+    // { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
       
     
     
@@ -93,38 +94,8 @@ const modelsData = {
                 freinage: "Disque / Disque CBS",
             }
         },
-        {
-            name: "PM 01 125",
-            images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
-            price: "11,500 TND",
-            specs: {
-                typeMoteur: "Monocylindre 4 temps,",
-                cylindree: "125 cc",
-                puissance: "13,9 ch",
-                coupleMaximal: "11 Nm",
-                refroidissement: "Liquide,",
-                vitesseMaximale: "105 km/h",
-                autonomie: "",
-                alimentation: "Injection électronique,",
-                freinage: "Disque / Disque ABS",
-            }
-        },
-        {
-            name: "Pulsion 125 i ABS",
-            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
-            price: "12,900 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "13,2 ch",
-                coupleMaximal: "12 Nm",
-                refroidissement: "Liquide",
-                vitesseMaximale: "115 km/h",
-                autonomie: "",
-                alimentation: "Injection Électronique",
-                freinage: "Disque /Disque ABS",
-            }
-        },
+      
+    
       
         {
             name: "XP 400",
@@ -156,6 +127,38 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Injection électronique,",
                 freinage: "Double disque/ Disque ABS-CBS",
+            }
+        },
+          {
+            name: "PM 01 125",
+            images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg","./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
+            price: "11,500 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps,",
+                cylindree: "125 cc",
+                puissance: "13,9 ch",
+                coupleMaximal: "11 Nm",
+                refroidissement: "Liquide,",
+                vitesseMaximale: "105 km/h",
+                autonomie: "",
+                alimentation: "Injection électronique,",
+                freinage: "Disque / Disque ABS",
+            }
+        },
+            {
+            name: "Pulsion 125 i ABS",
+            images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg","./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
+            price: "12,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "13,2 ch",
+                coupleMaximal: "12 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "115 km/h",
+                autonomie: "",
+                alimentation: "Injection Électronique",
+                freinage: "Disque /Disque ABS",
             }
         },
     ],
@@ -544,7 +547,7 @@ const modelsData = {
         {
             name: "Swing",
             images: ["./img/models/zimotamotor/swing/1.jpg","./img/models/zimotamotor/swing/2.jpg","./img/models/zimotamotor/swing/3.jpg","./img/models/zimotamotor/swing/4.jpg"],
-            price: "En arrivage",
+            price: "4,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "125cc",
@@ -608,7 +611,7 @@ const modelsData = {
         {
             name: "TARGET",
             images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg","./img/models/zimotamotor/zimota-target/2.jpg","./img/models/zimotamotor/zimota-target/3.jpg","./img/models/zimotamotor/zimota-target/4.jpg"],
-            price: "4,000 TND",
+            price: "4,200 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -638,22 +641,7 @@ const modelsData = {
             }
         },
      
-        {
-            name: "TARGET",
-            images: ["./img/models/zimotamotor/zimota-target-125-bleu/1.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/2.jpg", "./img/models/zimotamotor/zimota-target-125-bleu/3.jpg","./img/models/zimotamotor/zimota-target-125-bleu/4.jpg"],
-            price: "4,000 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: "125 cc",
-                puissance: "",
-                coupleMaximal: "",
-                refroidissement: "A air",
-                vitesseMaximale: "100 km/h",
-                autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-            }
-        },
+      
        
         {
             name: "RKS",
@@ -772,7 +760,7 @@ const modelsData = {
         {
             name: "SYMPHONY ST 200",
             images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp","./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
-            price: "15,000 TND",
+            price: "14,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "200 cc",
@@ -896,6 +884,22 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque ABS",
+            }
+        },
+        {
+            name: "NHX 125",
+            images: ["./img/models/sym/nhx/2.jpg", "./img/models/sym/nhx/3.jpg", "./img/models/sym/nhx/4.jpg","./img/models/sym/nhx/5.jpg"],
+            price: "8,200 TND",
+            specs: {
+                typeMoteur: "Monocylindre – 4T",
+                cylindree: "124,1 cm3",
+                puissance: "8,0 kW",
+                coupleMaximal: "9,3 Nm à 7 500 tr/min",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Injection électronique",
+                freinage: "Disque ABS/ Disque ABS",
             }
         },
     ],
@@ -1166,7 +1170,7 @@ const modelsData = {
                 vitesseMaximale: "90 Km/h",
                 autonomie: "",
                 alimentation: "Injection",
-                freinage: "Disque/Disque",
+                freinage: "Disque/Disque cbs",
             }
         },
     ],
@@ -1237,22 +1241,23 @@ const modelsData = {
         },
     ],
     DAYUN: [
-        {
-            name: "Flora",
-            images: ["./img/models/dayun/flora/flora.png", "./img/models/dayun/flora/flora-2.jpeg", "./img/models/dayun/flora/flora-3.jpeg", "./img/models/dayun/flora/flora-4.jpeg"],
+         {
+            name: "Cruiser DY250-6F",
+            images: [ "./img/models/dayun/cruiser/crueser1.png","./img/models/dayun/cruiser/cruiser2.png","./img/models/dayun/cruiser/crueser3.jpg","./img/models/dayun/cruiser/crueser4.jpg"],
             price: "En arrivage",
             specs: {
-                typeMoteur: "Monocylindre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "7,3 kw",
-                coupleMaximal: "8,5 Nm",
-                refroidissement: "",
-                vitesseMaximale: "105 Km/h",
+                typeMoteur: "Bicylindre 4 temps",
+                cylindree: "250cc",
+                puissance: "19kw",
+                coupleMaximal: "21,5 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "120 km/h",
                 autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
+                alimentation: "Injection",
+                freinage: "Doube disque Av/AR disque ABS",
             }
         },
+     
         {
             name: "DREAM",
             images: ["./img/models/dayun/dayun-sniper-slc-noir/dream1.png","./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png"],
@@ -1332,6 +1337,23 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Tambour / Tambour",
+            }
+        },
+       
+           {
+            name: "Flora",
+            images: ["./img/models/dayun/flora/1.jpeg", "./img/models/dayun/flora/2.jpeg", "./img/models/dayun/flora/3.jpeg", "./img/models/dayun/flora/4.jpeg"],
+            price: "4,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "7,3 kw",
+                coupleMaximal: "8,5 Nm",
+                refroidissement: "",
+                vitesseMaximale: "105 Km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Disque",
             }
         },
     ],
@@ -2293,22 +2315,56 @@ const modelsData = {
         },
     ],
     VIGO: [
-        {
-            name: "VIGO",
-            images: ["./img/models/vigo/vigo/vigo1.png","./img/models/vigo/vigo/vigo2.png","./img/models/vigo/vigo/vigo3.png","./img/models/vigo/vigo/vigo4.jpg"],
-            price: "En arrivage",
+      
+             {
+            name: "SPECTRE",
+            images: ["./img/models/vigo/specter/spectre.png","./img/models/vigo/specter/specter.png","./img/models/vigo/loop/vigo3.png"],
+            price: "7,600 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
-                puissance: "",
+                puissance: "2000 w",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "65 km/h",
+                autonomie: "85 Km",
+                alimentation: "Batterie Life P04",
+                freinage: "Disque / Disque",
+            }
+        },
+        {
+            name: "LOOP 55",
+            images: ["./img/models/vigo/loop/loop55.png","./img/models/vigo/loop/vigo1.png","./img/models/vigo/loop/vigo2.png"],
+            price: "4,600 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "1000 w",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "45 km/h",
+                autonomie: "55 Km",
+                alimentation: "Batterie Life P04",
+                freinage: "Disque / Disque",
+            }
+        },
+        {
+            name: "LOOP 75",
+            images: ["./img/models/vigo/loop/loop.png","./img/models/vigo/loop/vigo1.png","./img/models/vigo/loop/vigo2.png"],
+            price: "5,100 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "1500 w",
                 coupleMaximal: "",
                 refroidissement: "",
                 vitesseMaximale: "50 km/h",
                 autonomie: "75 Km",
-                alimentation: "",
-                freinage: "",
+                alimentation: "Batterie Life P04",
+                freinage: "Disque / Disque",
             }
         },
+   
     ],
     KEREN: [
         {
