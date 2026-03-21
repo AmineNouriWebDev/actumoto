@@ -3197,5 +3197,36 @@ const occasionModelsData = [
     },
      
     
-
 ];
+
+// Données de contact des concessionnaires par marque
+const dealersContacts = {
+    // Guide d'utilisation :
+    // - Chaque clé doit correspondre EXACTEMENT au nom de la marque dans la const 'brands'
+    // - Propriétés optionnelles : addresses, phones, emails, website, facebook, instagram, youtube, x
+    // - Si aucune données n'est remplie pour une marque, la section ne s'affichera pas
+    // - Si une propriété est vide ou absent, cette section n'est pas affichée
+    // - Ajouter autant d'adresses/phones/emails que nécessaire
+
+    // EXEMPLE ACTIVÉ - Décommentez ou remplacez par vos vraies données :
+    "Peugeot": {
+        addresses: ["Centre Urbain Nord, Tunis", "Avenue secondaire, Sfax"],
+        phones: ["+216 70 817 066"],
+        emails: ["contact@simcc.tn"],
+        website: "https://motorsports.simcc.tn/",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+
+    // Autre exemple :
+    // "CFMOTO": {
+    //     addresses: ["Centre commercial Sousse"],
+    //     phones: ["+216 73 555 666"],
+    //     emails: ["contact@cfmoto.tn"],
+    //     website: "https://www.cfmoto.tn",
+    //     facebook: "https://www.facebook.com/cfmoto",
+    //     instagram: "https://www.instagram.com/cfmoto"
+    // },
+};

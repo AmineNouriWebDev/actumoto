@@ -674,6 +674,223 @@
           padding: 0.2rem 0.4rem;
         }
       }
+
+      /* Styles pour la section des contacts de la marque (en bas de la page) */
+      .brand-contacts-wrapper {
+        margin-top: 4rem;
+        padding: 2rem;
+        border-top: 3px solid #ff0000;
+      }
+
+      .brand-contacts {
+        text-align: center;
+      }
+
+      .contacts-title {
+        font-size: 1.5rem;
+        color: #ff0000;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: rgba(255, 0, 0, 0.05);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Version desktop pour les contacts */
+      @media (min-width: 768px) {
+        .contact-item {
+          flex-direction: column;
+          align-items: center;
+          max-width: 400px;
+          gap: 0.75rem;
+        }
+
+        .contact-icon {
+          min-width: auto;
+          margin-bottom: 0.25rem;
+        }
+
+        .contact-details {
+          flex: none;
+        }
+
+        .contact-line {
+          text-align: center;
+        }
+      }
+
+      .contact-item:hover {
+        background: rgba(255, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .contact-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-icon {
+        font-size: 1.5rem;
+        min-width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-details {
+        flex: 1;
+        text-align: center;
+      }
+
+      .contact-line {
+        font-size: 1rem;
+        color: #333;
+        word-break: break-word;
+        margin: 0.25rem 0;
+        text-align: center;
+      }
+
+      .contact-line a {
+        color: #ff0000;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .contact-line a:hover {
+        text-decoration: underline;
+        color: #cc0000;
+      }
+
+      /* Version mobile pour les contacts */
+      @media (max-width: 767px) {
+        .brand-contacts-wrapper {
+          margin-top: 2rem;
+          padding: 1.5rem;
+        }
+
+        .contacts-title {
+          font-size: 1.2rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem;
+          margin-bottom: 1rem;
+          max-width: none;
+        }
+
+        .contact-icon {
+          font-size: 1.2rem;
+          min-width: auto;
+          margin-bottom: 0.25rem;
+        }
+
+        .contact-details {
+          flex: none;
+          text-align: center;
+          width: 100%;
+        }
+
+        .contact-line {
+          font-size: 0.95rem;
+          text-align: center;
+        }
+      }
+
+      /* Styles pour les réseaux sociaux */
+      .social-item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: rgba(255, 0, 0, 0.08) !important;
+        flex-direction: row !important;
+        padding: 1.2rem !important;
+        margin-bottom: 0 !important;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        color: white;
+      }
+
+      .social-link.facebook {
+        background: #1877f2;
+      }
+
+      .social-link.facebook:hover {
+        background: #166fe5;
+        transform: scale(1.15);
+        box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+      }
+
+      .social-link.instagram {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      }
+
+      .social-link.instagram:hover {
+        transform: scale(1.15);
+        box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+      }
+
+      .social-link.youtube {
+        background: #ff0000;
+      }
+
+      .social-link.youtube:hover {
+        background: #cc0000;
+        transform: scale(1.15);
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+      }
+
+      .social-link.x {
+        background: #000000;
+        border-color: #666;
+      }
+
+      .social-link.x:hover {
+        background: #222222;
+        transform: scale(1.15);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 767px) {
+        .social-item {
+          gap: 0.5rem !important;
+          padding: 0.75rem !important;
+        }
+
+        .social-link {
+          width: 40px;
+          height: 40px;
+          font-size: 1rem;
+        }
+      }
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -774,6 +991,9 @@
           role="list"
           aria-label="Liste des modèles de motos"
         ></div>
+
+        <!-- Section pour afficher les contacts de la marque -->
+        <div id="brand-contacts-section" class="brand-contacts-wrapper"></div>
       </div>
     </section>
 
@@ -1141,6 +1361,9 @@
             }
           });
 
+          // Afficher les contacts de la marque en bas de la page
+          displayBrandContacts(brand);
+
           // DÉSACTIVÉ - Affichage plein écran au clic sur l'image
           /* Event listeners pour l'image principale (ouvre le modal)
           document.querySelectorAll(".main-image").forEach((img) => {
@@ -1247,6 +1470,98 @@
         };
 
         schemaScript.textContent = JSON.stringify(schemaData);
+      }
+
+      // Fonction pour afficher les contacts de la marque en bas de la page
+      function displayBrandContacts(brand) {
+        const contactsSection = document.getElementById("brand-contacts-section");
+
+        if (!contactsSection) return;
+
+        if (typeof dealersContacts === "undefined" || !dealersContacts[brand]) {
+          contactsSection.innerHTML = ""; // Aucun contact, ne rien afficher
+          return;
+        }
+
+        const contacts = dealersContacts[brand];
+        let contactContent = "";
+
+        if (contacts.addresses && contacts.addresses.length > 0) {
+          contactContent += `
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                ${contacts.addresses.map((addr) => `<div class="contact-line">${addr}</div>`).join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        if (contacts.phones && contacts.phones.length > 0) {
+          contactContent += `
+            <div class="contact-item">
+              <div class="contact-icon">☎️</div>
+              <div class="contact-details">
+                ${contacts.phones.map((phone) => `<div class="contact-line"><a href="tel:${phone}">${phone}</a></div>`).join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        if (contacts.emails && contacts.emails.length > 0) {
+          contactContent += `
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                ${contacts.emails.map((email) => `<div class="contact-line"><a href="mailto:${email}">${email}</a></div>`).join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        if (contacts.website) {
+          contactContent += `
+            <div class="contact-item">
+              <div class="contact-icon">🌐</div>
+              <div class="contact-details">
+                <div class="contact-line"><a href="${contacts.website}" target="_blank" rel="noopener noreferrer">${contacts.website.replace(/^https?:\/\//, '')}</a></div>
+              </div>
+            </div>
+          `;
+        }
+
+        // Section réseaux sociaux
+        let socialContent = "";
+        if (contacts.facebook || contacts.instagram || contacts.youtube || contacts.x) {
+          socialContent += `<div class="contact-item social-item">`;
+
+          if (contacts.facebook) {
+            socialContent += `<a href="${contacts.facebook}" class="social-link facebook" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Suivez-nous sur Facebook">f</a>`;
+          }
+          if (contacts.instagram) {
+            socialContent += `<a href="${contacts.instagram}" class="social-link instagram" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Suivez-nous sur Instagram">📷</a>`;
+          }
+          if (contacts.youtube) {
+            socialContent += `<a href="${contacts.youtube}" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="Abonnez-vous sur YouTube">▶️</a>`;
+          }
+          if (contacts.x) {
+            socialContent += `<a href="${contacts.x}" class="social-link x" target="_blank" rel="noopener noreferrer" title="X" aria-label="Suivez-nous sur X">𝕏</a>`;
+          }
+
+          socialContent += `</div>`;
+          contactContent += socialContent;
+        }
+
+        if (contactContent) {
+          contactsSection.innerHTML = `
+            <div class="brand-contacts">
+              <h3 class="futurist-font contacts-title">Coordonnées du concessionnaire</h3>
+              ${contactContent}
+            </div>
+          `;
+        } else {
+          contactsSection.innerHTML = "";
+        }
       }
 
       // Variables globales pour la navigation dans le modal - DÉSACTIVÉES

@@ -1,0 +1,23 @@
+// Données de contact des concessionnaires par marque
+const dealersContacts = {
+    // Guide d'utilisation :
+    // - Chaque clé doit correspondre EXACTEMENT au nom de la marque dans la const 'brands'
+    // - Les propriétés 'addresses', 'phones', 'emails' sont OPTIONNELLESs'il y en a peu)
+    // - Si aucune données n'est remplie pour une marque, la section ne s'affichera pas
+    // - Si une propriété est vide ou absent, cette section n'est pas affichée
+    // - Ajouter autant d'adresses/phones/emails que nécessaire
+
+    // EXEMPLE ACTIVÉ - Décommentez ou remplacez par vos vraies données :
+    "Peugeot": {
+        addresses: ["Rue principale, Tunis", "Avenue secondaire, Sfax"],
+        phones: ["+216 71 123 456", "+216 74 789 012"],
+        emails: ["peugeot@example.tn"]
+    },
+
+    // Autre exemple :
+    // "CFMOTO": {
+    //     addresses: ["Centre commercial Sousse"],
+    //     phones: ["+216 73 555 666"],
+    //     emails: ["contact@cfmoto.tn"]
+    // },
+};
