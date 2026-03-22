@@ -3210,7 +3210,7 @@ const dealersContacts = {
 
     // EXEMPLE ACTIVÉ - Décommentez ou remplacez par vos vraies données :
     "Peugeot": {
-        addresses: ["Centre Urbain Nord, Tunis", "Avenue secondaire, Sfax"],
+        addresses: ["Centre Urbain Nord, Tunis", /*"Avenue secondaire, Sfax"*/],
         phones: ["+216 70 817 066"],
         emails: ["contact@simcc.tn"],
         website: "https://motorsports.simcc.tn/",
@@ -3219,14 +3219,66 @@ const dealersContacts = {
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
+    "CFMOTO": {
+        addresses: ["Rue du Lac Huron, Lac 11053 Tunis, Tunisie", "Av de la république km 14 Ezzahra(GP1) après carrefour Boumhel"],
+        phones: ["+216 20 259 491"],
+        emails: ["contact@cfmoto.tn"],
+        website: "https://cfmoto.tn/",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "PIAGGIO": {
+        addresses: ["40 Rue des minéraux (collé à Cash & Carry) Zone industrielle Charguia 1, Tunis, Tunisia"],
+        phones: ["+216 51 545 352"],
+        emails: ["contact@sodiv.com.tn"],
+        website: "https://sodiv.com.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "APRILIA": {
+        addresses: ["40 Rue des minéraux (collé à Cash & Carry) Zone industrielle Charguia 1, Tunis, Tunisia"],
+        phones: ["+216 51 545 352"],
+        emails: ["contact@sodiv.com.tn"],
+        website: "https://sodiv.com.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "SENKE": {
+        addresses: ["83, Avenue de l'environnement - Borj Louzir 2073 Ariana, Tunisie"],
+        phones: ["+216 24 035 035", "+216 95 370 342", "+216 70 688 000"],
+        emails: ["contact@mbmotors.tn"],
+        website: "https://mb-motors.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "ZIMOTA_MOTOR": {
+        addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
+        phones: ["+216 28 400 037"],
+        emails: ["contact@ZIMOTA.tn"],
+        website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "QJMOTOR": {
+        addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
+        phones: ["+216 28 400 037"],
+        emails: ["contact@ZIMOTA.tn"],
+        website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
 
-    // Autre exemple :
-    // "CFMOTO": {
-    //     addresses: ["Centre commercial Sousse"],
-    //     phones: ["+216 73 555 666"],
-    //     emails: ["contact@cfmoto.tn"],
-    //     website: "https://www.cfmoto.tn",
-    //     facebook: "https://www.facebook.com/cfmoto",
-    //     instagram: "https://www.instagram.com/cfmoto"
-    // },
+   
 };

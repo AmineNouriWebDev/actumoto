@@ -679,11 +679,12 @@
       .brand-contacts-wrapper {
         margin-top: 4rem;
         padding: 2rem;
-        border-top: 3px solid #ff0000;
       }
 
       .brand-contacts {
         text-align: center;
+        border-top: 3px solid #ff0000;
+        padding-top: 2rem;
       }
 
       .contacts-title {
@@ -701,7 +702,7 @@
         gap: 1rem;
         margin-bottom: 1.5rem;
         padding: 1rem;
-        background: rgba(255, 0, 0, 0.05);
+        background: rgba(200, 200, 200, 0.2);
         border-radius: 8px;
         transition: all 0.3s ease;
         margin-left: auto;
@@ -732,7 +733,7 @@
       }
 
       .contact-item:hover {
-        background: rgba(255, 0, 0, 0.1);
+        background: rgba(200, 200, 200, 0.35);
         transform: translateY(-2px);
       }
 
@@ -818,7 +819,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        background: rgba(255, 0, 0, 0.08) !important;
+        background: rgba(200, 200, 200, 0.15) !important;
         flex-direction: row !important;
         padding: 1.2rem !important;
         margin-bottom: 0 !important;
@@ -850,7 +851,14 @@
       }
 
       .social-link.instagram {
-        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
       }
 
       .social-link.instagram:hover {
@@ -1084,7 +1092,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=202603214"></script>
+    <script src="data.js?v=20260322"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         initPage();
@@ -1474,7 +1482,9 @@
 
       // Fonction pour afficher les contacts de la marque en bas de la page
       function displayBrandContacts(brand) {
-        const contactsSection = document.getElementById("brand-contacts-section");
+        const contactsSection = document.getElementById(
+          "brand-contacts-section",
+        );
 
         if (!contactsSection) return;
 
@@ -1511,7 +1521,7 @@
         if (contacts.emails && contacts.emails.length > 0) {
           contactContent += `
             <div class="contact-item">
-              <div class="contact-icon">✉️</div>
+              <div class="contact-icon">📧</div>
               <div class="contact-details">
                 ${contacts.emails.map((email) => `<div class="contact-line"><a href="mailto:${email}">${email}</a></div>`).join("")}
               </div>
@@ -1524,7 +1534,7 @@
             <div class="contact-item">
               <div class="contact-icon">🌐</div>
               <div class="contact-details">
-                <div class="contact-line"><a href="${contacts.website}" target="_blank" rel="noopener noreferrer">${contacts.website.replace(/^https?:\/\//, '')}</a></div>
+                <div class="contact-line"><a href="${contacts.website}" target="_blank" rel="noopener noreferrer">${contacts.website.replace(/^https?:\/\//, "")}</a></div>
               </div>
             </div>
           `;
@@ -1532,7 +1542,12 @@
 
         // Section réseaux sociaux
         let socialContent = "";
-        if (contacts.facebook || contacts.instagram || contacts.youtube || contacts.x) {
+        if (
+          contacts.facebook ||
+          contacts.instagram ||
+          contacts.youtube ||
+          contacts.x
+        ) {
           socialContent += `<div class="contact-item social-item">`;
 
           if (contacts.facebook) {

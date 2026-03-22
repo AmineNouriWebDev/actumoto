@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /coming-soon.html
 Sitemap: https://actumoto.tn/sitemap.xml
 
 # Désactiver certains crawlers problématiques
