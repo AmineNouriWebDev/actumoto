@@ -529,6 +529,22 @@ const modelsData = {
     ],
     ZIMOTA_MOTOR: [
          {
+            name: "Vision 125",
+            images: ["./img/models/zimotamotor/vision/vision1.png","./img/models/zimotamotor/vision/vision2.png","./img/models/zimotamotor/vision/vision3.jpg","./img/models/zimotamotor/vision/vision4.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "125 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "",
+                freinage: "Disque / Tambour",
+            }
+        },
+         {
             name: "Eway RIDE",
             images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg","./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
             price: "2,000 TND",
@@ -841,17 +857,17 @@ const modelsData = {
           {
             name: "ADX 300CC",
             images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg","./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
-            price: "25,000 TND",
+            price: "24,000 TND",
             specs: {
                 typeMoteur: "Monocylindre – 4 T - Injection",
                 cylindree: "278 cm3",
                 puissance: "19 kW",
-                coupleMaximal: "",
+                coupleMaximal: "26 Nm",
                 refroidissement: "Liquide",
-                vitesseMaximale: "",
+                vitesseMaximale: "145 km/h",
                 autonomie: "",
-                alimentation: "",
-                freinage: "Disque/Disque",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
         {
@@ -1742,6 +1758,22 @@ const modelsData = {
         },
     ],
     KIM: [
+        {
+            name: "GHOST V7",
+            images: ["./img/models/power/ghost/1.png","./img/models/power/ghost/2.jpg"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cc",
+                puissance: "6.8 KW",
+                coupleMaximal: "9.5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Disque CBS",
+            }
+        },
         {
             name: "POWER SPRING ST",
             images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg","./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
@@ -3072,24 +3104,7 @@ const occasionModelsData = [
             freinage: "Disques hydrauliques (ABS)"
         }
     },
-    {
-        marque: "SUZUKI",
-        name: "SUZUKI-VAN.VAN.90 Cc -modèle 1982 - Jet Moto tel 24350274",
-        images: ["./img/occasion/2/1.jpg","./img/occasion/2/2.jpg",  "./img/occasion/2/3.jpg", "./img/occasion/2/4.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "0 km",
-            typeMoteur: "Monocylindre 2 temps,",
-            cylindree: "90 cm³",
-            puissance: "8 ch",
-            coupleMaximal: "",
-            refroidissement: "Air",
-            vitesseMaximale: "Environ 75 km/h",
-                autonomie: "",
-            alimentation: "",
-            freinage: ""
-        }
-    },
+   
     {
         marque: "YAMAHA",
         name: "YAMAHA-V-max 1700 -modèle 2009 - Jet Moto tel 24350274",
@@ -3129,24 +3144,7 @@ const occasionModelsData = [
         }
     },
   
-    {
-        marque: "YAMAHA",
-        name: "YAMAHA Pw 50 🇹🇳 modèle 2022 - Jet Moto tel 26711555",
-        images: ["./img/occasion/8/YAMAHA-Pw-50-1.jpg", "./img/occasion/8/YAMAHA-Pw-50-2.jpg", "./img/occasion/8/YAMAHA-Pw-50-3.jpg", "./img/occasion/8/YAMAHA-Pw-50-4.jpg"],
-        price: "",
-        specs: {
-            kilometrage: "",
-            typeMoteur: "Monocylindre 2 temps,",
-            cylindree: "49 cm³",
-            puissance: "3 ch",
-            coupleMaximal: "0,40 mkg",
-            refroidissement: "Air",
-            vitesseMaximale: "",
-                autonomie: "",
-            alimentation: "Carburateur Ø 12 mm,",
-            freinage: "Tambour Ø 80 mm AV/AR"
-        }
-    },
+    
  
    
 ];const videosData = [
@@ -3259,6 +3257,16 @@ const dealersContacts = {
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
+    "SUZUKI": {
+        addresses: ["83, Avenue de l'environnement - Borj Louzir 2073 Ariana, Tunisie"],
+        phones: ["+216 24 035 035", "+216 95 370 342", "+216 70 688 000"],
+        emails: ["contact@mbmotors.tn"],
+        website: "https://mb-motors.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
     "ZIMOTA_MOTOR": {
         addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
         phones: ["+216 28 400 037"],
@@ -3274,6 +3282,86 @@ const dealersContacts = {
         phones: ["+216 28 400 037"],
         emails: ["contact@ZIMOTA.tn"],
         website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "VOGE": {
+        addresses: ["Av Mohamed el karoui jawhara, Sousse, Tunisia"],
+        phones: ["+216 26 898 989 ","+216 26 860 086"],
+        // emails: ["contact@ZIMOTA.tn"],
+        // website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "SYM": {
+        addresses: ["Av Mohamed el karoui jawhara, Sousse, Tunisia"],
+        phones: ["+216 26 898 989 ","+216 26 860 086"],
+        // emails: ["contact@ZIMOTA.tn"],
+        // website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "FIRST": {
+        addresses: ["Ben arous, Tunis, Tunisia"],
+        phones: ["+216 71 380 253"],
+        emails: ["motosstars24@gmail.com"],
+        // website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "MISTRAL": {
+        addresses: ["Ben arous, Tunis, Tunisia"],
+        phones: ["+216 71 380 253"],
+        emails: ["motosstars24@gmail.com"],
+        // website: "https://zimota-motor.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "SLC": {
+        // addresses: ["Ben arous, Tunis, Tunisia"],
+        phones: ["+216 93 702 800"],
+        // emails: ["motosstars24@gmail.com"],
+        website: "https://slcmotos.com",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "DAYUN": {
+        // addresses: ["Ben arous, Tunis, Tunisia"],
+        phones: ["+216 93 702 800"],
+        // emails: ["motosstars24@gmail.com"],
+        website: "https://slcmotos.com",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "NOVAGO": {
+        addresses: ["Boulevard de l'environnement, route de Gabès km 1, Sfax, Tunisia"],
+        phones: ["+216 29 954 870"],
+        emails: ["info@novago.com.tn"],
+        website: "https://novago.com.tn",
+        // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "SANYA": {
+        addresses: ["Ariana rond point mahmoud l matri"],
+        phones: ["+216 23 500 999"],
+        emails: ["contact@sanya.tn"],
+        website: "https://evocmax.tn",
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
