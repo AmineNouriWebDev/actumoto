@@ -788,6 +788,236 @@
           height: 8px;
         }
       }
+
+      /* =========================================== */
+      /* MODAL STYLES - ÉQUIPEMENTS ET PARTENAIRES */
+      /* =========================================== */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: 1rem;
+      }
+
+      .modal-overlay.active {
+        display: flex;
+      }
+
+      .modal-content {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 12px;
+        padding: 2rem;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 0, 0, 0.1);
+        animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        max-height: 90vh;
+        overflow-y: auto;
+      }
+
+      @keyframes modalSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(255, 0, 0, 0.1);
+      }
+
+      .modal-title {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin: 0;
+      }
+
+      .modal-close-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #6b7280;
+        cursor: pointer;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        border-radius: 6px;
+      }
+
+      .modal-close-btn:hover {
+        background-color: rgba(255, 0, 0, 0.1);
+        color: #ff0000;
+      }
+
+      .partners-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .partner-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+
+      .partner-card:hover {
+        background: rgba(255, 255, 255, 1);
+        border-color: rgba(255, 0, 0, 0.3);
+        box-shadow: 0 8px 20px rgba(255, 0, 0, 0.1);
+        transform: translateY(-5px);
+      }
+
+      .partner-logo-link {
+        display: block;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .partner-logo {
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
+        display: block;
+        transition: all 0.3s ease;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+      }
+
+      .partner-logo-link:hover .partner-logo {
+        filter: drop-shadow(0 4px 16px rgba(255, 0, 0, 0.2));
+        transform: scale(1.05);
+      }
+
+      .partner-name {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .partner-url {
+        font-size: 0.85rem;
+        color: #ff0000;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        border: 1px solid transparent;
+        border-radius: 6px;
+      }
+
+      .partner-url:hover {
+        color: #cc0000;
+        border-color: #ff0000;
+        background-color: rgba(255, 0, 0, 0.05);
+      }
+
+      /* Responsive design pour mobile */
+      @media (max-width: 767px) {
+        .modal-content {
+          padding: 1.5rem;
+          border-radius: 10px;
+          max-width: 95%;
+        }
+
+        .modal-title {
+          font-size: 1.25rem;
+        }
+
+        .partners-grid {
+          gap: 1.5rem;
+        }
+
+        .partner-card {
+          padding: 1rem;
+        }
+
+        .partner-logo {
+          width: 150px;
+          height: 120px;
+        }
+
+        .partner-name {
+          font-size: 0.9rem;
+        }
+
+        .partner-url {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .modal-overlay {
+          padding: 0.5rem;
+        }
+
+        .modal-content {
+          padding: 1rem;
+          border-radius: 8px;
+        }
+
+        .modal-header {
+          margin-bottom: 1.5rem;
+        }
+
+        .modal-title {
+          font-size: 1.1rem;
+        }
+
+        .partners-grid {
+          gap: 1rem;
+        }
+
+        .partner-card {
+          padding: 0.8rem;
+        }
+
+        .partner-logo {
+          width: 120px;
+          height: 100px;
+        }
+
+        .partner-name {
+          font-size: 0.85rem;
+        }
+
+        .partner-url {
+          font-size: 0.75rem;
+          padding: 0.3rem 0.6rem;
+        }
+      }
     </style>
 
     <script type="application/ld+json">
@@ -915,7 +1145,7 @@
             <!-- Slide 1 -->
             <div class="carousel-slide active">
               <img
-                src="./img/slider/slide1.jpeg"
+                src="./img/slider/slide111.webp"
                 alt="Moto sportive rouge - Nouveaux modèles 2024"
                 class="carousel-image"
               />
@@ -923,7 +1153,7 @@
             <!-- Slide 2 -->
             <div class="carousel-slide">
               <img
-                src="./img/slider/slider9.png"
+                src="./img/slider/slide1.jpeg"
                 alt="Scooter électrique urbain - Technologie moderne"
                 class="carousel-image"
               />
@@ -1070,14 +1300,14 @@
             >
               OCCASION
             </a>
-            <a
-              href="https://motorsports.simcc.tn/"
+            <button
+              id="equipements-btn"
               class="news-btn"
               aria-label="Découvrir notre gamme de pièces et accessoires moto"
-              target="_blank"
+              onclick="openEquipementsModal()"
             >
               ÉQUIPEMENTS<br />PIÈCES & ACCESSOIRES
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -1090,20 +1320,105 @@
         aria-labelledby="accessoires-title"
       >
         <!-- Bannière - collée au footer -->
-        <a
-          href="https://motorsports.simcc.tn/"
+        <button
+          onclick="openEquipementsModal()"
           class="block accessories-container"
           aria-label="Accéder aux pièces et accessoires moto"
+          style="
+            background: none;
+            border: none;
+            width: 100%;
+            cursors: pointer;
+            padding: 0;
+          "
         >
           <div class="accessories-image-container">
             <img
-              src="./img/banner-simcc2.jpeg"
+              src="./img/partners/b1.webp"
               alt="Pièces et accessoires moto - motorsports.simcc.tn"
               class="accessories-image"
             />
           </div>
-        </a>
+        </button>
       </section>
+
+      <!-- Modal Équipements et Partenaires -->
+      <div
+        id="equipements-modal"
+        class="modal-overlay"
+        role="dialog"
+        aria-labelledby="modal-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="modal-title" class="modal-title">Nos Partenaires</h2>
+            <button
+              class="modal-close-btn"
+              onclick="closeEquipementsModal()"
+              aria-label="Fermer le modal"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div class="partners-grid">
+            <!-- SIMCC Partner -->
+            <div class="partner-card">
+              <a
+                href="https://motorsports.simcc.tn/"
+                class="partner-logo-link"
+                target="_blank"
+                aria-label="Visiter le site de SIMCC"
+              >
+                <img
+                  src="./img/partners/simcc.jpeg"
+                  alt="Logo SIMCC - Pièces et accessoires moto"
+                  class="partner-logo"
+                  width="200"
+                  height="150"
+                />
+              </a>
+              <div class="partner-name">SIMCC</div>
+              <a
+                href="https://www.motorsports.simcc.tn/"
+                class="partner-url"
+                target="_blank"
+                aria-label="Accéder à www.motorsports.simcc.tn"
+              >
+                www.motorsports.simcc.tn
+              </a>
+            </div>
+
+            <!-- Blayah Partner -->
+            <div class="partner-card">
+              <a
+                href="https://www.blayahscooterism.com/"
+                class="partner-logo-link"
+                target="_blank"
+                aria-label="Visiter le site de Blayah"
+              >
+                <img
+                  src="./img/partners/blayah.jpeg"
+                  alt="Logo Blayah - Accessoires scooter"
+                  class="partner-logo"
+                  width="200"
+                  height="150"
+                />
+              </a>
+              <div class="partner-name">Blayah</div>
+              <a
+                href="https://www.blayahscooterism.com/"
+                class="partner-url"
+                target="_blank"
+                aria-label="Accéder à www.blayahscooterism.com"
+              >
+                www.blayahscooterism.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -1148,7 +1463,46 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="data.js?v=202603225"></script>
+    <script src="data.js?v=202603272"></script>
+    <script>
+      // ===========================================
+      // MODAL EQUIPMENT & PARTNERS FUNCTIONS
+      // ===========================================
+      function openEquipementsModal() {
+        const modal = document.getElementById("equipements-modal");
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+        // Prevent body scroll when modal is open
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeEquipementsModal() {
+        const modal = document.getElementById("equipements-modal");
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+        // Restore body scroll
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking on the overlay (outside the content)
+      document.addEventListener("DOMContentLoaded", function () {
+        const modalOverlay = document.getElementById("equipements-modal");
+
+        modalOverlay.addEventListener("click", function (event) {
+          // Only close if clicking directly on the overlay, not the content
+          if (event.target === modalOverlay) {
+            closeEquipementsModal();
+          }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            closeEquipementsModal();
+          }
+        });
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();

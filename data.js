@@ -14,14 +14,14 @@ const brands = [
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
 
     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
-    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
-   
+    
+   { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
     { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
     
    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
-     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=2" },
+     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
       { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" }, 
      
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
@@ -32,7 +32,7 @@ const brands = [
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
       { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
-      { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" }, 
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
      { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },    
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
@@ -1160,7 +1160,7 @@ const modelsData = {
         {
             name: "LM ADV",
             images: ["./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg","./img/models/lm/lm-adv-125cc-beige/2.jpg","./img/models/lm/lm-adv-125cc-beige/3.jpg"],
-            price: "9,950 TND",
+            price: "Rupture de stock",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1758,10 +1758,11 @@ const modelsData = {
         },
     ],
     KIM: [
+        
         {
             name: "GHOST V7",
             images: ["./img/models/power/ghost/1.png","./img/models/power/ghost/2.jpg"],
-            price: "En arrivage",
+            price: "5,900 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: "125 cc",
@@ -1800,7 +1801,7 @@ const modelsData = {
                 puissance: "5,3 kW",
                 coupleMaximal: "6,8 Nm",
                 refroidissement: "A air",
-                vitesseMaximale: "90 km/h",
+                vitesseMaximale: "100 km/h",
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
@@ -1820,6 +1821,22 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Injection électronique",
                 freinage: "Disque/Disque CBS",
+            }
+        },
+           {
+            name: "PISTA HR",
+            images: ["./img/models/kim/hr/kim-pista-hr-1.webp","./img/models/kim/hr/kim-pista-hr-2.webp","./img/models/kim/hr/kim-pista-hr-3.webp"],
+            price: "4,500 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "110 cc",
+                puissance: "5,3 kW",
+                coupleMaximal: "6,8 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
             }
         },
     ],
