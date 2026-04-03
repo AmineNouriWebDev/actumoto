@@ -1,4 +1,5 @@
 // data.js - Données centralisées pour le site
+
 const brands = [
    { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
@@ -49,7 +50,7 @@ const brands = [
     // { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=3", comingSoon: true },
      { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
-    { name: "E_FLASH", logo: "./img/logos-actumoto/logo-eflash-final.png?v=2" },
+  
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
     { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
@@ -305,7 +306,7 @@ const modelsData = {
         {
             name: "450MT",
             images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp","./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg","./img/models/cfmoto/CFMOTO-450MT/2.webp","./img/models/cfmoto/CFMOTO-450MT/3.webp"],
-            price: "58,200 TND",
+            price: "49,980 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4 temps",
                 cylindree: "450 cc",
@@ -321,7 +322,7 @@ const modelsData = {
         {
             name: "800MT-X",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg","./img/models/cfmoto/CF-MOTO-800MT-X/2.webp","./img/models/cfmoto/CF-MOTO-800MT-X/3.webp","./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
-            price: "75,000 TND",
+            price: "76,160 TND",
             specs: {
                 typeMoteur: "Bicylindre",
                 cylindree: "800 cc",
@@ -337,7 +338,7 @@ const modelsData = {
         {
             name: "800MT Explore",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg","./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp","./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
-            price: "78,500 TND",
+            price: "80,920 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "800 cc",
@@ -353,7 +354,7 @@ const modelsData = {
         {
             name: "700MT",
             images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp","./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg","./img/models/cfmoto/CF-MOTO-700MT/2.webp","./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
-            price: "69,800 TND",
+            price: "58,650 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "700 cc",
@@ -401,7 +402,7 @@ const modelsData = {
         {
             name: "450CL-C-BOBER",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp","./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
-            price: "59,500 TND",
+            price: "49,950 TND",
             specs: {
                 typeMoteur: "Bicylindre",
                 cylindree: "450 cc",
@@ -417,7 +418,7 @@ const modelsData = {
         {
             name: "125NK",
             images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg","./img/models/cfmoto/CF-MOTO-125NK/2.webp","./img/models/cfmoto/CF-MOTO-125NK/3.webp","./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
-            price: "17,700 TND",
+            price: "14,850 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -433,7 +434,7 @@ const modelsData = {
         {
             name: "800NK Advanced",
             images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg","./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp","./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
-            price: "64,100 TND",
+            price: "59,500 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "800 cc",
@@ -465,7 +466,7 @@ const modelsData = {
         {
             name: "675SR-R",
             images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg","./img/models/cfmoto/CF-MOTO-675SR-R/2.webp","./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
-            price: "64,900 TND",
+            price: "53,450 TND",
             specs: {
                 typeMoteur: "3 Cylindre, 4 temps",
                 cylindree: "675 cc",
@@ -481,7 +482,7 @@ const modelsData = {
         {
             name: "450SR-S",
             images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png","./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
-            price: "54,700 TND",
+            price: "39,500 TND",
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
                 cylindree: "450 cc",
@@ -497,7 +498,7 @@ const modelsData = {
         {
             name: "150SC",
             images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg","./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
-            price: "18,500 TND",
+            price: "16,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 2 soupapes",
                 cylindree: "150 cc",
@@ -1728,7 +1729,7 @@ const modelsData = {
             price: "4,650 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
-                cylindree: "125 cc",
+                cylindree: "110 cc",
                 puissance: "5,2 kW (7,1 ch)",
                 coupleMaximal: "",
                 refroidissement: "A air",
@@ -1758,23 +1759,24 @@ const modelsData = {
         },
     ],
     KIM: [
-        
-        {
-            name: "GHOST V7",
-            images: ["./img/models/power/ghost/1.png","./img/models/power/ghost/2.jpg"],
-            price: "5,900 TND",
+          {
+            name: "PISTA HR",
+            images: ["./img/models/kim/hr/pista-hr.webp","./img/models/kim/hr/kim-pista-hr-1.webp","./img/models/kim/hr/kim-pista-hr-2.webp","./img/models/kim/hr/kim-pista-hr-3.webp"],
+            price: "4,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4T",
-                cylindree: "125 cc",
-                puissance: "6.8 KW",
-                coupleMaximal: "9.5 Nm",
+                cylindree: "110 cc",
+                puissance: "5,3 kW",
+                coupleMaximal: "6,8 Nm",
                 refroidissement: "A air",
-                vitesseMaximale: "",
+                vitesseMaximale: "90 km/h",
                 autonomie: "",
                 alimentation: "Carburateur",
-                freinage: "Disque/Disque CBS",
+                freinage: "Disque/Tambour",
             }
         },
+        
+        
         {
             name: "POWER SPRING ST",
             images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg","./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
@@ -1807,6 +1809,22 @@ const modelsData = {
                 freinage: "Disque/Tambour",
             }
         },
+        {
+            name: "GHOST V7",
+            images: ["./img/models/power/ghost/ghost1.jpeg","./img/models/power/ghost/ghost2.jpeg","./img/models/power/ghost/ghost3.jpeg"],
+            price: "5,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: "125 cc",
+                puissance: "6.8 KW",
+                coupleMaximal: "9.5 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque/Disque CBS",
+            }
+        },
           {
             name: "Blaster",
             images: ["./img/models/kim/blaster-125i/blaster-1.png","./img/models/kim/blaster-125i/blaster-2.png","./img/models/kim/blaster-125i/blaster-125i-1.jpg","./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
@@ -1823,22 +1841,7 @@ const modelsData = {
                 freinage: "Disque/Disque CBS",
             }
         },
-           {
-            name: "PISTA HR",
-            images: ["./img/models/kim/hr/kim-pista-hr-1.webp","./img/models/kim/hr/kim-pista-hr-2.webp","./img/models/kim/hr/kim-pista-hr-3.webp"],
-            price: "4,500 TND",
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: "110 cc",
-                puissance: "5,3 kW",
-                coupleMaximal: "6,8 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "90 km/h",
-                autonomie: "",
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-            }
-        },
+         
     ],
     QJMOTOR: [
         {
@@ -2180,6 +2183,22 @@ const modelsData = {
     ],
     E_RIDER: [
         {
+            name: "E-FLASH",
+            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
+            price: "6,600 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "2000 Watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "90 Km/h",
+                autonomie: "90 Km",
+                alimentation: "",
+                freinage: "",
+            }
+        },
+        {
             name: "E-CLASSIC",
             images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png","./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
             price: "5,200 TND",
@@ -2214,7 +2233,7 @@ const modelsData = {
         {
             name: "E-Power",
             images: ["./img/models/erider/e-power-1200w/eride2.png","./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
-            price: "4,850 TND",
+            price: "4,580 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2345,24 +2364,7 @@ const modelsData = {
         },
     
     ],
-    E_FLASH: [
-        {
-            name: "E-FLASH",
-            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg","./img/models/eflash/2000-watts-blanc/2.jpeg"],
-            price: "8,300 TND",
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: "",
-                puissance: "2000 Watts",
-                coupleMaximal: "",
-                refroidissement: "",
-                vitesseMaximale: "70 Km/h",
-                autonomie: "65 Km",
-                alimentation: "",
-                freinage: "",
-            }
-        },
-    ],
+  
     VIGO: [
       
              {
@@ -3387,3 +3389,71 @@ const dealersContacts = {
 
    
 };
+
+
+// =========================================== 
+// CAROUSEL SLIDES - Images du slider
+// =========================================== 
+// Structure : image_desktop est obligatoire, image_mobile est optionnelle
+// Si image_mobile n'est pas fournie, image_desktop sera utilisée sur mobile aussi
+//
+// RÉSOLUTIONS RECOMMANDÉES (objet-fit: contain)
+// ============================================
+// DESKTOP (>=768px):
+//   - Résolution: 1920x700px à 2560x900px
+//   - Ratio: 16:5 à 3:1 (landscape large)
+//   - Formats: .webp (optimisé), .jpg, .png
+//   - Taille fichier: 80-150KB (webp)
+//
+// MOBILE (<=767px):
+//   - Résolution: 375x300px à 768x768px
+//   - Ratio: à 1:1 (portrait ou carré adapté)
+//   - Formats: .webp (optimisé), .jpg, .png
+//   - Taille fichier: 30-60KB (webp)
+//
+// NOTES:
+//   - object-fit: contain assure que l'image entière est visible
+//   - Utiliser des images avec espaces négatifs pour laisser de la respirabilité
+//   - Pour mobile: préférer ratio plus carré (16:9 ou 4:3)
+//   - Pour desktop: ratio plus paysage (16:5 ou plus)
+//   - Compresser avec TinyPNG ou ImageOptim avant upload
+//   - Tester sur DevTools mobile emulation (375px, 768px, 1024px, 1920px)
+//
+const carouselSlides = [
+     {
+    id: 5,
+    image_desktop: "./img/slider/simcc/desktop/banner-dektop1.webp",
+    image_mobile: "./img/slider/simcc/mobile/banner-mobile1-2.jpeg",
+    alt: "Banner slider pista hr 110 cc",
+    link: "https://www.facebook.com/SIMCC.Motorsports" // on ajoute null sans virgule sans guillemets pour les images non cliquables
+  },
+  {
+    id: 1,
+    image_desktop: "./img/slider/simcc/desktop/banner-dektop2.webp",
+    image_mobile: "./img/slider/simcc/mobile/banner-mobile2-2.jpeg", // Optionnel - fallback à image_desktop
+    alt: "banner dolce desktop - scooter électrique urbain au design italien",
+    link: "https://www.facebook.com/SIMCC.Motorsports"// Optionnel - si null, l'image n'est pas cliquable
+  },
+  {
+    id: 2,
+    image_desktop: "./img/slider/simcc/desktop/banner-dektop3.webp",
+    image_mobile: "./img/slider/simcc/mobile/banner-mobile3-2.jpeg",
+    alt: "Scooter urbain - Technologie moderne",
+    link: "https://www.facebook.com/SIMCC.Motorsports"
+  },
+  {
+    id: 3,
+    image_desktop: "./img/slider/simcc/desktop/banner-dektop4.webp",
+    image_mobile: "./img/slider/simcc/mobile/banner-desktop-4-3.webp",
+    alt: "Moto Vespa banière- Confort et performance",
+    link: "https://www.facebook.com/SIMCC.Motorsports"
+  },
+  {
+    id: 4,
+    image_desktop: "./img/slider/simcc/desktop/banner-dektop5.webp",
+    image_mobile: "./img/slider/simcc/mobile/banner-mobile5-2.jpeg",
+    alt: "Moto custom - Style rétro",
+    link: "https://www.facebook.com/SIMCC.Motorsports"
+  }
+ 
+];
