@@ -3,20 +3,20 @@
 const brands = [
    { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
-    
-    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" }, 
     { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" }, 
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },     
+   
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" }, 
+        
     
      { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
+     { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
       { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },    
- { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
+ 
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
 
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
     
-   { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+    
+   { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
     { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
     
@@ -24,23 +24,28 @@ const brands = [
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
      { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
       { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" }, 
-     
+      
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
-     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
+     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
+     
     { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
-     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+    { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+     
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
-      { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=2" },
+      { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
      { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" }, 
+     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },  
+     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
      { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },    
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
     { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
      { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
-    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
+   { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" }, 
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
     { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },    
     { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png?v=2" },
@@ -117,7 +122,7 @@ const modelsData = {
           {
             name: "MÉTROPOLIS 400",
             images: ["./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-1.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-2.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-3.jpeg","./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-4.jpeg"],
-            price: "59,000 TND",
+            price: "En arrivage",
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
                 cylindree: "400 cc",
@@ -198,22 +203,7 @@ const modelsData = {
         },
     ],
     PIAGGIO: [
-        {
-            name: "VESPA VXL ",
-            images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
-            price: "9,900 TND",
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: "125 cc",
-                puissance: "7,1 Kw",
-                coupleMaximal: "10,6 Nm",
-                refroidissement: "A air",
-                vitesseMaximale: "90 Km/h",
-                autonomie: "",
-                alimentation: "Injection",
-                freinage: "Disque/Tambour",
-            }
-        },
+      
         {
             name: "VESPA GTS",
             images: ["./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-1.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-2.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-3.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-4.jpeg"],
@@ -246,12 +236,28 @@ const modelsData = {
                 freinage: "Disque AV ABS / Tambour AR",
             }
         },
+          {
+            name: "VESPA VXL ",
+            images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
+            price: "9,900 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "7,1 Kw",
+                coupleMaximal: "10,6 Nm",
+                refroidissement: "A air",
+                vitesseMaximale: "90 Km/h",
+                autonomie: "",
+                alimentation: "Injection",
+                freinage: "Disque/Tambour",
+            }
+        },
     ],
     APRILIA: [
          {
             name: "SR GT 125 ",
             images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
-            price: "En arrivage",
+            price: "26,000 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -268,7 +274,7 @@ const modelsData = {
         {
             name: "SR 125",
             images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
-            price: "8,700 TND",
+            price: "8,500 TND",
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
@@ -285,7 +291,7 @@ const modelsData = {
         {
             name: "SR 125 iget",
             images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
-            price: "11,900 TND",
+            price: "10,900 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps i-get",
                 cylindree: "125 cc",
@@ -703,6 +709,38 @@ const modelsData = {
                 coupleMaximal: "4,5 Nm",
                 refroidissement: "A air",
                 vitesseMaximale: "60 km/h",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+            }
+        },
+        {
+            name: "ATOM",
+            images: ["./img/models/zimotamotor/zimota-atom/atom1.png","./img/models/zimotamotor/zimota-atom/atom2.png","./img/models/zimotamotor/zimota-atom/atom3.png"],
+            price: "3,850 TND",
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: "124 cc",
+                puissance: "",
+                coupleMaximal: "7.6 Nm 6000 tr/pm",
+                refroidissement: "A air",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+            }
+        },
+        {
+            name: "EAGLE",
+            images: ["./img/models/zimotamotor/zimota-eagle/eagle1.png","./img/models/zimotamotor/zimota-eagle/eagle2.png","./img/models/zimotamotor/zimota-eagle/eagle3.png","./img/models/zimotamotor/zimota-eagle/eagle4.png"],
+            price: "3,900 TND",
+            specs: {
+                typeMoteur: "Monocylindre 2T",
+                cylindree: "49 cc",
+                puissance: "",
+                coupleMaximal: "4 Nm 6500 tr/pm",
+                refroidissement: "A air",
+                vitesseMaximale: "",
                 autonomie: "",
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
@@ -1161,7 +1199,7 @@ const modelsData = {
         {
             name: "LM ADV",
             images: ["./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg","./img/models/lm/lm-adv-125cc-beige/2.jpg","./img/models/lm/lm-adv-125cc-beige/3.jpg"],
-            price: "Rupture de stock",
+            price: "10,350 TND",
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: "125 cc",
@@ -1188,6 +1226,22 @@ const modelsData = {
                 autonomie: "",
                 alimentation: "Injection",
                 freinage: "Disque/Disque cbs",
+            }
+        },
+        {
+            name: "Shadow",
+            images: ["./img/models/lm/shadow/shadow1.webp","./img/models/lm/shadow/shadow2.webp","./img/models/lm/shadow/shadow3.webp"],
+            price: "6,900 TND",
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: "125 cc",
+                puissance: "15,5 cv",
+                coupleMaximal: "12 Nm",
+                refroidissement: "Liquide",
+                vitesseMaximale: "115 Km/h",
+                autonomie: "",
+                alimentation: "Injection",
+                freinage: "Disque/Disque ABS",
             }
         },
     ],
@@ -1248,7 +1302,7 @@ const modelsData = {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: "125 cc",
                 puissance: " 7.7 kW (10 cv)",
-                coupleMaximal: "8000 tr/min",
+                coupleMaximal: "7 Nm 8000 tr/min",
                 refroidissement: "A air",
                 vitesseMaximale: "",
                 autonomie: "",
@@ -1471,6 +1525,22 @@ const modelsData = {
                 freinage: "Disque/Disque",
             }
         },
+        {
+            name: "LIBERTA",
+            images: ["./img/models/novago/liberta/liberta1.webp"],
+            price: "4,900 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "",
+                autonomie: "40 Km",
+                alimentation: "",
+                freinage: "Disque/Disque/disque",
+            }
+        },
     ],
     KYMCO: [
         {
@@ -1657,7 +1727,7 @@ const modelsData = {
            {
             name: "368G ADV",
             images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-1.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-2.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-3.jpeg","./img/models/zontes/zontes-368g-adv-368cc/zontes-4.jpeg"],
-            price: "29,000 TND",
+            price: "rupture de stock",
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: "368 cc",
@@ -2621,6 +2691,54 @@ const modelsData = {
                 freinage: "Disques / Disques",
             }
         },
+        {
+            name: "MBX 125",
+            images: ["./img/models/gsm/mbx/mbx1.webp","./img/models/gsm/mbx/mbx2.webp","./img/models/gsm/mbx/mbx3.webp","./img/models/gsm/mbx/mbx4.webp"],
+            price: "6,000 TND",
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: "124.6 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "90 km",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disques / Disques CBS",
+            }
+        },
+        {
+            name: "MOBSTER",
+            images: ["./img/models/gsm/mobster/mobster1.webp","./img/models/gsm/mobster/mobster2.webp","./img/models/gsm/mobster/mobster3.webp","./img/models/gsm/mobster/mobster4.webp"],
+            price: "5,300 TND",
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: "125 cc",
+                puissance: "",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "90 km",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disques / Disques CBS",
+            }
+        },
+        {
+            name: "Tennis",
+            images: ["./img/models/gsm/tennis/tennis3.webp","./img/models/gsm/tennis/tennis2.webp","./img/models/gsm/tennis/tennis1.webp","./img/models/gsm/tennis/tennis4.webp"],
+            price: "5,300 TND",
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: "125 cc",
+                puissance: "12,5 cv",
+                coupleMaximal: "",
+                refroidissement: "A air",
+                vitesseMaximale: "95 km",
+                autonomie: "",
+                alimentation: "Carburateur",
+                freinage: "Disques / Disques CBS",
+            }
+        },
 
     ],
     HAOJIN: [
@@ -2656,7 +2774,7 @@ const modelsData = {
                 vitesseMaximale: "",
                 autonomie: "",
                 alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
+                freinage: "Disque / Disque",
             }
         },
         {
@@ -2732,7 +2850,7 @@ const modelsData = {
         {
             name: "AIMA Q5",
             images: ["./img/models/aima/aima-q5/aima-q5-1.jpg","./img/models/aima/aima-q5/aima-q5-2.jpg","./img/models/aima/aima-q5/aima-q5-3.jpg","./img/models/aima/aima-q5/aima-q5-4.jpg"],
-            price: "4,200 TND",
+            price: "4,000 TND",
             specs: {
                 typeMoteur: "Électrique",
                 cylindree: "",
@@ -2742,6 +2860,22 @@ const modelsData = {
                 vitesseMaximale: "45 km/h",
                 autonomie: "70 Km",
                 alimentation: "",
+                freinage: "Disques / Disques",
+            }
+        },
+        {
+            name: "Liberty",
+            images: ["./img/models/aima/one/aima1.webp","./img/models/aima/one/aima2.webp","./img/models/aima/one/aima3.png","./img/models/aima/one/aima4.png"],
+            price: "4,600 TND",
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: "",
+                puissance: "1500 watts",
+                coupleMaximal: "",
+                refroidissement: "",
+                vitesseMaximale: "50 km/h",
+                autonomie: "80 Km",
+                alimentation: "64V 30Ah",
                 freinage: "Disques / Disques",
             }
         },
@@ -2802,7 +2936,7 @@ const modelsData = {
         {
             name: "Phantom Z1",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg","./img/models/phantom/phantom-z1/phantom-z1-2.jpg","./img/models/phantom/phantom-z1/phantom-z1-3.jpg","./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
-            price: "5,700 TND",
+            price: "6,000 TND",
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: "125 cm³,",
@@ -2871,6 +3005,22 @@ const modelsData = {
     ],
     VOGE: [
         
+        {
+            name: "SR3",
+            images: ["./img/models/voge/sr3/1.png"],
+            price: "En arrivage",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: "244,3 cc",
+                puissance: "25,5 ch",
+                coupleMaximal: "23 N/m",
+                refroidissement: "Liquide",
+                vitesseMaximale: "",
+                autonomie: "",
+                alimentation: "Injection électronique EFI",
+                freinage: "Disque /Disque ABS",
+            }
+        },
         {
             name: "DS 525X",
             images: ["./img/models/voge/525x/1.jpeg","./img/models/voge/525x/2.jpeg","./img/models/voge/525x/3.jpeg","./img/models/voge/525x/4.jpeg"],
@@ -3166,51 +3316,14 @@ const occasionModelsData = [
     
  
    
-];const videosData = [
-    {
+];
+const videosData = [
+    
+      {
         id: 1,
-        marque: "Honda",
-        modele: "X-ADV",
-        youtubeId: "Tr1G8g7oiL4"
-    },
-   
-    {
-        id: 3,
         marque: "Peugeot",
-        modele: "Peugeot Pulsion",
-        youtubeId: "v3uBFipSzeA"
-    },
-   
-  
-  
-    {
-        id: 8,
-        marque: "HONDA",
-        modele: "WN7 Model Features",
-        youtubeId: "dkQHfp9qRo0"
-    },
-  
-    {
-        id: 10,
-        marque: "HONDA",
-        modele: "CB1000 GT",
-        youtubeId: "Ia1foCEjtCY"
-    },
- 
-    
-     
-    
-      {
-        id: 16,
-        marque: "Verge Motorcycles",
-        modele: "Verge TS Pro",
-        youtubeId: "cy_mXYItqXU"
-    },
-      {
-        id: 17,
-        marque: "MV Agusta",
-        modele: "mv agusta brutale 2026",
-        youtubeId: "YSePawzL5Rg"
+        modele: "Episode 1 : SIMCC - PEUGEOT",
+        youtubeId: "lEMR1COHgKQ"
     },
      
     
@@ -3382,6 +3495,16 @@ const dealersContacts = {
         emails: ["contact@sanya.tn"],
         website: "https://evocmax.tn",
         // facebook: "https://www.facebook.com/peugeot",
+        // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "VIGO": {
+        // addresses: ["Ariana rond point mahmoud l matri"],
+        phones: ["+216 29 750 876"],
+        // emails: ["contact@sanya.tn"],
+        // website: "https://evocmax.tn",
+        facebook: "https://www.facebook.com/profile.php?id=61580346530716",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
