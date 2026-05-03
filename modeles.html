@@ -1372,7 +1372,7 @@
                       ${isElectric ? '<div class="electric-badge mt-1"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
                     </div>
                     <div class="flex-shrink-0 text-right">
-                      <span class="text-red-600 font-bold text-lg block">${formatPrice(
+                      <span class="text-red-600 font-bold text-2xl block">${formatPrice(
                         model.price,
                         model.currency,
                       )}</span>
@@ -1380,18 +1380,16 @@
                   </div>
                   
                   <div class="card-footer">
-                    <div class="flex flex-wrap justify-between items-center gap-2">
-                      <button class="compare-btn flex-shrink-0 px-3 py-1.5 rounded-md border-2 border-gray-800 bg-transparent text-gray-800 hover:bg-gray-800 hover:text-white transition-all flex items-center justify-center shadow-sm gap-1.5 font-bold text-sm" title="Ajouter au comparateur" data-brand="${brand}" data-model-index="${index}" data-name="${model.name.replace(/"/g, '&quot;')}" data-price="${model.price}" data-image="${mainImage}" onclick="toggleCompare(this, '${brand}', ${index})">
+                    <div class="flex items-stretch gap-4 w-full">
+                      <button class="compare-btn flex-1 py-1.5 px-0 rounded-md border-2 border-gray-800 bg-transparent text-gray-800 hover:bg-gray-800 hover:text-white transition-all flex items-center justify-center shadow-sm gap-1 font-bold text-sm leading-none" title="Ajouter au comparateur" data-brand="${brand}" data-model-index="${index}" data-name="${model.name.replace(/"/g, '&quot;')}" data-price="${model.price}" data-image="${mainImage}" onclick="toggleCompare(this, '${brand}', ${index})">
                         <span class="compare-icon text-base">⚖️</span>
                         <span class="compare-text">Comparer</span>
                       </button>
-                      <div class="flex items-center gap-2 ml-auto">
-                        ${
-                          model.specs
-                            ? `<button class="specs-btn" data-target-id="${uniqueId}" data-card-index="${index}">Fiche technique</button>`
-                            : ""
-                        }
-                      </div>
+                      ${
+                        model.specs
+                          ? `<button class="specs-btn flex-1 flex items-center justify-center text-center m-0 leading-none" style="padding: 0.35rem 0;" data-target-id="${uniqueId}" data-card-index="${index}">Fiche technique</button>`
+                          : ""
+                      }
                     </div>
                     ${specsHtml}
                   </div>
