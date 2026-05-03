@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Comparateur de Motos - actumoto.tn</title>
+    
+    <meta name="description" content="Comparez facilement vos motos préférées sur actumoto.tn. Prix, caractéristiques, performances, et plus." />
+    
+    <!-- Favicon optimisé pour Google SERP (192x192 en premier) -->
+    <link rel="icon" href="https://actumoto.tn/img/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://actumoto.tn/img/favicon-192.png" />
+    <!-- Rétrocompatibilité -->
+    <link rel="icon" href="https://actumoto.tn/img/favicon.ico" type="image/x-icon" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./header.css" />
+    
+    <style>
+      :root {
+        --primary-red: #ff0000;
+        --primary-black: #0a0a0a;
+        --primary-white: #ffffff;
+      }
+
+      body {
+        font-family: "Rajdhani", sans-serif;
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      }
+
+      h1, h2, h3, .futurist-font {
+        font-family: "Orbitron", sans-serif;
+        font-weight: 700;
+      }
+
+      .section-back-btn {
+        position: fixed;
+        top: 120px;
+        right: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        color: #000;
+        border: 2px solid #b22222;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 100;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+      }
+
+      .section-back-btn:hover {
+        background: #b22222;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+      }
+      
+      @media (max-width: 767px) {
+        .section-back-btn {
+          top: 110px;
+          right: 1rem;
+          width: 50px;
+          height: 50px;
+          font-size: 1.3rem;
+        }
+      }
+
+      .compare-table {
+        width: 100%;
+        min-width: 800px;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border: 1px solid rgba(255,0,0,0.1);
+      }
+      
+      .compare-table th, .compare-table td {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-right: 1px solid rgba(0,0,0,0.05);
+      }
+      
+      .compare-table th:last-child, .compare-table td:last-child {
+        border-right: none;
+      }
+      
+      .compare-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      
+      .compare-table thead th {
+        background: #f8fafc;
+        position: relative;
+        vertical-align: top;
+      }
+      
+      .spec-label {
+        background: rgba(255,0,0,0.05);
+        font-weight: 600;
+        color: #ff0000;
+        width: 200px;
+      }
+      
+      .best-spec {
+        color: #16a34a;
+        font-weight: 700;
+        background: rgba(22, 163, 74, 0.05);
+        border-radius: 4px;
+      }
+      
+      .best-price {
+        color: #16a34a !important;
+      }
+      
+      .model-img-wrapper {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      
+      .model-img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      
+      .remove-btn {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: white;
+        color: #ef4444;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: all 0.2s;
+        border: 1px solid #fee2e2;
+      }
+      
+      .remove-btn:hover {
+        background: #ef4444;
+        color: white;
+        transform: scale(1.1);
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        height: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-futurist main-header" role="banner">
+      <div class="container mx-auto px-4">
+        <div class="header-container">
+          <div class="flex items-center">
+            <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
+              <img src="./img/logo-principal-6.png" alt="actumoto.tn - Logo" class="header-logo main-header-logo" width="300" height="37" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="pt-28 pb-12 mt-4 relative min-h-[60vh]" role="main">
+      <a href="index.html" class="section-back-btn" title="Retour à l'accueil" aria-label="Retour à la page d'accueil">←</a>
+
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+          <div>
+            <h1 class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2">COMPARATEUR DE MOTOS</h1>
+            <p id="comparateur-subtitle" class="text-gray-600 font-medium">Chargement...</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+              <a href="index.html" class="bg-gray-800 hover:bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-md flex items-center gap-2">
+                  <span class="text-lg leading-none">+</span> Ajouter une moto
+              </a>
+              <button onclick="clearComparateur()" class="bg-white border-2 border-red-100 hover:bg-red-50 text-red-600 px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-sm">
+                  Tout vider
+              </button>
+          </div>
+        </div>
+
+        <div id="comparateur-container" class="w-full">
+           <!-- Rend le tableau ici -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-black text-white py-8 mt-20" role="contentinfo">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p class="text-sm md:text-base">Copyright © 2026 actumoto.tn - Tous droits réservés</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:actumoto.tn@gmail.com" class="text-sm md:text-base text-white hover:text-red-300 transition-colors">
+              actumoto.tn@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="data.js?v=202604284"></script>
+    <script src="formatters.js"></script>
+    <script>
+      let compareList = JSON.parse(localStorage.getItem('comparateur_selection')) || [];
+      let fullModelsToCompare = [];
+      
+      const specLabels = {
+        typeMoteur: "Type moteur",
+        cylindree: "Cylindrée (cc)",
+        puissance: "Puissance (ch)",
+        coupleMaximal: "Couple Maximal (Nm)",
+        refroidissement: "Refroidissement",
+        vitesseMaximale: "Vitesse Maximale (km/h)",
+        tankCapacity: "Réservoir (L)",
+        autonomie: "Autonomie (km)",
+        alimentation: "Alimentation",
+        freinage: "Freinage",
+        systemeFreinage: "Système de Freinage"
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+          renderComparateur();
+      });
+
+      function loadFullModelsData() {
+          fullModelsToCompare = [];
+          
+          // Re-associer les données en cherchant par nom car l'index peut avoir été inversé
+          compareList.forEach(item => {
+              if (modelsData[item.brand]) {
+                  const modelData = modelsData[item.brand].find(m => m.name === item.name);
+                  if (modelData) {
+                      fullModelsToCompare.push({
+                          ...modelData,
+                          brand: item.brand,
+                          itemReferenceName: item.name // pour la suppression
+                      });
+                  }
+              }
+          });
+      }
+
+      function extractNumericValue(valueStr) {
+          if (valueStr === null || valueStr === undefined || valueStr === "") return null;
+          // Extract numbers, allowing for decimals
+          const match = String(valueStr).match(/[0-9]+([.,][0-9]+)?/);
+          if (match) {
+              return parseFloat(match[0].replace(',', '.'));
+          }
+          return null;
+      }
+
+      function renderComparateur() {
+          const container = document.getElementById('comparateur-container');
+          const subtitle = document.getElementById('comparateur-subtitle');
+          
+          if (compareList.length === 0) {
+              subtitle.textContent = "Aucune moto sélectionnée";
+              container.innerHTML = `
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center">
+                    <div class="text-6xl mb-4">🏍️</div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Votre comparateur est vide</h2>
+                    <p class="text-gray-500 mb-6 max-w-md mx-auto">Parcourez notre catalogue et sélectionnez vos motos préférées pour comparer leurs caractéristiques en détail.</p>
+                    <a href="index.html" class="inline-block bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-3 rounded-lg font-bold uppercase tracking-wider transition-all shadow-md">
+                        Voir les marques
+                    </a>
+                </div>
+              `;
+              return;
+          }
+          
+          subtitle.textContent = `${compareList.length} moto(s) en comparaison`;
+          loadFullModelsData();
+          
+          // Récupérer toutes les clés de specs possibles pour ces modèles
+          const allSpecKeys = new Set();
+          fullModelsToCompare.forEach(m => {
+              if (m.specs) {
+                  Object.keys(m.specs).forEach(key => allSpecKeys.add(key));
+              }
+          });
+          
+          // Ordonner les clés selon notre objet specLabels
+          const orderedKeys = Object.keys(specLabels).filter(key => allSpecKeys.has(key));
+          
+          // Identifier les meilleures valeurs
+          const bestValues = {};
+          
+          // Prix le plus bas
+          const validPrices = fullModelsToCompare.map(m => m.price).filter(p => p !== null);
+          if (validPrices.length > 0) {
+              bestValues.price = Math.min(...validPrices);
+          }
+          
+          // Plus hautes valeurs pour specs numériques
+          const specsToMaximize = ['cylindree', 'puissance', 'coupleMaximal', 'vitesseMaximale', 'tankCapacity', 'autonomie'];
+          
+          specsToMaximize.forEach(key => {
+              if (orderedKeys.includes(key)) {
+                  const values = fullModelsToCompare.map(m => m.specs && extractNumericValue(m.specs[key])).filter(v => v !== null);
+                  if (values.length > 0) {
+                      bestValues[key] = Math.max(...values);
+                  }
+              }
+          });
+          
+          // Construction du HTML
+          let html = `
+            <div class="overflow-x-auto custom-scrollbar pb-4">
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th class="spec-label bg-gray-50 align-bottom pb-4 border-b">
+                        Modèle
+                    </th>
+          `;
+          
+          // Header (Images, Prix, Noms)
+          fullModelsToCompare.forEach(m => {
+              const mainImage = (m.images && m.images.length > 0) ? m.images[0] : m.image;
+              const isBestPrice = m.price !== null && m.price === bestValues.price && fullModelsToCompare.length > 1;
+              const priceDisplay = formatPrice(m.price, m.currency);
+              
+              html += `
+                <th class="w-[200px] sm:w-[250px] relative">
+                    <button class="remove-btn" onclick="removeCompare('${m.brand}', '${m.itemReferenceName.replace(/'/g, "\\'")}')" title="Retirer">×</button>
+                    <div class="model-img-wrapper">
+                        <img src="${mainImage}" alt="${m.name}" class="model-img" onerror="this.src='./img/placeholder-moto.jpg'">
+                    </div>
+                    <div class="mb-1 text-gray-500 font-semibold uppercase tracking-wider text-xs">${m.brand}</div>
+                    <h3 class="futurist-font text-lg md:text-xl text-gray-900 leading-tight mb-2">${m.name}</h3>
+                    <div class="text-xl font-bold ${isBestPrice ? 'best-price' : 'text-red-600'}">${priceDisplay}</div>
+                    ${m.fuelType === 'Electrique' ? '<div class="mt-2 inline-block bg-cyan-500 text-white text-xs px-2 py-1 rounded-full font-bold">⚡ ÉLECTRIQUE</div>' : ''}
+                </th>
+              `;
+          });
+          
+          html += `</tr></thead><tbody>`;
+          
+          // Lignes de specs
+          orderedKeys.forEach(key => {
+              html += `<tr><td class="spec-label">${specLabels[key]}</td>`;
+              
+              fullModelsToCompare.forEach(m => {
+                  let specRawValue = (m.specs && m.specs[key] !== undefined && m.specs[key] !== null) ? m.specs[key] : "-";
+                  let specDisplay = (m.specs && m.specs[key] !== undefined && m.specs[key] !== null) ? formatSpecification(key, m.specs[key], m.fuelType) : "-";
+                  
+                  // Highlight logic
+                  let isBest = false;
+                  if (specsToMaximize.includes(key) && fullModelsToCompare.length > 1 && specRawValue !== "-") {
+                      const numVal = extractNumericValue(specRawValue);
+                      if (numVal !== null && numVal === bestValues[key]) {
+                          isBest = true;
+                      }
+                  }
+                  
+                  html += `<td class="text-center text-gray-700 ${isBest ? 'best-spec' : ''}">
+                      ${specDisplay}
+                  </td>`;
+              });
+              
+              html += `</tr>`;
+          });
+          
+          html += `</tbody></table></div>`;
+          
+          // Légende
+          if (fullModelsToCompare.length > 1) {
+              html += `
+                <div class="mt-6 flex items-center gap-2 text-sm text-gray-500 bg-white p-3 rounded-lg border border-gray-100 inline-flex">
+                    <span class="w-3 h-3 rounded-full bg-green-100 border border-green-500 inline-block"></span>
+                    <span>Indique la valeur la plus avantageuse parmi les motos sélectionnées</span>
+                </div>
+              `;
+          }
+          
+          container.innerHTML = html;
+      }
+
+      function removeCompare(brand, name) {
+          const index = compareList.findIndex(item => item.brand === brand && item.name === name);
+          if (index >= 0) {
+              compareList.splice(index, 1);
+              localStorage.setItem('comparateur_selection', JSON.stringify(compareList));
+              renderComparateur();
+          }
+      }
+
+      function clearComparateur() {
+          if(confirm("Êtes-vous sûr de vouloir vider le comparateur ?")) {
+              compareList = [];
+              localStorage.setItem('comparateur_selection', JSON.stringify(compareList));
+              renderComparateur();
+          }
+      }
+    </script>
+  </body>
+</html>
