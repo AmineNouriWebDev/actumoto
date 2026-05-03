@@ -1070,8 +1070,7 @@
         </div>
         <div class="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end flex-shrink-0 pt-1 border-t sm:border-none border-gray-100">
           <span class="text-sm font-semibold text-gray-600" id="comparateur-count">0 moto</span>
-          <a href="comparateur.html" id="comparateur-btn-go" class="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-lg font-bold text-sm uppercase tracking-wider transition-all whitespace-nowrap shadow-lg opacity-50 cursor-not-allowed pointer-events-none flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8"/><path d="M21 3l-6 6"/><path d="M3 3l6 6"/></svg>
+          <a href="comparateur.html" id="comparateur-btn-go" class="specs-btn whitespace-nowrap shadow-lg opacity-50 cursor-not-allowed pointer-events-none flex items-center justify-center text-center text-sm" style="text-decoration: none;">
             Comparer
           </a>
         </div>
@@ -1367,9 +1366,15 @@
                 </div>
                 ${thumbnailsHtml}
                 <div class="card-content">
-                  <div class="flex items-center gap-2 mb-3">
-                    <h2 class="futurist-font text-xl">${model.name}</h2>
-                    ${isElectric ? '<div class="electric-badge"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
+                  <div class="flex justify-between items-start gap-3 mb-3">
+                    <div class="flex flex-col items-start">
+                      <h2 class="futurist-font text-xl">${model.name}</h2>
+                      ${isElectric ? '<div class="electric-badge mt-1"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
+                    </div>
+                    <button class="compare-btn flex-shrink-0 px-3 py-1.5 rounded-md border-2 border-gray-800 bg-transparent text-gray-800 hover:bg-gray-800 hover:text-white transition-all flex items-center justify-center shadow-sm gap-1.5 font-bold text-sm" title="Ajouter au comparateur" data-brand="${brand}" data-model-index="${index}" data-name="${model.name.replace(/"/g, '&quot;')}" data-price="${model.price}" data-image="${mainImage}" onclick="toggleCompare(this, '${brand}', ${index})">
+                      <span class="compare-icon text-base">⚖️</span>
+                      <span class="compare-text">Comparer</span>
+                    </button>
                   </div>
                   
                   <div class="card-footer">
@@ -1384,10 +1389,6 @@
                             ? `<button class="specs-btn" data-target-id="${uniqueId}" data-card-index="${index}">Fiche technique</button>`
                             : ""
                         }
-                        <button class="compare-btn px-3 py-1.5 rounded-md border-2 border-gray-800 bg-transparent text-gray-800 hover:bg-gray-800 hover:text-white transition-all flex items-center justify-center shadow-sm gap-1.5 font-bold text-sm" title="Ajouter au comparateur" data-brand="${brand}" data-model-index="${index}" data-name="${model.name.replace(/"/g, '&quot;')}" data-price="${model.price}" data-image="${mainImage}" onclick="toggleCompare(this, '${brand}', ${index})">
-                          <span class="compare-icon text-base">⚖️</span>
-                          <span class="compare-text">Comparer</span>
-                        </button>
                       </div>
                     </div>
                     ${specsHtml}
