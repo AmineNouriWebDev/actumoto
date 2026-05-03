@@ -839,6 +839,7 @@
     </footer>
 
     <script src="data.js?v=202603223"></script>
+    <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         renderOccasions();
@@ -860,20 +861,122 @@
           const mainImage = images[0];
           const hasMultipleImages = images.length > 1;
 
+          // Déterminer le type de carburant
+          const fuelType = model.fuelType || "Thermique";
+
           // Générer le tableau des specs AVEC KILOMÉTRAGE EN PREMIER
           let specsHtml = "";
           if (model.specs) {
-            const specs = [
-              { label: "Kilométrage", value: model.specs.kilometrage }, // AJOUTÉ EN PREMIER
-              { label: "Type moteur", value: model.specs.typeMoteur },
-              { label: "Cylindrée", value: model.specs.cylindree },
-              { label: "Puissance", value: model.specs.puissance },
-              { label: "Couple Maximal", value: model.specs.coupleMaximal },
-              { label: "Refroidissement", value: model.specs.refroidissement },
-              { label: "Vitesse Maximale", value: model.specs.vitesseMaximale },
-              { label: "Alimentation", value: model.specs.alimentation },
-              { label: "Freinage", value: model.specs.freinage },
+            let specs = [
+              {
+                label: "Kilométrage",
+                value: formatSpecification(
+                  "kilometrage",
+                  model.specs.kilometrage,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Type moteur",
+                value: formatSpecification(
+                  "typeMoteur",
+                  model.specs.typeMoteur,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Cylindrée",
+                value: formatSpecification(
+                  "cylindree",
+                  model.specs.cylindree,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Puissance",
+                value: formatSpecification(
+                  "puissance",
+                  model.specs.puissance,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Couple Maximal",
+                value: formatSpecification(
+                  "coupleMaximal",
+                  model.specs.coupleMaximal,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Refroidissement",
+                value: formatSpecification(
+                  "refroidissement",
+                  model.specs.refroidissement,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Vitesse Maximale",
+                value: formatSpecification(
+                  "vitesseMaximale",
+                  model.specs.vitesseMaximale,
+                  fuelType,
+                ),
+              },
+              {
+                label: "Alimentation",
+                value: formatSpecification(
+                  "alimentation",
+                  model.specs.alimentation,
+                  fuelType,
+                ),
+              },
             ];
+
+            // Ajouter tankCapacity seulement pour Thermique
+            if (
+              fuelType === "Thermique" &&
+              model.specs.tankCapacity !== undefined
+            ) {
+              specs.push({
+                label: "Réservoir",
+                value: formatSpecification(
+                  "tankCapacity",
+                  model.specs.tankCapacity,
+                  fuelType,
+                ),
+              });
+            }
+
+            // Ajouter autonomie seulement pour Électrique
+            if (
+              fuelType === "Electrique" &&
+              model.specs.autonomie !== undefined
+            ) {
+              specs.push({
+                label: "Autonomie",
+                value: formatSpecification(
+                  "autonomie",
+                  model.specs.autonomie,
+                  fuelType,
+                ),
+              });
+            }
+
+            // Afficher freinage avec systemeFreinage si présent
+            let freinageValue = formatSpecification(
+              "freinage",
+              model.specs.freinage || "-",
+              fuelType,
+            );
+            if (model.specs.systemeFreinage) {
+              freinageValue += ` - ${model.specs.systemeFreinage}`;
+            }
+            specs.push({
+              label: "Freinage",
+              value: freinageValue,
+            });
 
             specsHtml = `
               <div class="specs-container" id="${uniqueId}" data-open="false">

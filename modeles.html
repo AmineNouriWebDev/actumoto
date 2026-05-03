@@ -1093,6 +1093,7 @@
     </footer>
 
     <script src="data.js?v=202604284"></script>
+    <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         initPage();
@@ -1137,32 +1138,114 @@
             const mainImage = images[0];
             const hasMultipleImages = images.length > 1;
 
-            // Déterminer si c'est une moto électrique
-            const isElectric =
-              model.specs && model.specs.typeMoteur === "Électrique";
+            // Déterminer le type de carburant
+            const fuelType = model.fuelType || "Thermique";
+            const isElectric = fuelType === "Electrique";
 
             let specsHtml = "";
             if (model.specs) {
-              const specs = [
-                { label: "Type moteur", value: model.specs.typeMoteur },
-                { label: "Cylindrée", value: model.specs.cylindree },
-                { label: "Puissance", value: model.specs.puissance },
-                { label: "Couple Maximal", value: model.specs.coupleMaximal },
+              // Créer le tableau des specs avec formatage
+              let specs = [
+                {
+                  label: "Type moteur",
+                  value: formatSpecification(
+                    "typeMoteur",
+                    model.specs.typeMoteur,
+                    fuelType,
+                  ),
+                },
+                {
+                  label: "Cylindrée",
+                  value: formatSpecification(
+                    "cylindree",
+                    model.specs.cylindree,
+                    fuelType,
+                  ),
+                },
+                {
+                  label: "Puissance",
+                  value: formatSpecification(
+                    "puissance",
+                    model.specs.puissance,
+                    fuelType,
+                  ),
+                },
+                {
+                  label: "Couple Maximal",
+                  value: formatSpecification(
+                    "coupleMaximal",
+                    model.specs.coupleMaximal,
+                    fuelType,
+                  ),
+                },
                 {
                   label: "Refroidissement",
-                  value: model.specs.refroidissement,
+                  value: formatSpecification(
+                    "refroidissement",
+                    model.specs.refroidissement,
+                    fuelType,
+                  ),
                 },
                 {
                   label: "Vitesse Maximale",
-                  value: model.specs.vitesseMaximale,
+                  value: formatSpecification(
+                    "vitesseMaximale",
+                    model.specs.vitesseMaximale,
+                    fuelType,
+                  ),
                 },
-                {
-                  label: "Autonomie",
-                  value: model.specs.autonomie,
-                },
-                { label: "Alimentation", value: model.specs.alimentation },
-                { label: "Freinage", value: model.specs.freinage || "—" },
               ];
+
+              // Ajouter tankCapacity seulement pour Thermique
+              if (
+                fuelType === "Thermique" &&
+                model.specs.tankCapacity !== undefined
+              ) {
+                specs.push({
+                  label: "Réservoir",
+                  value: formatSpecification(
+                    "tankCapacity",
+                    model.specs.tankCapacity,
+                    fuelType,
+                  ),
+                });
+              }
+
+              // Ajouter autonomie seulement pour Électrique
+              if (
+                fuelType === "Electrique" &&
+                model.specs.autonomie !== undefined
+              ) {
+                specs.push({
+                  label: "Autonomie",
+                  value: formatSpecification(
+                    "autonomie",
+                    model.specs.autonomie,
+                    fuelType,
+                  ),
+                });
+              }
+
+              specs.push({
+                label: "Alimentation",
+                value: formatSpecification(
+                  "alimentation",
+                  model.specs.alimentation,
+                  fuelType,
+                ),
+              });
+
+              // Afficher freinage avec systemeFreinage si présent
+              let freinageLabel = "Freinage";
+              let freinageValue = formatSpecification(
+                "freinage",
+                model.specs.freinage || "-",
+                fuelType,
+              );
+              if (model.specs.systemeFreinage) {
+                freinageValue += ` - ${model.specs.systemeFreinage}`;
+              }
+              specs.push({ label: freinageLabel, value: freinageValue });
 
               specsHtml = `
                 <div class="specs-container" id="${uniqueId}" data-open="false">
@@ -1260,9 +1343,10 @@
                   
                   <div class="card-footer">
                     <div class="flex justify-between items-center gap-2">
-                      <span class="text-red-600 font-bold text-lg">${
-                        model.price
-                      }</span>
+                      <span class="text-red-600 font-bold text-lg">${formatPrice(
+                        model.price,
+                        model.currency,
+                      )}</span>
                       ${
                         model.specs
                           ? `<button class="specs-btn" data-target-id="${uniqueId}" data-card-index="${index}">Fiche technique</button>`
@@ -1470,7 +1554,7 @@
               category: model.type,
               offers: {
                 "@type": "Offer",
-                price: model.price.replace(/[^0-9,]/g, "").replace(",", "."),
+                price: model.price,
                 priceCurrency: "TND",
               },
             },
