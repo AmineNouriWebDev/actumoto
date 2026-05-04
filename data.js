@@ -76,6 +76,19 @@ const brands = [
 
 ];
 
+const categories = [
+    { name: "Custom", logo: "./img/category/custom.webp" },
+    { name: "Electrique", logo: "./img/category/electrique.webp" },
+    { name: "Motocross", logo: "./img/category/motocross.webp" },
+    { name: "Motocyclette", logo: "./img/category/motocyclette.webp" },
+    { name: "Quad", logo: "./img/category/quad.webp" },
+    { name: "Roadster", logo: "./img/category/roadster.webp" },
+    { name: "Scooter", logo: "./img/category/scooter.webp" },
+    { name: "Sportive", logo: "./img/category/sportive.webp" },
+    { name: "Trail", logo: "./img/category/trail.webp" },
+    { name: "Tricycle", logo: "./img/category/tricycle.webp" }
+];
+
 const modelsData = {
     Peugeot: [
 

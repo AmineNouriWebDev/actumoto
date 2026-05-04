@@ -195,6 +195,95 @@
       }
 
       /* =========================================== */
+      /* CATEGORIES SECTION STYLES                   */
+      /* =========================================== */
+      .categories-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .category-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        width: calc(25% - 0.75rem); /* Mobile: 4 par ligne, le reste centré via justify-center */
+        max-width: 100px;
+        text-decoration: none;
+      }
+
+      @media (min-width: 768px) {
+        .category-card {
+          width: auto;
+          flex: 0 1 auto;
+          padding: 1rem;
+        }
+      }
+
+      .category-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .category-icon-container {
+        width: 100%;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8fafc;
+        border-radius: 50%;
+        padding: 0.5rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover .category-icon-container {
+        box-shadow: 0 6px 15px rgba(255, 0, 0, 0.15);
+        background: #fff;
+      }
+
+      .category-icon {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover .category-icon {
+        transform: scale(1.1);
+      }
+
+      .category-name {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4b5563; /* Gris stylisé au lieu de noir */
+        text-align: center;
+        letter-spacing: 0.05em;
+        transition: color 0.3s ease;
+        margin-top: 0.25rem;
+      }
+
+      @media (min-width: 768px) {
+        .category-name {
+          font-size: 0.75rem;
+        }
+      }
+
+      .category-card:hover .category-name {
+        color: var(--primary-red);
+      }
+
+
+      /* =========================================== */
       /* SOCIAL MEDIA SECTION - MODIFICATIONS APPLIQUÉES */
       /* =========================================== */
 
@@ -1259,6 +1348,19 @@
         </div>
       </section>
 
+      <!-- Section Catégories -->
+      <section class="py-2 relative" aria-labelledby="categories-title">
+        <div class="container mx-auto px-4">
+          <h2 id="categories-title" class="sr-only">Catégories de motos</h2>
+          <div
+            id="categories-container"
+            class="categories-container"
+            role="list"
+            aria-label="Liste des catégories de motos disponibles"
+          ></div>
+        </div>
+      </section>
+
       <!-- Section Marques -->
       <section class="py-5 relative" aria-labelledby="marques-title">
         <div class="container mx-auto px-4">
@@ -1456,6 +1558,7 @@
       // ===========================================
       document.addEventListener("DOMContentLoaded", function () {
         renderBrands();
+        renderCategories();
       });
 
       function renderBrands() {
@@ -1492,6 +1595,46 @@
 
           container.appendChild(brandCard);
         });
+      }
+
+      function renderCategories() {
+        const container = document.getElementById("categories-container");
+        if (!container) return;
+        
+        container.innerHTML = "";
+
+        if (typeof categories !== 'undefined' && categories.length > 0) {
+          categories.forEach((category) => {
+            const catCard = document.createElement("a");
+            catCard.className = "category-card";
+            catCard.setAttribute("role", "listitem");
+            // Set href for accessibility and right-click open in new tab
+            catCard.href = `modeles.html?category=${encodeURIComponent(category.name)}`;
+            
+            catCard.innerHTML = `
+              <div class="category-icon-container">
+                <img 
+                  src="${category.logo}" 
+                  alt="${category.name} - Catégorie de moto" 
+                  class="category-icon"
+                  width="60"
+                  height="60"
+                  loading="lazy"
+                >
+              </div>
+              <div class="category-name">${category.name}</div>
+            `;
+
+            // Prevent default and let JS handle to ensure consistent behavior if needed, 
+            // but for simple navigation, the href above is sufficient and better for SEO.
+            catCard.addEventListener("click", (e) => {
+              e.preventDefault();
+              window.location.href = catCard.href;
+            });
+
+            container.appendChild(catCard);
+          });
+        }
       }
     </script>
     <script>

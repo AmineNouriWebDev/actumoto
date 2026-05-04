@@ -1134,9 +1134,14 @@
         const urlParams = new URLSearchParams(window.location.search);
         const brandParam = urlParams.get("marque");
 
+        const categoryParam = urlParams.get("category");
+
         if (brandParam && modelsData[brandParam]) {
           showModels(brandParam);
           updateMetaTags(brandParam);
+        } else if (categoryParam) {
+          showModelsByCategory(categoryParam);
+          // Optional: updateMetaTagsByCategory if needed, for now just use default
         } else {
           window.location.href = "index.html";
         }
@@ -1154,7 +1159,87 @@
         if (modelsData[brand]) {
           updateSchemaData(brand);
 
+          
           modelsData[brand].reverse().forEach((model, index) => {
+            createModelCard(model, brand, index, container);
+          });
+
+
+          // Afficher les contacts de la marque en bas de la page
+          displayBrandContacts(brand);
+
+          // Mettre à jour les boutons de comparaison
+          setTimeout(updateCompareButtons, 0);
+
+          // DÉSACTIVÉ - Affichage plein écran au clic sur l'image
+          /* Event listeners pour l'image principale (ouvre le modal)
+          document.querySelectorAll(".main-image").forEach((img) => {
+            img.addEventListener("click", function () {
+              const images = JSON.parse(this.dataset.images || "[]");
+              const modelIndex = this.dataset.modelIndex;
+              const brand = this.dataset.brand;
+              const currentIndex = parseInt(this.dataset.currentIndex || "0");
+              openImageModal(images, currentIndex, modelIndex, brand);
+            });
+          }); */
+
+          // Event listeners pour les miniatures (change seulement l'image principale, n'ouvre pas le modal)
+          document.querySelectorAll(".thumbnail").forEach((thumb) => {
+            thumb.addEventListener("click", function (e) {
+              e.stopPropagation();
+              const imageIndex = parseInt(this.dataset.imageIndex);
+
+              // Trouver les images du modèle
+              const modelCard = this.closest(".model-card");
+              const mainImage = modelCard.querySelector(".main-image");
+              const images = JSON.parse(mainImage.dataset.images || "[]");
+
+              // Mettre à jour l'image principale
+              mainImage.src = images[imageIndex];
+              mainImage.dataset.currentIndex = imageIndex;
+
+              // Mettre à jour les miniatures actives
+              modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
+                t.classList.toggle("active", idx === imageIndex);
+              });
+            });
+          });
+
+          // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
+          document.addEventListener("click", function (e) {
+            if (window.innerWidth >= 768) {
+              // Si on clique sur un élément qui n'est pas une fiche technique ou un bouton qui la contrôle
+              if (
+                !e.target.closest(".specs-container") &&
+                !e.target.closest(".specs-btn") &&
+                !e.target.closest(".close-specs")
+              ) {
+                const openContainers = document.querySelectorAll(
+                  ".specs-container[data-open='true']",
+                );
+                openContainers.forEach((container) => {
+                  container.setAttribute("data-open", "false");
+                  const btn = document.querySelector(
+                    `.specs-btn[data-target-id="${container.id}"]`,
+                  );
+                  if (btn) {
+                    btn.textContent = "Fiche technique";
+                  }
+                });
+
+                // IMPORTANT: Enlever la classe z-index de toutes les cartes
+                document
+                  .querySelectorAll(".model-card")
+                  .forEach((c) => c.classList.remove("card-active-z"));
+              }
+            }
+          });
+        }
+      }
+
+      
+      function createModelCard(model, brand, index, container) {
+
             const modelCard = document.createElement("div");
             modelCard.className = "model-card";
             modelCard.setAttribute("role", "listitem");
@@ -1368,8 +1453,9 @@
                 <div class="card-content">
                   <div class="flex justify-between items-start gap-3 mb-3">
                     <div class="flex flex-col items-start">
-                      <h2 class="futurist-font text-xl">${model.name}</h2>
-                      ${isElectric ? '<div class="electric-badge mt-1"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
+                      <span class="text-[0.65rem] md:text-xs font-black text-red-600 tracking-widest uppercase mb-0.5 opacity-90">${brand}</span>
+                      <h2 class="futurist-font text-xl leading-none mt-0.5">${model.name}</h2>
+                      ${isElectric ? '<div class="electric-badge mt-1.5"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
                     </div>
                     <div class="flex-shrink-0 text-right">
                       <span class="text-red-600 font-bold text-2xl block">${formatPrice(
@@ -1489,81 +1575,78 @@
                 });
               }
             }
-          });
-
-          // Afficher les contacts de la marque en bas de la page
-          displayBrandContacts(brand);
-
-          // Mettre à jour les boutons de comparaison
-          setTimeout(updateCompareButtons, 0);
-
-          // DÉSACTIVÉ - Affichage plein écran au clic sur l'image
-          /* Event listeners pour l'image principale (ouvre le modal)
-          document.querySelectorAll(".main-image").forEach((img) => {
-            img.addEventListener("click", function () {
-              const images = JSON.parse(this.dataset.images || "[]");
-              const modelIndex = this.dataset.modelIndex;
-              const brand = this.dataset.brand;
-              const currentIndex = parseInt(this.dataset.currentIndex || "0");
-              openImageModal(images, currentIndex, modelIndex, brand);
-            });
-          }); */
-
-          // Event listeners pour les miniatures (change seulement l'image principale, n'ouvre pas le modal)
-          document.querySelectorAll(".thumbnail").forEach((thumb) => {
-            thumb.addEventListener("click", function (e) {
-              e.stopPropagation();
-              const imageIndex = parseInt(this.dataset.imageIndex);
-
-              // Trouver les images du modèle
-              const modelCard = this.closest(".model-card");
-              const mainImage = modelCard.querySelector(".main-image");
-              const images = JSON.parse(mainImage.dataset.images || "[]");
-
-              // Mettre à jour l'image principale
-              mainImage.src = images[imageIndex];
-              mainImage.dataset.currentIndex = imageIndex;
-
-              // Mettre à jour les miniatures actives
-              modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
-                t.classList.toggle("active", idx === imageIndex);
-              });
-            });
-          });
-
-          // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
-          document.addEventListener("click", function (e) {
-            if (window.innerWidth >= 768) {
-              // Si on clique sur un élément qui n'est pas une fiche technique ou un bouton qui la contrôle
-              if (
-                !e.target.closest(".specs-container") &&
-                !e.target.closest(".specs-btn") &&
-                !e.target.closest(".close-specs")
-              ) {
-                const openContainers = document.querySelectorAll(
-                  ".specs-container[data-open='true']",
-                );
-                openContainers.forEach((container) => {
-                  container.setAttribute("data-open", "false");
-                  const btn = document.querySelector(
-                    `.specs-btn[data-target-id="${container.id}"]`,
-                  );
-                  if (btn) {
-                    btn.textContent = "Fiche technique";
-                  }
-                });
-
-                // IMPORTANT: Enlever la classe z-index de toutes les cartes
-                document
-                  .querySelectorAll(".model-card")
-                  .forEach((c) => c.classList.remove("card-active-z"));
-              }
-            }
-          });
-        }
+          
       }
 
-      function updateMetaTags(brand) {
+      function showModelsByCategory(category) {
+        const title = document.getElementById("selected-brand");
+        const count = document.getElementById("models-count");
+        const container = document.getElementById("models-container");
+
+        title.textContent = `CATÉGORIE: ${category.toUpperCase()}`;
+        container.innerHTML = "";
+
+        let matchingCount = 0;
+
+        if (typeof modelsData !== 'undefined') {
+          Object.keys(modelsData).forEach(brand => {
+            modelsData[brand].reverse().forEach((model, index) => {
+              if (model.category && model.category.toLowerCase() === category.toLowerCase()) {
+                createModelCard(model, brand, index, container);
+                matchingCount++;
+              }
+            });
+          });
+        }
+
+        count.textContent = `${matchingCount} modèle(s) disponible(s)`;
+        
+        // Hide brand contacts if any (they are specific to brands)
+        const contactsContainer = document.getElementById("brand-contacts-container");
+        if (contactsContainer) {
+            contactsContainer.innerHTML = "";
+        }
+
+        setTimeout(updateCompareButtons, 0);
+
+        // Event listeners pour les miniatures
+        document.querySelectorAll(".thumbnail").forEach((thumb) => {
+          thumb.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const imageIndex = parseInt(this.dataset.imageIndex);
+            const modelCard = this.closest(".model-card");
+            const mainImage = modelCard.querySelector(".main-image");
+            const images = JSON.parse(mainImage.dataset.images || "[]");
+            
+            mainImage.src = images[imageIndex];
+            mainImage.dataset.currentIndex = imageIndex;
+            
+            modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
+              t.classList.toggle("active", idx === imageIndex);
+            });
+          });
+        });
+
+        // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
+        document.addEventListener("click", function (e) {
+          if (window.innerWidth >= 768) {
+            if (
+              !e.target.closest(".specs-container") &&
+              !e.target.closest(".specs-btn") &&
+              !e.target.closest(".close-specs")
+            ) {
+              const openContainers = document.querySelectorAll(".specs-container[data-open='true']");
+              openContainers.forEach((container) => {
+                container.setAttribute("data-open", "false");
+                const btn = document.querySelector(`.specs-btn[data-target-id="${container.id}"]`);
+                if (btn) btn.textContent = "Fiche technique";
+              });
+              document.querySelectorAll(".model-card").forEach((c) => c.classList.remove("card-active-z"));
+            }
+          }
+        });
+      }
+function updateMetaTags(brand) {
         document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
         document.querySelector('meta[name="description"]').content =
           `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
