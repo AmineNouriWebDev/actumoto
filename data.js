@@ -1,15 +1,30 @@
 // data.js - Données centralisées pour le site
 
 // Fonction utilitaire pour formater les prix avec séparateur de milliers
-function formatPrice(price, currency = "TND") {
+function formatPrice(price, currency = "DT") {
     if (price === null) {
         return "En arrivage";
     }
     // Formater le prix avec virgule comme séparateur de milliers
-    // Remplacer l'espace par une virgule pour obtenir: 10,900 TND
+    // Remplacer l'espace par une virgule pour obtenir: 10,900 DT
     const formatted = price.toLocaleString('fr-FR').replace(/\s/g, ',');
     return `${formatted} ${currency}`;
 }
+
+// Version HTML pour un meilleur contrôle du style (ex: DT plus petit)
+function formatPriceHtml(price, currency = "DT") {
+    if (price === null) {
+        return `<span class="text-red-600 font-bold text-xl">En arrivage</span>`;
+    }
+    const formatted = price.toLocaleString('fr-FR').replace(/\s/g, ',');
+    return `
+      <span class="text-red-600 font-bold text-2xl leading-none flex items-baseline">
+        ${formatted}
+        <span class="text-sm font-normal ml-1">${currency}</span>
+      </span>
+    `;
+}
+
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
@@ -64,7 +79,7 @@ const brands = [
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
     // { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=3", comingSoon: true },
-    { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
+    // { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
     { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
 
     { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
@@ -97,7 +112,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-django-125/peugeot-django-125-1.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-2.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-3.jpeg", "./img/models/peugeot/peugeot-django-125/peugeot-django-125-4.jpeg"],
             price: 10900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
@@ -119,7 +134,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-tweet-125/1.jpeg", "./img/models/peugeot/peugeot-tweet-125/2.jpeg", "./img/models/peugeot/peugeot-tweet-125/3.jpeg", "./img/models/peugeot/peugeot-tweet-125/4.jpeg"],
             price: 9500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -144,7 +159,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
             price: 42900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -166,7 +181,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-1.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-2.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-3.jpeg", "./img/models/peugeot/peugeot-metropolis-400/peugeot-metropolis-4.jpeg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
                 cylindree: 400,
@@ -187,7 +202,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/peugeot/peugeot-pm-01-125/1.png", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-2.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-3.jpeg", "./img/models/peugeot/peugeot-pm-01-125/peugeot-pm-01-125-4.jpeg"],
             price: 11500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps,",
@@ -209,7 +224,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-1.png", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-2.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-3.jpeg", "./img/models/peugeot/peugeot-pulsion-125/peugeot-pulsion-125-4.jpeg"],
             price: 12900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -233,7 +248,7 @@ const modelsData = {
             category: "Motocross",
             images: ["./img/models/suzuki/dr650/1.jpg", "./img/models/suzuki/dr650/2.jpg", "./img/models/suzuki/dr650/3.jpg", "./img/models/suzuki/dr650/4.jpg"],
             price: 37500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -250,12 +265,12 @@ const modelsData = {
             }
         },
         {
-            name: "BURGMAN STREET 125",
+            name: "BURGMAN STREET",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/burgman.jpeg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/1.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/2.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/3.jpg"],
             price: 9750,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -280,7 +295,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-1.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-2.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-3.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-4.jpeg"],
             price: 29900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -302,7 +317,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-1.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-2.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-3.jpeg"],
             price: 16500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "i-get 125 cc 4 temps injection",
@@ -324,7 +339,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
             price: 9900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -343,12 +358,12 @@ const modelsData = {
     ],
     APRILIA: [
         {
-            name: "SR GT 125 ",
+            name: "SR GT ",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
             price: 26000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -366,12 +381,12 @@ const modelsData = {
 
         },
         {
-            name: "SR 125",
+            name: "SR",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
             price: 8500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -389,12 +404,12 @@ const modelsData = {
         },
 
         {
-            name: "SR 125 iget",
+            name: "SR iget",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
             price: 10900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps i-get",
@@ -421,7 +436,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp", "./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg", "./img/models/cfmoto/CFMOTO-450MT/2.webp", "./img/models/cfmoto/CFMOTO-450MT/3.webp"],
             price: 49980,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4 temps",
@@ -443,7 +458,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg", "./img/models/cfmoto/CF-MOTO-800MT-X/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
             price: 76160,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre",
@@ -465,7 +480,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg", "./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
             price: 80920,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -487,7 +502,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp", "./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg", "./img/models/cfmoto/CF-MOTO-700MT/2.webp", "./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
             price: 58650,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -504,12 +519,12 @@ const modelsData = {
             }
         },
         {
-            name: "700CL-X SPORT",
+            name: "X SPORT",
             fuelType: "Thermique",
             category: "Sportive",
             images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
             price: 61400,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -531,7 +546,7 @@ const modelsData = {
             category: "Custom",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg", "./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
             price: 57800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre",
@@ -548,12 +563,12 @@ const modelsData = {
             }
         },
         {
-            name: "450CL-C-BOBER",
+            name: "C-BOBER",
             fuelType: "Thermique",
             category: "Custom",
             images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
             price: 49950,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre",
@@ -575,7 +590,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg", "./img/models/cfmoto/CF-MOTO-125NK/2.webp", "./img/models/cfmoto/CF-MOTO-125NK/3.webp", "./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
             price: 14850,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -597,7 +612,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
             price: 59500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -619,7 +634,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg", "./img/models/cfmoto/CF-MOTO-300NK/2.webp", "./img/models/cfmoto/CF-MOTO-300NK/3.webp", "./img/models/cfmoto/CF-MOTO-300NK/4.webp"],
             price: 34100,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -641,7 +656,7 @@ const modelsData = {
             category: "Sportive",
             images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg", "./img/models/cfmoto/CF-MOTO-675SR-R/2.webp", "./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
             price: 53450,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "3 Cylindre, 4 temps",
@@ -663,7 +678,7 @@ const modelsData = {
             category: "Sportive",
             images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png", "./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
             price: 39500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Bicylindre, 4temps",
@@ -685,7 +700,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg", "./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
             price: 16500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 2 soupapes",
@@ -707,7 +722,7 @@ const modelsData = {
             category: "Motocross",
             images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg", "./img/models/cfmoto/CF-MOTO-CX-5E/3.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
             price: 10600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -731,7 +746,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/vision/vision1.png", "./img/models/zimotamotor/vision/vision2.png", "./img/models/zimotamotor/vision/vision3.jpg", "./img/models/zimotamotor/vision/vision4.jpg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: 125,
@@ -752,7 +767,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
             price: 2000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -774,7 +789,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/swing/1.jpg", "./img/models/zimotamotor/swing/2.jpg", "./img/models/zimotamotor/swing/3.jpg", "./img/models/zimotamotor/swing/4.jpg"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -796,7 +811,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg", "./img/models/zimotamotor/zimota-evo/2.jpg", "./img/models/zimotamotor/zimota-evo/3.jpg"],
             price: 3900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 2T",
@@ -818,7 +833,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-kee/1.jpg", "./img/models/zimotamotor/zimota-kee/2.jpg", "./img/models/zimotamotor/zimota-kee/3.jpg", "./img/models/zimotamotor/zimota-kee/4.jpg"],
             price: 3900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -840,7 +855,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg", "./img/models/zimotamotor/zimota-tapo/2.jpg", "./img/models/zimotamotor/zimota-tapo/3.jpg", "./img/models/zimotamotor/zimota-tapo/4.jpg"],
             price: 3950,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 2T",
@@ -862,7 +877,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg", "./img/models/zimotamotor/zimota-target/2.jpg", "./img/models/zimotamotor/zimota-target/3.jpg", "./img/models/zimotamotor/zimota-target/4.jpg"],
             price: 4200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -884,7 +899,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg", "./img/models/zimotamotor/zimota-sinus-x/2.jpg", "./img/models/zimotamotor/zimota-sinus-x/3.jpg", "./img/models/zimotamotor/zimota-sinus-x/4.jpg"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -909,7 +924,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/1.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/2.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/3.jpg", "./img/models/zimotamotor/qjmotor-zimota-rks-qjmotor-noir/4.jpg"],
             price: 5600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -931,7 +946,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/zimotamotor/zimota-nx/1.jpg", "./img/models/zimotamotor/zimota-nx/2.jpg", "./img/models/zimotamotor/zimota-nx/3.jpg", "./img/models/zimotamotor/zimota-nx/4.jpg"],
             price: 6800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -953,7 +968,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/fly/zimota-fly-1.jpeg", "./img/models/zimotamotor/fly/zimota-fly-2.jpeg", "./img/models/zimotamotor/fly/zimota-fly-3.jpeg", "./img/models/zimotamotor/fly/zimota-fly-4.jpeg"],
             price: 3250,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -975,7 +990,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-atom/atom1.png", "./img/models/zimotamotor/zimota-atom/atom2.png", "./img/models/zimotamotor/zimota-atom/atom3.png"],
             price: 3850,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -997,7 +1012,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/zimotamotor/zimota-eagle/eagle1.png", "./img/models/zimotamotor/zimota-eagle/eagle2.png", "./img/models/zimotamotor/zimota-eagle/eagle3.png", "./img/models/zimotamotor/zimota-eagle/eagle4.png"],
             price: 3900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 2T",
@@ -1016,12 +1031,12 @@ const modelsData = {
     ],
     SYM: [
         {
-            name: "SYMPHONY SR 125",
+            name: "SYMPHONY SR",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/2.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
             price: 6600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1038,12 +1053,12 @@ const modelsData = {
             }
         },
         {
-            name: "SYMPHONY S 125",
+            name: "SYMPHONY S",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg", "./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
             price: 6600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1060,12 +1075,12 @@ const modelsData = {
             }
         },
         {
-            name: "SYMPHONY ST 125 ",
+            name: "SYMPHONY ST",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/2.png", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/3.png"],
             price: 8000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1082,12 +1097,12 @@ const modelsData = {
             }
         },
         {
-            name: "JET 14 125",
+            name: "JET 14",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg", "./img/models/sym/sym-jet-14-125-ac-e5-noir/2.png", "./img/models/sym/sym-jet-14-125-ac-e5-noir/3.jpg"],
             price: 8700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1104,12 +1119,12 @@ const modelsData = {
             }
         },
         {
-            name: "SYMPHONY ST 200",
+            name: "SYMPHONY ST",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
             price: 14000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1126,12 +1141,12 @@ const modelsData = {
             }
         },
         {
-            name: "JET 4 RX 125",
+            name: "JET 4 RX",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/2.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/3.png", "./img/models/sym/sym-jet-4-rx-124-gris/4.png"],
             price: 6200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1153,7 +1168,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/sym/sym-fiddle-ii-efi/sym-fiddle-ii-efi.jpg", "./img/models/sym/sym-fiddle-ii-efi/2.jpg", "./img/models/sym/sym-fiddle-ii-efi/3.jpeg"],
             price: 5850,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1176,7 +1191,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg", "./img/models/sym/fiddle4/4.jpg"],
             price: 7200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -1198,7 +1213,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp", "./img/models/sym/orbit2/3.jpeg"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -1215,12 +1230,12 @@ const modelsData = {
             }
         },
         {
-            name: "ADX 300CC",
+            name: "ADX",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg", "./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
             price: 24000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre – 4 T - Injection",
@@ -1242,7 +1257,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg", "./img/models/sym/sym-husky/4.jpg"],
             price: 16000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps 4 soupapes",
@@ -1259,12 +1274,12 @@ const modelsData = {
             }
         },
         {
-            name: "JET X 125",
+            name: "JET X",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/jet-x-125/jet-x-125-1.jpeg", "./img/models/sym/jet-x-125/jet-x-125-2.jpg", "./img/models/sym/jet-x-125/jet-x-125-3.jpg", "./img/models/sym/jet-x-125/jet-x-125-4.jpg"],
             price: 9300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre – 4T – Injection",
@@ -1281,12 +1296,12 @@ const modelsData = {
             }
         },
         {
-            name: "NHX 125",
+            name: "NHX",
             fuelType: "Thermique",
             category: "Roadster",
             images: ["./img/models/sym/nhx/2.jpg", "./img/models/sym/nhx/3.jpg", "./img/models/sym/nhx/4.jpg", "./img/models/sym/nhx/5.jpg"],
             price: 8200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre – 4T",
@@ -1307,12 +1322,12 @@ const modelsData = {
 
 
         {
-            name: "Power 107",
+            name: "Power",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
             price: 2840,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1334,7 +1349,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
             price: 3050,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1356,7 +1371,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg", "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
             price: 2900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1380,7 +1395,7 @@ const modelsData = {
             category: "Motocyclette",
             images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
             price: 3050,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1399,12 +1414,12 @@ const modelsData = {
 
 
         {
-            name: "TANK 125CC",
+            name: "TANK",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/slc/tank/tank1.png", "./img/models/slc/tank/3.webp", "./img/models/slc/tank/4.webp"],
             price: 5200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps GY6",
@@ -1426,7 +1441,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/slc-azur-124cc-noir/azur.png", "./img/models/slc/slc-azur-124cc-noir/slc-azur-124cc-noir.jpg", "./img/models/slc/slc-azur-124cc-noir/3.jpeg"],
             price: 5200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1448,7 +1463,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/2.jpg", "./img/models/slc/Scooter-CAPPUCINO-S-SLC-125-CC-4TEMPS/3.jpg"],
             price: 5500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1472,7 +1487,7 @@ const modelsData = {
             category: "Motocyclette",
             images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
             price: 2840,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1495,7 +1510,7 @@ const modelsData = {
             category: "Motocyclette",
             images: ["./img/models/senke/senke-sk-110-107cc-rouge/1.webp", "./img/models/senke/senke-sk-110-107cc-rouge/2.webp", "./img/models/senke/senke-sk-110-107cc-rouge/3.webp", "./img/models/senke/senke-sk-110-107cc-rouge/4.webp"],
             price: 3200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1517,7 +1532,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/senke/senke-raptor-200cc/1.jpg", "./img/models/senke/senke-raptor-200cc/2.jpg", "./img/models/senke/senke-raptor-200cc/3.jpg", "./img/models/senke/senke-raptor-200cc/4.jpg"],
             price: 9800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1535,12 +1550,12 @@ const modelsData = {
         },
 
         {
-            name: "Raptor SK 125",
+            name: "Raptor SK",
             fuelType: "Thermique",
             category: "Roadster",
             images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg", "./img/models/senke/senke-125-cc/4.jpg"],
             price: 6800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1562,7 +1577,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/senke/hunter/1.jpeg", "./img/models/senke/hunter/2.jpeg", "./img/models/senke/hunter/3.jpeg", "./img/models/senke/hunter/4.jpeg"],
             price: 4800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1584,7 +1599,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/senke/alien-monster/1.jpg", "./img/models/senke/alien-monster/2.jpg", "./img/models/senke/alien-monster/3.jpg"],
             price: 24000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1607,7 +1622,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/senke/monster-125/1.png", "./img/models/senke/monster-125/2.webp"],
             price: 12500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -1631,7 +1646,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lm/lm-adv-125cc-beige/lm-adv-125cc-beige.jpg", "./img/models/lm/lm-adv-125cc-beige/2.jpg", "./img/models/lm/lm-adv-125cc-beige/3.jpg"],
             price: 10350,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1653,7 +1668,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lm/la-vita-125cc-bleu-orange/2.jpg", "./img/models/lm/la-vita-125cc-bleu-orange/la-vita-125cc-bleu-orange.jpg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1675,7 +1690,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lm/shadow/shadow1.webp", "./img/models/lm/shadow/shadow2.webp", "./img/models/lm/shadow/shadow3.webp"],
             price: 6900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1694,12 +1709,12 @@ const modelsData = {
     ],
     BBM: [
         {
-            name: "FZ MAX 124",
+            name: "FZ MAX",
             fuelType: "Thermique",
             category: "Motocyclette",
             images: ["./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/2.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/3.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/4.jpg"],
             price: 2750,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1721,7 +1736,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/bbm/formula/formula3.png", "./img/models/bbm/formula/formula4.png", "./img/models/bbm/formula/5.jpeg", "./img/models/bbm/formula/6.jpeg"],
             price: 5000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1743,7 +1758,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/bbm/trevis/3.webp", "./img/models/bbm/trevis/1.jpg", "./img/models/bbm/trevis/2.webp", "./img/models/bbm/trevis/4.webp"],
             price: 4700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1765,7 +1780,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/bbm/longjia/longjia-easy-max.png", "./img/models/bbm/longjia/3.jpeg", "./img/models/bbm/longjia/4.jpeg", "./img/models/bbm/longjia/2.jpeg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1784,12 +1799,12 @@ const modelsData = {
     ],
     DAYUN: [
         {
-            name: "Cruiser DY250-6F",
+            name: "Cruiser",
             fuelType: "Thermique",
             category: "Roadster",
             images: ["./img/models/dayun/cruiser/crueser1.png", "./img/models/dayun/cruiser/cruiser2.png", "./img/models/dayun/cruiser/crueser3.jpg", "./img/models/dayun/cruiser/crueser4.jpg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Bicylindre 4 temps",
                 cylindree: 250,
@@ -1811,7 +1826,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/dayun/dayun-sniper-slc-noir/dream1.png", "./img/models/dayun/dayun-sniper-slc-noir/dayun-dream-slc-noir.png"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -1833,7 +1848,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/dayun/dayun-sniper-slc-blanc/dayun-sniper-slc-blanc.jpg", "./img/models/dayun/dayun-sniper-slc-blanc/2.jpg", "./img/models/dayun/dayun-sniper-slc-blanc/3.jpg"],
             price: 5200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1855,7 +1870,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/dayun/dayun-dy125t-bleu/dayun-dy125t-bleu.jpg", "./img/models/dayun/dayun-dy125t-bleu/2.jpg"],
             price: 4570,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1877,7 +1892,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/dayun/dayun-dy124-gris/dayun-dy124-gris.jpg", "./img/models/dayun/dayun-dy124-gris/2.jpg"],
             price: 4260,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1900,7 +1915,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/dayun/sonic/1.png", "./img/models/dayun/sonic/2.png", "./img/models/dayun/sonic/3.png"],
             price: 3000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 2 temps",
@@ -1923,7 +1938,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/dayun/flora/1.jpeg", "./img/models/dayun/flora/2.jpeg", "./img/models/dayun/flora/3.jpeg", "./img/models/dayun/flora/4.jpeg"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
@@ -1947,7 +1962,7 @@ const modelsData = {
             category: "Tricycle",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.png", "./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg"],
             price: 6200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -1969,7 +1984,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/novago-pika-blanc-2/2.jpg", "./img/models/novago/novago-pika-blanc-2/scooter-Électrique-novago-pika-blanc-2.jpg"],
             price: 3300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -1991,7 +2006,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/NOVAGO-TIGER-140/2.jpg", "./img/models/novago/NOVAGO-TIGER-140/1.jpg", "./img/models/novago/NOVAGO-TIGER-140/3.jpg"],
             price: 6600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2013,7 +2028,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/NOVAGO-TIGER-70/2.jpg", "./img/models/novago/NOVAGO-TIGER-70/3.jpg", "./img/models/novago/NOVAGO-TIGER-70/1.jpg"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2035,7 +2050,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg", "./img/models/novago/NOVAGO-TRICITY/4.jpg"],
             price: 5300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2057,7 +2072,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/NOVAGO-LUNA-70/2.jpg", "./img/models/novago/NOVAGO-LUNA-70/3.jpg", "./img/models/novago/NOVAGO-LUNA-70/1.jpg", "./img/models/novago/NOVAGO-LUNA-70/4.jpg"],
             price: 4200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2079,7 +2094,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/novago/liberta/liberta1.webp"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2103,7 +2118,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg", "./img/models/kymco/kymco-people-s-125i-abs/2.jfif", "./img/models/kymco/kymco-people-s-125i-abs/3.jpg", "./img/models/kymco/kymco-people-s-125i-abs/4.png"],
             price: 10600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2125,7 +2140,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/3.png", "./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
             price: 11700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2144,12 +2159,12 @@ const modelsData = {
     ],
     UNISCOOT: [
         {
-            name: "TIGER ",
+            name: "TIGER",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg", "./img/models/uniscoot/uniscoot-tiger-125cc-gris/2.webp"],
             price: 4200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2171,7 +2186,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/2.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/3.jpg"],
             price: 4700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2193,7 +2208,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/2.jpeg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/3.jpg"],
             price: 4800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2215,7 +2230,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg", "./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/2.jpg"],
             price: 5500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre PT125, 4 T",
@@ -2237,7 +2252,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
             price: 4700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 T",
@@ -2259,7 +2274,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 T",
@@ -2281,7 +2296,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/wolf/1.jpeg", "./img/models/uniscoot/wolf/2.jpeg", "./img/models/uniscoot/wolf/3.jpeg"],
             price: 3600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 T",
@@ -2303,7 +2318,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/uniscoot/tiger2/5.jpg", "./img/models/uniscoot/tiger2/1.jpg", "./img/models/uniscoot/tiger2/2.jpg", "./img/models/uniscoot/tiger2/3.jpg"],
             price: 4400,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2370,7 +2385,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg", "./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2392,7 +2407,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg", "./img/models/yadea/yadea-epoc-2000w/2.jpg", "./img/models/yadea/yadea-epoc-2000w/3.jpg", "./img/models/yadea/yadea-epoc-2000w/4.jpg"],
             price: 6500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2416,7 +2431,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg", "./img/models/sanya/sanya-sy-125-9f/2.png", "./img/models/sanya/sanya-sy-125-9f/3.png", "./img/models/sanya/sanya-sy-125-9f/4.png"],
             price: 5850,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2439,7 +2454,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/sanya/sanya-x1000/1.jpeg", "./img/models/sanya/sanya-x1000/2.jpeg", "./img/models/sanya/sanya-x1000/3.png"],
             price: 4650,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2462,7 +2477,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/sanya/uf-125/2.jpeg", "./img/models/sanya/uf-125/3.jpeg", "./img/models/sanya/uf-125/1.avif"],
             price: 4850,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2487,7 +2502,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kim/hr/pista-hr.webp", "./img/models/kim/hr/kim-pista-hr-1.webp", "./img/models/kim/hr/kim-pista-hr-2.webp", "./img/models/kim/hr/kim-pista-hr-3.webp"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2511,7 +2526,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/power/power-spring-st-125cc-gris-orange/power-spring-st-125cc-gris-orange.jpg", "./img/models/power/power-spring-st-125cc-gris-orange/2.webp"],
             price: 4200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2533,7 +2548,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/1.png", "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/2.jpeg", "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/5.jpeg", "./img/models/powerkim/power-kim-scooter-pista-hr-noir-carbone/power-kim-scooter-pista-hr-noir-carbone.jpg"],
             price: 4800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2555,7 +2570,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/power/ghost/ghost1.jpeg", "./img/models/power/ghost/ghost2.jpeg", "./img/models/power/ghost/ghost3.jpeg"],
             price: 5900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2577,7 +2592,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kim/blaster-125i/blaster-1.png", "./img/models/kim/blaster-125i/blaster-2.png", "./img/models/kim/blaster-125i/blaster-125i-1.jpg", "./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
             price: 6900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2602,7 +2617,7 @@ const modelsData = {
             category: "Custom",
             images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
             price: 7500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2624,7 +2639,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg", "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
             price: 11000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2648,7 +2663,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wolf/wolf-vero-vert-clair/1.png", "./img/models/wolf/wolf-vero-vert-clair/2.png", "./img/models/wolf/wolf-vero-vert-clair/3.png", "./img/models/wolf/wolf-vero-vert-clair/4.png"],
             price: 4200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2670,7 +2685,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wolf/wolf-vero-noir/wolf2.png", "./img/models/wolf/wolf-vero-noir/wolf1.png", "./img/models/wolf/wolf-vero-noir/3.png"],
             price: 3800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2690,12 +2705,101 @@ const modelsData = {
     ],
     FIRST: [
         {
+            name: "Tricycle 150",
+            fuelType: "Thermique",
+            category: "Tricycle",
+            images: ["./img/models/mistral/tricycle/tricycle.jpg"],
+            price: 8000,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 150,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "",
+                freinage: "Tambour/Tambour ",
+                systemeFreinage: "",
+            }
+        },
+
+        {
+            name: "New MAX 124",
+            fuelType: "Thermique",
+            category: "Motocyclette",
+            images: ["./img/models/first/new-max/forza-newmax-2026-1.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-3.webp"],
+            price: 2850,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 124,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "New MAX 107",
+            fuelType: "Thermique",
+            category: "Motocyclette",
+            images: ["./img/models/first/new-max/forza-newmax-2026-3.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-1.webp"],
+            price: 2850,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 107,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "Jialing VIPER",
+            fuelType: "Thermique",
+            category: "Motocyclette",
+            images: ["./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
+            price: 2900,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 124,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+                systemeFreinage: "",
+            }
+        },
+        {
             name: "COSTA",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg", "./img/models/ms/ms-first-costa-gris/2.jpg"],
             price: 3700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 2 temps",
@@ -2711,72 +2815,7 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
-        {
-            name: "Forza MotoStars FIRST MAXIII 3",
-            fuelType: "Thermique",
-            category: "Motocyclette",
-            images: ["./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/2.jpeg", "./img/models/forza/forza-motostars-first-maxiii-3-125cc-digital-gris/forza-motostars-first-maxiii-3-125cc-digital-gris.jpg"],
-            price: 2900,
-            currency: "TND",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Jialing VIPER",
-            fuelType: "Thermique",
-            category: "Motocyclette",
-            images: ["./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
-            price: 3100,
-            currency: "TND",
-
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 120,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Power 125 ",
-            fuelType: "Thermique",
-            category: "Motocyclette",
-            images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg", "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
-            price: 2900,
-            currency: "TND",
-
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Tambour/Tambour",
-                systemeFreinage: "",
-            }
-        },
     ],
 
     KAYCO: [
@@ -2786,7 +2825,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kayco/kayco/kayco.jpg", "./img/models/kayco/kayco/2.webp", "./img/models/kayco/kayco/3.jpg", "./img/models/kayco/kayco/4webp.webp"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2808,7 +2847,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kayco/kayco-noir/kayco-noir.jpg", "./img/models/kayco/kayco-noir/2.webp", "./img/models/kayco/kayco-noir/3.webp", "./img/models/kayco/kayco-noir/4.webp"],
             price: 5900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2830,7 +2869,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/kayco/kayco-rouge/kayco-rouge.jpg", "./img/models/kayco/kayco-rouge/2.webp", "./img/models/kayco/kayco-rouge/3.webp", "./img/models/kayco/kayco-rouge/4.webp"],
             price: 7200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -2854,7 +2893,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/goldmotors/gold-motors-R9-bleu/1.png", "./img/models/goldmotors/gold-motors-R9-bleu/2.png", "./img/models/goldmotors/gold-motors-R9-bleu/3.png", "./img/models/goldmotors/gold-motors-R9-bleu/4.jpeg"],
             price: 5200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2876,7 +2915,7 @@ const modelsData = {
             category: "Motocyclette",
             images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
             price: 3270,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2900,7 +2939,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg", "./img/models/xtf/xtf-dragon-110-noir/2.jpg", "./img/models/xtf/xtf-dragon-110-noir/3.jpg", "./img/models/xtf/xtf-dragon-110-noir/4.jpg"],
             price: 3500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
@@ -2922,7 +2961,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
             price: 4000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "monocylindre 2 temps",
@@ -2946,7 +2985,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg", "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
             price: 3400,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2968,7 +3007,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg", "./img/models/ftm/ftm-korak-noir/2.jpeg", "./img/models/ftm/ftm-korak-noir/3.jfif"],
             price: 3500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -2992,7 +3031,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lvneng/lvneng-lx05-49cc-vert/lvneng-lx05-49cc-vert.jpg", "./img/models/lvneng/lvneng-lx05-49cc-vert/2.png", "./img/models/lvneng/lvneng-lx05-49cc-vert/3.png", "./img/models/lvneng/lvneng-lx05-49cc-vert/4.png"],
             price: 5700,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3014,7 +3053,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lvneng/lvneng-ncs-genius-beige-marron/lvneng-ncs-genius-beige-marron.jpg", "./img/models/lvneng/lvneng-ncs-genius-beige-marron/2.png", "./img/models/lvneng/lvneng-ncs-genius-beige-marron/3.png", "./img/models/lvneng/lvneng-ncs-genius-beige-marron/4.png"],
             price: 7300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3036,7 +3075,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/lvneng/lvneng-lx08/3.jpg", "./img/models/lvneng/lvneng-lx08/1.jpg", "./img/models/lvneng/lvneng-lx08/2.jpg"],
             price: 6290,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3060,7 +3099,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg", "./img/models/eflash/2000-watts-blanc/2.jpeg"],
             price: 6600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3082,7 +3121,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png", "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
             price: 5200,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3104,7 +3143,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/erider/e-tech-1200-watts/etech.png", "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
             price: 4180,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3126,7 +3165,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/erider/e-power-1200w/eride2.png", "./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
             price: 4580,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3148,7 +3187,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png", "./img/models/erider/e-eco-1000w-blanc/scooter-Électrique-e-rider-e-eco-1000w-blanc.jpg"],
             price: 3680,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3172,7 +3211,7 @@ const modelsData = {
             category: "Roadster",
             images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg", "./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
             price: 3860,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
@@ -3196,7 +3235,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wattgo/Wattgo-Wgoo/3.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/1.jpg"],
             price: 2100,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3218,7 +3257,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
             price: 2640,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3240,7 +3279,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg", "./img/models/wattgo/Wattgo-Wg017/2.jpg"],
             price: 3580,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3262,7 +3301,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg", "./img/models/wattgo/Wattgo-Wg016/2.jpg", "./img/models/wattgo/Wattgo-Wg016/3.jpg"],
             price: 3300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3284,7 +3323,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
             price: 1800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3311,7 +3350,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/vigo/specter/spectre.png", "./img/models/vigo/specter/specter.png", "./img/models/vigo/loop/vigo3.png"],
             price: 7600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3333,7 +3372,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/vigo/loop/loop55.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
             price: 4600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3355,7 +3394,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/vigo/loop/loop.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
             price: 5100,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3380,7 +3419,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/keren/motor-group/keren-greek.jpeg", "./img/models/keren/motor-group/3.png"],
             price: 4900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3402,7 +3441,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/keren/ube/keren-ube.jpeg", "./img/models/keren/ube/1.jpg"],
             price: 2990,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3424,7 +3463,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/keren/u2/keren-u2-1.jpeg", "./img/models/keren/u2/keren-u2-2.jpeg", "./img/models/keren/u2/keren-u2-3.jpeg", "./img/models/keren/u2/2.png",],
             price: 3900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3448,7 +3487,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/letbe/LETBE-NEON-125/moora1.jpg", "./img/models/letbe/LETBE-NEON-125/moora2.jpg", "./img/models/letbe/LETBE-NEON-125/moora3.jpg", "./img/models/letbe/LETBE-NEON-125/moora4.jpg"],
             price: 5900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -3472,7 +3511,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
             price: 5000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3494,7 +3533,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/tailg/star/3.png", "./img/models/tailg/star/2.jpg"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3517,7 +3556,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/slc-evasion/1.webp", "./img/models/slc/slc-evasion/2.png"],
             price: 6600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3540,7 +3579,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/pride/1.jpeg", "./img/models/slc/pride/2.jpeg"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3562,7 +3601,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/slc/neo/1.jpeg", "./img/models/slc/neo/2.jpeg"],
             price: 4500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3587,7 +3626,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg", "./img/models/ecoride/ZEN-600-Watts/2.jpg", "./img/models/ecoride/ZEN-600-Watts/3.jpg", "./img/models/ecoride/ZEN-600-Watts/4.jpg"],
             price: 2000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3609,7 +3648,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg", "./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
             price: 2900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3633,7 +3672,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
             price: 5000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -3655,7 +3694,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/gsm/mbx/mbx1.webp", "./img/models/gsm/mbx/mbx2.webp", "./img/models/gsm/mbx/mbx3.webp", "./img/models/gsm/mbx/mbx4.webp"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -3677,7 +3716,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/gsm/mobster/mobster1.webp", "./img/models/gsm/mobster/mobster2.webp", "./img/models/gsm/mobster/mobster3.webp", "./img/models/gsm/mobster/mobster4.webp"],
             price: 5300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -3699,7 +3738,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/gsm/tennis/tennis3.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis1.webp", "./img/models/gsm/tennis/tennis4.webp"],
             price: 5300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -3724,7 +3763,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/haojin/lyra/lyra-1.jpeg", "./img/models/haojin/lyra/lyra-2.jpeg", "./img/models/haojin/lyra/lyra-3.jpeg", "./img/models/haojin/lyra/lyra-4.jpeg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "monocylindre 4 temps",
                 cylindree: 110,
@@ -3748,7 +3787,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/smt/thunder/1.jpg", "./img/models/smt/thunder/2.jpg", "./img/models/smt/thunder/3.jpg", "./img/models/smt/thunder/4.jpg"],
             price: 5800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4T",
@@ -3770,7 +3809,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/smt/dolce/dolce-1.jpeg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -3796,7 +3835,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg", "./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
             price: 7500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3818,7 +3857,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg", "./img/models/citybike/City-Bike-50CC-3000W/2.jpg", "./img/models/citybike/City-Bike-50CC-3000W/3.jpg", "./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
             price: 6900,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3840,7 +3879,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg", "./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
             price: 5300,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3864,7 +3903,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/aima/aima-q5/aima-q5-1.jpg", "./img/models/aima/aima-q5/aima-q5-2.jpg", "./img/models/aima/aima-q5/aima-q5-3.jpg", "./img/models/aima/aima-q5/aima-q5-4.jpg"],
             price: 4000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3886,7 +3925,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/aima/one/aima1.webp", "./img/models/aima/one/aima2.webp", "./img/models/aima/one/aima3.png", "./img/models/aima/one/aima4.png"],
             price: 4600,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3911,7 +3950,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/motolux/city-coco/city-coco-3.webp", "./img/models/motolux/city-coco/city-coco-1.jpg", "./img/models/motolux/city-coco/city-coco-2.jpg", "./img/models/motolux/city-coco/city-coco-4.webp"],
             price: 5500,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3933,7 +3972,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/motolux/vespa-15/motolux.png", "./img/models/motolux/vespa-15/2.png"],
             price: 3950,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -3958,7 +3997,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/phantom/cuxi/cuxi-1.jpeg", "./img/models/phantom/cuxi/cuxi-2.jpeg", "./img/models/phantom/cuxi/cuxi-3.jpeg"],
             price: 3450,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -3980,7 +4019,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -4002,7 +4041,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/phantom/coral/coral1.png", "./img/models/phantom/coral/coral2.png", "./img/models/phantom/coral/phantom-coral-124-3.jpg", "./img/models/phantom/coral/phantom-coral-124-4.jpg"],
             price: 6000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
@@ -4028,7 +4067,7 @@ const modelsData = {
             category: "Quad",
             images: ["./img/models/cforce/450l/1.png", "./img/models/cforce/450l/2.png", "./img/models/cforce/450l/3.png", "./img/models/cforce/450l/4.png"],
             price: 35000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps SOHC 4",
@@ -4050,7 +4089,7 @@ const modelsData = {
             category: "Quad",
             images: ["./img/models/cforce/450s/1.jpg", "./img/models/cforce/450s/2.webp", "./img/models/cforce/450s/3.webp", "./img/models/cforce/450s/4.webp"],
             price: 28000,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre 4 temps SOHC 4",
@@ -4076,7 +4115,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/voge/sr3/1.png"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: 245,
@@ -4097,7 +4136,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/voge/525x/1.jpeg", "./img/models/voge/525x/2.jpeg", "./img/models/voge/525x/3.jpeg", "./img/models/voge/525x/4.jpeg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Bicylindre 4 temps",
                 cylindree: 494,
@@ -4119,7 +4158,7 @@ const modelsData = {
             category: "Trail",
             images: ["./img/models/voge/ds800/1.webp", "./img/models/voge/ds800/2.webp", "./img/models/voge/ds800/3.webp", "./img/models/voge/ds800/4.webp"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Bicylindre en ligne",
                 cylindree: 800,
@@ -4140,7 +4179,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/voge/sr4max/SR4-Max-black-L.webp", "./img/models/voge/sr4max/SR4-Max-black-F.webp", "./img/models/voge/sr4max/SR4-Max-black-R.webp", "./img/models/voge/sr4max/SR4-Max-black-Re.webp"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: 349.8,
@@ -4161,7 +4200,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/voge/sr16/1.png", "./img/models/voge/sr16/2.png", "./img/models/voge/sr16/3.png", "./img/models/voge/sr16/4.jpg"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: 125,
@@ -4182,7 +4221,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/voge/sr-adv/1.png", "./img/models/voge/sr-adv/2.png", "./img/models/voge/sr-adv/3.png", "./img/models/voge/sr-adv/4.webp"],
             price: null,
-            currency: "TND", // En arrivage,
+            currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "Monocylindre 4 temps",
                 cylindree: 125,
@@ -4200,32 +4239,7 @@ const modelsData = {
 
 
     ],
-    MISTRAL: [
-        {
-            name: "Tricycle 150",
-            fuelType: "Thermique",
-            category: "Tricycle",
-            images: ["./img/models/mistral/tricycle/tricycle.jpg"],
-            price: 8000,
-            currency: "TND",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 150,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Tambour/Tambour ",
-                systemeFreinage: "",
-            }
-        },
-
-
-    ],
     RAPSEV: [
         {
             name: "Bange Frigorifique",
@@ -4233,7 +4247,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/rapsev/tri/rapsev1.webp", "./img/models/rapsev/tri/rapsev2.webp", "./img/models/rapsev/tri/rapsev3.webp", "./img/models/rapsev/tri/rapsev4.webp"],
             price: 25400,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -4255,7 +4269,7 @@ const modelsData = {
             category: "Scooter",
             images: ["./img/models/rapsev/oak/1.webp", "./img/models/rapsev/oak/2.png"],
             price: 23800,
-            currency: "TND",
+            currency: "DT",
 
             specs: {
                 typeMoteur: "Électrique",
@@ -4285,7 +4299,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/12/1.jpg", "./img/occasion/12/2.jpg", "./img/occasion/12/3.jpg", "./img/occasion/12/4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "V4 Desmosedici Stradale 4 temps,",
@@ -4308,7 +4322,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/11/1.jpg", "./img/occasion/11/2.jpg", "./img/occasion/11/3.jpg", "./img/occasion/11/4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "4 cylindres en ligne 4 temps",
@@ -4331,7 +4345,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/13/1.jpg", "./img/occasion/13/2.jpg", "./img/occasion/13/4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "Bicylindre parallèle 4 temps",
@@ -4354,7 +4368,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/9/BMW-S1000RR-M-1.png", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "4 cylindres en ligne 4 temps",
@@ -4377,7 +4391,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "Boxer bicylindre 4 temps",
@@ -4400,7 +4414,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/1/T-MAX-562-Tech-Max.png", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "0 km",
             typeMoteur: "Bicylindre en ligne 4 temps",
@@ -4424,7 +4438,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/3/YAMAHA-V-max-1700-modele-2009-1.png", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-2.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-3.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "54000 km",
             typeMoteur: "V4 4 temps",
@@ -4449,7 +4463,7 @@ const occasionModelsData = [
         category: "Scooter",
         images: ["./img/occasion/6/YAMAHA-TENERE-700-1.jpg", "./img/occasion/6/YAMAHA-TENERE-700-2.jpg", "./img/occasion/6/YAMAHA-TENERE-700-3.jpg", "./img/occasion/6/YAMAHA-TENERE-700-4.jpg"],
         price: "",
-        currency: "TND",
+        currency: "DT",
         specs: {
             kilometrage: "4500 km",
             typeMoteur: "Bicylindre parallèle 4 temps,",

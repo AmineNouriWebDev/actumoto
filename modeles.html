@@ -1135,6 +1135,9 @@
         const brandParam = urlParams.get("marque");
 
         const categoryParam = urlParams.get("category");
+        
+        const minPriceParam = urlParams.get("minPrice");
+        const maxPriceParam = urlParams.get("maxPrice");
 
         if (brandParam && modelsData[brandParam]) {
           showModels(brandParam);
@@ -1142,6 +1145,17 @@
         } else if (categoryParam) {
           showModelsByCategory(categoryParam);
           // Optional: updateMetaTagsByCategory if needed, for now just use default
+        } else if (minPriceParam !== null || maxPriceParam !== null) {
+          const min = minPriceParam ? parseInt(minPriceParam, 10) : 0;
+          let max = Infinity;
+          if (maxPriceParam !== null) {
+            if (maxPriceParam === "Infinity") {
+              max = Infinity;
+            } else {
+              max = parseInt(maxPriceParam, 10);
+            }
+          }
+          showModelsByPriceRange(min, max);
         } else {
           window.location.href = "index.html";
         }
@@ -1261,6 +1275,10 @@
             if (model.specs) {
               // Créer le tableau des specs avec formatage
               let specs = [
+                {
+                  label: "Catégorie",
+                  value: model.category || "Moto",
+                },
                 {
                   label: "Type moteur",
                   value: formatSpecification(
@@ -1451,17 +1469,14 @@
                 </div>
                 ${thumbnailsHtml}
                 <div class="card-content">
-                  <div class="flex justify-between items-start gap-3 mb-3">
+                  <div class="flex justify-between items-end gap-3 mb-3">
                     <div class="flex flex-col items-start">
-                      <span class="text-[0.65rem] md:text-xs font-black text-red-600 tracking-widest uppercase mb-0.5 opacity-90">${brand}</span>
                       <h2 class="futurist-font text-xl leading-none mt-0.5">${model.name}</h2>
                       ${isElectric ? '<div class="electric-badge mt-1.5"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
                     </div>
-                    <div class="flex-shrink-0 text-right">
-                      <span class="text-red-600 font-bold text-2xl block">${formatPrice(
-                        model.price,
-                        model.currency,
-                      )}</span>
+                    <div class="flex flex-col items-end text-right">
+                      <span class="text-[0.65rem] md:text-xs font-black text-red-600 tracking-widest uppercase mb-0.5 opacity-90">${brand}</span>
+                      ${formatPriceHtml(model.price, model.currency || "DT")}
                     </div>
                   </div>
                   
@@ -1646,6 +1661,86 @@
           }
         });
       }
+
+      function showModelsByPriceRange(minPrice, maxPrice) {
+        const title = document.getElementById("selected-brand");
+        const count = document.getElementById("models-count");
+        const container = document.getElementById("models-container");
+
+        let titleText = "Motos ";
+        if (maxPrice === Infinity) {
+          titleText += `Plus de ${formatPrice(minPrice, "").trim()}`;
+        } else if (minPrice === 0) {
+          titleText += `Moins de ${formatPrice(maxPrice, "").trim()}`;
+        } else {
+          titleText += `Entre ${formatPrice(minPrice, "").trim()} et ${formatPrice(maxPrice, "").trim()}`;
+        }
+        
+        title.textContent = titleText;
+        container.innerHTML = "";
+
+        let matchingCount = 0;
+
+        if (typeof modelsData !== 'undefined') {
+          Object.keys(modelsData).forEach(brand => {
+            modelsData[brand].reverse().forEach((model, index) => {
+              const price = parseFloat(model.price);
+              if (!isNaN(price) && price >= minPrice && price <= maxPrice) {
+                createModelCard(model, brand, index, container);
+                matchingCount++;
+              }
+            });
+          });
+        }
+
+        count.textContent = `${matchingCount} modèle(s) disponible(s)`;
+        
+        // Hide brand contacts if any (they are specific to brands)
+        const contactsContainer = document.getElementById("brand-contacts-container");
+        if (contactsContainer) {
+            contactsContainer.innerHTML = "";
+        }
+
+        setTimeout(updateCompareButtons, 0);
+
+        // Event listeners pour les miniatures
+        document.querySelectorAll(".thumbnail").forEach((thumb) => {
+          thumb.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const imageIndex = parseInt(this.dataset.imageIndex);
+            const modelCard = this.closest(".model-card");
+            const mainImage = modelCard.querySelector(".main-image");
+            const images = JSON.parse(mainImage.dataset.images || "[]");
+            
+            mainImage.src = images[imageIndex];
+            mainImage.dataset.currentIndex = imageIndex;
+            
+            modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
+              t.classList.toggle("active", idx === imageIndex);
+            });
+          });
+        });
+
+        // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
+        document.addEventListener("click", function (e) {
+          if (window.innerWidth >= 768) {
+            if (
+              !e.target.closest(".specs-container") &&
+              !e.target.closest(".specs-btn") &&
+              !e.target.closest(".close-specs")
+            ) {
+              const openContainers = document.querySelectorAll(".specs-container[data-open='true']");
+              openContainers.forEach((container) => {
+                container.setAttribute("data-open", "false");
+                const btn = document.querySelector(`.specs-btn[data-target-id="${container.id}"]`);
+                if (btn) btn.textContent = "Fiche technique";
+              });
+              document.querySelectorAll(".model-card").forEach((c) => c.classList.remove("card-active-z"));
+            }
+          }
+        });
+      }
+
 function updateMetaTags(brand) {
         document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
         document.querySelector('meta[name="description"]').content =

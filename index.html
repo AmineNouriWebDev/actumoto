@@ -214,7 +214,7 @@
         padding: 0.5rem;
         transition: all 0.3s ease;
         cursor: pointer;
-        width: calc(25% - 0.75rem); /* Mobile: 4 par ligne, le reste centré via justify-center */
+        width: calc(33.333% - 0.7rem); /* Mobile: 3 par ligne */
         max-width: 100px;
         text-decoration: none;
       }
@@ -237,10 +237,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #f8fafc;
-        border-radius: 50%;
-        padding: 0.5rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 0.75rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        border: 1px solid #e2e8f0;
         transition: all 0.3s ease;
       }
 
@@ -280,6 +281,110 @@
 
       .category-card:hover .category-name {
         color: var(--primary-red);
+      }
+
+      /* Navigation Tabs Styling - Bootstrap Style */
+      .nav-tabs-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .nav-tab-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #495057;
+        background: transparent;
+        border: 1px solid transparent;
+        border-bottom: none;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        margin-bottom: -1px;
+      }
+
+      .nav-tab-btn.active {
+        color: var(--primary-red);
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+      }
+
+      .nav-tab-btn:hover:not(.active) {
+        border-color: #e9ecef #e9ecef #dee2e6;
+        background-color: #f8f9fa;
+      }
+
+      @media (max-width: 480px) {
+        .nav-tab-btn {
+          padding: 0.5rem 0.75rem;
+          font-size: 0.75rem;
+        }
+      }
+
+      /* Price Ranges Grid */
+      .price-ranges-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 768px) {
+        .price-ranges-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .price-range-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1.25rem;
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      }
+
+      .price-range-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.1);
+        border-color: rgba(255, 0, 0, 0.2);
+        background: #ffffff;
+      }
+
+      .price-range-label {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 0.25rem;
+      }
+
+      .price-range-value {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: var(--primary-red);
+      }
+
+      .hidden-section {
+        display: none !important;
       }
 
 
@@ -1348,21 +1453,72 @@
         </div>
       </section>
 
-      <!-- Section Catégories -->
-      <section class="py-2 relative" aria-labelledby="categories-title">
+      <!-- Navigation Catégories / Prix -->
+      <section class="pt-8 pb-4">
         <div class="container mx-auto px-4">
-          <h2 id="categories-title" class="sr-only">Catégories de motos</h2>
-          <div
-            id="categories-container"
-            class="categories-container"
-            role="list"
-            aria-label="Liste des catégories de motos disponibles"
-          ></div>
+          <div class="nav-tabs-container">
+            <button id="tab-categories" class="nav-tab-btn active flex-1 md:flex-none justify-center" onclick="switchTab('categories')">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+              </svg>
+              Catégories
+            </button>
+            <button id="tab-prices" class="nav-tab-btn flex-1 md:flex-none justify-center" onclick="switchTab('prices')">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Budget
+            </button>
+          </div>
         </div>
       </section>
 
-      <!-- Section Marques -->
-      <section class="py-5 relative" aria-labelledby="marques-title">
+      <!-- Section Contenu Dynamique (Catégories OU Prix) -->
+      <div id="content-categories">
+        <!-- Section Catégories -->
+        <section class="py-2 relative" aria-labelledby="categories-title">
+          <div class="container mx-auto px-4">
+            <h2 id="categories-title" class="sr-only">Catégories de motos</h2>
+            <div
+              id="categories-container"
+              class="categories-container"
+              role="list"
+              aria-label="Liste des catégories de motos disponibles"
+            ></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Section Prix (Cachée par défaut) -->
+      <section id="section-prices" class="py-8 hidden-section" aria-labelledby="prices-title">
+        <div class="container mx-auto px-4">
+          <h2 id="prices-title" class="sr-only">Filtrer par prix</h2>
+          <div id="price-ranges-container" class="price-ranges-grid">
+            <!-- Injecté via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Séparateur et Titres pour les Marques -->
+      <section class="pt-12 pb-4">
+        <div class="container mx-auto px-4 text-center">
+          <h2 id="marques-main-title" class="futurist-font text-xl md:text-2xl text-gray-900 mb-2">
+            NOS CONCESSIONNAIRES <span class="text-red-600">OFFICIELS</span>
+          </h2>
+          <h3 class="text-gray-600 font-bold uppercase tracking-wider text-[0.65rem] md:text-sm mb-6">
+            Toutes les marques <span class="text-red-600">MOTO</span> disponibles en Tunisie
+          </h3>
+          
+          <div class="social-separator">
+            <div class="separator-line"></div>
+            <div class="red-square"></div>
+            <div class="separator-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Marques (Toujours visible) -->
+      <section class="py-5 relative" aria-labelledby="marques-main-title">
         <div class="container mx-auto px-4">
           <div
             id="brands-container"
@@ -1634,6 +1790,58 @@
 
             container.appendChild(catCard);
           });
+        }
+      }
+
+      function renderPriceRanges() {
+        const container = document.getElementById("price-ranges-container");
+        if (!container) return;
+
+        const priceRanges = [
+          { label: "Moins de", value: "4 000", min: 0, max: 4000 },
+          { label: "4 001 à", value: "7 000", min: 4001, max: 7000 },
+          { label: "7 001 à", value: "10 000", min: 7001, max: 10000 },
+          { label: "10 001 à", value: "15 000", min: 10001, max: 15000 },
+          { label: "15 001 à", value: "20 000", min: 15001, max: 20000 },
+          { label: "Plus de", value: "20 000", min: 20001, max: Infinity }
+        ];
+
+        container.innerHTML = "";
+
+        priceRanges.forEach(range => {
+          const card = document.createElement("div");
+          card.className = "price-range-card";
+          
+          card.innerHTML = `
+            <div class="price-range-label">${range.label}</div>
+            <div class="price-range-value">${range.value}</div>
+          `;
+
+          card.addEventListener("click", () => {
+            window.location.href = `modeles.html?minPrice=${range.min}&maxPrice=${range.max}`;
+          });
+
+          container.appendChild(card);
+        });
+      }
+
+      function switchTab(tab) {
+        const catTab = document.getElementById("tab-categories");
+        const priceTab = document.getElementById("tab-prices");
+        const catContent = document.getElementById("content-categories");
+        const priceContent = document.getElementById("section-prices");
+
+        if (tab === 'categories') {
+          catTab.classList.add('active');
+          priceTab.classList.remove('active');
+          catContent.classList.remove('hidden-section');
+          priceContent.classList.add('hidden-section');
+        } else {
+          priceTab.classList.add('active');
+          catTab.classList.remove('active');
+          priceContent.classList.remove('hidden-section');
+          catContent.classList.add('hidden-section');
+          renderPriceRanges();
         }
       }
     </script>
