@@ -78,12 +78,11 @@ const brands = [
 
 const categories = [
     { name: "Custom", logo: "./img/category/custom.webp" },
-    { name: "Electrique", logo: "./img/category/electrique.webp" },
     { name: "Motocross", logo: "./img/category/motocross.webp" },
-    { name: "Motocyclette", logo: "./img/category/motocyclette.webp" },
     { name: "Quad", logo: "./img/category/quad.webp" },
     { name: "Roadster", logo: "./img/category/roadster.webp" },
     { name: "Scooter", logo: "./img/category/scooter.webp" },
+    { name: "Motocyclette", logo: "./img/category/motocyclette.webp" },
     { name: "Sportive", logo: "./img/category/sportive.webp" },
     { name: "Trail", logo: "./img/category/trail.webp" },
     { name: "Tricycle", logo: "./img/category/tricycle.webp" }
@@ -705,7 +704,7 @@ const modelsData = {
         {
             name: "CX-5E",
             fuelType: "Electrique",
-            category: "Electrique",
+            category: "Motocross",
             images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg", "./img/models/cfmoto/CF-MOTO-CX-5E/3.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
             price: 10600,
             currency: "TND",
@@ -1945,7 +1944,7 @@ const modelsData = {
         {
             name: "Tricycle SWING",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.png", "./img/models/novago/novago-swing-bleu/novago-swing-bleu.jpg"],
             price: 6200,
             currency: "TND",
