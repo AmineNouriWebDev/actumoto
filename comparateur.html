@@ -424,11 +424,9 @@
       }
 
       function clearComparateur() {
-          if(confirm("Êtes-vous sûr de vouloir vider le comparateur ?")) {
-              compareList = [];
-              localStorage.setItem('comparateur_selection', JSON.stringify(compareList));
-              renderComparateur();
-          }
+          compareList = [];
+          localStorage.setItem('comparateur_selection', JSON.stringify(compareList));
+          window.location.href = 'index.html';
       }
     </script>
   </body>

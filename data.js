@@ -3278,7 +3278,7 @@ const modelsData = {
             fuelType: "Electrique",
             category: "Scooter",
             images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg", "./img/models/wattgo/Wattgo-Wg017/2.jpg"],
-            price: 3580,
+            price: 3500,
             currency: "DT",
 
             specs: {
