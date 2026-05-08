@@ -247,8 +247,8 @@
 
       .category-name {
         font-family: 'Orbitron', sans-serif;
-        font-size: 0.6rem;
-        font-weight: 700;
+        font-size: 0.5rem;
+        font-weight: 600;
         text-transform: uppercase;
         color: #4b5563; /* Gris stylisé au lieu de noir */
         text-align: center;
@@ -331,40 +331,41 @@
       }
 
       .price-range-card {
-        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        background: #ffffff;
         border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 1.25rem;
+        border-radius: 8px;
+        padding: 0.6rem;
         text-align: center;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.2s ease;
         cursor: pointer;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        min-height: 48px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
       }
 
       .price-range-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 20px rgba(255, 0, 0, 0.1);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
         border-color: rgba(255, 0, 0, 0.2);
-        background: #ffffff;
       }
 
-      .price-range-label {
+      .price-range-text {
         font-family: 'Orbitron', sans-serif;
-        font-size: 0.85rem;
-        font-weight: 700;
-        color: #1e293b;
-        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+        font-weight: 800;
+        color: #000;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        line-height: 1;
       }
 
-      .price-range-value {
-        font-size: 1.1rem;
-        font-weight: 800;
+      .price-range-arrow {
         color: var(--primary-red);
+        font-size: 1.1rem;
+        font-weight: 900;
       }
 
       .hidden-section {
@@ -1064,6 +1065,28 @@
           transform: translateY(0);
         }
       }
+      /* Mobile Menu Button */
+      .burger-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 18px;
+          cursor: pointer;
+          z-index: 2100; /* Must be highest */
+          background: transparent;
+          border: none;
+          padding: 0;
+          position: fixed;
+          right: 15px;
+          top: 31px; /* (80-18)/2 */
+      }
+
+      @media (min-width: 1024px) {
+          .burger-menu {
+              display: none !important;
+          }
+      }
 
       .modal-header {
         display: flex;
@@ -1340,27 +1363,53 @@
     <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <!-- Header -->
-    <!-- Dans la section Header de index.html -->
     <header class="header-futurist main-header" role="banner">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 h-full">
         <div class="header-container">
+          <!-- Left Links (Desktop) -->
+          <div class="nav-links">
+            <a href="actualite.html" class="nav-link">Actualités</a>
+            <a href="occasion.html" class="nav-link">Occasion</a>
+          </div>
+
+          <!-- Logo (Center) -->
           <div class="flex items-center">
             <h1 class="sr-only">actumoto.tn - Concessionnaire moto Tunisie</h1>
-            <!-- Ajouter le lien autour du logo -->
             <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
               <img
                 src="./img/logo-principal-6.png"
                 alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
                 class="header-logo main-header-logo"
-                width="300"
-                height="37"
+                width="250"
+                height="31"
               />
             </a>
+          </div>
+
+          <!-- Right Links (Desktop) -->
+          <div class="nav-links">
+            <a href="https://motorsports.simcc.tn" class="nav-link" target="_blank">Équipements & accessoires</a>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Burger Menu Button (Mobile) - Moved outside for z-index stacking -->
+    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+      <div class="mobile-menu-logo-container">
+        <img src="./img/logo-principal-6.png" alt="actumoto.tn" class="mobile-menu-logo">
+      </div>
+      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
+      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
+      <a href="https://motorsports.simcc.tn" class="mobile-nav-link" target="_blank">Équipements & accessoires</a>
+    </div>
 
     <!-- Main Content -->
     <main role="main">
@@ -1483,7 +1532,7 @@
       <section class="pt-12 pb-4">
         <div class="container mx-auto px-4 text-center">
           <h2 id="marques-main-title" class="futurist-font text-xl md:text-2xl text-gray-900 mb-2">
-            Toutes les marques <span class="text-red-600">MOTO</span>
+            TOUTES LES MARQUES <span class="text-red-600">MOTO</span>
           </h2>
          
           
@@ -1507,37 +1556,7 @@
         </div>
       </section>
 
-      <!-- Boutons Actualités, Occasion et Équipements -->
-      <section class="py-0 m-y-0" aria-labelledby="actions-title">
-        <div class="container mx-auto px-4">
-          <h2 id="actions-title" class="sr-only">Navigation principale</h2>
-          <div class="buttons-container">
-            <a
-              href="actualite.html"
-              class="news-btn"
-              aria-label="Voir les actualités motos"
-            >
-              ACTUALITÉS
-            </a>
-            <a
-              href="occasion.html"
-              class="news-btn"
-              aria-label="Consulter les motos d'occasion"
-            >
-              OCCASION
-            </a>
-            <a
-              href="https://motorsports.simcc.tn"
-              id="equipements-btn"
-              class="news-btn"
-              aria-label="Découvrir notre gamme de pièces et accessoires moto"
-              target="_blank"
-            >
-              ÉQUIPEMENTS<br />PIÈCES & ACCESSOIRES
-            </a>
-          </div>
-        </div>
-      </section>
+      <!-- Navigation buttons removed and moved to header -->
 
       <!-- =========================================== -->
       <!-- SECTION ACCESSOIRES MODIFIÉE -->
@@ -1774,12 +1793,12 @@
         if (!container) return;
 
         const priceRanges = [
-          { label: "Moins de", value: "4K", min: 0, max: 4000 },
-          { label: "4K", value: "7K", min: 4001, max: 7000 },
-          { label: "7K", value: "10K", min: 7001, max: 10000 },
-          { label: "10K à", value: "15K", min: 10001, max: 15000 },
-          { label: "15K à", value: "20K", min: 15001, max: 20000 },
-          { label: "Plus de", value: "20K", min: 20001, max: Infinity }
+          { min: 0, max: 4000, display: 'Moins de <span class="price-range-text">4K</span>' },
+          { min: 4001, max: 7000, display: '4K <span class="price-range-arrow">=></span> 7K' },
+          { min: 7001, max: 10000, display: '7K <span class="price-range-arrow">=></span> 10K' },
+          { min: 10001, max: 15000, display: '10K <span class="price-range-arrow">=></span> 15K' },
+          { min: 15001, max: 20000, display: '15K <span class="price-range-arrow">=></span> 20K' },
+          { min: 20001, max: Infinity, display: 'Plus de <span class="price-range-text">20K</span>' }
         ];
 
         container.innerHTML = "";
@@ -1789,8 +1808,7 @@
           card.className = "price-range-card";
           
           card.innerHTML = `
-            <div class="price-range-label">${range.label}</div>
-            <div class="price-range-value">${range.value}</div>
+            <div class="price-range-text">${range.display}</div>
           `;
 
           card.addEventListener("click", () => {
@@ -2052,6 +2070,27 @@
 
         // Initialize the carousel
         initCarousel();
+      }
+
+      // Mobile Menu Logic
+      const burgerMenu = document.getElementById('burger-menu');
+      const mobileNav = document.getElementById('mobile-nav');
+
+      if (burgerMenu && mobileNav) {
+        burgerMenu.addEventListener('click', () => {
+          burgerMenu.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+          document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Fermer le menu au clic sur un lien
+        mobileNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        });
       }
     </script>
   </body>

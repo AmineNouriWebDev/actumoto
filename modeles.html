@@ -1667,13 +1667,15 @@
         const count = document.getElementById("models-count");
         const container = document.getElementById("models-container");
 
+        const formatK = (p) => p === Infinity ? "..." : (Math.round(p / 1000) + "K");
+
         let titleText = "Motos ";
         if (maxPrice === Infinity) {
-          titleText += `Plus de ${formatPrice(minPrice, "").trim()}`;
+          titleText += `Plus de ${formatK(minPrice)}`;
         } else if (minPrice === 0) {
-          titleText += `Moins de ${formatPrice(maxPrice, "").trim()}`;
+          titleText += `Moins de ${formatK(maxPrice)}`;
         } else {
-          titleText += `Entre ${formatPrice(minPrice, "").trim()} et ${formatPrice(maxPrice, "").trim()}`;
+          titleText += `Entre ${formatK(minPrice)} et ${formatK(maxPrice)}`;
         }
         
         title.textContent = titleText;
