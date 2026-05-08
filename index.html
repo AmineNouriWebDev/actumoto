@@ -210,21 +210,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        gap: 0.5rem;
+        gap: 0.4rem;
         padding: 0;
         transition: all 0.3s ease;
         cursor: pointer;
         width: calc(33.333% - 0.7rem); /* Mobile: 3 par ligne */
-        max-width: 100px;
+        max-width: 180px;
         text-decoration: none;
-        
       }
 
       @media (min-width: 768px) {
         .category-card {
-          width: auto;
+          width: 200px;
           flex: 0 1 auto;
-          padding: 1rem;
+          padding: 0.5rem;
         }
       }
 
@@ -232,34 +231,18 @@
         transform: translateY(-4px);
       }
 
-      .category-icon-container {
-        width: 100%;
-        aspect-ratio: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 0;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e2e8f0;
-        transition: all 0.3s ease;
-      }
-
-      .category-card:hover .category-icon-container {
-        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
-        border-color: rgba(255, 0, 0, 0.2);
-      }
-
       .category-icon {
-        width: 90%;
-        height: 90%;
-        object-fit: contain;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 328/187;
+        object-fit: cover;
+        border-radius: 6px;
         transition: all 0.3s ease;
       }
 
       .category-card:hover .category-icon {
         transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       }
 
       .category-name {
@@ -1500,17 +1483,15 @@
       <section class="pt-12 pb-4">
         <div class="container mx-auto px-4 text-center">
           <h2 id="marques-main-title" class="futurist-font text-xl md:text-2xl text-gray-900 mb-2">
-            NOS CONCESSIONNAIRES <span class="text-red-600">OFFICIELS</span>
-          </h2>
-          <h3 class="text-gray-600 font-bold uppercase tracking-wider text-[0.65rem] md:text-sm mb-6">
             Toutes les marques <span class="text-red-600">MOTO</span>
-          </h3>
+          </h2>
+         
           
-          <!-- <div class="social-separator">
+          <div class="social-separator">
             <div class="separator-line"></div>
             <div class="red-square"></div>
             <div class="separator-line"></div>
-          </div> -->
+          </div>
         </div>
       </section>
 
@@ -1765,16 +1746,14 @@
             catCard.href = `modeles.html?category=${encodeURIComponent(category.name)}`;
             
             catCard.innerHTML = `
-              <div class="category-icon-container">
                 <img 
                   src="${category.logo}" 
                   alt="${category.name} - Catégorie de moto" 
                   class="category-icon"
-                  width="60"
-                  height="60"
+                  width="328"
+                  height="187"
                   loading="lazy"
                 >
-              </div>
               <div class="category-name">${category.name}</div>
             `;
 
