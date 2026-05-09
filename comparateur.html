@@ -123,6 +123,7 @@
         }
         .spec-label {
           width: 90px;
+          min-width: 90px;
           font-size: 0.7rem;
           padding: 0.4rem 0.2rem !important;
         }
@@ -136,6 +137,9 @@
         }
         .compare-table h3 {
           font-size: 0.85rem !important;
+          min-height: 2.6rem;
+          display: flex;
+          align-items: center;
         }
         .remove-btn {
           width: 22px;
@@ -271,7 +275,7 @@
       <a href="https://motorsports.simcc.tn" class="mobile-nav-link nav-link-multiline" target="_blank">Équipements &<br>accessoires</a>
     </div>
 
-    <section class="pt-28 pb-12 relative min-h-[60vh]" role="main">
+    <section class="pt-24 pb-12 relative min-h-[60vh]" role="main">
       <a href="index.html" class="section-back-btn" title="Retour à l'accueil" aria-label="Retour à la page d'accueil">←</a>
 
       <div class="container mx-auto px-4">
@@ -443,7 +447,7 @@
               <table class="compare-table">
                 <thead>
                   <tr>
-                    <th class="spec-label bg-gray-50 align-bottom pb-4 border-b">
+                    <th class="spec-label bg-gray-50 border-b" style="vertical-align: middle !important;">
                         Modèle
                     </th>
           `;
@@ -455,14 +459,14 @@
               const priceDisplay = formatPrice(m.price, m.currency);
               
               html += `
-                <th class="w-[150px] sm:w-[250px] relative">
+                <th class="min-w-[150px] sm:min-w-[250px] relative">
                     <button class="remove-btn" onclick="removeCompare('${m.brand}', '${m.itemReferenceName.replace(/'/g, "\\'")}')" title="Retirer">×</button>
                     <div class="model-img-wrapper">
                         <img src="${mainImage}" alt="${m.name}" class="model-img" onerror="this.src='./img/placeholder-moto.jpg'">
                     </div>
                     <div class="mb-1 text-gray-500 font-semibold uppercase tracking-wider text-xs">${m.brand}</div>
-                    <h3 class="futurist-font text-lg md:text-xl text-gray-900 leading-tight mb-2">${m.name}</h3>
-                    <div class="text-xl font-bold ${isBestPrice ? 'best-price' : 'text-red-600'}">${priceDisplay}</div>
+                    <h3 class="futurist-font text-base md:text-xl text-gray-900 leading-tight mb-2">${m.name}</h3>
+                    <div class="text-lg md:text-xl font-bold ${isBestPrice ? 'best-price' : 'text-red-600'}">${priceDisplay}</div>
                     ${m.fuelType === 'Electrique' ? '<div class="mt-2 inline-block bg-cyan-500 text-white text-xs px-2 py-1 rounded-full font-bold">⚡ ÉLECTRIQUE</div>' : ''}
                 </th>
               `;
