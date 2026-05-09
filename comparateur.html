@@ -181,18 +181,53 @@
   </head>
   <body>
     <header class="header-futurist main-header" role="banner">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 h-full">
         <div class="header-container">
+          <!-- Left Spacer (Desktop) -->
+          <div class="hidden lg:block"></div>
+
+          <!-- Logo (Center) -->
           <div class="flex items-center">
+            <h1 class="sr-only">actumoto.tn - Concessionnaire moto Tunisie</h1>
             <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
-              <img src="./img/logo-principal-6.png" alt="actumoto.tn - Logo" class="header-logo main-header-logo" width="300" height="37" />
+              <img
+                src="./img/logo-principal-6.png"
+                alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
+                class="header-logo main-header-logo"
+                width="250"
+                height="31"
+              />
             </a>
+          </div>
+
+          <!-- Right Links (Desktop) -->
+          <div class="nav-links">
+            <a href="actualite.html" class="nav-link">Actualités</a>
+            <a href="occasion.html" class="nav-link">Occasion</a>
+            <a href="https://motorsports.simcc.tn" class="nav-link" target="_blank">Équipements & accessoires</a>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="pt-28 pb-12 mt-4 relative min-h-[60vh]" role="main">
+    <!-- Burger Menu Button (Mobile) -->
+    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+      <div class="mobile-menu-logo-container">
+        <img src="./img/logo-principal-6.png" alt="actumoto.tn" class="mobile-menu-logo">
+      </div>
+      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
+      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
+      <a href="https://motorsports.simcc.tn" class="mobile-nav-link" target="_blank">Équipements & accessoires</a>
+    </div>
+
+    <section class="pt-20 pb-12 relative min-h-[60vh]" role="main">
       <a href="index.html" class="section-back-btn" title="Retour à l'accueil" aria-label="Retour à la page d'accueil">←</a>
 
       <div class="container mx-auto px-4">
@@ -257,6 +292,28 @@
 
       document.addEventListener("DOMContentLoaded", () => {
           renderComparateur();
+          
+          // Mobile Menu Logic
+          const burgerMenu = document.getElementById('burger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+
+          if (burgerMenu && mobileNav) {
+            burgerMenu.addEventListener('click', () => {
+              burgerMenu.classList.toggle('active');
+              mobileNav.classList.toggle('active');
+              document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close menu when clicking links
+            const mobileLinks = mobileNav.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                burgerMenu.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+              });
+            });
+          }
       });
 
       function loadFullModelsData() {

@@ -3,7 +3,7 @@
 .header-futurist {
     background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(20px);
-    border-bottom: 2px solid rgba(255, 0, 0, 0.2);
+
     height: 80px;
     display: flex;
     align-items: center;
@@ -21,31 +21,62 @@
     justify-content: space-between;
 }
 
+/* 3-Column Layout for perfect centering on Desktop */
+@media (min-width: 1024px) {
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+    }
+    
+    /* Place links in the right column */
+    .header-container > .nav-links:last-child {
+        justify-self: end;
+        display: flex;
+    }
+    
+    /* Ensure middle column (logo) is always centered */
+    .header-container > div:nth-child(2) {
+        justify-self: center;
+    }
+}
+
 .nav-links {
     display: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.8rem;
-}
-
-@media (min-width: 1024px) {
-    .nav-links {
-        display: flex;
-    }
+    font-size: 0.75rem;
 }
 
 .nav-link {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     white-space: nowrap;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff0000;
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover {
     color: #ff0000;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .header-logo {
@@ -54,8 +85,16 @@
     transition: transform 0.3s ease;
 }
 
-.header-logo:hover {
-    transform: scale(1.05);
+/* Mobile Centering Logic */
+@media (max-width: 1023px) {
+    .header-container {
+        display: flex;
+        justify-content: center; /* Center everything on mobile */
+    }
+    
+    .nav-links {
+        display: none !important;
+    }
 }
 
 /* Mobile Menu Button */
@@ -66,13 +105,13 @@
     width: 30px;
     height: 18px;
     cursor: pointer;
-    z-index: 2000; /* Above overlay */
+    z-index: 2100;
     background: transparent;
     border: none;
     padding: 0;
     position: fixed;
     right: 20px;
-    top: 31px; /* Centered in 80px header (80-18)/2 */
+    top: 31px;
 }
 
 .burger-bar {
@@ -85,7 +124,7 @@
 
 @media (min-width: 1024px) {
     .burger-menu {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -93,10 +132,12 @@
 .burger-menu.active .burger-bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .burger-menu.active .burger-bar:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
 }
+
 .burger-menu.active .burger-bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -109,7 +150,7 @@
     width: 100%;
     height: 100vh;
     background: #000;
-    z-index: 1500; /* Between header and burger */
+    z-index: 1500;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

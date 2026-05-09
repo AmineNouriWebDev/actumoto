@@ -365,7 +365,7 @@
       .price-range-arrow {
         color: var(--primary-red);
         font-size: 1.1rem;
-        font-weight: 900;
+        font-weight: 600;
       }
 
       .hidden-section {
@@ -506,7 +506,7 @@
       @media (max-width: 767px) {
         .hero-section {
           padding: 0;
-          margin-top: 100px; /* Collé au header sans espace */
+          margin-top: 80px; /* Collé au header (80px) */
           margin-left: 0;
           margin-right: 0;
         }
@@ -530,7 +530,7 @@
       @media (min-width: 768px) {
         .hero-section {
           padding: 0;
-          margin-top: 100px; /* Collé au header */
+          margin-top: 80px; /* Collé au header (80px) */
           margin-left: 0;
           margin-right: 0;
         }
@@ -1281,7 +1281,7 @@
         "name": "Comparateur de Prix Moto N°1 en Tunisie",
         "alternateName": "actumoto.tn",
         "url": "https://actumoto.tn",
-        "description": "🇹🇳 Trouvez la meilleure moto au meilleur prix grâce à notre comparateur de prix exclusif. Restez à jour avec les dernières actualités et vidéos moto du monde entier.",
+        "description": "🇹🇳 Trouvez la meilleure moto au meilleur prix grâce à notre comparateur de prix exclusif. Restez à jour avec les dernières actualités.",
         "inLanguage": "fr-TN",
         "creator": {
           "@type": "Organization",
@@ -1366,11 +1366,8 @@
     <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4 h-full">
         <div class="header-container">
-          <!-- Left Links (Desktop) -->
-          <div class="nav-links">
-            <a href="actualite.html" class="nav-link">Actualités</a>
-            <a href="occasion.html" class="nav-link">Occasion</a>
-          </div>
+          <!-- Left Spacer (Desktop) -->
+          <div class="hidden lg:block"></div>
 
           <!-- Logo (Center) -->
           <div class="flex items-center">
@@ -1388,6 +1385,8 @@
 
           <!-- Right Links (Desktop) -->
           <div class="nav-links">
+            <a href="actualite.html" class="nav-link">Actualités</a>
+            <a href="occasion.html" class="nav-link">Occasion</a>
             <a href="https://motorsports.simcc.tn" class="nav-link" target="_blank">Équipements & accessoires</a>
           </div>
         </div>
@@ -1773,7 +1772,7 @@
                   height="187"
                   loading="lazy"
                 >
-              <div class="category-name">${category.name}</div>
+              
             `;
 
             // Prevent default and let JS handle to ensure consistent behavior if needed, 
@@ -1793,12 +1792,12 @@
         if (!container) return;
 
         const priceRanges = [
-          { min: 0, max: 4000, display: 'Moins de <span class="price-range-text">4K</span>' },
+          { min: 0, max: 4000, display: '<span class="price-range-arrow">Moins de</span> <span class="price-range-text">4K</span>' },
           { min: 4001, max: 7000, display: '4K <span class="price-range-arrow">=></span> 7K' },
           { min: 7001, max: 10000, display: '7K <span class="price-range-arrow">=></span> 10K' },
           { min: 10001, max: 15000, display: '10K <span class="price-range-arrow">=></span> 15K' },
           { min: 15001, max: 20000, display: '15K <span class="price-range-arrow">=></span> 20K' },
-          { min: 20001, max: Infinity, display: 'Plus de <span class="price-range-text">20K</span>' }
+          { min: 20001, max: Infinity, display: '<span class="price-range-arrow">Plus de</span> <span class="price-range-text">20K</span>' }
         ];
 
         container.innerHTML = "";

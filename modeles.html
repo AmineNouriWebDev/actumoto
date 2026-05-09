@@ -472,6 +472,28 @@
         }
       }
 
+      .brand-group-header {
+        grid-column: 1 / -1;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #ff0000;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      @media (min-width: 768px) {
+        .brand-group-header {
+          font-size: 2rem;
+        }
+      }
+
       .card-inner {
         display: flex;
         flex-direction: column;
@@ -956,24 +978,53 @@
     </script>
 
     <header class="header-futurist main-header" role="banner">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 h-full">
         <div class="header-container">
+          <!-- Left Spacer (Desktop) -->
+          <div class="hidden lg:block"></div>
+
+          <!-- Logo (Center) -->
           <div class="flex items-center">
+            <h1 class="sr-only">actumoto.tn - Concessionnaire moto Tunisie</h1>
             <a href="index.html" aria-label="Retour à l'accueil actumoto.tn">
               <img
                 src="./img/logo-principal-6.png"
                 alt="actumoto.tn - Logo concessionnaire motos en Tunisie"
                 class="header-logo main-header-logo"
-                width="300"
-                height="37"
+                width="250"
+                height="31"
               />
             </a>
+          </div>
+
+          <!-- Right Links (Desktop) -->
+          <div class="nav-links">
+            <a href="actualite.html" class="nav-link">Actualités</a>
+            <a href="occasion.html" class="nav-link">Occasion</a>
+            <a href="https://motorsports.simcc.tn" class="nav-link" target="_blank">Équipements & accessoires</a>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="pt-24 pb-8 mt-4 relative" role="main">
+    <!-- Burger Menu Button (Mobile) -->
+    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+      <div class="mobile-menu-logo-container">
+        <img src="./img/logo-principal-6.png" alt="actumoto.tn" class="mobile-menu-logo">
+      </div>
+      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
+      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
+      <a href="https://motorsports.simcc.tn" class="mobile-nav-link" target="_blank">Équipements & accessoires</a>
+    </div>
+
+    <section class="pt-20 pb-8 relative" role="main">
       <a
         href="index.html"
         class="section-back-btn"
@@ -1475,7 +1526,6 @@
                       ${isElectric ? '<div class="electric-badge mt-1.5"><span>⚡</span> ÉLECTRIQUE</div>' : ""}
                     </div>
                     <div class="flex flex-col items-end text-right">
-                      <span class="text-[0.65rem] md:text-xs font-black text-red-600 tracking-widest uppercase mb-0.5 opacity-90">${brand}</span>
                       ${formatPriceHtml(model.price, model.currency || "DT")}
                     </div>
                   </div>
@@ -1604,12 +1654,30 @@
         let matchingCount = 0;
 
         if (typeof modelsData !== 'undefined') {
+          const groupedByBrand = {};
+          
           Object.keys(modelsData).forEach(brand => {
-            modelsData[brand].reverse().forEach((model, index) => {
-              if (model.category && model.category.toLowerCase() === category.toLowerCase()) {
-                createModelCard(model, brand, index, container);
-                matchingCount++;
-              }
+            const models = modelsData[brand].filter(model => 
+              model.category && model.category.toLowerCase() === category.toLowerCase()
+            );
+            
+            if (models.length > 0) {
+              groupedByBrand[brand] = models.reverse();
+              matchingCount += models.length;
+            }
+          });
+
+          // Render grouped models
+          Object.keys(groupedByBrand).sort().forEach(brand => {
+            // Add brand header
+            const header = document.createElement("div");
+            header.className = "brand-group-header";
+            header.textContent = brand;
+            container.appendChild(header);
+
+            // Add model cards
+            groupedByBrand[brand].forEach((model, index) => {
+              createModelCard(model, brand, index, container);
             });
           });
         }
@@ -1684,13 +1752,31 @@
         let matchingCount = 0;
 
         if (typeof modelsData !== 'undefined') {
+          const groupedByBrand = {};
+          
           Object.keys(modelsData).forEach(brand => {
-            modelsData[brand].reverse().forEach((model, index) => {
+            const models = modelsData[brand].filter(model => {
               const price = parseFloat(model.price);
-              if (!isNaN(price) && price >= minPrice && price <= maxPrice) {
-                createModelCard(model, brand, index, container);
-                matchingCount++;
-              }
+              return !isNaN(price) && price >= minPrice && price <= maxPrice;
+            });
+            
+            if (models.length > 0) {
+              groupedByBrand[brand] = models.reverse();
+              matchingCount += models.length;
+            }
+          });
+
+          // Render grouped models
+          Object.keys(groupedByBrand).sort().forEach(brand => {
+            // Add brand header
+            const header = document.createElement("div");
+            header.className = "brand-group-header";
+            header.textContent = brand;
+            container.appendChild(header);
+
+            // Add model cards
+            groupedByBrand[brand].forEach((model, index) => {
+              createModelCard(model, brand, index, container);
             });
           });
         }
@@ -2110,6 +2196,28 @@ function updateMetaTags(brand) {
       // Initialiser la barre au chargement
       document.addEventListener('DOMContentLoaded', () => {
           updateComparateurBar();
+          
+          // Mobile Menu Logic
+          const burgerMenu = document.getElementById('burger-menu');
+          const mobileNav = document.getElementById('mobile-nav');
+
+          if (burgerMenu && mobileNav) {
+            burgerMenu.addEventListener('click', () => {
+              burgerMenu.classList.toggle('active');
+              mobileNav.classList.toggle('active');
+              document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close menu when clicking links
+            const mobileLinks = mobileNav.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                burgerMenu.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+              });
+            });
+          }
       });
     </script>
   </body>

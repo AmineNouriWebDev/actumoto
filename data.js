@@ -97,7 +97,7 @@ const categories = [
     { name: "Quad", logo: "./img/category/quad.webp" },
     { name: "Roadster", logo: "./img/category/roadster.webp" },
     { name: "Scooter", logo: "./img/category/scooter.webp" },
-    { name: "Motocyclette", logo: "./img/category/motocyclette.webp" },
+    { name: "Mobylette", logo: "./img/category/mobylette.webp" },
     { name: "Sportive", logo: "./img/category/sportive.webp" },
     { name: "Trail", logo: "./img/category/trail.webp" },
     { name: "Tricycle", logo: "./img/category/tricycle.webp" }
@@ -1392,7 +1392,7 @@ const modelsData = {
         {
             name: "D-MAX",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
             price: 3050,
             currency: "DT",
@@ -1484,7 +1484,7 @@ const modelsData = {
         {
             name: "Power 107",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
             price: 2840,
             currency: "DT",
@@ -1507,7 +1507,7 @@ const modelsData = {
         {
             name: "SK 110",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/senke/senke-sk-110-107cc-rouge/1.webp", "./img/models/senke/senke-sk-110-107cc-rouge/2.webp", "./img/models/senke/senke-sk-110-107cc-rouge/3.webp", "./img/models/senke/senke-sk-110-107cc-rouge/4.webp"],
             price: 3200,
             currency: "DT",
@@ -1711,7 +1711,7 @@ const modelsData = {
         {
             name: "FZ MAX",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/bbm/bbm-124cc-fz-max-compteur/bbm-124cc-fz-max-compteur-digitale.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/2.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/3.jpg", "./img/models/bbm/bbm-124cc-fz-max-compteur/4.jpg"],
             price: 2750,
             currency: "DT",
@@ -2730,7 +2730,7 @@ const modelsData = {
         {
             name: "New MAX 124",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/first/new-max/forza-newmax-2026-1.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-3.webp"],
             price: 2850,
             currency: "DT",
@@ -2752,7 +2752,7 @@ const modelsData = {
         {
             name: "New MAX 107",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/first/new-max/forza-newmax-2026-3.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-1.webp"],
             price: 2850,
             currency: "DT",
@@ -2774,7 +2774,7 @@ const modelsData = {
         {
             name: "Jialing VIPER",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
             price: 2900,
             currency: "DT",
@@ -2912,7 +2912,7 @@ const modelsData = {
         {
             name: "Moto Gold ",
             fuelType: "Thermique",
-            category: "Motocyclette",
+            category: "Mobylette",
             images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
             price: 3270,
             currency: "DT",
