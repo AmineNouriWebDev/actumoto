@@ -60,6 +60,23 @@
     padding-bottom: 4px;
 }
 
+.nav-link-multiline {
+    display: inline-flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    white-space: normal !important;
+    vertical-align: middle;
+}
+
+@media (max-width: 1023px) {
+    .nav-link-multiline {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -228,6 +245,7 @@
 @media (min-width: 1024px) {
     .header-social-bar {
         display: flex;
+        justify-self: start;
     }
 }
 

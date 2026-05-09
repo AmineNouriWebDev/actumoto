@@ -340,7 +340,7 @@
 
     <!-- Header -->
     <header class="header-futurist main-header" role="banner">
-      <div class="container mx-auto px-4">
+      <div class="w-full px-4 md:px-10 h-full">
         <div class="header-container">
           <!-- Left Social Bar (Desktop) -->
           <div class="header-social-bar">
@@ -376,11 +376,28 @@
           <div class="nav-links">
             <a href="actualite.html" class="nav-link">Actualités</a>
             <a href="occasion.html" class="nav-link">Occasion</a>
-            <a href="https://motorsports.simcc.tn" class="nav-link" target="_blank">Équipements & accessoires</a>
+            <a href="https://motorsports.simcc.tn" class="nav-link nav-link-multiline" target="_blank">Équipements &<br>accessoires</a>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- Burger Menu Button (Mobile) -->
+    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+      <div class="mobile-menu-logo-container">
+        <img src="./img/logo-principal-6.png" alt="actumoto.tn" class="mobile-menu-logo">
+      </div>
+      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
+      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
+      <a href="https://motorsports.simcc.tn" class="mobile-nav-link nav-link-multiline" target="_blank">Équipements &<br>accessoires</a>
+    </div>
 
     <!-- Section Actualités avec bouton retour CORRIGÉ -->
     <section class="pt-32 pb-8 relative" role="main">
@@ -460,6 +477,27 @@
       document.addEventListener("DOMContentLoaded", function () {
         renderVideos();
         updateVideoSchema();
+
+        // Mobile Menu Logic
+        const burgerMenu = document.getElementById('burger-menu');
+        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+
+        if (burgerMenu && mobileNavOverlay) {
+          burgerMenu.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNavOverlay.classList.contains('active') ? 'hidden' : '';
+          });
+
+          // Close menu when clicking a link
+          mobileNavOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+              burgerMenu.classList.remove('active');
+              mobileNavOverlay.classList.remove('active');
+              document.body.style.overflow = '';
+            });
+          });
+        }
       });
 
       function renderVideos() {
