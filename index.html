@@ -227,6 +227,14 @@
         }
       }
 
+      @media (min-width: 1024px) {
+        .category-card {
+          width: calc(20% - 1rem); /* 5 par ligne sur desktop */
+          max-width: none;
+          flex: 0 0 auto;
+        }
+      }
+
       .category-card:hover {
         transform: translateY(-4px);
       }
@@ -307,6 +315,13 @@
         background-color: #f8f9fa;
       }
 
+      @media (min-width: 1024px) {
+        .nav-tab-btn {
+          font-size: 1.1rem;
+          padding: 0.85rem 2.5rem;
+        }
+      }
+
       @media (max-width: 480px) {
         .nav-tab-btn {
           padding: 0.5rem 0.75rem;
@@ -365,8 +380,8 @@
 
       .price-range-arrow {
         color: var(--primary-red);
-        font-size: 1.1rem;
-        font-weight: 600;
+        font-size: 1.05rem;
+        font-weight: 400;
       }
 
       .hidden-section {
@@ -1367,8 +1382,21 @@
     <header class="header-futurist main-header" role="banner">
       <div class="container mx-auto px-4 h-full">
         <div class="header-container">
-          <!-- Left Spacer (Desktop) -->
-          <div class="hidden lg:block"></div>
+          <!-- Left Social Bar (Desktop) -->
+          <div class="header-social-bar">
+            <a href="https://www.facebook.com/profile.php?id=61584281323170" class="header-social-btn" target="_blank" aria-label="Facebook">
+              <img src="./img/social/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/marwen_actumoto/" class="header-social-btn" target="_blank" aria-label="Instagram">
+              <img src="./img/social/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@ActumotoTn" class="header-social-btn" target="_blank" aria-label="YouTube">
+              <img src="./img/social/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://www.tiktok.com/@marwenactumoto" class="header-social-btn" target="_blank" aria-label="TikTok">
+              <img src="./img/social/tiktok.png" alt="TikTok">
+            </a>
+          </div>
 
           <!-- Logo (Center) -->
           <div class="flex items-center">
@@ -1432,8 +1460,8 @@
         </div>
       </section>
 
-      <!-- Social Media Bar -->
-      <section class="py-4" aria-label="Réseaux sociaux">
+      <!-- Social Media Bar (Hidden on Desktop, visible on Mobile) -->
+      <section class="py-4 lg:hidden" aria-label="Réseaux sociaux">
         <div class="container mx-auto px-4">
           <div
             class="social-bar"
@@ -1529,7 +1557,7 @@
       </section>
 
       <!-- Séparateur et Titres pour les Marques -->
-      <section class="pt-8 pb-4">
+      <section class="pt-16 md:pt-8 pb-4">
         <div class="container mx-auto px-4 text-center">
           <h2 id="marques-main-title" class="futurist-font text-xl md:text-2xl text-gray-900 mb-2">
             TOUTES LES MARQUES <span class="text-red-600">MOTO</span>
