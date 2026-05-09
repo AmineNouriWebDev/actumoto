@@ -89,7 +89,8 @@
 @media (max-width: 1023px) {
     .header-container {
         display: flex;
-        justify-content: center; /* Center everything on mobile */
+        justify-content: flex-start; /* Logo to the left on mobile */
+        padding-left: 10px;
     }
     
     .nav-links {
@@ -201,13 +202,13 @@
 /* Logo Sizes */
 @media (max-width: 767px) {
     .main-header-logo {
-        width: 140px;
+        width: 180px; /* Enlarge on mobile (was 140px) */
     }
 }
 
 @media (min-width: 768px) {
     .main-header-logo {
-        width: 180px;
+        width: 200px; /* Enlarge on tablet (was 180px) */
     }
 }
 

@@ -481,7 +481,7 @@
         margin-top: 3rem;
         margin-bottom: 1.5rem;
         padding-bottom: 0.5rem;
-        border-bottom: 2px solid #ff0000;
+        /* border-bottom: 2px solid #ff0000; */
         text-transform: uppercase;
         display: flex;
         align-items: center;
@@ -1024,7 +1024,7 @@
       <a href="https://motorsports.simcc.tn" class="mobile-nav-link" target="_blank">Équipements & accessoires</a>
     </div>
 
-    <section class="pt-20 pb-8 relative" role="main">
+    <section class="pt-28 pb-8 relative" role="main">
       <a
         href="index.html"
         class="section-back-btn"
@@ -1035,20 +1035,7 @@
       </a>
 
       <div class="container mx-auto px-4">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4"
-        >
-          <div>
-            <h1
-              id="selected-brand"
-              class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2"
-              aria-live="polite"
-            >
-              Modèles de motos
-            </h1>
-            <p id="models-count" class="text-gray-600" aria-live="polite"></p>
-          </div>
-        </div>
+
 
         <div
           id="models-container"
@@ -1213,12 +1200,7 @@
       }
 
       function showModels(brand) {
-        const title = document.getElementById("selected-brand");
-        const count = document.getElementById("models-count");
         const container = document.getElementById("models-container");
-
-        title.textContent = `${brand.toUpperCase()} - Modèles`;
-        count.textContent = `${modelsData[brand].length} modèle(s) disponible(s)`;
         container.innerHTML = "";
 
         if (modelsData[brand]) {
@@ -1644,13 +1626,8 @@
       }
 
       function showModelsByCategory(category) {
-        const title = document.getElementById("selected-brand");
-        const count = document.getElementById("models-count");
         const container = document.getElementById("models-container");
-
-        title.textContent = `CATÉGORIE: ${category.toUpperCase()}`;
         container.innerHTML = "";
-
         let matchingCount = 0;
 
         if (typeof modelsData !== 'undefined') {
@@ -1682,7 +1659,7 @@
           });
         }
 
-        count.textContent = `${matchingCount} modèle(s) disponible(s)`;
+
         
         // Hide brand contacts if any (they are specific to brands)
         const contactsContainer = document.getElementById("brand-contacts-container");
@@ -1731,24 +1708,8 @@
       }
 
       function showModelsByPriceRange(minPrice, maxPrice) {
-        const title = document.getElementById("selected-brand");
-        const count = document.getElementById("models-count");
         const container = document.getElementById("models-container");
-
-        const formatK = (p) => p === Infinity ? "..." : (Math.round(p / 1000) + "K");
-
-        let titleText = "Motos ";
-        if (maxPrice === Infinity) {
-          titleText += `Plus de ${formatK(minPrice)}`;
-        } else if (minPrice === 0) {
-          titleText += `Moins de ${formatK(maxPrice)}`;
-        } else {
-          titleText += `Entre ${formatK(minPrice)} et ${formatK(maxPrice)}`;
-        }
-        
-        title.textContent = titleText;
         container.innerHTML = "";
-
         let matchingCount = 0;
 
         if (typeof modelsData !== 'undefined') {
@@ -1781,7 +1742,7 @@
           });
         }
 
-        count.textContent = `${matchingCount} modèle(s) disponible(s)`;
+
         
         // Hide brand contacts if any (they are specific to brands)
         const contactsContainer = document.getElementById("brand-contacts-container");

@@ -92,15 +92,16 @@ const brands = [
 ];
 
 const categories = [
-    { name: "Custom", logo: "./img/category/custom.webp" },
-    { name: "Motocross", logo: "./img/category/motocross.webp" },
-    { name: "Quad", logo: "./img/category/quad.webp" },
+    { name: "Sportive", logo: "./img/category/sportive.webp" },
+    { name: "Trail", logo: "./img/category/trail.webp" },
     { name: "Roadster", logo: "./img/category/roadster.webp" },
     { name: "Scooter", logo: "./img/category/scooter.webp" },
     { name: "Mobylette", logo: "./img/category/mobylette.webp" },
-    { name: "Sportive", logo: "./img/category/sportive.webp" },
-    { name: "Trail", logo: "./img/category/trail.webp" },
-    { name: "Tricycle", logo: "./img/category/tricycle.webp" }
+    { name: "Tricycle", logo: "./img/category/tricycle.webp" },
+    { name: "Custom", logo: "./img/category/custom.webp" },
+    { name: "Quad", logo: "./img/category/quad.webp" },
+    { name: "Motocross", logo: "./img/category/motocross.webp" },
+
 ];
 
 const modelsData = {
