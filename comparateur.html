@@ -107,10 +107,41 @@
       }
       
       .spec-label {
-        background: rgba(255,0,0,0.05);
+        background: #f8fafc;
         font-weight: 600;
         color: #ff0000;
-        width: 200px;
+        width: 180px;
+        position: sticky;
+        left: 0;
+        z-index: 10;
+        border-right: 1px solid rgba(255,0,0,0.1) !important;
+      }
+
+      @media (max-width: 640px) {
+        .compare-table {
+          min-width: auto;
+        }
+        .spec-label {
+          width: 90px;
+          font-size: 0.7rem;
+          padding: 0.4rem 0.2rem !important;
+        }
+        .compare-table th, .compare-table td {
+          padding: 0.4rem 0.3rem !important;
+          font-size: 0.75rem;
+          text-align: left !important;
+        }
+        .model-img-wrapper {
+          height: 80px;
+        }
+        .compare-table h3 {
+          font-size: 0.85rem !important;
+        }
+        .remove-btn {
+          width: 22px;
+          height: 22px;
+          font-size: 1rem;
+        }
       }
       
       .best-spec {
@@ -246,8 +277,6 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
           <div>
-            <h1 class="futurist-font text-2xl md:text-4xl text-gray-800 mb-2">COMPARATEUR DE MOTOS</h1>
-            <p id="comparateur-subtitle" class="text-gray-600 font-medium">Chargement...</p>
           </div>
           <div class="flex flex-wrap gap-3">
               <a href="index.html" class="bg-gray-800 hover:bg-gray-900 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-md flex items-center gap-2">
@@ -359,10 +388,8 @@
 
       function renderComparateur() {
           const container = document.getElementById('comparateur-container');
-          const subtitle = document.getElementById('comparateur-subtitle');
           
           if (compareList.length === 0) {
-              subtitle.textContent = "Aucune moto sélectionnée";
               container.innerHTML = `
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-12 text-center">
                     <div class="text-6xl mb-4">🏍️</div>
@@ -376,7 +403,6 @@
               return;
           }
           
-          subtitle.textContent = `${compareList.length} moto(s) en comparaison`;
           loadFullModelsData();
           
           // Récupérer toutes les clés de specs possibles pour ces modèles
@@ -429,7 +455,7 @@
               const priceDisplay = formatPrice(m.price, m.currency);
               
               html += `
-                <th class="w-[200px] sm:w-[250px] relative">
+                <th class="w-[150px] sm:w-[250px] relative">
                     <button class="remove-btn" onclick="removeCompare('${m.brand}', '${m.itemReferenceName.replace(/'/g, "\\'")}')" title="Retirer">×</button>
                     <div class="model-img-wrapper">
                         <img src="${mainImage}" alt="${m.name}" class="model-img" onerror="this.src='./img/placeholder-moto.jpg'">
@@ -461,7 +487,7 @@
                       }
                   }
                   
-                  html += `<td class="text-center text-gray-700 ${isBest ? 'best-spec' : ''}">
+                  html += `<td class="text-left sm:text-center text-gray-700 ${isBest ? 'best-spec' : ''}">
                       ${specDisplay}
                   </td>`;
               });
