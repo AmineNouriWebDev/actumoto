@@ -522,7 +522,7 @@ const modelsData = {
         {
             name: "X SPORT",
             fuelType: "Thermique",
-            category: "Sportive",
+            category: "Roadster",
             images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
             price: 61400,
             currency: "DT",
@@ -1325,7 +1325,7 @@ const modelsData = {
         {
             name: "Power",
             fuelType: "Thermique",
-            category: "Scooter",
+            category: "Mobylette",
             images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
             price: 2840,
             currency: "DT",
@@ -1347,7 +1347,7 @@ const modelsData = {
         {
             name: "D-MAX",
             fuelType: "Thermique",
-            category: "Scooter",
+            category: "Mobylette",
             images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
             price: 3050,
             currency: "DT",
@@ -1369,7 +1369,7 @@ const modelsData = {
         {
             name: "Power 125 ",
             fuelType: "Thermique",
-            category: "Scooter",
+            category: "Mobylette",
             images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg", "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
             price: 2900,
             currency: "DT",
@@ -1575,7 +1575,7 @@ const modelsData = {
         {
             name: "Hunter",
             fuelType: "Thermique",
-            category: "Scooter",
+            category: "Custom",
             images: ["./img/models/senke/hunter/1.jpeg", "./img/models/senke/hunter/2.jpeg", "./img/models/senke/hunter/3.jpeg", "./img/models/senke/hunter/4.jpeg"],
             price: 4800,
             currency: "DT",
@@ -2048,7 +2048,7 @@ const modelsData = {
         {
             name: "TRICITY",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/novago/NOVAGO-TRICITY/2.jpg", "./img/models/novago/NOVAGO-TRICITY/3.jpg", "./img/models/novago/NOVAGO-TRICITY/1.jpg", "./img/models/novago/NOVAGO-TRICITY/4.jpg"],
             price: 5300,
             currency: "DT",
@@ -2092,7 +2092,7 @@ const modelsData = {
         {
             name: "LIBERTA",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/novago/liberta/liberta1.webp"],
             price: 4900,
             currency: "DT",
@@ -2983,7 +2983,7 @@ const modelsData = {
         {
             name: "Jialing Future STAR",
             fuelType: "Thermique",
-            category: "Scooter",
+            category: "Mobylette",
             images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg", "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
             price: 3400,
             currency: "DT",
@@ -3097,7 +3097,7 @@ const modelsData = {
         {
             name: "E-FLASH",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Roadster",
             images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg", "./img/models/eflash/2000-watts-blanc/2.jpeg"],
             price: 6600,
             currency: "DT",
@@ -3948,7 +3948,7 @@ const modelsData = {
         {
             name: "City Coco 3 roues",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/motolux/city-coco/city-coco-3.webp", "./img/models/motolux/city-coco/city-coco-1.jpg", "./img/models/motolux/city-coco/city-coco-2.jpg", "./img/models/motolux/city-coco/city-coco-4.webp"],
             price: 5500,
             currency: "DT",
@@ -4245,7 +4245,7 @@ const modelsData = {
         {
             name: "Bange Frigorifique",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/rapsev/tri/rapsev1.webp", "./img/models/rapsev/tri/rapsev2.webp", "./img/models/rapsev/tri/rapsev3.webp", "./img/models/rapsev/tri/rapsev4.webp"],
             price: 25400,
             currency: "DT",
@@ -4267,7 +4267,7 @@ const modelsData = {
         {
             name: "OAK",
             fuelType: "Electrique",
-            category: "Scooter",
+            category: "Tricycle",
             images: ["./img/models/rapsev/oak/1.webp", "./img/models/rapsev/oak/2.png"],
             price: 23800,
             currency: "DT",
