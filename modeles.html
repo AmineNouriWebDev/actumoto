@@ -1658,7 +1658,11 @@
           });
 
           // Render grouped models
-          Object.keys(groupedByBrand).sort().forEach(brand => {
+          Object.keys(groupedByBrand).sort((a, b) => {
+            const indexA = brands.findIndex(brand => brand.name === a);
+            const indexB = brands.findIndex(brand => brand.name === b);
+            return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+          }).forEach(brand => {
             // Add brand header
             const header = document.createElement("div");
             header.className = "brand-group-header";
@@ -1741,7 +1745,11 @@
           });
 
           // Render grouped models
-          Object.keys(groupedByBrand).sort().forEach(brand => {
+          Object.keys(groupedByBrand).sort((a, b) => {
+            const indexA = brands.findIndex(brand => brand.name === a);
+            const indexB = brands.findIndex(brand => brand.name === b);
+            return (indexA === -1 ? 999 : indexA) - (indexB === -1 ? 999 : indexB);
+          }).forEach(brand => {
             // Add brand header
             const header = document.createElement("div");
             header.className = "brand-group-header";

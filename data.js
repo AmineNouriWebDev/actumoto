@@ -49,7 +49,7 @@ const brands = [
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
-    { name: "ZIMOTA_MOTOR", logo: "./img/logos-actumoto/zimota.png?v=2" },
+    { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
 
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
@@ -68,13 +68,13 @@ const brands = [
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-    { name: "E_RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
+    { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
     { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
-    { name: "GOLD_MOTORS", logo: "./img/logos-actumoto/goldstar.png?v=2" },
+    { name: "GOLD", logo: "./img/logos-actumoto/goldstar.png?v=2" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
     { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
@@ -740,7 +740,7 @@ const modelsData = {
             }
         },
     ],
-    ZIMOTA_MOTOR: [
+    ZIMOTA: [
         {
             name: "Vision 125",
             fuelType: "Thermique",
@@ -1732,7 +1732,7 @@ const modelsData = {
             }
         },
         {
-            name: "FORMULA",
+            name: "FORMULA 125",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/bbm/formula/formula3.png", "./img/models/bbm/formula/formula4.png", "./img/models/bbm/formula/5.jpeg", "./img/models/bbm/formula/6.jpeg"],
@@ -1747,6 +1747,28 @@ const modelsData = {
                 refroidissement: "A air",
                 tankCapacity: null,
                 vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "FORMULA 50",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/bbm/formula50/bbm-formula-1.webp", "./img/models/bbm/formula50/bbm-formula-2.webp", "./img/models/bbm/formula50/bbm-formula-3.webp", "./img/models/bbm/formula50/bbm-formula-4.webp"],
+            price: 3780,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: 50,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
                 autonomie: null,
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
@@ -2887,7 +2909,7 @@ const modelsData = {
             }
         },
     ],
-    GOLD_MOTORS: [
+    GOLD: [
         {
             name: "R9",
             fuelType: "Thermique",
@@ -3093,7 +3115,7 @@ const modelsData = {
             }
         },
     ],
-    E_RIDER: [
+    "E RIDER": [
         {
             name: "E-FLASH",
             fuelType: "Electrique",
@@ -4567,7 +4589,7 @@ const dealersContacts = {
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
-    "ZIMOTA_MOTOR": {
+    "ZIMOTA": {
         addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
         phones: ["+216 28 400 037"],
         emails: ["contact@ZIMOTA.tn"],
