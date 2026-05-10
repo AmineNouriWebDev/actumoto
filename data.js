@@ -2841,74 +2841,74 @@ const modelsData = {
 
     ],
 
-    KAYCO: [
-        {
-            name: "Young Graduates",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/kayco/kayco/kayco.jpg", "./img/models/kayco/kayco/2.webp", "./img/models/kayco/kayco/3.jpg", "./img/models/kayco/kayco/4webp.webp"],
-            price: 4500,
-            currency: "DT",
+    // KAYCO: [
+    //     {
+    //         name: "Young Graduates",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/kayco/kayco/kayco.jpg", "./img/models/kayco/kayco/2.webp", "./img/models/kayco/kayco/3.jpg", "./img/models/kayco/kayco/4webp.webp"],
+    //         price: 4500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 4000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 70,
-                alimentation: "",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Freelancers",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/kayco/kayco-noir/kayco-noir.jpg", "./img/models/kayco/kayco-noir/2.webp", "./img/models/kayco/kayco-noir/3.webp", "./img/models/kayco/kayco-noir/4.webp"],
-            price: 5900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 4000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 70,
+    //             alimentation: "",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Freelancers",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/kayco/kayco-noir/kayco-noir.jpg", "./img/models/kayco/kayco-noir/2.webp", "./img/models/kayco/kayco-noir/3.webp", "./img/models/kayco/kayco-noir/4.webp"],
+    //         price: 5900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 4000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 120,
-                alimentation: "",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Delivery Professionals",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/kayco/kayco-rouge/kayco-rouge.jpg", "./img/models/kayco/kayco-rouge/2.webp", "./img/models/kayco/kayco-rouge/3.webp", "./img/models/kayco/kayco-rouge/4.webp"],
-            price: 7200,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 4000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 120,
+    //             alimentation: "",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Delivery Professionals",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/kayco/kayco-rouge/kayco-rouge.jpg", "./img/models/kayco/kayco-rouge/2.webp", "./img/models/kayco/kayco-rouge/3.webp", "./img/models/kayco/kayco-rouge/4.webp"],
+    //         price: 7200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 4000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 240,
-                alimentation: "",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 4000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 240,
+    //             alimentation: "",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     GOLD: [
         {
             name: "R9",
@@ -4639,16 +4639,16 @@ const dealersContacts = {
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
-    "MISTRAL": {
-        addresses: ["Ben arous, Tunis, Tunisia"],
-        phones: ["+216 71 380 253"],
-        emails: ["motosstars24@gmail.com"],
-        // website: "https://zimota-motor.tn",
-        // facebook: "https://www.facebook.com/peugeot",
-        // instagram: "https://www.instagram.com/peugeot",
-        // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
-    },
+    // "MISTRAL": {
+    //     addresses: ["Ben arous, Tunis, Tunisia"],
+    //     phones: ["+216 71 380 253"],
+    //     emails: ["motosstars24@gmail.com"],
+    //     // website: "https://zimota-motor.tn",
+    //     // facebook: "https://www.facebook.com/peugeot",
+    //     // instagram: "https://www.instagram.com/peugeot",
+    //     // youtube: "https://www.youtube.com/peugeot",
+    //     // x: "https://x.com/peugeot"
+    // },
     "SLC": {
         // addresses: ["Ben arous, Tunis, Tunisia"],
         phones: ["+216 93 702 800"],
