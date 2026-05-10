@@ -1319,76 +1319,76 @@ const modelsData = {
             }
         },
     ],
-    FORZA_MOTOR_SPORT: [
+    // FORZA_MOTOR_SPORT: [
 
 
-        {
-            name: "Power",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
-            price: 2840,
-            currency: "DT",
+    //     {
+    //         name: "Power",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
+    //         price: 2840,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 107,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "D-MAX",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
-            price: 3050,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 107,
+    //             puissance: 6.8,
+    //             coupleMaximal: 7,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "D-MAX",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/forza/forza-slc-d-max-124cc-bleu/2.jpeg", "./img/models/forza/forza-slc-d-max-124cc-bleu/forza-slc-d-max-124cc-bleu.jpg"],
+    //         price: 3050,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Power 125 ",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg", "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
-            price: 2900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 125,
+    //             puissance: 6.8,
+    //             coupleMaximal: 7,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Power 125 ",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/forza/forza-power-125cc-digital-gris-2/2.jpeg", "./img/models/forza/forza-power-125cc-digital-gris-2/forza-power-125cc-digital-gris-2.jpg"],
+    //         price: 2900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 125,
+    //             puissance: 6.8,
+    //             coupleMaximal: 7,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     SLC: [
         {
             name: "D-MAX",
@@ -2519,6 +2519,50 @@ const modelsData = {
         },
     ],
     KIM: [
+        {
+            name: "POWER 110",
+            fuelType: "Thermique",
+            category: "Mobylette",
+            images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 110,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "POWER 125",
+            fuelType: "Thermique",
+            category: "Mobylette",
+            images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque/Tambour",
+                systemeFreinage: "",
+            }
+        },
         {
             name: "PISTA HR",
             fuelType: "Thermique",
