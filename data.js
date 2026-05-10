@@ -43,7 +43,7 @@ const brands = [
 
 
     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+    { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
     { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
 
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
@@ -59,7 +59,8 @@ const brands = [
 
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
-    { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },

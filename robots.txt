@@ -1,6 +1,12 @@
 User-agent: *
-Allow: /
+Allow: /index.html
+Allow: /modeles.html
+Allow: /occasion.html
+Allow: /actualite.html
+Disallow: /comparateur.html
 Disallow: /coming-soon.html
+Disallow: /test-insta.html
+Disallow: /refactor_modeles.py
 Sitemap: https://actumoto.tn/sitemap.xml
 
 # Désactiver certains crawlers problématiques
