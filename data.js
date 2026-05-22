@@ -31,9 +31,10 @@ const brands = [
      { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
     { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
    
+    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
     { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
     { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
-     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
+     
 
     
 
@@ -57,12 +58,12 @@ const brands = [
 
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
-
-    { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
+{ name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
+   
     { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
 
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
-    { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
+     { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
     { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
 
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
@@ -70,16 +71,18 @@ const brands = [
     { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
     
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
-    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+   
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
-    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
-    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
+     { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
+   
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
-    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
+    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
     { name: "GOLD", logo: "./img/logos-actumoto/goldstar.png?v=2" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
@@ -298,7 +301,7 @@ const modelsData = {
 
        
         {
-            name: "Liberty S 2025",
+            name: "Liberty S",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-1.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-2.jpeg", "./img/models/piaggio/liberty-s-125-2025/liberty-s-125-2025-3.jpeg"],
@@ -4861,36 +4864,36 @@ const dealersContacts = {
 const carouselSlides = [
     {
         id: 5,
-        image_desktop: "./img/slider/simcc/desktop/banner-dektop1.webp",
-        image_mobile: "./img/slider/simcc/mobile/banner-mobile1-2.jpeg",
+        image_desktop: "./img/slider/simcc/desktop/1.webp",
+        image_mobile: "./img/slider/simcc/mobile/1.jpeg",
         alt: "Banner slider pista hr 110 cc",
         link: "https://www.facebook.com/SIMCC.Motorsports" // on ajoute null sans virgule sans guillemets pour les images non cliquables
     },
     {
         id: 1,
-        image_desktop: "./img/slider/simcc/desktop/banner-dektop2.webp",
-        image_mobile: "./img/slider/simcc/mobile/banner-mobile2-2.jpeg", // Optionnel - fallback à image_desktop
+        image_desktop: "./img/slider/simcc/desktop/2.webp",
+        image_mobile: "./img/slider/simcc/mobile/2.jpeg", // Optionnel - fallback à image_desktop
         alt: "banner dolce desktop - scooter électrique urbain au design italien",
         link: "https://www.facebook.com/SIMCC.Motorsports"// Optionnel - si null, l'image n'est pas cliquable
     },
     {
         id: 2,
-        image_desktop: "./img/slider/simcc/desktop/banner-dektop3.webp",
-        image_mobile: "./img/slider/simcc/mobile/banner-mobile3-2.jpeg",
+        image_desktop: "./img/slider/simcc/desktop/3.webp",
+        image_mobile: "./img/slider/simcc/mobile/3.jpeg",
         alt: "Scooter urbain - Technologie moderne",
         link: "https://www.facebook.com/SIMCC.Motorsports"
     },
     {
         id: 3,
-        image_desktop: "./img/slider/simcc/desktop/banner-dektop4.webp",
-        image_mobile: "./img/slider/simcc/mobile/banner-desktop-4-3.webp",
+        image_desktop: "./img/slider/simcc/desktop/4.webp",
+        image_mobile: "./img/slider/simcc/mobile/4.jpeg",
         alt: "Moto Vespa banière- Confort et performance",
         link: "https://www.facebook.com/SIMCC.Motorsports"
     },
     {
         id: 4,
-        image_desktop: "./img/slider/simcc/desktop/banner-dektop5.webp",
-        image_mobile: "./img/slider/simcc/mobile/banner-mobile5-2.jpeg",
+        image_desktop: "./img/slider/simcc/desktop/5.webp",
+        image_mobile: "./img/slider/simcc/mobile/5.jpeg",
         alt: "Moto custom - Style rétro",
         link: "https://www.facebook.com/SIMCC.Motorsports"
     }
