@@ -420,7 +420,7 @@ const modelsData = {
             name: "SR iget E5",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
+            images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-4.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-2.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-3.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget1.webp"],
             price: 10900,
             currency: "DT",
 
