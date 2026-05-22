@@ -709,17 +709,37 @@
         <div class="header-container">
           <!-- Left Social Bar (Desktop) -->
           <div class="header-social-bar">
-            <a href="https://www.facebook.com/profile.php?id=61584281323170" class="header-social-btn" target="_blank" aria-label="Facebook">
-              <img src="./img/social/facebook.png" alt="Facebook">
+            <a
+              href="https://www.facebook.com/profile.php?id=61584281323170"
+              class="header-social-btn"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <img src="./img/social/facebook.png" alt="Facebook" />
             </a>
-            <a href="https://www.instagram.com/marwen_actumoto/" class="header-social-btn" target="_blank" aria-label="Instagram">
-              <img src="./img/social/instagram.png" alt="Instagram">
+            <a
+              href="https://www.instagram.com/marwen_actumoto/"
+              class="header-social-btn"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img src="./img/social/instagram.png" alt="Instagram" />
             </a>
-            <a href="https://www.youtube.com/@ActumotoTn" class="header-social-btn" target="_blank" aria-label="YouTube">
-              <img src="./img/social/youtube.png" alt="YouTube">
+            <a
+              href="https://www.youtube.com/@ActumotoTn"
+              class="header-social-btn"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <img src="./img/social/youtube.png" alt="YouTube" />
             </a>
-            <a href="https://www.tiktok.com/@marwenactumoto" class="header-social-btn" target="_blank" aria-label="TikTok">
-              <img src="./img/social/tiktok.png" alt="TikTok">
+            <a
+              href="https://www.tiktok.com/@marwenactumoto"
+              class="header-social-btn"
+              target="_blank"
+              aria-label="TikTok"
+            >
+              <img src="./img/social/tiktok.png" alt="TikTok" />
             </a>
           </div>
 
@@ -741,7 +761,12 @@
           <div class="nav-links">
             <a href="actualite.html" class="nav-link">Actualités</a>
             <a href="occasion.html" class="nav-link">Occasion</a>
-            <a href="https://motorsports.simcc.tn" class="nav-link nav-link-multiline" target="_blank">Équipements &<br>accessoires</a>
+            <a
+              href="https://motorsports.simcc.tn"
+              class="nav-link nav-link-multiline"
+              target="_blank"
+              >Équipements &<br />accessoires</a
+            >
           </div>
         </div>
       </div>
@@ -757,11 +782,20 @@
     <!-- Mobile Nav Overlay -->
     <div class="mobile-nav-overlay" id="mobile-nav-overlay">
       <div class="mobile-menu-logo-container">
-        <img src="./img/logo-principal-6.png" alt="actumoto.tn" class="mobile-menu-logo">
+        <img
+          src="./img/logo-principal-6.png"
+          alt="actumoto.tn"
+          class="mobile-menu-logo"
+        />
       </div>
       <a href="actualite.html" class="mobile-nav-link">Actualités</a>
       <a href="occasion.html" class="mobile-nav-link">Occasion</a>
-      <a href="https://motorsports.simcc.tn" class="mobile-nav-link nav-link-multiline" target="_blank">Équipements &<br>accessoires</a>
+      <a
+        href="https://motorsports.simcc.tn"
+        class="mobile-nav-link nav-link-multiline"
+        target="_blank"
+        >Équipements &<br />accessoires</a
+      >
     </div>
 
     <section class="pt-24 pb-8 relative" role="main">
@@ -879,7 +913,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=202603223"></script>
+    <script src="data.js?v=20260515"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -887,22 +921,26 @@
         // DÉSACTIVÉ - initImageModal();
 
         // Mobile Menu Logic
-        const burgerMenu = document.getElementById('burger-menu');
-        const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+        const burgerMenu = document.getElementById("burger-menu");
+        const mobileNavOverlay = document.getElementById("mobile-nav-overlay");
 
         if (burgerMenu && mobileNavOverlay) {
-          burgerMenu.addEventListener('click', function() {
-            this.classList.toggle('active');
-            mobileNavOverlay.classList.toggle('active');
-            document.body.style.overflow = mobileNavOverlay.classList.contains('active') ? 'hidden' : '';
+          burgerMenu.addEventListener("click", function () {
+            this.classList.toggle("active");
+            mobileNavOverlay.classList.toggle("active");
+            document.body.style.overflow = mobileNavOverlay.classList.contains(
+              "active",
+            )
+              ? "hidden"
+              : "";
           });
 
           // Close menu when clicking a link
-          mobileNavOverlay.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-              burgerMenu.classList.remove('active');
-              mobileNavOverlay.classList.remove('active');
-              document.body.style.overflow = '';
+          mobileNavOverlay.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              burgerMenu.classList.remove("active");
+              mobileNavOverlay.classList.remove("active");
+              document.body.style.overflow = "";
             });
           });
         }

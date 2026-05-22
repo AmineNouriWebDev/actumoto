@@ -28,10 +28,14 @@ function formatPriceHtml(price, currency = "DT") {
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
-    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
+     { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
     { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
-
+   
+    { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
     { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
+     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
+
+    
 
 
     { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
@@ -39,17 +43,17 @@ const brands = [
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },
 
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
-
-
-
-    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+  { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
     { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
-    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
 
-    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
-    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+
+  
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
+    
     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
-    { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
+   
 
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
@@ -59,13 +63,14 @@ const brands = [
 
     { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
     { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=2" },
+    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
 
     { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
-    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
+    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
+    
+    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
+    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
@@ -291,28 +296,7 @@ const modelsData = {
     ],
     PIAGGIO: [
 
-        {
-            name: "VESPA GTS",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-1.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-2.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-3.jpeg", "./img/models/piaggio/piaggio-vespa-gts/piaggio-vespa-gts-4.jpeg"],
-            price: 29900,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 10.3,
-                coupleMaximal: 12.5,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Injection",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
+       
         {
             name: "Liberty S 2025",
             fuelType: "Thermique",
@@ -335,24 +319,51 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
+      
+    ],
+    VESPA: [
+
         {
-            name: "VESPA VXL ",
+            name: "GTS SUPERSPORT",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-1.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-2.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-3.jpeg", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
-            price: 9900,
+            images: ["./img/models/vespa/gts/vespa-gts-1.webp", "./img/models/vespa/gts/vespa-gts-2.webp", "./img/models/vespa/gts/vespa-gts-3.webp", "./img/models/vespa/gts/vespa-gts-4.webp"],
+            price: 29900,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocilyndre, 4 temps",
                 cylindree: 125,
-                puissance: 7.1,
-                coupleMaximal: 10.6,
-                refroidissement: "A air",
+                puissance: 14,
+                coupleMaximal: 12,
+                refroidissement: "Liquide",
                 tankCapacity: null,
-                vitesseMaximale: 90,
+                vitesseMaximale: 110,
                 autonomie: null,
                 alimentation: "Injection",
+                freinage: "Disque/Disque",
+                systemeFreinage: "ABS-ASR",
+            }
+        },
+        
+        {
+            name: "VXL ",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/vespa/vxl/vespa-vxl-1.webp", "./img/models/vespa/vxl/vspa-vxl-2.webp", "./img/models/vespa/vxl/vespa-vxl-3.webp", "./img/models/piaggio/piaggio-vespa-125/piaggio-vespa-125-4.jpeg"],
+            price: 9900,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 124.49,
+                puissance: 9.65,
+                coupleMaximal: 9.9,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 95,
+                autonomie: null,
+                alimentation: "Carburateur",
                 freinage: "Disque/Tambour",
                 systemeFreinage: "",
             }
@@ -363,18 +374,18 @@ const modelsData = {
             name: "SR GT ",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/aprilia/aprilia-gt/aprilia-1.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-2.jpeg", "./img/models/aprilia/aprilia-gt/aprilia-3.jpeg"],
-            price: 26000,
+            images: ["./img/models/aprilia/aprilia-gt/aprilia-sr-gt-1.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-2.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt3.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-4.webp"],
+            price: 25900,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: 125,
-                puissance: 14,
+                puissance: 15,
                 coupleMaximal: 12,
                 refroidissement: "Liquide",
                 tankCapacity: null,
-                vitesseMaximale: 99,
+                vitesseMaximale: 110,
                 autonomie: null,
                 alimentation: "injection",
                 freinage: "Disque/Disque ",
@@ -386,15 +397,15 @@ const modelsData = {
             name: "SR",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-1.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
-            price: 8500,
+            images: ["./img/models/aprilia/aprilia-sr-125/aprilia-sr-1.webp", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
+            price: 8900,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: 125,
-                puissance: 9,
-                coupleMaximal: 10,
+                puissance: 9.65,
+                coupleMaximal: 9.9,
                 refroidissement: "A air",
                 tankCapacity: null,
                 vitesseMaximale: 90,
@@ -406,7 +417,7 @@ const modelsData = {
         },
 
         {
-            name: "SR iget",
+            name: "SR iget E5",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-1.png", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-2.png"],
@@ -416,14 +427,14 @@ const modelsData = {
             specs: {
                 typeMoteur: "Monocylindre 4 temps i-get",
                 cylindree: 125,
-                puissance: 15,
-                coupleMaximal: 12,
-                refroidissement: "Liquide",
+                puissance: 9.9,
+                coupleMaximal: 9.7,
+                refroidissement: "A air",
                 tankCapacity: null,
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Injection électronique",
-                freinage: "Disque AV / Disque AR ",
+                freinage: "Disque / Tambour ",
                 systemeFreinage: "CBS",
             }
 
@@ -763,6 +774,28 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
+         {
+            name: "SRK 125 S",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg", "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
+            price: 10400,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 125,
+                puissance: 15,
+                coupleMaximal: 12,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale: 120,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ",
+                systemeFreinage: "CBS",
+            }
+        },
         {
             name: "Eway RIDE",
             fuelType: "Electrique",
@@ -1027,6 +1060,28 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Carburateur",
                 freinage: "Disque / Tambour",
+                systemeFreinage: "",
+            }
+        },
+          {
+            name: "SUPERLIGHT",
+            fuelType: "Thermique",
+            category: "Custom",
+            images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
+            price: 7500,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 125,
+                puissance: 10.6,
+                coupleMaximal: 8.9,
+                refroidissement: "A air",
+                tankCapacity: 12.5,
+                vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "",
+                freinage: "Disque/Tambour",
                 systemeFreinage: "",
             }
         },
@@ -1391,6 +1446,28 @@ const modelsData = {
     //     },
     // ],
     SLC: [
+        {
+            name: "X-MAX",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/slc/xmax/1.webp", "./img/models/slc/xmax/2.webp", "./img/models/slc/xmax/3.webp", "./img/models/slc/xmax/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "Liquide",
+                tankCapacity: 8.5,
+                vitesseMaximale: 115,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            }
+        },
         {
             name: "D-MAX",
             fuelType: "Thermique",
@@ -2450,6 +2527,29 @@ const modelsData = {
     ],
     SANYA: [
         {
+            name: "SY 250GS-2",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/sanya/SY250/1.png", "./img/models/sanya/SY250/2.png", "./img/models/sanya/SY250/3.png", "./img/models/sanya/SY250/4.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 250,
+                puissance: 21,
+                coupleMaximal: 19,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            },
+
+        },
+        {
             name: "SY 125-9F",
             fuelType: "Thermique",
             category: "Roadster",
@@ -2525,7 +2625,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Mobylette",
             images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
-            price: null,
+            price: 2800,
             currency: "DT",
 
             specs: {
@@ -2547,7 +2647,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Mobylette",
             images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
-            price: null,
+            price: 3000,
             currency: "DT",
 
             specs: {
@@ -2679,34 +2779,12 @@ const modelsData = {
 
     ],
     QJMOTOR: [
-        {
-            name: "CBS 125 ",
+         {
+            name: "FORT 125 N",
             fuelType: "Thermique",
-            category: "Custom",
-            images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
-            price: 7500,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 10.6,
-                coupleMaximal: 8.9,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "SRK 125 S",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg", "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
-            price: 11000,
+            category: "Scooter",
+            images: ["./img/models/qjmotor/fort125/4.webp", "./img/models/qjmotor/fort125/2.webp", "./img/models/qjmotor/fort125/3.webp", "./img/models/qjmotor/fort125/1.webp"],
+            price: null,
             currency: "DT",
 
             specs: {
@@ -2715,14 +2793,15 @@ const modelsData = {
                 puissance: 15,
                 coupleMaximal: 12,
                 refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 110,
+                tankCapacity: 11.7,
+                vitesseMaximale: null,
                 autonomie: null,
                 alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
+                freinage: "Disque/Disque",
                 systemeFreinage: "ABS",
             }
         },
+       
     ],
     WOLF: [
         {
@@ -4099,8 +4178,8 @@ const modelsData = {
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "CBS",
+                freinage: "Disque / Disque",
+                systemeFreinage: "",
             }
         },
         {
@@ -4121,8 +4200,8 @@ const modelsData = {
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "Disque / Tambour ",
-                systemeFreinage: "CBS",
+                freinage: "Disque / Disque ",
+                systemeFreinage: "",
             }
         },
 
@@ -4360,33 +4439,56 @@ const modelsData = {
 
 // Données pour les motos d'occasion - Tableau simple sans division par marques
 const occasionModelsData = [
-    {
-        marque: "Ducati",
-        name: "Ducati 1100 Panigale V4 S 🇹🇳 modèle 2025 🇹🇳 00KM - chez JETMOTO 🇹🇳 Tunis 🇹🇳 tel-watsap 53685927-26711555",
-        fuelType: "Électrique",
-        category: "Scooter",
-        images: ["./img/occasion/12/1.jpg", "./img/occasion/12/2.jpg", "./img/occasion/12/3.jpg", "./img/occasion/12/4.jpg"],
+       {
+        marque: "Harley-Davidson",
+        name: "HARLEY-DAVIDSON SPORTSTER 1250 S modèle 2023   hez Jet moto manzah 6 tel 26711555-53685927",
+        fuelType: "Thermique",
+        category: "Custom",
+        images: ["./img/occasion/14/harley-1.webp", "./img/occasion/14/harley-2.webp", "./img/occasion/14/harley-3.webp", "./img/occasion/14/4.png"],
         price: "",
         currency: "DT",
         specs: {
-            kilometrage: "0 km",
-            typeMoteur: "V4 Desmosedici Stradale 4 temps,",
-            cylindree: "1103 cm³",
-            puissance: "220 ch (162 kW)",
-            coupleMaximal: "123 Nm",
+            kilometrage: "2000 km",
+            typeMoteur: "V-Twin Revolution® Max 1250T",
+            cylindree: "1252cm³",
+            puissance: "121ch",
+            coupleMaximal: "125 Nm,",
             refroidissement: "Liquide",
-            tankCapacity: null,
+            tankCapacity: 11.18,
+            vitesseMaximale: "230",
+            autonomie: null,
+            alimentation: "Injection électronique",
+            freinage: "Disque / Disque",
+            systemeFreinage: "ABS"
+        }
+    },
+    {
+        marque: "Ducati",
+        name: "DUCATI-1199.PANIGALE🇹🇳modèle 2014 🇹🇳15000 km 🇹🇳 chez JETMOTO 🇹🇳Tunis🇹🇳 tel - watsap-53685927-26711555",
+        fuelType: "Thermique",
+        category: "Sportive",
+        images: ["./img/occasion/15/1.jpg", "./img/occasion/15/2.jpg", "./img/occasion/15/3.jpg", "./img/occasion/15/4.jpg"],
+        price: "",
+        currency: "DT",
+        specs: {
+            kilometrage: "15000 km",
+            typeMoteur: "Bicylindre en L, 4 temps",
+            cylindree: "1198 cm³",
+            puissance: "195 ch",
+            coupleMaximal: "132 Nm",
+            refroidissement: "Liquide",
+            tankCapacity: 17,
             vitesseMaximale: "300 km/h",
             autonomie: null,
             alimentation: "Injection électronique",
-            freinage: "Double disque AV / Disque AR Brembo Hypure",
-            systemeFreinage: ""
+            freinage: "Double disque AV / Disque AR",
+            systemeFreinage: "ABS"
         }
     },
     {
         marque: "KAWASAKI",
         name: "Kawasaki Z900-ABS-00km- modèle 10.2025🇹🇳 chez JETMOTO 🇹🇳 tel 53685927-267115557",
-        fuelType: "Électrique",
+        fuelType: "Thermique",
         category: "Scooter",
         images: ["./img/occasion/11/1.jpg", "./img/occasion/11/2.jpg", "./img/occasion/11/3.jpg", "./img/occasion/11/4.jpg"],
         price: "",
@@ -4409,7 +4511,7 @@ const occasionModelsData = [
     {
         marque: "HONDA",
         name: "HONDA.XADV 750 🇹🇳 modèle 10.2025 -00km 🇹🇳 avec carte grise tunisienne 🇹🇳 chez JETMOTO 🇹🇳 tunis 🇹🇳 watsap-tel-53685927-26711555 🇹🇳",
-        fuelType: "Électrique",
+        fuelType: "Thermique",
         category: "Scooter",
         images: ["./img/occasion/13/1.jpg", "./img/occasion/13/2.jpg", "./img/occasion/13/4.jpg"],
         price: "",
@@ -4432,7 +4534,7 @@ const occasionModelsData = [
     {
         marque: "BMW",
         name: "BMW-S1000RR-M 🇹🇳 2026-00km - Jet Moto tel 26711555-53685927",
-        fuelType: "Électrique",
+        fuelType: "Thermique",
         category: "Scooter",
         images: ["./img/occasion/9/BMW-S1000RR-M-1.png", "./img/occasion/9/BMW-S1000RR-M-2.jpg", "./img/occasion/9/BMW-S1000RR-M-3.jpg", "./img/occasion/9/BMW-S1000RR-M-4.jpg"],
         price: "",
@@ -4455,7 +4557,7 @@ const occasionModelsData = [
     {
         marque: "BMW",
         name: "BMW-GS1300-Adventure-Triple Black 2026-00km - Jet Moto tel 26711555-53685927",
-        fuelType: "Électrique",
+        fuelType: "Thermique",
         category: "Scooter",
         images: ["./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-2.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-1.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-3.jpg", "./img/occasion/10/BMW-GS1300-Adventure-Triple-Black-4.jpg"],
         price: "",
@@ -4478,7 +4580,7 @@ const occasionModelsData = [
     {
         marque: "YAMAHA",
         name: "YAMAHA  T-MAX 562 Tech-Max - Jet Moto tel 24350274",
-        fuelType: "Électrique",
+        fuelType: "Thermique",
         category: "Scooter",
         images: ["./img/occasion/1/T-MAX-562-Tech-Max.png", "./img/occasion/1/T-MAX-562-Tech-Max-5.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-6.jpg", "./img/occasion/1/T-MAX-562-Tech-Max-7.jpg"],
         price: "",
@@ -4499,29 +4601,7 @@ const occasionModelsData = [
         }
     },
 
-    {
-        marque: "YAMAHA",
-        name: "YAMAHA-V-max 1700 -modèle 2009 - Jet Moto tel 24350274",
-        fuelType: "Électrique",
-        category: "Scooter",
-        images: ["./img/occasion/3/YAMAHA-V-max-1700-modele-2009-1.png", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-2.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-3.jpg", "./img/occasion/3/YAMAHA-V-max-1700-modele-2009-4.jpg"],
-        price: "",
-        currency: "DT",
-        specs: {
-            kilometrage: "54000 km",
-            typeMoteur: "V4 4 temps",
-            cylindree: "1679 cm³",
-            puissance: "106 ch (78 kW)",
-            coupleMaximal: "145 Nm,",
-            refroidissement: "Liquide",
-            tankCapacity: null,
-            vitesseMaximale: "",
-            autonomie: null,
-            alimentation: "Injection électronique",
-            freinage: "",
-            systemeFreinage: ""
-        }
-    },
+   
 
 
     {
@@ -4547,6 +4627,7 @@ const occasionModelsData = [
             systemeFreinage: ""
         }
     },
+ 
 
 
 
