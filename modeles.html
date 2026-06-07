@@ -847,6 +847,83 @@
         margin-bottom: 0 !important;
       }
 
+      /* === STYLES POUR LES CARTES GOOGLE MAPS === */
+      .maps-container {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .maps-iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+        border-radius: 0 0 8px 8px;
+      }
+
+      .maps-item {
+        background: transparent !important;
+        padding: 0 !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      .maps-link-open {
+        display: block;
+        margin-top: 0.75rem;
+        padding: 0.75rem 1rem;
+        background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+        box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+      }
+
+      .maps-link-open:hover {
+        background: linear-gradient(135deg, #cc0000 0%, #990000 100%);
+        box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .maps-link-open span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      /* === RESPONSIVE DESIGN POUR LES CARTES === */
+      @media (max-width: 767px) {
+        .maps-iframe {
+          height: 300px;
+        }
+
+        .maps-link-open {
+          padding: 0.65rem 0.85rem;
+          font-size: 0.9rem;
+        }
+
+        .maps-item {
+          margin-bottom: 1rem !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .maps-iframe {
+          height: 250px;
+        }
+
+        .maps-link-open {
+          padding: 0.6rem 0.75rem;
+          font-size: 0.85rem;
+        }
+      }
+
       .social-link {
         display: inline-flex;
         align-items: center;
@@ -1224,7 +1301,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=20260514"></script>
+    <script src="data.js?v=20260603"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -1929,24 +2006,58 @@
         if (!contactsSection) return;
 
         if (typeof dealersContacts === "undefined" || !dealersContacts[brand]) {
-          contactsSection.innerHTML = ""; // Aucun contact, ne rien afficher
+          contactsSection.innerHTML = "";
           return;
         }
 
         const contacts = dealersContacts[brand];
+        const displayMode = contacts.addressDisplayMode || "text";
         let contactContent = "";
 
+        // === SECTION ADRESSE (texte ou carte Google Maps) ===
         if (contacts.addresses && contacts.addresses.length > 0) {
-          contactContent += `
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
-              <div class="contact-details">
-                ${contacts.addresses.map((addr) => `<div class="contact-line">${addr}</div>`).join("")}
+          const firstAddress = contacts.addresses[0];
+
+          if (displayMode === "maps") {
+            // Mode Maps: afficher carte Google Maps intégrée
+            const encodedAddress = encodeURIComponent(
+              firstAddress + ", Tunisia",
+            );
+            const mapsEmbedUrl = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+            const mapsDirectionsUrl = `https://www.google.com/maps/search/${encodedAddress}`;
+
+            contactContent += `
+              <div class="contact-item maps-item">
+                <div class="maps-container">
+                  <iframe 
+                    class="maps-iframe"
+                    loading="lazy"
+                    allowfullscreen="" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="${mapsEmbedUrl}"
+                    style="border:0;"
+                    aria-label="Google Maps - ${firstAddress}">
+                  </iframe>
+                  <a href="${mapsDirectionsUrl}" class="maps-link-open" target="_blank" rel="noopener noreferrer" title="Ouvrir dans Google Maps">
+                    <span>📍 Voir l'itinéraire sur Google Maps</span>
+                  </a>
+                </div>
               </div>
-            </div>
-          `;
+            `;
+          } else {
+            // Mode Text: affichage texte simple
+            contactContent += `
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                  <div class="contact-line">${firstAddress}</div>
+                </div>
+              </div>
+            `;
+          }
         }
 
+        // === SECTION TÉLÉPHONES ===
         if (contacts.phones && contacts.phones.length > 0) {
           contactContent += `
             <div class="contact-item">
@@ -1958,6 +2069,7 @@
           `;
         }
 
+        // === SECTION EMAILS ===
         if (contacts.emails && contacts.emails.length > 0) {
           contactContent += `
             <div class="contact-item">
@@ -1969,6 +2081,7 @@
           `;
         }
 
+        // === SECTION WEBSITE ===
         if (contacts.website) {
           contactContent += `
             <div class="contact-item">
@@ -1980,7 +2093,7 @@
           `;
         }
 
-        // Section réseaux sociaux
+        // === SECTION RÉSEAUX SOCIAUX ===
         let socialContent = "";
         if (
           contacts.facebook ||

@@ -239,7 +239,7 @@ const modelsData = {
             specs: {
                 typeMoteur: "Monocylindre, 4 temps",
                 cylindree: 125,
-                puissance: 13.2,
+                puissance: 14.5,
                 coupleMaximal: 12,
                 refroidissement: "Liquide",
                 tankCapacity: null,
@@ -1094,14 +1094,14 @@ const modelsData = {
             name: "SYMPHONY SR",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/2.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
-            price: 6600,
+            images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/5.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
+            price: 6200,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: 125,
-                puissance: 8.8,
+                puissance: 11.4,
                 coupleMaximal: 10.3,
                 refroidissement: "A air",
                 tankCapacity: null,
@@ -1117,7 +1117,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg", "./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
-            price: 6600,
+            price: 5900,
             currency: "DT",
 
             specs: {
@@ -1156,28 +1156,7 @@ const modelsData = {
                 systemeFreinage: "CBS",
             }
         },
-        {
-            name: "JET 14",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-jet-14-125-ac-e5-noir/sym-jet-14-125-ac-e5-noir.jpg", "./img/models/sym/sym-jet-14-125-ac-e5-noir/2.png", "./img/models/sym/sym-jet-14-125-ac-e5-noir/3.jpg"],
-            price: 8700,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 11.3,
-                coupleMaximal: 10.7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
+      
         {
             name: "SYMPHONY ST",
             fuelType: "Thermique",
@@ -1352,7 +1331,7 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Injection",
                 freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
+                systemeFreinage: "CBS",
             }
         },
         {
@@ -1374,7 +1353,29 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Injection",
                 freinage: "Disque/ Disque",
-                systemeFreinage: "ABS",
+                systemeFreinage: "CBS",
+            }
+        },
+        {
+            name: "JET 14 EVO",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/sym/evo/1.jpg", "./img/models/sym/evo/2.jpeg", "./img/models/sym/evo/3.jpeg", "./img/models/sym/evo/4.jpeg"],
+            price: 8900,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre – 4T",
+                cylindree: 125,
+                puissance: 12.6,
+                coupleMaximal: 11.5,
+                refroidissement: "Liquide",
+                tankCapacity: 7.2,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/ Disque",
+                systemeFreinage: "CBS",
             }
         },
     ],
@@ -2376,7 +2377,7 @@ const modelsData = {
             name: "V8 intro 125",
             fuelType: "Thermique",
             category: "Roadster",
-            images: ["./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
+            images: ["./img/models/uniscoot/v8-intro/1.jpeg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
             price: 6000,
             currency: "DT",
 
@@ -2420,7 +2421,7 @@ const modelsData = {
             name: "TIGER 2 ",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/uniscoot/tiger2/5.jpg", "./img/models/uniscoot/tiger2/1.jpg", "./img/models/uniscoot/tiger2/2.jpg", "./img/models/uniscoot/tiger2/3.jpg"],
+            images: [ "./img/models/uniscoot/tiger2/vero-1.webp", "./img/models/uniscoot/tiger2/vero-2.webp", "./img/models/uniscoot/tiger2/vero-3.webp"],
             price: 4400,
             currency: "DT",
 
@@ -2782,21 +2783,87 @@ const modelsData = {
 
     ],
     QJMOTOR: [
+        //  {
+        //     name: "FORT 125 N",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/qjmotor/fort125/4.webp", "./img/models/qjmotor/fort125/2.webp", "./img/models/qjmotor/fort125/3.webp", "./img/models/qjmotor/fort125/1.webp"],
+        //     price: null,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4T",
+        //         cylindree: 125,
+        //         puissance: 15,
+        //         coupleMaximal: 12,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: 11.7,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Injection électronique",
+        //         freinage: "Disque/Disque",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
          {
-            name: "FORT 125 N",
+            name: "SRT900sx",
             fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/qjmotor/fort125/4.webp", "./img/models/qjmotor/fort125/2.webp", "./img/models/qjmotor/fort125/3.webp", "./img/models/qjmotor/fort125/1.webp"],
+            category: "Trail",
+            images: ["./img/models/qjmotor/SX/1.webp", "./img/models/qjmotor/SX/2.webp", "./img/models/qjmotor/SX/3.webp", "./img/models/qjmotor/SX/4.webp"],
             price: null,
             currency: "DT",
 
             specs: {
-                typeMoteur: "Monocylindre, 4T",
+                typeMoteur: "Bicylindre",
+                cylindree: 900,
+                puissance: 95,
+                coupleMaximal: 90,
+                refroidissement: "Liquide",
+                tankCapacity: 24,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "2 Disques/Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+         {
+            name: "SRT450rx",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/qjmotor/RX/2.webp", "./img/models/qjmotor/RX/1.webp", "./img/models/qjmotor/RX/3.webp", "./img/models/qjmotor/RX/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 450,
+                puissance: 47.5,
+                coupleMaximal: 41,
+                refroidissement: "Liquide",
+                tankCapacity: 18,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+         {
+            name: "SQ-16",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/qjmotor/sq16/1.webp", "./img/models/qjmotor/sq16/2.webp", "./img/models/qjmotor/sq16/3.webp", "./img/models/qjmotor/sq16/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4T",
                 cylindree: 125,
                 puissance: 15,
                 coupleMaximal: 12,
                 refroidissement: "Liquide",
-                tankCapacity: 11.7,
+                tankCapacity: 7.8,
                 vitesseMaximale: null,
                 autonomie: null,
                 alimentation: "Injection électronique",
@@ -2811,7 +2878,7 @@ const modelsData = {
             name: "VERO",
             fuelType: "Electrique",
             category: "Scooter",
-            images: ["./img/models/wolf/wolf-vero-vert-clair/1.png", "./img/models/wolf/wolf-vero-vert-clair/2.png", "./img/models/wolf/wolf-vero-vert-clair/3.png", "./img/models/wolf/wolf-vero-vert-clair/4.png"],
+            images: [ "./img/models/wolf/wolf-vero-vert-clair/2.png", "./img/models/wolf/wolf-vero-vert-clair/3.png", "./img/models/wolf/wolf-vero-vert-clair/4.png"],
             price: 4200,
             currency: "DT",
 
@@ -2876,6 +2943,28 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
+        {
+            name: "RS PRO",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/ms/rspro/rspro.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "",
+                cylindree: null,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
 
         {
             name: "New MAX 124",
@@ -2925,7 +3014,7 @@ const modelsData = {
             name: "Jialing VIPER",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
+            images: ["./img/models/ms/viper/viper1.webp","./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
             price: 2900,
             currency: "DT",
 
@@ -2947,7 +3036,7 @@ const modelsData = {
             name: "COSTA",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg", "./img/models/ms/ms-first-costa-gris/2.jpg"],
+            images: ["./img/models/ms/ms-first-costa-gris/costa1.webp","./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg", "./img/models/ms/ms-first-costa-gris/2.jpg"],
             price: 3700,
             currency: "DT",
 
@@ -4259,48 +4348,48 @@ const modelsData = {
     ],
     VOGE: [
 
-        {
-            name: "SR3",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/voge/sr3/1.png"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 245,
-                puissance: 25.5,
-                coupleMaximal: 23,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique EFI",
-                freinage: "Disque /Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "DS 525X",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/voge/525x/1.jpeg", "./img/models/voge/525x/2.jpeg", "./img/models/voge/525x/3.jpeg", "./img/models/voge/525x/4.jpeg"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Bicylindre 4 temps",
-                cylindree: 494,
-                puissance: 48,
-                coupleMaximal: 50.5,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 160,
-                autonomie: null,
-                alimentation: "",
-                freinage: "2 disque AV/disque AR ",
-                systemeFreinage: "ABS",
-            }
-        },
+        // {
+        //     name: "SR3",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/voge/sr3/1.png"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4 temps",
+        //         cylindree: 245,
+        //         puissance: 25.5,
+        //         coupleMaximal: 23,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Injection électronique EFI",
+        //         freinage: "Disque /Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "DS 525X",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/voge/525x/1.jpeg", "./img/models/voge/525x/2.jpeg", "./img/models/voge/525x/3.jpeg", "./img/models/voge/525x/4.jpeg"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Bicylindre 4 temps",
+        //         cylindree: 494,
+        //         puissance: 48,
+        //         coupleMaximal: 50.5,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 160,
+        //         autonomie: null,
+        //         alimentation: "",
+        //         freinage: "2 disque AV/disque AR ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
 
         {
             name: "DS800X Rally",
@@ -4323,27 +4412,27 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-        {
-            name: "SR4 Max",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/voge/sr4max/SR4-Max-black-L.webp", "./img/models/voge/sr4max/SR4-Max-black-F.webp", "./img/models/voge/sr4max/SR4-Max-black-R.webp", "./img/models/voge/sr4max/SR4-Max-black-Re.webp"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 349.8,
-                puissance: 25,
-                coupleMaximal: 35,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 127,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disques / Disques ",
-                systemeFreinage: "ABS",
-            }
-        },
+        // {
+        //     name: "SR4 Max",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/voge/sr4max/SR4-Max-black-L.webp", "./img/models/voge/sr4max/SR4-Max-black-F.webp", "./img/models/voge/sr4max/SR4-Max-black-R.webp", "./img/models/voge/sr4max/SR4-Max-black-Re.webp"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4 temps",
+        //         cylindree: 349.8,
+        //         puissance: 25,
+        //         coupleMaximal: 35,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 127,
+        //         autonomie: null,
+        //         alimentation: "",
+        //         freinage: "Disques / Disques ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
         {
             name: "SR16",
             fuelType: "Thermique",
@@ -4383,6 +4472,27 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "",
                 freinage: "disque/disque ",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "DS625X",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/voge/ds625x/1.jpg", "./img/models/voge/ds625x/2.jpg", "./img/models/voge/ds625x/3.jpg", "./img/models/voge/ds625x/4.jpg"],
+            price: null,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "Bycylindre",
+                cylindree: 581,
+                puissance: 63,
+                coupleMaximal: 47,
+                refroidissement: "Liquide",
+                tankCapacity: 17.6,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "double disque/disque ",
                 systemeFreinage: "ABS",
             }
         },
@@ -4659,12 +4769,23 @@ const dealersContacts = {
 
     // EXEMPLE ACTIVÉ - Décommentez ou remplacez par vos vraies données :
     "Peugeot": {
-        addresses: ["Centre Urbain Nord, Tunis", /*"Avenue secondaire, Sfax"*/],
+        addressDisplayMode: "maps",
+        addresses: ["Complexe International, City Center III, SIMCC Motorsports, Tunis 1082", /*"Avenue secondaire, Sfax"*/],
         phones: ["+216 70 817 066"],
         emails: ["contact@simcc.tn"],
-        website: "https://motorsports.simcc.tn/",
+        website: "https://motorsports.simcc.tn",
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "KIM": {
+        addresses: ["Zone Industrielle MGHIRA 1 FOUCHANA", /*"Avenue secondaire, Sfax"*/],
+        phones: ["+216 22 004 151","216 26 717 992"],
+        emails: ["s.commercial.ktg@gmail.com"],
+        website: "https://ki-motors.tn",
+        facebook: "https://www.facebook.com/LOTFIKADDECH",
+       
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
