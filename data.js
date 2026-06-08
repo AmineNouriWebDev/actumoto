@@ -52,8 +52,8 @@ const brands = [
     { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
+    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     
-    { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
    
 
     { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
@@ -72,9 +72,9 @@ const brands = [
     
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-   
+   { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
-    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+    
      { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
@@ -3738,7 +3738,7 @@ const modelsData = {
                 vitesseMaximale: null,
                 autonomie: null,
                 alimentation: "Injection électronique Bosch",
-                freinage: "Disque/Disque ",
+                freinage: "Disque/Tambour",
                 systemeFreinage: "ABS",
             }
         },
@@ -4013,7 +4013,7 @@ const modelsData = {
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Carburateur CDI",
-                freinage: "Disques / Tambour",
+                freinage: "Disque/Disque",
                 systemeFreinage: "",
             }
         },
@@ -4774,8 +4774,8 @@ const dealersContacts = {
         phones: ["+216 70 817 066"],
         emails: ["contact@simcc.tn"],
         website: "https://motorsports.simcc.tn",
-        // facebook: "https://www.facebook.com/peugeot",
-        // instagram: "https://www.instagram.com/peugeot",
+        facebook: "https://www.facebook.com/SIMCC.Motorsports",
+        instagram: "https://www.instagram.com/explore/locations/148917521845574/simcc-motorsports/",
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
@@ -4785,7 +4785,7 @@ const dealersContacts = {
         emails: ["s.commercial.ktg@gmail.com"],
         website: "https://ki-motors.tn",
         facebook: "https://www.facebook.com/LOTFIKADDECH",
-       
+       instagram: "https://www.instagram.com/kim202636?igsh=MXhvbXkyamdvdjQzNw%3D%3D",
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
@@ -4946,6 +4946,17 @@ const dealersContacts = {
         // website: "https://evocmax.tn",
         facebook: "https://www.facebook.com/profile.php?id=61580346530716",
         // instagram: "https://www.instagram.com/peugeot",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "LETBE": {
+        addressDisplayMode: "maps",
+        addresses: ["", /*"Avenue secondaire, Sfax"*/],
+        phones: ["+216 29 444 650","+216 28 485 424"],
+        // emails: ["contact@sanya.tn"],
+        // website: "https://evocmax.tn",
+        facebook: "https://www.facebook.com/profile.php?id=61573713938458",
+        instagram: "https://www.instagram.com/moora_motors_tn/",
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },

@@ -939,53 +939,23 @@
         transition: all 0.3s ease;
         border: 2px solid transparent;
         color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
       }
 
-      .social-link.facebook {
-        background: #1877f2;
+      .social-link img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
       }
 
-      .social-link.facebook:hover {
-        background: #166fe5;
-        transform: scale(1.15);
-        box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
-      }
-
-      .social-link.instagram {
-        background: linear-gradient(
-          45deg,
-          #f09433 0%,
-          #e6683c 25%,
-          #dc2743 50%,
-          #cc2366 75%,
-          #bc1888 100%
-        );
-      }
-
-      .social-link.instagram:hover {
-        transform: scale(1.15);
-        box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
-      }
-
-      .social-link.youtube {
-        background: #ff0000;
-      }
-
-      .social-link.youtube:hover {
-        background: #cc0000;
-        transform: scale(1.15);
-        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
-      }
-
-      .social-link.x {
-        background: #000000;
-        border-color: #666;
-      }
-
+      .social-link.facebook:hover,
+      .social-link.instagram:hover,
+      .social-link.youtube:hover,
       .social-link.x:hover {
-        background: #222222;
         transform: scale(1.15);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
       }
 
       @media (max-width: 767px) {
@@ -1313,7 +1283,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=20260603"></script>
+    <script src="data.js?v=20260609"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -2116,16 +2086,16 @@
           socialContent += `<div class="contact-item social-item">`;
 
           if (contacts.facebook) {
-            socialContent += `<a href="${contacts.facebook}" class="social-link facebook" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Suivez-nous sur Facebook">f</a>`;
+            socialContent += `<a href="${contacts.facebook}" class="social-link facebook" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Suivez-nous sur Facebook"><img src="./img/social/facebook.png" alt="Facebook" /></a>`;
           }
           if (contacts.instagram) {
-            socialContent += `<a href="${contacts.instagram}" class="social-link instagram" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Suivez-nous sur Instagram">📷</a>`;
+            socialContent += `<a href="${contacts.instagram}" class="social-link instagram" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Suivez-nous sur Instagram"><img src="./img/social/instagram.png" alt="Instagram" /></a>`;
           }
           if (contacts.youtube) {
-            socialContent += `<a href="${contacts.youtube}" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="Abonnez-vous sur YouTube">▶️</a>`;
+            socialContent += `<a href="${contacts.youtube}" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="Abonnez-vous sur YouTube"><img src="./img/social/youtube.png" alt="YouTube" /></a>`;
           }
           if (contacts.x) {
-            socialContent += `<a href="${contacts.x}" class="social-link x" target="_blank" rel="noopener noreferrer" title="X" aria-label="Suivez-nous sur X">𝕏</a>`;
+            socialContent += `<a href="${contacts.x}" class="social-link x" target="_blank" rel="noopener noreferrer" title="X" aria-label="Suivez-nous sur X"><img src="./img/social/tiktok.png" alt="X" /></a>`;
           }
 
           socialContent += `</div>`;
