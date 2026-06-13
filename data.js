@@ -52,11 +52,12 @@ const brands = [
     { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
     { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     
    
 
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
+    
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
 { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
    
@@ -72,14 +73,14 @@ const brands = [
     
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-   { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
+   { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
     
      { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
-     { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
-   
+     
+   { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
     { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
     { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
     { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
@@ -139,7 +140,7 @@ const modelsData = {
             }
         },
         {
-            name: "Tweet EVO ",
+            name: "Tweet SL ",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-tweet-125/1.jpeg", "./img/models/peugeot/peugeot-tweet-125/2.jpeg", "./img/models/peugeot/peugeot-tweet-125/3.jpeg", "./img/models/peugeot/peugeot-tweet-125/4.jpeg"],
@@ -154,10 +155,32 @@ const modelsData = {
                 refroidissement: "Air",
                 tankCapacity: null,
                 vitesseMaximale: 105,
-                autonomie: 200,
+                autonomie: null,
                 alimentation: "Injection électronique",
                 freinage: "Disque / Disque",
                 systemeFreinage: "CBS",
+            }
+        },
+        {
+            name: "Tweet EVO",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/peugeot/evo/tweet-1.webp", "./img/models/peugeot/evo/tweet-2.webp", "./img/models/peugeot/evo/tweet-3.webp", "./img/models/peugeot/evo/tweet-4.webp"],
+            price: 7900,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 125,
+                puissance: 8.6,
+                coupleMaximal: 10,
+                refroidissement: "Air",
+                tankCapacity: null,
+                vitesseMaximale: 110,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque / Disque",
+                systemeFreinage: "",
             }
         },
 
@@ -168,7 +191,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-1.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-2.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-3.jpeg", "./img/models/peugeot/peugeot-xp-400/peugeot-xp-400-4.jpeg"],
-            price: 42900,
+            price: 39000,
             currency: "DT",
 
             specs: {
@@ -1901,6 +1924,28 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
+        {
+            name: "JET 46 ",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/bbm/jet46/2.png","./img/models/bbm/jet46/1.jpg"],
+            price: 4400,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque / Tambour",
+                systemeFreinage: "CBS",
+            }
+        },
     ],
     DAYUN: [
         {
@@ -3606,7 +3651,7 @@ const modelsData = {
             }
         },
         {
-            name: "LOOP 55",
+            name: "LOOP",
             fuelType: "Electrique",
             category: "Scooter",
             images: ["./img/models/vigo/loop/loop55.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
@@ -4162,7 +4207,7 @@ const modelsData = {
             name: "Liberty",
             fuelType: "Electrique",
             category: "Scooter",
-            images: ["./img/models/aima/one/aima1.webp", "./img/models/aima/one/aima2.webp", "./img/models/aima/one/aima3.png", "./img/models/aima/one/aima4.png"],
+            images: ["./img/models/aima/one/aima3.png", "./img/models/aima/one/aima4.png"],
             price: 4600,
             currency: "DT",
 
@@ -4945,13 +4990,24 @@ const dealersContacts = {
         // emails: ["contact@sanya.tn"],
         // website: "https://evocmax.tn",
         facebook: "https://www.facebook.com/profile.php?id=61580346530716",
-        // instagram: "https://www.instagram.com/peugeot",
+        instagram: "https://www.instagram.com/vigo_tn/",
         // youtube: "https://www.youtube.com/peugeot",
         // x: "https://x.com/peugeot"
     },
     "LETBE": {
-        addressDisplayMode: "maps",
-        addresses: ["", /*"Avenue secondaire, Sfax"*/],
+        // addressDisplayMode: "maps",
+        // addresses: ["", /*"Avenue secondaire, Sfax"*/],
+        phones: ["+216 29 444 650","+216 28 485 424"],
+        // emails: ["contact@sanya.tn"],
+        // website: "https://evocmax.tn",
+        facebook: "https://www.facebook.com/profile.php?id=61573713938458",
+        instagram: "https://www.instagram.com/moora_motors_tn/",
+        // youtube: "https://www.youtube.com/peugeot",
+        // x: "https://x.com/peugeot"
+    },
+    "HAOJIN": {
+        // addressDisplayMode: "maps",
+        // addresses: ["", /*"Avenue secondaire, Sfax"*/],
         phones: ["+216 29 444 650","+216 28 485 424"],
         // emails: ["contact@sanya.tn"],
         // website: "https://evocmax.tn",
