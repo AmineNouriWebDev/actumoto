@@ -954,7 +954,7 @@
       .social-link.facebook:hover,
       .social-link.instagram:hover,
       .social-link.youtube:hover,
-      .social-link.x:hover {
+      .social-link.tiktok:hover {
         transform: scale(1.15);
       }
 
@@ -1283,7 +1283,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=20260614"></script>
+    <script src="data.js?v=20260617"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -2081,7 +2081,7 @@
           contacts.facebook ||
           contacts.instagram ||
           contacts.youtube ||
-          contacts.x
+          contacts.tiktok
         ) {
           socialContent += `<div class="contact-item social-item">`;
 
@@ -2094,8 +2094,8 @@
           if (contacts.youtube) {
             socialContent += `<a href="${contacts.youtube}" class="social-link youtube" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="Abonnez-vous sur YouTube"><img src="./img/social/youtube.png" alt="YouTube" /></a>`;
           }
-          if (contacts.x) {
-            socialContent += `<a href="${contacts.x}" class="social-link x" target="_blank" rel="noopener noreferrer" title="X" aria-label="Suivez-nous sur X"><img src="./img/social/tiktok.png" alt="X" /></a>`;
+          if (contacts.tiktok) {
+            socialContent += `<a href="${contacts.tiktok}" class="social-link tiktok" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="Suivez-nous sur TikTok"><img src="./img/social/tiktok.png" alt="TikTok" /></a>`;
           }
 
           socialContent += `</div>`;

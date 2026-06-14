@@ -28,76 +28,95 @@ function formatPriceHtml(price, currency = "DT") {
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
-     { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
-    { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
-   
-    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
     { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
-     
+     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
 
     
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
+    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
+    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
 
 
-    { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
+    { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
+    { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
+   { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
+     
+
+
+    
     { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },
-
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
-  { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
-    { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
+ 
+    
+    
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
+   
+   
+   
+   
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
+    { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
+     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+    
+     
+   
+
+    
+    
+ { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
+   { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" }, 
+  { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
 
 
   
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
-    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
-    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     
-   
-
-    
-    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
-{ name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
-   
-    { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
-
-    { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
-     { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
-    { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
-
-    { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
-    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
-    { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
     
     { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
-    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+// { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
    { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
+
+
+
+
     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
-    
-     { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+
+
+
     { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
     { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
-     
-   { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
-    { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
-    { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
-    { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
-    { name: "GOLD", logo: "./img/logos-actumoto/goldstar.png?v=2" },
+     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
+    // { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
+    // { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
+
+
+
+    // { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
+    // { name: "GOLD", logo: "./img/logos-actumoto/goldstar.png?v=2" },
     { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
+
+
+
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
-    { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
+     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
+     { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+    // { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
     // { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=3", comingSoon: true },
     // { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
-    { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
+    // { name: "WOLF", logo: "./img/logos-actumoto/wolf.png?v=2" },
 
-    { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
-    { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
-    { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
+    // { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
+    // { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
+   
     // { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
-
-
+ 
+ { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
+  { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
+  { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
 
 ];
 
@@ -178,7 +197,7 @@ const modelsData = {
                 tankCapacity: null,
                 vitesseMaximale: 110,
                 autonomie: null,
-                alimentation: "Injection électronique",
+                alimentation: "Carburateur",
                 freinage: "Disque / Disque",
                 systemeFreinage: "",
             }
@@ -2670,6 +2689,28 @@ const modelsData = {
     ],
     KIM: [
         {
+            name: "Black Street",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/kim/black-street/1.webp", "./img/models/kim/black-street/2.webp", "./img/models/kim/black-street/3.webp", "./img/models/kim/black-street/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "liquide",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
             name: "POWER 110",
             fuelType: "Thermique",
             category: "Mobylette",
@@ -2918,53 +2959,53 @@ const modelsData = {
         },
        
     ],
-    WOLF: [
-        {
-            name: "VERO",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: [ "./img/models/wolf/wolf-vero-vert-clair/2.png", "./img/models/wolf/wolf-vero-vert-clair/3.png", "./img/models/wolf/wolf-vero-vert-clair/4.png"],
-            price: 4200,
-            currency: "DT",
+    // WOLF: [
+    //     {
+    //         name: "VERO",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: [ "./img/models/wolf/wolf-vero-vert-clair/2.png", "./img/models/wolf/wolf-vero-vert-clair/3.png", "./img/models/wolf/wolf-vero-vert-clair/4.png"],
+    //         price: 4200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 40,
-                autonomie: 50,
-                alimentation: "Batterie plomb 60V 20Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "WOLF 1000",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wolf/wolf-vero-noir/wolf2.png", "./img/models/wolf/wolf-vero-noir/wolf1.png", "./img/models/wolf/wolf-vero-noir/3.png"],
-            price: 3800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 40,
+    //             autonomie: 50,
+    //             alimentation: "Batterie plomb 60V 20Ah",
+    //             freinage: "Tambour / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "WOLF 1000",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wolf/wolf-vero-noir/wolf2.png", "./img/models/wolf/wolf-vero-noir/wolf1.png", "./img/models/wolf/wolf-vero-noir/3.png"],
+    //         price: 3800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 40,
-                autonomie: 50,
-                alimentation: "Batterie plomb 60V 20Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 40,
+    //             autonomie: 50,
+    //             alimentation: "Batterie plomb 60V 20Ah",
+    //             freinage: "Tambour / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
     FIRST: [
         {
             name: "Tricycle 150",
@@ -3170,52 +3211,52 @@ const modelsData = {
     //         }
     //     },
     // ],
-    GOLD: [
-        {
-            name: "R9",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/goldmotors/gold-motors-R9-bleu/1.png", "./img/models/goldmotors/gold-motors-R9-bleu/2.png", "./img/models/goldmotors/gold-motors-R9-bleu/3.png", "./img/models/goldmotors/gold-motors-R9-bleu/4.jpeg"],
-            price: 5200,
-            currency: "DT",
+    // GOLD: [
+    //     {
+    //         name: "R9",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/goldmotors/gold-motors-R9-bleu/1.png", "./img/models/goldmotors/gold-motors-R9-bleu/2.png", "./img/models/goldmotors/gold-motors-R9-bleu/3.png", "./img/models/goldmotors/gold-motors-R9-bleu/4.jpeg"],
+    //         price: 5200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 8.15,
-                coupleMaximal: 9.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 85,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Moto Gold ",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
-            price: 3270,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 125,
+    //             puissance: 8.15,
+    //             coupleMaximal: 9.5,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 85,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Moto Gold ",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/goldmotors/gold-motors-124cc-compteur-digital/2.png", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/3.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/4.webp", "./img/models/goldmotors/gold-motors-124cc-compteur-digital/5.webp"],
+    //         price: 3270,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 125,
-                puissance: 8.15,
-                coupleMaximal: 6.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 125,
+    //             puissance: 8.15,
+    //             coupleMaximal: 6.5,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 110,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     XTF: [
         {
             name: "DRAGON",
@@ -3263,6 +3304,28 @@ const modelsData = {
         },
     ],
     FTM: [
+        {
+            name: "HAMMER 3 46",
+            fuelType: "Thermique",
+            category: "Mobylette",
+            images: ["./img/models/ftm/hammer3/1.png", "./img/models/ftm/hammer3/2.jpg","./img/models/ftm/hammer3/3.jpg","./img/models/ftm/hammer3/4.jpg"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: null,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: 4.6,
+                vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            }
+        },
         {
             name: "Jialing Future STAR",
             fuelType: "Thermique",
@@ -3488,143 +3551,143 @@ const modelsData = {
             }
         },
     ],
-    LIFAN: [
-        {
-            name: "Glow",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg", "./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
-            price: 3860,
-            currency: "DT",
+    // LIFAN: [
+    //     {
+    //         name: "Glow",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/2.jpeg", "./img/models/lifan/LIFAN-Motocycle-Glow-100S-LF110-3S/LIFAN-Motocycle-Glow-100S-LF110-3S.jpg"],
+    //         price: 3860,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 100,
-                puissance: 8.15,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
-    WATTGO: [
-        {
-            name: "Wgoo2",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wattgo/Wattgo-Wgoo/3.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/1.jpg"],
-            price: 2100,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 100,
+    //             puissance: 8.15,
+    //             coupleMaximal: 7,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
+    // WATTGO: [
+    //     {
+    //         name: "Wgoo2",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wattgo/Wattgo-Wgoo/3.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/1.jpg"],
+    //         price: 2100,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 350,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 35,
-                autonomie: 60,
-                alimentation: "Lithium 25 Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "WG009",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
-            price: 2640,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 350,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 35,
+    //             autonomie: 60,
+    //             alimentation: "Lithium 25 Ah",
+    //             freinage: "Tambour / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "WG009",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/2.jpg", "./img/models/wattgo/scooter-electrique-wattgo-wg9900-500w-beige-hjnkjsd/3.jpg"],
+    //         price: 2640,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 500,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 40,
-                autonomie: 55,
-                alimentation: "Batterie plomb 48V 20Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Wg017",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg", "./img/models/wattgo/Wattgo-Wg017/2.jpg"],
-            price: 3500,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 500,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 40,
+    //             autonomie: 55,
+    //             alimentation: "Batterie plomb 48V 20Ah",
+    //             freinage: "Tambour / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Wg017",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wattgo/Wattgo-Wg017/1.jpg", "./img/models/wattgo/Wattgo-Wg017/2.jpg"],
+    //         price: 3500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 50,
-                autonomie: 60,
-                alimentation: "Lithium 20 Ah",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Wg016",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg", "./img/models/wattgo/Wattgo-Wg016/2.jpg", "./img/models/wattgo/Wattgo-Wg016/3.jpg"],
-            price: 3300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 50,
+    //             autonomie: 60,
+    //             alimentation: "Lithium 20 Ah",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Wg016",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wattgo/Wattgo-Wg016/1.jpg", "./img/models/wattgo/Wattgo-Wg016/2.jpg", "./img/models/wattgo/Wattgo-Wg016/3.jpg"],
+    //         price: 3300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 50,
-                autonomie: 60,
-                alimentation: "Lithium 20 Ah",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Wgoo2",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
-            price: 1800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 50,
+    //             autonomie: 60,
+    //             alimentation: "Lithium 20 Ah",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Wgoo2",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/wattgo/Wattgo-Wgoo/1.jpg", "./img/models/wattgo/Wattgo-Wgoo/2.jpg", "./img/models/wattgo/Wattgo-Wgoo/3.jpg"],
+    //         price: 1800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 350,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 35,
-                autonomie: 35,
-                alimentation: "Lithium 25 Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 350,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 35,
+    //             autonomie: 35,
+    //             alimentation: "Lithium 25 Ah",
+    //             freinage: "Tambour / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
 
     VIGO: [
 
@@ -3633,7 +3696,7 @@ const modelsData = {
             fuelType: "Electrique",
             category: "Scooter",
             images: ["./img/models/vigo/specter/spectre.png", "./img/models/vigo/specter/specter.png", "./img/models/vigo/loop/vigo3.png"],
-            price: 7600,
+            price: 7780,
             currency: "DT",
 
             specs: {
@@ -3655,7 +3718,7 @@ const modelsData = {
             fuelType: "Electrique",
             category: "Scooter",
             images: ["./img/models/vigo/loop/loop55.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
-            price: 4600,
+            price: 4700,
             currency: "DT",
 
             specs: {
@@ -3677,7 +3740,7 @@ const modelsData = {
             fuelType: "Electrique",
             category: "Scooter",
             images: ["./img/models/vigo/loop/loop.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
-            price: 5100,
+            price: 5300,
             currency: "DT",
 
             specs: {
@@ -3903,52 +3966,52 @@ const modelsData = {
         },
 
     ],
-    ECORIDE: [
-        {
-            name: "ZEN",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg", "./img/models/ecoride/ZEN-600-Watts/2.jpg", "./img/models/ecoride/ZEN-600-Watts/3.jpg", "./img/models/ecoride/ZEN-600-Watts/4.jpg"],
-            price: 2000,
-            currency: "DT",
+    // ECORIDE: [
+    //     {
+    //         name: "ZEN",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/ecoride/ZEN-600-Watts/1.jpg", "./img/models/ecoride/ZEN-600-Watts/2.jpg", "./img/models/ecoride/ZEN-600-Watts/3.jpg", "./img/models/ecoride/ZEN-600-Watts/4.jpg"],
+    //         price: 2000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 600,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 35,
-                autonomie: 35,
-                alimentation: "48V 20Ah",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "ALPHA",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg", "./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
-            price: 2900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 600,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 35,
+    //             autonomie: 35,
+    //             alimentation: "48V 20Ah",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "ALPHA",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/ecoride/ALPHA-ROUGE-1000/1.jpg", "./img/models/ecoride/ALPHA-ROUGE-1000/2.jpg"],
+    //         price: 2900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 50,
-                alimentation: "60V Batterie en Acid",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 50,
+    //             alimentation: "60V Batterie en Acid",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     GSM: [
         {
             name: "BWX 125",
@@ -4111,75 +4174,75 @@ const modelsData = {
         },
 
     ],
-    CITYBIKE: [
+    // CITYBIKE: [
 
-        {
-            name: "City Bike 4000",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg", "./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
-            price: 7500,
-            currency: "DT",
+    //     {
+    //         name: "City Bike 4000",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/citybike/City-Bike-125CC-4000W/1.jpg", "./img/models/citybike/City-Bike-125CC-4000W/2.jpg"],
+    //         price: 7500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 4000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 75,
-                autonomie: 60,
-                alimentation: "Lithium-Ion 72V 40Ah",
-                freinage: "Disques Hydraulique",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "City Bike 3000",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg", "./img/models/citybike/City-Bike-50CC-3000W/2.jpg", "./img/models/citybike/City-Bike-50CC-3000W/3.jpg", "./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
-            price: 6900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 4000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 75,
+    //             autonomie: 60,
+    //             alimentation: "Lithium-Ion 72V 40Ah",
+    //             freinage: "Disques Hydraulique",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "City Bike 3000",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/citybike/City-Bike-50CC-3000W/1.jpg", "./img/models/citybike/City-Bike-50CC-3000W/2.jpg", "./img/models/citybike/City-Bike-50CC-3000W/3.jpg", "./img/models/citybike/City-Bike-50CC-3000W/4.jpg"],
+    //         price: 6900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 3000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 45,
-                alimentation: "Lithium-Ion 60V 23.4 Ah",
-                freinage: "Disques Hydraulique",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "City Bike 2000",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg", "./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
-            price: 5300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 3000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 45,
+    //             alimentation: "Lithium-Ion 60V 23.4 Ah",
+    //             freinage: "Disques Hydraulique",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "City Bike 2000",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/citybike/City-Bike-50CC-2000W/1.jpg", "./img/models/citybike/City-Bike-50CC-2000W/2.jpg"],
+    //         price: 5300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 2000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 45,
-                alimentation: "Lithium-Ion 60V 26Ah",
-                freinage: "Disques Hydraulique",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 2000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 45,
+    //             alimentation: "Lithium-Ion 60V 26Ah",
+    //             freinage: "Disques Hydraulique",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     AIMA: [
         {
             name: "AIMA Q5",
@@ -4227,53 +4290,53 @@ const modelsData = {
         },
 
     ],
-    MOTOLUX: [
-        {
-            name: "City Coco 3 roues",
-            fuelType: "Electrique",
-            category: "Tricycle",
-            images: ["./img/models/motolux/city-coco/city-coco-3.webp", "./img/models/motolux/city-coco/city-coco-1.jpg", "./img/models/motolux/city-coco/city-coco-2.jpg", "./img/models/motolux/city-coco/city-coco-4.webp"],
-            price: 5500,
-            currency: "DT",
+    // MOTOLUX: [
+    //     {
+    //         name: "City Coco 3 roues",
+    //         fuelType: "Electrique",
+    //         category: "Tricycle",
+    //         images: ["./img/models/motolux/city-coco/city-coco-3.webp", "./img/models/motolux/city-coco/city-coco-1.jpg", "./img/models/motolux/city-coco/city-coco-2.jpg", "./img/models/motolux/city-coco/city-coco-4.webp"],
+    //         price: 5500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 2000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 100,
-                alimentation: "Batterie Lithium 60V 20Ah",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "ÉMOTOLUX ",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/motolux/vespa-15/motolux.png", "./img/models/motolux/vespa-15/2.png"],
-            price: 3950,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 2000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 100,
+    //             alimentation: "Batterie Lithium 60V 20Ah",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "ÉMOTOLUX ",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/motolux/vespa-15/motolux.png", "./img/models/motolux/vespa-15/2.png"],
+    //         price: 3950,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1500,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 55,
-                alimentation: " 60v - 24Ah",
-                freinage: "Disques / Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1500,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 55,
+    //             alimentation: " 60v - 24Ah",
+    //             freinage: "Disques / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
     PHANTOM: [
         {
             name: "Cuxi II",
@@ -4344,53 +4407,53 @@ const modelsData = {
 
 
     ],
-    CFORCE: [
-        {
-            name: "QUAD CFORCE 450 L",
-            fuelType: "Thermique",
-            category: "Quad",
-            images: ["./img/models/cforce/450l/1.png", "./img/models/cforce/450l/2.png", "./img/models/cforce/450l/3.png", "./img/models/cforce/450l/4.png"],
-            price: 35000,
-            currency: "DT",
+    // CFORCE: [
+    //     {
+    //         name: "QUAD CFORCE 450 L",
+    //         fuelType: "Thermique",
+    //         category: "Quad",
+    //         images: ["./img/models/cforce/450l/1.png", "./img/models/cforce/450l/2.png", "./img/models/cforce/450l/3.png", "./img/models/cforce/450l/4.png"],
+    //         price: 35000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps SOHC 4",
-                cylindree: 400,
-                puissance: 22.8,
-                coupleMaximal: 33,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Injection électronique EFI Bosch",
-                freinage: "4 disques hydrauliques AV/AR",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "QUAD CFORCE 450 S",
-            fuelType: "Thermique",
-            category: "Quad",
-            images: ["./img/models/cforce/450s/1.jpg", "./img/models/cforce/450s/2.webp", "./img/models/cforce/450s/3.webp", "./img/models/cforce/450s/4.webp"],
-            price: 28000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps SOHC 4",
+    //             cylindree: 400,
+    //             puissance: 22.8,
+    //             coupleMaximal: 33,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique EFI Bosch",
+    //             freinage: "4 disques hydrauliques AV/AR",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "QUAD CFORCE 450 S",
+    //         fuelType: "Thermique",
+    //         category: "Quad",
+    //         images: ["./img/models/cforce/450s/1.jpg", "./img/models/cforce/450s/2.webp", "./img/models/cforce/450s/3.webp", "./img/models/cforce/450s/4.webp"],
+    //         price: 28000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps SOHC 4",
-                cylindree: 400,
-                puissance: 28,
-                coupleMaximal: 31,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Injection électronique EFI Bosch",
-                freinage: "Double disque AV / Disque AR",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps SOHC 4",
+    //             cylindree: 400,
+    //             puissance: 28,
+    //             coupleMaximal: 31,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique EFI Bosch",
+    //             freinage: "Double disque AV / Disque AR",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
     VOGE: [
 
         // {
@@ -4545,54 +4608,54 @@ const modelsData = {
 
     ],
 
-    RAPSEV: [
-        {
-            name: "Bange Frigorifique",
-            fuelType: "Electrique",
-            category: "Tricycle",
-            images: ["./img/models/rapsev/tri/rapsev1.webp", "./img/models/rapsev/tri/rapsev2.webp", "./img/models/rapsev/tri/rapsev3.webp", "./img/models/rapsev/tri/rapsev4.webp"],
-            price: 25400,
-            currency: "DT",
+    // RAPSEV: [
+    //     {
+    //         name: "Bange Frigorifique",
+    //         fuelType: "Electrique",
+    //         category: "Tricycle",
+    //         images: ["./img/models/rapsev/tri/rapsev1.webp", "./img/models/rapsev/tri/rapsev2.webp", "./img/models/rapsev/tri/rapsev3.webp", "./img/models/rapsev/tri/rapsev4.webp"],
+    //         price: 25400,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 120,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "OAK",
-            fuelType: "Electrique",
-            category: "Tricycle",
-            images: ["./img/models/rapsev/oak/1.webp", "./img/models/rapsev/oak/2.png"],
-            price: 23800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 120,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "OAK",
+    //         fuelType: "Electrique",
+    //         category: "Tricycle",
+    //         images: ["./img/models/rapsev/oak/1.webp", "./img/models/rapsev/oak/2.png"],
+    //         price: 23800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 110,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 110,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
 
-    ],
+    // ],
 };
 
 // Données pour les motos d'occasion - Tableau simple sans division par marques
@@ -4807,7 +4870,7 @@ const videosData = [
 const dealersContacts = {
     // Guide d'utilisation :
     // - Chaque clé doit correspondre EXACTEMENT au nom de la marque dans la const 'brands'
-    // - Propriétés optionnelles : addresses, phones, emails, website, facebook, instagram, youtube, x
+    // - Propriétés optionnelles : addresses, phones, emails, website, facebook, instagram, youtube, tiktok
     // - Si aucune données n'est remplie pour une marque, la section ne s'affichera pas
     // - Si une propriété est vide ou absent, cette section n'est pas affichée
     // - Ajouter autant d'adresses/phones/emails que nécessaire
@@ -4822,7 +4885,7 @@ const dealersContacts = {
         facebook: "https://www.facebook.com/SIMCC.Motorsports",
         instagram: "https://www.instagram.com/explore/locations/148917521845574/simcc-motorsports/",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        tiktok: "https://www.tiktok.com/@simcc.motorsports"
     },
     "KIM": {
         addresses: ["Zone Industrielle MGHIRA 1 FOUCHANA", /*"Avenue secondaire, Sfax"*/],
@@ -4832,7 +4895,7 @@ const dealersContacts = {
         facebook: "https://www.facebook.com/LOTFIKADDECH",
        instagram: "https://www.instagram.com/kim202636?igsh=MXhvbXkyamdvdjQzNw%3D%3D",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "CFMOTO": {
         addresses: ["Rue du Lac Huron, Lac 11053 Tunis, Tunisie", "Av de la république km 14 Ezzahra(GP1) après carrefour Boumhel"],
@@ -4842,7 +4905,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "PIAGGIO": {
         addresses: ["40 Rue des minéraux (collé à Cash & Carry) Zone industrielle Charguia 1, Tunis, Tunisia"],
@@ -4852,7 +4915,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "APRILIA": {
         addresses: ["40 Rue des minéraux (collé à Cash & Carry) Zone industrielle Charguia 1, Tunis, Tunisia"],
@@ -4862,7 +4925,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "SENKE": {
         addresses: ["83, Avenue de l'environnement - Borj Louzir 2073 Ariana, Tunisie"],
@@ -4872,7 +4935,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "SUZUKI": {
         addresses: ["83, Avenue de l'environnement - Borj Louzir 2073 Ariana, Tunisie"],
@@ -4882,7 +4945,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "ZIMOTA": {
         addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
@@ -4892,7 +4955,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "QJMOTOR": {
         addresses: ["GAID SWASSI SIDIABDLAHMID PRES DE MONOPRIX, Sousse, Tunisia"],
@@ -4902,7 +4965,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "VOGE": {
         addresses: ["Av Mohamed el karoui jawhara, Sousse, Tunisia"],
@@ -4912,7 +4975,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "SYM": {
         addresses: ["Av Mohamed el karoui jawhara, Sousse, Tunisia"],
@@ -4922,7 +4985,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "FIRST": {
         addresses: ["Ben arous, Tunis, Tunisia"],
@@ -4932,7 +4995,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     // "MISTRAL": {
     //     addresses: ["Ben arous, Tunis, Tunisia"],
@@ -4942,7 +5005,7 @@ const dealersContacts = {
     //     // facebook: "https://www.facebook.com/peugeot",
     //     // instagram: "https://www.instagram.com/peugeot",
     //     // youtube: "https://www.youtube.com/peugeot",
-    //     // x: "https://x.com/peugeot"
+    //     // tiktok: "https://www.tiktok.com/peugeot"
     // },
     "SLC": {
         // addresses: ["Ben arous, Tunis, Tunisia"],
@@ -4952,7 +5015,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "DAYUN": {
         // addresses: ["Ben arous, Tunis, Tunisia"],
@@ -4962,7 +5025,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "NOVAGO": {
         addresses: ["Boulevard de l'environnement, route de Gabès km 1, Sfax, Tunisia"],
@@ -4972,7 +5035,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "SANYA": {
         addresses: ["Ariana rond point mahmoud l matri"],
@@ -4982,7 +5045,7 @@ const dealersContacts = {
         // facebook: "https://www.facebook.com/peugeot",
         // instagram: "https://www.instagram.com/peugeot",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "VIGO": {
         // addresses: ["Ariana rond point mahmoud l matri"],
@@ -4992,7 +5055,7 @@ const dealersContacts = {
         facebook: "https://www.facebook.com/profile.php?id=61580346530716",
         instagram: "https://www.instagram.com/vigo_tn/",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        // tiktok: "https://www.tiktok.com/peugeot"
     },
     "LETBE": {
         // addressDisplayMode: "maps",
@@ -5003,7 +5066,7 @@ const dealersContacts = {
         facebook: "https://www.facebook.com/profile.php?id=61573713938458",
         instagram: "https://www.instagram.com/moora_motors_tn/",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+        tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
     "HAOJIN": {
         // addressDisplayMode: "maps",
@@ -5014,7 +5077,7 @@ const dealersContacts = {
         facebook: "https://www.facebook.com/profile.php?id=61573713938458",
         instagram: "https://www.instagram.com/moora_motors_tn/",
         // youtube: "https://www.youtube.com/peugeot",
-        // x: "https://x.com/peugeot"
+       tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
 
 
