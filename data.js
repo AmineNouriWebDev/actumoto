@@ -28,68 +28,79 @@ function formatPriceHtml(price, currency = "DT") {
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
-    { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
-     { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
-
-    
-    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
+    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
     { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+    { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
+    { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
+    { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
+    { name: "MOTOMORINI", logo: "./img/logos-actumoto/motomorini.png" },
+     { name: "BMW", logo: "./img/logos-actumoto/bmw2.png?v=2" },
+    { name: "HONDA", logo: "./img/logos-actumoto/honda.png?v=2" },
+    { name: "TEYIN", logo: "./img/logos-actumoto/teyin2.png" },
+   
 
+
+
+
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
 
     { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
-    { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
-   { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
-     
 
-
-    
-    { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
     { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },
-    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
- 
-    
-    
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
-     { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2"},
-   
-   
-   
-   
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
-    { name: "LM", logo: "./img/logos-actumoto/lm.png?v=2" },
-     { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-    
-     
-   
 
+
+
+    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+    { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
+    { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
+
+
+   
+     
+
+    { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
+
+
+  { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
     
-    
- { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
-   { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" }, 
-  { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" }, 
+
+    // { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
+    // { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
+
+
+
+
+
+
+
+
+    // { name: "FTM", logo: "./img/logos-actumoto/ftm.png?v=2" },
+
+
+    // { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
+
+
+
+
+
+    // { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
+    // { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
+
+{ name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
 
 
   
-    
-    
-    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
-// { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
-   { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
+    // { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
 
 
 
 
-    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
-    { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
-     { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+    // { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
 
-
-
-    { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
-    { name: "YADEA", logo: "./img/logos-actumoto/yadea.png?v=2" },
-     { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
+    { name: "BBM", logo: "./img/logos-actumoto/bbm.png?v=3" },
     // { name: "CFORCE", logo: "./img/logos-actumoto/cforce.png?v=2" },
     // { name: "ECORIDE", logo: "./img/logos-actumoto/ecoride.png?v=2" },
 
@@ -97,13 +108,13 @@ const brands = [
 
     // { name: "WATTGO", logo: "./img/logos-actumoto/logo-wattgo-final.png?v=2" },
     // { name: "GOLD", logo: "./img/logos-actumoto/goldstar.png?v=2" },
-    { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
+    // { name: "XTF", logo: "./img/logos-actumoto/xtf.png?v=2" },
 
 
 
     { name: "LVNENG", logo: "./img/logos-actumoto/lvneng.png?v=2" },
-     { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
-     { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
+    // { name: "KEREN", logo: "./img/logos-actumoto/keren.png?v=2" },
+    // { name: "SMT", logo: "./img/logos-actumoto/smt.png?v=2" },
     // { name: "MOTOLUX", logo: "./img/logos-actumoto/motolux.png?v=2" },
     // { name: "TIGER", logo: "./img/logos-actumoto/tiger.png?v=3", comingSoon: true },
     // { name: "MISTRAL", logo: "./img/logos-actumoto/mistral.png?v=2" },
@@ -111,12 +122,17 @@ const brands = [
 
     // { name: "CITYBIKE", logo: "./img/logos-actumoto/citybike.png?v=2" },
     // { name: "RAPSEV", logo: "./img/logos-actumoto/rapsev.png?v=2" },
-   
+
     // { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
- 
- { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
-  { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
-  { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
+
+
+    // { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
+    // { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
+
+  { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+  
+    // { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
+    { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
 
 ];
 
@@ -125,11 +141,11 @@ const categories = [
     { name: "Trail", logo: "./img/category/trail.webp" },
     { name: "Roadster", logo: "./img/category/roadster.webp" },
     { name: "Scooter", logo: "./img/category/scooter.webp" },
-    { name: "Mobylette", logo: "./img/category/mobylette.webp" },
+    { name: "Electrique", logo: "./img/category/electrique2.webp" },
     { name: "Tricycle", logo: "./img/category/tricycle.webp" },
     { name: "Custom", logo: "./img/category/custom.webp" },
-    { name: "Quad", logo: "./img/category/quad.webp" },
     { name: "Motocross", logo: "./img/category/motocross.webp" },
+    { name: "Mobylette", logo: "./img/category/mobylette.webp" },
 
 ];
 
@@ -341,7 +357,7 @@ const modelsData = {
     ],
     PIAGGIO: [
 
-       
+
         {
             name: "Liberty S",
             fuelType: "Thermique",
@@ -364,7 +380,7 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-      
+
     ],
     VESPA: [
 
@@ -390,7 +406,7 @@ const modelsData = {
                 systemeFreinage: "ABS-ASR",
             }
         },
-        
+
         {
             name: "VXL ",
             fuelType: "Thermique",
@@ -413,6 +429,64 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
+    ],
+    MOTOMORINI: [
+
+
+    ],
+    HONDA: [
+        {
+            name: "Africa Twin",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/honda/africa-twin/1.jpg", "./img/models/honda/africa-twin/2.jpg", "./img/models/honda/africa-twin/3.png", "./img/models/honda/africa-twin/4.jpg"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 1084,
+                puissance: 102,
+                coupleMaximal: 112,
+                refroidissement: "Liquide",
+                tankCapacity: 18.8,
+                vitesseMaximale: 220,
+                autonomie: null,
+                alimentation: "injection électronique",
+                freinage: "Disque/Disque ",
+                systemeFreinage: "ABS",
+            }
+
+        },
+
+
+    ],
+    BMW: [
+        {
+            name: "GS 1300",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/bmw/gs/1.avif", "./img/models/bmw/gs/2.webp",  "./img/models/bmw/gs/3.webp",  "./img/models/bmw/gs/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre 4 temps",
+                cylindree: 1300,
+                puissance: 145,
+                coupleMaximal: 149,
+                refroidissement: "Liquide",
+                tankCapacity: 19,
+                vitesseMaximale: 225,
+                autonomie: null,
+                alimentation: "injection électronique",
+                freinage: "Double Disque/Disque ",
+                systemeFreinage: "ABS",
+            }
+
+        },
+
+
     ],
     APRILIA: [
         {
@@ -798,207 +872,276 @@ const modelsData = {
         },
     ],
     ZIMOTA: [
+        // {
+        //     name: "Vision 125",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/vision/vision1.png", "./img/models/zimotamotor/vision/vision2.png", "./img/models/zimotamotor/vision/vision3.jpg", "./img/models/zimotamotor/vision/vision4.jpg"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4T",
+        //         cylindree: 125,
+        //         puissance: null,
+        //         coupleMaximal: null,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+     
+        // {
+        //     name: "Eway RIDE",
+        //     fuelType: "Electrique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
+        //     price: 2000,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Électrique",
+        //         cylindree: null,
+        //         puissance: 400,
+        //         coupleMaximal: null,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 30,
+        //         autonomie: 40,
+        //         alimentation: "Batterie 48V 12Ah",
+        //         freinage: "Tambour / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "Swing",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/swing/1.jpg", "./img/models/zimotamotor/swing/2.jpg", "./img/models/zimotamotor/swing/3.jpg", "./img/models/zimotamotor/swing/4.jpg"],
+        //     price: 4900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4T",
+        //         cylindree: 125,
+        //         puissance: 10,
+        //         coupleMaximal: 9.8,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "Evo",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg", "./img/models/zimotamotor/zimota-evo/2.jpg", "./img/models/zimotamotor/zimota-evo/3.jpg"],
+        //     price: 3900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 2T",
+        //         cylindree: 50,
+        //         puissance: 5,
+        //         coupleMaximal: 4.2,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 45,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "KEE",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-kee/1.jpg", "./img/models/zimotamotor/zimota-kee/2.jpg", "./img/models/zimotamotor/zimota-kee/3.jpg", "./img/models/zimotamotor/zimota-kee/4.jpg"],
+        //     price: 3900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4T",
+        //         cylindree: 110,
+        //         puissance: 5,
+        //         coupleMaximal: 8.3,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 85,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "TAPO",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg", "./img/models/zimotamotor/zimota-tapo/2.jpg", "./img/models/zimotamotor/zimota-tapo/3.jpg", "./img/models/zimotamotor/zimota-tapo/4.jpg"],
+        //     price: 3950,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 2T",
+        //         cylindree: 50,
+        //         puissance: 4,
+        //         coupleMaximal: 4.2,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 45,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "TARGET",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg", "./img/models/zimotamotor/zimota-target/2.jpg", "./img/models/zimotamotor/zimota-target/3.jpg", "./img/models/zimotamotor/zimota-target/4.jpg"],
+        //     price: 4200,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4T",
+        //         cylindree: 125,
+        //         puissance: null,
+        //         coupleMaximal: null,
+        //         refroidissement: null,
+        //         tankCapacity: null,
+        //         vitesseMaximale: 100,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "SINUS X",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg", "./img/models/zimotamotor/zimota-sinus-x/2.jpg", "./img/models/zimotamotor/zimota-sinus-x/3.jpg", "./img/models/zimotamotor/zimota-sinus-x/4.jpg"],
+        //     price: 4500,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4T",
+        //         cylindree: 125,
+        //         puissance: 8.5,
+        //         coupleMaximal: 9.5,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 95,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque hydr/ Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+
+
+
+      
+       
+        // {
+        //     name: "Fly",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/fly/zimota-fly-1.jpeg", "./img/models/zimotamotor/fly/zimota-fly-2.jpeg", "./img/models/zimotamotor/fly/zimota-fly-3.jpeg", "./img/models/zimotamotor/fly/zimota-fly-4.jpeg"],
+        //     price: 3250,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4T",
+        //         cylindree: 80,
+        //         puissance: 5,
+        //         coupleMaximal: 4.5,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 60,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "ATOM",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-atom/atom1.png", "./img/models/zimotamotor/zimota-atom/atom2.png", "./img/models/zimotamotor/zimota-atom/atom3.png"],
+        //     price: 3850,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4T",
+        //         cylindree: 124,
+        //         puissance: null,
+        //         coupleMaximal: 7.6,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "EAGLE",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/zimotamotor/zimota-eagle/eagle1.png", "./img/models/zimotamotor/zimota-eagle/eagle2.png", "./img/models/zimotamotor/zimota-eagle/eagle3.png", "./img/models/zimotamotor/zimota-eagle/eagle4.png"],
+        //     price: 3900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre 2T",
+        //         cylindree: 49,
+        //         puissance: null,
+        //         coupleMaximal: 4.2,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
         {
-            name: "Vision 125",
+            name: "SUPERLIGHT",
             fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/vision/vision1.png", "./img/models/zimotamotor/vision/vision2.png", "./img/models/zimotamotor/vision/vision3.jpg", "./img/models/zimotamotor/vision/vision4.jpg"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-         {
-            name: "SRK 125 S",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg", "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
-            price: 10400,
+            category: "Custom",
+            images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
+            price: 7500,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: 125,
-                puissance: 15,
-                coupleMaximal: 12,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 120,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "Eway RIDE",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-eway-ride-elec/zimota-eway-ride-elec.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/2.jpg", "./img/models/zimotamotor/zimota-eway-ride-elec/3.jpg"],
-            price: 2000,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 400,
-                coupleMaximal: null,
+                puissance: 10.6,
+                coupleMaximal: 8.9,
                 refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 30,
-                autonomie: 40,
-                alimentation: "Batterie 48V 12Ah",
-                freinage: "Tambour / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Swing",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/swing/1.jpg", "./img/models/zimotamotor/swing/2.jpg", "./img/models/zimotamotor/swing/3.jpg", "./img/models/zimotamotor/swing/4.jpg"],
-            price: 4900,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: 9.8,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Evo",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-evo/zimota-evo.jpg", "./img/models/zimotamotor/zimota-evo/2.jpg", "./img/models/zimotamotor/zimota-evo/3.jpg"],
-            price: 3900,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 2T",
-                cylindree: 50,
-                puissance: 5,
-                coupleMaximal: 4.2,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "KEE",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-kee/1.jpg", "./img/models/zimotamotor/zimota-kee/2.jpg", "./img/models/zimotamotor/zimota-kee/3.jpg", "./img/models/zimotamotor/zimota-kee/4.jpg"],
-            price: 3900,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 110,
-                puissance: 5,
-                coupleMaximal: 8.3,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 85,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "TAPO",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-tapo/zimota-tapo.jpg", "./img/models/zimotamotor/zimota-tapo/2.jpg", "./img/models/zimotamotor/zimota-tapo/3.jpg", "./img/models/zimotamotor/zimota-tapo/4.jpg"],
-            price: 3950,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 2T",
-                cylindree: 50,
-                puissance: 4,
-                coupleMaximal: 4.2,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "TARGET",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-target/zimota-target.jpg", "./img/models/zimotamotor/zimota-target/2.jpg", "./img/models/zimotamotor/zimota-target/3.jpg", "./img/models/zimotamotor/zimota-target/4.jpg"],
-            price: 4200,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
+                tankCapacity: 12.5,
                 vitesseMaximale: 100,
                 autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
+                alimentation: "",
+                freinage: "Disque/Tambour",
                 systemeFreinage: "",
             }
         },
-        {
-            name: "SINUS X",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-sinus-x/zimota-sinus-x.jpg", "./img/models/zimotamotor/zimota-sinus-x/2.jpg", "./img/models/zimotamotor/zimota-sinus-x/3.jpg", "./img/models/zimotamotor/zimota-sinus-x/4.jpg"],
-            price: 4500,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 8.5,
-                coupleMaximal: 9.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque hydr/ Tambour",
-                systemeFreinage: "",
-            }
-        },
-
-
-
-        {
+          {
             name: "RKS",
             fuelType: "Thermique",
             category: "Roadster",
@@ -1020,7 +1163,7 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
-        {
+         {
             name: "NX",
             fuelType: "Thermique",
             category: "Roadster",
@@ -1042,92 +1185,26 @@ const modelsData = {
                 systemeFreinage: "CBS",
             }
         },
-        {
-            name: "Fly",
+           {
+            name: "SRK 125 S",
             fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/fly/zimota-fly-1.jpeg", "./img/models/zimotamotor/fly/zimota-fly-2.jpeg", "./img/models/zimotamotor/fly/zimota-fly-3.jpeg", "./img/models/zimotamotor/fly/zimota-fly-4.jpeg"],
-            price: 3250,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 80,
-                puissance: 5,
-                coupleMaximal: 4.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 60,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "ATOM",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-atom/atom1.png", "./img/models/zimotamotor/zimota-atom/atom2.png", "./img/models/zimotamotor/zimota-atom/atom3.png"],
-            price: 3850,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 124,
-                puissance: null,
-                coupleMaximal: 7.6,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "EAGLE",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/zimotamotor/zimota-eagle/eagle1.png", "./img/models/zimotamotor/zimota-eagle/eagle2.png", "./img/models/zimotamotor/zimota-eagle/eagle3.png", "./img/models/zimotamotor/zimota-eagle/eagle4.png"],
-            price: 3900,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 2T",
-                cylindree: 49,
-                puissance: null,
-                coupleMaximal: 4.2,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-          {
-            name: "SUPERLIGHT",
-            fuelType: "Thermique",
-            category: "Custom",
-            images: ["./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/qjmotor-zimota-superlight-qjmotor-cbs-noir.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/2.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/3.jpg", "./img/models/qjmotor/qjmotor-zimota-superlight-qjmotor-cbs-noir/4.jpg"],
-            price: 7500,
+            category: "Roadster",
+            images: ["./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/qjmotor-zimota-srk-125-s-noir-injection.jpg", "./img/models/qjmotor/qjmotor-zimota-srk-125-s-noir-injection/2.webp"],
+            price: 10400,
             currency: "DT",
 
             specs: {
                 typeMoteur: "Monocylindre, 4T",
                 cylindree: 125,
-                puissance: 10.6,
-                coupleMaximal: 8.9,
-                refroidissement: "A air",
-                tankCapacity: 12.5,
-                vitesseMaximale: 100,
+                puissance: 15,
+                coupleMaximal: 12,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale: 120,
                 autonomie: null,
-                alimentation: "",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque ",
+                systemeFreinage: "CBS",
             }
         },
     ],
@@ -1198,7 +1275,7 @@ const modelsData = {
                 systemeFreinage: "CBS",
             }
         },
-      
+
         {
             name: "SYMPHONY ST",
             fuelType: "Thermique",
@@ -1605,166 +1682,166 @@ const modelsData = {
             }
         },
     ],
-    SENKE: [
-        {
-            name: "Power 107",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
-            price: 2840,
-            currency: "DT",
+    // SENKE: [
+    //     {
+    //         name: "Power 107",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/2.jpeg", "./img/models/forza/forza-bbm-forza-compteur-digital-107cc-new-noir/forza-bbm-forza-compteur-digital-107cc-new-noir.jpg"],
+    //         price: 2840,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 107,
-                puissance: 6.8,
-                coupleMaximal: 7,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Tambour/Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 107,
+    //             puissance: 6.8,
+    //             coupleMaximal: 7,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Tambour/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-        {
-            name: "SK 110",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/senke/senke-sk-110-107cc-rouge/1.webp", "./img/models/senke/senke-sk-110-107cc-rouge/2.webp", "./img/models/senke/senke-sk-110-107cc-rouge/3.webp", "./img/models/senke/senke-sk-110-107cc-rouge/4.webp"],
-            price: 3200,
-            currency: "DT",
+    //     {
+    //         name: "SK 110",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/senke/senke-sk-110-107cc-rouge/1.webp", "./img/models/senke/senke-sk-110-107cc-rouge/2.webp", "./img/models/senke/senke-sk-110-107cc-rouge/3.webp", "./img/models/senke/senke-sk-110-107cc-rouge/4.webp"],
+    //         price: 3200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 107,
-                puissance: 7,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 85,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "RAPTOR SK200",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/senke/senke-raptor-200cc/1.jpg", "./img/models/senke/senke-raptor-200cc/2.jpg", "./img/models/senke/senke-raptor-200cc/3.jpg", "./img/models/senke/senke-raptor-200cc/4.jpg"],
-            price: 9800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 107,
+    //             puissance: 7,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 85,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "RAPTOR SK200",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/senke/senke-raptor-200cc/1.jpg", "./img/models/senke/senke-raptor-200cc/2.jpg", "./img/models/senke/senke-raptor-200cc/3.jpg", "./img/models/senke/senke-raptor-200cc/4.jpg"],
+    //         price: 9000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 200,
-                puissance: 16.1,
-                coupleMaximal: 11.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 125,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque ",
-                systemeFreinage: "CBS",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 200,
+    //             puissance: 16.1,
+    //             coupleMaximal: 11.5,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 125,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
 
-        {
-            name: "Raptor SK",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg", "./img/models/senke/senke-125-cc/4.jpg"],
-            price: 6800,
-            currency: "DT",
+    //     {
+    //         name: "Raptor SK",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/senke/senke-125-cc/1.jpg", "./img/models/senke/senke-125-cc/2.jpg", "./img/models/senke/senke-125-cc/3.jpg", "./img/models/senke/senke-125-cc/4.jpg"],
+    //         price: 6800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 11,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 120,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Hunter",
-            fuelType: "Thermique",
-            category: "Custom",
-            images: ["./img/models/senke/hunter/1.jpeg", "./img/models/senke/hunter/2.jpeg", "./img/models/senke/hunter/3.jpeg", "./img/models/senke/hunter/4.jpeg"],
-            price: 4800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 11,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 120,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Hunter",
+    //         fuelType: "Thermique",
+    //         category: "Custom",
+    //         images: ["./img/models/senke/hunter/1.jpeg", "./img/models/senke/hunter/2.jpeg", "./img/models/senke/hunter/3.jpeg", "./img/models/senke/hunter/4.jpeg"],
+    //         price: 4800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 124,
-                puissance: 7.2,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Alien Monster",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/senke/alien-monster/1.jpg", "./img/models/senke/alien-monster/2.jpg", "./img/models/senke/alien-monster/3.jpg"],
-            price: 24000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 124,
+    //             puissance: 7.2,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Disque / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Alien Monster",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/senke/alien-monster/1.jpg", "./img/models/senke/alien-monster/2.jpg", "./img/models/senke/alien-monster/3.jpg"],
+    //         price: 24000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 292,
-                puissance: 36,
-                coupleMaximal: null,
-                refroidissement: "air-liquide",
-                tankCapacity: null,
-                vitesseMaximale: 140,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 292,
+    //             puissance: 36,
+    //             coupleMaximal: null,
+    //             refroidissement: "air-liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 140,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "ABS",
+    //         }
+    //     },
 
-        {
-            name: "Monster ADV",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/senke/monster-125/1.png", "./img/models/senke/monster-125/2.webp"],
-            price: 12500,
-            currency: "DT",
+    //     {
+    //         name: "Monster ADV",
+    //         fuelType: "Thermique",
+    //         category: "Trail",
+    //         images: ["./img/models/senke/monster-125/1.png", "./img/models/senke/monster-125/2.webp"],
+    //         price: 12500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 14,
-                coupleMaximal: 10.8,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "",
-            }
-        },
-    ],
-    LM: [
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 14,
+    //             coupleMaximal: 10.8,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
+    TEYIN: [
         {
             name: "LM ADV",
             fuelType: "Thermique",
@@ -1947,7 +2024,7 @@ const modelsData = {
             name: "JET 46 ",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/bbm/jet46/2.png","./img/models/bbm/jet46/1.jpg"],
+            images: ["./img/models/bbm/jet46/2.png", "./img/models/bbm/jet46/1.jpg"],
             price: 4400,
             currency: "DT",
 
@@ -1970,7 +2047,7 @@ const modelsData = {
         {
             name: "Cruiser",
             fuelType: "Thermique",
-            category: "Roadster",
+            category: "Custom",
             images: ["./img/models/dayun/cruiser/crueser1.png", "./img/models/dayun/cruiser/cruiser2.png", "./img/models/dayun/cruiser/crueser3.jpg", "./img/models/dayun/cruiser/crueser4.jpg"],
             price: null,
             currency: "DT", // En arrivage,
@@ -2279,6 +2356,28 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
+        {
+            name: "TORNADO",
+            fuelType: "Electrique",
+            category: "Scooter",
+            images: ["./img/models/novago/tornado/1.webp", "./img/models/novago/tornado/2.webp", "./img/models/novago/tornado/3.webp", "./img/models/novago/tornado/4.webp"],
+            price: 6200,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: null,
+                puissance: 3000,
+                coupleMaximal: null,
+                refroidissement: null,
+                tankCapacity: null,
+                vitesseMaximale: 85,
+                autonomie: 90,
+                alimentation: "Lithium Fer 72 volt 50 AH",
+                freinage: "Disque / Disque",
+                systemeFreinage: "cbs",
+            }
+        },
     ],
     KYMCO: [
         {
@@ -2303,8 +2402,31 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
+       
         {
-            name: "Dink R 125 Tunnel",
+            name: "like",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/kymco/like/like-1.webp", "./img/models/kymco/like/like-2.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 125,
+                puissance: 11,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: 6.5,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection",
+                freinage: "Disque/Disque",
+                systemeFreinage: "cbs",
+            }
+        },
+         {
+            name: "Dink R",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/3.png", "./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
@@ -2326,184 +2448,184 @@ const modelsData = {
             }
         },
     ],
-    UNISCOOT: [
-        {
-            name: "TIGER",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg", "./img/models/uniscoot/uniscoot-tiger-125cc-gris/2.webp"],
-            price: 4200,
-            currency: "DT",
+    // UNISCOOT: [
+    //     {
+    //         name: "TIGER",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/uniscoot-tiger-125cc-gris/uniscoot-tiger-125cc-gris.jpg", "./img/models/uniscoot/uniscoot-tiger-125cc-gris/2.webp"],
+    //         price: 4200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 140,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "TMAX+",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/2.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/3.jpg"],
-            price: 4700,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 140,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "TMAX+",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/uniscoot-tmax-125cc-noir-brillant.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/2.jpg", "./img/models/uniscoot/uniscoot-tmax-125cc-noir-brillant/3.jpg"],
+    //         price: 4700,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: 4,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 120,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "FX2+ PLUS",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/2.jpeg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/3.jpg"],
-            price: 4800,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: 4,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 120,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "FX2+ PLUS",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/uniscoot-fx2-plus-125cc-noir-matt.jpg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/2.jpeg", "./img/models/uniscoot/uniscoot-fx2-plus-125cc-noir-matt/3.jpg"],
+    //         price: 4800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "T6 ZONSEN ",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg", "./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/2.jpg"],
-            price: 5500,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "T6 ZONSEN ",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/uniscoot-zt6-zonsen-124cc-noir.jpg", "./img/models/uniscoot/uniscoot-zt6-zonsen-124cc-noir/2.jpg"],
+    //         price: 5500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre PT125, 4 T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 85,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Smax Plus",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
-            price: 4700,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre PT125, 4 T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 85,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Smax Plus",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/uniscoot-smax-plus-cc/1.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/2.jpg", "./img/models/uniscoot/uniscoot-smax-plus-cc/3.jpeg"],
+    //         price: 4700,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 T",
-                cylindree: 125,
-                puissance: 9,
-                coupleMaximal: 4,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque AV / Ferrodo AR",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "V8 intro 125",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/uniscoot/v8-intro/1.jpeg","./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
-            price: 6000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 T",
+    //             cylindree: 125,
+    //             puissance: 9,
+    //             coupleMaximal: 4,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 110,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque AV / Ferrodo AR",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "V8 intro 125",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/uniscoot/v8-intro/1.jpeg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-1.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-2.jpg", "./img/models/uniscoot/v8-intro/v8-intro-uniscoot-3.jpg"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 T",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Wolf",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/uniscoot/wolf/1.jpeg", "./img/models/uniscoot/wolf/2.jpeg", "./img/models/uniscoot/wolf/3.jpeg"],
-            price: 3600,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 T",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 110,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Wolf",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/wolf/1.jpeg", "./img/models/uniscoot/wolf/2.jpeg", "./img/models/uniscoot/wolf/3.jpeg"],
+    //         price: 3600,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "TIGER 2 ",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: [ "./img/models/uniscoot/tiger2/vero-1.webp", "./img/models/uniscoot/tiger2/vero-2.webp", "./img/models/uniscoot/tiger2/vero-3.webp"],
-            price: 4400,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "TIGER 2 ",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/uniscoot/tiger2/vero-1.webp", "./img/models/uniscoot/tiger2/vero-2.webp", "./img/models/uniscoot/tiger2/vero-3.webp"],
+    //         price: 4400,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 6.8,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 6.8,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     ZONTES: [
 
         {
@@ -2547,146 +2669,146 @@ const modelsData = {
             }
         },
     ],
-    YADEA: [
-        {
-            name: "E8S",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg", "./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
-            price: 6000,
-            currency: "DT",
+    // YADEA: [
+    //     {
+    //         name: "E8S",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-bleu.jpg", "./img/models/yadea/scooter-electrique-yadea-e8s-3000w-bleu/scooter-electrique-yadea-e8s-3000w-blanc.jpg"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 3000,
-                coupleMaximal: 140,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 60,
-                autonomie: 100,
-                alimentation: "Batterie Graphène 72V 38Ah",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "EPOC",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg", "./img/models/yadea/yadea-epoc-2000w/2.jpg", "./img/models/yadea/yadea-epoc-2000w/3.jpg", "./img/models/yadea/yadea-epoc-2000w/4.jpg"],
-            price: 6500,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 3000,
+    //             coupleMaximal: 140,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 60,
+    //             autonomie: 100,
+    //             alimentation: "Batterie Graphène 72V 38Ah",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "EPOC",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/yadea/yadea-epoc-2000w/1.jpg", "./img/models/yadea/yadea-epoc-2000w/2.jpg", "./img/models/yadea/yadea-epoc-2000w/3.jpg", "./img/models/yadea/yadea-epoc-2000w/4.jpg"],
+    //         price: 6500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 2000,
-                coupleMaximal: 150,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 70,
-                autonomie: 100,
-                alimentation: "Batterie Graphène TTFAR 72V 38Ah",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-    ],
-    SANYA: [
-        {
-            name: "SY 250GS-2",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/sanya/SY250/1.png", "./img/models/sanya/SY250/2.png", "./img/models/sanya/SY250/3.png", "./img/models/sanya/SY250/4.png"],
-            price: null,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 2000,
+    //             coupleMaximal: 150,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 70,
+    //             autonomie: 100,
+    //             alimentation: "Batterie Graphène TTFAR 72V 38Ah",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
+    // SANYA: [
+    //     {
+    //         name: "SY 250GS-2",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/sanya/SY250/1.png", "./img/models/sanya/SY250/2.png", "./img/models/sanya/SY250/3.png", "./img/models/sanya/SY250/4.png"],
+    //         price: null,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 250,
-                puissance: 21,
-                coupleMaximal: 19,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 250,
+    //             puissance: 21,
+    //             coupleMaximal: 19,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         },
 
-        },
-        {
-            name: "SY 125-9F",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg", "./img/models/sanya/sanya-sy-125-9f/2.png", "./img/models/sanya/sanya-sy-125-9f/3.png", "./img/models/sanya/sanya-sy-125-9f/4.png"],
-            price: 5850,
-            currency: "DT",
+    //     },
+    //     {
+    //         name: "SY 125-9F",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/sanya/sanya-sy-125-9f/sanya-sy-125-9f.jpg", "./img/models/sanya/sanya-sy-125-9f/2.png", "./img/models/sanya/sanya-sy-125-9f/3.png", "./img/models/sanya/sanya-sy-125-9f/4.png"],
+    //         price: 5850,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         },
 
-        },
-        {
-            name: "X1000",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sanya/sanya-x1000/1.jpeg", "./img/models/sanya/sanya-x1000/2.jpeg", "./img/models/sanya/sanya-x1000/3.png"],
-            price: 4650,
-            currency: "DT",
+    //     },
+    //     {
+    //         name: "X1000",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sanya/sanya-x1000/1.jpeg", "./img/models/sanya/sanya-x1000/2.jpeg", "./img/models/sanya/sanya-x1000/3.png"],
+    //         price: 4650,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 110,
-                puissance: 2.7,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque AV et AR + frein à main",
-                systemeFreinage: "",
-            },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 110,
+    //             puissance: 2.7,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque AV et AR + frein à main",
+    //             systemeFreinage: "",
+    //         },
 
-        },
-        {
-            name: "UF",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/sanya/uf-125/2.jpeg", "./img/models/sanya/uf-125/3.jpeg", "./img/models/sanya/uf-125/1.avif"],
-            price: 4850,
-            currency: "DT",
+    //     },
+    //     {
+    //         name: "UF",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/sanya/uf-125/2.jpeg", "./img/models/sanya/uf-125/3.jpeg", "./img/models/sanya/uf-125/1.avif"],
+    //         price: 4850,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 105,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 105,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         },
 
-        },
-    ],
+    //     },
+    // ],
     KIM: [
         {
             name: "Black Street",
@@ -2891,7 +3013,7 @@ const modelsData = {
         //         systemeFreinage: "ABS",
         //     }
         // },
-         {
+        {
             name: "SRT900sx",
             fuelType: "Thermique",
             category: "Trail",
@@ -2913,7 +3035,7 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-         {
+        {
             name: "SRT450rx",
             fuelType: "Thermique",
             category: "Trail",
@@ -2935,7 +3057,7 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-         {
+        {
             name: "SQ-16",
             fuelType: "Thermique",
             category: "Scooter",
@@ -2957,7 +3079,29 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-       
+        {
+            name: "ATR Hybrid",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/qjmotor/atr/1.webp", "./img/models/qjmotor/atr/2.webp", "./img/models/qjmotor/atr/3.webp", "./img/models/qjmotor/atr/4.webp"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: 125,
+                puissance: 15,
+                coupleMaximal: 13.7,
+                refroidissement: "Liquide",
+                tankCapacity: 8,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            }
+        },
+
     ],
     // WOLF: [
     //     {
@@ -3006,142 +3150,142 @@ const modelsData = {
     //     },
 
     // ],
-    FIRST: [
-        {
-            name: "Tricycle 150",
-            fuelType: "Thermique",
-            category: "Tricycle",
-            images: ["./img/models/mistral/tricycle/tricycle.jpg"],
-            price: 8000,
-            currency: "DT",
+    // FIRST: [
+    //     {
+    //         name: "Tricycle 150",
+    //         fuelType: "Thermique",
+    //         category: "Tricycle",
+    //         images: ["./img/models/mistral/tricycle/tricycle.jpg"],
+    //         price: 8000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 150,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Tambour/Tambour ",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "RS PRO",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/ms/rspro/rspro.webp"],
-            price: null,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 150,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Tambour/Tambour ",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "RS PRO",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/ms/rspro/rspro.webp"],
+    //         price: null,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "",
-                cylindree: null,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "",
+    //             cylindree: null,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-        {
-            name: "New MAX 124",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/first/new-max/forza-newmax-2026-1.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-3.webp"],
-            price: 2850,
-            currency: "DT",
+    //     {
+    //         name: "New MAX 124",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/first/new-max/forza-newmax-2026-1.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-3.webp"],
+    //         price: 2850,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 124,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "New MAX 107",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/first/new-max/forza-newmax-2026-3.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-1.webp"],
-            price: 2850,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 124,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "New MAX 107",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/first/new-max/forza-newmax-2026-3.webp", "./img/models/first/new-max/forza-newmax-2026-2.webp", "./img/models/first/new-max/forza-newmax-2026-1.webp"],
+    //         price: 2850,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 107,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Jialing VIPER",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/ms/viper/viper1.webp","./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
-            price: 2900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 107,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Jialing VIPER",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/ms/viper/viper1.webp", "./img/models/ms/viper/1.jpeg", "./img/models/ms/viper/2.jpeg"],
+    //         price: 2900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 124,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "COSTA",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/ms/ms-first-costa-gris/costa1.webp","./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg", "./img/models/ms/ms-first-costa-gris/2.jpg"],
-            price: 3700,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 124,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "COSTA",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/ms/ms-first-costa-gris/costa1.webp", "./img/models/ms/ms-first-costa-gris/ms-first-costa-gris.jpg", "./img/models/ms/ms-first-costa-gris/2.jpg"],
+    //         price: 3700,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 2 temps",
-                cylindree: 50,
-                puissance: null,
-                coupleMaximal: 4,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 75,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 2 temps",
+    //             cylindree: 50,
+    //             puissance: null,
+    //             coupleMaximal: 4,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 75,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
 
     // KAYCO: [
     //     {
@@ -3257,120 +3401,120 @@ const modelsData = {
     //         }
     //     },
     // ],
-    XTF: [
-        {
-            name: "DRAGON",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg", "./img/models/xtf/xtf-dragon-110-noir/2.jpg", "./img/models/xtf/xtf-dragon-110-noir/3.jpg", "./img/models/xtf/xtf-dragon-110-noir/4.jpg"],
-            price: 3500,
-            currency: "DT",
+    // XTF: [
+    //     {
+    //         name: "DRAGON",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/xtf/xtf-dragon-110-noir/xtf-dragon-110-noir.jpg", "./img/models/xtf/xtf-dragon-110-noir/2.jpg", "./img/models/xtf/xtf-dragon-110-noir/3.jpg", "./img/models/xtf/xtf-dragon-110-noir/4.jpg"],
+    //         price: 3500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 110,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Coccinelle",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
-            price: 4000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 110,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Coccinelle",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-1.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-2.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-3.jpg", "./img/models/xtf/XTF-Coccinelle-49cc/XTF-Coccinelle-49cc-4.jpg"],
+    //         price: 4000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "monocylindre 2 temps",
-                cylindree: 49,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
-    FTM: [
-        {
-            name: "HAMMER 3 46",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/ftm/hammer3/1.png", "./img/models/ftm/hammer3/2.jpg","./img/models/ftm/hammer3/3.jpg","./img/models/ftm/hammer3/4.jpg"],
-            price: null,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "monocylindre 2 temps",
+    //             cylindree: 49,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "",
+    //             freinage: "Disque / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
+    // FTM: [
+    //     {
+    //         name: "HAMMER 3 46",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/ftm/hammer3/1.png", "./img/models/ftm/hammer3/2.jpg", "./img/models/ftm/hammer3/3.jpg", "./img/models/ftm/hammer3/4.jpg"],
+    //         price: null,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: null,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: 4.6,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Jialing Future STAR",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg", "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
-            price: 3400,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: null,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: 4.6,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Jialing Future STAR",
+    //         fuelType: "Thermique",
+    //         category: "Mobylette",
+    //         images: ["./img/models/ftm/ftm-jialing-future-star-110cc-rouge/ftm-jialing-future-star-110cc-rouge.jpg", "./img/models/ftm/ftm-jialing-future-star-110cc-rouge/2.jpg"],
+    //         price: 3400,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 110,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Korak",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg", "./img/models/ftm/ftm-korak-noir/2.jpeg", "./img/models/ftm/ftm-korak-noir/3.jfif"],
-            price: 3500,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 110,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Korak",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/ftm/ftm-korak-noir/ftm-korak-noir.jpg", "./img/models/ftm/ftm-korak-noir/2.jpeg", "./img/models/ftm/ftm-korak-noir/3.jfif"],
+    //         price: 3500,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocilyndre, 4 temps",
-                cylindree: 110,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Monocilyndre, 4 temps",
+    //             cylindree: 110,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     LVNENG: [
         {
             name: "LX05",
@@ -3439,118 +3583,118 @@ const modelsData = {
             }
         },
     ],
-    "E RIDER": [
-        {
-            name: "E-FLASH",
-            fuelType: "Electrique",
-            category: "Roadster",
-            images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg", "./img/models/eflash/2000-watts-blanc/2.jpeg"],
-            price: 6600,
-            currency: "DT",
+    // "E RIDER": [
+    //     {
+    //         name: "E-FLASH",
+    //         fuelType: "Electrique",
+    //         category: "Roadster",
+    //         images: ["./img/models/eflash/2000-watts-blanc/scooter-electrique-e-flash-2000-watts-blanc-rouge-n.jpg", "./img/models/eflash/2000-watts-blanc/2.jpeg"],
+    //         price: 6600,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 2000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: 90,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "E-CLASSIC",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png", "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
-            price: 5200,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 2000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: 90,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "E-CLASSIC",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/erider/e-classic-1200-watts/ecoride-classic.png", "./img/models/erider/e-classic-1200-watts/scooter-_lectrique-e-rider-e-classic-1200-watts---rouge.jpg"],
+    //         price: 5200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1200,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 60,
-                autonomie: 70,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "E-TECH",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/erider/e-tech-1200-watts/etech.png", "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
-            price: 4180,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1200,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 60,
+    //             autonomie: 70,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "E-TECH",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/erider/e-tech-1200-watts/etech.png", "./img/models/erider/e-tech-1200-watts/scooter-_lectrique-e-rider-e-tech-1200-watts---bleu.jpg"],
+    //         price: 4180,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1200,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 59,
-                autonomie: 70,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "E-Power",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/erider/e-power-1200w/eride2.png", "./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
-            price: 4580,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1200,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 59,
+    //             autonomie: 70,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "E-Power",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/erider/e-power-1200w/eride2.png", "./img/models/erider/e-power-1200w/scooter-Électrique-e-rider-e-power-1200w-rouge.jpg"],
+    //         price: 4580,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1200,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 60,
-                autonomie: 80,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "E-eco",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png", "./img/models/erider/e-eco-1000w-blanc/scooter-Électrique-e-rider-e-eco-1000w-blanc.jpg"],
-            price: 3680,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1200,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 60,
+    //             autonomie: 80,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "E-eco",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/erider/e-eco-1000w-blanc/eride1.png", "./img/models/erider/e-eco-1000w-blanc/scooter-Électrique-e-rider-e-eco-1000w-blanc.jpg"],
+    //         price: 3680,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 50,
-                autonomie: 50,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 50,
+    //             autonomie: 50,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     // LIFAN: [
     //     {
     //         name: "Glow",
@@ -3689,150 +3833,150 @@ const modelsData = {
 
     // ],
 
-    VIGO: [
+    // VIGO: [
 
-        {
-            name: "SPECTRE",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/vigo/specter/spectre.png", "./img/models/vigo/specter/specter.png", "./img/models/vigo/loop/vigo3.png"],
-            price: 7780,
-            currency: "DT",
+    //     {
+    //         name: "SPECTRE",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/vigo/specter/spectre.png", "./img/models/vigo/specter/specter.png", "./img/models/vigo/loop/vigo3.png"],
+    //         price: 7780,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 2000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 65,
-                autonomie: 85,
-                alimentation: "Batterie Life P04",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "LOOP",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/vigo/loop/loop55.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
-            price: 4700,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 2000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 65,
+    //             autonomie: 85,
+    //             alimentation: "Batterie Life P04",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "LOOP",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/vigo/loop/loop55.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
+    //         price: 4700,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1000,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 45,
-                autonomie: 55,
-                alimentation: "Batterie Life P04",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "LOOP 75",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/vigo/loop/loop.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
-            price: 5300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1000,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 45,
+    //             autonomie: 55,
+    //             alimentation: "Batterie Life P04",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "LOOP 75",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/vigo/loop/loop.png", "./img/models/vigo/loop/vigo1.png", "./img/models/vigo/loop/vigo2.png"],
+    //         price: 5300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1500,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 50,
-                autonomie: 75,
-                alimentation: "Batterie Life P04",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1500,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 50,
+    //             autonomie: 75,
+    //             alimentation: "Batterie Life P04",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
-    KEREN: [
-        {
-            name: "Greek",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/keren/motor-group/keren-greek.jpeg", "./img/models/keren/motor-group/3.png"],
-            price: 4900,
-            currency: "DT",
+    // ],
+    // KEREN: [
+    //     {
+    //         name: "Greek",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/keren/motor-group/keren-greek.jpeg", "./img/models/keren/motor-group/3.png"],
+    //         price: 4900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1800,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 70,
-                autonomie: 90,
-                alimentation: "",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "U-BE",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/keren/ube/keren-ube.jpeg", "./img/models/keren/ube/1.jpg"],
-            price: 2990,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1800,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 70,
+    //             autonomie: 90,
+    //             alimentation: "",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "U-BE",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/keren/ube/keren-ube.jpeg", "./img/models/keren/ube/1.jpg"],
+    //         price: 2990,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1200,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 55,
-                autonomie: 70,
-                alimentation: "Lithium-ion BMS",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "U-2",
-            fuelType: "Electrique",
-            category: "Scooter",
-            images: ["./img/models/keren/u2/keren-u2-1.jpeg", "./img/models/keren/u2/keren-u2-2.jpeg", "./img/models/keren/u2/keren-u2-3.jpeg", "./img/models/keren/u2/2.png",],
-            price: 3900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1200,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 55,
+    //             autonomie: 70,
+    //             alimentation: "Lithium-ion BMS",
+    //             freinage: "",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "U-2",
+    //         fuelType: "Electrique",
+    //         category: "Scooter",
+    //         images: ["./img/models/keren/u2/keren-u2-1.jpeg", "./img/models/keren/u2/keren-u2-2.jpeg", "./img/models/keren/u2/keren-u2-3.jpeg", "./img/models/keren/u2/2.png",],
+    //         price: 3900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Électrique",
-                cylindree: null,
-                puissance: 1200,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 70,
-                autonomie: 90,
-                alimentation: "Lithium-ion 70v",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Électrique",
+    //             cylindree: null,
+    //             puissance: 1200,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 70,
+    //             autonomie: 90,
+    //             alimentation: "Lithium-ion 70v",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    // ],
     LETBE: [
         {
             name: "NEON",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/letbe/LETBE-NEON-125/moora1.jpg", "./img/models/letbe/LETBE-NEON-125/moora2.jpg", "./img/models/letbe/LETBE-NEON-125/moora3.jpg", "./img/models/letbe/LETBE-NEON-125/moora4.jpg"],
+            images: ["./img/models/letbe/LETBE-NEON-125/1.jpeg", "./img/models/letbe/LETBE-NEON-125/2.jpeg", "./img/models/letbe/LETBE-NEON-125/3.jpeg", "./img/models/letbe/LETBE-NEON-125/4.jpeg"],
             price: 5900,
             currency: "DT",
 
@@ -4012,104 +4156,104 @@ const modelsData = {
     //         }
     //     },
     // ],
-    GSM: [
-        {
-            name: "BWX 125",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
-            price: 5000,
-            currency: "DT",
+    // GSM: [
+    //     {
+    //         name: "BWX 125",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-1.png", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-2.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-3.webp", "./img/models/gsm/GSM-BWX-125-cc/gsm-bwx-125-cc-4.webp"],
+    //         price: 5000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "monocylindre 4 temps",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Elèctrique CDI",
-                freinage: "Disques / Disques",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "MBX 125",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/gsm/mbx/mbx1.webp", "./img/models/gsm/mbx/mbx2.webp", "./img/models/gsm/mbx/mbx3.webp", "./img/models/gsm/mbx/mbx4.webp"],
-            price: 6000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Elèctrique CDI",
+    //             freinage: "Disques / Disques",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "MBX 125",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/gsm/mbx/mbx1.webp", "./img/models/gsm/mbx/mbx2.webp", "./img/models/gsm/mbx/mbx3.webp", "./img/models/gsm/mbx/mbx4.webp"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "monocylindre 4 temps",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disques / Disques ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "MOBSTER",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/gsm/mobster/mobster1.webp", "./img/models/gsm/mobster/mobster2.webp", "./img/models/gsm/mobster/mobster3.webp", "./img/models/gsm/mobster/mobster4.webp"],
-            price: 5300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disques / Disques ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "MOBSTER",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/gsm/mobster/mobster1.webp", "./img/models/gsm/mobster/mobster2.webp", "./img/models/gsm/mobster/mobster3.webp", "./img/models/gsm/mobster/mobster4.webp"],
+    //         price: 5300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "monocylindre 4 temps",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disques / Disques ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "Tennis",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/gsm/tennis/tennis3.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis1.webp", "./img/models/gsm/tennis/tennis4.webp"],
-            price: 5300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disques / Disques ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "Tennis",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/gsm/tennis/tennis3.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis1.webp", "./img/models/gsm/tennis/tennis4.webp"],
+    //         price: 5300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 12.5,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disques / Disques ",
-                systemeFreinage: "CBS",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: 12.5,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disques / Disques ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
 
-    ],
+    // ],
     HAOJIN: [
         {
             name: "Lyra",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/haojin/lyra/lyra-1.jpeg", "./img/models/haojin/lyra/lyra-2.jpeg", "./img/models/haojin/lyra/lyra-3.jpeg", "./img/models/haojin/lyra/lyra-4.jpeg"],
-            price: null,
+            images: ["./img/models/haojin/lyra/1.jpeg", "./img/models/haojin/lyra/2.jpeg", "./img/models/haojin/lyra/3.jpeg", "./img/models/haojin/lyra/4.jpeg"],
+            price: 3700,
             currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -4127,53 +4271,53 @@ const modelsData = {
         },
 
     ],
-    SMT: [
-        {
-            name: "Thunder",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/smt/thunder/1.jpg", "./img/models/smt/thunder/2.jpg", "./img/models/smt/thunder/3.jpg", "./img/models/smt/thunder/4.jpg"],
-            price: 5800,
-            currency: "DT",
+    // SMT: [
+    //     {
+    //         name: "Thunder",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/smt/thunder/1.jpg", "./img/models/smt/thunder/2.jpg", "./img/models/smt/thunder/3.jpg", "./img/models/smt/thunder/4.jpg"],
+    //         price: 5800,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Dolce",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/smt/dolce/dolce-1.jpeg"],
-            price: 6000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Dolce",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/smt/dolce/dolce-1.jpeg"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: null,
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disques / Disques",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: null,
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disques / Disques",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-    ],
+    // ],
     // CITYBIKE: [
 
     //     {
@@ -4337,76 +4481,76 @@ const modelsData = {
     //     },
 
     // ],
-    PHANTOM: [
-        {
-            name: "Cuxi II",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/phantom/cuxi/cuxi-1.jpeg", "./img/models/phantom/cuxi/cuxi-2.jpeg", "./img/models/phantom/cuxi/cuxi-3.jpeg"],
-            price: 3450,
-            currency: "DT",
+    // PHANTOM: [
+    //     {
+    //         name: "Cuxi II",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/phantom/cuxi/cuxi-1.jpeg", "./img/models/phantom/cuxi/cuxi-2.jpeg", "./img/models/phantom/cuxi/cuxi-3.jpeg"],
+    //         price: 3450,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 106,
-                puissance: 7.2,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "Phantom Z1",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
-            price: 6000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 106,
+    //             puissance: 7.2,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "Phantom Z1",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "CORAL",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/phantom/coral/coral1.png", "./img/models/phantom/coral/coral2.png", "./img/models/phantom/coral/phantom-coral-124-3.jpg", "./img/models/phantom/coral/phantom-coral-124-4.jpg"],
-            price: 6000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "CORAL",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/phantom/coral/coral1.png", "./img/models/phantom/coral/coral2.png", "./img/models/phantom/coral/phantom-coral-124-3.jpg", "./img/models/phantom/coral/phantom-coral-124-4.jpg"],
+    //         price: 6000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 100,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Disque ",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: 10,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 100,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Disque ",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
 
-    ],
+    // ],
     // CFORCE: [
     //     {
     //         name: "QUAD CFORCE 450 L",
@@ -4591,7 +4735,7 @@ const modelsData = {
             price: null,
             currency: "DT", // En arrivage,
             specs: {
-                typeMoteur: "Bycylindre",
+                typeMoteur: "Bicylindre",
                 cylindree: 581,
                 puissance: 63,
                 coupleMaximal: 47,
@@ -4660,7 +4804,7 @@ const modelsData = {
 
 // Données pour les motos d'occasion - Tableau simple sans division par marques
 const occasionModelsData = [
-       {
+    {
         marque: "Harley-Davidson",
         name: "HARLEY-DAVIDSON SPORTSTER 1250 S modèle 2023   hez Jet moto manzah 6 tel 26711555-53685927",
         fuelType: "Thermique",
@@ -4822,7 +4966,7 @@ const occasionModelsData = [
         }
     },
 
-   
+
 
 
     {
@@ -4848,7 +4992,7 @@ const occasionModelsData = [
             systemeFreinage: ""
         }
     },
- 
+
 
 
 
@@ -4889,11 +5033,11 @@ const dealersContacts = {
     },
     "KIM": {
         addresses: ["Zone Industrielle MGHIRA 1 FOUCHANA", /*"Avenue secondaire, Sfax"*/],
-        phones: ["+216 22 004 151","216 26 717 992"],
+        phones: ["+216 22 004 151", "216 26 717 992"],
         emails: ["s.commercial.ktg@gmail.com"],
         website: "https://ki-motors.tn",
         facebook: "https://www.facebook.com/LOTFIKADDECH",
-       instagram: "https://www.instagram.com/kim202636?igsh=MXhvbXkyamdvdjQzNw%3D%3D",
+        instagram: "https://www.instagram.com/kim202636?igsh=MXhvbXkyamdvdjQzNw%3D%3D",
         // youtube: "https://www.youtube.com/peugeot",
         // tiktok: "https://www.tiktok.com/peugeot"
     },
@@ -5060,7 +5204,7 @@ const dealersContacts = {
     "LETBE": {
         // addressDisplayMode: "maps",
         // addresses: ["", /*"Avenue secondaire, Sfax"*/],
-        phones: ["+216 29 444 650","+216 28 485 424"],
+        phones: ["+216 29 444 650", "+216 28 485 424"],
         // emails: ["contact@sanya.tn"],
         // website: "https://evocmax.tn",
         facebook: "https://www.facebook.com/profile.php?id=61573713938458",
@@ -5071,13 +5215,13 @@ const dealersContacts = {
     "HAOJIN": {
         // addressDisplayMode: "maps",
         // addresses: ["", /*"Avenue secondaire, Sfax"*/],
-        phones: ["+216 29 444 650","+216 28 485 424"],
+        phones: ["+216 29 444 650", "+216 28 485 424"],
         // emails: ["contact@sanya.tn"],
         // website: "https://evocmax.tn",
         facebook: "https://www.facebook.com/profile.php?id=61573713938458",
         instagram: "https://www.instagram.com/moora_motors_tn/",
         // youtube: "https://www.youtube.com/peugeot",
-       tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
+        tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
 
 
@@ -5150,3 +5294,14 @@ const carouselSlides = [
     }
 
 ];
+
+// Configuration du popup d'accueil
+const popupConfig = {
+    enabled: true,
+    durationSeconds: 3,
+    images: {
+        mobile: "./img/popup/mobile.jpeg",
+        desktop: "./img/popup/desktop.webp"
+    },
+    link: null // Remplacer par une URL si l'image doit être cliquable
+};

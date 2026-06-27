@@ -1081,44 +1081,16 @@
 
           <!-- Right Links (Desktop) -->
           <div class="nav-links">
-            <a href="actualite.html" class="nav-link">Actualités</a>
             <a href="occasion.html" class="nav-link">Occasion</a>
-            <a
-              href="https://motorsports.simcc.tn"
-              class="nav-link nav-link-multiline"
-              target="_blank"
-              >Équipements &<br />accessoires</a
-            >
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Burger Menu Button (Mobile) -->
-    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
-      <span class="burger-bar"></span>
-      <span class="burger-bar"></span>
-      <span class="burger-bar"></span>
-    </button>
-
-    <!-- Mobile Navigation Overlay -->
-    <div class="mobile-nav-overlay" id="mobile-nav">
-      <div class="mobile-menu-logo-container">
-        <img
-          src="./img/logo-principal-6.png"
-          alt="actumoto.tn"
-          class="mobile-menu-logo"
-        />
-      </div>
-      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
-      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
-      <a
-        href="https://motorsports.simcc.tn"
-        class="mobile-nav-link nav-link-multiline"
-        target="_blank"
-        >Équipements &<br />accessoires</a
-      >
-    </div>
+    <!-- Mobile Occasion Link (Replaces Burger Menu) -->
+    <a href="occasion.html" class="mobile-occasion-link" aria-label="Occasion"
+      >Occasion</a
+    >
 
     <section class="pt-28 pb-8 relative" role="main">
       <a
@@ -1283,7 +1255,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=20260617"></script>
+    <script src="data.js?v=202606303"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -1329,9 +1301,17 @@
         if (modelsData[brand]) {
           updateSchemaData(brand);
 
-          modelsData[brand].reverse().forEach((model, index) => {
-            createModelCard(model, brand, index, container);
-          });
+          if (modelsData[brand].length === 0) {
+            container.innerHTML = `
+              <div class="flex items-center justify-center w-full min-h-[50vh] p-4">
+                <img src="./img/banner3.webp" alt="Bientôt disponible" class="max-w-full h-auto rounded-lg shadow-lg" style="margin: 0 auto;">
+              </div>
+            `;
+          } else {
+            modelsData[brand].reverse().forEach((model, index) => {
+              createModelCard(model, brand, index, container);
+            });
+          }
 
           // Afficher les contacts de la marque en bas de la page
           displayBrandContacts(brand);
@@ -1751,11 +1731,18 @@
           const groupedByBrand = {};
 
           Object.keys(modelsData).forEach((brand) => {
-            const models = modelsData[brand].filter(
-              (model) =>
+            const models = modelsData[brand].filter((model) => {
+              if (category.toLowerCase() === "electrique") {
+                return (
+                  model.fuelType &&
+                  model.fuelType.toLowerCase() === "electrique"
+                );
+              }
+              return (
                 model.category &&
-                model.category.toLowerCase() === category.toLowerCase(),
-            );
+                model.category.toLowerCase() === category.toLowerCase()
+              );
+            });
 
             if (models.length > 0) {
               groupedByBrand[brand] = models.reverse();

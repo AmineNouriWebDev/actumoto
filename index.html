@@ -1436,44 +1436,16 @@
 
           <!-- Right Links (Desktop) -->
           <div class="nav-links">
-            <a href="actualite.html" class="nav-link">Actualités</a>
             <a href="occasion.html" class="nav-link">Occasion</a>
-            <a
-              href="https://motorsports.simcc.tn"
-              class="nav-link nav-link-multiline"
-              target="_blank"
-              >Équipements &<br />accessoires</a
-            >
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Burger Menu Button (Mobile) - Moved outside for z-index stacking -->
-    <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
-      <span class="burger-bar"></span>
-      <span class="burger-bar"></span>
-      <span class="burger-bar"></span>
-    </button>
-
-    <!-- Mobile Navigation Overlay -->
-    <div class="mobile-nav-overlay" id="mobile-nav">
-      <div class="mobile-menu-logo-container">
-        <img
-          src="./img/logo-principal-6.png"
-          alt="actumoto.tn"
-          class="mobile-menu-logo"
-        />
-      </div>
-      <a href="actualite.html" class="mobile-nav-link">Actualités</a>
-      <a href="occasion.html" class="mobile-nav-link">Occasion</a>
-      <a
-        href="https://motorsports.simcc.tn"
-        class="mobile-nav-link nav-link-multiline"
-        target="_blank"
-        >Équipements &<br />accessoires</a
-      >
-    </div>
+    <!-- Mobile Occasion Link (Replaces Burger Menu) -->
+    <a href="occasion.html" class="mobile-occasion-link" aria-label="Occasion"
+      >Occasion</a
+    >
 
     <!-- Main Content -->
     <main role="main">
@@ -1806,7 +1778,7 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="data.js?v=20260617"></script>
+    <script src="data.js?v=202606303"></script>
     <script>
       // ===========================================
       // RENDER BRANDS - Load from data.js
@@ -2222,6 +2194,98 @@
           });
         });
       }
+
+      // === POPUP D'ACCUEIL ===
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof popupConfig !== "undefined" && popupConfig.enabled) {
+          const popupOverlay = document.createElement("div");
+          popupOverlay.id = "welcome-popup";
+          // Classes Tailwind : overlay sombre, fixe, index z très élevé, centrage flex
+          popupOverlay.className = "fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 opacity-0 transition-opacity duration-500";
+          popupOverlay.style.pointerEvents = "none";
+          
+          let innerContent = `
+            <div class="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
+              <button id="close-popup-btn" class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
+                &times;
+              </button>
+              <picture class="flex justify-center items-center w-full h-full">
+                <source media="(min-width: 768px)" srcset="${popupConfig.images.desktop}">
+                <img src="${popupConfig.images.mobile}" alt="Offre Spéciale" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl">
+              </picture>
+            </div>
+          `;
+          
+          if (popupConfig.link) {
+              innerContent = `
+                <div class="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
+                  <button id="close-popup-btn" class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
+                    &times;
+                  </button>
+                  <a href="${popupConfig.link}" class="block flex justify-center items-center w-full h-full">
+                    <picture class="flex justify-center items-center w-full h-full">
+                      <source media="(min-width: 768px)" srcset="${popupConfig.images.desktop}">
+                      <img src="${popupConfig.images.mobile}" alt="Offre Spéciale" class="max-w-full max-h-[85vh] object-contain rounded-xl shadow-2xl">
+                    </picture>
+                  </a>
+                </div>
+              `;
+          }
+
+          popupOverlay.innerHTML = innerContent;
+          document.body.appendChild(popupOverlay);
+
+          // Affichage du popup avec légère temporisation
+          setTimeout(() => {
+            popupOverlay.classList.remove("opacity-0");
+            popupOverlay.style.pointerEvents = "auto";
+            const scaleDiv = document.getElementById("popup-content-scale");
+            if(scaleDiv) {
+              scaleDiv.classList.remove("scale-95");
+              scaleDiv.classList.add("scale-100");
+            }
+          }, 300);
+
+          const closePopup = () => {
+            popupOverlay.classList.add("opacity-0");
+            const scaleDiv = document.getElementById("popup-content-scale");
+            if(scaleDiv) {
+              scaleDiv.classList.remove("scale-100");
+              scaleDiv.classList.add("scale-95");
+            }
+            popupOverlay.style.pointerEvents = "none";
+            
+            setTimeout(() => {
+              if (popupOverlay.parentNode) {
+                popupOverlay.parentNode.removeChild(popupOverlay);
+              }
+            }, 500); // Temps de la transition
+          };
+
+          // Event listener fermeture bouton X
+          const closeBtn = document.getElementById("close-popup-btn");
+          if (closeBtn) {
+            closeBtn.addEventListener("click", (e) => {
+              e.preventDefault();
+              closePopup();
+            });
+          }
+
+          // Fermeture au clic à l'extérieur de l'image
+          popupOverlay.addEventListener("click", (e) => {
+            if (e.target === popupOverlay) {
+              closePopup();
+            }
+          });
+
+          // Disparition automatique après N secondes
+          if (popupConfig.durationSeconds > 0) {
+            setTimeout(() => {
+              closePopup();
+            }, (popupConfig.durationSeconds * 1000) + 300); // Ajoute le temps de l'animation d'apparition
+          }
+        }
+      });
     </script>
   </body>
 </html>
