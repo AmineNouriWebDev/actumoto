@@ -37,10 +37,10 @@ const brands = [
     { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
     { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
     { name: "MOTOMORINI", logo: "./img/logos-actumoto/motomorini.png" },
-     { name: "BMW", logo: "./img/logos-actumoto/bmw2.png?v=2" },
+    { name: "BMW", logo: "./img/logos-actumoto/bmw2.png?v=2" },
     { name: "HONDA", logo: "./img/logos-actumoto/honda.png?v=2" },
     { name: "TEYIN", logo: "./img/logos-actumoto/teyin2.png" },
-   
+
 
 
 
@@ -58,14 +58,14 @@ const brands = [
     { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
 
 
-   
-     
+
+
 
     { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
 
 
-  { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
-    
+    { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
+
 
     // { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
     // { name: "FIRST", logo: "./img/logos-actumoto/first.png?v=2" },
@@ -89,10 +89,10 @@ const brands = [
     // { name: "LIFAN", logo: "./img/logos-actumoto/logo-lifan-final.png?v=2" },
     // { name: "VIGO", logo: "./img/logos-actumoto/vigo.png?v=2" },
 
-{ name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
+    { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
 
 
-  
+
     // { name: "GSM", logo: "./img/logos-actumoto/gsm.png?v=3" },
 
 
@@ -129,8 +129,8 @@ const brands = [
     // { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
     // { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
 
-  { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
-  
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+
     // { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
 
@@ -466,7 +466,7 @@ const modelsData = {
             name: "GS 1300",
             fuelType: "Thermique",
             category: "Trail",
-            images: ["./img/models/bmw/gs/1.avif", "./img/models/bmw/gs/2.webp",  "./img/models/bmw/gs/3.webp",  "./img/models/bmw/gs/4.webp"],
+            images: ["./img/models/bmw/gs/1.avif", "./img/models/bmw/gs/2.webp", "./img/models/bmw/gs/3.webp", "./img/models/bmw/gs/4.webp"],
             price: null,
             currency: "DT",
 
@@ -893,7 +893,7 @@ const modelsData = {
         //         systemeFreinage: "",
         //     }
         // },
-     
+
         // {
         //     name: "Eway RIDE",
         //     fuelType: "Electrique",
@@ -1051,8 +1051,8 @@ const modelsData = {
 
 
 
-      
-       
+
+
         // {
         //     name: "Fly",
         //     fuelType: "Thermique",
@@ -1141,7 +1141,7 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
-          {
+        {
             name: "RKS",
             fuelType: "Thermique",
             category: "Roadster",
@@ -1163,7 +1163,7 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
-         {
+        {
             name: "NX",
             fuelType: "Thermique",
             category: "Roadster",
@@ -1185,7 +1185,7 @@ const modelsData = {
                 systemeFreinage: "CBS",
             }
         },
-           {
+        {
             name: "SRK 125 S",
             fuelType: "Thermique",
             category: "Roadster",
@@ -2402,7 +2402,7 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-       
+
         {
             name: "like",
             fuelType: "Thermique",
@@ -2425,7 +2425,7 @@ const modelsData = {
                 systemeFreinage: "cbs",
             }
         },
-         {
+        {
             name: "Dink R",
             fuelType: "Thermique",
             category: "Scooter",
@@ -5298,7 +5298,7 @@ const carouselSlides = [
 // Configuration du popup d'accueil
 const popupConfig = {
     enabled: true,
-    durationSeconds: 3,
+    durationSeconds: 4,
     images: {
         mobile: "./img/popup/mobile.jpeg",
         desktop: "./img/popup/desktop.webp"
