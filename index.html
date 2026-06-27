@@ -1778,7 +1778,7 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="data.js?v=202606304"></script>
+    <script src="data.js?v=202606305"></script>
     <script>
       // ===========================================
       // RENDER BRANDS - Load from data.js
@@ -2198,6 +2198,12 @@
       // === POPUP D'ACCUEIL ===
       document.addEventListener("DOMContentLoaded", () => {
         if (typeof popupConfig !== "undefined" && popupConfig.enabled) {
+          // Vérifier si le popup a déjà été affiché pendant cette session (se réinitialise quand on ferme l'onglet/navigateur)
+          if (sessionStorage.getItem("actumoto_popup_shown")) {
+            return;
+          }
+          sessionStorage.setItem("actumoto_popup_shown", "true");
+
           const popupOverlay = document.createElement("div");
           popupOverlay.id = "welcome-popup";
           // Classes Tailwind : overlay sombre, fixe, index z très élevé, centrage flex
@@ -2206,7 +2212,7 @@
           
           let innerContent = `
             <div class="relative max-w-[95vw] h-[90vh] md:max-w-[90vw] md:h-auto md:max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
-              <button id="close-popup-btn" class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
+              <button id="close-popup-btn" class="absolute top-2 right-2 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
                 &times;
               </button>
               <picture class="flex justify-center items-center w-full h-full">
@@ -2219,7 +2225,7 @@
           if (popupConfig.link) {
               innerContent = `
                 <div class="relative max-w-[95vw] h-[90vh] md:max-w-[90vw] md:h-auto md:max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
-                  <button id="close-popup-btn" class="absolute -top-4 -right-4 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
+                  <button id="close-popup-btn" class="absolute top-2 right-2 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
                     &times;
                   </button>
                   <a href="${popupConfig.link}" class="block flex justify-center items-center w-full h-full">
