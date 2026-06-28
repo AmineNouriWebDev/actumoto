@@ -5258,41 +5258,26 @@ const dealersContacts = {
 //
 const carouselSlides = [
     {
-        id: 5,
-        image_desktop: "./img/slider/simcc/desktop/1.webp",
-        image_mobile: "./img/slider/simcc/mobile/1.jpeg",
-        alt: "Banner slider pista hr 110 cc",
-        link: "https://www.facebook.com/SIMCC.Motorsports" // on ajoute null sans virgule sans guillemets pour les images non cliquables
-    },
-    {
         id: 1,
-        image_desktop: "./img/slider/simcc/desktop/2.webp",
-        image_mobile: "./img/slider/simcc/mobile/2.jpeg", // Optionnel - fallback à image_desktop
-        alt: "banner dolce desktop - scooter électrique urbain au design italien",
-        link: "https://www.facebook.com/SIMCC.Motorsports"// Optionnel - si null, l'image n'est pas cliquable
+        image_desktop: "./img/slider/jul26/desktop/1.webp",
+        image_mobile: "./img/slider/jul26/mobile/1.jpeg",
+        alt: "Banner slider SYM",
+        link: "https://www.facebook.com/SIMCC.Motorsports"
     },
     {
         id: 2,
-        image_desktop: "./img/slider/simcc/desktop/3.webp",
-        image_mobile: "./img/slider/simcc/mobile/3.jpeg",
-        alt: "Scooter urbain - Technologie moderne",
+        image_desktop: "./img/slider/jul26/desktop/2.webp",
+        image_mobile: "./img/slider/jul26/mobile/2.jpeg",
+        alt: "banner QJMOTOR",
         link: "https://www.facebook.com/SIMCC.Motorsports"
     },
     {
         id: 3,
-        image_desktop: "./img/slider/simcc/desktop/4.webp",
-        image_mobile: "./img/slider/simcc/mobile/4.jpeg",
-        alt: "Moto Vespa banière- Confort et performance",
-        link: "https://www.facebook.com/SIMCC.Motorsports"
-    },
-    {
-        id: 4,
-        image_desktop: "./img/slider/simcc/desktop/5.webp",
-        image_mobile: "./img/slider/simcc/mobile/5.jpeg",
-        alt: "Moto custom - Style rétro",
+        image_desktop: "./img/slider/jul26/desktop/3.webp",
+        image_mobile: "./img/slider/jul26/mobile/3.jpeg",
+        alt: "Scooter urbain - Technologie moderne VOGUE",
         link: "https://www.facebook.com/SIMCC.Motorsports"
     }
-
 ];
 
 // Configuration du popup d'accueil
