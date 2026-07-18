@@ -5269,6 +5269,17 @@ const dealersContacts = {
         // youtube: "https://www.youtube.com/peugeot",
         tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
+    "GSM GOUIAA": {
+        // addressDisplayMode: "maps",
+        // addresses: ["", /*"Avenue secondaire, Sfax"*/],
+        phones: ["+216 26 678 300", "+216 28 111 180","+216 26 678 400"],
+        emails: ["contact@gsmgouiaa.com"],
+        website: "https://www.gsmgouiaa.com/",
+        facebook: "https://www.facebook.com/profile.php?id=61560906054864&mibextid=wwXIfr&rdid=vqIMuyu6FrFdjp4f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YZ9T7cAj%2F%3Fmibextid%3DwwXIfr#",
+        instagram: "https://www.instagram.com/gsmgouiaa",
+        // youtube: "https://www.youtube.com/peugeot",
+        // tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
+    },
 
 
 };

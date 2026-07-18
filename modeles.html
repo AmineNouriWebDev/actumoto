@@ -1359,6 +1359,35 @@
         return matchingBrand ? matchingBrand.name : brandInput;
       }
 
+      function getDealerContactsKey(brandInput) {
+        if (!brandInput || typeof dealersContacts === "undefined") {
+          return null;
+        }
+
+        const resolvedBrand = resolveBrand(brandInput);
+        const candidates = [brandInput, resolvedBrand?.dataKey, resolvedBrand?.displayName].filter(Boolean);
+
+        for (const candidate of candidates) {
+          if (
+            Object.prototype.hasOwnProperty.call(dealersContacts, candidate)
+          ) {
+            return candidate;
+          }
+        }
+
+        const normalizedInput = normalizeBrandName(brandInput);
+        const matchingKey = Object.keys(dealersContacts || {}).find((key) => {
+          const normalizedKey = normalizeBrandName(key);
+          return (
+            normalizedKey === normalizedInput ||
+            normalizedKey.includes(normalizedInput) ||
+            normalizedInput.includes(normalizedKey)
+          );
+        });
+
+        return matchingKey || null;
+      }
+
       function resolveBrand(brandInput) {
         const dataKey = getBrandDataKey(brandInput);
         const displayName = getBrandDisplayName(dataKey || brandInput);
@@ -2215,10 +2244,11 @@
 
         if (!contactsSection) return;
 
-        const contactsKey = getBrandDataKey(brand);
+        const contactsKey = getDealerContactsKey(brand);
 
         if (
           typeof dealersContacts === "undefined" ||
+          !contactsKey ||
           !dealersContacts[contactsKey]
         ) {
           contactsSection.innerHTML = "";
