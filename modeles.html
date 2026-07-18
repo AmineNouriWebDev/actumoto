@@ -570,6 +570,54 @@
         border-color: #ff0000;
       }
 
+      /* Styles pour les groupes de miniatures et navigation */
+      .thumbnail-group {
+        display: flex;
+        gap: 0.5rem;
+        transition: opacity 0.3s ease;
+      }
+
+      .thumbnail-nav {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        margin-left: auto;
+        flex-shrink: 0;
+      }
+
+      .thumbnail-nav-btn {
+        background: transparent;
+        color: #666;
+        border: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: all 0.2s ease;
+        padding: 0;
+      }
+
+      .thumbnail-nav-btn:hover:not(:disabled) {
+        background: #f0f0f0;
+        color: #ff0000;
+        transform: scale(1.15);
+      }
+
+      .thumbnail-nav-btn:disabled {
+        background: transparent;
+        cursor: not-allowed;
+        color: #ccc;
+      }
+
+      .thumbnail-counter {
+        display: none;
+      }
+
       .more-images-indicator {
         position: absolute;
         top: 10px;
@@ -1426,6 +1474,37 @@
             });
           });
 
+          // Event listeners pour la navigation des miniatures
+          document.querySelectorAll(".thumbnail-nav-btn").forEach((btn) => {
+            btn.addEventListener("click", function (e) {
+              e.stopPropagation();
+              const thumbnailsId = this.dataset.thumbnailsId;
+              const thumbnailsContainer = document.getElementById(thumbnailsId);
+              if (!thumbnailsContainer) return;
+
+              const groups = thumbnailsContainer.querySelectorAll(".thumbnail-group");
+              
+              // Trouver le groupe actuellement affiché
+              let currentGroup = 0;
+              for (let i = 0; i < groups.length; i++) {
+                if (groups[i].style.display !== "none") {
+                  currentGroup = i;
+                  break;
+                }
+              }
+
+              const totalGroups = groups.length;
+              // Cycler : passer au groupe suivant, ou retour au premier si on est au dernier
+              let nextGroup = (currentGroup + 1) % totalGroups;
+
+              // Masquer tous les groupes
+              groups.forEach((g) => g.style.display = "none");
+
+              // Afficher le nouveau groupe
+              groups[nextGroup].style.display = "flex";
+            });
+          });
+
           // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
           document.addEventListener("click", function (e) {
             if (window.innerWidth >= 768) {
@@ -1612,34 +1691,54 @@
               `;
         }
 
-        // Générer les miniatures (seulement si plus d'une image)
+        // Générer les miniatures avec système de pagination (4 par groupe)
         let thumbnailsHtml = "";
         if (hasMultipleImages) {
+          const totalGroups = Math.ceil(images.length / 4);
+          const thumbnailsId = `thumbnails-${index}-${brand.replace(/\s+/g, "-")}`;
+
+          // Générer tous les groupes de miniatures
+          let groupsHtml = "";
+          for (let group = 0; group < totalGroups; group++) {
+            const startIdx = group * 4;
+            const endIdx = Math.min(startIdx + 4, images.length);
+            const groupImages = images.slice(startIdx, endIdx);
+
+            groupsHtml += `
+              <div class="thumbnail-group" data-group="${group}" style="${group === 0 ? "" : "display: none;"}">
+                ${groupImages
+                  .map(
+                    (img, idx) => `
+                  <img 
+                    src="${img}" 
+                    alt="Miniature ${startIdx + idx + 1}" 
+                    class="thumbnail ${idx === 0 && group === 0 ? "active" : ""}" 
+                    data-image-index="${startIdx + idx}"
+                    data-model-index="${index}"
+                    data-brand="${brand}"
+                    onerror="this.style.display='none'"
+                  >
+                `,
+                  )
+                  .join("")}
+              </div>
+            `;
+          }
+
+          // Bouton de navigation si plus d'un groupe (seulement un bouton "suivant")
+          const navButtons =
+            totalGroups > 1
+              ? `
+            <div class="thumbnail-nav">
+              <button class="thumbnail-nav-btn next-btn" data-thumbnails-id="${thumbnailsId}" title="Voir plus d'images">⋮</button>
+            </div>
+          `
+              : "";
+
           thumbnailsHtml = `
-                <div class="image-thumbnails">
-                  ${images
-                    .slice(0, 4)
-                    .map(
-                      (img, imgIndex) => `
-                    <img 
-                      src="${img}" 
-                      alt="Miniature ${imgIndex + 1}" 
-                      class="thumbnail ${imgIndex === 0 ? "active" : ""}" 
-                      data-image-index="${imgIndex}"
-                      data-model-index="${index}"
-                      data-brand="${brand}"
-                      onerror="this.style.display='none'"
-                    >
-                  `,
-                    )
-                    .join("")}
-                  ${
-                    images.length > 4
-                      ? `<div class="text-xs text-gray-500 self-center">+${
-                          images.length - 4
-                        }</div>`
-                      : ""
-                  }
+                <div class="image-thumbnails" id="${thumbnailsId}">
+                  ${groupsHtml}
+                  ${navButtons}
                 </div>
               `;
         }
@@ -1875,6 +1974,38 @@
           });
         });
 
+        // Event listeners pour la navigation des miniatures
+        document.querySelectorAll(".thumbnail-nav-btn").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const thumbnailsId = this.dataset.thumbnailsId;
+            const thumbnailsContainer = document.getElementById(thumbnailsId);
+            if (!thumbnailsContainer) return;
+
+            const groups =
+              thumbnailsContainer.querySelectorAll(".thumbnail-group");
+
+            // Trouver le groupe actuellement affiché
+            let currentGroup = 0;
+            for (let i = 0; i < groups.length; i++) {
+              if (groups[i].style.display !== "none") {
+                currentGroup = i;
+                break;
+              }
+            }
+
+            const totalGroups = groups.length;
+            // Cycler : passer au groupe suivant, ou retour au premier si on est au dernier
+            let nextGroup = (currentGroup + 1) % totalGroups;
+
+            // Masquer tous les groupes
+            groups.forEach((g) => (g.style.display = "none"));
+
+            // Afficher le nouveau groupe
+            groups[nextGroup].style.display = "flex";
+          });
+        });
+
         // Fermer les fiches techniques en cliquant à l'extérieur (desktop seulement)
         document.addEventListener("click", function (e) {
           if (window.innerWidth >= 768) {
@@ -1970,6 +2101,38 @@
             modelCard.querySelectorAll(".thumbnail").forEach((t, idx) => {
               t.classList.toggle("active", idx === imageIndex);
             });
+          });
+        });
+
+        // Event listeners pour la navigation des miniatures
+        document.querySelectorAll(".thumbnail-nav-btn").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const thumbnailsId = this.dataset.thumbnailsId;
+            const thumbnailsContainer = document.getElementById(thumbnailsId);
+            if (!thumbnailsContainer) return;
+
+            const groups =
+              thumbnailsContainer.querySelectorAll(".thumbnail-group");
+
+            // Trouver le groupe actuellement affiché
+            let currentGroup = 0;
+            for (let i = 0; i < groups.length; i++) {
+              if (groups[i].style.display !== "none") {
+                currentGroup = i;
+                break;
+              }
+            }
+
+            const totalGroups = groups.length;
+            // Cycler : passer au groupe suivant, ou retour au premier si on est au dernier
+            let nextGroup = (currentGroup + 1) % totalGroups;
+
+            // Masquer tous les groupes
+            groups.forEach((g) => (g.style.display = "none"));
+
+            // Afficher le nouveau groupe
+            groups[nextGroup].style.display = "flex";
           });
         });
 
