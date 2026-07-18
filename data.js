@@ -1842,7 +1842,7 @@ const modelsData = {
     //     },
     // ],
     TEYIN: [
-       
+
         // {
         //     name: "LM ADV",
         //     fuelType: "Thermique",
@@ -1909,7 +1909,7 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
-         {
+        {
             name: "LM ADV",
             fuelType: "Thermique",
             category: "Scooter",
@@ -4180,12 +4180,12 @@ const modelsData = {
     //     },
     // ],
     GSM: [
-         {
+        {
             name: "FORZA Moteur Shineray",
             fuelType: "Thermique",
             category: "Mobylette",
             images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
-            price: null,
+            price: 3050,
             currency: "DT",
 
             specs: {
@@ -4202,7 +4202,7 @@ const modelsData = {
                 systemeFreinage: "",
             }
         },
-         {
+        {
             name: "Tennis",
             fuelType: "Thermique",
             category: "Scooter",
@@ -4290,7 +4290,7 @@ const modelsData = {
                 systemeFreinage: "CBS",
             }
         },
-       
+
 
     ],
     HAOJIN: [
@@ -5270,9 +5270,10 @@ const dealersContacts = {
         tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
     "GSM GOUIAA": {
-        // addressDisplayMode: "maps",
-        // addresses: ["", /*"Avenue secondaire, Sfax"*/],
-        phones: ["+216 26 678 300", "+216 28 111 180","+216 26 678 400"],
+        addressDisplayMode: "maps",
+        addresses: ["Sakiet Ezzit, Sfax, Tunisie"],
+        mapUrl: "https://www.google.com/maps/place/Sfax/@34.7844393,10.7766669,272m/data=!3m1!1e3!4m6!3m5!1s0x13002cda1486c695:0x22dfe0a62c50ce6f!8m2!3d34.739822!4d10.7600196!16zL20vMDZ0MWt4?hl=fr&entry=ttu",
+        phones: ["+216 26 678 300", "+216 28 111 180", "+216 26 678 400"],
         emails: ["contact@gsmgouiaa.com"],
         website: "https://www.gsmgouiaa.com/",
         facebook: "https://www.facebook.com/profile.php?id=61560906054864&mibextid=wwXIfr&rdid=vqIMuyu6FrFdjp4f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YZ9T7cAj%2F%3Fmibextid%3DwwXIfr#",
