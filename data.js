@@ -5277,6 +5277,57 @@ const dealersContacts = {
         website: "https://www.gsmgouiaa.com/",
         facebook: "https://www.facebook.com/profile.php?id=61560906054864&mibextid=wwXIfr&rdid=vqIMuyu6FrFdjp4f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YZ9T7cAj%2F%3Fmibextid%3DwwXIfr#",
         instagram: "https://www.instagram.com/gsmgouiaa",
+        dealers: [
+            {
+                name: "Nablielectrosat",
+                city: "Sfax",
+                address: "Av. 5 août, Sfax 3002",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/34.7455,10.7628/@35.7267608,9.1711148,385783m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 28 450 499"
+            },
+            {
+                name: "Saber Belhadj SSB",
+                city: "Nabeul",
+                address: "Pharmacie Donia Karouia, شارع الحبيب بورقيبة، Beni Khiar 8060",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.4648,10.775/@36.6007504,10.1657971,95376m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 98 226 104"
+            },
+            {
+                name: "blayah scooterism",
+                city: "Tunis",
+                address: "Yarham waldin waldik y blayah️, Q623+JCG, Cité ennour",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7515,10.2037/@36.7504043,10.1902788,5949m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 27 841 411"
+            },
+            {
+                name: "M.Y.B MOTO",
+                city: "Ben Arous",
+                address: "AUTOFIX, 48 Av. de France, Ben Arous",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7615,10.2249/@36.7513425,10.2127461,2975m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 97 164 390"
+            },
+            {
+                name: "Manouba Scooters",
+                city: "Manouba",
+                address: "Manouba Scooters (showroom), Avenue khaled ibn walid, Manouba 2086",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.8195,10.0954/@36.7791354,10.0771837,23789m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 22 040 001"
+            },
+            {
+                name: "Electro Hamouda Limem",
+                city: "Bizerte",
+                address: "CNAM Ras Jebel, 649H+3F7, Rue 14 Janvier, Ras Jebel 7070",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.2176,10.1286/@36.9873343,9.7796416,94896m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 20 311 114"
+            },
+            {
+                name: "La joie de la famille",
+                city: "Bizerte",
+                address: "Café Ben Mahmoud, 3GMM+GWM, Ghezala",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.0839,9.5347/@36.9127211,9.2199636,189978m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 51 820 013"
+            }
+        ],
         // youtube: "https://www.youtube.com/peugeot",
         // tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },

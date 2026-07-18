@@ -1365,7 +1365,11 @@
         }
 
         const resolvedBrand = resolveBrand(brandInput);
-        const candidates = [brandInput, resolvedBrand?.dataKey, resolvedBrand?.displayName].filter(Boolean);
+        const candidates = [
+          brandInput,
+          resolvedBrand?.dataKey,
+          resolvedBrand?.displayName,
+        ].filter(Boolean);
 
         for (const candidate of candidates) {
           if (
@@ -2300,6 +2304,31 @@
               </div>
             `;
           }
+        }
+
+        // === SECTION REVENDEURS ===
+        if (contacts.dealers && contacts.dealers.length > 0) {
+          contactContent += `
+            <div class="contact-item">
+              <div class="contact-icon">🧭</div>
+              <div class="contact-details">
+                <div class="contact-line" style="font-weight:700; margin-bottom:6px;">Revendeurs</div>
+                ${contacts.dealers
+                  .map(
+                    (dealer) => `
+                      <div style="margin-top:8px; padding-top:8px; border-top:1px solid #eee;">
+                        <div class="contact-line" style="font-weight:600;">${dealer.name || ""}</div>
+                        ${dealer.city ? `<div class="contact-line">${dealer.city}</div>` : ""}
+                        ${dealer.address ? `<div class="contact-line">${dealer.address}</div>` : ""}
+                        ${dealer.mapUrl ? `<div class="contact-line"><a href="${dealer.mapUrl}" target="_blank" rel="noopener noreferrer">📍 Voir sur Google Maps</a></div>` : ""}
+                        ${dealer.phone ? `<div class="contact-line"><a href="tel:${dealer.phone}">${dealer.phone}</a></div>` : ""}
+                      </div>
+                    `,
+                  )
+                  .join("")}
+              </div>
+            </div>
+          `;
         }
 
         // === SECTION TÉLÉPHONES ===
