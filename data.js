@@ -4184,7 +4184,7 @@ const modelsData = {
             name: "FORZA Moteur Shineray",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/tennis/tennis3.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis4.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis4.webp", "./img/models/gsm/tennis/tennis4.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
             price: null,
             currency: "DT",
 
@@ -4272,7 +4272,7 @@ const modelsData = {
             name: "MOBSTER",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/gsm/mobster/mobster1.webp", "./img/models/gsm/mobster/mobster2.webp", "./img/models/gsm/mobster/mobster3.webp", "./img/models/gsm/mobster/mobster4.webp"],
+            images: ["./img/models/gsm/mobster/mobster1.webp", "./img/models/gsm/mobster/mobster2.webp", "./img/models/gsm/mobster/mobster3.webp", "./img/models/gsm/mobster/mobster4.webp", "./img/models/gsm/mobster/mobster5.webp", "./img/models/gsm/mobster/mobster6.webp"],
             price: 5200,
             currency: "DT",
 
