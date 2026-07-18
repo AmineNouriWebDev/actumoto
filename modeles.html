@@ -1482,8 +1482,9 @@
               const thumbnailsContainer = document.getElementById(thumbnailsId);
               if (!thumbnailsContainer) return;
 
-              const groups = thumbnailsContainer.querySelectorAll(".thumbnail-group");
-              
+              const groups =
+                thumbnailsContainer.querySelectorAll(".thumbnail-group");
+
               // Trouver le groupe actuellement affiché
               let currentGroup = 0;
               for (let i = 0; i < groups.length; i++) {
@@ -1498,7 +1499,7 @@
               let nextGroup = (currentGroup + 1) % totalGroups;
 
               // Masquer tous les groupes
-              groups.forEach((g) => g.style.display = "none");
+              groups.forEach((g) => (g.style.display = "none"));
 
               // Afficher le nouveau groupe
               groups[nextGroup].style.display = "flex";
@@ -1730,7 +1731,7 @@
             totalGroups > 1
               ? `
             <div class="thumbnail-nav">
-              <button class="thumbnail-nav-btn next-btn" data-thumbnails-id="${thumbnailsId}" title="Voir plus d'images">⋮</button>
+              <button class="thumbnail-nav-btn next-btn" data-thumbnails-id="${thumbnailsId}" title="Voir plus d'images">›</button>
             </div>
           `
               : "";
