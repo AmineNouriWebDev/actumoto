@@ -1255,13 +1255,67 @@
       </div>
     </footer>
 
-    <script src="data.js?v=202606306"></script>
+    <script src="data.js?v=20260717"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         initPage();
         // DÉSACTIVÉ - initImageModal();
       });
+
+      function normalizeBrandName(value) {
+        return String(value || "")
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, " ");
+      }
+
+      function getBrandDataKey(brandInput) {
+        if (!brandInput) return null;
+
+        if (
+          modelsData &&
+          Object.prototype.hasOwnProperty.call(modelsData, brandInput)
+        ) {
+          return brandInput;
+        }
+
+        const normalizedInput = normalizeBrandName(brandInput);
+        const matchingKey = Object.keys(modelsData || {}).find((key) => {
+          const normalizedKey = normalizeBrandName(key);
+          return (
+            normalizedKey === normalizedInput ||
+            normalizedKey.includes(normalizedInput) ||
+            normalizedInput.includes(normalizedKey)
+          );
+        });
+
+        return matchingKey || brandInput;
+      }
+
+      function getBrandDisplayName(brandInput) {
+        if (!Array.isArray(brands)) return brandInput;
+
+        const normalizedInput = normalizeBrandName(brandInput);
+        const matchingBrand = brands.find((brand) => {
+          const normalizedBrandName = normalizeBrandName(brand.name);
+          return (
+            normalizedBrandName === normalizedInput ||
+            normalizedBrandName.includes(normalizedInput) ||
+            normalizedInput.includes(normalizedBrandName)
+          );
+        });
+
+        return matchingBrand ? matchingBrand.name : brandInput;
+      }
+
+      function resolveBrand(brandInput) {
+        const dataKey = getBrandDataKey(brandInput);
+        const displayName = getBrandDisplayName(dataKey || brandInput);
+        return { dataKey, displayName };
+      }
 
       function initPage() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -1272,9 +1326,27 @@
         const minPriceParam = urlParams.get("minPrice");
         const maxPriceParam = urlParams.get("maxPrice");
 
-        if (brandParam && modelsData[brandParam]) {
-          showModels(brandParam);
-          updateMetaTags(brandParam);
+        if (brandParam) {
+          const resolvedBrand = resolveBrand(brandParam);
+          if (resolvedBrand.dataKey && modelsData[resolvedBrand.dataKey]) {
+            showModels(resolvedBrand.dataKey, resolvedBrand.displayName);
+            updateMetaTags(resolvedBrand.displayName);
+          } else if (categoryParam) {
+            showModelsByCategory(categoryParam);
+          } else if (minPriceParam !== null || maxPriceParam !== null) {
+            const min = minPriceParam ? parseInt(minPriceParam, 10) : 0;
+            let max = Infinity;
+            if (maxPriceParam !== null) {
+              if (maxPriceParam === "Infinity") {
+                max = Infinity;
+              } else {
+                max = parseInt(maxPriceParam, 10);
+              }
+            }
+            showModelsByPriceRange(min, max);
+          } else {
+            window.location.href = "index.html";
+          }
         } else if (categoryParam) {
           showModelsByCategory(categoryParam);
           // Optional: updateMetaTagsByCategory if needed, for now just use default
@@ -1294,12 +1366,13 @@
         }
       }
 
-      function showModels(brand) {
+      function showModels(brand, displayName = brand) {
         const container = document.getElementById("models-container");
         container.innerHTML = "";
+        const resolvedDisplayName = displayName || brand;
 
         if (modelsData[brand]) {
-          updateSchemaData(brand);
+          updateSchemaData(brand, resolvedDisplayName);
 
           if (modelsData[brand].length === 0) {
             container.innerHTML = `
@@ -1309,7 +1382,7 @@
             `;
           } else {
             modelsData[brand].reverse().forEach((model, index) => {
-              createModelCard(model, brand, index, container);
+              createModelCard(model, resolvedDisplayName, index, container);
             });
           }
 
@@ -1730,8 +1803,9 @@
         if (typeof modelsData !== "undefined") {
           const groupedByBrand = {};
 
-          Object.keys(modelsData).forEach((brand) => {
-            const models = modelsData[brand].filter((model) => {
+          Object.keys(modelsData).forEach((brandKey) => {
+            const displayName = getBrandDisplayName(brandKey);
+            const models = modelsData[brandKey].filter((model) => {
               if (category.toLowerCase() === "electrique") {
                 return (
                   model.fuelType &&
@@ -1745,7 +1819,7 @@
             });
 
             if (models.length > 0) {
-              groupedByBrand[brand] = models.reverse();
+              groupedByBrand[displayName] = models.reverse();
               matchingCount += models.length;
             }
           });
@@ -1835,14 +1909,15 @@
         if (typeof modelsData !== "undefined") {
           const groupedByBrand = {};
 
-          Object.keys(modelsData).forEach((brand) => {
-            const models = modelsData[brand].filter((model) => {
+          Object.keys(modelsData).forEach((brandKey) => {
+            const displayName = getBrandDisplayName(brandKey);
+            const models = modelsData[brandKey].filter((model) => {
               const price = parseFloat(model.price);
               return !isNaN(price) && price >= minPrice && price <= maxPrice;
             });
 
             if (models.length > 0) {
-              groupedByBrand[brand] = models.reverse();
+              groupedByBrand[displayName] = models.reverse();
               matchingCount += models.length;
             }
           });
@@ -1925,25 +2000,27 @@
       }
 
       function updateMetaTags(brand) {
-        document.title = `Modèles ${brand} - actumoto.tn | Moto Tunisie`;
+        const displayName = brand || "";
+        document.title = `Modèles ${displayName} - actumoto.tn | Moto Tunisie`;
         document.querySelector('meta[name="description"]').content =
-          `Découvrez tous les modèles ${brand} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${brand} en Tunisie.`;
+          `Découvrez tous les modèles ${displayName} disponibles chez actumoto.tn. Prix, photos et caractéristiques des motos ${displayName} en Tunisie.`;
 
         document.querySelector('meta[property="og:title"]').content =
-          `Modèles ${brand} - actumoto.tn`;
+          `Modèles ${displayName} - actumoto.tn`;
         document.querySelector('meta[property="og:description"]').content =
-          `Modèles ${brand} disponibles en Tunisie chez actumoto.tn`;
+          `Modèles ${displayName} disponibles en Tunisie chez actumoto.tn`;
       }
 
-      function updateSchemaData(brand) {
+      function updateSchemaData(brand, displayName = brand) {
         const schemaScript = document.getElementById("dynamic-schema");
         const models = modelsData[brand];
+        const label = displayName || brand;
 
         const schemaData = {
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: `Modèles ${brand}`,
-          description: `Collection des modèles de motos ${brand} disponibles`,
+          name: `Modèles ${label}`,
+          description: `Collection des modèles de motos ${label} disponibles`,
           url: window.location.href,
           numberOfItems: models.length,
           itemListElement: models.map((model, index) => ({
@@ -1952,7 +2029,7 @@
             item: {
               "@type": "Product",
               name: model.name,
-              description: `${model.name} - ${brand}`,
+              description: `${model.name} - ${label}`,
               category: model.type,
               offers: {
                 "@type": "Offer",
@@ -1974,12 +2051,17 @@
 
         if (!contactsSection) return;
 
-        if (typeof dealersContacts === "undefined" || !dealersContacts[brand]) {
+        const contactsKey = getBrandDataKey(brand);
+
+        if (
+          typeof dealersContacts === "undefined" ||
+          !dealersContacts[contactsKey]
+        ) {
           contactsSection.innerHTML = "";
           return;
         }
 
-        const contacts = dealersContacts[brand];
+        const contacts = dealersContacts[contactsKey];
         const displayMode = contacts.addressDisplayMode || "text";
         let contactContent = "";
 

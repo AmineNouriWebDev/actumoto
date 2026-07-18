@@ -1784,7 +1784,7 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="data.js?v=202606306"></script>
+    <script src="data.js?v=20260717"></script>
     <script>
       // ===========================================
       // RENDER BRANDS - Load from data.js
@@ -2213,9 +2213,10 @@
           const popupOverlay = document.createElement("div");
           popupOverlay.id = "welcome-popup";
           // Classes Tailwind : overlay sombre, fixe, index z très élevé, centrage flex
-          popupOverlay.className = "fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 opacity-0 transition-opacity duration-500";
+          popupOverlay.className =
+            "fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 opacity-0 transition-opacity duration-500";
           popupOverlay.style.pointerEvents = "none";
-          
+
           let innerContent = `
             <div class="relative max-w-[95vw] h-[90vh] md:max-w-[90vw] md:h-auto md:max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
               <button id="close-popup-btn" class="absolute top-2 right-2 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
@@ -2227,9 +2228,9 @@
               </picture>
             </div>
           `;
-          
+
           if (popupConfig.link) {
-              innerContent = `
+            innerContent = `
                 <div class="relative max-w-[95vw] h-[90vh] md:max-w-[90vw] md:h-auto md:max-h-[90vh] flex flex-col items-center justify-center transform scale-95 transition-transform duration-500" id="popup-content-scale">
                   <button id="close-popup-btn" class="absolute top-2 right-2 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold shadow-lg hover:bg-red-700 transition-colors z-10 cursor-pointer border-2 border-white" aria-label="Fermer le popup">
                     &times;
@@ -2252,7 +2253,7 @@
             popupOverlay.classList.remove("opacity-0");
             popupOverlay.style.pointerEvents = "auto";
             const scaleDiv = document.getElementById("popup-content-scale");
-            if(scaleDiv) {
+            if (scaleDiv) {
               scaleDiv.classList.remove("scale-95");
               scaleDiv.classList.add("scale-100");
             }
@@ -2261,12 +2262,12 @@
           const closePopup = () => {
             popupOverlay.classList.add("opacity-0");
             const scaleDiv = document.getElementById("popup-content-scale");
-            if(scaleDiv) {
+            if (scaleDiv) {
               scaleDiv.classList.remove("scale-100");
               scaleDiv.classList.add("scale-95");
             }
             popupOverlay.style.pointerEvents = "none";
-            
+
             setTimeout(() => {
               if (popupOverlay.parentNode) {
                 popupOverlay.parentNode.removeChild(popupOverlay);
@@ -2292,9 +2293,12 @@
 
           // Disparition automatique après N secondes
           if (popupConfig.durationSeconds > 0) {
-            setTimeout(() => {
-              closePopup();
-            }, (popupConfig.durationSeconds * 1000) + 300); // Ajoute le temps de l'animation d'apparition
+            setTimeout(
+              () => {
+                closePopup();
+              },
+              popupConfig.durationSeconds * 1000 + 300,
+            ); // Ajoute le temps de l'animation d'apparition
           }
         }
       });
