@@ -53,7 +53,7 @@ const brands = [
 
 
 
-    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
+
     // { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
     // { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
 
@@ -95,7 +95,7 @@ const brands = [
 
     { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=3" },
 
-
+    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=2" },
 
 
     // { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
@@ -4203,6 +4203,28 @@ const modelsData = {
             }
         },
         {
+            name: "Super Frigate ",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/gsm/frigate/frigate.webp", "./img/models/gsm/frigate/frigate2.webp", "./img/models/gsm/frigate/frigate3.webp", "./img/models/gsm/frigate/frigate4.webp"],
+            price: 4900,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "",
+                freinage: " ",
+                systemeFreinage: "",
+            }
+        },
+        {
             name: "Tennis",
             fuelType: "Thermique",
             category: "Scooter",
@@ -5280,7 +5302,7 @@ const dealersContacts = {
         instagram: "https://www.instagram.com/gsmgouiaa",
         dealers: [
             {
-                name: "Nablielectrosat",
+                name: "Nabli electrosat",
                 city: "Sfax",
                 address: "Av. 5 août, Sfax 3002",
                 mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/34.7455,10.7628/@35.7267608,9.1711148,385783m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",

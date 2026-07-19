@@ -881,14 +881,16 @@
         border-radius: 10px;
         padding: 1.1rem 1.2rem;
         text-align: left;
-        transition: box-shadow 0.25s ease, transform 0.25s ease;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        transition:
+          box-shadow 0.25s ease,
+          transform 0.25s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         flex: 1 1 220px;
         max-width: 280px;
       }
 
       .dealer-card:hover {
-        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
         transform: translateY(-2px);
       }
 
@@ -1422,7 +1424,7 @@
       </div>
     </footer>
 
-    <script src="data.js?v=20260717"></script>
+    <script src="data.js?v=20260719"></script>
     <script src="formatters.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -2395,7 +2397,9 @@
             const mapsEmbedUrl = contacts.mapUrl
               ? `https://maps.google.com/maps?q=${encodeURIComponent(firstAddress + ", Tunisia")}&t=&z=13&ie=UTF8&iwloc=&output=embed`
               : `https://maps.google.com/maps?q=${encodedAddress}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-            const mapsDirectionsUrl = contacts.mapUrl || `https://www.google.com/maps/search/${encodedAddress}`;
+            const mapsDirectionsUrl =
+              contacts.mapUrl ||
+              `https://www.google.com/maps/search/${encodedAddress}`;
 
             contactContent += `
               <div class="contact-item maps-item">
@@ -2498,7 +2502,9 @@
             <div class="dealers-section">
               <div class="dealers-section-title">🧭 Nos Revendeurs</div>
               <div class="dealers-grid">
-                ${contacts.dealers.map((dealer) => `
+                ${contacts.dealers
+                  .map(
+                    (dealer) => `
                   <div class="dealer-card">
                     <div class="dealer-card-name">${dealer.name || ""}</div>
                     ${dealer.city ? `<div class="dealer-card-city">${dealer.city}</div>` : ""}
@@ -2508,7 +2514,9 @@
                       ${dealer.mapUrl ? `<a class="dealer-card-map-link" href="${dealer.mapUrl}" target="_blank" rel="noopener noreferrer">📍 Maps</a>` : ""}
                     </div>
                   </div>
-                `).join("")}
+                `,
+                  )
+                  .join("")}
               </div>
             </div>
           `;
