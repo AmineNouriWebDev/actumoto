@@ -91,15 +91,15 @@ const brands = [
 
     // { name: "SLC", logo: "./img/logos-actumoto/slc.png?v=2" },
 
-
-    { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=3" },
+{ name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=3" },
+   
     { name: "VELOCIFERO", logo: "./img/logos-actumoto/veloci.png" },
 
 
-    { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=3" },
-    { name: "ABM", logo: "./img/logos-actumoto/abm.png?v=4" },
+     { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=3" },
+    
     { name: "FORZA", logo: "./img/logos-actumoto/forza.png" },
-
+{ name: "ABM", logo: "./img/logos-actumoto/abm.png?v=4" },
 
     // { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
 
@@ -132,7 +132,7 @@ const brands = [
     // { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
     // { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
 
-    // { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
 
     // { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     // { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
@@ -4048,29 +4048,51 @@ const modelsData = {
             }
         },
     ],
-    // TAILG: [
-    //     {
-    //         name: "Bloom",
-    //         fuelType: "Electrique",
-    //         category: "Scooter",
-    //         images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
-    //         price: 5000,
-    //         currency: "DT",
+    TAILG: [
+        {
+            name: "Tailg",
+            fuelType: "Electrique",
+            category: "Scooter",
+            images: ["./img/models/tailg/1.jpeg"],
+            price: null,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Électrique",
-    //             cylindree: null,
-    //             puissance: 2000,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 60,
-    //             autonomie: 90,
-    //             alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
-    //             freinage: "Disques hydrauliques AV/AR",
-    //             systemeFreinage: "",
-    //         }
-    //     },
+            specs: {
+                typeMoteur: "Électrique",
+                cylindree: null,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "",
+                tankCapacity: null,
+                vitesseMaximale:null ,
+                autonomie:null ,
+                alimentation: "",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        // {
+        //     name: "Bloom",
+        //     fuelType: "Electrique",
+        //     category: "Scooter",
+        //     images: ["./img/models/slc/bloom/1.webp", "./img/models/slc/bloom/2.webp"],
+        //     price: 5000,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Électrique",
+        //         cylindree: null,
+        //         puissance: 2000,
+        //         coupleMaximal: null,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 60,
+        //         autonomie: 90,
+        //         alimentation: "Batterie Graphène Lead Acid 72V 38Ah",
+        //         freinage: "Disques hydrauliques AV/AR",
+        //         systemeFreinage: "",
+        //     }
+        // },
     //     {
     //         name: "STAR",
     //         fuelType: "Electrique",
@@ -4162,7 +4184,7 @@ const modelsData = {
     //         }
     //     },
 
-    // ],
+    ],
     // ECORIDE: [
     //     {
     //         name: "ZEN",
@@ -4306,10 +4328,10 @@ const modelsData = {
     FORZA: [
      
         {
-            name: "110 Compteur Analogique ",
+            name: "110 Analogique Frein Pied ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp"],
             price: 2850,
             currency: "DT",
 
@@ -4328,10 +4350,10 @@ const modelsData = {
             }
         },
         {
-            name: "110 Compteur Digital Full Led ",
+            name: "110 Digital Led Frein Pied ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 2950,
             currency: "DT",
 
@@ -4350,10 +4372,10 @@ const modelsData = {
             }
         },
         {
-            name: "110 Compteur Digital Full led ",
+            name: "110 Digital Led Frein Main ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3050,
             currency: "DT",
 
@@ -4372,10 +4394,10 @@ const modelsData = {
             }
         },
         {
-            name: "125 Compteur Digital Full led ",
+            name: "125 Digital Led Frein Pied ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3050,
             currency: "DT",
 
@@ -4394,10 +4416,10 @@ const modelsData = {
             }
         },
         {
-            name: "125 Compteur Digital Full led ",
+            name: "125 Digital Led Frein Main ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
+            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3150,
             currency: "DT",
 
@@ -5510,6 +5532,132 @@ const dealersContacts = {
         // tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
     },
     "VELOCIFERO": {
+        addressDisplayMode: "maps",
+        addresses: ["Sakiet Ezzit, Sfax, Tunisie"],
+        mapUrl: "https://www.google.com/maps/place/Sfax/@34.7844393,10.7766669,272m/data=!3m1!1e3!4m6!3m5!1s0x13002cda1486c695:0x22dfe0a62c50ce6f!8m2!3d34.739822!4d10.7600196!16zL20vMDZ0MWt4?hl=fr&entry=ttu",
+        phones: ["+216 26 678 300", "+216 28 111 180", "+216 26 678 400"],
+        emails: ["contact@gsmgouiaa.com"],
+        website: "https://www.gsmgouiaa.com/",
+        facebook: "https://www.facebook.com/profile.php?id=61560906054864&mibextid=wwXIfr&rdid=vqIMuyu6FrFdjp4f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YZ9T7cAj%2F%3Fmibextid%3DwwXIfr#",
+        instagram: "https://www.instagram.com/gsmgouiaa",
+        dealers: [
+            {
+                name: "Nabli electrosat",
+                city: "Sfax",
+                address: "Av. 5 août, Sfax 3002",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/34.7455,10.7628/@35.7267608,9.1711148,385783m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 28 450 499"
+            },
+            {
+                name: "Saber Belhadj SSB",
+                city: "Nabeul",
+                address: "Pharmacie Donia Karouia, شارع الحبيب بورقيبة، Beni Khiar 8060",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.4648,10.775/@36.6007504,10.1657971,95376m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 98 226 104"
+            },
+            {
+                name: "blayah scooterism",
+                city: "Tunis",
+                address: "Yarham waldin waldik y blayah️, Q623+JCG, Cité ennour",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7515,10.2037/@36.7504043,10.1902788,5949m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 27 841 411"
+            },
+            {
+                name: "M.Y.B MOTO",
+                city: "Ben Arous",
+                address: "AUTOFIX, 48 Av. de France, Ben Arous",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7615,10.2249/@36.7513425,10.2127461,2975m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 97 164 390"
+            },
+            {
+                name: "Manouba Scooters",
+                city: "Manouba",
+                address: "Manouba Scooters (showroom), Avenue khaled ibn walid, Manouba 2086",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.8195,10.0954/@36.7791354,10.0771837,23789m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 22 040 001"
+            },
+            {
+                name: "Electro Hamouda Limem",
+                city: "Bizerte",
+                address: "CNAM Ras Jebel, 649H+3F7, Rue 14 Janvier, Ras Jebel 7070",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.2176,10.1286/@36.9873343,9.7796416,94896m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 20 311 114"
+            },
+            {
+                name: "La joie de la famille",
+                city: "Bizerte",
+                address: "Café Ben Mahmoud, 3GMM+GWM, Ghezala",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.0839,9.5347/@36.9127211,9.2199636,189978m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 51 820 013"
+            }
+        ],
+        // youtube: "https://www.youtube.com/peugeot",
+        // tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
+    },
+    "FORZA": {
+        addressDisplayMode: "maps",
+        addresses: ["Sakiet Ezzit, Sfax, Tunisie"],
+        mapUrl: "https://www.google.com/maps/place/Sfax/@34.7844393,10.7766669,272m/data=!3m1!1e3!4m6!3m5!1s0x13002cda1486c695:0x22dfe0a62c50ce6f!8m2!3d34.739822!4d10.7600196!16zL20vMDZ0MWt4?hl=fr&entry=ttu",
+        phones: ["+216 26 678 300", "+216 28 111 180", "+216 26 678 400"],
+        emails: ["contact@gsmgouiaa.com"],
+        website: "https://www.gsmgouiaa.com/",
+        facebook: "https://www.facebook.com/profile.php?id=61560906054864&mibextid=wwXIfr&rdid=vqIMuyu6FrFdjp4f&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18YZ9T7cAj%2F%3Fmibextid%3DwwXIfr#",
+        instagram: "https://www.instagram.com/gsmgouiaa",
+        dealers: [
+            {
+                name: "Nabli electrosat",
+                city: "Sfax",
+                address: "Av. 5 août, Sfax 3002",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/34.7455,10.7628/@35.7267608,9.1711148,385783m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 28 450 499"
+            },
+            {
+                name: "Saber Belhadj SSB",
+                city: "Nabeul",
+                address: "Pharmacie Donia Karouia, شارع الحبيب بورقيبة، Beni Khiar 8060",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.4648,10.775/@36.6007504,10.1657971,95376m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 98 226 104"
+            },
+            {
+                name: "blayah scooterism",
+                city: "Tunis",
+                address: "Yarham waldin waldik y blayah️, Q623+JCG, Cité ennour",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7515,10.2037/@36.7504043,10.1902788,5949m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 27 841 411"
+            },
+            {
+                name: "M.Y.B MOTO",
+                city: "Ben Arous",
+                address: "AUTOFIX, 48 Av. de France, Ben Arous",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.7615,10.2249/@36.7513425,10.2127461,2975m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 97 164 390"
+            },
+            {
+                name: "Manouba Scooters",
+                city: "Manouba",
+                address: "Manouba Scooters (showroom), Avenue khaled ibn walid, Manouba 2086",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/36.8195,10.0954/@36.7791354,10.0771837,23789m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 22 040 001"
+            },
+            {
+                name: "Electro Hamouda Limem",
+                city: "Bizerte",
+                address: "CNAM Ras Jebel, 649H+3F7, Rue 14 Janvier, Ras Jebel 7070",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.2176,10.1286/@36.9873343,9.7796416,94896m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 20 311 114"
+            },
+            {
+                name: "La joie de la famille",
+                city: "Bizerte",
+                address: "Café Ben Mahmoud, 3GMM+GWM, Ghezala",
+                mapUrl: "https://www.google.com/maps/dir/36.7412294,10.2241476/37.0839,9.5347/@36.9127211,9.2199636,189978m/data=!3m2!1e3!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D",
+                phone: "+216 51 820 013"
+            }
+        ],
+        // youtube: "https://www.youtube.com/peugeot",
+        // tiktok: "https://www.tiktok.com/@letbe.haojin.moora"
+    },
+    "Tailg": {
         addressDisplayMode: "maps",
         addresses: ["Sakiet Ezzit, Sfax, Tunisie"],
         mapUrl: "https://www.google.com/maps/place/Sfax/@34.7844393,10.7766669,272m/data=!3m1!1e3!4m6!3m5!1s0x13002cda1486c695:0x22dfe0a62c50ce6f!8m2!3d34.739822!4d10.7600196!16zL20vMDZ0MWt4?hl=fr&entry=ttu",
