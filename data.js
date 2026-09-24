@@ -28,26 +28,27 @@ function formatPriceHtml(price, currency = "DT") {
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
-    { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
-    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
-    { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
-    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
-    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+    { name: "KTM", logo: "./img/logos-actumoto/ktm.png" },
+      { name: "MOTOMORINI", logo: "./img/logos-actumoto/motomorini.png" },
+     
+  { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
+   
+  
     // { name: "PIAGGIO", logo: "./img/logos-actumoto/piaggio.png?v=2" },
     // { name: "VESPA", logo: "./img/logos-actumoto/vespa.png" },
-    // { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
-    { name: "MOTOMORINI", logo: "./img/logos-actumoto/motomorini.png" },
-    { name: "BMW", logo: "./img/logos-actumoto/bmw2.png?v=2" },
-    { name: "HONDA", logo: "./img/logos-actumoto/honda.png?v=2" },
+   
+    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
+   
+   
     { name: "TEYIN", logo: "./img/logos-actumoto/teyin2.png" },
 
 
 
 
+{ name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
+  
 
-    { name: "ZONTES", logo: "./img/logos-actumoto/zontes.png?v=2" },
-
-    // { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
+    
 
     // { name: "DAYUN", logo: "./img/logos-actumoto/dayun.png?v=2" },
 
@@ -55,16 +56,16 @@ const brands = [
 
 
     // { name: "AIMA", logo: "./img/logos-actumoto/aima.png?v=2" },
-    // { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
+   
 
 
 
 
 
-    // { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
+   
 
 
-    // { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
+    // 
 
 
     // { name: "UNISCOOT", logo: "./img/logos-actumoto/uniscoot.png?v=2" },
@@ -93,13 +94,15 @@ const brands = [
 
 { name: "NOVAGO", logo: "./img/logos-actumoto/novago.png?v=3" },
    
-    { name: "VELOCIFERO", logo: "./img/logos-actumoto/veloci.png" },
+   
 
-
-     { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=3" },
+ { name: "VELOCIFERO", logo: "./img/logos-actumoto/veloci.png" },
+     
     
-    { name: "FORZA", logo: "./img/logos-actumoto/forza.png" },
-{ name: "ABM", logo: "./img/logos-actumoto/abm.png?v=4" },
+   
+     { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+    //    { name: "VOGE", logo: "./img/logos-actumoto/voge.png?v=2" },
+// { name: "ABM", logo: "./img/logos-actumoto/abm.png?v=4" },
 
     // { name: "E RIDER", logo: "./img/logos-actumoto/erider.png?v=2" },
 
@@ -132,23 +135,37 @@ const brands = [
     // { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
     // { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
 
-    { name: "TAILG", logo: "./img/logos-actumoto/tailg.png?v=2" },
+   
 
     // { name: "SENKE", logo: "./img/logos-actumoto/senke.png?v=2" },
     // { name: "ZIMOTA", logo: "./img/logos-actumoto/zimota.png?v=2" },
-
+        // { name: "SYM", logo: "./img/logos-actumoto/sym.png?v=2" },
+       
+      { name: "HONDA", logo: "./img/logos-actumoto/honda.png?v=2" },   
+    // { name: "QJMOTOR", logo: "./img/logos-actumoto/qjmotors.png?v=2" },
+    // { name: "KIM", logo: "./img/logos-actumoto/kim.png?v=3" },
+   
+ { name: "KYMCO", logo: "./img/logos-actumoto/kymco.png?v=2" },
+   { name: "BMW", logo: "./img/logos-actumoto/bmw2.png?v=2" },
+  { name: "CFMOTO", logo: "./img/logos-actumoto/cfmoto.png?v=3" },
+    { name: "LETBE", logo: "./img/logos-actumoto/letbe.png?v=2" },
+    { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
+    { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=5" },
+   { name: "FORZA", logo: "./img/logos-actumoto/forza.png?v=2" },
 ];
 
 const categories = [
-    // { name: "Sportive", logo: "./img/category/sportive.webp" },
+    { name: "Sportive", logo: "./img/category/sportive.webp" },
     { name: "Trail", logo: "./img/category/trail.webp" },
     { name: "Roadster", logo: "./img/category/roadster.webp" },
     { name: "Scooter", logo: "./img/category/scooter.webp" },
-    { name: "Electrique", logo: "./img/category/electrique2.webp" },
+  
     { name: "Motocube", logo: "./img/category/motocube.webp" },
     // { name: "Custom", logo: "./img/category/custom.webp" },
-    // { name: "Motocross", logo: "./img/category/motocross.webp" },
+   
     { name: "Mobylette", logo: "./img/category/mobylette.webp" },
+     { name: "Motocross", logo: "./img/category/motocross.webp" },
+    { name: "Electrique", logo: "./img/category/electrique2.webp" },
 
 ];
 
@@ -178,7 +195,7 @@ const modelsData = {
             }
         },
         {
-            name: "Tweet SL ",
+            name: "Tweet FL ",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/peugeot/peugeot-tweet-125/1.jpeg", "./img/models/peugeot/peugeot-tweet-125/2.jpeg", "./img/models/peugeot/peugeot-tweet-125/3.jpeg", "./img/models/peugeot/peugeot-tweet-125/4.jpeg"],
@@ -312,52 +329,168 @@ const modelsData = {
             }
         },
     ],
-    // SUZUKI: [
-    //     {
-    //         name: "DR 650",
-    //         fuelType: "Thermique",
-    //         category: "Motocross",
-    //         images: ["./img/models/suzuki/dr650/1.jpg", "./img/models/suzuki/dr650/2.jpg", "./img/models/suzuki/dr650/3.jpg", "./img/models/suzuki/dr650/4.jpg"],
-    //         price: 37500,
-    //         currency: "DT",
+      KTM: [
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4T",
-    //             cylindree: 644,
-    //             puissance: 39,
-    //             coupleMaximal: 62,
-    //             refroidissement: "Air/Huile (SACS)",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 150,
-    //             autonomie: null,
-    //             alimentation: "Carburateur Mikuni BST40",
-    //             freinage: "Disque/Disque",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    //     {
-    //         name: "BURGMAN STREET",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/burgman.jpeg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/1.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/2.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/3.jpg"],
-    //         price:8800,
-    //         currency: "DT",
+        {
+            name: "790 Duke",
+            fuelType: "Thermique",
+            category: "Roadster",
+             images: ["./img/models/ktm/duke/ktm1.jpg", "./img/models/ktm/duke/ktm2.jpg", "./img/models/ktm/duke/ktm5.jpg", "./img/models/ktm/duke/ktm4.jpg"],
+            price: null,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4T",
-    //             cylindree: 124,
-    //             puissance: 6.3,
-    //             coupleMaximal: 10,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 95,
-    //             autonomie: null,
-    //             alimentation: "Injection électronique",
-    //             freinage: "Disque/Tambour ",
-    //             systemeFreinage: "CBS",
-    //         }
-    //     },
-    // ],
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 799,
+                puissance: 95,
+                coupleMaximal: 87,
+                refroidissement: "Liquide",
+                tankCapacity: 13.5,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "990 Duke",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: [ "./img/models/ktm/duke990/duke2.jpg", "./img/models/ktm/duke990/duke1.jpg","./img/models/ktm/duke990/duke4.png", "./img/models/ktm/duke990/duke3.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 947,
+                puissance: 127.84,
+                coupleMaximal: 103,
+                refroidissement: "Liquide",
+                tankCapacity: 14.8,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "390 Duke",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/ktm/duke390/duke1.png", "./img/models/ktm/duke390/duke2.png", "./img/models/ktm/duke390/duke3.png", "./img/models/ktm/duke390/duke4.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 398.7,
+                puissance: 45,
+                coupleMaximal: 39,
+                refroidissement: "Liquide",
+                tankCapacity: 14,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "390 Adventure r",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/ktm/adventure390/adventure1.png", "./img/models/ktm/adventure390/adventure2.png", "./img/models/ktm/adventure390/adventure3.png", "./img/models/ktm/adventure390/adventure4.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 398.7,
+                puissance: 45,
+                coupleMaximal: 39,
+                refroidissement: "Liquide",
+                tankCapacity: 14,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "1390 Adventure r",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/ktm/adventure1390r/adventure1.png", "./img/models/ktm/adventure1390r/adventure2.png", "./img/models/ktm/adventure1390r/adventure3.png", "./img/models/ktm/adventure1390r/adventure4.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre 4 temps",
+                cylindree: 1350,
+                puissance: 175,
+                coupleMaximal: 145,
+                refroidissement: "Liquide",
+                tankCapacity: 23,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+    
+     
+       
+    ],
+    SUZUKI: [
+        {
+            name: "DR 650",
+            fuelType: "Thermique",
+            category: "Motocross",
+            images: ["./img/models/suzuki/dr650/1.jpg", "./img/models/suzuki/dr650/2.jpg", "./img/models/suzuki/dr650/3.jpg", "./img/models/suzuki/dr650/4.jpg"],
+            price: 37500,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 644,
+                puissance: 39,
+                coupleMaximal: 62,
+                refroidissement: "Air/Huile (SACS)",
+                tankCapacity: null,
+                vitesseMaximale: 150,
+                autonomie: null,
+                alimentation: "Carburateur Mikuni BST40",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "BURGMAN STREET",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/suzuki/suzuki-burgman-street-ub125-blanc/burgman.jpeg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/1.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/2.jpg", "./img/models/suzuki/suzuki-burgman-street-ub125-blanc/3.jpg"],
+            price:8800,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre, 4T",
+                cylindree: 124,
+                puissance: 6.3,
+                coupleMaximal: 10,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 95,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque/Tambour ",
+                systemeFreinage: "CBS",
+            }
+        },
+    ],
     // PIAGGIO: [
 
 
@@ -434,7 +567,28 @@ const modelsData = {
     //     },
     // ],
     MOTOMORINI: [
+        {
+            name: "X CAPE 650",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/morini/morini1.webp", "./img/models/morini/morini4.png", "./img/models/morini/morini6.png", "./img/models/morini/morini7.png"],
+            price:null,
+            currency: "DT",
 
+            specs: {
+                typeMoteur: "Bicylindres DACT 8 soupapes",
+                cylindree: 649,
+                puissance: 44,
+                coupleMaximal: 54,
+                refroidissement: "Liquide",
+                tankCapacity: 18,
+                vitesseMaximale: 170,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Double Disque/Disque ",
+                systemeFreinage: "ABS",
+            }
+        },
 
     ],
     HONDA: [
@@ -443,7 +597,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Trail",
             images: ["./img/models/honda/africa-twin/1.jpg", "./img/models/honda/africa-twin/2.jpg", "./img/models/honda/africa-twin/3.png", "./img/models/honda/africa-twin/4.jpg"],
-            price: null,
+            price: 160000,
             currency: "DT",
 
             specs: {
@@ -470,7 +624,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Trail",
             images: ["./img/models/bmw/gs/1.avif", "./img/models/bmw/gs/2.webp", "./img/models/bmw/gs/3.webp", "./img/models/bmw/gs/4.webp"],
-            price: null,
+            price: 170000,
             currency: "DT",
 
             specs: {
@@ -491,416 +645,416 @@ const modelsData = {
 
 
     ],
-    ABM: [
+    // ABM: [
+    //     {
+    //         name: "Verano",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/abm/verano/abm1.webp", "./img/models/abm/verano/abm2.webp", "./img/models/abm/verano/abm3.webp"],
+    //         price: 4900,
+    //         currency: "DT",
+
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "",
+    //         }
+
+    //     },
+
+
+    // ],
+    APRILIA: [
+        // {
+        //     name: "SR GT ",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/aprilia/aprilia-gt/aprilia-sr-gt-1.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-2.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt3.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-4.webp"],
+        //     price: 25900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4 temps",
+        //         cylindree: 125,
+        //         puissance: 15,
+        //         coupleMaximal: 12,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 110,
+        //         autonomie: null,
+        //         alimentation: "injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+
+        // },
+        // {
+        //     name: "SR",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/aprilia/aprilia-sr-125/aprilia-sr-1.webp", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
+        //     price: 8900,
+        //     currency: "DT",
+
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4 temps",
+        //         cylindree: 125,
+        //         puissance: 9.65,
+        //         coupleMaximal: 9.9,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 90,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque/Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+
         {
-            name: "Verano",
+            name: "SR iget E5",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/abm/verano/abm1.webp", "./img/models/abm/verano/abm2.webp", "./img/models/abm/verano/abm3.webp"],
-            price: 4900,
+            images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-4.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-2.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-3.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget1.webp"],
+            price: 10900,
             currency: "DT",
 
             specs: {
-                typeMoteur: "Monocylindre 4 temps",
+                typeMoteur: "Monocylindre 4 temps i-get",
                 cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "air",
+                puissance: 9.9,
+                coupleMaximal: 9.7,
+                refroidissement: "A air",
                 tankCapacity: null,
-                vitesseMaximale: null,
+                vitesseMaximale: 100,
                 autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "",
+                alimentation: "Injection électronique",
+                freinage: "Disque / Tambour ",
+                systemeFreinage: "CBS",
             }
 
         },
 
 
     ],
-    // APRILIA: [
-    //     {
-    //         name: "SR GT ",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/aprilia/aprilia-gt/aprilia-sr-gt-1.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-2.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt3.webp", "./img/models/aprilia/aprilia-gt/aprilia-sr-gt-4.webp"],
-    //         price: 25900,
-    //         currency: "DT",
+    CFMOTO: [
+        // {
+        //     name: "450MT",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp", "./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg", "./img/models/cfmoto/CFMOTO-450MT/2.webp", "./img/models/cfmoto/CFMOTO-450MT/3.webp"],
+        //     price: 49980,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4 temps",
-    //             cylindree: 125,
-    //             puissance: 15,
-    //             coupleMaximal: 12,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 110,
-    //             autonomie: null,
-    //             alimentation: "injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
+        //     specs: {
+        //         typeMoteur: "Bicylindre, 4 temps",
+        //         cylindree: 450,
+        //         puissance: 43,
+        //         coupleMaximal: 44,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 160,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "800MT-X",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg", "./img/models/cfmoto/CF-MOTO-800MT-X/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
+        //     price: 76160,
+        //     currency: "DT",
 
-    //     },
-    //     {
-    //         name: "SR",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/aprilia/aprilia-sr-125/aprilia-sr-1.webp", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-2.jpeg", "./img/models/aprilia/aprilia-sr-125/piaggio-aprilia-sr-125-3.jpeg", "./img/models/aprilia/aprilia-sr-125/scooter-aprilia-sr125-bleu-55.jpg"],
-    //         price: 8900,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Bicylindre",
+        //         cylindree: 800,
+        //         puissance: 95,
+        //         coupleMaximal: 87,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 200,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "800MT Explore",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg", "./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
+        //     price: 80920,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4 temps",
-    //             cylindree: 125,
-    //             puissance: 9.65,
-    //             coupleMaximal: 9.9,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 90,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque/Tambour",
-    //             systemeFreinage: "",
-    //         }
-    //     },
+        //     specs: {
+        //         typeMoteur: "Bicylindre, 4temps",
+        //         cylindree: 800,
+        //         puissance: 91,
+        //         coupleMaximal: 75,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 200,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "700MT",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp", "./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg", "./img/models/cfmoto/CF-MOTO-700MT/2.webp", "./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
+        //     price: 58650,
+        //     currency: "DT",
 
-    //     {
-    //         name: "SR iget E5",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-4.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-2.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget-3.webp", "./img/models/aprilia/aprilia-sr-125-moteur-i-get/aprilia-iget1.webp"],
-    //         price: 10900,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Bicylindre, 4temps",
+        //         cylindree: 700,
+        //         puissance: 66,
+        //         coupleMaximal: 60,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 190,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "X SPORT",
+        //     fuelType: "Thermique",
+        //     category: "Roadster",
+        //     images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
+        //     price: 61400,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre 4 temps i-get",
-    //             cylindree: 125,
-    //             puissance: 9.9,
-    //             coupleMaximal: 9.7,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 100,
-    //             autonomie: null,
-    //             alimentation: "Injection électronique",
-    //             freinage: "Disque / Tambour ",
-    //             systemeFreinage: "CBS",
-    //         }
+        //     specs: {
+        //         typeMoteur: "Bicylindre, 4temps",
+        //         cylindree: 700,
+        //         puissance: 70,
+        //         coupleMaximal: 68,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 190,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "450CL-C",
+        //     fuelType: "Thermique",
+        //     category: "Custom",
+        //     images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg", "./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
+        //     price: 57800,
+        //     currency: "DT",
 
-    //     },
+        //     specs: {
+        //         typeMoteur: "Bicylindre",
+        //         cylindree: 450,
+        //         puissance: 43,
+        //         coupleMaximal: 42,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 160,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "C-BOBER",
+        //     fuelType: "Thermique",
+        //     category: "Custom",
+        //     images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
+        //     price: 49950,
+        //     currency: "DT",
 
+        //     specs: {
+        //         typeMoteur: "Bicylindre",
+        //         cylindree: 450,
+        //         puissance: 40,
+        //         coupleMaximal: 42,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 160,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        {
+            name: "125NK",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg", "./img/models/cfmoto/CF-MOTO-125NK/2.webp", "./img/models/cfmoto/CF-MOTO-125NK/3.webp", "./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
+            price: 14850,
+            currency: "DT",
 
-    // ],
-    // CFMOTO: [
-    //     {
-    //         name: "450MT",
-    //         fuelType: "Thermique",
-    //         category: "Trail",
-    //         images: ["./img/models/cfmoto/CFMOTO-450MT/4.webp", "./img/models/cfmoto/CFMOTO-450MT/CFMOTO-450MT.jpg", "./img/models/cfmoto/CFMOTO-450MT/2.webp", "./img/models/cfmoto/CFMOTO-450MT/3.webp"],
-    //         price: 49980,
-    //         currency: "DT",
+            specs: {
+                typeMoteur: "Monocylindre, 4 temps",
+                cylindree: 125,
+                puissance: 15,
+                coupleMaximal: 11,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale: 110,
+                autonomie: null,
+                alimentation: "Injection",
+                freinage: "Disque/Disque ",
+                systemeFreinage: "ABS",
+            }
+        },
+        // {
+        //     name: "800NK Advanced",
+        //     fuelType: "Thermique",
+        //     category: "Roadster",
+        //     images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
+        //     price: 59500,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4 temps",
-    //             cylindree: 450,
-    //             puissance: 43,
-    //             coupleMaximal: 44,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 160,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "800MT-X",
-    //         fuelType: "Thermique",
-    //         category: "Trail",
-    //         images: ["./img/models/cfmoto/CF-MOTO-800MT-X/CF-MOTO-800MT-X.jpg", "./img/models/cfmoto/CF-MOTO-800MT-X/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-X/4.webp"],
-    //         price: 76160,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Bicylindre, 4temps",
+        //         cylindree: 800,
+        //         puissance: 95,
+        //         coupleMaximal: 81,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 220,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "300NK",
+        //     fuelType: "Thermique",
+        //     category: "Roadster",
+        //     images: ["./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg", "./img/models/cfmoto/CF-MOTO-300NK/2.webp", "./img/models/cfmoto/CF-MOTO-300NK/3.webp", "./img/models/cfmoto/CF-MOTO-300NK/4.webp"],
+        //     price: 34100,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre",
-    //             cylindree: 800,
-    //             puissance: 95,
-    //             coupleMaximal: 87,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 200,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "800MT Explore",
-    //         fuelType: "Thermique",
-    //         category: "Trail",
-    //         images: ["./img/models/cfmoto/CF-MOTO-800MT-Explore/3.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/CF-MOTO-800MT-Explore.jpg", "./img/models/cfmoto/CF-MOTO-800MT-Explore/2.webp", "./img/models/cfmoto/CF-MOTO-800MT-Explore/4.webp"],
-    //         price: 80920,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 4 temps",
+        //         cylindree: 300,
+        //         puissance: 27,
+        //         coupleMaximal: 25,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 139,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "675SR-R",
+        //     fuelType: "Thermique",
+        //     category: "Sportive",
+        //     images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg", "./img/models/cfmoto/CF-MOTO-675SR-R/2.webp", "./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
+        //     price: 53450,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4temps",
-    //             cylindree: 800,
-    //             puissance: 91,
-    //             coupleMaximal: 75,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 200,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "700MT",
-    //         fuelType: "Thermique",
-    //         category: "Trail",
-    //         images: ["./img/models/cfmoto/CF-MOTO-700MT/3.webp", "./img/models/cfmoto/CF-MOTO-700MT/CF-MOTO-700MT.jpg", "./img/models/cfmoto/CF-MOTO-700MT/2.webp", "./img/models/cfmoto/CF-MOTO-700MT/4.webp"],
-    //         price: 58650,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "3 Cylindre, 4 temps",
+        //         cylindree: 675,
+        //         puissance: 70,
+        //         coupleMaximal: 70,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 230,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Double Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        {
+            name: "450SR-S",
+            fuelType: "Thermique",
+            category: "Sportive",
+            images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png", "./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
+            price: 45250,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4temps",
-    //             cylindree: 700,
-    //             puissance: 66,
-    //             coupleMaximal: 60,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 190,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "X SPORT",
-    //         fuelType: "Thermique",
-    //         category: "Roadster",
-    //         images: ["./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/4.webp", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/CF-MOTO-700CL-X-SPORT.jpg", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/2.avif", "./img/models/cfmoto/CF-MOTO-700CL-X-SPORT/3.webp"],
-    //         price: 61400,
-    //         currency: "DT",
+            specs: {
+                typeMoteur: "Bicylindre, 4temps",
+                cylindree: 450,
+                puissance: 48,
+                coupleMaximal: 39,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale: 180,
+                autonomie: null,
+                alimentation: "Injection",
+                freinage: "Disque/Disque ",
+                systemeFreinage: "ABS",
+            }
+        },
+        // {
+        //     name: "150SC",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg", "./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
+        //     price: 16500,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4temps",
-    //             cylindree: 700,
-    //             puissance: 70,
-    //             coupleMaximal: 68,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 190,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "450CL-C",
-    //         fuelType: "Thermique",
-    //         category: "Custom",
-    //         images: ["./img/models/cfmoto/CF-MOTO-450CL-C/2.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/CF-MOTO-450CL-C.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C/3.jpeg", "./img/models/cfmoto/CF-MOTO-450CL-C//4.jpg"],
-    //         price: 57800,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Monocylindre, 2 soupapes",
+        //         cylindree: 150,
+        //         puissance: 14,
+        //         coupleMaximal: 14.2,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 110,
+        //         autonomie: null,
+        //         alimentation: "Injection",
+        //         freinage: "Disque/Disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "CX-5E",
+        //     fuelType: "Electrique",
+        //     category: "Motocross",
+        //     images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg", "./img/models/cfmoto/CF-MOTO-CX-5E/3.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
+        //     price: 10600,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Bicylindre",
-    //             cylindree: 450,
-    //             puissance: 43,
-    //             coupleMaximal: 42,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 160,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "C-BOBER",
-    //         fuelType: "Thermique",
-    //         category: "Custom",
-    //         images: ["./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/3.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/CF-MOTO-450CL-C-BOBER.jpg", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/2.webp", "./img/models/cfmoto/CF-MOTO-450CL-C-BOBER/4.webp"],
-    //         price: 49950,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Bicylindre",
-    //             cylindree: 450,
-    //             puissance: 40,
-    //             coupleMaximal: 42,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 160,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "125NK",
-    //         fuelType: "Thermique",
-    //         category: "Roadster",
-    //         images: ["./img/models/cfmoto/CF-MOTO-125NK/CF-MOTO-125NK.jpg", "./img/models/cfmoto/CF-MOTO-125NK/2.webp", "./img/models/cfmoto/CF-MOTO-125NK/3.webp", "./img/models/cfmoto/CF-MOTO-125Nk/4.jpg"],
-    //         price: 14850,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4 temps",
-    //             cylindree: 125,
-    //             puissance: 15,
-    //             coupleMaximal: 11,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 110,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "800NK Advanced",
-    //         fuelType: "Thermique",
-    //         category: "Roadster",
-    //         images: ["./img/models/cfmoto/CF-MOTO-800NK-Advanced/2.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/CF-MOTO-800NK-Advanced.jpg", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/3.webp", "./img/models/cfmoto/CF-MOTO-800NK-Advanced/4.webp"],
-    //         price: 59500,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4temps",
-    //             cylindree: 800,
-    //             puissance: 95,
-    //             coupleMaximal: 81,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 220,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "300NK",
-    //         fuelType: "Thermique",
-    //         category: "Roadster",
-    //         images: ["./img/models/cfmoto/CF-MOTO-300NK/CF-MOTO-300NK.jpg", "./img/models/cfmoto/CF-MOTO-300NK/2.webp", "./img/models/cfmoto/CF-MOTO-300NK/3.webp", "./img/models/cfmoto/CF-MOTO-300NK/4.webp"],
-    //         price: 34100,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4 temps",
-    //             cylindree: 300,
-    //             puissance: 27,
-    //             coupleMaximal: 25,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 139,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "675SR-R",
-    //         fuelType: "Thermique",
-    //         category: "Sportive",
-    //         images: ["./img/models/cfmoto/CF-MOTO-675SR-R/CF-MOTO-675SR-R.jpg", "./img/models/cfmoto/CF-MOTO-675SR-R/2.webp", "./img/models/cfmoto/CF-MOTO-675SR-R/3.webp"],
-    //         price: 53450,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "3 Cylindre, 4 temps",
-    //             cylindree: 675,
-    //             puissance: 70,
-    //             coupleMaximal: 70,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 230,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Double Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "450SR-S",
-    //         fuelType: "Thermique",
-    //         category: "Sportive",
-    //         images: ["./img/models/cfmoto/CF-MOTO-450SR-S/1.png", "./img/models/cfmoto/CF-MOTO-450SR-S/4.webp"],
-    //         price: 39500,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Bicylindre, 4temps",
-    //             cylindree: 450,
-    //             puissance: 48,
-    //             coupleMaximal: 39,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 180,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "150SC",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/cfmoto/CF-MOTO-150SC/1.jpg", "./img/models/cfmoto/CF-MOTO-150SC/2.jpg", "./img/models/cfmoto/CF-MOTO-150SC/3.jpeg", "./img/models/cfmoto/CF-MOTO-150SC/4.jpeg"],
-    //         price: 16500,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 2 soupapes",
-    //             cylindree: 150,
-    //             puissance: 14,
-    //             coupleMaximal: 14.2,
-    //             refroidissement: "Liquide",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 110,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
-    //     {
-    //         name: "CX-5E",
-    //         fuelType: "Electrique",
-    //         category: "Motocross",
-    //         images: ["./img/models/cfmoto/CF-MOTO-CX-5E/2.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/CF-MOTO-CX-5E.jpg", "./img/models/cfmoto/CF-MOTO-CX-5E/3.webp", "./img/models/cfmoto/CF-MOTO-CX-5E/4.webp"],
-    //         price: 10600,
-    //         currency: "DT",
-
-    //         specs: {
-    //             typeMoteur: "Électrique",
-    //             cylindree: null,
-    //             puissance: 1.3,
-    //             coupleMaximal: 7,
-    //             refroidissement: "",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 46,
-    //             autonomie: 50,
-    //             alimentation: "",
-    //             freinage: "",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    // ],
+        //     specs: {
+        //         typeMoteur: "Électrique",
+        //         cylindree: null,
+        //         puissance: 1.3,
+        //         coupleMaximal: 7,
+        //         refroidissement: "",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 46,
+        //         autonomie: 50,
+        //         alimentation: "",
+        //         freinage: "",
+        //         systemeFreinage: "",
+        //     }
+        // },
+    ],
     // ZIMOTA: [
     //     // {
     //     //     name: "Vision 125",
@@ -1238,296 +1392,298 @@ const modelsData = {
     //         }
     //     },
     // ],
-    SYM: [
-        {
-            name: "SYMPHONY SR",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/5.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
-            price: 6200,
-            currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 11.4,
-                coupleMaximal: 10.3,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 99,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "SYMPHONY S",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg", "./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
-            price: 5900,
-            currency: "DT",
+    // SYM: [
+    //     {
+    //         name: "SYMPHONY SR",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/3.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/5.webp", "./img/models/sym/sym-symphony-sr-125-cbs-125cc-blanc-noir/sym-symphony-sr-125-cbs-125cc-blanc-noir.jpg"],
+    //         price: 6200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "SYMPHONY ST",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/2.png", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/3.png"],
-            price: 8000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 11.4,
+    //             coupleMaximal: 10.3,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 99,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "SYMPHONY S",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-symphony-s-125-blanc/sym-symphony-s-125-blanc.jpg", "./img/models/sym/sym-symphony-s-125-blanc/2.jpg"],
+    //         price: 5900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "CBS",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque",
+    //             systemeFreinage: "",
+    //         }
+    //     },
+    //     {
+    //         name: "SYMPHONY ST",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/sym-symphony-st-125-cbs-e5-injection-noir.jpg", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/2.png", "./img/models/sym/sym-symphony-st-125-cbs-e5-injection-noir/3.png"],
+    //         price: 8000,
+    //         currency: "DT",
 
-        {
-            name: "SYMPHONY ST",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
-            price: 14000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: null,
+    //             coupleMaximal: null,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 200,
-                puissance: 12.2,
-                coupleMaximal: 12.5,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "JET 4 RX",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/2.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/3.png", "./img/models/sym/sym-jet-4-rx-124-gris/4.png"],
-            price: 6200,
-            currency: "DT",
+    //     {
+    //         name: "SYMPHONY ST",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/sym-symphony-st-200-abs-e5-200cc-injection-bleu.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/2.jpg", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/3.webp", "./img/models/sym/sym-symphony-st-200-abs-e5-200cc-injection-bleu/4.jpg"],
+    //         price: 14000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 10.2,
-                coupleMaximal: 9.2,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque/Tambour ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "FIDDLE II EFI",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-fiddle-ii-efi/sym-fiddle-ii-efi.jpg", "./img/models/sym/sym-fiddle-ii-efi/2.jpg", "./img/models/sym/sym-fiddle-ii-efi/3.jpeg"],
-            price: 5850,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 200,
+    //             puissance: 12.2,
+    //             coupleMaximal: 12.5,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 110,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "ABS",
+    //         }
+    //     },
+    //     {
+    //         name: "JET 4 RX",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-jet-4-rx-124-gris/sym-jet-4-rx-124-gris.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/2.jpg", "./img/models/sym/sym-jet-4-rx-124-gris/3.png", "./img/models/sym/sym-jet-4-rx-124-gris/4.png"],
+    //         price: 6200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre, 4T",
-                cylindree: 125,
-                puissance: 8,
-                coupleMaximal: 8.6,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 90,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Tambour",
-                systemeFreinage: "",
-            }
-        },
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 10.2,
+    //             coupleMaximal: 9.2,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque/Tambour ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "FIDDLE II EFI",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-fiddle-ii-efi/sym-fiddle-ii-efi.jpg", "./img/models/sym/sym-fiddle-ii-efi/2.jpg", "./img/models/sym/sym-fiddle-ii-efi/3.jpeg"],
+    //         price: 5850,
+    //         currency: "DT",
 
-        {
-            name: "FIDDLE 4",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg", "./img/models/sym/fiddle4/4.jpg"],
-            price: 7200,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre, 4T",
+    //             cylindree: 125,
+    //             puissance: 8,
+    //             coupleMaximal: 8.6,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 90,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Tambour",
+    //             systemeFreinage: "",
+    //         }
+    //     },
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 11.7,
-                coupleMaximal: 11,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 105,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "Orbit II",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp", "./img/models/sym/orbit2/3.jpeg"],
-            price: 4900,
-            currency: "DT",
+    //     {
+    //         name: "FIDDLE 4",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/fiddle4/1.jpg", "./img/models/sym/fiddle4/2.jpg", "./img/models/sym/fiddle4/3.jpg", "./img/models/sym/fiddle4/4.jpg"],
+    //         price: 7200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 8.8,
-                coupleMaximal: 8.3,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: 95,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "Disque / Tambour ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "ADX",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg", "./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
-            price: 24000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: 11.7,
+    //             coupleMaximal: 11,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 105,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "ABS",
+    //         }
+    //     },
+    //     {
+    //         name: "Orbit II",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/orbit2/1.jpg", "./img/models/sym/orbit2/2.webp", "./img/models/sym/orbit2/3.jpeg"],
+    //         price: 4900,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre – 4 T - Injection",
-                cylindree: 278,
-                puissance: 19,
-                coupleMaximal: 26,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 145,
-                autonomie: null,
-                alimentation: "Injection",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "Husky",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg", "./img/models/sym/sym-husky/4.jpg"],
-            price: 16000,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps",
+    //             cylindree: 125,
+    //             puissance: 8.8,
+    //             coupleMaximal: 8.3,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 95,
+    //             autonomie: null,
+    //             alimentation: "Carburateur",
+    //             freinage: "Disque / Tambour ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "ADX",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/ADX-300CC-injection-ABS/1.jpg", "./img/models/sym/ADX-300CC-injection-ABS/2.jpg", "./img/models/sym/ADX-300CC-injection-ABS/3.jpg", "./img/models/sym/ADX-300CC-injection-ABS/4.jpg"],
+    //         price: 24000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre 4 temps 4 soupapes",
-                cylindree: 175,
-                puissance: 14.7,
-                coupleMaximal: 14.5,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 110,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "JET X",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/jet-x-125/jet-x-125-1.jpeg", "./img/models/sym/jet-x-125/jet-x-125-2.jpg", "./img/models/sym/jet-x-125/jet-x-125-3.jpg", "./img/models/sym/jet-x-125/jet-x-125-4.jpg"],
-            price: 9300,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre – 4 T - Injection",
+    //             cylindree: 278,
+    //             puissance: 19,
+    //             coupleMaximal: 26,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 145,
+    //             autonomie: null,
+    //             alimentation: "Injection",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "ABS",
+    //         }
+    //     },
+    //     {
+    //         name: "Husky",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/sym-husky/1.webp", "./img/models/sym/sym-husky/2.png", "./img/models/sym/sym-husky/3.jpeg", "./img/models/sym/sym-husky/4.jpg"],
+    //         price: 16000,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre – 4T – Injection",
-                cylindree: 124.6,
-                puissance: 12,
-                coupleMaximal: null,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection",
-                freinage: "Disque/Disque ",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "NHX",
-            fuelType: "Thermique",
-            category: "Roadster",
-            images: ["./img/models/sym/nhx/2.jpg", "./img/models/sym/nhx/3.jpg", "./img/models/sym/nhx/4.jpg", "./img/models/sym/nhx/5.jpg"],
-            price: 8200,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre 4 temps 4 soupapes",
+    //             cylindree: 175,
+    //             puissance: 14.7,
+    //             coupleMaximal: 14.5,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: 110,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "ABS",
+    //         }
+    //     },
+    //     {
+    //         name: "JET X",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/jet-x-125/jet-x-125-1.jpeg", "./img/models/sym/jet-x-125/jet-x-125-2.jpg", "./img/models/sym/jet-x-125/jet-x-125-3.jpg", "./img/models/sym/jet-x-125/jet-x-125-4.jpg"],
+    //         price: 9300,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre – 4T",
-                cylindree: 124,
-                puissance: 10,
-                coupleMaximal: 9.3,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection",
-                freinage: "Disque/ Disque",
-                systemeFreinage: "CBS",
-            }
-        },
-        {
-            name: "JET 14 EVO",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/sym/evo/1.jpg", "./img/models/sym/evo/2.jpeg", "./img/models/sym/evo/3.jpeg", "./img/models/sym/evo/4.jpeg"],
-            price: 8900,
-            currency: "DT",
+    //         specs: {
+    //             typeMoteur: "Monocylindre – 4T – Injection",
+    //             cylindree: 124.6,
+    //             puissance: 12,
+    //             coupleMaximal: null,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Injection",
+    //             freinage: "Disque/Disque ",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "NHX",
+    //         fuelType: "Thermique",
+    //         category: "Roadster",
+    //         images: ["./img/models/sym/nhx/2.jpg", "./img/models/sym/nhx/3.jpg", "./img/models/sym/nhx/4.jpg", "./img/models/sym/nhx/5.jpg"],
+    //         price: 8200,
+    //         currency: "DT",
 
-            specs: {
-                typeMoteur: "Monocylindre – 4T",
-                cylindree: 125,
-                puissance: 12.6,
-                coupleMaximal: 11.5,
-                refroidissement: "Liquide",
-                tankCapacity: 7.2,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/ Disque",
-                systemeFreinage: "CBS",
-            }
-        },
-    ],
+    //         specs: {
+    //             typeMoteur: "Monocylindre – 4T",
+    //             cylindree: 124,
+    //             puissance: 10,
+    //             coupleMaximal: 9.3,
+    //             refroidissement: "A air",
+    //             tankCapacity: null,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Injection",
+    //             freinage: "Disque/ Disque",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    //     {
+    //         name: "JET 14 EVO",
+    //         fuelType: "Thermique",
+    //         category: "Scooter",
+    //         images: ["./img/models/sym/evo/1.jpg", "./img/models/sym/evo/2.jpeg", "./img/models/sym/evo/3.jpeg", "./img/models/sym/evo/4.jpeg"],
+    //         price: 8900,
+    //         currency: "DT",
+
+    //         specs: {
+    //             typeMoteur: "Monocylindre – 4T",
+    //             cylindree: 125,
+    //             puissance: 12.6,
+    //             coupleMaximal: 11.5,
+    //             refroidissement: "Liquide",
+    //             tankCapacity: 7.2,
+    //             vitesseMaximale: null,
+    //             autonomie: null,
+    //             alimentation: "Injection électronique",
+    //             freinage: "Disque/ Disque",
+    //             systemeFreinage: "CBS",
+    //         }
+    //     },
+    // ],
+
     // FORZA_MOTOR_SPORT: [
 
 
@@ -2432,29 +2588,29 @@ const modelsData = {
             }
         },
     ],
-    // KYMCO: [
-    //     {
-    //         name: "People S",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg", "./img/models/kymco/kymco-people-s-125i-abs/2.jfif", "./img/models/kymco/kymco-people-s-125i-abs/3.jpg", "./img/models/kymco/kymco-people-s-125i-abs/4.png"],
-    //         price: 10600,
-    //         currency: "DT",
+    KYMCO: [
+        {
+            name: "People S",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/kymco/kymco-people-s-125i-abs/kymco-people-s-125i-abs.jpg", "./img/models/kymco/kymco-people-s-125i-abs/2.jfif", "./img/models/kymco/kymco-people-s-125i-abs/3.jpg", "./img/models/kymco/kymco-people-s-125i-abs/4.png"],
+            price: 10600,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocilyndre, 4 temps",
-    //             cylindree: 125,
-    //             puissance: "8,3 Kw",
-    //             coupleMaximal: "10 Nm",
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: "",
-    //             autonomie: null,
-    //             alimentation: "injection",
-    //             freinage: "Disque/Tambour ",
-    //             systemeFreinage: "ABS",
-    //         }
-    //     },
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 125,
+                puissance: "8,3 Kw",
+                coupleMaximal: "10 Nm",
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: "",
+                autonomie: null,
+                alimentation: "injection",
+                freinage: "Disque/Tambour ",
+                systemeFreinage: "ABS",
+            }
+        },
 
     //     {
     //         name: "like",
@@ -2478,29 +2634,29 @@ const modelsData = {
     //             systemeFreinage: "cbs",
     //         }
     //     },
-    //     {
-    //         name: "Dink R",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/3.png", "./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
-    //         price: 11700,
-    //         currency: "DT",
+        {
+            name: "Dink R",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/kymco/kymco-drink-r-125-tunnel/kymco-drink-r-125-tunnel.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/2.jpg", "./img/models/kymco/kymco-drink-r-125-tunnel/3.png", "./img/models/kymco/kymco-drink-r-125-tunnel/4.jpeg"],
+            price: 11700,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocilyndre, 4 temps",
-    //             cylindree: 125,
-    //             puissance: 10.8,
-    //             coupleMaximal: 10.6,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: null,
-    //             autonomie: null,
-    //             alimentation: "Injection",
-    //             freinage: "Disque/Disque",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    // ],
+            specs: {
+                typeMoteur: "Monocilyndre, 4 temps",
+                cylindree: 125,
+                puissance: 10.8,
+                coupleMaximal: 10.6,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection",
+                freinage: "Disque/Disque",
+                systemeFreinage: "",
+            }
+        },
+    ],
     // UNISCOOT: [
     //     {
     //         name: "TIGER",
@@ -2681,32 +2837,32 @@ const modelsData = {
     // ],
     ZONTES: [
 
-        {
-            name: "703 F",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/zontes/zontes-703f-2025/2.webp", "./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp", "./img/models/zontes/zontes-703f-2025/3.jpeg", "./img/models/zontes/zontes-703f-2025/4.webp"],
-            price: null,
-            specs: {
-                typeMoteur: "Trois Cylindres 4T",
-                cylindree: 700,
-                puissance: 95,
-                coupleMaximal: 76,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 200,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque / Disque",
-                systemeFreinage: "",
-            }
-        },
+        // {
+        //     name: "703 F",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/zontes/zontes-703f-2025/2.webp", "./img/models/zontes/zontes-703f-2025/zontes-703f-2025.webp", "./img/models/zontes/zontes-703f-2025/3.jpeg", "./img/models/zontes/zontes-703f-2025/4.webp"],
+        //     price: null,
+        //     specs: {
+        //         typeMoteur: "Trois Cylindres 4T",
+        //         cylindree: 700,
+        //         puissance: 95,
+        //         coupleMaximal: 76,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 200,
+        //         autonomie: null,
+        //         alimentation: "Injection électronique",
+        //         freinage: "Disque / Disque",
+        //         systemeFreinage: "",
+        //     }
+        // },
         {
             name: "368G ADV",
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/zontes/zontes-368g-adv-368cc/zontes-1.jpeg", "./img/models/zontes/zontes-368g-adv-368cc/zontes-2.jpeg", "./img/models/zontes/zontes-368g-adv-368cc/zontes-3.jpeg", "./img/models/zontes/zontes-368g-adv-368cc/zontes-4.jpeg"],
-            price: null,
+            price: 35000,
             specs: {
                 typeMoteur: "Monocylindre 4T",
                 cylindree: 368,
@@ -2885,50 +3041,50 @@ const modelsData = {
     //             systemeFreinage: "ABS",
     //         }
     //     },
-    //     {
-    //         name: "POWER 110",
-    //         fuelType: "Thermique",
-    //         category: "Mobylette",
-    //         images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
-    //         price: 2800,
-    //         currency: "DT",
+    //     // {
+    //     //     name: "POWER 110",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Mobylette",
+    //     //     images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
+    //     //     price: 2800,
+    //     //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4T",
-    //             cylindree: 110,
-    //             puissance: null,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: null,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque/Tambour",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    //     {
-    //         name: "POWER 125",
-    //         fuelType: "Thermique",
-    //         category: "Mobylette",
-    //         images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
-    //         price: 3000,
-    //         currency: "DT",
+    //     //     specs: {
+    //     //         typeMoteur: "Monocylindre, 4T",
+    //     //         cylindree: 110,
+    //     //         puissance: null,
+    //     //         coupleMaximal: null,
+    //     //         refroidissement: "A air",
+    //     //         tankCapacity: null,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Carburateur",
+    //     //         freinage: "Disque/Tambour",
+    //     //         systemeFreinage: "",
+    //     //     }
+    //     // },
+    //     // {
+    //     //     name: "POWER 125",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Mobylette",
+    //     //     images: ["./img/models/kim/power/power-1.webp", "./img/models/kim/power/power-2.webp", "./img/models/kim/power/power-3.webp", "./img/models/kim/power/power-4.webp"],
+    //     //     price: 3000,
+    //     //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre, 4T",
-    //             cylindree: 125,
-    //             puissance: null,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: null,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque/Tambour",
-    //             systemeFreinage: "",
-    //         }
-    //     },
+    //     //     specs: {
+    //     //         typeMoteur: "Monocylindre, 4T",
+    //     //         cylindree: 125,
+    //     //         puissance: null,
+    //     //         coupleMaximal: null,
+    //     //         refroidissement: "A air",
+    //     //         tankCapacity: null,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Carburateur",
+    //     //         freinage: "Disque/Tambour",
+    //     //         systemeFreinage: "",
+    //     //     }
+    //     // },
     //     {
     //         name: "PISTA HR",
     //         fuelType: "Thermique",
@@ -3019,143 +3175,165 @@ const modelsData = {
     //             systemeFreinage: "CBS",
     //         }
     //     },
+    //     // {
+    //     //     name: "Blaster",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Scooter",
+    //     //     images: ["./img/models/kim/blaster-125i/blaster-1.png", "./img/models/kim/blaster-125i/blaster-2.png", "./img/models/kim/blaster-125i/blaster-125i-1.jpg", "./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
+    //     //     price: 6900,
+    //     //     currency: "DT",
+
+    //     //     specs: {
+    //     //         typeMoteur: "Monocylindre, 4T",
+    //     //         cylindree: 125,
+    //     //         puissance: 11,
+    //     //         coupleMaximal: null,
+    //     //         refroidissement: "Liquide",
+    //     //         tankCapacity: null,
+    //     //         vitesseMaximale: 105,
+    //     //         autonomie: null,
+    //     //         alimentation: "Injection électronique",
+    //     //         freinage: "Disque/Disque",
+    //     //         systemeFreinage: "CBS",
+    //     //     }
+    //     // },
+
+    // ],
+    // QJMOTOR: [
+    //     // //  {
+    //     // //     name: "FORT 125 N",
+    //     // //     fuelType: "Thermique",
+    //     // //     category: "Scooter",
+    //     // //     images: ["./img/models/qjmotor/fort125/4.webp", "./img/models/qjmotor/fort125/2.webp", "./img/models/qjmotor/fort125/3.webp", "./img/models/qjmotor/fort125/1.webp"],
+    //     // //     price: null,
+    //     // //     currency: "DT",
+
+    //     // //     specs: {
+    //     // //         typeMoteur: "Monocylindre, 4T",
+    //     // //         cylindree: 125,
+    //     // //         puissance: 15,
+    //     // //         coupleMaximal: 12,
+    //     // //         refroidissement: "Liquide",
+    //     // //         tankCapacity: 11.7,
+    //     // //         vitesseMaximale: null,
+    //     // //         autonomie: null,
+    //     // //         alimentation: "Injection électronique",
+    //     // //         freinage: "Disque/Disque",
+    //     // //         systemeFreinage: "ABS",
+    //     // //     }
+    //     // // },
+    //     // {
+    //     //     name: "SRT900sx",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Trail",
+    //     //     images: ["./img/models/qjmotor/SX/1.webp", "./img/models/qjmotor/SX/2.webp", "./img/models/qjmotor/SX/3.webp", "./img/models/qjmotor/SX/4.webp"],
+    //     //     price: null,
+    //     //     currency: "DT",
+
+    //     //     specs: {
+    //     //         typeMoteur: "Bicylindre",
+    //     //         cylindree: 900,
+    //     //         puissance: 95,
+    //     //         coupleMaximal: 90,
+    //     //         refroidissement: "Liquide",
+    //     //         tankCapacity: 24,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Injection électronique",
+    //     //         freinage: "2 Disques/Disque",
+    //     //         systemeFreinage: "ABS",
+    //     //     }
+    //     // },
+    //     // {
+    //     //     name: "SRT450rx",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Trail",
+    //     //     images: ["./img/models/qjmotor/RX/2.webp", "./img/models/qjmotor/RX/1.webp", "./img/models/qjmotor/RX/3.webp", "./img/models/qjmotor/RX/4.webp"],
+    //     //     price: null,
+    //     //     currency: "DT",
+
+    //     //     specs: {
+    //     //         typeMoteur: "Bicylindre",
+    //     //         cylindree: 450,
+    //     //         puissance: 47.5,
+    //     //         coupleMaximal: 41,
+    //     //         refroidissement: "Liquide",
+    //     //         tankCapacity: 18,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Injection électronique",
+    //     //         freinage: "Disque/Disque",
+    //     //         systemeFreinage: "ABS",
+    //     //     }
+    //     // },
+    //     // {
+    //     //     name: "SQ-16",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Scooter",
+    //     //     images: ["./img/models/qjmotor/sq16/1.webp", "./img/models/qjmotor/sq16/2.webp", "./img/models/qjmotor/sq16/3.webp", "./img/models/qjmotor/sq16/4.webp"],
+    //     //     price: null,
+    //     //     currency: "DT",
+
+    //     //     specs: {
+    //     //         typeMoteur: "Monocylindre 4T",
+    //     //         cylindree: 125,
+    //     //         puissance: 15,
+    //     //         coupleMaximal: 12,
+    //     //         refroidissement: "Liquide",
+    //     //         tankCapacity: 7.8,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Injection électronique",
+    //     //         freinage: "Disque/Disque",
+    //     //         systemeFreinage: "ABS",
+    //     //     }
+    //     // },
+    //     // {
+    //     //     name: "ATR Hybrid",
+    //     //     fuelType: "Thermique",
+    //     //     category: "Scooter",
+    //     //     images: ["./img/models/qjmotor/atr/1.webp", "./img/models/qjmotor/atr/2.webp", "./img/models/qjmotor/atr/3.webp", "./img/models/qjmotor/atr/4.webp"],
+    //     //     price: null,
+    //     //     currency: "DT",
+
+    //     //     specs: {
+    //     //         typeMoteur: "Monocylindre 4T",
+    //     //         cylindree: 125,
+    //     //         puissance: 15,
+    //     //         coupleMaximal: 13.7,
+    //     //         refroidissement: "Liquide",
+    //     //         tankCapacity: 8,
+    //     //         vitesseMaximale: null,
+    //     //         autonomie: null,
+    //     //         alimentation: "Injection électronique",
+    //     //         freinage: "Disque/Disque",
+    //     //         systemeFreinage: "",
+    //     //     }
+    //     // },
     //     {
-    //         name: "Blaster",
+    //         name: "RK 125",
     //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/kim/blaster-125i/blaster-1.png", "./img/models/kim/blaster-125i/blaster-2.png", "./img/models/kim/blaster-125i/blaster-125i-1.jpg", "./img/models/kim/blaster-125i/blaster-125i-2.jpg"],
-    //         price: 6900,
+    //         category: "MOTOCUBE",
+    //         images: ["./img/models/qjmotor/rk125/1.webp", "./img/models/qjmotor/rk125/2.jpeg", "./img/models/qjmotor/rk125/3.jpeg" ],
+    //         price: 4000,
     //         currency: "DT",
 
     //         specs: {
-    //             typeMoteur: "Monocylindre, 4T",
+    //             typeMoteur: "Monocylindre 4T",
     //             cylindree: 125,
-    //             puissance: 11,
+    //             puissance: null,
     //             coupleMaximal: null,
-    //             refroidissement: "Liquide",
+    //             refroidissement: "",
     //             tankCapacity: null,
-    //             vitesseMaximale: 105,
+    //             vitesseMaximale: null,
     //             autonomie: null,
-    //             alimentation: "Injection électronique",
+    //             alimentation: "",
     //             freinage: "Disque/Disque",
     //             systemeFreinage: "CBS",
     //         }
     //     },
 
     // ],
-    QJMOTOR: [
-        //  {
-        //     name: "FORT 125 N",
-        //     fuelType: "Thermique",
-        //     category: "Scooter",
-        //     images: ["./img/models/qjmotor/fort125/4.webp", "./img/models/qjmotor/fort125/2.webp", "./img/models/qjmotor/fort125/3.webp", "./img/models/qjmotor/fort125/1.webp"],
-        //     price: null,
-        //     currency: "DT",
-
-        //     specs: {
-        //         typeMoteur: "Monocylindre, 4T",
-        //         cylindree: 125,
-        //         puissance: 15,
-        //         coupleMaximal: 12,
-        //         refroidissement: "Liquide",
-        //         tankCapacity: 11.7,
-        //         vitesseMaximale: null,
-        //         autonomie: null,
-        //         alimentation: "Injection électronique",
-        //         freinage: "Disque/Disque",
-        //         systemeFreinage: "ABS",
-        //     }
-        // },
-        {
-            name: "SRT900sx",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/qjmotor/SX/1.webp", "./img/models/qjmotor/SX/2.webp", "./img/models/qjmotor/SX/3.webp", "./img/models/qjmotor/SX/4.webp"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Bicylindre",
-                cylindree: 900,
-                puissance: 95,
-                coupleMaximal: 90,
-                refroidissement: "Liquide",
-                tankCapacity: 24,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "2 Disques/Disque",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "SRT450rx",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/qjmotor/RX/2.webp", "./img/models/qjmotor/RX/1.webp", "./img/models/qjmotor/RX/3.webp", "./img/models/qjmotor/RX/4.webp"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Bicylindre",
-                cylindree: 450,
-                puissance: 47.5,
-                coupleMaximal: 41,
-                refroidissement: "Liquide",
-                tankCapacity: 18,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "SQ-16",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/qjmotor/sq16/1.webp", "./img/models/qjmotor/sq16/2.webp", "./img/models/qjmotor/sq16/3.webp", "./img/models/qjmotor/sq16/4.webp"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 125,
-                puissance: 15,
-                coupleMaximal: 12,
-                refroidissement: "Liquide",
-                tankCapacity: 7.8,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "ATR Hybrid",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/qjmotor/atr/1.webp", "./img/models/qjmotor/atr/2.webp", "./img/models/qjmotor/atr/3.webp", "./img/models/qjmotor/atr/4.webp"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4T",
-                cylindree: 125,
-                puissance: 15,
-                coupleMaximal: 13.7,
-                refroidissement: "Liquide",
-                tankCapacity: 8,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "Disque/Disque",
-                systemeFreinage: "",
-            }
-        },
-
-    ],
     // WOLF: [
     //     {
     //         name: "VERO",
@@ -4232,28 +4410,7 @@ const modelsData = {
     //     },
     // ],
     GSM: [
-        {
-            name: "FORZA Moteur Shineray",
-            fuelType: "Thermique",
-            category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza6.webp"],
-            price: 3050,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "monocylindre 4 temps",
-                cylindree: null,
-                puissance: null,
-                coupleMaximal: null,
-                refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Carburateur",
-                freinage: "",
-                systemeFreinage: "",
-            }
-        },
+       
         {
             name: "Super Frigate ",
             fuelType: "Thermique",
@@ -4304,7 +4461,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/gsm/mbx/mbx1.webp", "./img/models/gsm/mbx/mbx2.webp", "./img/models/gsm/mbx/mbx3.webp", "./img/models/gsm/mbx/mbx4.webp"],
-            price: 6000,
+            price: 6200,
             currency: "DT",
 
             specs: {
@@ -4328,10 +4485,10 @@ const modelsData = {
     FORZA: [
      
         {
-            name: "110 Analogique Frein Pied ",
+            name: "110 Frein Pied     Compteur Analogique  ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp"],
+            images: ["./img/models/gsm/forza/forza3.webp"],
             price: 2850,
             currency: "DT",
 
@@ -4350,10 +4507,10 @@ const modelsData = {
             }
         },
         {
-            name: "110 Digital Led Frein Pied ",
+            name: "110 Frein Pied  Digital Led ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
+            images: ["./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 2950,
             currency: "DT",
 
@@ -4372,10 +4529,10 @@ const modelsData = {
             }
         },
         {
-            name: "110 Digital Led Frein Main ",
+            name: "110 Frein Main Digital Led  ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
+            images: ["./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3050,
             currency: "DT",
 
@@ -4394,10 +4551,10 @@ const modelsData = {
             }
         },
         {
-            name: "125 Digital Led Frein Pied ",
+            name: "125 Frein Pied  Digital Led ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
+            images: ["./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3050,
             currency: "DT",
 
@@ -4416,10 +4573,10 @@ const modelsData = {
             }
         },
         {
-            name: "125 Digital Led Frein Main ",
+            name: "125 Frein Main Digital Led ",
             fuelType: "Thermique",
             category: "Mobylette",
-            images: ["./img/models/gsm/forza/forza1.webp", "./img/models/gsm/forza/forza2.webp", "./img/models/gsm/forza/forza3.webp", "./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza5.webp", "./img/models/gsm/forza/forza7.webp"],
+            images: ["./img/models/gsm/forza/forza4.webp", "./img/models/gsm/forza/forza7.webp"],
             price: 3150,
             currency: "DT",
 
@@ -4448,7 +4605,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/gsm/tennis/tennis3.webp", "./img/models/gsm/tennis/tennis2.webp", "./img/models/gsm/tennis/tennis4.webp"],
-            price: 5300,
+            price: 5200,
             currency: "DT",
 
             specs: {
@@ -4843,7 +5000,7 @@ const modelsData = {
     //     },
 
     // ],
-    VOGE: [
+    // VOGE: [
 
         // {
         //     name: "SR3",
@@ -4888,27 +5045,27 @@ const modelsData = {
         //     }
         // },
 
-        {
-            name: "DS800X Rally",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/voge/ds800/1.webp", "./img/models/voge/ds800/2.webp", "./img/models/voge/ds800/3.webp", "./img/models/voge/ds800/4.webp"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Bicylindre en ligne",
-                cylindree: 800,
-                puissance: 94,
-                coupleMaximal: 81,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 190,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "2 disque AV/disque AR ",
-                systemeFreinage: "ABS",
-            }
-        },
+        // {
+        //     name: "DS800X Rally",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/voge/ds800/1.webp", "./img/models/voge/ds800/2.webp", "./img/models/voge/ds800/3.webp", "./img/models/voge/ds800/4.webp"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Bicylindre en ligne",
+        //         cylindree: 800,
+        //         puissance: 94,
+        //         coupleMaximal: 81,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 190,
+        //         autonomie: null,
+        //         alimentation: "Injection électronique",
+        //         freinage: "2 disque AV/disque AR ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
         // {
         //     name: "SR4 Max",
         //     fuelType: "Thermique",
@@ -4930,72 +5087,72 @@ const modelsData = {
         //         systemeFreinage: "ABS",
         //     }
         // },
-        {
-            name: "SR16",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/voge/sr16/1.png", "./img/models/voge/sr16/2.png", "./img/models/voge/sr16/3.png", "./img/models/voge/sr16/4.jpg"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: 11,
-                refroidissement: "",
-                tankCapacity: null,
-                vitesseMaximale: 97,
-                autonomie: null,
-                alimentation: "",
-                freinage: "disque/disque",
-                systemeFreinage: "",
-            }
-        },
-        {
-            name: "SR ADV",
-            fuelType: "Thermique",
-            category: "Scooter",
-            images: ["./img/models/voge/sr-adv/1.png", "./img/models/voge/sr-adv/2.png", "./img/models/voge/sr-adv/3.png", "./img/models/voge/sr-adv/4.webp"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 125,
-                puissance: 10,
-                coupleMaximal: 11,
-                refroidissement: "Liquide",
-                tankCapacity: null,
-                vitesseMaximale: 115,
-                autonomie: null,
-                alimentation: "",
-                freinage: "disque/disque ",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "DS625X",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/voge/ds625x/1.jpg", "./img/models/voge/ds625x/2.jpg", "./img/models/voge/ds625x/3.jpg", "./img/models/voge/ds625x/4.jpg"],
-            price: null,
-            currency: "DT", // En arrivage,
-            specs: {
-                typeMoteur: "Bicylindre",
-                cylindree: 581,
-                puissance: 63,
-                coupleMaximal: 47,
-                refroidissement: "Liquide",
-                tankCapacity: 17.6,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique",
-                freinage: "double disque/disque ",
-                systemeFreinage: "ABS",
-            }
-        },
+        // {
+        //     name: "SR16",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/voge/sr16/1.png", "./img/models/voge/sr16/2.png", "./img/models/voge/sr16/3.png", "./img/models/voge/sr16/4.jpg"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4 temps",
+        //         cylindree: 125,
+        //         puissance: 10,
+        //         coupleMaximal: 11,
+        //         refroidissement: "",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 97,
+        //         autonomie: null,
+        //         alimentation: "",
+        //         freinage: "disque/disque",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        // {
+        //     name: "SR ADV",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/voge/sr-adv/1.png", "./img/models/voge/sr-adv/2.png", "./img/models/voge/sr-adv/3.png", "./img/models/voge/sr-adv/4.webp"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4 temps",
+        //         cylindree: 125,
+        //         puissance: 10,
+        //         coupleMaximal: 11,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 115,
+        //         autonomie: null,
+        //         alimentation: "",
+        //         freinage: "disque/disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
+        // {
+        //     name: "DS625X",
+        //     fuelType: "Thermique",
+        //     category: "Trail",
+        //     images: ["./img/models/voge/ds625x/1.jpg", "./img/models/voge/ds625x/2.jpg", "./img/models/voge/ds625x/3.jpg", "./img/models/voge/ds625x/4.jpg"],
+        //     price: null,
+        //     currency: "DT", // En arrivage,
+        //     specs: {
+        //         typeMoteur: "Bicylindre",
+        //         cylindree: 581,
+        //         puissance: 63,
+        //         coupleMaximal: 47,
+        //         refroidissement: "Liquide",
+        //         tankCapacity: 17.6,
+        //         vitesseMaximale: null,
+        //         autonomie: null,
+        //         alimentation: "Injection électronique",
+        //         freinage: "double disque/disque ",
+        //         systemeFreinage: "ABS",
+        //     }
+        // },
 
 
-    ],
+    // ],
 
     // RAPSEV: [
     //     {
@@ -5756,24 +5913,24 @@ const dealersContacts = {
 const carouselSlides = [
     {
         id: 1,
-        image_desktop: "./img/slider/jul26/desktop/1.webp",
-        image_mobile: "./img/slider/jul26/mobile/1.jpeg",
-        alt: "Banner slider SYM",
-        link: "https://www.facebook.com/SIMCC.Motorsports"
+        image_desktop: "./img/slider/aout15/desktop/1.webp",
+        image_mobile: "./img/slider/aout15/mobile/1.jpeg",
+        alt: "Banner slider ",
+        link: "#"
     },
     {
         id: 2,
-        image_desktop: "./img/slider/jul26/desktop/2.webp",
-        image_mobile: "./img/slider/jul26/mobile/2.jpeg",
-        alt: "banner QJMOTOR",
-        link: "https://www.facebook.com/SIMCC.Motorsports"
+        image_desktop: "./img/slider/aout15/desktop/2.webp",
+        image_mobile: "./img/slider/aout15/mobile/2.jpeg",
+        alt: "banner",
+        link: "#"
     },
     {
         id: 3,
-        image_desktop: "./img/slider/jul26/desktop/3.webp",
-        image_mobile: "./img/slider/jul26/mobile/3.jpeg",
-        alt: "Scooter urbain - Technologie moderne VOGUE",
-        link: "https://www.facebook.com/SIMCC.Motorsports"
+        image_desktop: "./img/slider/aout15/desktop/3.webp",
+        image_mobile: "./img/slider/aout15/mobile/3.jpeg",
+        alt: "Scooter ",
+        link: "#"
     }
 ];
 
