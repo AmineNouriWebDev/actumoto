@@ -28,7 +28,7 @@ function formatPriceHtml(price, currency = "DT") {
 
 const brands = [
     { name: "Peugeot", logo: "./img/logos-actumoto/peugeot.png?v=2" },
-    { name: "KTM", logo: "./img/logos-actumoto/ktm.png" },
+    { name: "KTM", logo: "./img/logos-actumoto/ktm.png?v=2" },
       { name: "MOTOMORINI", logo: "./img/logos-actumoto/motomorini.png" },
      
   { name: "APRILIA", logo: "./img/logos-actumoto/aprilia.png?v=2" },
