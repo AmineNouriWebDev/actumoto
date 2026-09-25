@@ -331,28 +331,7 @@ const modelsData = {
     ],
       KTM: [
 
-        {
-            name: "790 Duke",
-            fuelType: "Thermique",
-            category: "Roadster",
-             images: ["./img/models/ktm/duke/ktm1.jpg", "./img/models/ktm/duke/ktm2.jpg", "./img/models/ktm/duke/ktm5.jpg", "./img/models/ktm/duke/ktm4.jpg"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Bicylindre",
-                cylindree: 799,
-                puissance: 95,
-                coupleMaximal: 87,
-                refroidissement: "Liquide",
-                tankCapacity: 13.5,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique,",
-                freinage: "2 Disque / Disque",
-                systemeFreinage: "ABS",
-            }
-        },
+      
         {
             name: "990 Duke",
             fuelType: "Thermique",
@@ -368,6 +347,28 @@ const modelsData = {
                 coupleMaximal: 103,
                 refroidissement: "Liquide",
                 tankCapacity: 14.8,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+          {
+            name: "790 Duke",
+            fuelType: "Thermique",
+            category: "Roadster",
+             images: ["./img/models/ktm/duke/ktm1.jpg", "./img/models/ktm/duke/ktm2.jpg", "./img/models/ktm/duke/ktm5.jpg", "./img/models/ktm/duke/ktm4.jpg"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 799,
+                puissance: 95,
+                coupleMaximal: 87,
+                refroidissement: "Liquide",
+                tankCapacity: 13.5,
                 vitesseMaximale: null,
                 autonomie: null,
                 alimentation: "Injection électronique,",
@@ -397,30 +398,9 @@ const modelsData = {
                 systemeFreinage: "ABS",
             }
         },
+       
         {
-            name: "390 Adventure r",
-            fuelType: "Thermique",
-            category: "Trail",
-            images: ["./img/models/ktm/adventure390/adventure1.png", "./img/models/ktm/adventure390/adventure2.png", "./img/models/ktm/adventure390/adventure3.png", "./img/models/ktm/adventure390/adventure4.png"],
-            price: null,
-            currency: "DT",
-
-            specs: {
-                typeMoteur: "Monocylindre 4 temps",
-                cylindree: 398.7,
-                puissance: 45,
-                coupleMaximal: 39,
-                refroidissement: "Liquide",
-                tankCapacity: 14,
-                vitesseMaximale: null,
-                autonomie: null,
-                alimentation: "Injection électronique,",
-                freinage: "Disque / Disque",
-                systemeFreinage: "ABS",
-            }
-        },
-        {
-            name: "1390 Adventure r",
+            name: "1390 Adventure",
             fuelType: "Thermique",
             category: "Trail",
             images: ["./img/models/ktm/adventure1390r/adventure1.png", "./img/models/ktm/adventure1390r/adventure2.png", "./img/models/ktm/adventure1390r/adventure3.png", "./img/models/ktm/adventure1390r/adventure4.png"],
@@ -438,6 +418,28 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+         {
+            name: "390 Adventure",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/ktm/adventure390/adventure1.png", "./img/models/ktm/adventure390/adventure2.png", "./img/models/ktm/adventure390/adventure3.png", "./img/models/ktm/adventure390/adventure4.png"],
+            price: null,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 398.7,
+                puissance: 45,
+                coupleMaximal: 39,
+                refroidissement: "Liquide",
+                tankCapacity: 14,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "Disque / Disque",
                 systemeFreinage: "ABS",
             }
         },
