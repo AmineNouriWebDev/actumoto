@@ -42,7 +42,7 @@ const brands = [
    
     { name: "TEYIN", logo: "./img/logos-actumoto/teyin2.png" },
 
-
+{ name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
 
 
 { name: "SUZUKI", logo: "./img/logos-actumoto/suzuki.png?v=2" },
@@ -132,7 +132,7 @@ const brands = [
     // { name: "KAYCO", logo: "./img/logos-actumoto/kayco.png?v=2" },
 
 
-    // { name: "PHANTOM", logo: "./img/logos-actumoto/phantom.png?v=3" },
+    
     // { name: "SANYA", logo: "./img/logos-actumoto/sanya.png?v=2" },
 
    
@@ -152,6 +152,7 @@ const brands = [
     { name: "HAOJIN", logo: "./img/logos-actumoto/haojin.png?v=2" },
     { name: "GSM GOUIAA", logo: "./img/logos-actumoto/gsm.png?v=5" },
    { name: "FORZA", logo: "./img/logos-actumoto/forza.png?v=2" },
+   { name: "TUNIZNEN", logo: "./img/logos-actumoto/tuniznen.png" },
 ];
 
 const categories = [
@@ -2859,7 +2860,48 @@ const modelsData = {
         //         systemeFreinage: "",
         //     }
         // },
+   
         {
+            name: "125 G1",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/zontes/g1/g1.jpeg", "./img/models/zontes/g1/g2.jpeg", "./img/models/zontes/g1/g3.jpeg"],
+            price: null,
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: 125,
+                puissance: 14.6,
+                coupleMaximal: null,
+                refroidissement: "Liquide",
+                tankCapacity: 17,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
+            name: "125 U1",
+            fuelType: "Thermique",
+            category: "Roadster",
+            images: ["./img/models/zontes/u1/u1.jpeg", "./img/models/zontes/u1/u2.jpeg", "./img/models/zontes/u1/u3.jpeg"],
+            price: null,
+            specs: {
+                typeMoteur: "Monocylindre 4T",
+                cylindree: 125,
+                puissance: 14.6,
+                coupleMaximal: null,
+                refroidissement: "Liquide",
+                tankCapacity: 17,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+             {
             name: "368G ADV",
             fuelType: "Thermique",
             category: "Scooter",
@@ -4675,6 +4717,93 @@ const modelsData = {
         },
 
     ],
+    TUNIZNEN: [
+        {
+            name: "Catalaya  ",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/tuniznen/catalaya/4.jpeg", "./img/models/tuniznen/catalaya/2.jpg", "./img/models/tuniznen/catalaya/3.jpg", "./img/models/tuniznen/catalaya/4.jpg"],
+            price: 5200,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "Vento",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/tuniznen/vento/1.jpeg"],
+            price: 4900,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "NVX-PRO",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: [ "./img/models/tuniznen/nvx/3.jpg"],
+            price: 5300,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "BMS",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: [ "./img/models/tuniznen/BMS/1.jpeg", "./img/models/tuniznen/BMS/2.jpeg", "./img/models/tuniznen/BMS/3.jpeg", "./img/models/tuniznen/BMS/4.jpeg"],
+            price: 4200,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+
+    ],
     // SMT: [
     //     {
     //         name: "Thunder",
@@ -4885,76 +5014,98 @@ const modelsData = {
     //     },
 
     // ],
-    // PHANTOM: [
-    //     {
-    //         name: "Cuxi II",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/phantom/cuxi/cuxi-1.jpeg", "./img/models/phantom/cuxi/cuxi-2.jpeg", "./img/models/phantom/cuxi/cuxi-3.jpeg"],
-    //         price: 3450,
-    //         currency: "DT",
+    PHANTOM: [
+        // {
+        //     name: "Cuxi II",
+        //     fuelType: "Thermique",
+        //     category: "Scooter",
+        //     images: ["./img/models/phantom/cuxi/cuxi-1.jpeg", "./img/models/phantom/cuxi/cuxi-2.jpeg", "./img/models/phantom/cuxi/cuxi-3.jpeg"],
+        //     price: 3450,
+        //     currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre 4 temps",
-    //             cylindree: 106,
-    //             puissance: 7.2,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 100,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque / Tambour",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    //     {
-    //         name: "Phantom Z1",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
-    //         price: 6000,
-    //         currency: "DT",
+        //     specs: {
+        //         typeMoteur: "Monocylindre 4 temps",
+        //         cylindree: 106,
+        //         puissance: 7.2,
+        //         coupleMaximal: null,
+        //         refroidissement: "A air",
+        //         tankCapacity: null,
+        //         vitesseMaximale: 100,
+        //         autonomie: null,
+        //         alimentation: "Carburateur",
+        //         freinage: "Disque / Tambour",
+        //         systemeFreinage: "",
+        //     }
+        // },
+        {
+            name: "IMOLA",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/phantom/imola/1.jpeg", "./img/models/phantom/imola/2.jpeg", "./img/models/phantom/imola/3.jpeg", "./img/models/phantom/imola/4.jpeg"],
+            price: null,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre 4 temps",
-    //             cylindree: 125,
-    //             puissance: 10,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 100,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque / Disque",
-    //             systemeFreinage: "",
-    //         }
-    //     },
-    //     {
-    //         name: "CORAL",
-    //         fuelType: "Thermique",
-    //         category: "Scooter",
-    //         images: ["./img/models/phantom/coral/coral1.png", "./img/models/phantom/coral/coral2.png", "./img/models/phantom/coral/phantom-coral-124-3.jpg", "./img/models/phantom/coral/phantom-coral-124-4.jpg"],
-    //         price: 6000,
-    //         currency: "DT",
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 125,
+                puissance:null,
+                coupleMaximal: null,
+                refroidissement: "",
+                tankCapacity: null,
+                vitesseMaximale: null,
+                autonomie: null,
+                alimentation: "",
+                freinage: "",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "Phantom Z1",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
+            price: 6000,
+            currency: "DT",
 
-    //         specs: {
-    //             typeMoteur: "Monocylindre 4 temps",
-    //             cylindree: 125,
-    //             puissance: 10,
-    //             coupleMaximal: null,
-    //             refroidissement: "A air",
-    //             tankCapacity: null,
-    //             vitesseMaximale: 100,
-    //             autonomie: null,
-    //             alimentation: "Carburateur",
-    //             freinage: "Disque / Disque ",
-    //             systemeFreinage: "",
-    //         }
-    //     },
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 125,
+                puissance: 10,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
+                systemeFreinage: "",
+            }
+        },
+        {
+            name: "CORAL",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/phantom/coral/coral1.png", "./img/models/phantom/coral/coral2.png", "./img/models/phantom/coral/phantom-coral-124-3.jpg", "./img/models/phantom/coral/phantom-coral-124-4.jpg"],
+            price: 6000,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 125,
+                puissance: 10,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 100,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque ",
+                systemeFreinage: "",
+            }
+        },
 
 
-    // ],
+    ],
     // CFORCE: [
     //     {
     //         name: "QUAD CFORCE 450 L",
@@ -5915,22 +6066,22 @@ const dealersContacts = {
 const carouselSlides = [
     {
         id: 1,
-        image_desktop: "./img/slider/aout15/desktop/1.webp",
-        image_mobile: "./img/slider/aout15/mobile/1.jpeg",
+        image_desktop: "./img/slider/sept26/desktop/1.webp",
+        image_mobile: "./img/slider/sept26/mobile/1.jpeg",
         alt: "Banner slider ",
         link: "#"
     },
     {
         id: 2,
-        image_desktop: "./img/slider/aout15/desktop/2.webp",
-        image_mobile: "./img/slider/aout15/mobile/2.jpeg",
+        image_desktop: "./img/slider/sept26/desktop/2.webp",
+        image_mobile: "./img/slider/sept26/mobile/2.jpeg",
         alt: "banner",
         link: "#"
     },
     {
         id: 3,
-        image_desktop: "./img/slider/aout15/desktop/3.webp",
-        image_mobile: "./img/slider/aout15/mobile/3.jpeg",
+        image_desktop: "./img/slider/sept26/desktop/3.webp",
+        image_mobile: "./img/slider/sept26/mobile/3.jpeg",
         alt: "Scooter ",
         link: "#"
     }
