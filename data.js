@@ -187,7 +187,7 @@ const modelsData = {
                 puissance: 10.6,
                 coupleMaximal: 9.3,
                 refroidissement: "Air",
-                tankCapacity: null,
+                tankCapacity: 8,
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Injection électronique,",
@@ -209,7 +209,7 @@ const modelsData = {
                 puissance: 11.5,
                 coupleMaximal: 10.3,
                 refroidissement: "Air",
-                tankCapacity: null,
+                tankCapacity: 5.5,
                 vitesseMaximale: 105,
                 autonomie: null,
                 alimentation: "Injection électronique",
@@ -231,7 +231,7 @@ const modelsData = {
                 puissance: 8.6,
                 coupleMaximal: 10,
                 refroidissement: "Air",
-                tankCapacity: null,
+                tankCapacity: 5.5,
                 vitesseMaximale: 110,
                 autonomie: null,
                 alimentation: "Carburateur",
@@ -256,7 +256,7 @@ const modelsData = {
                 puissance: 36.7,
                 coupleMaximal: 38.1,
                 refroidissement: "Liquide",
-                tankCapacity: null,
+                tankCapacity: 13,
                 vitesseMaximale: 137,
                 autonomie: null,
                 alimentation: "Injection électronique",
@@ -277,7 +277,7 @@ const modelsData = {
                 puissance: 35.6,
                 coupleMaximal: 38.1,
                 refroidissement: "Liquide,",
-                tankCapacity: null,
+                tankCapacity: 13,
                 vitesseMaximale: 135,
                 autonomie: null,
                 alimentation: "Injection électronique,",
@@ -299,7 +299,7 @@ const modelsData = {
                 puissance: 13.9,
                 coupleMaximal: 11.2,
                 refroidissement: "Liquide,",
-                tankCapacity: null,
+                tankCapacity: 12.5,
                 vitesseMaximale: 105,
                 autonomie: null,
                 alimentation: "Injection électronique,",
@@ -321,7 +321,7 @@ const modelsData = {
                 puissance: 14.5,
                 coupleMaximal: 12,
                 refroidissement: "Liquide",
-                tankCapacity: null,
+                tankCapacity: 12,
                 vitesseMaximale: 115,
                 autonomie: null,
                 alimentation: "Injection Électronique",
@@ -334,11 +334,33 @@ const modelsData = {
 
       
         {
+            name: "R CR",
+            fuelType: "Thermique",
+            category: "Sportive",
+            images: [ "./img/models/ktm/rcr/11111.jpeg", "./img/models/ktm/rcr/22222.jpeg","./img/models/ktm/rcr/33333.jpeg", "./img/models/ktm/rcr/44444.jpeg"],
+            price: 120000,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Bicylindre",
+                cylindree: 947,
+                puissance: 127.84,
+                coupleMaximal: 103,
+                refroidissement: "Liquide",
+                tankCapacity: 15.7,
+                vitesseMaximale: 260,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "2 Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
+        {
             name: "990 Duke",
             fuelType: "Thermique",
             category: "Roadster",
             images: [ "./img/models/ktm/duke990/duke2.jpg", "./img/models/ktm/duke990/duke1.jpg","./img/models/ktm/duke990/duke4.png", "./img/models/ktm/duke990/duke3.png"],
-            price: null,
+            price: 105000,
             currency: "DT",
 
             specs: {
@@ -348,7 +370,7 @@ const modelsData = {
                 coupleMaximal: 103,
                 refroidissement: "Liquide",
                 tankCapacity: 14.8,
-                vitesseMaximale: null,
+                vitesseMaximale: 220,
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "2 Disque / Disque",
@@ -360,7 +382,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Roadster",
              images: ["./img/models/ktm/duke/ktm1.jpg", "./img/models/ktm/duke/ktm2.jpg", "./img/models/ktm/duke/ktm5.jpg", "./img/models/ktm/duke/ktm4.jpg"],
-            price: null,
+            price: 79000,
             currency: "DT",
 
             specs: {
@@ -370,7 +392,7 @@ const modelsData = {
                 coupleMaximal: 87,
                 refroidissement: "Liquide",
                 tankCapacity: 13.5,
-                vitesseMaximale: null,
+                vitesseMaximale: 200,
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "2 Disque / Disque",
@@ -382,7 +404,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Roadster",
             images: ["./img/models/ktm/duke390/duke1.png", "./img/models/ktm/duke390/duke2.png", "./img/models/ktm/duke390/duke3.png", "./img/models/ktm/duke390/duke4.png"],
-            price: null,
+            price: 55000,
             currency: "DT",
 
             specs: {
@@ -392,7 +414,7 @@ const modelsData = {
                 coupleMaximal: 39,
                 refroidissement: "Liquide",
                 tankCapacity: 14,
-                vitesseMaximale: null,
+                vitesseMaximale: 175,
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque",
@@ -401,11 +423,11 @@ const modelsData = {
         },
        
         {
-            name: "1390 Adventure",
+            name: "1390 Adventure R",
             fuelType: "Thermique",
             category: "Trail",
             images: ["./img/models/ktm/adventure1390r/adventure1.png", "./img/models/ktm/adventure1390r/adventure2.png", "./img/models/ktm/adventure1390r/adventure3.png", "./img/models/ktm/adventure1390r/adventure4.png"],
-            price: null,
+            price: 155000,
             currency: "DT",
 
             specs: {
@@ -415,7 +437,7 @@ const modelsData = {
                 coupleMaximal: 145,
                 refroidissement: "Liquide",
                 tankCapacity: 23,
-                vitesseMaximale: null,
+                vitesseMaximale: 250,
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "2 Disque / Disque",
@@ -423,11 +445,11 @@ const modelsData = {
             }
         },
          {
-            name: "390 Adventure",
+            name: "390 Adventure R",
             fuelType: "Thermique",
             category: "Trail",
             images: ["./img/models/ktm/adventure390/adventure1.png", "./img/models/ktm/adventure390/adventure2.png", "./img/models/ktm/adventure390/adventure3.png", "./img/models/ktm/adventure390/adventure4.png"],
-            price: null,
+            price: 59000,
             currency: "DT",
 
             specs: {
@@ -437,7 +459,7 @@ const modelsData = {
                 coupleMaximal: 39,
                 refroidissement: "Liquide",
                 tankCapacity: 14,
-                vitesseMaximale: null,
+                vitesseMaximale: 160,
                 autonomie: null,
                 alimentation: "Injection électronique,",
                 freinage: "Disque / Disque",
@@ -445,7 +467,28 @@ const modelsData = {
             }
         },
     
-     
+     {
+            name: "390 Adventure X",
+            fuelType: "Thermique",
+            category: "Trail",
+            images: ["./img/models/ktm/adevnturex/1.jpeg", "./img/models/ktm/adevnturex/2.jpeg", "./img/models/ktm/adevnturex/3.jpeg", "./img/models/ktm/adevnturex/4.jpeg"],
+            price: 55000,
+            currency: "DT",
+
+            specs: {
+                typeMoteur: "Monocylindre 4 temps",
+                cylindree: 398.7,
+                puissance: 45,
+                coupleMaximal: 39,
+                refroidissement: "Liquide",
+                tankCapacity: 14,
+                vitesseMaximale: 160,
+                autonomie: null,
+                alimentation: "Injection électronique,",
+                freinage: "Disque / Disque",
+                systemeFreinage: "ABS",
+            }
+        },
        
     ],
     SUZUKI: [
@@ -736,7 +779,7 @@ const modelsData = {
                 puissance: 9.9,
                 coupleMaximal: 9.7,
                 refroidissement: "A air",
-                tankCapacity: null,
+                tankCapacity: 9,
                 vitesseMaximale: 100,
                 autonomie: null,
                 alimentation: "Injection électronique",
@@ -4492,7 +4535,7 @@ const modelsData = {
                 puissance: null,
                 coupleMaximal: null,
                 refroidissement: "A air",
-                tankCapacity: null,
+                tankCapacity: 6.5,
                 vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Elèctrique CDI",
@@ -4514,7 +4557,7 @@ const modelsData = {
                 puissance: null,
                 coupleMaximal: null,
                 refroidissement: "A air",
-                tankCapacity: null,
+                tankCapacity: 6.5,
                 vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Carburateur",
@@ -4719,6 +4762,27 @@ const modelsData = {
     ],
     TUNIZNEN: [
         {
+            name: "ST PLUS",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: ["./img/models/tuniznen/stplus/1.jpeg"],
+            price: 5900,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 90,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disque / Disque",
+                systemeFreinage: "cbs",
+            }
+        },
+           {
             name: "Catalaya  ",
             fuelType: "Thermique",
             category: "Scooter",
@@ -4732,10 +4796,10 @@ const modelsData = {
                 coupleMaximal: null,
                 refroidissement: "A air",
                 tankCapacity: null,
-                vitesseMaximale: null,
+                vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "",
+                freinage: "Disques / Disques",
                 systemeFreinage: "",
             }
         },
@@ -4744,7 +4808,7 @@ const modelsData = {
             fuelType: "Thermique",
             category: "Scooter",
             images: ["./img/models/tuniznen/vento/1.jpeg"],
-            price: 4900,
+            price: 3900,
             currency: "DT", // En arrivage,
             specs: {
                 typeMoteur: "monocylindre 4 temps",
@@ -4752,11 +4816,11 @@ const modelsData = {
                 puissance: null,
                 coupleMaximal: null,
                 refroidissement: "A air",
-                tankCapacity: null,
-                vitesseMaximale: null,
+                tankCapacity: 7.8,
+                vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "",
+                freinage: "Disques / Tambour",
                 systemeFreinage: "",
             }
         },
@@ -4774,11 +4838,11 @@ const modelsData = {
                 coupleMaximal: null,
                 refroidissement: "A air",
                 tankCapacity: null,
-                vitesseMaximale: null,
+                vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "",
-                systemeFreinage: "",
+                freinage: "Disque / Disque",
+                systemeFreinage: "cbs",
             }
         },
         {
@@ -4795,10 +4859,32 @@ const modelsData = {
                 coupleMaximal: null,
                 refroidissement: "A air",
                 tankCapacity: null,
-                vitesseMaximale: null,
+                vitesseMaximale: 90,
                 autonomie: null,
                 alimentation: "Carburateur",
-                freinage: "",
+                freinage: "Disques / Disques",
+                systemeFreinage: "",
+            }
+        },
+      
+{
+            name: "Mostro",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: [ "./img/models/tuniznen/mostro/1.jpeg", "./img/models/tuniznen/mostro/2.jpg", "./img/models/tuniznen/mostro/3.jpg"],
+            price: 4900,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4 temps",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "A air",
+                tankCapacity: null,
+                vitesseMaximale: 90,
+                autonomie: null,
+                alimentation: "Carburateur",
+                freinage: "Disques / Disques",
                 systemeFreinage: "",
             }
         },
@@ -5037,33 +5123,34 @@ const modelsData = {
         //         systemeFreinage: "",
         //     }
         // },
+    
         {
             name: "IMOLA",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/phantom/imola/1.jpeg", "./img/models/phantom/imola/2.jpeg", "./img/models/phantom/imola/3.jpeg", "./img/models/phantom/imola/4.jpeg"],
-            price: null,
-            currency: "DT",
-
+            images: [ "./img/models/tuniznen/imola/1.jpeg", "./img/models/tuniznen/imola/2.jpeg", "./img/models/tuniznen/imola/3.jpeg", "./img/models/tuniznen/imola/4.jpeg"],
+            price: 5500,
+            currency: "DT", // En arrivage,
             specs: {
-                typeMoteur: "Monocylindre 4 temps",
+                typeMoteur: "monocylindre 4 temps",
                 cylindree: 125,
-                puissance:null,
+                puissance: null,
                 coupleMaximal: null,
-                refroidissement: "",
+                refroidissement: "A air",
                 tankCapacity: null,
-                vitesseMaximale: null,
+                vitesseMaximale: 100,
                 autonomie: null,
-                alimentation: "",
+                alimentation: "Carburateur",
                 freinage: "",
-                systemeFreinage: "",
+                systemeFreinage: "cbs",
             }
         },
+      
         {
             name: "Phantom Z1",
             fuelType: "Thermique",
             category: "Scooter",
-            images: ["./img/models/phantom/phantom-z1/phantom-z1-1.jpg", "./img/models/phantom/phantom-z1/phantom-z1-2.jpg", "./img/models/phantom/phantom-z1/phantom-z1-3.jpg", "./img/models/phantom/phantom-z1/phantom-z1-4.jpg"],
+            images: ["./img/models/phantom/phantom-z1/1111.jpeg", "./img/models/phantom/phantom-z1/2.jpeg", "./img/models/phantom/phantom-z1/3.jpeg", "./img/models/phantom/phantom-z1/4.jpeg"],
             price: 6000,
             currency: "DT",
 
@@ -5078,7 +5165,7 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque",
-                systemeFreinage: "",
+                systemeFreinage: "cbs",
             }
         },
         {
@@ -5100,7 +5187,28 @@ const modelsData = {
                 autonomie: null,
                 alimentation: "Carburateur",
                 freinage: "Disque / Disque ",
-                systemeFreinage: "",
+                systemeFreinage: "cbs",
+            }
+        },
+            {
+            name: "XDV",
+            fuelType: "Thermique",
+            category: "Scooter",
+            images: [ "./img/models/phantom/xdv/1.jpeg", "./img/models/phantom/xdv/2.jpeg", "./img/models/phantom/xdv/3.jpeg", "./img/models/phantom/xdv/4.jpeg"],
+            price: 7700,
+            currency: "DT", // En arrivage,
+            specs: {
+                typeMoteur: "monocylindre 4T Bloc Longjia",
+                cylindree: 125,
+                puissance: null,
+                coupleMaximal: null,
+                refroidissement: "Liquide",
+                tankCapacity: null,
+                vitesseMaximale:100,
+                autonomie: null,
+                alimentation: "Injection électronique",
+                freinage: "",
+                systemeFreinage: "cbs",
             }
         },
 
@@ -5576,6 +5684,17 @@ const dealersContacts = {
 
     // EXEMPLE ACTIVÉ - Décommentez ou remplacez par vos vraies données :
     "Peugeot": {
+        addressDisplayMode: "maps",
+        addresses: ["Complexe International, City Center III, SIMCC Motorsports, Tunis 1082", /*"Avenue secondaire, Sfax"*/],
+        phones: ["+216 70 817 066"],
+        emails: ["contact@simcc.tn"],
+        website: "https://motorsports.simcc.tn",
+        facebook: "https://www.facebook.com/SIMCC.Motorsports",
+        instagram: "https://www.instagram.com/explore/locations/148917521845574/simcc-motorsports/",
+        // youtube: "https://www.youtube.com/peugeot",
+        tiktok: "https://www.tiktok.com/@simcc.motorsports"
+    },
+     "KTM": {
         addressDisplayMode: "maps",
         addresses: ["Complexe International, City Center III, SIMCC Motorsports, Tunis 1082", /*"Avenue secondaire, Sfax"*/],
         phones: ["+216 70 817 066"],
